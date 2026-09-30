@@ -1,0 +1,103 @@
+{
+  "source": "https://huggingface.co/datasets/Marxulia/asl_sign_languages_alphabets_v03",
+  "revision": "1adf43b2d31eb9d7aea5855edaeac0231d8a2757",
+  "seed": 42,
+  "license": "No license specified in the source dataset card at download time.",
+  "split": "80/20 stratified image split after exact decoded-image deduplication; no signer identities provided",
+  "limitations": "Not a signer-independent or live-camera evaluation. Near-duplicate images may remain. Only seven letters; digit 5 is not trained. Scores are neighbor agreement, not calibrated probabilities.",
+  "uniqueImages": {
+    "A": 420,
+    "B": 418,
+    "I": 420,
+    "L": 420,
+    "V": 420,
+    "W": 420,
+    "Y": 420
+  },
+  "undetectedImages": {
+    "A": 73,
+    "B": 98,
+    "I": 115,
+    "L": 73,
+    "V": 109,
+    "W": 114,
+    "Y": 70
+  },
+  "trainingSamples": 1830,
+  "testSamples": 456,
+  "accuracyIncludingRejections": 0.9671052631578947,
+  "coverage": 0.9846491228070176,
+  "accuracyWhenAccepted": 0.9821826280623608,
+  "confusion": {
+    "A": {
+      "A": 68,
+      "B": 0,
+      "I": 0,
+      "L": 0,
+      "V": 0,
+      "W": 0,
+      "Y": 0,
+      "rejected": 1
+    },
+    "B": {
+      "A": 0,
+      "B": 64,
+      "I": 0,
+      "L": 0,
+      "V": 0,
+      "W": 0,
+      "Y": 0,
+      "rejected": 0
+    },
+    "I": {
+      "A": 0,
+      "B": 0,
+      "I": 59,
+      "L": 1,
+      "V": 0,
+      "W": 0,
+      "Y": 1,
+      "rejected": 0
+    },
+    "L": {
+      "A": 0,
+      "B": 0,
+      "I": 0,
+      "L": 69,
+      "V": 0,
+      "W": 0,
+      "Y": 0,
+      "rejected": 0
+    },
+    "V": {
+      "A": 0,
+      "B": 0,
+      "I": 0,
+      "L": 2,
+      "V": 58,
+      "W": 0,
+      "Y": 0,
+      "rejected": 2
+    },
+    "W": {
+      "A": 0,
+      "B": 0,
+      "I": 0,
+      "L": 0,
+      "V": 3,
+      "W": 57,
+      "Y": 0,
+      "rejected": 1
+    },
+    "Y": {
+      "A": 0,
+      "B": 0,
+      "I": 0,
+      "L": 1,
+      "V": 0,
+      "W": 0,
+      "Y": 66,
+      "rejected": 3
+    }
+  }
+}

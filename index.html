@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#092f32">
+  <meta name="description" content="HandSpeak Web translates selected ASL hand gestures into readable text.">
+  <title>HandSpeak Web</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="HandSpeak home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span>HandSpeak <b>Web</b></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="#translate">Translate</a>
+      <a href="#learn">Learn</a>
+      <a href="#ai-studio">AI Studio</a>
+      <a href="#history">History</a>
+      <a href="#evaluate">Evaluate</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="icon-button" id="contrastButton" type="button" aria-label="Toggle high contrast" title="Toggle high contrast">◐</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="translate">
+      <div class="eyebrow"><span></span> Real-time gesture recognition</div>
+      <h1>Let your hands<br><em>do the talking.</em></h1>
+      <p>Translate selected American Sign Language gestures into readable text—right in your browser.</p>
+      <div class="privacy-note"><span aria-hidden="true">⌾</span> Camera frames are processed on your device and are never uploaded.</div>
+    </section>
+
+    <section class="workspace" aria-label="Sign language translator">
+      <article class="camera-card">
+        <div class="card-heading">
+          <div>
+            <span class="step">01</span>
+            <h2>Show your sign</h2>
+          </div>
+          <span class="status-pill" id="cameraStatus"><i></i> Camera off</span>
+        </div>
+        <div class="camera-stage" id="cameraStage">
+          <video id="webcam" autoplay playsinline muted aria-label="Webcam preview"></video>
+          <canvas id="overlay" aria-hidden="true"></canvas>
+          <div class="camera-placeholder" id="cameraPlaceholder">
+            <div class="hand-symbol" aria-hidden="true">✋</div>
+            <strong>Ready when you are</strong>
+            <span>Position one hand inside the frame</span>
+          </div>
+          <div class="frame-guide" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="live-result" id="liveResult" hidden>
+            <span>Recognizing</span>
+            <strong id="liveLetter">—</strong>
+            <small id="liveConfidence">0% confidence</small>
+          </div>
+        </div>
+        <div class="camera-actions">
+          <button class="primary-button" id="cameraButton" type="button"><span aria-hidden="true">◉</span> Start camera</button>
+          <button class="secondary-button" id="demoButton" type="button">Try demo</button>
+        </div>
+        <p class="camera-tip" id="cameraHelp">Use a well-lit space and keep your palm facing the camera.</p>
+      </article>
+
+      <article class="output-card">
+        <div class="card-heading">
+          <div>
+            <span class="step coral">02</span>
+            <h2>Your message</h2>
+          </div>
+          <button class="text-button" id="clearButton" type="button">Clear all</button>
+        </div>
+        <div class="message-box" id="messageBox" role="status" aria-live="polite">
+          <p id="messageText"><span>Recognized words will appear here…</span></p>
+          <div class="message-controls">
+            <button id="spaceButton" type="button" title="Add space">Space</button>
+            <button id="backspaceButton" type="button" title="Delete last character" aria-label="Delete last character">⌫</button>
+          </div>
+        </div>
+        <div class="output-actions">
+          <button class="speak-button" id="speakButton" type="button"><span aria-hidden="true">◖</span> Speak message</button>
+          <button class="copy-button" id="copyButton" type="button">Copy text</button>
+          <button class="copy-button" id="saveButton" type="button">Save</button>
+        </div>
+        <div class="recognition-info">
+          <div><span class="info-icon" aria-hidden="true">✓</span><p><b>Hold each sign steady</b><small>Letters are added after a stable detection.</small></p></div>
+          <div><span class="info-icon coral-bg" aria-hidden="true">↻</span><p><b>Move between signs</b><small>Lower your hand briefly before repeating a letter.</small></p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="data-section" id="history">
+      <div class="section-title">
+        <div><span class="eyebrow"><span></span> Saved translations</span><h2>Communication history</h2></div>
+        <div class="section-actions"><button class="secondary-button" id="refreshHistory" type="button">Refresh</button><a class="primary-link" href="/api/export/sessions.csv">Export CSV</a></div>
+      </div>
+      <div class="history-list" id="historyList"><p class="empty-state">No saved sessions yet.</p></div>
+      <div class="dashboard" id="dashboard" aria-label="System metrics">
+        <div><b id="metricSessions">0</b><span>Saved sessions</span></div>
+        <div><b id="metricDetections">0</b><span>Detections</span></div>
+        <div><b id="metricConfidence">0%</b><span>Average confidence</span></div>
+        <div><b id="metricLatency">0 ms</b><span>Average processing</span></div>
+      </div>
+    </section>
+
+    <section class="evaluation-section" id="evaluate">
+      <div class="evaluation-copy">
+        <span class="eyebrow light"><span></span> Research evaluation</span>
+        <h2>Help measure the system.</h2>
+        <p>Submit the study’s 5-point evaluation for accuracy, usability, and performance. Responses are stored anonymously.</p>
+        <div class="rating-summary"><span><b id="evaluationCount">0</b> responses</span><span>Accuracy <b id="ratingAccuracy">—</b></span><span>Usability <b id="ratingUsability">—</b></span><span>Performance <b id="ratingPerformance">—</b></span></div>
+      </div>
+      <form class="evaluation-form" id="evaluationForm">
+        <label>Respondent type<select name="respondentType" required><option value="">Select one</option><option>Student</option><option>Educator</option><option>Deaf/Hard-of-Hearing</option><option>Hearing</option><option>Other</option></select></label>
+        <div class="rating-row"><label for="accuracy">Recognition accuracy</label><output id="accuracyValue">5</output><input id="accuracy" name="accuracy" type="range" min="1" max="5" value="5"></div>
+        <div class="rating-row"><label for="usability">Ease of use</label><output id="usabilityValue">5</output><input id="usability" name="usability" type="range" min="1" max="5" value="5"></div>
+        <div class="rating-row"><label for="performance">Speed and responsiveness</label><output id="performanceValue">5</output><input id="performance" name="performance" type="range" min="1" max="5" value="5"></div>
+        <label>Comments<textarea name="comments" maxlength="2000" rows="3" placeholder="Optional feedback"></textarea></label>
+        <button class="primary-button" type="submit">Submit evaluation</button>
+      </form>
+    </section>
+
+    <section class="learn-section" id="learn">
+      <div class="section-title">
+        <div><span class="eyebrow"><span></span> Quick reference</span><h2>Signs HandSpeak knows</h2></div>
+        <p>This prototype recognizes eight clear, static ASL signs for basic communication.</p>
+      </div>
+      <div class="sign-grid" id="signGrid"></div>
+    </section>
+
+    <section class="ai-section" id="ai-studio">
+      <div class="ai-copy">
+        <span class="eyebrow light"><span></span> Personalized machine learning</span>
+        <h2>Recognize letters, then personalize your signing.</h2>
+        <p>Seven letters come pretrained from ASL image examples. Start the camera to try them, or capture your own examples to personalize recognition. The 5 gesture uses hand-shape rules until you teach it. Camera frames stay on your device.</p>
+        <div class="ai-badges"><span>21 landmarks</span><span>On-device training</span><span>No images stored</span></div>
+      </div>
+      <div class="trainer-card">
+        <div class="trainer-heading"><div><b>AI training set</b><small id="aiModelStatus">Loading pretrained letters…</small></div><button class="text-button" id="resetModelButton" type="button">Reset personal samples</button></div>
+        <label class="trainer-label">Gesture to teach<select id="trainingLabel" aria-label="Gesture to teach"></select></label>
+        <button class="primary-button" id="captureSamplesButton" type="button">Capture 30 samples</button>
+        <div class="training-progress" aria-label="Training progress"><i id="trainingProgress"></i></div>
+        <p id="trainingHelp">Start the camera above, hold the selected gesture, then capture samples.</p>
+        <div class="sample-counts" id="sampleCounts"></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <span class="eyebrow light"><span></span> Built for inclusion</span>
+        <h2>Communication should feel effortless.</h2>
+      </div>
+      <p>HandSpeak Web is a capstone prototype that uses computer vision to help bridge everyday communication between deaf, hard-of-hearing, and hearing individuals. It recognizes selected static gestures—not full ASL grammar or facial expressions.</p>
+      <div class="metrics"><div><b>8</b><span>ASL signs</span></div><div><b>100%</b><span>in browser</span></div><div><b>0</b><span>frames stored</span></div></div>
+    </section>
+  </main>
+
+  <footer><span>HandSpeak Web · Cavite State University – Imus Campus</span><span>Capstone prototype · 2026</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
