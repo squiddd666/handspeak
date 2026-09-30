@@ -86,43 +86,8 @@ def main():
                     print(f'Extracted {len(records)} hands', flush=True)
         extraction = {'records': records, 'uniqueImages': dict(counts), 'undetected': dict(failed)}
         extracted_path.write_text(json.dumps(extraction))
-    rng = np.random.default_rng(42)
-    train, test = [], []
-    for label in LABELS:
-        rows = [r for r in extraction['records'] if r['label'] == label]
-        rng.shuffle(rows)
-        count = max(1, round(len(rows)*.2))
-        test.extend(rows[:count])
-        train.extend(rows[count:])
-    # kNN is instance-based learning: these labeled references are the trained model.
-    samples = [{'label': r['label'], 'features': r['features']} for r in train]
-    confusion = {label: dict.fromkeys(LABELS+['rejected'], 0) for label in LABELS}
-    for row in test:
-        result = predict(row['features'], samples)
-        confusion[row['label']][result or 'rejected'] += 1
-    correct = sum(confusion[label][label] for label in LABELS)
-    rejected = sum(row['rejected'] for row in confusion.values())
-    report = {
-        'source': SOURCE, 'revision': REVISION, 'seed': 42,
-        'license': 'No license specified in the source dataset card at download time.',
-        'split': '80/20 stratified image split after exact decoded-image deduplication; no signer identities provided',
-        'limitations': 'Not a signer-independent or live-camera evaluation. Near-duplicate images may remain. Only seven letters; digit 5 is not trained. Scores are neighbor agreement, not calibrated probabilities.',
-        'uniqueImages': extraction['uniqueImages'], 'undetectedImages': extraction['undetected'],
-        'trainingSamples': len(train), 'testSamples': len(test),
-        'accuracyIncludingRejections': correct/len(test), 'coverage': (len(test)-rejected)/len(test),
-        'accuracyWhenAccepted': correct/(len(test)-rejected) if len(test)>rejected else 0,
-        'confusion': confusion,
-    }
-    model = {'version': 1, 'normalization': 'wrist-palm-rotation-v1', 'labels': LABELS,
-             'source': SOURCE, 'revision': REVISION, 'samples': samples}
-    (args.output/'asl-knn.json').write_text(json.dumps(model, separators=(',', ':')))
-    (args.output/'asl-evaluation.json').write_text(json.dumps(report, indent=2)+'\n')
-    # Keep a small held-out parity fixture for testing the real browser classifier.
-    (args.output/'asl-test-fixture.json').write_text(json.dumps([
-        {'label': r['label'], 'features': r['features'], 'expected': predict(r['features'], samples)}
-        for label in LABELS for r in [next(t for t in test if t['label'] == label)]
-    ], separators=(',', ':')))
-    print(json.dumps(report, indent=2), flush=True)
+    from tune_model import build_model
+    build_model(extraction, args.output)
 
 
 if __name__ == '__main__':

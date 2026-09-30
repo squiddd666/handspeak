@@ -11,3 +11,19 @@
 body.high-contrast{--cream:#fff;--paper:#fff;--ink:#000;--teal:#004b4d;--muted:#343434;--line:#767676}.high-contrast .camera-stage{outline:3px solid #000}.high-contrast button:focus,.high-contrast a:focus{outline:3px solid #ff8c00;outline-offset:3px}
 @media(max-width:800px){nav{display:none}.hero{margin-top:45px}.workspace{grid-template-columns:1fr}.sign-grid{grid-template-columns:repeat(2,1fr)}.section-title,.about-section{display:block}.section-title>p{margin-top:16px}.about-section>p{margin-top:30px}.metrics{margin-top:35px}.evaluation-section{grid-template-columns:1fr;gap:35px}.dashboard{grid-template-columns:1fr 1fr}footer{gap:10px;flex-direction:column}}@media(max-width:430px){.hero h1{font-size:46px}.workspace,.learn-section,.data-section{padding:0 14px}.camera-card,.output-card{padding:16px}.sign-grid{grid-template-columns:1fr 1fr}.site-header{height:68px}.message-box{min-height:200px}.about-section h2{font-size:34px}.section-title .section-actions{margin-top:15px}.dashboard{grid-template-columns:1fr}.output-actions{flex-wrap:wrap}.speak-button{flex-basis:100%}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Moving-sign studio */
+.mode-picker{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px 16px;font-weight:600}
+.mode-picker select,.motion-section input[type="text"],#motionLabel{max-width:100%;padding:12px;border:1px solid #b7ccc7;border-radius:10px;background:#fff;color:#163e39;font:inherit}
+.motion-section{margin:56px 0;padding:28px;border-radius:24px;background:#edf5f1;color:#163e39}
+.motion-section>p{max-width:900px;line-height:1.7}
+.motion-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.motion-grid .trainer-card{min-width:0;background:#fff;color:#163e39}
+#motionHelp{min-height:72px;line-height:1.5}
+.speech-option{display:flex;align-items:center;gap:10px;margin-top:16px}
+#motionLibrary{overflow-wrap:anywhere}
+.live-result strong{max-width:230px;overflow-wrap:anywhere}
+.high-contrast .motion-section,.high-contrast .motion-grid .trainer-card{background:#000;color:#fff;border:1px solid #fff}
+@media(max-width:700px){.motion-grid{grid-template-columns:1fr}.mode-picker{align-items:flex-start;flex-direction:column}.motion-section{padding:18px}.motion-section .camera-actions{flex-wrap:wrap}}
+.motion-section{max-width:1180px;margin:56px auto}
+@media(max-width:800px){.ai-section{grid-template-columns:minmax(0,1fr);padding:24px 18px}.ai-section .trainer-card{min-width:0}.trainer-heading{flex-wrap:wrap;gap:12px}.trainer-label select{max-width:100%}}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#092f32">
+  <meta name="theme-color" content="#080909">
   <meta name="description" content="HandSpeak Web translates selected ASL hand gestures into readable text.">
   <title>HandSpeak Web</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -11,18 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="studio-theme.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="#" aria-label="HandSpeak home">
-      <span class="brand-mark" aria-hidden="true">H</span>
-      <span>HandSpeak <b>Web</b></span>
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/><circle cx="12" cy="12" r="5"/></svg></span>
+      <span>handspeak<span class="brand-version"> / studio</span></span>
     </a>
     <nav aria-label="Main navigation">
       <a class="active" href="#translate">Translate</a>
       <a href="#learn">Learn</a>
       <a href="#ai-studio">AI Studio</a>
+      <a href="#motion-studio">Moving signs</a>
       <a href="#history">History</a>
       <a href="#evaluate">Evaluate</a>
       <a href="#about">About</a>
@@ -32,10 +34,10 @@
 
   <main id="main">
     <section class="hero" id="translate">
-      <div class="eyebrow"><span></span> Real-time gesture recognition</div>
-      <h1>Let your hands<br><em>do the talking.</em></h1>
-      <p>Translate selected American Sign Language gestures into readable text—right in your browser.</p>
-      <div class="privacy-note"><span aria-hidden="true">⌾</span> Camera frames are processed on your device and are never uploaded.</div>
+      <div class="eyebrow"><span></span> A space for expression</div>
+      <h1>Your hands.<br><em>A voice.</em></h1>
+      <p>Explore sign-to-text and voice, one gesture at a time.</p>
+      <div class="privacy-note"><span aria-hidden="true">⌾</span> On-device tracking. Your camera stays private.</div>
     </section>
 
     <section class="workspace" aria-label="Sign language translator">
@@ -43,21 +45,28 @@
         <div class="card-heading">
           <div>
             <span class="step">01</span>
-            <h2>Show your sign</h2>
+            <h2>Live capture <small>/ 01</small></h2>
           </div>
           <span class="status-pill" id="cameraStatus"><i></i> Camera off</span>
         </div>
+        <label class="mode-picker">Recognition mode
+          <select id="recognitionMode"><option value="letters">Static letters</option><option value="words">Words in motion · experimental</option></select>
+        </label>
         <div class="camera-stage" id="cameraStage">
           <video id="webcam" autoplay playsinline muted aria-label="Webcam preview"></video>
           <canvas id="overlay" aria-hidden="true"></canvas>
           <div class="camera-placeholder" id="cameraPlaceholder">
-            <div class="hand-symbol" aria-hidden="true">✋</div>
-            <strong>Ready when you are</strong>
-            <span>Position one hand inside the frame</span>
+            <div class="hand-symbol" aria-hidden="true"><svg viewBox="0 0 100 120" fill="none"><path d="M28 62V30q0-9 7-9t7 9v25-37q0-9 7-9t7 9v37-31q0-9 7-9t7 9v34-21q0-8 7-8t7 8v44q0 28-26 28H48Q34 108 27 96L12 72q-5-9 2-13t14 3Z" stroke="currentColor" stroke-width="2"/><path d="M42 55v25m14-25v25m14-22v22M29 65l15 24" stroke="currentColor" stroke-width="1" opacity=".4"/></svg></div>
+            <strong>Make yourself heard.</strong>
+            <span>Start your camera to begin tracking</span>
           </div>
+          <div class="capture-topline"><span><i></i> HANDSPEAK VISION</span><span id="captureMode">STATIC LETTERS</span></div>
+          <div class="capture-transcript" id="captureTranscript" aria-hidden="true">Your words will appear here.</div>
+          <aside class="capture-telemetry" aria-label="Tracking information"><span>INPUT <b id="trackingState">STANDBY</b></span><span>HANDS <b id="trackingHands">0 / 2</b></span><span>FACE <b id="trackingFace">CAMERA OFF</b></span><span>PROCESSING <b>ON DEVICE</b></span></aside>
+          <div class="capture-bottomline"><span>CAM_01 <i>●</i> <span id="captureFeed">OFFLINE</span></span><span>LOCAL VISION / PRIVATE BY DESIGN</span></div>
           <div class="frame-guide" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
           <div class="live-result" id="liveResult" hidden>
-            <span>Recognizing</span>
+            <span>Detected sign</span>
             <strong id="liveLetter">—</strong>
             <small id="liveConfidence">0% confidence</small>
           </div>
@@ -66,14 +75,21 @@
           <button class="primary-button" id="cameraButton" type="button"><span aria-hidden="true">◉</span> Start camera</button>
           <button class="secondary-button" id="demoButton" type="button">Try demo</button>
         </div>
+        <div class="face-controls"><label><input type="checkbox" id="faceTrackingToggle" checked> Face tracking</label><span id="faceTrackingStatus" role="status">Camera off</span><span class="expression-readout">Expression: <b id="faceExpression" role="status">Camera off</b></span><small>Visible facial movements · not a measure of emotion</small></div>
         <p class="camera-tip" id="cameraHelp">Use a well-lit space and keep your palm facing the camera.</p>
       </article>
 
+      <div class="workflow-strip" aria-label="Recognition workflow">
+        <a href="#translate" id="pipelineTrack"><span class="workflow-number">01</span><span>Hand<br>tracking</span><i class="workflow-orb" aria-hidden="true"></i></a>
+        <a href="#motion-studio" id="pipelineMatch"><span class="workflow-number">02</span><span>Sign<br>learning</span><i class="workflow-grid" aria-hidden="true"></i></a>
+        <a href="#messageBox" id="pipelineReview"><span class="workflow-number">03</span><span>Message<br>review</span><i class="workflow-lines" aria-hidden="true">≡</i></a>
+        <button type="button" id="pipelineVoice"><span class="workflow-number">04</span><span>Voice<br>output</span><i class="workflow-wave" aria-hidden="true"><svg viewBox="0 0 28 24" stroke="currentColor" stroke-width="2"><path d="M2 10v4m5-8v12m5-16v20m5-14v8m5-12v16m4-10v4"/></svg></i></button>
+      </div>
       <article class="output-card">
         <div class="card-heading">
           <div>
             <span class="step coral">02</span>
-            <h2>Your message</h2>
+            <h2>Your words <small>/ ready to review</small></h2>
           </div>
           <button class="text-button" id="clearButton" type="button">Clear all</button>
         </div>
@@ -130,7 +146,7 @@
     <section class="learn-section" id="learn">
       <div class="section-title">
         <div><span class="eyebrow"><span></span> Quick reference</span><h2>Signs HandSpeak knows</h2></div>
-        <p>This prototype recognizes eight clear, static ASL signs for basic communication.</p>
+        <p>Seven static letters are pretrained. Teach the 5 gesture in AI Studio to add it.</p>
       </div>
       <div class="sign-grid" id="signGrid"></div>
     </section>
@@ -139,7 +155,7 @@
       <div class="ai-copy">
         <span class="eyebrow light"><span></span> Personalized machine learning</span>
         <h2>Recognize letters, then personalize your signing.</h2>
-        <p>Seven letters come pretrained from ASL image examples. Start the camera to try them, or capture your own examples to personalize recognition. The 5 gesture uses hand-shape rules until you teach it. Camera frames stay on your device.</p>
+        <p>Seven letters come pretrained from ASL image examples. Start the camera to try them, or capture your own examples to personalize recognition. Teach the 5 gesture before using it. Uncertain poses are left blank instead of guessed. Camera frames stay on your device.</p>
         <div class="ai-badges"><span>21 landmarks</span><span>On-device training</span><span>No images stored</span></div>
       </div>
       <div class="trainer-card">
@@ -152,17 +168,41 @@
       </div>
     </section>
 
+    <section class="motion-section" id="motion-studio" aria-labelledby="motionTitle">
+      <div class="section-title"><div><span class="eyebrow">Experimental · pretrained vocabulary</span><h2 id="motionTitle">Say it with a sign.</h2></div></div>
+      <p>Switch to Words in motion, start the camera, and select Recognize a recording. Sign one supported word during the capture, then review the result. Personal training is optional.</p>
+      <p id="motionModelStatus" role="status">Loading pretrained words…</p>
+      <div class="motion-grid">
+        <div class="trainer-card">
+          <b id="motionReady">Loading pretrained vocabulary…</b>
+          <p id="motionLibrary" class="camera-tip">Pretrained vocabulary will appear here.</p>
+          <div class="camera-actions"><button class="primary-button" id="motionRecognize" type="button">Recognize a recording</button><button class="secondary-button" id="motionCancel" type="button" disabled>Cancel</button></div>
+          <p id="motionHelp" role="status" aria-live="polite">Each recording has a 1.5-second countdown, then captures 2.5 seconds of movement.</p>
+          <button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button>
+          <label class="speech-option"><input id="motionAutoSpeak" type="checkbox"> Speak each word after I add it</label>
+        </div>
+      </div>
+      <details class="trainer-card optional-training">
+        <summary>Optional: add your own word examples</summary>
+        <label class="trainer-label" for="motionLabel">Personal word or phrase</label>
+        <input id="motionLabel" maxlength="30" placeholder="e.g. HELLO" autocomplete="off">
+        <div class="camera-actions"><button class="secondary-button" id="motionTeach" type="button">Record example</button><button class="text-button" id="motionRemove" type="button">Remove personal examples</button></div>
+        <p class="camera-tip">Record at least three examples for a new word. Removing personal examples keeps the pretrained vocabulary.</p>
+      </details>
+      <p class="camera-tip">Use only the listed words. Other signs can be mistaken for a supported word. This small PopSign ASL model has limited accuracy; review each suggestion before adding or speaking it. Personal examples stay in this browser. <a href="models/asl-words-evaluation.json">Evaluation results</a> · <a href="models/WORDS-SOURCE.md">Dataset credit</a></p>
+    </section>
+
     <section class="about-section" id="about">
       <div>
         <span class="eyebrow light"><span></span> Built for inclusion</span>
         <h2>Communication should feel effortless.</h2>
       </div>
-      <p>HandSpeak Web is a capstone prototype that uses computer vision to help bridge everyday communication between deaf, hard-of-hearing, and hearing individuals. It recognizes selected static gestures—not full ASL grammar or facial expressions.</p>
-      <div class="metrics"><div><b>8</b><span>ASL signs</span></div><div><b>100%</b><span>in browser</span></div><div><b>0</b><span>frames stored</span></div></div>
+      <p>HandSpeak Web is a capstone prototype that uses computer vision to help bridge everyday communication between deaf, hard-of-hearing, and hearing individuals. It recognizes selected static letters and offers an experimental pretrained vocabulary for moving signs. Face landmarks are displayed for visual feedback; they are not used to interpret identity, emotions, or ASL grammar.</p>
+      <div class="metrics"><div><b>13</b><span>Pretrained signs</span></div><div><b>100%</b><span>in browser</span></div><div><b>0</b><span>frames stored</span></div></div>
     </section>
   </main>
 
-  <footer><span>HandSpeak Web · Cavite State University – Imus Campus</span><span>Capstone prototype · 2026</span></footer>
+  <footer><span>HANDSpeak / Cavite State University – Imus Campus</span><span>Capstone prototype · 2026</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script type="module" src="app.js"></script>
 </body>

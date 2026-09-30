@@ -1,10 +1,11 @@
 {
+  "version": 2,
   "source": "https://huggingface.co/datasets/Marxulia/asl_sign_languages_alphabets_v03",
   "revision": "1adf43b2d31eb9d7aea5855edaeac0231d8a2757",
-  "seed": 42,
-  "license": "No license specified in the source dataset card at download time.",
-  "split": "80/20 stratified image split after exact decoded-image deduplication; no signer identities provided",
-  "limitations": "Not a signer-independent or live-camera evaluation. Near-duplicate images may remain. Only seven letters; digit 5 is not trained. Scores are neighbor agreement, not calibrated probabilities.",
+  "license": "No license specified in source dataset card at download time.",
+  "split": "Original seed-42 stratified 20% image test retained. Seed 17 takes 20% of remaining images for validation. Exact decoded images deduplicated before splitting.",
+  "selectionObjective": "Minimize 5 * wrong + rejected on validation only. Never refit with validation or test samples.",
+  "limitations": "Not signer-independent or live-camera accuracy; near-duplicates may remain. Only images with detected hands evaluated. No unsupported-sign test set. Digit 5 requires personal samples. Personalization is not evaluated here.",
   "uniqueImages": {
     "A": 420,
     "B": 418,
@@ -23,11 +24,43 @@
     "W": 114,
     "Y": 70
   },
-  "trainingSamples": 1830,
+  "trainingSamples": 1463,
+  "validationSamples": 367,
   "testSamples": 456,
-  "accuracyIncludingRejections": 0.9671052631578947,
-  "coverage": 0.9846491228070176,
-  "accuracyWhenAccepted": 0.9821826280623608,
+  "parameters": {
+    "zWeight": 0.5,
+    "k": 3,
+    "minAgreement": 0.7,
+    "maxDistance": 0.25,
+    "minRatio": 1.5
+  },
+  "validation": {
+    "correct": 351,
+    "wrong": 0,
+    "rejected": 16,
+    "total": 367,
+    "accuracyIncludingRejections": 0.9564032697547684,
+    "coverage": 0.9564032697547684,
+    "accuracyWhenAccepted": 1.0
+  },
+  "test": {
+    "correct": 425,
+    "wrong": 1,
+    "rejected": 30,
+    "total": 456,
+    "accuracyIncludingRejections": 0.9320175438596491,
+    "coverage": 0.9342105263157895,
+    "accuracyWhenAccepted": 0.9976525821596244
+  },
+  "previousModelSameTest": {
+    "correct": 441,
+    "wrong": 8,
+    "rejected": 7,
+    "total": 456,
+    "accuracyIncludingRejections": 0.9671052631578947,
+    "coverage": 0.9846491228070176,
+    "accuracyWhenAccepted": 0.9821826280623608
+  },
   "confusion": {
     "A": {
       "A": 68,
@@ -52,52 +85,52 @@
     "I": {
       "A": 0,
       "B": 0,
-      "I": 59,
-      "L": 1,
+      "I": 56,
+      "L": 0,
       "V": 0,
       "W": 0,
-      "Y": 1,
-      "rejected": 0
+      "Y": 0,
+      "rejected": 5
     },
     "L": {
       "A": 0,
       "B": 0,
       "I": 0,
-      "L": 69,
+      "L": 68,
       "V": 0,
       "W": 0,
       "Y": 0,
-      "rejected": 0
+      "rejected": 1
     },
     "V": {
       "A": 0,
       "B": 0,
       "I": 0,
-      "L": 2,
-      "V": 58,
+      "L": 0,
+      "V": 55,
       "W": 0,
       "Y": 0,
-      "rejected": 2
+      "rejected": 7
     },
     "W": {
       "A": 0,
       "B": 0,
       "I": 0,
       "L": 0,
-      "V": 3,
-      "W": 57,
+      "V": 1,
+      "W": 53,
       "Y": 0,
-      "rejected": 1
+      "rejected": 7
     },
     "Y": {
       "A": 0,
       "B": 0,
       "I": 0,
-      "L": 1,
+      "L": 0,
       "V": 0,
       "W": 0,
-      "Y": 66,
-      "rejected": 3
+      "Y": 61,
+      "rejected": 9
     }
   }
 }
