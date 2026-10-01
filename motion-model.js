@@ -36,10 +36,25 @@ export function encodeMotion(frames,imageAspect=1){
       i=next;
     }
   }
+  // Ignore isolated entry/exit detections only when one continuous movement
+  // contains at least 70% of the usable frames. Never join disconnected runs.
+  const runs=[];let runStart=-1,lastVisible=-1,count=0;
+  for(let i=0;i<frames.length;i++){
+    if(!frames[i].some(Boolean))continue;
+    if(runStart>=0&&i-lastVisible>3){runs.push({start:runStart,end:lastVisible,count});runStart=-1;count=0;}
+    if(runStart<0)runStart=i;
+    lastVisible=i;count++;
+  }
+  if(runStart>=0)runs.push({start:runStart,end:lastVisible,count});
+  const strongest=runs.sort((a,b)=>b.count-a.count)[0];
+  const observed=runs.reduce((sum,run)=>sum+run.count,0);
+  if(strongest&&strongest.count>=8&&strongest.count>=observed*.7)frames=frames.slice(strongest.start,strongest.end+1);
   const visible=frames.filter(frame=>frame.some(Boolean));
   if(visible.length<8)return null;
   if(visible.length/frames.length<.7)return null;
-  const first=visible[0].filter(Boolean);
+  // Center the entire movement so a different starting hand position does not
+  // translate every frame away from the training references.
+  const first=visible.flatMap(frame=>frame.filter(Boolean));
   const anchor={x:first.reduce((s,h)=>s+h[0].x,0)/first.length,y:first.reduce((s,h)=>s+h[0].y,0)/first.length};
   const widths=visible.flatMap(frame=>frame.filter(Boolean).map(p=>Math.hypot(p[5].x-p[17].x,p[5].y-p[17].y)));
   const scale=widths.reduce((a,b)=>a+b,0)/widths.length;
@@ -88,7 +103,8 @@ export function validMotionParameters(p){
   return p && Number.isFinite(p.maxDistance)&&p.maxDistance>0&&p.maxDistance<=10
     && Number.isFinite(p.minRatio)&&p.minRatio>=1&&p.minRatio<=5
     && Number.isInteger(p.minVotes)&&p.minVotes>=1&&p.minVotes<=3
-    && typeof p.mirror==='boolean';
+    && typeof p.mirror==='boolean'
+    && (p.strongRatio===undefined||(Number.isFinite(p.strongRatio)&&p.strongRatio>=1.5&&p.strongRatio>=p.minRatio&&p.strongRatio<=5));
 }
 
 export function recognizeMotion(sequence, examples, parameters={maxDistance:.65,minRatio:1.3,minVotes:2,mirror:false}){
@@ -98,7 +114,9 @@ export function recognizeMotion(sequence, examples, parameters={maxDistance:.65,
   const mirrored=parameters.mirror?mirrorMotion(sequence):null;
   const ranked=examples.filter(e=>counts[e.label]>=3).map(e=>({label:e.label,distance:Math.min(motionDistance(sequence,e.sequence),mirrored?motionDistance(mirrored,e.sequence):Infinity)})).sort((a,b)=>a.distance-b.distance);
   const best=ranked[0],other=ranked.find(e=>e.label!==best.label);
-  if(best.distance>parameters.maxDistance || (other && other.distance/(best.distance+1e-6)<parameters.minRatio)
-    || ranked.slice(0,3).filter(e=>e.label===best.label).length<parameters.minVotes)return null;
+  const separation=other?other.distance/(best.distance+1e-6):Infinity;
+  const votes=ranked.slice(0,3).filter(e=>e.label===best.label).length;
+  if(best.distance>parameters.maxDistance || separation<parameters.minRatio
+    || (votes<parameters.minVotes&&separation<(parameters.strongRatio??Infinity)))return null;
   return {label:best.label,distance:best.distance};
 }

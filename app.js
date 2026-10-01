@@ -1,6 +1,6 @@
-import { createFaceTracker } from './face-tracker.js';
-import { createMotionStudio } from './motion-studio.js';
-import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js';
+import { createFaceTracker } from './face-tracker.js?v=20261001-auto-cache-1';
+import { createMotionStudio } from './motion-studio.js?v=20261001-auto-cache-1';
+import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
 const video = $('#webcam');
@@ -29,13 +29,16 @@ const SIGNS = [
 $('#signGrid').innerHTML = SIGNS.map(sign => `<article class="sign-card"><div class="sign-visual" aria-hidden="true">${sign.icon}<span>${sign.letter}</span></div><h3>${sign.name}</h3><p>${sign.hint}</p></article>`).join('');
 $('#trainingLabel').innerHTML = SIGNS.map(sign=>`<option value="${sign.letter}">${sign.name} — ${sign.hint}</option>`).join('');
 
-const faceTracker=createFaceTracker(state=>{
+const faceTracker=createFaceTracker((state,detail)=>{
   $('#faceTrackingStatus').textContent=state;
   $('#trackingFace').textContent=state.toUpperCase();
+  $('#faceRetry').hidden=state!=='Unavailable';
+  $('#faceTrackingHelp').textContent=detail||(state==='No face'?'Face the camera with your whole face visible and light in front of you.':'Visible facial movements · not a measure of emotion');
 },expression=>{
   $('#faceExpression').textContent=expression;
 });
 $('#faceTrackingToggle').addEventListener('change',event=>faceTracker.setEnabled(event.target.checked));
+$('#faceRetry').addEventListener('click',()=>{void faceTracker.load();});
 
 let recognitionMode = 'letters';
 let handLandmarker;
@@ -75,11 +78,12 @@ function speakText(text){
 const motionStudio=createMotionStudio({
   isRunning:()=>running && recognitionMode==='words',
   onWord:word=>{message=(message.trimEnd()+' '+word).trimStart();renderMessage();},
-  onStatus:word=>{liveResult.hidden=false;liveLetter.textContent=word;liveConfidence.textContent='Review the match in Moving signs';},
+  onStatus:(word,detail)=>{liveResult.hidden=word==='—';liveLetter.textContent=word;liveConfidence.textContent=detail||'Review the match in Moving signs';},
   speak:speakText
 });
-$('#recognitionMode').addEventListener('change',event=>{
-  recognitionMode=event.target.value;
+function setRecognitionMode(mode){
+  recognitionMode=mode;
+  $('#recognitionMode').value=mode;
   $('#captureMode').textContent=recognitionMode==='words'?'WORDS IN MOTION':'STATIC LETTERS';
   $('#pipelineMatch').classList.toggle('active',recognitionMode==='words');
   candidate='';candidateSince=0;committed='';
@@ -88,7 +92,17 @@ $('#recognitionMode').addEventListener('change',event=>{
   $('#captureSamplesButton').disabled=recognitionMode==='words';
   $('#demoButton').disabled=recognitionMode==='words';
   clearInterval(demoTimer);
-  $('#cameraHelp').textContent=recognitionMode==='words'?'Use Moving signs below to record or recognize a word with one or both hands.':'Hold one supported letter steady.';
+  $('#cameraHelp').textContent=recognitionMode==='words'?'With Automatic words enabled, sign once and pause briefly. Manual recording is also available.':'Hold one supported letter steady.';
+}
+$('#recognitionMode').addEventListener('change',event=>setRecognitionMode(event.target.value));
+$('#wordCaptureButton').addEventListener('click',async()=>{
+  $('#wordCaptureButton').disabled=true;
+  try{
+    if(!running)await startCamera();
+    if(!running)return;
+    if(recognitionMode!=='words')setRecognitionMode('words');
+    motionStudio.recognize();
+  }finally{$('#wordCaptureButton').disabled=motionStudio.isRecording();}
 });
 
 function loadAISamples(){
@@ -104,7 +118,7 @@ function classifyAI(points){
 
 async function loadPretrainedModel(){
   try{
-    const response=await fetch('./models/asl-knn.json');
+    const response=await fetch('./models/asl-knn.json?v=20261001-auto-cache-1');
     if(!response.ok)throw new Error('Pretrained model download failed');
     const model=await response.json();
     const labels=SIGNS.map(sign=>sign.letter);
@@ -181,7 +195,7 @@ function setLive(letter, confidence = 0){
 }
 
 async function loadRecognizer(){
-  if(handLandmarker) return;
+  if(handLandmarker){void faceTracker.load();return;}
   cameraButton.disabled = true;
   cameraButton.textContent = 'Loading recognizer…';
   try{
@@ -218,7 +232,7 @@ async function startCamera(){
     cameraStatus.classList.add('live');
     cameraStatus.innerHTML = '<i></i> Live';
     cameraButton.innerHTML = '<span aria-hidden="true">■</span> Stop camera';
-    $('#cameraHelp').textContent = recognitionMode==='words'?'Use Moving signs below to record or recognize a word.':'Hold a supported sign steady until it is added.';
+    $('#cameraHelp').textContent = recognitionMode==='words'?'With Automatic words enabled, sign once and pause briefly. Manual recording is also available.':'Hold a supported sign steady until it is added.';
     detect();
   }catch(error){
     stopCamera();
@@ -270,9 +284,18 @@ function detect(){
     lastVideoTime=video.currentTime;
     canvas.width=video.videoWidth;canvas.height=video.videoHeight;
     const now=performance.now();
-    const detection=handLandmarker.detectForVideo(video,now);
+    let detection={landmarks:[]};
+    if(handLandmarker){
+      try{detection=handLandmarker.detectForVideo(video,now);}
+      catch(error){
+        console.warn('Hand tracking stopped',error);
+        try{handLandmarker.close?.();}catch{}
+        handLandmarker=null;
+        $('#cameraHelp').textContent='Hand tracking stopped. Restart the camera to retry; face tracking can continue.';
+      }
+    }
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    faceTracker.draw(video,now,ctx,canvas.width,canvas.height);
+    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing());
     const hands=(detection.landmarks||[]).filter(isUsableHand);
     hands.forEach(drawHand);
     $('#trackingHands').textContent=`${hands.length} / 2`;

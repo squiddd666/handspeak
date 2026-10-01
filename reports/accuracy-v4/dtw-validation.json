@@ -1,0 +1,33 @@
+{
+  "best": {
+    "parameters": {
+      "maxDistance": 0.65,
+      "minRatio": 1.5,
+      "minVotes": 2,
+      "mirror": true,
+      "strongRatio": 2.5
+    },
+    "metrics": {
+      "correct": 16,
+      "wrong": 0,
+      "missed": 68,
+      "total": 84,
+      "unsupportedFalse": 0,
+      "unsupportedTotal": 26,
+      "syntheticFalse": 1,
+      "syntheticTotal": 24
+    },
+    "score": 72
+  },
+  "baseline": {
+    "correct": 47,
+    "wrong": 1,
+    "missed": 36,
+    "total": 84,
+    "unsupportedFalse": 4,
+    "unsupportedTotal": 26,
+    "syntheticFalse": 14,
+    "syntheticTotal": 24
+  },
+  "trainingReferences": 220
+}

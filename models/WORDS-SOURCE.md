@@ -11,7 +11,8 @@ Sahir Shahryar, Khushi Bhardwaj, and collaborators (2023).
 Changes: Selected a small subset of the original labeled video archive; extracted
 MediaPipe hand coordinates, removed untracked lead-in/end frames, interpolated
 short internal tracking gaps, corrected for image aspect ratio, normalized positions,
-and resampled to 20 frames.
+centered movements over all usable frames, selected a dominant continuous run
+when it contains at least 70% of usable frames, and resampled to 20 frames.
 Only coordinate templates are bundled; the original videos are not included.
 This project and its evaluation are not endorsed by the dataset authors.
 

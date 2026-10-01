@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="studio-theme.css">
+  <link rel="stylesheet" href="styles.css?v=20261001-auto-cache-1">
+  <link rel="stylesheet" href="studio-theme.css?v=20261001-auto-cache-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -73,9 +73,12 @@
         </div>
         <div class="camera-actions">
           <button class="primary-button" id="cameraButton" type="button"><span aria-hidden="true">◉</span> Start camera</button>
+          <button class="secondary-button" id="wordCaptureButton" type="button">Record a word</button>
           <button class="secondary-button" id="demoButton" type="button">Try demo</button>
         </div>
-        <div class="face-controls"><label><input type="checkbox" id="faceTrackingToggle" checked> Face tracking</label><span id="faceTrackingStatus" role="status">Camera off</span><span class="expression-readout">Expression: <b id="faceExpression" role="status">Camera off</b></span><small>Visible facial movements · not a measure of emotion</small></div>
+        <label class="speech-option"><input id="automaticWords" type="checkbox" checked> Automatic words · sign, then pause</label>
+        <p class="camera-tip" id="motionCaptureStatus" role="status">Select Words in motion and start the camera. Automatic words watches for movement; sign once, then pause briefly.</p>
+        <div class="face-controls"><label><input type="checkbox" id="faceTrackingToggle" checked> Face tracking</label><span id="faceTrackingStatus" role="status">Camera off</span><span class="expression-readout">Expression: <b id="faceExpression" role="status">Camera off</b></span><button class="secondary-button" id="faceRetry" type="button" hidden>Retry face tracking</button><small id="faceTrackingHelp">Visible facial movements · not a measure of emotion</small></div>
         <p class="camera-tip" id="cameraHelp">Use a well-lit space and keep your palm facing the camera.</p>
       </article>
 
@@ -170,14 +173,14 @@
 
     <section class="motion-section" id="motion-studio" aria-labelledby="motionTitle">
       <div class="section-title"><div><span class="eyebrow">Experimental · pretrained vocabulary</span><h2 id="motionTitle">Say it with a sign.</h2></div></div>
-      <p>Switch to Words in motion, start the camera, and select Recognize a recording. Sign one supported word during the capture, then review the result. Personal training is optional.</p>
+      <p>Select Words in motion and start the camera. Automatic words detects movement and suggests a word after you pause. Review the result here. You can also use Record a word for a timed capture. Personal training is optional.</p>
       <p id="motionModelStatus" role="status">Loading pretrained words…</p>
       <div class="motion-grid">
         <div class="trainer-card">
           <b id="motionReady">Loading pretrained vocabulary…</b>
           <p id="motionLibrary" class="camera-tip">Pretrained vocabulary will appear here.</p>
           <div class="camera-actions"><button class="primary-button" id="motionRecognize" type="button">Recognize a recording</button><button class="secondary-button" id="motionCancel" type="button" disabled>Cancel</button></div>
-          <p id="motionHelp" role="status" aria-live="polite">Each recording has a 1.5-second countdown, then captures 2.5 seconds of movement.</p>
+          <p id="motionHelp" role="status" aria-live="polite">Each recording has a 1.5-second countdown, then captures 2.5 seconds of movement. Slow cameras get up to 2 extra seconds to collect 12 frames.</p>
           <button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button>
           <label class="speech-option"><input id="motionAutoSpeak" type="checkbox"> Speak each word after I add it</label>
         </div>
@@ -204,6 +207,6 @@
 
   <footer><span>HANDSpeak / Cavite State University – Imus Campus</span><span>Capstone prototype · 2026</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=20261001-auto-cache-1"></script>
 </body>
 </html>

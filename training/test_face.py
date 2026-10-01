@@ -6,11 +6,11 @@ class FaceTests(unittest.TestCase):
     def setUp(self):
         self.js=quickjs.Context();self.js.eval((ROOT/'face-tracker.js').read_text().replace('export ',''))
         self.js.eval('''
-          const states=[],calls=[],draws=[],expressions=[];let fail=false,gpuFail=false,noFace=false,blendshapes=true;
+          const states=[],calls=[],draws=[],expressions=[],delegates=[];let fail=false,gpuFail=false,noFace=false,blendshapes=true;
           let coefficients={mouthSmileLeft:.9,mouthSmileRight:.9,jawOpen:.1,browInnerUp:.1,browDownLeft:.1,browDownRight:.1};
           const console={warn(){}};
           const model={detectForVideo(v,t){calls.push(t);if(fail)throw Error('inference');return {faceLandmarks:noFace?[]:[[{x:.2,y:.2},{x:.5,y:.6}]],faceBlendshapes:blendshapes?[{categories:Object.entries(coefficients).map(([categoryName,score])=>({categoryName,score}))}]:[]}},close(){}};
-          const api={FaceLandmarker:{FACE_LANDMARKS_FACE_OVAL:[{start:0,end:1}],async createFromOptions(f,o){if(!o.outputFaceBlendshapes)throw Error('Blendshapes must be enabled');if(gpuFail && o.baseOptions.delegate==='GPU')throw Error('GPU');return model}}};
+          const api={FaceLandmarker:{FACE_LANDMARKS_FACE_OVAL:[{start:0,end:1}],async createFromOptions(f,o){delegates.push(o.baseOptions.delegate);if(!o.outputFaceBlendshapes)throw Error('Blendshapes must be enabled');if(gpuFail && o.baseOptions.delegate==='GPU')throw Error('GPU');return model}}};
           const ctx={save(){},restore(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},arc(){},fill(){},strokeRect(){draws.push(1)}};
           const tracker=createFaceTracker(s=>states.push(s),s=>expressions.push(s));
         ''')
@@ -63,4 +63,25 @@ class FaceTests(unittest.TestCase):
         self.js.eval('tracker.load(api,{});');self.drain()
         self.js.eval('tracker.draw({},0,ctx,640,480);tracker.draw({},1200,ctx,640,480);')
         self.assertEqual(self.js.eval('expressions[expressions.length-1]'),'Smiling')
+    def test_runtime_gpu_error_recovers_on_cpu(self):
+        self.js.eval('tracker.load(api,{});');self.drain()
+        self.js.eval('fail=true;tracker.draw({},0,ctx,640,480);');self.drain()
+        self.assertEqual(self.js.eval('JSON.stringify(delegates)'), '["GPU","CPU"]')
+        self.js.eval('fail=false;tracker.draw({},200,ctx,640,480);')
+        self.assertEqual(self.js.eval('states[states.length-1]'),'Face tracked')
+        self.assertGreater(self.js.eval('draws.length'),0)
+    def test_failed_load_can_be_retried(self):
+        self.js.eval("const factory=api.FaceLandmarker.createFromOptions;api.FaceLandmarker.createFromOptions=async()=>{throw Error('offline')};tracker.load(api,{});");self.drain()
+        self.assertEqual(self.js.eval('states[states.length-1]'),'Unavailable')
+        self.js.eval('api.FaceLandmarker.createFromOptions=factory;tracker.load();');self.drain()
+        self.js.eval('tracker.draw({},200,ctx,640,480);')
+        self.assertEqual(self.js.eval('states[states.length-1]'),'Face tracked')
+    def test_word_recording_pauses_and_resumes_face_inference(self):
+        self.js.eval('tracker.load(api,{});');self.drain()
+        self.js.eval('tracker.draw({},0,ctx,640,480,true);tracker.draw({},100,ctx,640,480,true);')
+        self.assertEqual(self.js.eval('calls.length'),0)
+        self.assertEqual(self.js.eval('states[states.length-1]'),'Paused for word recording')
+        self.js.eval('tracker.draw({},200,ctx,640,480,false);')
+        self.assertEqual(self.js.eval('calls.length'),1)
+        self.assertEqual(self.js.eval('states[states.length-1]'),'Face tracked')
 if __name__=='__main__':unittest.main()

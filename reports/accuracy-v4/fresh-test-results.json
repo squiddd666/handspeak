@@ -1,0 +1,888 @@
+{
+  "protocol": "Fresh recordings selected before tuning. Source signer splits disjoint. Prior evaluations used other recordings of test signers. Source-timestamp segmentation replay is not a real-time webcam test.",
+  "selectedBeforeTest": "temporal",
+  "reports": {
+    "baseline": {
+      "wholeClip": {
+        "correct": 20,
+        "wrong": 0,
+        "missed": 16,
+        "total": 36,
+        "unsupportedFalse": 3,
+        "unsupportedTotal": 18,
+        "syntheticFalse": 13,
+        "syntheticTotal": 24
+      },
+      "automatic": {
+        "knownClips": 36,
+        "correctClips": 8,
+        "missedClips": 28,
+        "wrongSuggestions": 0,
+        "repeatedSuggestions": 0,
+        "unsupportedFalse": 1,
+        "syntheticFalse": 0
+      },
+      "perWord": {
+        "HELLO": {
+          "correct": 2,
+          "wrong": 0,
+          "missed": 4,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "THANK YOU": {
+          "correct": 4,
+          "wrong": 0,
+          "missed": 2,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "PLEASE": {
+          "correct": 5,
+          "wrong": 0,
+          "missed": 1,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "YES": {
+          "correct": 3,
+          "wrong": 0,
+          "missed": 3,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "NO": {
+          "correct": 4,
+          "wrong": 0,
+          "missed": 2,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "FINISH": {
+          "correct": 2,
+          "wrong": 0,
+          "missed": 4,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        }
+      }
+    },
+    "dtw": {
+      "wholeClip": {
+        "correct": 9,
+        "wrong": 0,
+        "missed": 27,
+        "total": 36,
+        "unsupportedFalse": 0,
+        "unsupportedTotal": 18,
+        "syntheticFalse": 3,
+        "syntheticTotal": 24
+      },
+      "automatic": {
+        "knownClips": 36,
+        "correctClips": 1,
+        "missedClips": 35,
+        "wrongSuggestions": 0,
+        "repeatedSuggestions": 0,
+        "unsupportedFalse": 0,
+        "syntheticFalse": 0
+      },
+      "perWord": {
+        "HELLO": {
+          "correct": 0,
+          "wrong": 0,
+          "missed": 6,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "THANK YOU": {
+          "correct": 1,
+          "wrong": 0,
+          "missed": 5,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "PLEASE": {
+          "correct": 4,
+          "wrong": 0,
+          "missed": 2,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "YES": {
+          "correct": 0,
+          "wrong": 0,
+          "missed": 6,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "NO": {
+          "correct": 4,
+          "wrong": 0,
+          "missed": 2,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "FINISH": {
+          "correct": 0,
+          "wrong": 0,
+          "missed": 6,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        }
+      }
+    },
+    "temporal": {
+      "wholeClip": {
+        "correct": 32,
+        "wrong": 0,
+        "missed": 4,
+        "total": 36,
+        "unsupportedFalse": 2,
+        "unsupportedTotal": 18,
+        "syntheticFalse": 0,
+        "syntheticTotal": 24
+      },
+      "automatic": {
+        "knownClips": 36,
+        "correctClips": 31,
+        "missedClips": 5,
+        "wrongSuggestions": 0,
+        "repeatedSuggestions": 0,
+        "unsupportedFalse": 2,
+        "syntheticFalse": 0
+      },
+      "perWord": {
+        "HELLO": {
+          "correct": 6,
+          "wrong": 0,
+          "missed": 0,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "THANK YOU": {
+          "correct": 5,
+          "wrong": 0,
+          "missed": 1,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "PLEASE": {
+          "correct": 6,
+          "wrong": 0,
+          "missed": 0,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "YES": {
+          "correct": 5,
+          "wrong": 0,
+          "missed": 1,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "NO": {
+          "correct": 6,
+          "wrong": 0,
+          "missed": 0,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        },
+        "FINISH": {
+          "correct": 4,
+          "wrong": 0,
+          "missed": 2,
+          "total": 6,
+          "unsupportedFalse": 0,
+          "unsupportedTotal": 0,
+          "syntheticFalse": 0,
+          "syntheticTotal": 0
+        }
+      }
+    }
+  },
+  "wholeClipPromotionGate": true,
+  "automaticReplayGate": false,
+  "promoted": false,
+  "remainingGates": [
+    "Real-time browser measurements",
+    "Physical webcam ordinary-motion negatives and live accuracy validation"
+  ],
+  "predictions": [
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "226393bc9285264fd40585089c19157c4495942f6af3cd740420f727e6f28e68",
+      "baseline": "HELLO",
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "1155626e72b3bea71722a2ab5532f645188de4fc45b9edaae584bbe4f20297c5",
+      "baseline": "HELLO",
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "dd0ed69ed39f472eaa79c9750faf284cc267eb88115adbddaf6cfa1303aa184f",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "92356765b9fea2005c51c159ff1fd0361918f8b9c6f70696c7122842f4955b18",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "94a835e4790afad5457a074410280584bb3756d9b150df9aa8d20731385f1ac0",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "9e845af51ac4593c3adb50897f1e61f4d11ea4c6431ef2396ccb63e6cf43a123",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "7c7033009240374ad28a8c9299ae313eee1a100b719b257b433136d73b15f367",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "f531457e5e3d2187a5f84162d5e170f4d847c88b359b0cd34b80a3259ae8a391",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "499b2e2a22564b2522d9068d403334bc0a651ffe91e3c953781575fcca4075bc",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "9af9c629afd81c621844add45fd3a94714f682dd8eea60666795349ab693f9fd",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "97f619739467e0016bf387e5f2cbb1451de6fb3786046dddd14938f0fd0760b9",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "6f0383e1993e28d10df079bad026a21fe36dfd8a2d73c165991015b557e0a0ae",
+      "baseline": "THANK YOU",
+      "dtw": "THANK YOU",
+      "temporal": "THANK YOU"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "43122255278df296bd4598fbf0c6b183ae8414df3ea8c08724f2b6dd335a9e5e",
+      "baseline": "PLEASE",
+      "dtw": "PLEASE",
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "756d76b4b72fbf6be60d50909650fe1b16a097891e6eadd7a3193ccea683ec7f",
+      "baseline": "PLEASE",
+      "dtw": "PLEASE",
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "dc0d25ac120cb05c448cf6455175c157710d0d9fd5a4c8175a59a6b6127e8208",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "c33c3dd0477775a6be29152f8262d1f2ca1757d32978e9fa0554dcd47d14b7f5",
+      "baseline": "PLEASE",
+      "dtw": null,
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "d14f0ba70b49da477857db1ba8fe81fd504ba7eaa421b82947034d3596f587a9",
+      "baseline": "PLEASE",
+      "dtw": "PLEASE",
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "359be50016abc48dc61ca4baab95a598b3b08c5d68e3c9926ed3ab31f1c4a9db",
+      "baseline": "PLEASE",
+      "dtw": "PLEASE",
+      "temporal": "PLEASE"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "bb5d109675ea214b76e02b5924c841dfa94bde34340fcf88f3428798d1919e4d",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "b5c71618de28cc8b1f600b9771855f41be66a8f909d9f0ec5a4a4bd56fbbfec8",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "eb4dc527fa1dab35cfd0b74d5952c821d4d62163f5aae11cd3612a50431022e4",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "cdab36963299699ece4734479df9b99725b259ea0da5e8878080e215bbaa415f",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "acc8b37bbd985b47ce9c8e464dbb4a0daf47c94eb193967544ca638aefd55e00",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "dd85cad4c185d24d65348bdf60598f086682b623cb2f4d83526e4c69ad095b21",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": "YES"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "292c8bbf9ff028296ff95e21805ac4b4ccc176e7d532d74fb95e0ca9060650e7",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "df5dcc24f3deadeef742614728550f9f95eaa525d73af6344a24450d19da5474",
+      "baseline": "NO",
+      "dtw": null,
+      "temporal": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "f8a3038e2a7b8dcd1ad76c4a7f305eb85f61dbc5b45740834c9eb65c821ec9aa",
+      "baseline": "NO",
+      "dtw": "NO",
+      "temporal": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "d1f8e4f50fac00d0116ab28a5cd71e1bb8d4a3d497351a727d20d64c6ed191b9",
+      "baseline": null,
+      "dtw": "NO",
+      "temporal": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "622bf54945407a3debbb7e8c732545ed7c771f02d510165ba5a52b8f50bb71a6",
+      "baseline": "NO",
+      "dtw": "NO",
+      "temporal": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "c23654b7666e58e300acccd2d4d0d6e0bf7ece8c87c9dbe2ff7c27e41ae55baa",
+      "baseline": "NO",
+      "dtw": "NO",
+      "temporal": "NO"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "c6446ca014d905fdd9dc0a0c73cdf0ac88c97892f86bf8ee8ec21307db654c0c",
+      "baseline": "FINISH",
+      "dtw": null,
+      "temporal": "FINISH"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "1aae1e5eb5bdd7f41ba3fd2e0a90dcc390b3ead08d0dee68dd70cea265196638",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "FINISH"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "e8754794a544e6f9d4f2f844850453f5f5f05fc7d16207273f116b3d10c1beef",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "FINISH"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "95216c1e43dd98cf13fa0bcab7b055674c43ea406f1c849a8209dbdd06547dae",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "4edfef2d074729ca8e2455a82bba2bfaacc42cc8480c2399dc91aa0c0d0f5be1",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "5e8184701f7143b16472fe7c6ab7dd00025528f1c90ce101f710f1c17d138103",
+      "baseline": "FINISH",
+      "dtw": null,
+      "temporal": "FINISH"
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "9cd1e753c7a8e2b2b7fe79a42bae8a2a8bcee240eb7f075a86a929caf4c9a5cb",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "8894ae63fdd1d94db0a3e99e833400d93418b383837fe5cf20db6bd999df8279",
+      "baseline": null,
+      "dtw": null,
+      "temporal": "HELLO"
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "c3302fb61d9437bdfa05a4c1bce41a299cfba388d680c91d3f059972c80cdb2d",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "eb25f7a41ed127a778b71ca59d73805217bd276a88435d87f6f27ed75b77b1e9",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "f85cfe6ff64b079df5dbc845511f1719c73f8ab1774a67bc71a8760188137467",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "DRINK",
+      "kind": "unsupported",
+      "sha256": "91120f18fd7af89f736bc8711fd22d6f819508a145d0edf123571e523381dd5f",
+      "baseline": "HELLO",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "410b2322e04e24b7faa86e9a2a2ad18a43f717ebdca7b111f9ed39118895ee98",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "d0703362a1b783ccde45f73dcb9a2ac48c42cbd04380a021254de465e1b6b287",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "60e4ac6c280c544d174328a3ebdf36fee1c17e1a4ff97e3a259140cedb8fede9",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "73ace968c491c6558c7e497b3df229523d68bf3800e33401ab496b6f33934ec2",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "2d4fb9980e2f4a88df66c66dd2e9f8f9eb60e4bd6d6a2ad47288e4a45bc2e1cd",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "WATER",
+      "kind": "unsupported",
+      "sha256": "258cf3c7a8c36160e7f99e99c2e82ae655814ec5b0220685fa97da5606d721df",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "c3db5d667406f58b1a154ae68dcac69c8cb774fbc94d0b19003032d483e34112",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "e2485c3ebf28b0150a9f92a12ee305b3a9d94d750dd73c1bef34962aeae68a04",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "d6382b9b6d9bacb779ac4e5d84ec856b5dd5c18af1a8c47fd132e7a0e42b0888",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "4b5d01b0e39786a4f1f866be0f4853a61952707134e01b47ecf44f23ba3bd276",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "cb0f943a6861de8d73eb02c7fe2ecf37f4c8512702ed88cdb371499dde09d9ac",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "unsupported",
+      "sha256": "cc47e0bdc9f7a8e2a04c473a20da412cb39d96cef445e0c237181847ca15cc99",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-0",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-1",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-2",
+      "baseline": "PLEASE",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-3",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-4",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-5",
+      "baseline": "NO",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-6",
+      "baseline": "HELLO",
+      "dtw": "HELLO",
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-7",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-8",
+      "baseline": "PLEASE",
+      "dtw": "PLEASE",
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-9",
+      "baseline": "HELLO",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-10",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-11",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-12",
+      "baseline": "YES",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-13",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-14",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-15",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-16",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-17",
+      "baseline": "THANK YOU",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-18",
+      "baseline": "FINISH",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-19",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-789-20",
+      "baseline": "NO",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-789-21",
+      "baseline": "HELLO",
+      "dtw": "HELLO",
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-789-22",
+      "baseline": "HELLO",
+      "dtw": null,
+      "temporal": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-789-23",
+      "baseline": null,
+      "dtw": null,
+      "temporal": null
+    }
+  ]
+}

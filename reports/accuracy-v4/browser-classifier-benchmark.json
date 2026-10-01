@@ -1,0 +1,19 @@
+{
+  "maxLogitError": 3.2201951256638495e-06,
+  "maxFeatureError": 1.1881266326341233e-07,
+  "latency": {
+    "temporal": {
+      "medianMs": 9.699999988079071,
+      "p95Ms": 133.3999999910593
+    },
+    "dtw": {
+      "medianMs": 22.399999991059303,
+      "p95Ms": 149.5
+    },
+    "baseline": {
+      "medianMs": 11.900000005960464,
+      "p95Ms": 136.6000000089407
+    }
+  },
+  "scope": "Classifier only, one development clip, 20 timed runs after warmup. Excludes hand/pose tracking and does not establish phone or physical webcam performance."
+}

@@ -48,7 +48,7 @@ class ModelTests(unittest.TestCase):
           const window = {addEventListener(){}};
           const localStorage = {getItem(){return null},setItem(){},removeItem(){}};
           const console = {warn(){}};
-          function setTimeout(){} function clearTimeout(){} function cancelAnimationFrame(){}
+          function setTimeout(){} function clearTimeout(){} function clearInterval(){} function cancelAnimationFrame(){}
         ''')
         self.js.eval('const fetch = async path => '+(
             "({ok:false,json:async()=>({})});" if failure else
@@ -132,6 +132,33 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(self.js.eval('pendingSamples.length'), 1)
         self.js.eval('endTraining();video.currentTime=2;detect();')
         self.assertEqual(self.js.eval('stabilized'), 1)
+
+    def test_hand_error_does_not_stop_face_loop(self):
+        self.boot_app()
+        self.js.eval('''
+          const performance={now:()=>1000};let faceFrames=0,scheduled=0;
+          function requestAnimationFrame(){scheduled++}
+          faceTracker.draw=()=>{faceFrames++};
+          handLandmarker={detectForVideo(){throw Error('GPU lost')},close(){}};
+          video.readyState=2;video.currentTime=1;video.videoWidth=640;video.videoHeight=480;running=true;
+          detect();video.currentTime=2;detect();
+        ''')
+        self.assertEqual(self.js.eval('faceFrames'),2)
+        self.assertEqual(self.js.eval('scheduled'),2)
+        self.assertIsNone(self.js.eval('handLandmarker'))
+
+    def test_camera_restart_retries_face_model(self):
+        self.boot_app()
+        self.js.eval('let faceLoads=0;faceTracker.load=()=>{faceLoads++};handLandmarker={};loadRecognizer();')
+        while self.js.execute_pending_job():pass
+        self.assertEqual(self.js.eval('faceLoads'),1)
+    def test_camera_word_button_selects_word_mode(self):
+        self.boot_app()
+        self.js.eval("let started=0;running=true;motionStudio.recognize=()=>{started++};motionStudio.isCapturing=()=>true;elements['#wordCaptureButton'].listeners.click();")
+        while self.js.execute_pending_job():pass
+        self.assertEqual(self.js.eval('recognitionMode'),'words')
+        self.assertEqual(self.js.eval('started'),1)
+        self.assertTrue(self.js.eval("elements['#wordCaptureButton'].disabled"))
 
 
 

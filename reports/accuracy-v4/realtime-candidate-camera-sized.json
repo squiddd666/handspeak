@@ -1,0 +1,107 @@
+{
+  "method": "Normal-speed video playback at real wall-clock timing, CPU hand tracker, automatic segmenter, center-frame Pose Landmarker and frozen temporal model. Bounded in-memory image thumbnails only. Also evaluates baseline on identical captured hand segments. Training-video functional benchmark; not a physical-webcam accuracy test. This is an evaluation harness, not a deployed replacement.",
+  "results": [
+    {
+      "name": "hello",
+      "durationMs": 2133.333,
+      "wallPlaybackMs": 2291.7000000029802,
+      "frames": 30,
+      "handInferenceP95Ms": 300.5,
+      "suggestions": [
+        {
+          "timeMs": 2623.7000000029802,
+          "candidate": null,
+          "baseline": null,
+          "candidateIncludingPoseMs": 530.5,
+          "bodyFound": true,
+          "samples": 13
+        }
+      ]
+    },
+    {
+      "name": "thank-you",
+      "durationMs": 1108.333,
+      "wallPlaybackMs": 1298.2000000029802,
+      "frames": 34,
+      "handInferenceP95Ms": 331.80000001192093,
+      "suggestions": [
+        {
+          "timeMs": 2169.2999999970198,
+          "candidate": null,
+          "baseline": null,
+          "candidateIncludingPoseMs": 96.59999999403954,
+          "bodyFound": false,
+          "samples": 12
+        }
+      ]
+    },
+    {
+      "name": "please",
+      "durationMs": 1100,
+      "wallPlaybackMs": 1351.7999999970198,
+      "frames": 42,
+      "handInferenceP95Ms": 198.80000001192093,
+      "suggestions": [
+        {
+          "timeMs": 1810,
+          "candidate": "PLEASE",
+          "baseline": null,
+          "candidateIncludingPoseMs": 171.09999999403954,
+          "bodyFound": true,
+          "samples": 14
+        }
+      ]
+    },
+    {
+      "name": "yes",
+      "durationMs": 1700,
+      "wallPlaybackMs": 1774.800000011921,
+      "frames": 47,
+      "handInferenceP95Ms": 175,
+      "suggestions": [
+        {
+          "timeMs": 2324,
+          "candidate": "YES",
+          "baseline": "YES",
+          "candidateIncludingPoseMs": 179.40000000596046,
+          "bodyFound": true,
+          "samples": 20
+        }
+      ]
+    },
+    {
+      "name": "no",
+      "durationMs": 2000,
+      "wallPlaybackMs": 2073.2000000029802,
+      "frames": 50,
+      "handInferenceP95Ms": 129.5,
+      "suggestions": [
+        {
+          "timeMs": 2372.7000000029802,
+          "candidate": "NO",
+          "baseline": "NO",
+          "candidateIncludingPoseMs": 167.20000000298023,
+          "bodyFound": true,
+          "samples": 20
+        }
+      ]
+    },
+    {
+      "name": "finish",
+      "durationMs": 1691.6670000000001,
+      "wallPlaybackMs": 1771.5999999940395,
+      "frames": 47,
+      "handInferenceP95Ms": 142.79999999701977,
+      "suggestions": [
+        {
+          "timeMs": 1864,
+          "candidate": "FINISH",
+          "baseline": null,
+          "candidateIncludingPoseMs": 167.20000000298023,
+          "bodyFound": true,
+          "samples": 12
+        }
+      ]
+    }
+  ]
+}

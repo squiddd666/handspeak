@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "created": "2026-10-01",
+  "scope": "Six existing ASL words; no new supported vocabulary",
+  "training": "Original training references plus new clips; unsupported DRINK, WATER, BOOK training negatives",
+  "validation": "Original and additional validation recordings; candidate tuning only on validation",
+  "freshTest": "Six additional recordings per word and per unsupported sign from source test split, excluding every original selected member. Test payloads downloaded and evaluated only after candidate selection is frozen.",
+  "separation": "Enforce source participant IDs disjoint across train/validation/test and unique video hashes. New test recordings, but test signer population has been used in previous regression evaluations; not a fresh-population benchmark.",
+  "candidates": [
+    "Expanded DTW reference model with validation rejection thresholds",
+    "Compact temporal convolution network on hand shape, trajectories, and upper-body-relative location"
+  ],
+  "nuisanceNegatives": "Synthetic still hands, camera drift, no hands and landmark jitter, separately reported. These do not substitute for physical webcam recordings of ordinary hand movements.",
+  "selection": "Minimize validation 4*wrong + missed + 4*unsupported false accepts. Freeze candidate configuration before fresh test.",
+  "promotion": "Correct count must exceed deployed baseline on identical fresh test; wrong count and unsupported false accepts must not exceed baseline. Automatic-boundary and real-time browser latency checks must pass. Physical-webcam ordinary-motion validation remains required for a claim of general live-camera improvement.",
+  "liveSite": "Keep existing model until all applicable gates pass. Do not tune on fresh test outcomes.",
+  "bodyFeatures": "Center-frame upper-body reference held fixed over the 30 hand-motion samples; temporal network resamples to 32 frames.",
+  "browserBudget": "Classifier p95 <=150ms in 20 post-warmup Chromium runs on this host; extraction excluded and separately assessed by real-time virtual-camera replay. This is not a phone or physical-webcam performance guarantee."
+}

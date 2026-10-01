@@ -1,0 +1,73 @@
+{
+  "selected": "temporal",
+  "selectionRule": "Lower validation objective; ties prefer DTW",
+  "validation": {
+    "temporal": {
+      "seed": 29,
+      "width": 32,
+      "epoch": 80,
+      "threshold": 0.95,
+      "margin": 0,
+      "metrics": {
+        "correct": 64,
+        "wrong": 1,
+        "missed": 19,
+        "total": 84,
+        "unsupportedFalse": 1,
+        "unsupportedTotal": 26,
+        "syntheticFalse": 0,
+        "syntheticTotal": 24
+      },
+      "score": 27
+    },
+    "dtw": {
+      "parameters": {
+        "maxDistance": 0.65,
+        "minRatio": 1.5,
+        "minVotes": 2,
+        "mirror": true,
+        "strongRatio": 2.5
+      },
+      "metrics": {
+        "correct": 16,
+        "wrong": 0,
+        "missed": 68,
+        "total": 84,
+        "unsupportedFalse": 0,
+        "unsupportedTotal": 26,
+        "syntheticFalse": 1,
+        "syntheticTotal": 24
+      },
+      "score": 72
+    },
+    "baseline": {
+      "correct": 47,
+      "wrong": 1,
+      "missed": 36,
+      "total": 84,
+      "unsupportedFalse": 4,
+      "unsupportedTotal": 26,
+      "syntheticFalse": 14,
+      "syntheticTotal": 24
+    }
+  },
+  "files": {
+    "temporal-candidate.pt": "5694c8d6f5f414ce710cd827c666673cc22b10ee84810d617a66f1cd3a40eb17",
+    "dtw-candidate.json": "96b01eec6db751dda08f8b8b4bff7cc748c261cfda4f6ac319cb03680002fef8",
+    "development-manifest.json": "6a1ba76f9ca5978649b10aa597e1418d0ef3b9cd58391431676d0c90f8e327a2",
+    "development-features.json": "4170b8a074ba0dcce6cbad0ec9121b218895b426475cc617de18d3477c30ddad",
+    "selection.json": "82ce1b3deaccfa968771df612e913ee0cd4abcb9e09707ed09504bb91b8ed465",
+    "protocol.json": "e5f93d178237503c58de8889a86341ac1f81bcdb4797d3eb1043dfdb664503a9"
+  },
+  "baselineSha256": "87120aca551e449d8ab8ce1cabb03960744a10938a23377e1f2944bf0eb7ad2f",
+  "codeHashes": {
+    "test_experiment.py": "2be23ff93fb1a07224d1777249404568f4afc4ab001427fb0a5b2b0cdfa4976e",
+    "realtime_browser.py": "66e339787bc3a4e9861e32687c19a316ee941b5f2b1367a70e713fa40593d8be",
+    "evaluate.py": "a10af92c3ca7e36d73351337190471cdf8e2c3288c6db9f7a64f8c0e7220f302",
+    "extract.py": "ebc0e10639be496671cd4e22352fcfe795b28696d5e5ab6bf65e5ac59ec11a1a",
+    "temporal.py": "471f6653cffbf0566d617ca4d719932347a84e2021c60a5ded2dfdde6ac6f6f3",
+    "browser_benchmark.py": "18cf8e0df48c76e881a7e230cde4ee94837394e21f58efada791641deb1dd02c",
+    "prepare.py": "7451deb455da5b8a5db4ff789b8e973b074cd1b069aae7cfe5ceb21f05b43ccb",
+    "dtw.py": "681598cc6df9ebd6716e29766693d60591b14e790d282bf03fbd21ccfc7974a6"
+  }
+}

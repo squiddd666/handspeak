@@ -1,0 +1,44 @@
+[
+  {
+    "name": "hello",
+    "source": "/opt/handspeak/asl-examples/hello.mp4",
+    "sourceSha256": "6352aac99b878d074d04a8595261cce937e3f4c79a18a8c1b3dbb6822bf2a0ce",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/hello.mp4",
+    "derivedSha256": "bd9e2b2782a1a23428bb5784273577fef1f7d1f8728937f294f57ff172e55147"
+  },
+  {
+    "name": "thank-you",
+    "source": "/opt/handspeak/asl-examples/thank-you.mp4",
+    "sourceSha256": "b2e8d5e6f8524b4743a988bced9e72d6f06afb0cd0830a5d570f3b0665ed7dfe",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/thank-you.mp4",
+    "derivedSha256": "f38675a008224e5521329f10a581c31acb76f84902906fdefa03ba18cfebe3ec"
+  },
+  {
+    "name": "please",
+    "source": "/opt/handspeak/asl-examples/please.mp4",
+    "sourceSha256": "940a0cea5cf50ca0a58676c686695a06ca9c30c2cd7dd3bf55abd6149d138c13",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/please.mp4",
+    "derivedSha256": "510d1a31fe1901efa9dfda3283b342f447b4a31664d1974eb158d5ac14d826c0"
+  },
+  {
+    "name": "yes",
+    "source": "/opt/handspeak/asl-examples/yes.mp4",
+    "sourceSha256": "4b1bb842ec91a3869f1599aaa240b5c6fee46d986abfe39a532bbdb793db5b1e",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/yes.mp4",
+    "derivedSha256": "9dd7261b9736ca35c39c41e05813febc24f286c96d7b89a6a021ee4b15ddb18c"
+  },
+  {
+    "name": "no",
+    "source": "/opt/handspeak/asl-examples/no.mp4",
+    "sourceSha256": "c3387d32cd898619d1968d2852b912246bee40090e31497cc969c29acf6daf30",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/no.mp4",
+    "derivedSha256": "2d7b1512215ceef2d93deeaf7c40560bb40a9c1eaad8a5c6abc4bd30ee0f455d"
+  },
+  {
+    "name": "finish",
+    "source": "/opt/handspeak-training/popsign/train/finish/4a.7003-finish-2022_12_18_19_16_12.553-0.mp4",
+    "sourceSha256": "f456631d377f213918ca6243e84b8efc15fd0d41a12531bfa711f925a96139a4",
+    "derived": "/opt/handspeak-training/accuracy-v4/camera-videos/finish.mp4",
+    "derivedSha256": "ad933bd770623e326eef4047a5aaec3b12e5c40a0c4357fe62b32bf628a2d701"
+  }
+]

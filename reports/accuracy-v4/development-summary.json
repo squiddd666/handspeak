@@ -1,0 +1,23 @@
+{
+  "records": 398,
+  "splitCounts": {
+    "train": 288,
+    "val": 110
+  },
+  "trainingUsable": {
+    "HELLO": 26,
+    "THANK YOU": 20,
+    "PLEASE": 34,
+    "YES": 35,
+    "NO": 36,
+    "FINISH": 38,
+    "DRINK": 10,
+    "WATER": 10,
+    "BOOK": 11
+  },
+  "bodyReferenceAvailable": 395,
+  "handSequenceRejected": {
+    "train": 68,
+    "val": 38
+  }
+}

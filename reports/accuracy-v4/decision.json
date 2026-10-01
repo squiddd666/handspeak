@@ -1,0 +1,31 @@
+{
+  "promoted": false,
+  "selectedCandidate": "temporal",
+  "reason": "Automatic replay unsupported false suggestions increased from 1 to 2, violating the no-increase requirement. Real-time training-example replay also missed HELLO and THANK YOU.",
+  "wholeClipGate": true,
+  "automaticReplayGate": false,
+  "classifierTimingGate": true,
+  "realTimeCandidate": {
+    "correct": 4,
+    "total": 6,
+    "wrongSuggestions": 0,
+    "repeats": 0,
+    "sameSegmentsBaselineCorrect": 2,
+    "poseAndClassifierMs": {
+      "median": 169.14999999850988,
+      "max": 530.5
+    },
+    "correctResultAfterVideoEndMs": {
+      "median": 378.8500000014901,
+      "max": 549.1999999880791
+    }
+  },
+  "deployedModelUnchanged": true,
+  "productionFix": "Versioned local asset URLs and revalidation headers; verified current automatic-word code loads and toggle works over public HTTPS.",
+  "limitations": [
+    "36 fresh supported recordings and 18 unsupported recordings; test signer population previously evaluated on different clips.",
+    "24 ordinary-motion negatives are synthetic, not physical-webcam footage.",
+    "Real-time functional tests use six training videos resized to camera resolution, CPU inference, and face tracking off. They are not independent accuracy or physical-webcam benchmarks.",
+    "Temporal browser body detection uses Pose Landmarker; training body references use Python Pose. The end-to-end replay tests this practical difference but does not establish general equivalence."
+  ]
+}

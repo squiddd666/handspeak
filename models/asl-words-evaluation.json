@@ -2,6 +2,8 @@
   "source": "PopSign ASL v1.0 (game category)",
   "sourceUrl": "https://signdata.cc.gatech.edu/view/guides/downloading_popsign/index.html",
   "license": "CC-BY-4.0",
+  "encoding": "two-hand-motion-v3",
+  "evaluationProtocol": "Feature revision and thresholds selected on validation only. This test subset was evaluated by the prior version, so results are a regression comparison rather than a fresh independent benchmark. Test recordings are never training references.",
   "selection": "First archive members, at most three per signer per word; 24 train, 8 validation, 12 test requested per word.",
   "signers": {
     "train": [
@@ -64,14 +66,14 @@
     "test": 84
   },
   "usable": {
-    "train": 107,
-    "val": 33,
-    "test": 61
+    "train": 116,
+    "val": 38,
+    "test": 68
   },
   "excludedForTracking": {
-    "train": 37,
-    "val": 23,
-    "test": 23
+    "train": 28,
+    "val": 18,
+    "test": 16
   },
   "unknownWordTest": {
     "label": "DRINK",
@@ -79,61 +81,67 @@
     "falseAccepts": 6,
     "rejected": 5
   },
+  "validationUnknownWord": {
+    "label": "DRINK",
+    "total": 7,
+    "falseAccepts": 1
+  },
   "trainingPerWord": {
-    "HELLO": 14,
+    "HELLO": 16,
     "THANK YOU": 14,
-    "PLEASE": 22,
-    "YES": 22,
-    "NO": 17,
-    "FINISH": 18
+    "PLEASE": 23,
+    "YES": 23,
+    "NO": 20,
+    "FINISH": 20
   },
   "parameters": {
     "maxDistance": 0.65,
     "minRatio": 1.0,
-    "minVotes": 1,
-    "mirror": true
+    "minVotes": 2,
+    "mirror": true,
+    "strongRatio": 1.5
   },
   "validation": {
-    "correct": 20,
+    "correct": 26,
     "wrong": 0,
-    "rejected": 7,
-    "total": 27,
-    "coverage": 0.7407407407407407,
+    "rejected": 5,
+    "total": 31,
+    "coverage": 0.8387096774193549,
     "accuracyAmongAccepted": 1.0,
-    "accuracyIncludingRejections": 0.7407407407407407
+    "accuracyIncludingRejections": 0.8387096774193549
   },
   "test": {
-    "correct": 31,
+    "correct": 38,
     "wrong": 4,
     "rejected": 15,
-    "total": 50,
-    "coverage": 0.7,
-    "accuracyAmongAccepted": 0.8857142857142857,
-    "accuracyIncludingRejections": 0.62
+    "total": 57,
+    "coverage": 0.7368421052631579,
+    "accuracyAmongAccepted": 0.9047619047619048,
+    "accuracyIncludingRejections": 0.6666666666666666
   },
   "confusion": {
     "HELLO": {
-      "HELLO": 2,
+      "HELLO": 6,
       "THANK YOU": 0,
-      "PLEASE": 0,
-      "YES": 0,
-      "NO": 0,
-      "FINISH": 1,
-      "rejected": 5
-    },
-    "THANK YOU": {
-      "HELLO": 0,
-      "THANK YOU": 6,
       "PLEASE": 0,
       "YES": 0,
       "NO": 0,
       "FINISH": 0,
-      "rejected": 4
+      "rejected": 3
+    },
+    "THANK YOU": {
+      "HELLO": 0,
+      "THANK YOU": 8,
+      "PLEASE": 0,
+      "YES": 0,
+      "NO": 0,
+      "FINISH": 0,
+      "rejected": 3
     },
     "PLEASE": {
       "HELLO": 0,
       "THANK YOU": 0,
-      "PLEASE": 10,
+      "PLEASE": 11,
       "YES": 0,
       "NO": 0,
       "FINISH": 0,
@@ -143,19 +151,19 @@
       "HELLO": 0,
       "THANK YOU": 0,
       "PLEASE": 0,
-      "YES": 7,
+      "YES": 8,
       "NO": 1,
       "FINISH": 0,
-      "rejected": 1
+      "rejected": 3
     },
     "NO": {
       "HELLO": 0,
       "THANK YOU": 0,
       "PLEASE": 0,
-      "YES": 0,
-      "NO": 4,
-      "FINISH": 1,
-      "rejected": 0
+      "YES": 2,
+      "NO": 3,
+      "FINISH": 0,
+      "rejected": 1
     },
     "FINISH": {
       "HELLO": 1,
@@ -168,7 +176,7 @@
     }
   },
   "testIncludingTrackingFailures": {
-    "correct": 31,
+    "correct": 38,
     "total": 72
   },
   "limitations": "Small six-word subset; only sufficiently tracked clips evaluated. No live-camera accuracy benchmark. Unsupported-word evaluation covers DRINK only. Distance is not a probability. Review suggestions before adding them.",

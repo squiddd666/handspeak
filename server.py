@@ -114,6 +114,8 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
         self.send_header("Permissions-Policy", "camera=(self), microphone=()")
         if self.path.startswith("/api/"):
             self.send_header("Cache-Control", "no-store")
+        else:
+            self.send_header("Cache-Control", "no-cache, must-revalidate")
         super().end_headers()
 
     def do_GET(self) -> None:

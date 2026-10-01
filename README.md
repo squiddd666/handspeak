@@ -114,12 +114,21 @@ its MediaPipe runtime/model on first use, but classification stays on-device.
 The website automatically loads `models/asl-words.json`. No personal training is
 required for **HELLO, THANK YOU, PLEASE, YES, NO, and FINISH**.
 
-1. Select **Words in motion** above the camera and start the camera.
-2. Under **Moving signs**, wait for **6 pretrained words loaded**.
-3. Select **Recognize a recording**. After a 1.5-second countdown, perform one
-   supported sign during the 2.5-second capture. Keep both hands in frame.
-4. Review the suggestion, then select **Add matched word**. Optionally enable
-   speech after adding, or use **Speak message** for the composed message.
+1. Select **Words in motion** and start the camera.
+2. Leave **Automatic words** enabled (the default). Sign one supported word, then pause briefly.
+3. A possible match appears over the camera. Review it and select **Add matched word** before adding it to the message.
+
+Automatic capture keeps a short 350 ms lead-in, starts on hand movement, and
+finishes after a 600 ms pause with at least 12 samples, or after 4.5 seconds.
+It requires a quiet interval and cooldown before the next sign, avoiding repeated
+suggestions from ongoing movement. Camera gaps and orientation changes discard
+partial movements. This is experimental isolated-sign segmentation, not sentence
+translation; it does not improve the classifier's measured accuracy.
+
+**Record a word** remains available for a manual countdown and timed capture.
+Disable Automatic words to use only manual recording. Face inference pauses
+during active word capture to give hand tracking more processing time. Matches
+are suggestions only: automatic capture never appends text or speaks by itself.
 
 This is a nearest-template sequence classifier trained from a small subset of
 [PopSign ASL v1.0](https://signdata.cc.gatech.edu/view/guides/downloading_popsign/index.html),
@@ -127,10 +136,13 @@ game category, CC BY 4.0. See `models/WORDS-SOURCE.md` for attribution.
 It does not train a new neural network: MediaPipe supplies hand landmarks and
 training builds labeled motion references. Up to two hands are tracked, leading
 and trailing untracked frames are trimmed, and internal gaps of at most two frames
-are interpolated. Coordinates are corrected for camera aspect ratio. Hand paths and relative positions are normalized by palm width,
+are interpolated. Coordinates are corrected for camera aspect ratio. Hand paths are centered over the full movement and normalized by palm width,
 resampled to 20 frames, and compared using banded dynamic time warping. Matching
-checks both mirrored orientations. Validation selects distance, class-separation,
-and neighbor-agreement cutoffs; this run selected distance rejection only.
+checks both mirrored orientations. A continuous run containing at least 70% of
+usable frames can replace isolated entry/exit fragments; long disconnected runs
+are not joined. Validation selects distance, class-separation, and neighbor-vote
+cutoffs. Two nearby references must agree, unless the closest competing word is
+at least 1.5 times farther away. The maximum-distance check still applies.
 
 The source's train/validation/test partitions are preserved, with no overlapping
 participant IDs. Validation selects rejection thresholds; test recordings never
@@ -138,13 +150,18 @@ enter the template library. DRINK is reserved as an unsupported-word check.
 `models/asl-words-evaluation.json` reports counts, tracking failures, confusion,
 and accuracy both with and without rejected predictions. `asl-words-sources.json`
 records source archive members and SHA-256 hashes for audit/reproduction.
-The bundled model contains 107 usable training examples. On 50 tracked test clips,
-31 predictions were correct, 4 wrong, and 15 rejected: 88.57% correct among accepted
-matches, 70% coverage, and 62% correct including rejections. Another 22 of the 72
-known-word test videos failed tracking/sequence checks, giving 31/72 correct over
-the complete selected known-word test set. Of 11 tracked unsupported DRINK clips,
-6 were incorrectly accepted and 5 rejected. This is a significant limitation:
-the distance cutoff does not reliably reject signs outside the vocabulary.
+The revised v3 model contains 116 usable training examples. On 57 tracked test
+clips, 38 predictions were correct, 4 wrong, and 15 rejected: 90.48% correct among
+accepted matches, 73.68% coverage, and 66.67% correct including rejections. Another
+15 of the 72 known-word test videos failed tracking/sequence checks, giving 38/72
+correct over the complete selected known-word test set. The prior version gave
+31/72 correct and also made 4 wrong predictions; its report is preserved in
+`models/asl-words-evaluation-v2.json`. This is a regression comparison on previously
+evaluated recordings, not a new independent benchmark. On validation, 26/31
+tracked known-word clips were correct, none wrong, and five rejected.
+Of 11 tracked unsupported DRINK test clips, 6 were incorrectly accepted and 5
+rejected. This remains a significant limitation: rejection of signs outside the
+vocabulary is unreliable.
 The evaluation uses a small subset of isolated videos; it does not establish
 live-camera or continuous-signing accuracy. Unsupported signs can still match a
 known word. Distance is not a calibrated confidence probability. Review every
@@ -152,12 +169,12 @@ suggestion before adding it. Face/body/grammar/LLM interpretation is not used.
 
 **Optional personalization:** Expand **Optional: add your own word examples**,
 enter a label, and record at least three examples for a new word. Personal
-recordings store coordinates only in `handspeak-motion-v2` in browser localStorage;
+recordings store coordinates only in `handspeak-motion-v3` in browser localStorage;
 no video/audio is recorded or uploaded. The personal library allows 8 recordings
 per word and 96 overall. Removing personal examples preserves pretrained words.
 Personal examples supplement the references but have no evaluated accuracy.
-Older `handspeak-motion-v1` recordings are retained in storage but not loaded,
-because their geometry did not account for camera aspect ratio. They can be
+Older `handspeak-motion-v1` and `handspeak-motion-v2` recordings are retained in
+storage but not loaded because v3 changed movement centering and segmentation. They can be
 re-recorded optionally; the pretrained vocabulary works without them.
 Stopping the camera, changing modes, or Cancel discards an unfinished recording.
 A fresh recording never adds text or speaks until the user confirms the match.
@@ -180,7 +197,14 @@ Extraction uses the same browser sequence encoding and reuses cached landmarks.
 Exported models/evaluation files are written to `models/` in this checkout.
 `motion-model.js` handles matching, `motion-studio.js` handles recording and
 confirmation, and tests cover recording behavior, automatic model loading, source
-split integrity, and exact Python/browser heldout prediction agreement.
+split integrity, and exact Python/browser reserved-test prediction agreement.
+
+`training/check_word_videos.py --videos /path/to/asl-examples` replays the five
+provided MP4 examples through the actual browser MediaPipe hand detector, checks
+video seeking, and resets tracking between clips. It requires Playwright/Chromium
+and the website running on localhost:8000. Its clips were selected from training
+recordings, so this is a functional integration check, not an accuracy benchmark.
+Only the summary is bundled in `models/asl-words-browser-check.json`.
 
 ## Face tracking
 
@@ -189,7 +213,11 @@ eye/lip contours, and sparse landmarks. Use the **Face tracking** checkbox under
 the camera to turn it off or on. The visible status reports loading, readiness,
 face presence, or unavailability. Face inference is limited to roughly 10 Hz to
 leave processing time for hand tracking; GPU initialization falls back to CPU.
-A face-model failure is contained and hand recognition continues.
+A face-model failure is contained and hand recognition continues. Runtime GPU
+errors retry face tracking on CPU. If both paths fail, select **Retry face tracking**
+or restart the camera. Hand inference errors no longer stop the face drawing loop.
+The face outline uses a bright stroke, and detection uses MediaPipe's default 0.5
+thresholds. The status gives framing guidance when no face is detected.
 
 The camera also shows visible expression cues: Smiling, Mouth open, Brows raised,
 and Brows lowered. These use MediaPipe blendshape coefficients with experimental
@@ -205,3 +233,7 @@ Implementation: `face-tracker.js`. Model: Google's
 [Face Landmarker](https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker/web_js).
 `training/test_face.py` covers throttling, toggle/reset behavior, CPU fallback,
 and isolated loading/inference failures.
+
+Slow word captures can extend by up to two seconds after the normal 2.5-second recording window to reach the existing 12-frame minimum. A stalled stream still times out; no frames are duplicated to pass the minimum. This does not guarantee word recognition.
+
+The October 2026 accuracy experiment trained an additional temporal candidate. It remains evaluation-only: fresh whole-clip recognition improved, but automatic unsupported-sign suggestions increased. See `reports/accuracy-v4/README.md` in the Git checkout for the recorded results. Local application assets use a release query tag, and the server requests revalidation to avoid stale CDN code.
