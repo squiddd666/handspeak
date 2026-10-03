@@ -1,0 +1,58 @@
+{
+  "labels": [
+    "THIRSTY",
+    "HOT",
+    "SICK",
+    "READ",
+    "CALL",
+    "FIND",
+    "NOW",
+    "TOMORROW"
+  ],
+  "originalOutputLabels": [
+    "THIRSTY",
+    "HOT",
+    "SICK",
+    "READ",
+    "GIVE",
+    "CALL",
+    "FIND",
+    "NOW",
+    "TOMORROW",
+    "MILK"
+  ],
+  "rejectedOutputLabels": [
+    "MILK",
+    "GIVE",
+    "OTHER MOVEMENT"
+  ],
+  "selection": "MILK and GIVE excluded based on development validation errors, before fresh test access.",
+  "checkpointSha256": "ee7ce525181dc3232fb677dbfea58fc8a2669d1b6668115f277356161649fea3",
+  "width": 32,
+  "threshold": 0.97,
+  "margin": 0,
+  "testLabels": [
+    "THIRSTY",
+    "HOT",
+    "SICK",
+    "READ",
+    "CALL",
+    "FIND",
+    "NOW",
+    "TOMORROW",
+    "MILK",
+    "GIVE",
+    "CAR",
+    "LIKE",
+    "HELLO",
+    "WATER",
+    "PLEASE",
+    "FINISH"
+  ],
+  "requestedClipsPerLabel": 6,
+  "maxClipsPerSigner": 2,
+  "screeningGate": "At least 50% correct target clips, zero wrong words and other-sign accepts, at least one correct per target.",
+  "deploymentGate": "Fresh clip testing alone is insufficient. Also require ordinary-movement negatives, runtime feature parity, and live automatic-camera/browser tests.",
+  "limitations": "Test uses fresh recordings from the official test signer pool. That signer pool has appeared in earlier experiments; do not call it a never-inspected population. Train, validation, and test participants remain separate.",
+  "sourceDevelopmentSha256": "72ffb8b4fd58fd3f542f9edd48971226aa14ef95220a530b2d1b43a1cc37e171"
+}

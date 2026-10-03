@@ -1,0 +1,42 @@
+{
+  "total": 32,
+  "correct": 23,
+  "wrong": 0,
+  "missed": 9,
+  "negativeTotal": 162,
+  "negativeFalse": 0,
+  "perWord": {
+    "THIRSTY": {
+      "total": 4,
+      "correct": 3
+    },
+    "HOT": {
+      "total": 4,
+      "correct": 3
+    },
+    "SICK": {
+      "total": 4,
+      "correct": 4
+    },
+    "READ": {
+      "total": 4,
+      "correct": 4
+    },
+    "CALL": {
+      "total": 4,
+      "correct": 2
+    },
+    "FIND": {
+      "total": 4,
+      "correct": 3
+    },
+    "NOW": {
+      "total": 4,
+      "correct": 2
+    },
+    "TOMORROW": {
+      "total": 4,
+      "correct": 2
+    }
+  }
+}

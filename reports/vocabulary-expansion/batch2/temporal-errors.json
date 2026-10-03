@@ -1,0 +1,32 @@
+[
+  {
+    "actual": "CAR",
+    "suggested": "MILK",
+    "score": 0.9940667152404785,
+    "sha256": "b81548c4dcaf5af9c332e33190835f18347618d81ffef485814da60dd7c65215"
+  },
+  {
+    "actual": "CAR",
+    "suggested": "MILK",
+    "score": 0.9971422553062439,
+    "sha256": "bc7bf1b8073e1f8afb82ec0c37c08dbdc5e3a8f646eb60ae933e540d7df08bf0"
+  },
+  {
+    "actual": "CAR",
+    "suggested": "MILK",
+    "score": 0.9981032609939575,
+    "sha256": "550ba0a479cf949697547dd2e9bcdd878d8321b104e9e39ce58d13a1ee6afbc3"
+  },
+  {
+    "actual": "CAR",
+    "suggested": "MILK",
+    "score": 0.998009979724884,
+    "sha256": "90e5fdac2223307292f4fdc54b14af5bba0ef9080d268280446736cf2ba5d948"
+  },
+  {
+    "actual": "LIKE",
+    "suggested": "GIVE",
+    "score": 0.9901918172836304,
+    "sha256": "3eacbab95afb111e2edea85e5183053a62766fb9090af0547e8bc427139032f2"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "labels": [
+    "THIRSTY",
+    "HOT",
+    "SICK",
+    "READ",
+    "GIVE",
+    "CALL",
+    "FIND",
+    "NOW",
+    "TOMORROW",
+    "MILK"
+  ],
+  "source": "/opt/handspeak-training/vocabulary-v8/development-features.json",
+  "sourceSha256": "4e3ebd7e8e90d1d4e3039e0343820ccd62ba37aad1b05325df0a813aad1c28b2",
+  "trainClips": 585,
+  "usableTrainingClips": 524,
+  "validationClips": 194,
+  "perWord": {
+    "THIRSTY": {
+      "train": 12,
+      "usableTrain": 12,
+      "validation": 4
+    },
+    "HOT": {
+      "train": 12,
+      "usableTrain": 12,
+      "validation": 4
+    },
+    "SICK": {
+      "train": 12,
+      "usableTrain": 12,
+      "validation": 4
+    },
+    "READ": {
+      "train": 12,
+      "usableTrain": 11,
+      "validation": 4
+    },
+    "GIVE": {
+      "train": 12,
+      "usableTrain": 9,
+      "validation": 4
+    },
+    "CALL": {
+      "train": 12,
+      "usableTrain": 11,
+      "validation": 4
+    },
+    "FIND": {
+      "train": 12,
+      "usableTrain": 11,
+      "validation": 4
+    },
+    "NOW": {
+      "train": 12,
+      "usableTrain": 11,
+      "validation": 4
+    },
+    "TOMORROW": {
+      "train": 12,
+      "usableTrain": 12,
+      "validation": 4
+    },
+    "MILK": {
+      "train": 12,
+      "usableTrain": 11,
+      "validation": 4
+    }
+  },
+  "negativeLabels": [
+    "AIRPLANE",
+    "BECAUSE",
+    "BED",
+    "BOOK",
+    "BOY",
+    "BROTHER",
+    "CAN",
+    "CAR",
+    "CHAIR",
+    "CHILD",
+    "FINE",
+    "FISH",
+    "GIRL",
+    "GRANDFATHER",
+    "GRANDMOTHER",
+    "HAVE",
+    "HEAR",
+    "HOME",
+    "HUNGRY",
+    "LATER",
+    "LIKE",
+    "LISTEN",
+    "LOOK",
+    "MAN",
+    "MORNING",
+    "NIGHT",
+    "PAIN",
+    "PEN",
+    "PENCIL",
+    "RIDE",
+    "ROOM",
+    "SEE",
+    "SHOES",
+    "SHOWER",
+    "SPEAK",
+    "STAY",
+    "STORE",
+    "TABLE",
+    "YESTERDAY"
+  ],
+  "validationGate": "At least 50% correct, zero wrong supported and negative accepts, and at least one correct example per word.",
+  "releaseGate": "Validation is screening only. Require a new untouched signer test, real ordinary-movement negatives, comparison with current models, and real-time browser capture tests before deployment.",
+  "limitations": "Cached development data previously used in research. No upper-body pose in this cache: temporal features use wrist-centered fallback. Whole clips, not live capture. No test set is opened by this script.",
+  "attribution": "PopSign ASL v1.0, Georgia Tech and DPAN, CC BY 4.0."
+}

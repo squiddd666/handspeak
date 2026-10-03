@@ -1,0 +1,5 @@
+{
+  "sourceExperiment": "/opt/handspeak-training/vocabulary-expansion-batch2",
+  "reason": "Identical development data and labels; only temporal loss weighting changed.",
+  "sourceSha256": "72ffb8b4fd58fd3f542f9edd48971226aa14ef95220a530b2d1b43a1cc37e171"
+}

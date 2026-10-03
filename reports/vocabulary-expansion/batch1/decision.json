@@ -1,0 +1,139 @@
+{
+  "status": "withheld",
+  "deployed": false,
+  "labels": [
+    "THIRSTY",
+    "HOT",
+    "SICK",
+    "READ",
+    "GIVE",
+    "CALL",
+    "FIND",
+    "NOW",
+    "TOMORROW",
+    "MILK"
+  ],
+  "temporal": {
+    "seed": 29,
+    "width": 32,
+    "epoch": 80,
+    "threshold": 0.97,
+    "margin": 0,
+    "validation": {
+      "total": 40,
+      "correct": 20,
+      "wrong": 1,
+      "missed": 19,
+      "negativeTotal": 154,
+      "negativeFalse": 6,
+      "perWord": {
+        "THIRSTY": {
+          "total": 4,
+          "correct": 2
+        },
+        "HOT": {
+          "total": 4,
+          "correct": 3
+        },
+        "SICK": {
+          "total": 4,
+          "correct": 2
+        },
+        "READ": {
+          "total": 4,
+          "correct": 2
+        },
+        "GIVE": {
+          "total": 4,
+          "correct": 1
+        },
+        "CALL": {
+          "total": 4,
+          "correct": 2
+        },
+        "FIND": {
+          "total": 4,
+          "correct": 3
+        },
+        "NOW": {
+          "total": 4,
+          "correct": 1
+        },
+        "TOMORROW": {
+          "total": 4,
+          "correct": 2
+        },
+        "MILK": {
+          "total": 4,
+          "correct": 2
+        }
+      }
+    },
+    "passesValidation": false,
+    "sha256": "c160da64b8aedffb4a2d464ad6e2e0183091badf8dbd4d78e65aceb0739e9b17"
+  },
+  "dtw": {
+    "parameters": {
+      "maxDistance": 0.5,
+      "minRatio": 1.3,
+      "minVotes": 1,
+      "mirror": true,
+      "strongRatio": 2.0
+    },
+    "validation": {
+      "total": 40,
+      "correct": 4,
+      "wrong": 0,
+      "missed": 36,
+      "negativeTotal": 154,
+      "negativeFalse": 0,
+      "perWord": {
+        "THIRSTY": {
+          "total": 4,
+          "correct": 0
+        },
+        "HOT": {
+          "total": 4,
+          "correct": 1
+        },
+        "SICK": {
+          "total": 4,
+          "correct": 1
+        },
+        "READ": {
+          "total": 4,
+          "correct": 0
+        },
+        "GIVE": {
+          "total": 4,
+          "correct": 0
+        },
+        "CALL": {
+          "total": 4,
+          "correct": 0
+        },
+        "FIND": {
+          "total": 4,
+          "correct": 0
+        },
+        "NOW": {
+          "total": 4,
+          "correct": 0
+        },
+        "TOMORROW": {
+          "total": 4,
+          "correct": 2
+        },
+        "MILK": {
+          "total": 4,
+          "correct": 0
+        }
+      }
+    },
+    "passesValidation": false,
+    "sha256": "27ced416ffc1b24aad00405f74397076a798f3efdc61519ec9a89131cb1fc568"
+  },
+  "testSetOpened": false,
+  "liveCameraTestPerformed": false,
+  "reason": "Neither candidate passed the frozen validation screening gate. No new word enabled."
+}

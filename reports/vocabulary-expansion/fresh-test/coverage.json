@@ -1,0 +1,72 @@
+{
+  "coverage": {
+    "THIRSTY": {
+      "clips": 6,
+      "signers": 4
+    },
+    "HOT": {
+      "clips": 6,
+      "signers": 5
+    },
+    "SICK": {
+      "clips": 6,
+      "signers": 5
+    },
+    "READ": {
+      "clips": 6,
+      "signers": 4
+    },
+    "CALL": {
+      "clips": 6,
+      "signers": 4
+    },
+    "FIND": {
+      "clips": 6,
+      "signers": 3
+    },
+    "NOW": {
+      "clips": 6,
+      "signers": 5
+    },
+    "TOMORROW": {
+      "clips": 6,
+      "signers": 5
+    },
+    "MILK": {
+      "clips": 6,
+      "signers": 4
+    },
+    "GIVE": {
+      "clips": 6,
+      "signers": 5
+    },
+    "CAR": {
+      "clips": 6,
+      "signers": 3
+    },
+    "LIKE": {
+      "clips": 6,
+      "signers": 4
+    },
+    "HELLO": {
+      "clips": 6,
+      "signers": 5
+    },
+    "WATER": {
+      "clips": 6,
+      "signers": 5
+    },
+    "PLEASE": {
+      "clips": 6,
+      "signers": 6
+    },
+    "FINISH": {
+      "clips": 6,
+      "signers": 5
+    }
+  },
+  "testClips": 96,
+  "testParticipants": 8,
+  "rawVideosPublished": false,
+  "trackingFailuresKeptInDenominator": true
+}

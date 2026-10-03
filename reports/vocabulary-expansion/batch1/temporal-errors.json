@@ -1,0 +1,51 @@
+[
+  {
+    "label": "SICK",
+    "suggestion": "HOT",
+    "participant": "8015",
+    "sha256": "6f5085cfb797e32f0d029d96c9aa60f2739f7293b71b28bff093dca77c83c84b",
+    "trackedFrames": 8
+  },
+  {
+    "label": "GIRL",
+    "suggestion": "MILK",
+    "participant": "7002",
+    "sha256": "2296e43176f3d4957fdec0fecc4ef0ffd711502d8010f6451a5af3a04352a846",
+    "trackedFrames": 8
+  },
+  {
+    "label": "CAR",
+    "suggestion": "MILK",
+    "participant": "8015",
+    "sha256": "b81548c4dcaf5af9c332e33190835f18347618d81ffef485814da60dd7c65215",
+    "trackedFrames": 13
+  },
+  {
+    "label": "CAR",
+    "suggestion": "MILK",
+    "participant": "8051",
+    "sha256": "550ba0a479cf949697547dd2e9bcdd878d8321b104e9e39ce58d13a1ee6afbc3",
+    "trackedFrames": 29
+  },
+  {
+    "label": "FINE",
+    "suggestion": "SICK",
+    "participant": "8013",
+    "sha256": "e80fd4b1199f8d2971d24a9dd18f304bbe76c7972c47e19a0153d079fd9ed162",
+    "trackedFrames": 10
+  },
+  {
+    "label": "CHAIR",
+    "suggestion": "READ",
+    "participant": "8005",
+    "sha256": "2a1b1bf5a4b8afb541584aa88257426b932562c1b108bf9969e7ab3922e75f39",
+    "trackedFrames": 10
+  },
+  {
+    "label": "HAVE",
+    "suggestion": "THIRSTY",
+    "participant": "8047",
+    "sha256": "5503082aafa9ca8846de6f992c00bb37c432b295bf721213d172c3910fecb567",
+    "trackedFrames": 10
+  }
+]

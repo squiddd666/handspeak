@@ -11,8 +11,8 @@ ROOT=Path('/opt/handspeak-training/daily-words/citizen-research');fit.ROOT=ROOT
 LABELS=['NAME','HOME','HAVE','WANT','LOVE'];OTHER='OTHER MOVEMENT'
 torch.set_num_threads(2)
 class Net(nn.Module):
- def __init__(self,width):
-  super().__init__();self.net=nn.Sequential(nn.Conv1d(153,width,5,padding=2),nn.ReLU(),nn.Dropout(.15),nn.Conv1d(width,width,3,padding=1),nn.ReLU(),nn.AdaptiveAvgPool1d(1),nn.Flatten(),nn.Linear(width,6))
+ def __init__(self,width,num_classes=None):
+  super().__init__();self.net=nn.Sequential(nn.Conv1d(153,width,5,padding=2),nn.ReLU(),nn.Dropout(.15),nn.Conv1d(width,width,3,padding=1),nn.ReLU(),nn.AdaptiveAvgPool1d(1),nn.Flatten(),nn.Linear(width,len(LABELS)+1 if num_classes is None else num_classes))
  def forward(self,x):return self.net(x)
 def metrics(rows,out):
  m=fit.metrics(rows,out,LABELS)
@@ -22,7 +22,7 @@ def gate(m):return m['correct']>=m['total']*.5 and m['wrong']==0 and m['negative
 def score(m):return (not gate(m),4*(m['wrong']+m['negativeFalse'])+m['missed'],-m['correct'],m['wrong']+m['negativeFalse'])
 def outputs(rows,probs,threshold,margin):
  order=np.argsort(probs,axis=1);best=order[:,-1];gap=probs[np.arange(len(probs)),best]-probs[np.arange(len(probs)),order[:,-2]]
- return [LABELS[i] if i<5 and rows[n].get('sequence') is not None and probs[n,i]>=threshold and gap[n]>=margin else None for n,i in enumerate(best)]
+ return [LABELS[i] if i<len(LABELS) and rows[n].get('sequence') is not None and probs[n,i]>=threshold and gap[n]>=margin else None for n,i in enumerate(best)]
 def train_dtw(train,val):
  refs=[dict(label=r['label'] if r['label'] in LABELS else OTHER,sequence=r['sequence']) for r in train]
  mat=fit.matrix(val,refs,'citizen-validation');best=None
@@ -33,10 +33,10 @@ def train_dtw(train,val):
  model=dict(version=1,encoding='two-hand-motion-v3',labels=LABELS,samples=refs,parameters=best['parameters'],status='private-research-only')
  path=ROOT/'dtw-private.json';path.write_text(json.dumps(model,separators=(',',':')))
  best.update(passesValidation=gate(best['validation']),sha256=hashlib.sha256(path.read_bytes()).hexdigest());(ROOT/'dtw-validation.json').write_text(json.dumps(best,indent=2));print('DTW result',json.dumps(best),flush=True)
-def train_temporal(train,val):
+def train_temporal(train,val,negative_weight=1.0):
  augmented=train+[encoding.mirrored(r) for r in train]
- x=torch.tensor(np.stack([encoding.features(r) for r in augmented]));vx=torch.tensor(np.stack([encoding.features(r) for r in val]));y=torch.tensor([LABELS.index(r['label']) if r['label'] in LABELS else 5 for r in augmented])
- weights=1/torch.bincount(y,minlength=6).float().clamp(min=1);weights/=weights.mean();best=None;trials=[]
+ x=torch.tensor(np.stack([encoding.features(r) for r in augmented]));vx=torch.tensor(np.stack([encoding.features(r) for r in val]));y=torch.tensor([LABELS.index(r['label']) if r['label'] in LABELS else len(LABELS) for r in augmented])
+ weights=1/torch.bincount(y,minlength=len(LABELS)+1).float().clamp(min=1);weights[-1]*=negative_weight;weights/=weights.mean();best=None;trials=[]
  for seed,width in [(17,16),(29,32)]:
   torch.manual_seed(seed);net=Net(width);opt=torch.optim.AdamW(net.parameters(),lr=.003,weight_decay=.01)
   for epoch in range(1,121):

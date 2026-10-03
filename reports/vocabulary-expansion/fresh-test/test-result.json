@@ -1,0 +1,61 @@
+{
+  "test": {
+    "total": 48,
+    "correct": 35,
+    "wrong": 1,
+    "missed": 12,
+    "negativeTotal": 48,
+    "negativeFalse": 1,
+    "perWord": {
+      "THIRSTY": {
+        "total": 6,
+        "correct": 4
+      },
+      "HOT": {
+        "total": 6,
+        "correct": 4
+      },
+      "SICK": {
+        "total": 6,
+        "correct": 4
+      },
+      "READ": {
+        "total": 6,
+        "correct": 3
+      },
+      "CALL": {
+        "total": 6,
+        "correct": 5
+      },
+      "FIND": {
+        "total": 6,
+        "correct": 6
+      },
+      "NOW": {
+        "total": 6,
+        "correct": 5
+      },
+      "TOMORROW": {
+        "total": 6,
+        "correct": 4
+      }
+    }
+  },
+  "checkpointSha256": "ee7ce525181dc3232fb677dbfea58fc8a2669d1b6668115f277356161649fea3",
+  "testFeaturesSha256": "b4a7532de6372e8c7b96d9ec2d1fc40ee2f2d7ecc9cc8bb924b266354dbe0dba",
+  "deployed": false,
+  "evaluation": "Fresh recording test; frozen vocabulary, checkpoint, and rejection settings.",
+  "passesFreshClipScreen": false,
+  "errors": [
+    {
+      "actual": "THIRSTY",
+      "suggested": "CALL",
+      "sha256": "edbbb4d7aa8e8ac639d9a2e67cca46d6fc73280688feb7d8e7db1530ddc8c4a8"
+    },
+    {
+      "actual": "FINISH",
+      "suggested": "HOT",
+      "sha256": "2b5c75bcc7d30558dbdebce67ca90cdeb7afde0d9434c2e65c9ab0ad97dc8c36"
+    }
+  ]
+}
