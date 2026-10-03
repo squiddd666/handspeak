@@ -25,3 +25,12 @@ asl-cache/
 .vscode/
 .idea/
 .DS_Store
+
+# Private application state
+data/
+admin-setup-token
+
+mysql*.json
+mysql*.cnf
+database-access.txt
+*.sql.gz

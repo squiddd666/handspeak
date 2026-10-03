@@ -1,0 +1,13 @@
+{
+  "baselineValidation": {
+    "total": 84,
+    "correct": 47,
+    "wrong": 1,
+    "missed": 36,
+    "negativeTotal": 220,
+    "negativeFalse": 108
+  },
+  "eligible": false,
+  "selectedValidation": null,
+  "parameters": null
+}

@@ -1,0 +1,40 @@
+{
+  "protocol": {
+    "labels": [
+      "HOME",
+      "HAVE"
+    ],
+    "trainingPositive": 21,
+    "trainingNegative": 120,
+    "validationClips": 300,
+    "gate": "At least half of supported validation clips correct, at least one correct for each word, zero wrong supported labels, zero unsupported false accepts. Freeze before regression evaluation. Require same absolute gate on reserved regression clips plus real-time capture checks before any deployment. Reused data does not establish independent accuracy.",
+    "scope": "Separate opt-in preview; existing 13-word recognizers unchanged."
+  },
+  "parameters": {
+    "maxDistance": 0.15,
+    "minRatio": 1.1,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 2
+  },
+  "validation": {
+    "total": 8,
+    "correct": 0,
+    "wrong": 0,
+    "missed": 8,
+    "negativeTotal": 292,
+    "negativeFalse": 0
+  },
+  "perWord": {
+    "HOME": {
+      "total": 4,
+      "correct": 0
+    },
+    "HAVE": {
+      "total": 4,
+      "correct": 0
+    }
+  },
+  "passesValidation": false,
+  "modelSha256": "ad75a7f9e3214f948a23025de1131bfd3f138f7817a1aca7cfade3ffed3be254"
+}

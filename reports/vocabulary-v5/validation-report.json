@@ -1,0 +1,65 @@
+{
+  "method": "Existing model first; expanded model only suggests a new label when existing model rejects. Validation chooses expansion parameters.",
+  "parameters": {
+    "maxDistance": 0.2,
+    "minRatio": 1,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 1.5
+  },
+  "baseline": {
+    "existing": {
+      "total": 84,
+      "correct": 47,
+      "wrong": 1
+    },
+    "new": {
+      "total": 36,
+      "correct": 0,
+      "wrong": 10
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 22
+    }
+  },
+  "expanded": {
+    "existing": {
+      "total": 84,
+      "correct": 47,
+      "wrong": 1
+    },
+    "new": {
+      "total": 36,
+      "correct": 0,
+      "wrong": 10
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 22
+    }
+  },
+  "perWord": {
+    "DRINK": {
+      "total": 12,
+      "correct": 0
+    },
+    "WATER": {
+      "total": 12,
+      "correct": 0
+    },
+    "BOOK": {
+      "total": 12,
+      "correct": 0
+    }
+  },
+  "training": {
+    "DRINK": 31,
+    "WATER": 30,
+    "BOOK": 25
+  },
+  "signerOverlap": false,
+  "candidateSha256": "ef21745c79fd7e2eb4b6ebb20224ebdb7268421b14726eff0219186e845ca41c"
+}

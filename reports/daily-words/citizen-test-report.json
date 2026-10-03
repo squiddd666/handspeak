@@ -1,0 +1,78 @@
+{
+  "method": "Untouched official ASL Citizen test partition, with signers and exact file hashes disjoint from development. One frozen evaluation; no test tuning.",
+  "testClips": 114,
+  "usableTestSequences": 100,
+  "temporal": {
+    "total": 66,
+    "correct": 37,
+    "wrong": 0,
+    "missed": 29,
+    "negativeTotal": 48,
+    "negativeFalse": 2,
+    "perWord": {
+      "NAME": {
+        "total": 11,
+        "correct": 7
+      },
+      "HOME": {
+        "total": 11,
+        "correct": 3
+      },
+      "HAVE": {
+        "total": 11,
+        "correct": 8
+      },
+      "WANT": {
+        "total": 22,
+        "correct": 17
+      },
+      "LOVE": {
+        "total": 11,
+        "correct": 2
+      }
+    }
+  },
+  "dtwBaseline": {
+    "total": 66,
+    "correct": 44,
+    "wrong": 0,
+    "missed": 22,
+    "negativeTotal": 48,
+    "negativeFalse": 2,
+    "perWord": {
+      "NAME": {
+        "total": 11,
+        "correct": 6
+      },
+      "HOME": {
+        "total": 11,
+        "correct": 6
+      },
+      "HAVE": {
+        "total": 11,
+        "correct": 8
+      },
+      "WANT": {
+        "total": 22,
+        "correct": 15
+      },
+      "LOVE": {
+        "total": 11,
+        "correct": 9
+      }
+    }
+  },
+  "passesTestGate": false,
+  "temporalSha256": "ee953a87ba63695b9afa66a179addf426682c115dc5ce2943e1d53c58828cf96",
+  "dtwSha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec",
+  "inferenceOnlyCpuP95Ms": 0.26660165203793434,
+  "timingScope": "PyTorch CPU network only; excludes video decoding, landmark extraction, automatic segmentation and browser timing.",
+  "deployed": false,
+  "limitations": [
+    "Small selected corpus subset; no independent physical-webcam study.",
+    "No ordinary non-sign movement recordings.",
+    "Whole-clip classification is not automatic-boundary recognition.",
+    "The research dataset restricts redistribution; models and landmarks remain private.",
+    "Model scores are not calibrated confidence percentages."
+  ]
+}

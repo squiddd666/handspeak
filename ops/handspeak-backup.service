@@ -1,0 +1,14 @@
+[Unit]
+Description=HandSpeak private database backup
+[Service]
+Type=oneshot
+User=handspeak
+Group=handspeak
+UMask=0077
+Environment=HANDSPEAK_DATA_DIR=/opt/handspeak/data
+Environment=HANDSPEAK_MYSQL_CONFIG=/opt/handspeak/data/mysql.json
+ExecStart=/usr/bin/python3 /opt/handspeak/ops/backup.py
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/handspeak/data

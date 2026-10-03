@@ -1,0 +1,55 @@
+const video = document.querySelector('#signExampleVideo');
+const status = document.querySelector('#signExampleStatus');
+const speed = document.querySelector('#signExampleSpeed');
+const buttons = [...document.querySelectorAll('[data-sign-example]')];
+const embed=document.querySelector('#signExampleEmbed');
+const lesson=document.querySelector('#signExampleLesson');
+const playback=document.querySelector('.example-playback');
+const embedded={name:'GbeC9TFuSX4',want:'IRUlCZ9jRjM',love:'DAZB0eVf5t0'};
+const daily=new Set(['name','home','have','want','love']);
+let external=false;
+function pauseAll(){video.pause();if(external&&embed.getAttribute('src'))embed.src=embed.getAttribute('src');}
+function instructions(id){const standard=buttons.some(b=>b.dataset.signExample===id);document.querySelector("#signExampleMode").textContent=daily.has(id)?`${id.toUpperCase()} · Automatic server capture: enable server landmark processing and Automatic words, start the camera, sign once, then pause. Review the match before signing again. Manual recording is also available.`:standard?`${id.toUpperCase()} · Automatic capture: start the camera, sign once, then pause. Review the match. You can also use Record a word.`:"Learning example · No enabled model for this word. Personal training is needed before camera practice.";}
+function chooseEmbedded(id,button=null){
+ instructions(id);
+ selection++;pauseAll();label=id.toUpperCase();libraryId=id;external=true;video.hidden=true;embed.hidden=false;playback.hidden=true;
+ embed.title=`${label} ASL lesson by ASL University`;embed.src=`https://www.youtube-nocookie.com/embed/${embedded[id]}?playsinline=1&rel=0`;
+ lesson.hidden=false;lesson.href=`https://www.lifeprint.com/asl101/pages-signs/${id[0]}/${id}.htm`;lesson.textContent=`${label} lesson · ASL University / Bill Vicars (opens in a new tab)`;
+ status.textContent=`${label} · Press play in the YouTube player. If it is unavailable, open the lesson below. Playback loads from YouTube.`;
+ for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
+}
+let label = 'HELLO';
+let selection = 0;
+const applySpeed = () => { video.playbackRate = Number(speed.value); };
+async function play() {
+  const requested = selection;
+  try { applySpeed(); await video.play(); }
+  catch { if (requested === selection) status.textContent = `${label} · Use the video play button to start.`; }
+}
+let libraryId=null;
+function chooseExample(name,src,button=null,id=null){
+  instructions(id||src.split("/").pop().replace(".mp4",""));selection++;pauseAll();external=false;embed.hidden=true;embed.removeAttribute('src');video.hidden=false;playback.hidden=false;lesson.hidden=true;label=name;libraryId=id;
+  for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
+  video.src=src;video.setAttribute('aria-label',`${label} ASL gesture example`);
+  const fallback=video.querySelector('a');fallback.href=video.src;fallback.textContent=`Download the ${label} example`;
+  status.textContent=`${label} · Press play to watch. Review recognition availability in the vocabulary library.`;video.load();
+}
+for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.textContent,`media/signs/${id}.mp4`,button,daily.has(id)?id:null);});
+document.addEventListener('handspeak:example',event=>{const data=event.detail;if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
+speed.addEventListener('change', applySpeed);
+video.addEventListener('loadedmetadata', applySpeed);
+video.addEventListener('playing', () => { if(external)return;status.textContent = `${label} · ${video.playbackRate === 1 ? 'Normal speed' : `${video.playbackRate}× speed`}`; });
+video.addEventListener('ended', () => { if(external)return;status.textContent = `${label} · Play again or try it at the camera.`; });
+video.addEventListener('error', () => { if(external)return;status.textContent = `${label} · Video could not load. Select the word again to retry.`; });
+document.querySelector('#signExampleLoop').addEventListener('change', event => { video.loop = event.target.checked; });
+document.querySelector('#signExampleReplay').addEventListener('click', () => { video.currentTime = 0; play(); });
+document.querySelector('#signExamplePractice').addEventListener('click', () => {
+  pauseAll();
+  if(libraryId){document.dispatchEvent(new CustomEvent('handspeak:practice',{detail:{id:libraryId}}));return;}
+  document.dispatchEvent(new CustomEvent('handspeak:default-practice',{detail:{label}}));
+});
+// Do not keep decoding a looping example while the visitor is using the camera.
+new IntersectionObserver(entries => { if (!entries[0].isIntersecting) pauseAll(); }).observe(document.querySelector('.example-player'));
+document.addEventListener('visibilitychange', () => { if (document.hidden) pauseAll(); });
+
+document.addEventListener('handspeak:view',pauseAll);

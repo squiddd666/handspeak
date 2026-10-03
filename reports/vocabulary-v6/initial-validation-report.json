@@ -1,0 +1,56 @@
+{
+  "protocol": "Validation only; signer partitions disjoint. Preserve original six and prior three preview suggestions before considering four new labels.",
+  "baseline": {
+    "new": {
+      "total": 32,
+      "correct": 0,
+      "wrong": 9
+    },
+    "existing": {
+      "total": 120,
+      "correct": 54,
+      "wrong": 11
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 25
+    }
+  },
+  "expanded": {
+    "new": {
+      "total": 32,
+      "correct": 0,
+      "wrong": 9
+    },
+    "existing": {
+      "total": 120,
+      "correct": 54,
+      "wrong": 11
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 25
+    }
+  },
+  "perWord": {
+    "FOOD": 0,
+    "HUNGRY": 0,
+    "LIKE": 0,
+    "GO": 0
+  },
+  "parameters": {
+    "maxDistance": 0.3,
+    "minRatio": 1,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 1.5
+  },
+  "training": {
+    "FOOD": 23,
+    "HUNGRY": 14,
+    "LIKE": 12,
+    "GO": 10
+  }
+}

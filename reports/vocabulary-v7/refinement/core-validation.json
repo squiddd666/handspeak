@@ -1,0 +1,97 @@
+{
+  "baseline": {
+    "total": 84,
+    "correct": 47,
+    "wrong": 1,
+    "missed": 36,
+    "negativeTotal": 74,
+    "negativeFalse": 20
+  },
+  "selected": {
+    "total": 84,
+    "correct": 32,
+    "wrong": 0,
+    "missed": 52,
+    "negativeTotal": 74,
+    "negativeFalse": 1
+  },
+  "featureTransform": null,
+  "parameters": {
+    "maxDistance": 0.65,
+    "minRatio": 1.3,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 2
+  },
+  "sha256": "3b9bd02447c0c984f9770a857e1fe0156142eaf126380b319d23b53140b2d474",
+  "trials": [
+    {
+      "config": null,
+      "bestSoFar": {
+        "total": 84,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 52,
+        "negativeTotal": 74,
+        "negativeFalse": 1
+      }
+    },
+    {
+      "config": {
+        "wristWeight": 0.25,
+        "localScale": false
+      },
+      "bestSoFar": {
+        "total": 84,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 52,
+        "negativeTotal": 74,
+        "negativeFalse": 1
+      }
+    },
+    {
+      "config": {
+        "wristWeight": 0.5,
+        "localScale": false
+      },
+      "bestSoFar": {
+        "total": 84,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 52,
+        "negativeTotal": 74,
+        "negativeFalse": 1
+      }
+    },
+    {
+      "config": {
+        "wristWeight": 0.5,
+        "localScale": true
+      },
+      "bestSoFar": {
+        "total": 84,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 52,
+        "negativeTotal": 74,
+        "negativeFalse": 1
+      }
+    },
+    {
+      "config": {
+        "wristWeight": 1.0,
+        "localScale": true
+      },
+      "bestSoFar": {
+        "total": 84,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 52,
+        "negativeTotal": 74,
+        "negativeFalse": 1
+      }
+    }
+  ],
+  "eligibleOnValidation": false
+}

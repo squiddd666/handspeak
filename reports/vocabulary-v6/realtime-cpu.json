@@ -1,0 +1,120 @@
+{
+  "method": "Real-time video playback into 480x640 canvas captureStream, deployed camera processing and automatic segmentation, face tracking off. No frame-by-frame seeking. Source examples are training clips, not independent accuracy data. Not a physical webcam.",
+  "delegate": "CPU forced for benchmark",
+  "results": [
+    {
+      "name": "food",
+      "durationMs": 1383.3329999999999,
+      "wallPlaybackMs": 1544.7999999998137,
+      "processingFrames": 35,
+      "inferenceP95Ms": 182.80000000074506,
+      "inferenceMedianMs": 77.6000000005588,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 1
+        },
+        {
+          "text": "\u2014",
+          "time": 257.29999999981374
+        },
+        {
+          "text": "No match",
+          "time": 1925.8999999994412
+        }
+      ],
+      "draft": "Recognized words will appear here\u2026",
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "FOOD",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    },
+    {
+      "name": "hungry",
+      "durationMs": 2100,
+      "wallPlaybackMs": 2271.9000000003725,
+      "processingFrames": 28,
+      "inferenceP95Ms": 255.5,
+      "inferenceMedianMs": 130,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 2.400000000372529
+        },
+        {
+          "text": "\u2014",
+          "time": 403.6000000005588
+        },
+        {
+          "text": "No match",
+          "time": 2554.600000000559
+        }
+      ],
+      "draft": "Recognized words will appear here\u2026",
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "HUNGRY",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    },
+    {
+      "name": "like",
+      "durationMs": 2191.667,
+      "wallPlaybackMs": 2466.899999999441,
+      "processingFrames": 29,
+      "inferenceP95Ms": 342.3999999994412,
+      "inferenceMedianMs": 129.40000000037253,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 1.5
+        },
+        {
+          "text": "\u2014",
+          "time": 1095.7999999998137
+        },
+        {
+          "text": "No match",
+          "time": 3210.5
+        }
+      ],
+      "draft": "Recognized words will appear here\u2026",
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "LIKE",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    },
+    {
+      "name": "go",
+      "durationMs": 1901.8999999999999,
+      "wallPlaybackMs": 2038.7999999998137,
+      "processingFrames": 33,
+      "inferenceP95Ms": 218.20000000018626,
+      "inferenceMedianMs": 127,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 0.7000000001862645
+        },
+        {
+          "text": "\u2014",
+          "time": 258.59999999962747
+        },
+        {
+          "text": "No match",
+          "time": 2111.7000000001863
+        }
+      ],
+      "draft": "Recognized words will appear here\u2026",
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "GO",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    }
+  ],
+  "pageErrors": [],
+  "environmentNote": "Server CPU was also running regression checks; timing includes contention and is not a device speed guarantee."
+}

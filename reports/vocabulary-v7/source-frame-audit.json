@@ -1,0 +1,11 @@
+{
+  "checked": 973,
+  "under30Frames": [
+    {
+      "label": "RIDE",
+      "split": "train",
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/ride/4a.7007-ride-2023_01_06_14_45_40.866-0.mp4",
+      "sourceFrames": 2
+    }
+  ]
+}

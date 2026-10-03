@@ -1,0 +1,39 @@
+{
+  "seed": 29,
+  "width": 32,
+  "epoch": 20,
+  "threshold": 0.97,
+  "margin": 0,
+  "validation": {
+    "total": 23,
+    "correct": 14,
+    "wrong": 0,
+    "missed": 9,
+    "negativeTotal": 48,
+    "negativeFalse": 0,
+    "perWord": {
+      "NAME": {
+        "total": 4,
+        "correct": 2
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 2
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 3
+      },
+      "WANT": {
+        "total": 7,
+        "correct": 6
+      },
+      "LOVE": {
+        "total": 4,
+        "correct": 1
+      }
+    }
+  },
+  "passesValidation": true,
+  "sha256": "ee953a87ba63695b9afa66a179addf426682c115dc5ce2943e1d53c58828cf96"
+}

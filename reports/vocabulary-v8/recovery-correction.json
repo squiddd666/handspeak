@@ -1,0 +1,7 @@
+{
+  "affectedDevelopmentClips": 91,
+  "previousClaimedRecovery": 150,
+  "correctedRecovery": 149,
+  "correctedUsableSequences": 702,
+  "method": "Short clips re-encoded with temporal passthrough and unique-frame selection; no repeated-frame padding. Longer prior retries downsampled source videos to 60 frames. Archived v8/v9 experiments remain unpromoted and must not be used to claim improvement."
+}

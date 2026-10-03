@@ -41,7 +41,10 @@ class ModelTests(unittest.TestCase):
     def boot_app(self, failure=False):
         self.js.eval('''
           const elements = {};
-          const document = {querySelector: key => elements[key] ||= {
+          const createInterpreter=()=>({});
+          const createResearchWords=()=>({active:()=>false,cancel(){},disable(){},isCapturing:()=>false});
+          const createVocabularyLibrary=()=>({});
+          const document = {querySelectorAll:()=>[],querySelector: key => elements[key] ||= {
             style:{}, listeners:{}, classList:{add(){}, remove(){}, toggle(){}},
             addEventListener(name, fn){this.listeners[name]=fn}, getContext(){return {clearRect(){}}}
           }};
@@ -54,13 +57,30 @@ class ModelTests(unittest.TestCase):
             "({ok:false,json:async()=>({})});" if failure else
             "path.includes('asl-knn') ? ({ok:true,json:async()=>model}) : ({ok:false,json:async()=>({})});"
         ))
-        for name in ['motion-model.js','motion-studio.js','face-tracker.js']:
+        for name in ['sentence-builder.js','motion-model.js','automatic-motion.js','expanded-motion.js','motion-studio.js','face-tracker.js']:
             code='\n'.join(line for line in (ROOT/name).read_text().splitlines() if not line.startswith('import '))
             self.js.eval(code.replace('export ', ''))
         app = '\n'.join(line for line in (ROOT/'app.js').read_text().splitlines() if not line.startswith('import '))
         self.js.eval(app)
         while self.js.execute_pending_job():
             pass
+
+    def test_recognition_feedback_is_qualitative_and_resets(self):
+        self.boot_app()
+        self.js.eval("setLive('A', .87)")
+        self.assertIn('Possible match', self.js.eval("liveConfidence.textContent"))
+        self.assertNotIn('%', self.js.eval("liveConfidence.textContent"))
+        self.js.eval("setLive('')")
+        self.assertIn('No reliable match', self.js.eval("elements['#recognitionFeedback'].textContent"))
+        self.js.eval("committed='A';setLive('A')")
+        self.assertIn('recognized', self.js.eval("elements['#recognitionFeedback'].textContent"))
+        self.js.eval("setRecognitionMode('words')")
+        self.assertIn('Camera off', self.js.eval("elements['#recognitionFeedback'].textContent"))
+
+    def test_start_signing_does_not_stop_active_camera(self):
+        self.boot_app()
+        self.js.eval("running=true;$('#workspace').scrollIntoView=()=>{};elements['#startSigning'].listeners.click()")
+        self.assertTrue(self.js.eval('running'))
 
     def test_auto_load_and_personal_reset(self):
         self.boot_app()
@@ -154,7 +174,7 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(self.js.eval('faceLoads'),1)
     def test_camera_word_button_selects_word_mode(self):
         self.boot_app()
-        self.js.eval("let started=0;running=true;motionStudio.recognize=()=>{started++};motionStudio.isCapturing=()=>true;elements['#wordCaptureButton'].listeners.click();")
+        self.js.eval("let started=0;running=true;motionStudio.recognize=()=>{started++};motionStudio.isRecording=()=>true;elements['#wordCaptureButton'].listeners.click();")
         while self.js.execute_pending_job():pass
         self.assertEqual(self.js.eval('recognitionMode'),'words')
         self.assertEqual(self.js.eval('started'),1)

@@ -1,0 +1,19 @@
+{
+  "python": "3.11.16 (main, Sep 29 2026, 14:59:26) [Clang 22.1.3 ]",
+  "torch": "2.14.1+cpu",
+  "numpy": "1.26.4",
+  "mediapipe": "0.10.21",
+  "opencv": "4.11.0",
+  "sourceSha256": {
+    "training/daily_words/remote_zip.py": "84b204a056a3a0cdc64d73985f5e5366ad9e24c93d1538b139b894ee53909a00",
+    "training/daily_words/check_browser.py": "c52aef2f8afd2c05f5bd958eb9e64149950efc84399d69abc2e0507ae6c336b4",
+    "training/daily_words/extract_citizen.py": "bce59df6909b88762c8ca2e245a6e1850f2bfc5062de32fba14bdef4953ee1b5",
+    "training/daily_words/evaluate_citizen.py": "edbbd2fa4c6325ed300b1caa5d3579a90c518c382225b288f22d112fd10bf691",
+    "training/daily_words/prepare_citizen.py": "2761ce6fd58643f770a12c2b1932ebaeebdbffb023dba12873b1c173ceb55cbf",
+    "training/daily_words/fit_small.py": "ea59eab1b9d95d753ffe28d69cdcaa29b6bad3b7d34d7222fd1b1c73d1e27845",
+    "training/daily_words/test_training.py": "01f4cbde544098d9b53e4b9b7e16430a5d97f77ab47888e5a168a87b0c22d58a",
+    "training/daily_words/train_citizen.py": "42965e5f635c381a8e77dade6d42bda1dbd5958223414b224d3acba0e4502be8",
+    "training/accuracy/extract.py": "ebc0e10639be496671cd4e22352fcfe795b28696d5e5ab6bf65e5ac59ec11a1a",
+    "training/accuracy/temporal.py": "471f6653cffbf0566d617ca4d719932347a84e2021c60a5ded2dfdde6ac6f6f3"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "method": "Real-time video playback into 480x640 canvas captureStream, deployed camera processing and automatic segmentation, face tracking off. No frame-by-frame seeking. Source examples are training clips, not independent accuracy data. Not a physical webcam.",
+  "delegate": "CPU forced for benchmark",
+  "results": [
+    {
+      "name": "drink",
+      "durationMs": 2044.693,
+      "wallPlaybackMs": 2121,
+      "processingFrames": 46,
+      "inferenceP95Ms": 136.80000000004657,
+      "inferenceMedianMs": 81.60000000009313,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 0.6999999999534339
+        },
+        {
+          "text": "\u2014",
+          "time": 1544.6000000000931
+        },
+        {
+          "text": "No match",
+          "time": 2569.9000000001397
+        }
+      ],
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "DRINK",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    },
+    {
+      "name": "water",
+      "durationMs": 2333.333,
+      "wallPlaybackMs": 2444.3000000000466,
+      "processingFrames": 45,
+      "inferenceP95Ms": 181.60000000009313,
+      "inferenceMedianMs": 71.70000000018626,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 0.4000000001396984
+        },
+        {
+          "text": "\u2014",
+          "time": 248.60000000009313
+        },
+        {
+          "text": "WATER",
+          "time": 2957.1999999999534
+        }
+      ],
+      "status": "Possible match: \u201cWATER\u201d. Pause before your next sign. Review it before adding it.",
+      "expected": "WATER",
+      "correct": true,
+      "wrong": 0,
+      "repeated": 0
+    },
+    {
+      "name": "book",
+      "durationMs": 1366.6670000000001,
+      "wallPlaybackMs": 1604.3999999999069,
+      "processingFrames": 40,
+      "inferenceP95Ms": 183,
+      "inferenceMedianMs": 70.89999999990687,
+      "events": [
+        {
+          "text": "\u2014",
+          "time": 0.5999999998603016
+        },
+        {
+          "text": "\u2014",
+          "time": 843.3000000000466
+        },
+        {
+          "text": "No match",
+          "time": 2175.899999999907
+        }
+      ],
+      "status": "No clear match. Pause, then try another sign.",
+      "expected": "BOOK",
+      "correct": false,
+      "wrong": 0,
+      "repeated": 0
+    }
+  ],
+  "pageErrors": []
+}

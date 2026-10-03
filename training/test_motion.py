@@ -8,11 +8,23 @@ class MotionTests(unittest.TestCase):
     def setUp(self):
         self.js=quickjs.Context()
         self.js.eval((ROOT/'motion-model.js').read_text().replace('export ',''))
+        self.js.eval('\n'.join(l for l in (ROOT/'expanded-motion.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
         self.js.eval((ROOT/'automatic-motion.js').read_text().replace('export ',''))
         self.js.eval('''
           function sequence(direction=1, speed=1){return Array.from({length:20},(_,i)=>[1,...Array.from({length:63},(_,c)=>c%3===0?direction*Math.pow(i/19,speed):c%3===1?c/100:0),...Array(64).fill(0)]);}
           const examples=[...Array.from({length:3},()=>({label:'FORWARD',sequence:sequence(1)})),...Array.from({length:3},()=>({label:'BACK',sequence:sequence(-1)}))];
         ''')
+    def test_expansion_preserves_existing_match_and_is_optional(self):
+        self.js.eval("const strict={maxDistance:.1,minRatio:1.3,minVotes:2,mirror:false};const extra={labels:['FAR'],parameters:strict,samples:Array.from({length:3},()=>({label:'FAR',sequence:sequence(3)}))};")
+        self.assertEqual(self.js.eval("recognizeExpandedMotion(sequence(1),examples,strict,extra).label"),'FORWARD')
+        self.assertIsNone(self.js.eval("recognizeExpandedMotion(sequence(3),examples,strict,null)"))
+        self.assertEqual(self.js.eval("recognizeExpandedMotion(sequence(3),examples,strict,extra).label"),'FAR')
+        self.assertIsNone(self.js.eval("recognizeExpandedMotion(sequence(30),examples,strict,extra)"))
+    def test_extra_download_failure_preserves_original_vocabulary(self):
+        self.boot_studio(pretrained=True)
+        self.assertIn('2 pretrained words',self.js.eval("elements['#motionModelStatus'].textContent"))
+        self.assertIn('could not load',self.js.eval("elements['#expandedWordsStatus'].textContent"))
+        self.assertIn('FORWARD',self.js.eval("elements['#motionLibrary'].textContent"))
     def test_direction_and_speed(self):
         self.assertEqual(self.js.eval("recognizeMotion(sequence(1,1.3),examples).label"),'FORWARD')
         self.assertEqual(self.js.eval("recognizeMotion(sequence(-1),examples).label"),'BACK')
@@ -79,13 +91,13 @@ class MotionTests(unittest.TestCase):
           const performance={now:()=>0};
           const console={warn(){}};
           function setTimeout(fn){timers.push(fn);return timers.length} function clearTimeout(){}
-          let added=[],spoken=[];
+          let added=[],spoken=[],finishEnabled=false,finishCalls=0;
         ''')
         if pretrained:
             self.js.eval('const fetch=async()=>({ok:true,json:async()=>({version:1,encoding:"two-hand-motion-v3",parameters:{maxDistance:.65,minRatio:1.3,minVotes:2,mirror:true},samples:examples'+('.slice(0,3)' if invalid else '')+'})});')
         else:self.js.eval('const fetch=async()=>({ok:false});')
         self.js.eval('\n'.join(l for l in (ROOT/'motion-studio.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
-        self.js.eval('const studio=createMotionStudio({isRunning:()=>true,onWord:w=>added.push(w),onStatus:()=>{},speak:w=>spoken.push(w)});')
+        self.js.eval('const studio=createMotionStudio({isRunning:()=>true,onWord:w=>added.push(w),onStatus:()=>{},speak:w=>spoken.push(w),onFinish:()=>{if(!finishEnabled)return false;finishCalls++;return true;}});')
         model=json.loads((ROOT/'models/asl-knn.json').read_text())
         self.js.eval('const handFeatures='+json.dumps(model['samples'][0]['features'])+';')
         self.js.eval('''
@@ -108,6 +120,32 @@ class MotionTests(unittest.TestCase):
         self.js.eval("studio.cancel();elements['#motionLabel'].value='FORWARD';elements['#motionRemove'].click();")
         self.assertIn('FORWARD',self.js.eval("elements['#motionLibrary'].textContent"))
         self.assertFalse(self.js.eval("Boolean(stored['handspeak-motion-v3'])"))
+    def test_category_switch_resets_capture_and_restores_default(self):
+        self.boot_studio(pretrained=True)
+        self.js.eval("const category={version:1,encoding:'two-hand-motion-v3',labels:['NEW'],parameters:{maxDistance:.65,minRatio:1.3,minVotes:2,mirror:false},samples:examples.map(e=>({...e,label:e.label==='FORWARD'?'NEW':'OTHER MOVEMENT'}))};studio.recognize();")
+        self.assertTrue(self.js.eval('studio.isCapturing()'))
+        self.assertTrue(self.js.eval("studio.setVocabulary(category,'Actions')"))
+        self.assertFalse(self.js.eval('studio.isCapturing()'))
+        self.assertTrue(self.js.eval("elements['#expandedWords'].disabled"))
+        self.assertIn('NEW',self.js.eval("elements['#motionLibrary'].textContent"))
+        self.assertNotIn('OTHER MOVEMENT',self.js.eval("elements['#motionLibrary'].textContent"))
+        self.assertNotIn('FORWARD',self.js.eval("elements['#motionLibrary'].textContent"))
+        self.assertFalse(self.js.eval("studio.setVocabulary({...category,encoding:'bad'},'bad')"))
+        self.assertIn('NEW',self.js.eval("elements['#motionLibrary'].textContent"))
+        self.assertTrue(self.js.eval('studio.setVocabulary(null)'))
+        self.assertIn('FORWARD',self.js.eval("elements['#motionLibrary'].textContent"))
+        self.assertNotIn('NEW',self.js.eval("elements['#motionLibrary'].textContent"))
+    def test_category_negative_reference_never_becomes_a_word(self):
+        self.boot_studio(pretrained=True)
+        self.js.eval("""
+          function clip(direction){return encodeMotion(Array.from({length:30},(_,n)=>[Array.from({length:21},(_,i)=>({x:.5+handFeatures[i*3]*.05+direction*n*.003,y:.5+handFeatures[i*3+1]*.05,z:handFeatures[i*3+2]*.05})),null]));}
+          const model={version:1,encoding:'two-hand-motion-v3',labels:['NEW'],parameters:{maxDistance:.65,minRatio:1.3,minVotes:2,mirror:false},samples:[...Array.from({length:3},()=>({label:'NEW',sequence:clip(1)})),...Array.from({length:3},()=>({label:'OTHER MOVEMENT',sequence:clip(-1)}))]};
+          studio.setVocabulary(model,'Test');record('',-1,false);
+        """)
+        self.assertTrue(self.js.eval("elements['#motionAccept'].disabled"))
+        self.assertEqual(self.js.eval('added.length'),0)
+        self.js.eval("record('',1,false);elements['#motionAccept'].click();")
+        self.assertEqual(self.js.eval('JSON.stringify(added)'), '["NEW"]')
     def test_invalid_pretrained_model_is_not_ready(self):
         self.boot_studio(pretrained=True,invalid=True)
         self.assertIn('unavailable',self.js.eval("elements['#motionModelStatus'].textContent"))
@@ -123,6 +161,30 @@ class MotionTests(unittest.TestCase):
         self.js.eval("document.querySelector('#motionAutoSpeak').checked=true;elements['#motionAccept'].click();elements['#motionAccept'].click();")
         self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
         self.assertEqual(self.js.eval('JSON.stringify(spoken)'), '["HELLO"]')
+    def test_sentence_auto_add_is_opt_in_once_and_never_speaks(self):
+        self.boot_studio()
+        self.js.eval("for(let i=0;i<3;i++){record('HELLO',1);record('BYE',-1)}")
+        self.js.eval("document.querySelector('#sentenceAutoAdd').checked=true;document.querySelector('#motionAutoSpeak').checked=true;record('',1,false);")
+        self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
+        self.assertEqual(self.js.eval('spoken.length'),0)
+        self.js.eval("elements['#motionAccept'].click();")
+        self.assertEqual(self.js.eval('added.length'),1)
+        self.assertTrue(self.js.eval("elements['#motionAccept'].disabled"))
+    def test_finish_command_consumes_match_only_when_enabled(self):
+        self.boot_studio()
+        self.js.eval("for(let i=0;i<3;i++){record('FINISH',1);record('BYE',-1)}")
+        self.js.eval("finishEnabled=true;document.querySelector('#sentenceAutoAdd').checked=true;record('',1,false);")
+        self.assertEqual(self.js.eval('finishCalls'),1)
+        self.assertEqual(self.js.eval('added.length'),0)
+        self.assertEqual(self.js.eval('spoken.length'),0)
+        self.assertTrue(self.js.eval("elements['#motionAccept'].disabled"))
+        self.js.eval("finishEnabled=false;record('',1,false);")
+        self.assertEqual(self.js.eval('JSON.stringify(added)'), '["FINISH"]')
+
+    def test_nested_preview_keeps_older_words_priority(self):
+        self.js.eval("const strict={maxDistance:.1,minRatio:1.3,minVotes:2,mirror:false};const prior={labels:['FAR'],parameters:strict,samples:Array.from({length:3},()=>({label:'FAR',sequence:sequence(3)}))};const expanded={labels:['FAR','NEW'],newLabels:['NEW'],parameters:strict,baselineExtra:prior,samples:prior.samples.concat(Array.from({length:3},()=>({label:'NEW',sequence:sequence(6)})))};")
+        self.assertEqual(self.js.eval("recognizeExpandedMotion(sequence(3),examples,strict,expanded).label"),'FAR')
+        self.assertEqual(self.js.eval("recognizeExpandedMotion(sequence(6),examples,strict,expanded).label"),'NEW')
     def test_cancel_and_no_hands_do_not_save(self):
         self.boot_studio()
         self.js.eval("elements['#motionTeach'].click();studio.cancel();")
@@ -187,7 +249,7 @@ class MotionTests(unittest.TestCase):
             studio.frame({landmarks:[hand],handedness:[[{categoryName:'Left'}]]},t);
           }
         """)
-        self.assertIn(self.js.eval("elements['#motionHelp'].textContent").split('.')[0],['No clear match','Possible match: “FORWARD”','Possible match: “BACK”'])
+        self.assertIn(self.js.eval("elements['#motionHelp'].textContent").split('.')[0],['Hands captured, but no word passed the matching checks','Possible match: “FORWARD”','Possible match: “BACK”'])
         self.assertEqual(self.js.eval('added.length'),0)
         self.assertEqual(self.js.eval('timers.length'),0)
 if __name__=='__main__':unittest.main()

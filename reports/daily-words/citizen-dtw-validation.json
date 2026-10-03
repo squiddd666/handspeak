@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "maxDistance": 1.0,
+    "minRatio": 1.1,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 2.0
+  },
+  "validation": {
+    "total": 23,
+    "correct": 11,
+    "wrong": 0,
+    "missed": 12,
+    "negativeTotal": 48,
+    "negativeFalse": 0,
+    "perWord": {
+      "NAME": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 2
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 3
+      },
+      "WANT": {
+        "total": 7,
+        "correct": 1
+      },
+      "LOVE": {
+        "total": 4,
+        "correct": 2
+      }
+    }
+  },
+  "passesValidation": false,
+  "sha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec"
+}

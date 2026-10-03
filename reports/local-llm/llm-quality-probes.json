@@ -1,0 +1,74 @@
+[
+  {
+    "input": "I WANT WATER PLEASE",
+    "seconds": 20.52,
+    "result": {
+      "original": "I WANT WATER PLEASE",
+      "sentence": "I want water, please.",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  },
+  {
+    "input": "WATER PLEASE",
+    "seconds": 3.89,
+    "result": {
+      "original": "WATER PLEASE",
+      "sentence": "Water, please.",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  },
+  {
+    "input": "I NO WANT FOOD",
+    "seconds": 3.91,
+    "result": {
+      "original": "I NO WANT FOOD",
+      "sentence": "I do not want food.",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  },
+  {
+    "input": "YOU WANT WATER ?",
+    "seconds": 3.93,
+    "result": {
+      "original": "YOU WANT WATER ?",
+      "sentence": "Do you want water?",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  },
+  {
+    "input": "I WANT 2 BOOK",
+    "seconds": 3.95,
+    "result": {
+      "original": "I WANT 2 BOOK",
+      "sentence": "I want 2 books.",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  },
+  {
+    "input": "BOOK GO FOOD",
+    "seconds": 3.54,
+    "result": {
+      "original": "BOOK GO FOOD",
+      "sentence": "Book go food.",
+      "needsClarification": false,
+      "note": "Review the meaning before using this sentence.",
+      "model": "qwen3:1.7b",
+      "local": true
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "groups": [],
+  "status": "withheld",
+  "reason": "New category models failed the accuracy and automatic-capture checks. Existing default and extra-word previews remain available."
+}

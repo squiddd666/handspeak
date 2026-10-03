@@ -1,0 +1,85 @@
+{
+  "requestedUniqueEntries": 200,
+  "categoryMemberships": 202,
+  "trainingLabels": 49,
+  "previewLabels": 48,
+  "previewCategories": 14,
+  "heldCategoriesNoValidationMatch": [],
+  "newHostedClips": 46,
+  "requestedEntriesWithVideo": 49,
+  "partitions": {
+    "train": {
+      "selected": 585,
+      "usable": 423,
+      "signers": [
+        "6001",
+        "7003",
+        "7005",
+        "7007",
+        "7041",
+        "7042",
+        "7043",
+        "8006",
+        "8008",
+        "8012",
+        "8014",
+        "8017",
+        "8019",
+        "8020",
+        "8021",
+        "8022",
+        "8027",
+        "8028",
+        "8030",
+        "8040",
+        "8041",
+        "8043",
+        "8044",
+        "8045",
+        "8046",
+        "8048",
+        "8049",
+        "8050",
+        "8053",
+        "8054",
+        "8902"
+      ]
+    },
+    "val": {
+      "selected": 194,
+      "usable": 130,
+      "signers": [
+        "7002",
+        "8005",
+        "8013",
+        "8015",
+        "8018",
+        "8025",
+        "8047",
+        "8051"
+      ]
+    },
+    "test": {
+      "selected": 194,
+      "usable": 153,
+      "signers": [
+        "8031",
+        "8032",
+        "8033",
+        "8035",
+        "8036",
+        "8037",
+        "8038",
+        "8039"
+      ]
+    }
+  },
+  "defaultModelsUnchanged": true,
+  "promotion": "Opt-in category previews only; not a replacement for the default six-word model.",
+  "deploymentStatus": "withheld",
+  "automaticCapture": {
+    "correct": 0,
+    "total": 4
+  },
+  "samplingCaveat": "Short-clip temporal upsampling was found in the archived recovery experiments. See vocabulary-v9/SAMPLING-ISSUE.md. No high-accuracy claim or model promotion is supported."
+}

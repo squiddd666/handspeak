@@ -1,0 +1,33 @@
+{
+  "selectedCategoryReplacements": [],
+  "baselineRegression": {
+    "total": 194,
+    "correct": 46,
+    "wrong": 1,
+    "missed": 147,
+    "negativeTotal": 2774,
+    "negativeFalse": 116
+  },
+  "selectedRegression": {
+    "total": 194,
+    "correct": 46,
+    "wrong": 1,
+    "missed": 147,
+    "negativeTotal": 2774,
+    "negativeFalse": 116
+  },
+  "recoveredDevelopmentSequences": 150,
+  "recoveredTestSequences": 28,
+  "pretrainedRequestedLabels": 48,
+  "defaultSixWordModelReplaced": false,
+  "highAccuracyDemonstrated": false,
+  "limitations": "Repeated category-negative evaluations, previously inspected regression clips, offline dense sampling, and no physical webcam or ordinary non-sign benchmark.",
+  "deploymentStatus": "withheld",
+  "automaticCapture": {
+    "correct": 0,
+    "total": 4
+  },
+  "samplingCaveat": "Short-clip temporal upsampling was found in the archived recovery experiments. See vocabulary-v9/SAMPLING-ISSUE.md. No high-accuracy claim or model promotion is supported.",
+  "correctedDevelopmentRecovery": 149,
+  "correctedUsableDevelopmentSequences": 702
+}

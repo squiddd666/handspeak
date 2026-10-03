@@ -1,0 +1,5 @@
+# Expanded-word preview experiment
+
+Private working directory: `/opt/handspeak-training/vocabulary-v5`. Run with the training venv. Depends on the frozen v4 development features and indexes outside the served site and the existing `training/accuracy` helpers. Sequence: prepare_more, extract_more, fit_expansion, select_preview (validation only); hash and freeze preview-candidate.json to preview-frozen.json before evaluate_preview. evaluate_more records the strict default-promotion candidate, which produced no new validation hits and was not deployed.
+
+New words: DRINK, WATER, BOOK. Negative signs: APPLE, MILK; synthetic still/drift/jitter/no-hands examples are additional diagnostics. Original six-word predictions take precedence. No additional word was promoted into the default vocabulary. No high-accuracy or physical-webcam claim is made. Scripts retain fixed paths for this experiment and must use a new output directory for a new experiment; do not overwrite frozen evidence or tune from its test set.

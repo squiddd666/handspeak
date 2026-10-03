@@ -1,0 +1,56 @@
+{
+  "site": "https://handspeak.cvsu.dev",
+  "date": "2026-10-03",
+  "method": "Manually entered text using motion vocabulary; no physical-camera detection tested. I is typed context.",
+  "tests": [
+    {
+      "input": "I WANT WATER PLEASE",
+      "httpStatus": 200,
+      "seconds": 2.74,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "I want water, please.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      },
+      "status": "Suggestion only. Compare it with your original words before applying.",
+      "applyAndUndo": true,
+      "draftUnchangedUntilApplied": true
+    },
+    {
+      "input": "NO FOOD PLEASE",
+      "httpStatus": 200,
+      "seconds": 3.32,
+      "response": {
+        "original": "NO FOOD PLEASE",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are 'no food' and 'please' related?",
+        "model": "qwen3:1.7b",
+        "local": true
+      },
+      "status": "Suggestion only. Compare it with your original words before applying.",
+      "draftUnchangedUntilApplied": true
+    },
+    {
+      "input": "BOOK GO FOOD",
+      "httpStatus": 200,
+      "seconds": 3.19,
+      "response": {
+        "original": "BOOK GO FOOD",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the book, going, and food related?",
+        "model": "qwen3:1.7b",
+        "local": true
+      },
+      "status": "Suggestion only. Compare it with your original words before applying.",
+      "draftUnchangedUntilApplied": true
+    }
+  ],
+  "automaticSpeech": false,
+  "automaticSave": false,
+  "pageErrors": []
+}

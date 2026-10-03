@@ -1,0 +1,22 @@
+{
+  "learningLibraryEntries": 200,
+  "categories": 15,
+  "newPracticeVideos": 46,
+  "totalPracticeVideos": 59,
+  "enabledNewCategoryModels": 0,
+  "newModelsWithheld": true,
+  "correctedDevelopmentRecovery": 149,
+  "initialResearchClipCheck": {
+    "correct": 46,
+    "total": 194
+  },
+  "automaticReplay": {
+    "correct": 0,
+    "total": 4
+  },
+  "unitTests": 72,
+  "liveLibraryChecks": "passed",
+  "liveVideoLoadAndSeekChecks": 49,
+  "defaultModelsUnchanged": true,
+  "highAccuracyDemonstrated": false
+}

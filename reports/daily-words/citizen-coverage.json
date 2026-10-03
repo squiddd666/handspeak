@@ -1,0 +1,35 @@
+{
+  "trainClips": 179,
+  "usableTrainingClips": 147,
+  "validationClips": 71,
+  "validationWithUsableSequence": 65,
+  "perWord": {
+    "NAME": {
+      "train": 14,
+      "usableTrain": 13,
+      "val": 4
+    },
+    "HOME": {
+      "train": 14,
+      "usableTrain": 6,
+      "val": 4
+    },
+    "HAVE": {
+      "train": 14,
+      "usableTrain": 10,
+      "val": 4
+    },
+    "WANT": {
+      "train": 29,
+      "usableTrain": 24,
+      "val": 7
+    },
+    "LOVE": {
+      "train": 12,
+      "usableTrain": 10,
+      "val": 4
+    }
+  },
+  "featureExtraction": "30 unique source frames; source timestamps; existing hand-quality gate; center-frame upper-body reference; tracking failures count as misses.",
+  "dataUse": "Private noncommercial research only; do not deploy raw videos, landmark templates, or checkpoints."
+}

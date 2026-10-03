@@ -1,0 +1,11 @@
+{
+  "labels": [
+    "HOME",
+    "HAVE"
+  ],
+  "trainingPositive": 21,
+  "trainingNegative": 120,
+  "validationClips": 300,
+  "gate": "At least half of supported validation clips correct, at least one correct for each word, zero wrong supported labels, zero unsupported false accepts. Freeze before regression evaluation. Require same absolute gate on reserved regression clips plus real-time capture checks before any deployment. Reused data does not establish independent accuracy.",
+  "scope": "Separate opt-in preview; existing 13-word recognizers unchanged."
+}

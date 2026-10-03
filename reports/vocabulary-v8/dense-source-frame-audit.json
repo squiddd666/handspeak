@@ -1,0 +1,642 @@
+{
+  "checked": 226,
+  "under60Frames": [
+    {
+      "sha256": "040b21cc241d620bec2a4a93ada6b7adb8e440e1da62a514b1136d998e8f434f",
+      "label": "LISTEN",
+      "frames": 56,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/listen/4a.8054-listen-2023_02_14_07_21_08.818-0.mp4"
+    },
+    {
+      "sha256": "d3b371d8787d7c5b91b7f7424c3523b7bef1490d5cc4213eb2b02b974f2b8cfd",
+      "label": "LISTEN",
+      "frames": 54,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/listen/4a.8051-listen-2023_01_28_19_13_41.188-2.mp4"
+    },
+    {
+      "sha256": "1dd907ad22a25ceed4096f4cd48a2a2f16d5917465fc82e1bbd29d00ebbbbb5d",
+      "label": "HUNGRY",
+      "frames": 32,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/train/hungry/gtsignstudy4a.8049-hungry-2023_01_26_10_15_49.723-0.mp4"
+    },
+    {
+      "sha256": "be156c230474e8750ec5a36f011d5c66ef9fdff2b94c1ab261d7afd8535a60d3",
+      "label": "HUNGRY",
+      "frames": 57,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/train/hungry/4a.8054-hungry-2023_02_11_12_37_58.192-0.mp4"
+    },
+    {
+      "sha256": "6c49235913b0ca2d69c1b553dbfc867e316db37f91e1d71625f6867fa0c51b94",
+      "label": "HUNGRY",
+      "frames": 53,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/val/hungry/gtsignstudy4a.8047-hungry-2023_01_30_14_28_57.591-1.mp4"
+    },
+    {
+      "sha256": "2ea7bfa3a556839cbc0586bca534d48fad817430c6720e15e718038068f960a1",
+      "label": "HOT",
+      "frames": 56,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/hot/4a.8012-hot-2023_01_07_13_37_54.325-0.mp4"
+    },
+    {
+      "sha256": "da4de15dd15dfc98b5d61ea86d26ab20ccc1a971f1053f561302f6a8a78515ff",
+      "label": "SHOES",
+      "frames": 50,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/shoe/4a.6001-shoe-2023_01_04_22_15_36.290-0.mp4"
+    },
+    {
+      "sha256": "e3150daa50bd264cefe100eff0df449b8d0644fe2541a282e9eb4ee8da81f6aa",
+      "label": "BED",
+      "frames": 50,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/bed/4a.7003-bed-2022_12_26_19_37_12.903-0.mp4"
+    },
+    {
+      "sha256": "934807413aaa3211aed3a0f0614e0c08de87436f192f5802893d895e79d4192e",
+      "label": "BED",
+      "frames": 50,
+      "fps": 29.75,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/bed/gtsignstudy4a.8044-bed-2023_01_27_09_17_07.766-0.mp4"
+    },
+    {
+      "sha256": "50ae5f9b98789441842baf0fa5a3b6344282b834bf894d1f3996595c804407ef",
+      "label": "BED",
+      "frames": 57,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/bed/gtsignstudy4a.7043-bed-2023_01_26_11_32_49.705-0.mp4"
+    },
+    {
+      "sha256": "91ee28a6997e4b97f5bf162f9d52497eb8d94e181aaa234a784bde3ace3eb1fd",
+      "label": "BED",
+      "frames": 48,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/bed/4a.6001-bed-2023_01_04_22_55_17.967-0.mp4"
+    },
+    {
+      "sha256": "b856052ba5490f5d1a2b3db81e3ff0ec8f170ffdd90dc29ed6b4dd45d9b113cd",
+      "label": "BED",
+      "frames": 47,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/bed/4a.8005-bed-2022_12_20_22_13_02.406-0.mp4"
+    },
+    {
+      "sha256": "1fc23072f5862a011d17b111a56497557fad3b306743396fbc93d637d0dacdc4",
+      "label": "PAIN",
+      "frames": 55,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/owie/4a.8051-owie-2023_01_31_12_01_00.043-0.mp4"
+    },
+    {
+      "sha256": "9b7f5c24432660b49a75860ee41ee653e4688a1581d3f73341627946a620695f",
+      "label": "SICK",
+      "frames": 52,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/sick/gtsignstudy4a.8047-sick-2023_01_30_14_31_09.971-0.mp4"
+    },
+    {
+      "sha256": "52cd179368a98e6c9f27a0364079ad794ecf6cb3b4492f0cf28ab83546f0a86d",
+      "label": "SICK",
+      "frames": 55,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/sick/4a.8005-sick-2022_12_17_10_47_13.559-0.mp4"
+    },
+    {
+      "sha256": "4ee7d6f3bbe283bfac05efd13b678315ce9bf0b7f87dd9f95fafd2a30eb12cf9",
+      "label": "BROTHER",
+      "frames": 56,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/brother/4a.8019-brother-2023_01_13_22_25_29.723-0.mp4"
+    },
+    {
+      "sha256": "2d3bc0bf98bf9923bba320193f8bed31730af940f8d70acb02e89c002c85f302",
+      "label": "BROTHER",
+      "frames": 56,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/brother/gtsignstudy4a.8047-brother-2023_01_30_13_30_27.884-0.mp4"
+    },
+    {
+      "sha256": "c27b30c4abb69506988292164c123acb33b60eefc249efee1a42277adde44137",
+      "label": "BROTHER",
+      "frames": 56,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/brother/gtsignstudy4a.8047-brother-2023_01_30_14_41_55.736-0.mp4"
+    },
+    {
+      "sha256": "09ccb2a277562282365c34703c33bf26f0f74db6514cc897b75adca830a05057",
+      "label": "GRANDMOTHER",
+      "frames": 51,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandma/4a.6001-grandma-2022_12_17_10_38_05.452-1.mp4"
+    },
+    {
+      "sha256": "a5017845cd4f09a607b74b589069ba957158768b0dc0e9e32df918011b054a33",
+      "label": "GRANDMOTHER",
+      "frames": 54,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandma/4a.6001-grandma-2023_01_04_22_20_25.151-0.mp4"
+    },
+    {
+      "sha256": "d4f9e83f1b847033e4aae29deb1f502e44b447ac539385b078e13fa43a407e3c",
+      "label": "GRANDFATHER",
+      "frames": 59,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandpa/4a.8053-grandpa-2023_01_28_19_34_23.657-0.mp4"
+    },
+    {
+      "sha256": "c6286150bcdbfc5a25f82fd41b3285668a007f23e0fe3d68104a38355e743e80",
+      "label": "GRANDFATHER",
+      "frames": 42,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandpa/4a.8022-grandpa-2023_01_13_21_47_44.816-0.mp4"
+    },
+    {
+      "sha256": "f02303fbb90225078b3b7c2b584d2d7e0477566b207c0eeb17bfac8c96645d43",
+      "label": "GRANDFATHER",
+      "frames": 52,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandpa/4a.6001-grandpa-2023_01_04_22_22_22.959-0.mp4"
+    },
+    {
+      "sha256": "69a8647ebad095c3a751b2e447dc9f498ddf8ca2fbbc4c2751ad3e0d2230e704",
+      "label": "GRANDFATHER",
+      "frames": 57,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/grandpa/4a.8021-grandpa-2023_01_17_12_05_34.420-0.mp4"
+    },
+    {
+      "sha256": "c80d7dc0d7723dd44e8bbd8c8dd15f598013b122a088fae209d44619f929296d",
+      "label": "GRANDFATHER",
+      "frames": 52,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/grandpa/4a.8018-grandpa-2023_01_10_18_49_23.923-0.mp4"
+    },
+    {
+      "sha256": "b573d4b259137d6f04ced33c6794134bc33e8b3e6ba5f1b2f47d6be5329206ba",
+      "label": "GRANDFATHER",
+      "frames": 51,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/grandpa/gtsignstudy4a.8047-grandpa-2023_01_30_14_21_10.896-0.mp4"
+    },
+    {
+      "sha256": "6642011a0fabfb04ee057bb29de497ff1d0e9beefbd59d0ab1f58b7d5cbe7720",
+      "label": "CHILD",
+      "frames": 57,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/child/gtsignstudy4a.8050-child-2023_01_30_14_55_36.055-0.mp4"
+    },
+    {
+      "sha256": "1be4be12f5da6cb768ec9a41a05caab437ad2b38f6c999679310313fa710ee50",
+      "label": "CHILD",
+      "frames": 50,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/child/4a.8006-child-2022_12_26_10_09_03.182-0.mp4"
+    },
+    {
+      "sha256": "3784d137ab5e0234d46c6107b46eac6bdb1daa4f01d5d17d00b087b86a9eb140",
+      "label": "CHILD",
+      "frames": 55,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/child/4a.8051-child-2023_01_29_21_23_26.093-0.mp4"
+    },
+    {
+      "sha256": "86a1d8618462eb28914900ce1d8b294c7784a3cc18d79cabebed5b7a75434231",
+      "label": "BOY",
+      "frames": 44,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/boy/gtsignstudy4a.8045-boy-2023_01_27_14_21_52.681-0.mp4"
+    },
+    {
+      "sha256": "a27cee0cfd3505cb9f47bf019f75221124852324d8a9aad43f161e25a89c1af3",
+      "label": "MAN",
+      "frames": 59,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/man/gtsignstudy4a.8045-man-2023_01_26_17_54_33.306-0.mp4"
+    },
+    {
+      "sha256": "8f203146308b8d4bf34d646f26183e1f495e8bce40835abc88f972f5da431722",
+      "label": "BOOK",
+      "frames": 57,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/accuracy-v4/videos/train/book/4a.8054-book-2023_02_13_10_20_25.368-0.mp4"
+    },
+    {
+      "sha256": "54251a6d967d79f677ec9427a130b79302414c48a308d82ab5d0ecd683ba4e76",
+      "label": "PEN",
+      "frames": 49,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/pen/4a.7003-pen-2022_12_29_21_28_58.709-0.mp4"
+    },
+    {
+      "sha256": "c3ef69471bc3640cf601e09509ab3d3739ccd1ddcabc5563d0b25ebed38d223d",
+      "label": "PENCIL",
+      "frames": 55,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/pencil/gtsignstudy4a.8050-pencil-2023_01_30_16_56_19.094-0.mp4"
+    },
+    {
+      "sha256": "e1adfc1700adcb959f179bdf5bf94680ddb5799b0cde3ab21f2b76ff73bb8f61",
+      "label": "PENCIL",
+      "frames": 52,
+      "fps": 29.97002997002997,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/pencil/4a.8005-pencil-2022_12_29_15_28_24.945-0.mp4"
+    },
+    {
+      "sha256": "aecb379f2186626504bcfa35a55f5b3350cdb5516f7aac9d61a7ac0ce1c2bbe4",
+      "label": "READ",
+      "frames": 55,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/read/4a.8051-read-2023_01_30_22_37_00.182-0.mp4"
+    },
+    {
+      "sha256": "c118752023ade2a6f0132e4f89138aee7a9d5530cddae13c690d0e28685e7d24",
+      "label": "GIVE",
+      "frames": 50,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/give/4a.7003-give-2022_12_26_21_50_10.583-0.mp4"
+    },
+    {
+      "sha256": "9989b76ecb33d9c723506dceec72b4290e91705e415bb58d156e6787a7de0e74",
+      "label": "GIVE",
+      "frames": 56,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/give/4a.8028-give-2023_01_15_14_24_46.528-0.mp4"
+    },
+    {
+      "sha256": "0fe1d6dfc7d4d89a9d9b3adaffa74647c0e3cf628c17257690823975bd59fee6",
+      "label": "GIVE",
+      "frames": 53,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/give/4a.8051-give-2023_01_29_14_24_25.735-0.mp4"
+    },
+    {
+      "sha256": "63ce2e72c6f1fb4ba5a8456bec651b8b334670367fa8f679fef48c973a99530c",
+      "label": "GIVE",
+      "frames": 55,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/give/4a.8051-give-2023_01_29_14_50_59.718-0.mp4"
+    },
+    {
+      "sha256": "328d38d15458fc590d54c909e69d153a8ef6bf2ad5a0ffe44928b81e22496249",
+      "label": "LOOK",
+      "frames": 42,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/look/gtsignstudy4a.8045-look-2023_01_27_14_23_23.859-0.mp4"
+    },
+    {
+      "sha256": "fcd8da0a7f6a1529fa323a752d36188701687b74ef89a8bda28438d266bbaceb",
+      "label": "SEE",
+      "frames": 57,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/see/4a.8054-see-2023_02_12_23_15_22.388-0.mp4"
+    },
+    {
+      "sha256": "a10c29683bd4f5dd1926f9cc360734144e4c19fe7d0e16904aa3bbf223bf5a35",
+      "label": "SEE",
+      "frames": 59,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/see/4a.8054-see-2023_02_11_13_26_08.809-0.mp4"
+    },
+    {
+      "sha256": "047e68eb64c6cd66dd66a4e74e81617e17d3f6d8df1213969a859377e8a9e633",
+      "label": "SEE",
+      "frames": 55,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/see/gtsignstudy4a.8047-see-2023_01_30_13_08_00.657-0.mp4"
+    },
+    {
+      "sha256": "5815b5e77c3a9a25354fd8327dc2eb92186c3407950e20b2afccf4d7748a9ed6",
+      "label": "SEE",
+      "frames": 58,
+      "fps": 29.75,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/see/gtsignstudy4a.8047-see-2023_01_30_16_56_01.834-0.mp4"
+    },
+    {
+      "sha256": "d8ba5ec98c4c3191a612c738f95c421d9c415b41f950c59c7c6bd369d38a61cd",
+      "label": "HEAR",
+      "frames": 52,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/hear/4a.8054-hear-2023_02_21_08_02_08.582-0.mp4"
+    },
+    {
+      "sha256": "d7d56954739449c6462579ab28f468a5065b4734fddd814778b049388750f931",
+      "label": "CALL",
+      "frames": 33,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/callonphone/gtsignstudy4a.8049-callonphone-2023_01_25_18_11_57.194-0.mp4"
+    },
+    {
+      "sha256": "5eb5320a1049edbd72f7be1359d97f7dc8acec2d77dfcbf03768752f19b5accf",
+      "label": "CALL",
+      "frames": 51,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/callonphone/4a.7005-callonphone-2022_12_15_16_42_16.802-0.mp4"
+    },
+    {
+      "sha256": "78059cb09e47dd12797b514f067387f17c2b94f8af35e8a223ade578890dd63d",
+      "label": "CALL",
+      "frames": 56,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/callonphone/gtsignstudy4a.8050-callonphone-2023_01_30_15_29_49.371-0.mp4"
+    },
+    {
+      "sha256": "b9bec54c5d5e4778d76a49e217537d3818e647372a448622ac34b9cbd1345a75",
+      "label": "FIND",
+      "frames": 59,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/find/4a.8021-find-2023_01_14_10_19_04.516-0.mp4"
+    },
+    {
+      "sha256": "2c24e6f231dfdd5d31fc9816fb26841c19f7713edd14bf0f3f9cd5aa1e3e2901",
+      "label": "FIND",
+      "frames": 46,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/find/gtsignstudy4a.7043-find-2023_01_26_17_12_28.156-0.mp4"
+    },
+    {
+      "sha256": "d15a3abad10c12fe3cc7eca6dc44a5e7b6f2d3c572b52e8871e8c4cc67883076",
+      "label": "FIND",
+      "frames": 49,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/find/gtsignstudy4a.8047-find-2023_01_30_14_13_18.342-0.mp4"
+    },
+    {
+      "sha256": "2a8524e9fa1740f90e9c46ee696ed1a1113e90e4f46819018d3b3b11a89c684f",
+      "label": "HOME",
+      "frames": 57,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/home/gtsignstudy4a.8048-home-2023_01_29_16_41_26.549-1.mp4"
+    },
+    {
+      "sha256": "04e63a8d9dca217b15cdaf856fda4a4440c2c75252097f7782fa0f32d5f4f3a4",
+      "label": "HOME",
+      "frames": 50,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/home/gtsignstudy4a.8041-home-2023_01_26_19_56_25.409-0.mp4"
+    },
+    {
+      "sha256": "58e99545e87c124142173998e763bbb3be2d7dd9926b82c21047b0b97e80c2d9",
+      "label": "HOME",
+      "frames": 42,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/home/4a.8018-home-2023_01_11_14_31_53.201-0.mp4"
+    },
+    {
+      "sha256": "134efad61766582240477c68a0ff4859b509847760db1223e393e457c1a26ea7",
+      "label": "HOME",
+      "frames": 44,
+      "fps": 29.97002997002997,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/home/4a.8005-home-2022_12_29_08_45_13.886-0.mp4"
+    },
+    {
+      "sha256": "20da11ac1c17338f80ab9c1992b3d17ea9a7e0fa9dee2ec4c9c333d15276a228",
+      "label": "STORE",
+      "frames": 55,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/store/4a.8053-store-2023_01_29_22_21_19.906-0.mp4"
+    },
+    {
+      "sha256": "764f92656179856e8799f8a30fb179391f38c6aac67a1721d89c3d65aabed8b2",
+      "label": "STORE",
+      "frames": 41,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/store/4a.8018-store-2023_01_11_13_27_07.596-0.mp4"
+    },
+    {
+      "sha256": "0031cb84bc4ede5b1794ee35780ac1c13f37196cc0e2f29cf273ea123f7b04ad",
+      "label": "AIRPLANE",
+      "frames": 55,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/airplane/4a.8051-airplane-2023_01_30_20_25_51.120-0.mp4"
+    },
+    {
+      "sha256": "099ba4025c0c241bb505f3ecffa6f3ce7092803e92d44f1ba84d3eb9f6dd8165",
+      "label": "RIDE",
+      "frames": 2,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/ride/4a.7007-ride-2023_01_06_14_45_40.866-0.mp4"
+    },
+    {
+      "sha256": "f95281cea42ca2f4c704bee4628ac4c1b14742a0645fb9293f87a4e22b45c327",
+      "label": "RIDE",
+      "frames": 58,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/ride/4a.8053-ride-2023_01_29_19_11_44.629-0.mp4"
+    },
+    {
+      "sha256": "4b904c3c1da5ad57640b5a1aa71458cdd1e108419b6c81d215db5982a3ddbd0f",
+      "label": "TOMORROW",
+      "frames": 54,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/tomorrow/gtsignstudy4a.8047-tomorrow-2023_01_30_15_34_35.359-0.mp4"
+    },
+    {
+      "sha256": "ffd49156e1c27ec1d4c0b742bb3b60e074a1ce66063078e8af841eb27b9c4cec",
+      "label": "NOW",
+      "frames": 47,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/now/4a.7003-now-2022_12_18_19_33_35.298-0.mp4"
+    },
+    {
+      "sha256": "e2c5519177ced2f841f183394d1f612d82dc80bcb746f96577bf0c78512ec268",
+      "label": "NOW",
+      "frames": 45,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/now/4a.8018-now-2023_01_10_18_05_46.656-0.mp4"
+    },
+    {
+      "sha256": "17a6893bb04db62512862335449c40b9052e0b081a23530cc8ad3d67379612f4",
+      "label": "LATER",
+      "frames": 59,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/later/gtsignstudy4a.8044-later-2023_01_27_22_27_06.722-0.mp4"
+    },
+    {
+      "sha256": "dd2461f6af020c602949dfff609940647656f411f2e95850ea910150cc7fdaf1",
+      "label": "LATER",
+      "frames": 51,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/later/gtsignstudy4a.8047-later-2023_01_30_13_56_18.672-0.mp4"
+    },
+    {
+      "sha256": "aef158692f8648c1596c031c979706a5d865097e748af656ca43e51f19281db7",
+      "label": "MORNING",
+      "frames": 50,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/morning/4a.8005-morning-2022_12_20_22_09_43.264-0.mp4"
+    },
+    {
+      "sha256": "965feda159463c5faeb6214cda090330d131326060b4026bad86aeafcff7db19",
+      "label": "NIGHT",
+      "frames": 50,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/night/gtsignstudy4a.8045-night-2023_01_27_09_14_06.452-0.mp4"
+    },
+    {
+      "sha256": "2b3bef4170cc457e9d29c46beeeee6dbd8f5c77708e50fb04107c1858f210e91",
+      "label": "NIGHT",
+      "frames": 58,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/night/gtsignstudy4a.8047-night-2023_01_30_13_19_20.023-0.mp4"
+    },
+    {
+      "sha256": "7f99d6f7f827b44874577dba9f8a72bb30ddc3ab75257f670d29182bfa36492b",
+      "label": "LIKE",
+      "frames": 57,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/train/like/4a.8054-like-2023_02_18_19_57_27.165-0.mp4"
+    },
+    {
+      "sha256": "e9d239b931af4a8e1300925ffea66c565516ef19c87a8523185ff55b659184e3",
+      "label": "LIKE",
+      "frames": 49,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/train/like/4a.8019-like-2023_01_13_23_03_22.870-0.mp4"
+    },
+    {
+      "sha256": "f46ac9896f9bc53cd077a1bb3915389ffb38875325fbd8fab2036d125abfdfe1",
+      "label": "LIKE",
+      "frames": 50,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/train/like/gtsignstudy4a.8041-like-2023_01_26_20_04_43.400-0.mp4"
+    },
+    {
+      "sha256": "518ff2f2207e35506e0e2ba34041e038aed0f8859f75efc0b3ebcaa7a827b015",
+      "label": "LIKE",
+      "frames": 53,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v6/videos/val/like/gtsignstudy4a.8047-like-2023_01_30_14_29_37.430-0.mp4"
+    },
+    {
+      "sha256": "991ffab50b5cdd44ee81687069f8312209b7eeb91a843aafc410b278e9a16567",
+      "label": "STAY",
+      "frames": 50,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/stay/4a.8019-stay-2023_01_13_21_54_53.694-0.mp4"
+    },
+    {
+      "sha256": "4da34e5f59b4fbb0c8a9c368a129440373581d607ba81c84d8ffdaefe0aa3b97",
+      "label": "STAY",
+      "frames": 46,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/stay/4a.8006-stay-2023_01_02_18_50_42.218-0.mp4"
+    },
+    {
+      "sha256": "c27b09677b8b0ee7855704f81698831a498591adb416c035ee49f12208883167",
+      "label": "TABLE",
+      "frames": 58,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/table/4a.8008-table-2023_01_02_12_10_45.941-0.mp4"
+    },
+    {
+      "sha256": "21e5a586b7acc302769e7162fe7ac64024acafc6ee5b0051f44a5addda703b3b",
+      "label": "TABLE",
+      "frames": 48,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/table/4a.6001-table-2023_01_04_22_51_13.897-0.mp4"
+    },
+    {
+      "sha256": "e697262b97accb65fc8508965dfaaaeb4e52b47ea576510c92ec70876f96adb7",
+      "label": "CHAIR",
+      "frames": 47,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/chair/gtsignstudy4a.8045-chair-2023_01_27_14_19_52.147-0.mp4"
+    },
+    {
+      "sha256": "3f51400f10de80a6ceff15fc857f9969c1aaafb882aea46ccaae7e13514bb73f",
+      "label": "CHAIR",
+      "frames": 45,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/chair/4a.6001-chair-2023_01_04_23_16_12.251-0.mp4"
+    },
+    {
+      "sha256": "0e0a8fb8315778c85e0c320b344d2cecacbc0c0ff8ebacc07a6690e325213b98",
+      "label": "CHAIR",
+      "frames": 48,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/chair/gtsignstudy4a.8045-chair-2023_01_27_14_30_07.261-0.mp4"
+    },
+    {
+      "sha256": "c26eb054e458ab0a297f67f1780c39ae56d09d305c0d7cc6082aca1eedd57aa9",
+      "label": "CHAIR",
+      "frames": 52,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/chair/4a.8005-chair-2022_12_21_08_27_27.748-0.mp4"
+    },
+    {
+      "sha256": "c8bf277a2025260166043a0c29d9c8aa4d15ba13102a93976c4b19bb70cc320f",
+      "label": "CHAIR",
+      "frames": 56,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/chair/gtsignstudy4a.8047-chair-2023_01_30_16_18_21.352-0.mp4"
+    },
+    {
+      "sha256": "acfb0252d9f5bac4c0c020623533ac12caf3f71a997653b63210a7e4fb8d9f23",
+      "label": "FISH",
+      "frames": 57,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/fish/4a.8053-fish-2023_01_29_20_15_36.482-0.mp4"
+    },
+    {
+      "sha256": "a3f0f3de49e3adc905b0f5a00cf7f1591f88441f57ea91abc2ebba5565fae860",
+      "label": "FISH",
+      "frames": 49,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/fish/gtsignstudy4a.8045-fish-2023_01_27_12_54_53.464-0.mp4"
+    },
+    {
+      "sha256": "a7971829896698588dccc8a3a47516a8bc782cc9b89b54fc284508352c131b91",
+      "label": "MILK",
+      "frames": 56,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/milk/gtsignstudy4a.7043-milk-2023_01_26_19_58_41.946-0.mp4"
+    },
+    {
+      "sha256": "3117427723592bb5689468ece2133b046c26dc7289523ebe7e49fb36fd2e1154",
+      "label": "MILK",
+      "frames": 45,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v5/videos/val/milk/4a.8018-milk-2023_01_11_15_09_08.143-0.mp4"
+    },
+    {
+      "sha256": "8e17423452818bcfa38446bd04a16b0361eac06a01a09526f76367481751f2c0",
+      "label": "CAN",
+      "frames": 44,
+      "fps": 29.916666666666668,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/can/4a.6001-can-2023_01_04_23_11_54.244-0.mp4"
+    },
+    {
+      "sha256": "8c919fc495e96e55010ca109e513b9b5fddbe356bab8a0fd87b2ff5b180b3e60",
+      "label": "CAN",
+      "frames": 54,
+      "fps": 29.833333333333332,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/can/gtsignstudy4a.8044-can-2023_01_28_12_28_36.579-0.mp4"
+    },
+    {
+      "sha256": "18e5a9e656047fa0555959bd291b14f37c6978d34412a1512c72aa5e86bc38ea",
+      "label": "HAVE",
+      "frames": 51,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/train/have/gtsignstudy4a.8045-have-2023_01_27_12_48_28.778-0.mp4"
+    },
+    {
+      "sha256": "8ff0fe9b4e7d32cee7c003910b3c39394be4a5e72523b54db9abbfe8d7ee0685",
+      "label": "HAVE",
+      "frames": 51,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/have/gtsignstudy4a.8047-have-2023_01_30_14_44_19.108-0.mp4"
+    },
+    {
+      "sha256": "2cbf60cb8dd7f2652f207e24cdeffb582148e03a61c600f9fed413e0ee669ffc",
+      "label": "BECAUSE",
+      "frames": 54,
+      "fps": 30.0,
+      "file": "/opt/handspeak-training/vocabulary-v7/videos/val/because/4a.8005-because-2022_12_17_18_14_27.154-0.mp4"
+    }
+  ]
+}

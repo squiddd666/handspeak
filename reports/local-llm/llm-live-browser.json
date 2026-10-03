@@ -1,0 +1,11 @@
+{
+  "localModelAvailable": true,
+  "input": "I WANT WATER PLEASE",
+  "suggestion": "I want water, please.",
+  "seconds": 19.14,
+  "originalPreservedUntilApply": true,
+  "applyAndRestore": true,
+  "privatePathsBlocked": true,
+  "mobileFits": true,
+  "pageErrors": []
+}

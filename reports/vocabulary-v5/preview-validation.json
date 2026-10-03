@@ -1,0 +1,33 @@
+{
+  "status": "optional-preview-only",
+  "parameters": {
+    "maxDistance": 0.65,
+    "minRatio": 1,
+    "minVotes": 1,
+    "mirror": true,
+    "strongRatio": 1.5
+  },
+  "validation": {
+    "existing": {
+      "total": 84,
+      "correct": 47,
+      "wrong": 1
+    },
+    "new": {
+      "total": 36,
+      "correct": 7,
+      "wrong": 10
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 27
+    }
+  },
+  "perWord": {
+    "DRINK": 4,
+    "WATER": 2,
+    "BOOK": 1
+  },
+  "selection": "Prefer at least one validation hit per new word, then minimize 4*existing wrong + new wrong + 2*negative false - 2*new correct. Default promotion constraints failed; opt-in only."
+}

@@ -24,12 +24,18 @@ python server.py
 
 Then open <http://localhost:8000> in Chrome or Edge and allow camera access. The first run needs an internet connection to download the MediaPipe runtime and hand-landmark model. The server creates `handspeak.db` automatically.
 
+## Accounts and administration
+
+The deployed application includes registration/sign-in, password changes, private saved history, CSV export, message editing/reuse/deletion, and an administrator dashboard for accounts and feedback. Sign-in is optional for using the camera. Guest history is scoped to a browser cookie and transfers to the account on registration/sign-in. Email verification and delivery are not configured; administrators provide single-use password-reset links.
+
+The owner creates the first administrator with a private one-time setup link generated on the server. See [deployment and recovery instructions](ops/DEPLOYMENT.md). Production data and backups are outside the website. Do not publish the setup token or database.
+
 ## Persistent system functions
 
-- Saved translation sessions and detection details
+- Private saved translation sessions and detection details
 - Gesture library delivered from the database
 - Anonymous 5-point research evaluation questionnaire
-- Aggregate accuracy, usability, performance, confidence, and latency metrics
+- Personal session/match statistics and aggregate user feedback ratings (not measured recognition accuracy)
 - CSV session export for research analysis
 - JSON API health check and validated server inputs
 
@@ -52,7 +58,7 @@ This prototype recognizes selected static hand shapes and a small vocabulary of 
 - `index.html` — semantic page structure
 - `styles.css` — responsive visual design and accessibility modes
 - `app.js` — camera, MediaPipe integration, recognition, and message tools
-- `server.py` — HTTP server, validated JSON API, SQLite persistence, and CSV export
+- `server.py` — HTTP server, validated JSON API, MariaDB persistence (SQLite local-test fallback), and CSV export
 - `training/test_model.py` — pretrained model validation and browser-classifier integration tests
 
 ## Pretrained ASL model
@@ -165,7 +171,7 @@ vocabulary is unreliable.
 The evaluation uses a small subset of isolated videos; it does not establish
 live-camera or continuous-signing accuracy. Unsupported signs can still match a
 known word. Distance is not a calibrated confidence probability. Review every
-suggestion before adding it. Face/body/grammar/LLM interpretation is not used.
+suggestion before adding it. Face/body grammar is not interpreted. An optional local LLM can edit reviewed draft text; it cannot verify recognized signs.
 
 **Optional personalization:** Expand **Optional: add your own word examples**,
 enter a label, and record at least three examples for a new word. Personal
@@ -237,3 +243,34 @@ and isolated loading/inference failures.
 Slow word captures can extend by up to two seconds after the normal 2.5-second recording window to reach the existing 12-frame minimum. A stalled stream still times out; no frames are duplicated to pass the minimum. This does not guarantee word recognition.
 
 The October 2026 accuracy experiment trained an additional temporal candidate. It remains evaluation-only: fresh whole-clip recognition improved, but automatic unsupported-sign suggestions increased. See `reports/accuracy-v4/README.md` in the Git checkout for the recorded results. Local application assets use a release query tag, and the server requests revalidation to avoid stale CDN code.
+
+### Gesture example videos
+
+The Moving signs section includes thirteen silent, attributed ASL examples: HELLO, THANK YOU, PLEASE, YES, NO, FINISH, DRINK, WATER, BOOK, FOOD, HUNGRY, LIKE, and GO. Controls include normal/slow playback, repeat, replay, and Practice at camera. Playback requires a user action and pauses when hidden or outside the viewport. Full training videos stay outside the website; see [credits](media/signs/README.md) and [provenance](media/signs/sources.json).
+
+The **Try 7 extra words (preview)** checkbox is off by default. Practice at camera enables it for an extra-word video. The new four-word extension matched 5/24 reserved clips and increased unsupported false suggestions. Default six-word recognition is unchanged when the preview is disabled. See [current results](models/asl-extra-words-evaluation.json).
+
+## Final-defense deployment
+
+Production uses MariaDB with administrator-protected phpMyAdmin. See the [database schema and relationships](database/README.md), [operations guide](ops/DEPLOYMENT.md), and the website’s [defense walkthrough](https://handspeak.cvsu.dev/defense.html). Database credentials remain outside the served site and repository. Recognition accuracy remains experimental; deployment completion is not evidence of improved model accuracy.
+
+## Sentence drafts and more motion words
+
+Use Words in motion and enable **Try 7 extra words (preview)** for DRINK, WATER, BOOK, FOOD, HUNGRY, LIKE, and GO. All thirteen words have attributed practice videos. **Automatically add motion matches to my draft** is optional and never speaks automatically. Typed-word buttons, remove-last-word, punctuation, and Edit message help compose a reviewed sentence, such as “I AM HUNGRY.” This is isolated-sign text composition, not continuous ASL translation.
+
+The latest four new labels matched only 5/24 reserved clips; GO matched 0/6. A four-video virtual-camera replay missed all four examples. Recognition remains experimental and needs further work; no higher-accuracy or reliable sentence-recognition claim is made. See [v6 evidence](reports/vocabulary-v6/test-report.json).
+
+## Local LLM interpretation
+
+Click **Interpret draft** below the message editor. Only the draft text (up to 500 characters) goes to this server’s local Qwen3 1.7B model via Ollama. The original and suggestion appear side by side for review. **Use suggestion** applies it; **Restore original words** undoes that replacement if the draft has not changed. Nothing is automatically spoken or saved. An edited draft cannot be overwritten by a stale suggestion.
+
+This edits short text; it does not recognize signs, infer ASL grammar, or guarantee the original meaning. Ambiguous drafts can request clarification. Conservative negation/number/question checks reject some changes but are not a semantic proof. Original words remain visible. See [LLM operations](ops/LLM.md).
+
+
+## Requested vocabulary library (2026-10-02)
+
+The new library contains 200 unique requested entries in 15 categories, including all 23 requested numbers. Search accepts number names and numerals. Cards distinguish local practice videos, external publisher lessons, and recognition availability. Forty-six additional CC BY 4.0 clips bring the local practice collection to 59 videos; 49 of the requested entries have a local clip. Related-word lessons are labeled explicitly. CHARGER still lacks a verified lesson.
+
+Category recognition support was implemented and tested, but the new category models are withheld because they failed evaluation. The original six-word default and existing extra-word preview are preserved. Switching categories cancels any pending recording/suggestion; returning to an older example restores its vocabulary. An internal negative class can reject out-of-category movements and is never added as a word. Signs without a pretrained model can use the existing personal-training controls (96 personal examples total per browser), or be added as explicitly typed text.
+
+The first category run matched 46/190 clips for 48 trained labels. This is not high accuracy or a continuous-ASL translator. See [vocabulary v7 evidence](reports/vocabulary-v7/README.md), [category results](models/motion-categories/evaluation.json), and [reproduction instructions](training/catalog/README.md). Further dense-frame recovery and broader-negative experiments are recorded in [v8](reports/vocabulary-v8/README.md) and [v9](reports/vocabulary-v9/README.md). Short-clip temporal upsampling was corrected: the repaired dataset gained 149 usable development sequences rather than the initially reported 150. No replacement passed the full improvement gate. High accuracy remains unproven.

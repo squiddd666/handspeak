@@ -1,0 +1,767 @@
+{
+  "protocol": "New-word/unsupported test recordings selected before fitting and opened after candidate freeze; existing-word clips are a previously evaluated regression set. Signer partitions disjoint. Automatic replay uses synthetic 100 ms timestamps, not real webcam timing.",
+  "baseline": {
+    "existing": {
+      "total": 36,
+      "correct": 20,
+      "wrong": 0
+    },
+    "new": {
+      "total": 24,
+      "correct": 0,
+      "wrong": 7
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 23
+    }
+  },
+  "expanded": {
+    "existing": {
+      "total": 36,
+      "correct": 20,
+      "wrong": 0
+    },
+    "new": {
+      "total": 24,
+      "correct": 9,
+      "wrong": 7
+    },
+    "negative": {
+      "total": 40,
+      "correct": 0,
+      "wrong": 27
+    }
+  },
+  "automaticBaseline": {
+    "correct": 20,
+    "wrong": 7,
+    "unsupportedFalse": 8,
+    "repeats": 0
+  },
+  "automaticExpanded": {
+    "correct": 29,
+    "wrong": 7,
+    "unsupportedFalse": 10,
+    "repeats": 0
+  },
+  "regressionGate": false,
+  "perWord": {
+    "DRINK": {
+      "total": 8,
+      "correct": 3
+    },
+    "WATER": {
+      "total": 8,
+      "correct": 5
+    },
+    "BOOK": {
+      "total": 8,
+      "correct": 1
+    }
+  },
+  "candidateSha256": "2bc7edddac5a9636de7e0c2733a4176f4440494cf38df63ee708f8b3ed06c538",
+  "predictions": [
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "53b310cfc87f716e48b2a2df47beb36f8d8d94ac79d403ba1f239a43e5eb2ba7",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "4d46c5b31dad62ed5acfac5860acfbb201fc41d4c157b7f074f1ad94ffbb1ee4",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "4aa3c7460c31b1f3daefcb38de2fb0a0456ea12f90d306448bd21b5a6b95a9ae",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "c66583b5c19c4d16ffd0236f79211a3ceae79641b83748347d778638d1db8af2",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "cf9c95d95b244a6bb508390124768380c30c71d676e4ed9828c15cb18fc730f2",
+      "baseline": null,
+      "expanded": "DRINK"
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "4ac31e087731170739d45582d715504a790f2c5dcd7a4f30f3e330a34d6be2d2",
+      "baseline": null,
+      "expanded": "DRINK"
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "16d5619b555f992e258e2f6cac5f49e8d678d548cfaa63ade9f2ebcb36cabb60",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "DRINK",
+      "kind": "supported",
+      "sha256": "ca9dfb45ce1bfd99514ae922bcb0fac50d2515ccf9f12238af82f9b99c85ef85",
+      "baseline": null,
+      "expanded": "DRINK"
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "117e13a765619984393048b52f7f355ee614e30f1631aeb2df184c2c376b5c76",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "6f66eb516928fb0f50b52baba7775daaebabc1b63dea1cd61c60161ec64b79b4",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "4a119d5758f712bdb6dadc809c9b3d0f1d7880257b2496f0723b042aca3d32d1",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "5c31d8ff5d11d2fc52202e766964587e4288db6bce9e246f7333887c5b25c0a9",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "d48c69b87f39e67c6e544e5b31bb3ef55423e4d5f79f5b397f449f60871908e5",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "7d06c4ec8983e09853baf3fd69250b6d397e1c63d879f29ea6896bfad3358ae8",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "16ba63afa125685215f673b6ee4df5250bef21284bd0e84ca31066e9a90e6cfc",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "WATER",
+      "kind": "supported",
+      "sha256": "20750295ac465c9b532aade7f33f8b2ed7ed7da226938e0d677aa043dcbad00d",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "efb928f11a1ed8a99e7283a09c22f747be835a4de4c6dc1d1ebd8926c598b813",
+      "baseline": null,
+      "expanded": "BOOK"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "f4fda06f32ee57f52547c2a12485a3a6f6b2b38c2d569cae8e128ea42ceb5dc5",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "98ead681e94ff39d602580bf5157f07a8b9d6b2e4744eca7368b614ba30f5ecc",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "2942ba709314fcaef67adb92cebe2e0707b29c4cf7dcfbd1306a53b60f60add2",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "ab60cab1afc811f6c4069c8598ca4b579561459affe29677c95bd1dc27794c5f",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "7d390b3bc093b956acae58c81464bbf087c4737ec8e43cfb474fd3fee43da16c",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "725c392f370bb01eba876b5f5e1f7653e2d7c807215b30a3737ddbb249e72031",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "BOOK",
+      "kind": "supported",
+      "sha256": "67b98afcf2f4b9599250767ec341a2fabe079a4b92a06c81a866d7adabe7c3c9",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "833afc090d988369488794ae7c5569496294968c0a0aa669f1d72643359be360",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "ea4fe3fcd0fe3403e740ed5d44c939949ee4616ef43d0f1827aa0d7d12f62d11",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "051bae08719715156826a464952c7610cf000062886a478fc74316f813335056",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "b1e5ed313b064e3b17f086c5e6a367cdb8d3e8c4a122256225b051b534285c27",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "a7fcd0f327b03bce5dbfd50927f48279ba6cc5540f30098903274de158351066",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "58ad8e779aa134975eeef3d44f9b16f0381b8351411aa6e4da4dbee26cee1832",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "f59580262f93373cc3b4a1fea52ccfbc614f5a751b9ee69de8dccae4d346037a",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "APPLE",
+      "kind": "unsupported",
+      "sha256": "8ed31c55b581404a7161cf8784bee772517df4916fb1529011ba0abfdef2ad79",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "f6da957796e01670916d48a139e4e4b1c0b712b4cee19ecdb1a1809b43dc8d56",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "3e2663b885dcfb8b020813d8ed43cebf1c844597ff3cc84b681ea1f7b610b4fe",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "8833b21022558a0f41efb000780c0ec9b70cb39b344b757d8ecc3dedb418a042",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "f09d8af1ee4b76e81951e4d29319c95134033f62a766e4fe66537ad42b8edadb",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "8c83022eddb07b7a2632dd67356471f183104d09d8f18c9f3692efc104324e8a",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "38944758ff35698dd61fe824cde4eaef36a18799574eb1e12aa7d470f1f2761c",
+      "baseline": null,
+      "expanded": "BOOK"
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "6636f55d3ab20273d03676badbf083006fd1222baaa88eebe05d967ef7a9ad06",
+      "baseline": null,
+      "expanded": "DRINK"
+    },
+    {
+      "label": "MILK",
+      "kind": "unsupported",
+      "sha256": "0f7fe20ab3143d003eb11b6ed3d601c1412581e58c58621aee75acb0cff25bc5",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "226393bc9285264fd40585089c19157c4495942f6af3cd740420f727e6f28e68",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "1155626e72b3bea71722a2ab5532f645188de4fc45b9edaae584bbe4f20297c5",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "dd0ed69ed39f472eaa79c9750faf284cc267eb88115adbddaf6cfa1303aa184f",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "92356765b9fea2005c51c159ff1fd0361918f8b9c6f70696c7122842f4955b18",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "94a835e4790afad5457a074410280584bb3756d9b150df9aa8d20731385f1ac0",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "HELLO",
+      "kind": "supported",
+      "sha256": "9e845af51ac4593c3adb50897f1e61f4d11ea4c6431ef2396ccb63e6cf43a123",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "7c7033009240374ad28a8c9299ae313eee1a100b719b257b433136d73b15f367",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "f531457e5e3d2187a5f84162d5e170f4d847c88b359b0cd34b80a3259ae8a391",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "499b2e2a22564b2522d9068d403334bc0a651ffe91e3c953781575fcca4075bc",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "9af9c629afd81c621844add45fd3a94714f682dd8eea60666795349ab693f9fd",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "97f619739467e0016bf387e5f2cbb1451de6fb3786046dddd14938f0fd0760b9",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "THANK YOU",
+      "kind": "supported",
+      "sha256": "6f0383e1993e28d10df079bad026a21fe36dfd8a2d73c165991015b557e0a0ae",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "43122255278df296bd4598fbf0c6b183ae8414df3ea8c08724f2b6dd335a9e5e",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "756d76b4b72fbf6be60d50909650fe1b16a097891e6eadd7a3193ccea683ec7f",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "dc0d25ac120cb05c448cf6455175c157710d0d9fd5a4c8175a59a6b6127e8208",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "c33c3dd0477775a6be29152f8262d1f2ca1757d32978e9fa0554dcd47d14b7f5",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "d14f0ba70b49da477857db1ba8fe81fd504ba7eaa421b82947034d3596f587a9",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "PLEASE",
+      "kind": "supported",
+      "sha256": "359be50016abc48dc61ca4baab95a598b3b08c5d68e3c9926ed3ab31f1c4a9db",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "bb5d109675ea214b76e02b5924c841dfa94bde34340fcf88f3428798d1919e4d",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "b5c71618de28cc8b1f600b9771855f41be66a8f909d9f0ec5a4a4bd56fbbfec8",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "eb4dc527fa1dab35cfd0b74d5952c821d4d62163f5aae11cd3612a50431022e4",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "cdab36963299699ece4734479df9b99725b259ea0da5e8878080e215bbaa415f",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "acc8b37bbd985b47ce9c8e464dbb4a0daf47c94eb193967544ca638aefd55e00",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "YES",
+      "kind": "supported",
+      "sha256": "dd85cad4c185d24d65348bdf60598f086682b623cb2f4d83526e4c69ad095b21",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "292c8bbf9ff028296ff95e21805ac4b4ccc176e7d532d74fb95e0ca9060650e7",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "df5dcc24f3deadeef742614728550f9f95eaa525d73af6344a24450d19da5474",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "f8a3038e2a7b8dcd1ad76c4a7f305eb85f61dbc5b45740834c9eb65c821ec9aa",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "d1f8e4f50fac00d0116ab28a5cd71e1bb8d4a3d497351a727d20d64c6ed191b9",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "622bf54945407a3debbb7e8c732545ed7c771f02d510165ba5a52b8f50bb71a6",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "NO",
+      "kind": "supported",
+      "sha256": "c23654b7666e58e300acccd2d4d0d6e0bf7ece8c87c9dbe2ff7c27e41ae55baa",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "c6446ca014d905fdd9dc0a0c73cdf0ac88c97892f86bf8ee8ec21307db654c0c",
+      "baseline": "FINISH",
+      "expanded": "FINISH"
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "1aae1e5eb5bdd7f41ba3fd2e0a90dcc390b3ead08d0dee68dd70cea265196638",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "e8754794a544e6f9d4f2f844850453f5f5f05fc7d16207273f116b3d10c1beef",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "95216c1e43dd98cf13fa0bcab7b055674c43ea406f1c849a8209dbdd06547dae",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "4edfef2d074729ca8e2455a82bba2bfaacc42cc8480c2399dc91aa0c0d0f5be1",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "FINISH",
+      "kind": "supported",
+      "sha256": "5e8184701f7143b16472fe7c6ab7dd00025528f1c90ce101f710f1c17d138103",
+      "baseline": "FINISH",
+      "expanded": "FINISH"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-0",
+      "baseline": null,
+      "expanded": "DRINK"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-1",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-2",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-3",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-4",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-5",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-6",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-7",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-8",
+      "baseline": "FINISH",
+      "expanded": "FINISH"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-9",
+      "baseline": "THANK YOU",
+      "expanded": "THANK YOU"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-10",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-11",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-12",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-13",
+      "baseline": "FINISH",
+      "expanded": "FINISH"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-14",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-15",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-16",
+      "baseline": "HELLO",
+      "expanded": "HELLO"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-17",
+      "baseline": null,
+      "expanded": "WATER"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-18",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-19",
+      "baseline": null,
+      "expanded": null
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-still",
+      "sha256": "synthetic-1117-20",
+      "baseline": "NO",
+      "expanded": "NO"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-drift",
+      "sha256": "synthetic-1117-21",
+      "baseline": "YES",
+      "expanded": "YES"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-jitter",
+      "sha256": "synthetic-1117-22",
+      "baseline": "PLEASE",
+      "expanded": "PLEASE"
+    },
+    {
+      "label": "UNKNOWN",
+      "kind": "synthetic-no-hands",
+      "sha256": "synthetic-1117-23",
+      "baseline": null,
+      "expanded": null
+    }
+  ]
+}

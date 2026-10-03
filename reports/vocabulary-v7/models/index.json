@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "greetings-communication",
+      "name": "Greetings & Communication",
+      "labels": [
+        "SPEAK",
+        "LISTEN"
+      ],
+      "file": "models/motion-categories/greetings-communication.json",
+      "sha256": "4417a57e772a6169d7acf92ad997abaa905a8535fcd070642e94683bbd901394",
+      "validation": {
+        "total": 8,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 8,
+        "correct": 0,
+        "wrong": 1,
+        "missed": 7,
+        "negativeTotal": 204,
+        "negativeFalse": 7
+      }
+    },
+    {
+      "id": "daily-needs",
+      "name": "Daily Needs",
+      "labels": [
+        "HUNGRY",
+        "THIRSTY",
+        "HOT",
+        "SHOES",
+        "SHOWER"
+      ],
+      "file": "models/motion-categories/daily-needs.json",
+      "sha256": "53a2a3e82cca9db96086be9e1c41be3cbd597b10f204e22561f624643387b890",
+      "validation": {
+        "total": 18,
+        "correct": 7,
+        "wrong": 0,
+        "missed": 11,
+        "negativeTotal": 40,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 18,
+        "correct": 6,
+        "wrong": 0,
+        "missed": 12,
+        "negativeTotal": 194,
+        "negativeFalse": 10
+      }
+    },
+    {
+      "id": "health-emergency",
+      "name": "Health & Emergency",
+      "labels": [
+        "PAIN",
+        "SICK"
+      ],
+      "file": "models/motion-categories/health-emergency.json",
+      "sha256": "fb0002945ec2b60766047e69be9c13d55da0b840a5b831e4a95ba4a6d26d5283",
+      "validation": {
+        "total": 8,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 5,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 8,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 4,
+        "negativeTotal": 204,
+        "negativeFalse": 23
+      }
+    },
+    {
+      "id": "family-people",
+      "name": "Family & People",
+      "labels": [
+        "BROTHER",
+        "GRANDMOTHER",
+        "GRANDFATHER",
+        "CHILD",
+        "BOY",
+        "GIRL",
+        "MAN"
+      ],
+      "file": "models/motion-categories/family-people.json",
+      "sha256": "cd8b6dcd9f01932b725caa359a84ab6c8347e9214b052356f1b8eae6655bae98",
+      "validation": {
+        "total": 28,
+        "correct": 5,
+        "wrong": 0,
+        "missed": 23,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 28,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 24,
+        "negativeTotal": 184,
+        "negativeFalse": 9
+      }
+    },
+    {
+      "id": "school",
+      "name": "School",
+      "labels": [
+        "BOOK",
+        "PEN",
+        "PENCIL",
+        "READ"
+      ],
+      "file": "models/motion-categories/school.json",
+      "sha256": "e17fc789df75959da23956eedd032439d9ca82bc3bcd452b39384b88bd6c3b7a",
+      "validation": {
+        "total": 16,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 12,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 16,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 13,
+        "negativeTotal": 196,
+        "negativeFalse": 4
+      }
+    },
+    {
+      "id": "actions",
+      "name": "Actions",
+      "labels": [
+        "GIVE",
+        "LOOK",
+        "SEE",
+        "HEAR",
+        "CALL",
+        "FIND"
+      ],
+      "file": "models/motion-categories/actions.json",
+      "sha256": "469bda5fb3e078947d4cb37ddebbc614a8728806013d2e864b136aa6a69d9b88",
+      "validation": {
+        "total": 24,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 20,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 24,
+        "correct": 6,
+        "wrong": 0,
+        "missed": 18,
+        "negativeTotal": 188,
+        "negativeFalse": 18
+      }
+    },
+    {
+      "id": "places",
+      "name": "Places",
+      "labels": [
+        "HOME",
+        "STORE",
+        "ROOM"
+      ],
+      "file": "models/motion-categories/places.json",
+      "sha256": "d10acb5e6a9ed46f47c011614e28f2c114c61349493b1abc36d333423f2b87db",
+      "validation": {
+        "total": 12,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 10,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 12,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 8,
+        "negativeTotal": 200,
+        "negativeFalse": 12
+      }
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "labels": [
+        "CAR",
+        "AIRPLANE",
+        "RIDE"
+      ],
+      "file": "models/motion-categories/transportation.json",
+      "sha256": "9a54f2f195266147b24f4e430de7fcc64df19aa777ce91aea15fd822a65f5400",
+      "validation": {
+        "total": 12,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 9,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 12,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 10,
+        "negativeTotal": 200,
+        "negativeFalse": 3
+      }
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "labels": [
+        "TOMORROW",
+        "YESTERDAY",
+        "NOW",
+        "LATER",
+        "MORNING",
+        "NIGHT"
+      ],
+      "file": "models/motion-categories/time.json",
+      "sha256": "31e972109bcb7266ef3f964ea54f30cd43bac7bdc6b3caf6eb38cf835ff1880f",
+      "validation": {
+        "total": 24,
+        "correct": 9,
+        "wrong": 0,
+        "missed": 15,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 24,
+        "correct": 8,
+        "wrong": 0,
+        "missed": 16,
+        "negativeTotal": 188,
+        "negativeFalse": 14
+      }
+    },
+    {
+      "id": "feelings",
+      "name": "Feelings",
+      "labels": [
+        "FINE",
+        "LIKE"
+      ],
+      "file": "models/motion-categories/feelings.json",
+      "sha256": "05819e626b168c8b970ba04ad9012d3ad0c695fe1af830daeded373615c813dd",
+      "validation": {
+        "total": 8,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 8,
+        "correct": 0,
+        "wrong": 0,
+        "missed": 8,
+        "negativeTotal": 204,
+        "negativeFalse": 0
+      }
+    },
+    {
+      "id": "safety",
+      "name": "Safety",
+      "labels": [
+        "STAY"
+      ],
+      "file": "models/motion-categories/safety.json",
+      "sha256": "b9f50d6fe3c615d513c77e916e71c717ab217dd498afb4baebfa5f9c4efcc4ff",
+      "validation": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 2,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 3,
+        "negativeTotal": 208,
+        "negativeFalse": 0
+      }
+    },
+    {
+      "id": "common-objects",
+      "name": "Common objects",
+      "labels": [
+        "TABLE",
+        "CHAIR"
+      ],
+      "file": "models/motion-categories/common-objects.json",
+      "sha256": "5e2a153092878c9d916debe571e88be54c5d00ded81fbac2d5c6579f590c42c8",
+      "validation": {
+        "total": 8,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 5,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 8,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 204,
+        "negativeFalse": 6
+      }
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "labels": [
+        "FISH",
+        "MILK"
+      ],
+      "file": "models/motion-categories/food.json",
+      "sha256": "d87d0268a2dd7d9199894332ad1c999c1d804da849dab017c9a32d9a7dade63d",
+      "validation": {
+        "total": 8,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 4,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 8,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 6,
+        "negativeTotal": 204,
+        "negativeFalse": 3
+      }
+    },
+    {
+      "id": "question-response-words",
+      "name": "Question/response words",
+      "labels": [
+        "CAN",
+        "HAVE",
+        "BECAUSE"
+      ],
+      "file": "models/motion-categories/question-response-words.json",
+      "sha256": "ee3a3d9335a56006562f6a78a4d8ee1b3c3c2fa83542dc3f7c5361335d94c353",
+      "validation": {
+        "total": 12,
+        "correct": 8,
+        "wrong": 0,
+        "missed": 4,
+        "negativeTotal": 36,
+        "negativeFalse": 0
+      },
+      "test": {
+        "total": 12,
+        "correct": 5,
+        "wrong": 0,
+        "missed": 7,
+        "negativeTotal": 200,
+        "negativeFalse": 7
+      }
+    }
+  ]
+}
