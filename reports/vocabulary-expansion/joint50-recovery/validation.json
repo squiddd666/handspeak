@@ -1,0 +1,1666 @@
+{
+  "status": "withheld",
+  "deployed": false,
+  "targetWords": 50,
+  "labels": [
+    "AIRPLANE",
+    "BECAUSE",
+    "BED",
+    "BOOK",
+    "BOY",
+    "BROTHER",
+    "CALL",
+    "CAN",
+    "CAR",
+    "CHAIR",
+    "CHILD",
+    "FIND",
+    "FINE",
+    "FINISH",
+    "FISH",
+    "GIRL",
+    "GIVE",
+    "GRANDFATHER",
+    "GRANDMOTHER",
+    "HAVE",
+    "HEAR",
+    "HOME",
+    "HOT",
+    "HUNGRY",
+    "LATER",
+    "LIKE",
+    "LISTEN",
+    "LOOK",
+    "MAN",
+    "MILK",
+    "MORNING",
+    "NIGHT",
+    "NOW",
+    "PAIN",
+    "PEN",
+    "PENCIL",
+    "READ",
+    "RIDE",
+    "ROOM",
+    "SEE",
+    "SHOES",
+    "SHOWER",
+    "SICK",
+    "SPEAK",
+    "STAY",
+    "STORE",
+    "TABLE",
+    "THIRSTY",
+    "TOMORROW",
+    "YESTERDAY"
+  ],
+  "selected": {
+    "seed": 17,
+    "width": 16,
+    "epoch": 120,
+    "threshold": 0.97,
+    "margin": 0,
+    "validation": {
+      "total": 210,
+      "correct": 52,
+      "wrong": 6,
+      "missed": 152,
+      "negativeTotal": 90,
+      "negativeFalse": 6,
+      "perWord": {
+        "AIRPLANE": {
+          "total": 4,
+          "correct": 3
+        },
+        "BECAUSE": {
+          "total": 4,
+          "correct": 1
+        },
+        "BED": {
+          "total": 4,
+          "correct": 1
+        },
+        "BOOK": {
+          "total": 6,
+          "correct": 0
+        },
+        "BOY": {
+          "total": 4,
+          "correct": 0
+        },
+        "BROTHER": {
+          "total": 4,
+          "correct": 0
+        },
+        "CALL": {
+          "total": 4,
+          "correct": 2
+        },
+        "CAN": {
+          "total": 4,
+          "correct": 0
+        },
+        "CAR": {
+          "total": 4,
+          "correct": 1
+        },
+        "CHAIR": {
+          "total": 4,
+          "correct": 0
+        },
+        "CHILD": {
+          "total": 4,
+          "correct": 0
+        },
+        "FIND": {
+          "total": 4,
+          "correct": 2
+        },
+        "FINE": {
+          "total": 4,
+          "correct": 0
+        },
+        "FINISH": {
+          "total": 14,
+          "correct": 1
+        },
+        "FISH": {
+          "total": 4,
+          "correct": 2
+        },
+        "GIRL": {
+          "total": 4,
+          "correct": 0
+        },
+        "GIVE": {
+          "total": 4,
+          "correct": 0
+        },
+        "GRANDFATHER": {
+          "total": 4,
+          "correct": 1
+        },
+        "GRANDMOTHER": {
+          "total": 4,
+          "correct": 0
+        },
+        "HAVE": {
+          "total": 4,
+          "correct": 4
+        },
+        "HEAR": {
+          "total": 4,
+          "correct": 2
+        },
+        "HOME": {
+          "total": 4,
+          "correct": 0
+        },
+        "HOT": {
+          "total": 4,
+          "correct": 1
+        },
+        "HUNGRY": {
+          "total": 4,
+          "correct": 2
+        },
+        "LATER": {
+          "total": 4,
+          "correct": 2
+        },
+        "LIKE": {
+          "total": 4,
+          "correct": 1
+        },
+        "LISTEN": {
+          "total": 4,
+          "correct": 1
+        },
+        "LOOK": {
+          "total": 4,
+          "correct": 0
+        },
+        "MAN": {
+          "total": 4,
+          "correct": 0
+        },
+        "MILK": {
+          "total": 4,
+          "correct": 1
+        },
+        "MORNING": {
+          "total": 4,
+          "correct": 1
+        },
+        "NIGHT": {
+          "total": 4,
+          "correct": 1
+        },
+        "NOW": {
+          "total": 4,
+          "correct": 1
+        },
+        "PAIN": {
+          "total": 4,
+          "correct": 1
+        },
+        "PEN": {
+          "total": 4,
+          "correct": 1
+        },
+        "PENCIL": {
+          "total": 4,
+          "correct": 1
+        },
+        "READ": {
+          "total": 4,
+          "correct": 1
+        },
+        "RIDE": {
+          "total": 4,
+          "correct": 0
+        },
+        "ROOM": {
+          "total": 4,
+          "correct": 0
+        },
+        "SEE": {
+          "total": 4,
+          "correct": 2
+        },
+        "SHOES": {
+          "total": 4,
+          "correct": 0
+        },
+        "SHOWER": {
+          "total": 2,
+          "correct": 0
+        },
+        "SICK": {
+          "total": 4,
+          "correct": 4
+        },
+        "SPEAK": {
+          "total": 4,
+          "correct": 0
+        },
+        "STAY": {
+          "total": 4,
+          "correct": 1
+        },
+        "STORE": {
+          "total": 4,
+          "correct": 1
+        },
+        "TABLE": {
+          "total": 4,
+          "correct": 2
+        },
+        "THIRSTY": {
+          "total": 4,
+          "correct": 3
+        },
+        "TOMORROW": {
+          "total": 4,
+          "correct": 1
+        },
+        "YESTERDAY": {
+          "total": 4,
+          "correct": 3
+        }
+      }
+    },
+    "passesValidation": false,
+    "sha256": "7bfabbe9d9df8ef32162aa0899589f4c39fb3b54acd47fe914e244055d210598"
+  },
+  "checkpointReloadReproducedValidation": true,
+  "protocol": {
+    "labels": [
+      "AIRPLANE",
+      "BECAUSE",
+      "BED",
+      "BOOK",
+      "BOY",
+      "BROTHER",
+      "CALL",
+      "CAN",
+      "CAR",
+      "CHAIR",
+      "CHILD",
+      "FIND",
+      "FINE",
+      "FINISH",
+      "FISH",
+      "GIRL",
+      "GIVE",
+      "GRANDFATHER",
+      "GRANDMOTHER",
+      "HAVE",
+      "HEAR",
+      "HOME",
+      "HOT",
+      "HUNGRY",
+      "LATER",
+      "LIKE",
+      "LISTEN",
+      "LOOK",
+      "MAN",
+      "MILK",
+      "MORNING",
+      "NIGHT",
+      "NOW",
+      "PAIN",
+      "PEN",
+      "PENCIL",
+      "READ",
+      "RIDE",
+      "ROOM",
+      "SEE",
+      "SHOES",
+      "SHOWER",
+      "SICK",
+      "SPEAK",
+      "STAY",
+      "STORE",
+      "TABLE",
+      "THIRSTY",
+      "TOMORROW",
+      "YESTERDAY"
+    ],
+    "source": "/opt/handspeak-training/vocabulary-expansion-joint50-recovery/development-features.json",
+    "sourceSha256": "23ada0ab30e43ab5797f11ba744aefb31a57037ec575ff5b1c9b2b4f6cda93ff",
+    "trainClips": 1203,
+    "usableTrainingClips": 1086,
+    "validationClips": 300,
+    "perWord": {
+      "AIRPLANE": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "BECAUSE": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "BED": {
+        "train": 12,
+        "usableTrain": 4,
+        "validation": 4
+      },
+      "BOOK": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 6
+      },
+      "BOY": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "BROTHER": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "CALL": {
+        "train": 48,
+        "usableTrain": 43,
+        "validation": 4
+      },
+      "CAN": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "CAR": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "CHAIR": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "CHILD": {
+        "train": 12,
+        "usableTrain": 9,
+        "validation": 4
+      },
+      "FIND": {
+        "train": 32,
+        "usableTrain": 29,
+        "validation": 4
+      },
+      "FINE": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "FINISH": {
+        "train": 48,
+        "usableTrain": 43,
+        "validation": 14
+      },
+      "FISH": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "GIRL": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "GIVE": {
+        "train": 46,
+        "usableTrain": 29,
+        "validation": 4
+      },
+      "GRANDFATHER": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "GRANDMOTHER": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "HAVE": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "HEAR": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "HOME": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "HOT": {
+        "train": 48,
+        "usableTrain": 45,
+        "validation": 4
+      },
+      "HUNGRY": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "LATER": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "LIKE": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "LISTEN": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "LOOK": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "MAN": {
+        "train": 12,
+        "usableTrain": 9,
+        "validation": 4
+      },
+      "MILK": {
+        "train": 48,
+        "usableTrain": 47,
+        "validation": 4
+      },
+      "MORNING": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "NIGHT": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "NOW": {
+        "train": 48,
+        "usableTrain": 45,
+        "validation": 4
+      },
+      "PAIN": {
+        "train": 12,
+        "usableTrain": 8,
+        "validation": 4
+      },
+      "PEN": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "PENCIL": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "READ": {
+        "train": 48,
+        "usableTrain": 41,
+        "validation": 4
+      },
+      "RIDE": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "ROOM": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "SEE": {
+        "train": 12,
+        "usableTrain": 11,
+        "validation": 4
+      },
+      "SHOES": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "SHOWER": {
+        "train": 9,
+        "usableTrain": 7,
+        "validation": 2
+      },
+      "SICK": {
+        "train": 48,
+        "usableTrain": 45,
+        "validation": 4
+      },
+      "SPEAK": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      },
+      "STAY": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "STORE": {
+        "train": 12,
+        "usableTrain": 10,
+        "validation": 4
+      },
+      "TABLE": {
+        "train": 12,
+        "usableTrain": 8,
+        "validation": 4
+      },
+      "THIRSTY": {
+        "train": 48,
+        "usableTrain": 48,
+        "validation": 4
+      },
+      "TOMORROW": {
+        "train": 48,
+        "usableTrain": 44,
+        "validation": 4
+      },
+      "YESTERDAY": {
+        "train": 12,
+        "usableTrain": 12,
+        "validation": 4
+      }
+    },
+    "negativeLabels": [
+      "DRINK",
+      "HELLO",
+      "NO",
+      "PLEASE",
+      "THANK YOU",
+      "WATER",
+      "YES"
+    ],
+    "validationGate": "At least 50% correct, zero wrong supported and negative accepts, and at least one correct example per word.",
+    "releaseGate": "Validation is screening only. Require a new untouched signer test, real ordinary-movement negatives, comparison with current models, and real-time browser capture tests before deployment.",
+    "limitations": "Development validation data previously used in research. Temporal features use center-frame body references where visible, otherwise wrist-centered fallback. Whole clips, not live capture. No test set is opened by this script.",
+    "attribution": "PopSign ASL v1.0, Georgia Tech and DPAN, CC BY 4.0.",
+    "clipsWithBodyReference": 1487,
+    "perWordTrainingSigners": {
+      "AIRPLANE": 9,
+      "BECAUSE": 10,
+      "BED": 10,
+      "BOOK": 11,
+      "BOY": 12,
+      "BROTHER": 11,
+      "CALL": 25,
+      "CAN": 10,
+      "CAR": 9,
+      "CHAIR": 9,
+      "CHILD": 10,
+      "FIND": 16,
+      "FINE": 11,
+      "FINISH": 26,
+      "FISH": 10,
+      "GIRL": 10,
+      "GIVE": 25,
+      "GRANDFATHER": 10,
+      "GRANDMOTHER": 9,
+      "HAVE": 12,
+      "HEAR": 9,
+      "HOME": 11,
+      "HOT": 29,
+      "HUNGRY": 11,
+      "LATER": 8,
+      "LIKE": 10,
+      "LISTEN": 10,
+      "LOOK": 9,
+      "MAN": 11,
+      "MILK": 29,
+      "MORNING": 10,
+      "NIGHT": 9,
+      "NOW": 28,
+      "PAIN": 9,
+      "PEN": 11,
+      "PENCIL": 9,
+      "READ": 27,
+      "RIDE": 10,
+      "ROOM": 9,
+      "SEE": 10,
+      "SHOES": 11,
+      "SHOWER": 5,
+      "SICK": 28,
+      "SPEAK": 10,
+      "STAY": 10,
+      "STORE": 10,
+      "TABLE": 10,
+      "THIRSTY": 26,
+      "TOMORROW": 27,
+      "YESTERDAY": 11
+    }
+  },
+  "validationBodyModes": {
+    "center-frame reference": 300
+  },
+  "validationFrameCounts": {
+    "30": 200,
+    "60": 79,
+    "53": 4,
+    "55": 1,
+    "50": 2,
+    "33": 1,
+    "51": 3,
+    "49": 2,
+    "59": 3,
+    "57": 1,
+    "41": 1,
+    "58": 2,
+    "56": 1
+  },
+  "errors": [
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "563d5df193e48a9c155f4d85429e4e3a934d323f4dad8974a40052dd34965246",
+      "usableSequence": true
+    },
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "0cc73e8b6f0e97e5d50e4632df3999b88d8df7dd3a518a03f8777127352805e0",
+      "usableSequence": true
+    },
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "57177f8321e4db3a5a2750c03dbd5ee83fad5939f7c830143fb441f2d7d2ff41",
+      "usableSequence": true
+    },
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "0fd408367261ed1d26f3715bbae41c5c4a46da01c7ec22c78d3661a062ce1199",
+      "usableSequence": true
+    },
+    {
+      "expected": "LISTEN",
+      "predicted": null,
+      "sha256": "d3b371d8787d7c5b91b7f7424c3523b7bef1490d5cc4213eb2b02b974f2b8cfd",
+      "usableSequence": false
+    },
+    {
+      "expected": "LISTEN",
+      "predicted": null,
+      "sha256": "2b43b0d8a7c9822ea58784767715f61504d6b912027fd94f18b552482bee4c05",
+      "usableSequence": true
+    },
+    {
+      "expected": "LISTEN",
+      "predicted": "YESTERDAY",
+      "sha256": "bcfe3caa96acd55bbc92f040b20456fe6d2ad5a32e739fec86a87d2115f28168",
+      "usableSequence": true
+    },
+    {
+      "expected": "HUNGRY",
+      "predicted": null,
+      "sha256": "19326996ee9bf24e909286a02c778675106c5c4d8fe519c5970bc16e0e803e61",
+      "usableSequence": true
+    },
+    {
+      "expected": "HUNGRY",
+      "predicted": null,
+      "sha256": "5f14a35e623383396d1fffd21782b162d041d39e024141eb288d995d5a079c87",
+      "usableSequence": true
+    },
+    {
+      "expected": "THIRSTY",
+      "predicted": "FISH",
+      "sha256": "cc0bf28cc70c0255acecd9085d44a83adff52af7defc4039c730c5f4b63be8c2",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOT",
+      "predicted": null,
+      "sha256": "53c529ed707ecb8c97b4131d6553dd9fa943a8a8ee9938075fd41cda708a8956",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOT",
+      "predicted": null,
+      "sha256": "ba8e85572656fbf5a4b93fa99e16ca602c1e79409bb84d3e0ba17302cff876ae",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOT",
+      "predicted": null,
+      "sha256": "b9ae24a98fc6e3ed8a2d9bbe7c34c94bf4801a28ef49e6009fd5348ac31900cf",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOES",
+      "predicted": "STAY",
+      "sha256": "4b3d98490a94a58f585e0ed3383e1716b67bc501076dec870b08bec9330f212e",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOES",
+      "predicted": null,
+      "sha256": "9e7b21129cb89f0f77f263844691f12a4b1c61265e6a530e6157c1e5182609d0",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOES",
+      "predicted": null,
+      "sha256": "d65a1d899fa0ce3140c5b175824f6bcbaad8563feec6d168dc47f82221b45d3a",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOES",
+      "predicted": null,
+      "sha256": "c102d4e42cc1a02df5b01e0200faba051400796b21c041962d8eb64324e1da26",
+      "usableSequence": true
+    },
+    {
+      "expected": "BED",
+      "predicted": "YESTERDAY",
+      "sha256": "219786c22a490661cfe07a190526d36e8fa563e3568c27cf9c9b9226cab0292b",
+      "usableSequence": true
+    },
+    {
+      "expected": "BED",
+      "predicted": null,
+      "sha256": "2fd526c406eae980ef0733d5253c42388edfab3b20dcc86c7e17aa1d08f05563",
+      "usableSequence": false
+    },
+    {
+      "expected": "BED",
+      "predicted": null,
+      "sha256": "b856052ba5490f5d1a2b3db81e3ff0ec8f170ffdd90dc29ed6b4dd45d9b113cd",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOWER",
+      "predicted": null,
+      "sha256": "e0309480ac2a0fd9620021d4358ac7e4eb17e1ba79017951469af750ede96be8",
+      "usableSequence": true
+    },
+    {
+      "expected": "SHOWER",
+      "predicted": null,
+      "sha256": "e21bc1049495bb6fbc9aa13d5e0ec5d53c18b9c33c9aa25901b4b0a9ca08a704",
+      "usableSequence": true
+    },
+    {
+      "expected": "PAIN",
+      "predicted": null,
+      "sha256": "6c6d2c594e8718bca71b601b6a9e087c6d27a2802ff0a3c648ea937f33e0fa25",
+      "usableSequence": true
+    },
+    {
+      "expected": "PAIN",
+      "predicted": null,
+      "sha256": "0f77fa4129d0426deff561796f92fbfd35bc788a839b29b0c3d607d85d77bb1c",
+      "usableSequence": true
+    },
+    {
+      "expected": "PAIN",
+      "predicted": null,
+      "sha256": "1fc23072f5862a011d17b111a56497557fad3b306743396fbc93d637d0dacdc4",
+      "usableSequence": false
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "2d3bc0bf98bf9923bba320193f8bed31730af940f8d70acb02e89c002c85f302",
+      "usableSequence": false
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "c27b30c4abb69506988292164c123acb33b60eefc249efee1a42277adde44137",
+      "usableSequence": true
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "6e7afb3fd99846abbda9a37e6fcb75687d4509812f36978b90858b0b9f6c218e",
+      "usableSequence": true
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "e46d17026e58b8a75f8f4ae04717351c80e0bd8b170469dd7fe7de0c441ff562",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "8f0630b00685d9b5aa2bd64ab777e8c8a27bef71e66742f4be446c3cc1115dfe",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "033b531e6362e01dad0fa38f04d10a45214df41f58cbd124bc89dd0bd33dc709",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "d1665139806e155148157b04e2199f36a93a0f06d65a53df2de491d3570a7434",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "07e18e531ed8b43893975a3abea4cb50a04e966709db61598c93e11f222ddb8b",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDFATHER",
+      "predicted": null,
+      "sha256": "c80d7dc0d7723dd44e8bbd8c8dd15f598013b122a088fae209d44619f929296d",
+      "usableSequence": false
+    },
+    {
+      "expected": "GRANDFATHER",
+      "predicted": null,
+      "sha256": "283115d339edbee9e3cdfa8c0bfcffa31391a99efbfbd13b2431ece210dba994",
+      "usableSequence": true
+    },
+    {
+      "expected": "GRANDFATHER",
+      "predicted": null,
+      "sha256": "b573d4b259137d6f04ced33c6794134bc33e8b3e6ba5f1b2f47d6be5329206ba",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "97c01f7b8608e07cd6d75ff5c0f29cddb131de9625f84d50bd3f374457504bfc",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "3784d137ab5e0234d46c6107b46eac6bdb1daa4f01d5d17d00b087b86a9eb140",
+      "usableSequence": false
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "6aa124e20ec27385a7c3ed55fa31886c17824ef14aa4511ad424a75ea93ad044",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "e3b624d07aa069f8f158651f560799153979372c5cbb3ff9b947cb7ce107ffd2",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "d0df4cc0bfb803b8b16b8d45bbf034f9c1c0fe0fbdec1d47cd08d6dcff5e84a0",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "f510b78c9c7cb9938fbad761b07fc5ed7196835dc1ae4910c72463d323f2461b",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "982dcfee9c1699665bc78f1b02b438bb75b518c4c4ad30122031574fadf02f7f",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "cc7ba0f4a550d73bcecb34b7d9d66b3ff9d3cb712573d16204e1e177d9cf8ccd",
+      "usableSequence": true
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "ef7bb5c476dc9c05802b7c94f264136e2856d4e14bb5d9dfed2c9c25e0d9bdbe",
+      "usableSequence": true
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "2b700ee7f6362b8d94883594a00dfcbfeaa5160562eca6d440ebf254070f43b3",
+      "usableSequence": true
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "aa67f233b8326fa5fc574f2b484e28839e0f64fe39f82f7130a9c4a70dad6350",
+      "usableSequence": true
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "2296e43176f3d4957fdec0fecc4ef0ffd711502d8010f6451a5af3a04352a846",
+      "usableSequence": true
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "2f987e3abfe43552bef067e9d06e1e98258153d4c2cb6c95bd43ad30eccf020f",
+      "usableSequence": true
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "e8834962d228bdf9ac3644ff723181c59af0507dd7fe95b27474580ea91d2856",
+      "usableSequence": true
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "68b1537da9ad4e20220f37d7ce855dcc96d91b475b7bccae2cd0d50fb77cfa10",
+      "usableSequence": true
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "2a39416d09b95a6bc4eb9925ee00910f6b4c6aa8baa0cedb6098f38d60058864",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "524978aebe3bad80ef40cdd90eaf03881157563e98ae299c4c363437b6390e6e",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "1e29765311ef99ed499fa0bff750fa5cd5d38ee0188168155e00d794b254f734",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "88bb115a0bfa100e388cf9fa0e55e99691ed3956007f05ace814005e5a9f340a",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "0e7b4b3e3663fbb9ec17696f414cddce0b1d86dabc4f686e144725dc31516913",
+      "usableSequence": true
+    },
+    {
+      "expected": "PEN",
+      "predicted": null,
+      "sha256": "3c7630de50f66cecc56b728ad48dcc6262e2a7af0d8e7a02316d4b275f0cf239",
+      "usableSequence": true
+    },
+    {
+      "expected": "PEN",
+      "predicted": null,
+      "sha256": "e7aacfcb54afcd6541a20935f127e199764b91134567869a928760ac1855bfcb",
+      "usableSequence": true
+    },
+    {
+      "expected": "PEN",
+      "predicted": null,
+      "sha256": "c04ad7987a7c3a9e3c63378de37a95f71111406e0fa6caa0655e5fb1f2171970",
+      "usableSequence": true
+    },
+    {
+      "expected": "PENCIL",
+      "predicted": null,
+      "sha256": "83af9a9dc3f0085606c6bf841b19c51545e8bb0087c8e3ee305c6574736844b1",
+      "usableSequence": true
+    },
+    {
+      "expected": "PENCIL",
+      "predicted": null,
+      "sha256": "e1adfc1700adcb959f179bdf5bf94680ddb5799b0cde3ab21f2b76ff73bb8f61",
+      "usableSequence": true
+    },
+    {
+      "expected": "PENCIL",
+      "predicted": null,
+      "sha256": "15a5c6d55d373d31f265ac0cece6e0da3bf42684bd5b926fde7f1d145818570d",
+      "usableSequence": true
+    },
+    {
+      "expected": "READ",
+      "predicted": null,
+      "sha256": "8768f0e002bccd49fff564714686d1f49f2982ab1002c144278b27eb1075a7c2",
+      "usableSequence": true
+    },
+    {
+      "expected": "READ",
+      "predicted": null,
+      "sha256": "aecb379f2186626504bcfa35a55f5b3350cdb5516f7aac9d61a7ac0ce1c2bbe4",
+      "usableSequence": true
+    },
+    {
+      "expected": "READ",
+      "predicted": null,
+      "sha256": "aea260dd835439564d7c962fa1637c1285452e17ca11742ce7cc51a037a4ab71",
+      "usableSequence": true
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "0fe1d6dfc7d4d89a9d9b3adaffa74647c0e3cf628c17257690823975bd59fee6",
+      "usableSequence": false
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "f52be08b4b61384e07031544b0508a23b2f6a86e9b447dd7583c8a9ab4705fb2",
+      "usableSequence": false
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "63ce2e72c6f1fb4ba5a8456bec651b8b334670367fa8f679fef48c973a99530c",
+      "usableSequence": false
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "8a3ab7cc6e1f65c845c9ac7c7dd07067880f18ce5c827a2fde02fede67767a8d",
+      "usableSequence": true
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "a35d655e999fa5e51326829a94ff64554583c1d18c75798269b137f24506abfd",
+      "usableSequence": true
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "21477793abfd5148d3903a1491c54b0fc852871bad1f8650d784ababeef8bcbd",
+      "usableSequence": true
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "6e48fb5dd6d52a835bacc3383a03757f083a1e750cc5c3586d8ea9f0107dd46e",
+      "usableSequence": true
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "0c812d3bc7cf9c2ccf25d13e2338cc22322351520c221a293cc9db745351d71b",
+      "usableSequence": true
+    },
+    {
+      "expected": "SEE",
+      "predicted": null,
+      "sha256": "047e68eb64c6cd66dd66a4e74e81617e17d3f6d8df1213969a859377e8a9e633",
+      "usableSequence": true
+    },
+    {
+      "expected": "SEE",
+      "predicted": null,
+      "sha256": "5815b5e77c3a9a25354fd8327dc2eb92186c3407950e20b2afccf4d7748a9ed6",
+      "usableSequence": true
+    },
+    {
+      "expected": "HEAR",
+      "predicted": null,
+      "sha256": "84df66be9a6e8fa67e5c3a4a71f996d458c34ab33d30e356b848a690e797a7a8",
+      "usableSequence": true
+    },
+    {
+      "expected": "HEAR",
+      "predicted": null,
+      "sha256": "8d62d66c4142b39f25e9f1af9c18fdaf1e695d9e0a499bcc7de601d92dce9d44",
+      "usableSequence": true
+    },
+    {
+      "expected": "CALL",
+      "predicted": null,
+      "sha256": "32569c69c94704ecd3bc10cf0573ffc726c779a986273c4749d5a3fb4c19665c",
+      "usableSequence": true
+    },
+    {
+      "expected": "CALL",
+      "predicted": null,
+      "sha256": "83c02c19e1cc42cd7b165a7973db3539afb150c337848fe94992cf3e37f817a8",
+      "usableSequence": true
+    },
+    {
+      "expected": "FIND",
+      "predicted": null,
+      "sha256": "d15a3abad10c12fe3cc7eca6dc44a5e7b6f2d3c572b52e8871e8c4cc67883076",
+      "usableSequence": false
+    },
+    {
+      "expected": "FIND",
+      "predicted": null,
+      "sha256": "d5ff2ee9b6c6926275a52aed804e1c1926e68c98c11919a845642e78d5ad0e57",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "58e99545e87c124142173998e763bbb3be2d7dd9926b82c21047b0b97e80c2d9",
+      "usableSequence": false
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "acd7b2ce19c470f36ae3dd59a36dc27d2eb727b59b485a624698c0eb469d6879",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "0b0d49c3ae1f04452076e85bd18209eb8d68fb75c6f97fb7a399f45c6c467d8b",
+      "usableSequence": true
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "134efad61766582240477c68a0ff4859b509847760db1223e393e457c1a26ea7",
+      "usableSequence": true
+    },
+    {
+      "expected": "STORE",
+      "predicted": null,
+      "sha256": "764f92656179856e8799f8a30fb179391f38c6aac67a1721d89c3d65aabed8b2",
+      "usableSequence": true
+    },
+    {
+      "expected": "STORE",
+      "predicted": null,
+      "sha256": "5c69ca260e1e8d9dffd426fc8b5707fd688bb6547d665eac46b816e54d49ad09",
+      "usableSequence": true
+    },
+    {
+      "expected": "STORE",
+      "predicted": null,
+      "sha256": "95832d66f6da5378268b1a0ff1e13ba3ace79e0811c81ad3726c884624648aaa",
+      "usableSequence": true
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "0bcaefcd6fff8d979453fa7fde542961bfb4217b5ca905947d052c24ec6972f1",
+      "usableSequence": true
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "d3e56c53650c95c9057a0876955f27f69b45cb6f5d6d018a58b0244d80d4fa13",
+      "usableSequence": true
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "e9082cf611b28fed735ea6fdb43d10a1981b683f6db3a6f6d069562990ad172a",
+      "usableSequence": true
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "9a01961db2e72cba57b7c348e9dfb279d4e1673692f4c8e1a614b5e039176edf",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAR",
+      "predicted": null,
+      "sha256": "b81548c4dcaf5af9c332e33190835f18347618d81ffef485814da60dd7c65215",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAR",
+      "predicted": null,
+      "sha256": "bc7bf1b8073e1f8afb82ec0c37c08dbdc5e3a8f646eb60ae933e540d7df08bf0",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAR",
+      "predicted": null,
+      "sha256": "550ba0a479cf949697547dd2e9bcdd878d8321b104e9e39ce58d13a1ee6afbc3",
+      "usableSequence": true
+    },
+    {
+      "expected": "AIRPLANE",
+      "predicted": null,
+      "sha256": "0031cb84bc4ede5b1794ee35780ac1c13f37196cc0e2f29cf273ea123f7b04ad",
+      "usableSequence": true
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "198c3ec95e7815c6360c07316beac85336eb304344ecbb1c90d09ab71c12f10e",
+      "usableSequence": true
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "a457c11a6faa456141077c6e0add1032dad1cf82e19f41d30f921db112298812",
+      "usableSequence": true
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "b3dd64312d231abde5f5dfa30202bb677fe96de2d995a3da61bc7724f06d4816",
+      "usableSequence": true
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "cfe85317c3038eec23801f20fb212dd6094e0d0d3970e8209df2887534ba9a18",
+      "usableSequence": true
+    },
+    {
+      "expected": "TOMORROW",
+      "predicted": null,
+      "sha256": "4b904c3c1da5ad57640b5a1aa71458cdd1e108419b6c81d215db5982a3ddbd0f",
+      "usableSequence": true
+    },
+    {
+      "expected": "TOMORROW",
+      "predicted": null,
+      "sha256": "80b0d3a6cec71b4a6964ef82347a77d988fa7d0f8872587a898a774e83e237ae",
+      "usableSequence": true
+    },
+    {
+      "expected": "TOMORROW",
+      "predicted": null,
+      "sha256": "38f89ba38c3cbdeb4c43fd1f8132f1d6a7f646b8c13629edf4978d437e580436",
+      "usableSequence": true
+    },
+    {
+      "expected": "YESTERDAY",
+      "predicted": null,
+      "sha256": "d0a91ea1b7d4601a42e7630a41439a0c23ccd05b86951db9ff90c9fbf6039c47",
+      "usableSequence": true
+    },
+    {
+      "expected": "NOW",
+      "predicted": null,
+      "sha256": "9fdbb7f1ca3604d90f95fd1cc22c320eb182d8ec7fe8a485541b556da549b5df",
+      "usableSequence": true
+    },
+    {
+      "expected": "NOW",
+      "predicted": null,
+      "sha256": "b6bde0726a7b8ea8c93c1cd2c61065ba761dee996b9ada6d56a758589ae2e6c5",
+      "usableSequence": true
+    },
+    {
+      "expected": "NOW",
+      "predicted": null,
+      "sha256": "e2c5519177ced2f841f183394d1f612d82dc80bcb746f96577bf0c78512ec268",
+      "usableSequence": false
+    },
+    {
+      "expected": "LATER",
+      "predicted": null,
+      "sha256": "8e9165c26d6b3c285eba7caa6c118f472c62a86590d28ce8610af96e18362294",
+      "usableSequence": false
+    },
+    {
+      "expected": "LATER",
+      "predicted": null,
+      "sha256": "dd2461f6af020c602949dfff609940647656f411f2e95850ea910150cc7fdaf1",
+      "usableSequence": true
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "fd7e3f701fc9507c1cad70332b10a797f12e58930f7b025021ead1b23db6eb21",
+      "usableSequence": true
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "aef158692f8648c1596c031c979706a5d865097e748af656ca43e51f19281db7",
+      "usableSequence": true
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "bf8b53e6781e873947a723e827ecae75b15136f9746797dd4d127f028aed14d1",
+      "usableSequence": true
+    },
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "963db8e6a8cbfb8a849061712ed4634204857d8382cbe9275cc4d565b301cae3",
+      "usableSequence": true
+    },
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "2b3bef4170cc457e9d29c46beeeee6dbd8f5c77708e50fb04107c1858f210e91",
+      "usableSequence": true
+    },
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "27e6dfe33b6e7a7aed517e989bdc6353a188f02fb858094c1928f82b846b05f7",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINE",
+      "predicted": null,
+      "sha256": "08f2aa0c9dabaa6da0a7bbbc3d791080a50d6718cb3e9b3d22f383e428d3289a",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINE",
+      "predicted": null,
+      "sha256": "4485a52ec2f4b3c13de3687e6423f5993725ae337856c52dfc342e73aea9f4ed",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINE",
+      "predicted": null,
+      "sha256": "e492a588f673ea54416533419c4d7304fa77b78be821b047ad5950cf6838f3f1",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINE",
+      "predicted": "SICK",
+      "sha256": "e80fd4b1199f8d2971d24a9dd18f304bbe76c7972c47e19a0153d079fd9ed162",
+      "usableSequence": true
+    },
+    {
+      "expected": "LIKE",
+      "predicted": null,
+      "sha256": "2f77ef1e45ad589991afc1de0f56b3182db02b1aa947dbbd555def8992df364d",
+      "usableSequence": true
+    },
+    {
+      "expected": "LIKE",
+      "predicted": null,
+      "sha256": "518ff2f2207e35506e0e2ba34041e038aed0f8859f75efc0b3ebcaa7a827b015",
+      "usableSequence": true
+    },
+    {
+      "expected": "LIKE",
+      "predicted": null,
+      "sha256": "221f0516eee6c8f4c5cf1a8a1b46833d9aeae31b2ac810d70e446daaa5486fcc",
+      "usableSequence": true
+    },
+    {
+      "expected": "STAY",
+      "predicted": null,
+      "sha256": "241d6c83ca08194ab67b657cbe98c1b5139bcf06006d1f5e18d46ca2098c6764",
+      "usableSequence": true
+    },
+    {
+      "expected": "STAY",
+      "predicted": null,
+      "sha256": "3fc6e454112b3e50767427679c2730095a3be644f1bff70a0b98043939b32afd",
+      "usableSequence": true
+    },
+    {
+      "expected": "STAY",
+      "predicted": null,
+      "sha256": "3c16e4e5c3fba7c0ffa54d9eb11342e8e45ebac86b36048d554b0e73c238e3aa",
+      "usableSequence": true
+    },
+    {
+      "expected": "TABLE",
+      "predicted": null,
+      "sha256": "8c067650ecac45b177099beda20ea2a8a1f81ab21ebc884486ad9103f3e11e70",
+      "usableSequence": true
+    },
+    {
+      "expected": "TABLE",
+      "predicted": null,
+      "sha256": "f640ff70571ad469deaae25c8e8c5e69a251006a4f9b4b4e0fa9cc4ffe4495d7",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "c26eb054e458ab0a297f67f1780c39ae56d09d305c0d7cc6082aca1eedd57aa9",
+      "usableSequence": false
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "557455ed01fd3f58153a681202bd28d2acde887b70907f497562e96c454ec235",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "c8bf277a2025260166043a0c29d9c8aa4d15ba13102a93976c4b19bb70cc320f",
+      "usableSequence": true
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "2a1b1bf5a4b8afb541584aa88257426b932562c1b108bf9969e7ab3922e75f39",
+      "usableSequence": true
+    },
+    {
+      "expected": "FISH",
+      "predicted": null,
+      "sha256": "4ca48d9c1a038c376717193a02d0d9bfc962d083163caf2d88d0a0e377092f63",
+      "usableSequence": true
+    },
+    {
+      "expected": "FISH",
+      "predicted": null,
+      "sha256": "fb7183d166fea0790e8156d8697cf2a3ca9e4dd74263336f8ac0fa64b4072518",
+      "usableSequence": true
+    },
+    {
+      "expected": "MILK",
+      "predicted": null,
+      "sha256": "62c1e96dcd5aefae2b4dfc6ce7ed3a6f5dd87642cdbcb1d7bbf2e16c4497ea8f",
+      "usableSequence": true
+    },
+    {
+      "expected": "MILK",
+      "predicted": null,
+      "sha256": "fe62cdc14de10db5299aac71948949f815aa769c5702921bf6573f18449a7632",
+      "usableSequence": true
+    },
+    {
+      "expected": "MILK",
+      "predicted": null,
+      "sha256": "3117427723592bb5689468ece2133b046c26dc7289523ebe7e49fb36fd2e1154",
+      "usableSequence": false
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "e072796bf6ec5a98b5f5f4cfff427bd573e30889c16187ab6908de68bfb995c7",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "3a4b8014255f807052f9a24189f7b9a785f400d00cfd71a55ced6ef901193cf2",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "4c747b6a9d350c5a5bc92e579abf6bfb91fb560f69721293031eb5dc6ff906c5",
+      "usableSequence": true
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "fc379052fd09c74b7ed33a60ccc768d3cba7fff7716206bf7ffb23dd21a43aa5",
+      "usableSequence": true
+    },
+    {
+      "expected": "BECAUSE",
+      "predicted": null,
+      "sha256": "2cbf60cb8dd7f2652f207e24cdeffb582148e03a61c600f9fed413e0ee669ffc",
+      "usableSequence": true
+    },
+    {
+      "expected": "BECAUSE",
+      "predicted": null,
+      "sha256": "bbe70a94358413efdb9da701f43653c4e7507d82d01c6a8a2e4fb4aa2840fc55",
+      "usableSequence": true
+    },
+    {
+      "expected": "BECAUSE",
+      "predicted": null,
+      "sha256": "c8e8e4a109dca3a77fa321dcd56891ae864ab5b6cee09365bf36d513e02afbf4",
+      "usableSequence": true
+    },
+    {
+      "expected": "HELLO",
+      "predicted": "BED",
+      "sha256": "23eb3e86bd558f9feb78eb991185ff41c847c36f2e0b3fdbcf0c0e090d60cc5a",
+      "usableSequence": true
+    },
+    {
+      "expected": "HELLO",
+      "predicted": "GRANDFATHER",
+      "sha256": "e22940a6ad5c6f7c34de9d61766c72264ba5b86c7ebc1ae139deeca5cf816cbe",
+      "usableSequence": true
+    },
+    {
+      "expected": "THANK YOU",
+      "predicted": "BOOK",
+      "sha256": "77ebce681b9de52f734b61a728a68eff575cc75becd01987630cc2a5511e16b6",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "c785af57048c31c867897505df4cde68a948599a94d2d9f99f89c2135c794d00",
+      "usableSequence": false
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "bf204f35ea42a136433aff8ed04b27b70d1d076bf2467c0a7aa6914ba0371ca8",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "5ce238f1db9488bed3623fcf6db3e4f0e51bccaf8aa89d8728070635ee56cde9",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "978fd772bf1984a4974f3b8382f9e983a9d3abf9223780e134002fafaf1c6b04",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "8982af827dc72750f66fb107248d4e3c42c3f0c24e6f08859cc559c4ba33b412",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "40c3ecd94ea2f9d892e2084ffcef90440d154c88ee2a784f407e46e332d13c07",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "fcfdb930adf0606c637616a6e1fb9606f83664e341b58e23684c6a6f65316619",
+      "usableSequence": true
+    },
+    {
+      "expected": "HELLO",
+      "predicted": "BOY",
+      "sha256": "65be40a727ae954d1a7d5b127dc9e3f9054dae04021bc61c33fba3735f1b4a9a",
+      "usableSequence": true
+    },
+    {
+      "expected": "HELLO",
+      "predicted": "GRANDFATHER",
+      "sha256": "fc9cf4443a5d674f136bfaecdf3c5ff5f595386fa7a45363e80d5d5a9172433c",
+      "usableSequence": true
+    },
+    {
+      "expected": "PLEASE",
+      "predicted": "FISH",
+      "sha256": "9eab4efb66c5620b603e3757d69e1cecffb98bee87a94c274a4bf714c0905220",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "61af284c1870a31cf0174bf7349a1a33b7d1e094f766e4232e6f9dbdefa5288e",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "bfcdd8ba66789f976dbfa0d81177c41cdc9f917b3382103c542d94f8152cad30",
+      "usableSequence": false
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "f8c6304be062f306a821006696f9bc3a9f7b251551c635725858876b01e2f780",
+      "usableSequence": false
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "0535971bf3035ab042a421b61cc93d5456089136cfa3c3bc46618faa5cc0b44c",
+      "usableSequence": false
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "e3552837b8f4820789fa099bcfe02aa3e390e9c29ce0f3f61e4cb57de0aceef5",
+      "usableSequence": true
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "275b8423fa90ca8405b2308d17a88719daff2027413581ab05a651e6966216d5",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "0f64e472fa0c6f1a32017f0e4dea320e7696b98714f0470df108dc030b8cef59",
+      "usableSequence": true
+    },
+    {
+      "expected": "BOOK",
+      "predicted": "GRANDMOTHER",
+      "sha256": "bf3c91a45c9e9f320dd5c8586cd40ac85ffdd95127f866da5d5d1e4699fd0cb8",
+      "usableSequence": true
+    }
+  ],
+  "limitations": [
+    "Previously inspected development validation; not independent accuracy.",
+    "Whole clips only; no automatic capture or browser timing test.",
+    "No ordinary hand-movement negatives.",
+    "Source caches use different frame sampling; body-reference modes and frame counts are recorded in the companion JSON.",
+    "Existing signs outside this catalog are negatives for this candidate. It cannot replace the current recognizers without separate integration/regression tests.",
+    "Softmax thresholds are model-selection parameters, not calibrated confidence."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "maxFeatureError": 2.3734521636953332e-07,
+  "maxLogitError": 7.998578934120815e-05,
+  "predictionsMatch": true,
+  "samples": 74,
+  "checkpointSha256": "7bfabbe9d9df8ef32162aa0899589f4c39fb3b54acd47fe914e244055d210598",
+  "javascriptSha256": "0e81037693f3b5e6115bc218128afc44693d65181ecaa6dc06b9cc3eb2f2d605",
+  "labelsCovered": 57,
+  "outputClasses": 51,
+  "includesRejectedTracking": true,
+  "deployed": false,
+  "scope": "Offline classifier parity on cached development landmarks. No camera, body-detector integration, live timing, independent accuracy, or deployment claim."
+}

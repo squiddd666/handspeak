@@ -9,18 +9,42 @@
     "val": "6ac78c9d551dfcc81d225a5279d7637c2891a4490851234be6e4674666e21366",
     "test": "b1dee8f81204895ca1760f6bd582eec84cf390b9c97c4387e49b9cc6b906b21e"
   },
+  "lexicalSourceProvenance": {
+    "metadataSha256": {
+      "asl-lex-metadata.csv": "1cd7bfff2e91d32c8c4817cd0d9cd4b68533f602e9846e33060a587dffeba035",
+      "asllrp_sentence_signs_2025_06_28.csv": "9c1641b6b95a6e6c2223c34eb101ed2e83bb1da824e18c7a21791c59b1593e86",
+      "asllvd_signs_2024_06_27.csv": "befae49101713022c4dd318d1cd08550b04fd05e4a9b9467c2a391c5546ac91d",
+      "dsp_signs_2024_06_27.csv": "a86be7fca9e799cb2e781341d06dae054a349ae03384f505bb99c795301df6ac",
+      "rit_signs_2024_06_27.csv": "2ff1d6aa996f895f11a7c6d991332968285746e602077f03c9c73838201e84b7"
+    },
+    "malformedRowsExcluded": {
+      "asllrp_sentence_signs_2025_06_28.csv": 3,
+      "asllvd_signs_2024_06_27.csv": 0,
+      "dsp_signs_2024_06_27.csv": 0,
+      "rit_signs_2024_06_27.csv": 0
+    },
+    "aslLexMetadataTerms": "CC BY-NC 4.0; ASL-LEX reference videos excluded; metadata only.",
+    "aslLexTermsUrl": "https://asl-lex.org/download.html",
+    "signBankMetadataUrl": "https://dai.cs.rutgers.edu/asllvd/signbank/",
+    "signBankTermsUrl": "https://www.bu.edu/asllrp/av/dai-asllvd.html",
+    "restrictions": "Source licensing must be checked for each collection and intended use. No reference videos downloaded; translations are unverified candidates, not training labels."
+  },
   "metadataOnly": true,
-  "matchedCatalogEntries": 175,
+  "matchedCatalogEntries": 185,
   "additionalCandidatesForPreviouslyMissingWords": [
     "ALLERGY",
+    "AMBULANCE",
+    "ASSIGNMENT",
     "BABY",
     "BAG",
     "BORED",
     "BREAKFAST",
+    "CHARGER",
     "CHICKEN",
     "CLASSROOM",
     "CONFUSED",
     "DINNER",
+    "DON'T UNDERSTAND",
     "EIGHTEEN",
     "EVENING",
     "EXAM",
@@ -34,15 +58,19 @@
     "GOOD MORNING",
     "HOSPITAL",
     "HOW MANY",
+    "HOW MUCH",
+    "INJURY",
     "LUNCH",
     "MEAT",
     "MONEY",
     "NERVOUS",
     "NINETEEN",
+    "OKAY",
     "PARENT",
     "QUESTION",
     "REMEMBER",
     "REPEAT",
+    "RICE",
     "RUN",
     "SEVENTEEN",
     "SIXTEEN",
@@ -54,31 +82,23 @@
     "TWENTY",
     "WALK",
     "WELCOME",
-    "WOMAN"
+    "WOMAN",
+    "WORRIED",
+    "YOU'RE WELCOME"
   ],
   "stillWithoutExactTextCandidate": [
     "GOOD EVENING",
-    "YOU'RE WELCOME",
-    "DON'T UNDERSTAND",
-    "CHARGER",
     "FEVER",
     "STOMACHACHE",
-    "AMBULANCE",
     "PHARMACY",
-    "INJURY",
     "CLASSMATE",
-    "ASSIGNMENT",
     "POLICE STATION",
     "MARKET",
     "TAXI",
-    "WORRIED",
-    "OKAY",
     "DON'T TOUCH",
     "UNSAFE",
     "CALL POLICE",
     "CALL AMBULANCE",
-    "RICE",
-    "HOW MUCH",
     "DON'T HAVE"
   ],
   "entries": [
@@ -7979,6 +7999,548 @@
       "semanticMappingVerified": false,
       "trained": false,
       "nextStep": "Verify meanings of numbered variants and permitted use before combining or training."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "YOU'RE WELCOME",
+      "candidateGloss": "WELCOME1",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "welcome_1",
+        "field": "SignBankEnglishTranslations",
+        "translations": "greeting, welcome, you're welcome"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "DON'T UNDERSTAND",
+      "candidateGloss": "CONFUSED1",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 37,
+      "splitCounts": {
+        "train": 18,
+        "val": 4,
+        "test": 15
+      },
+      "signerCounts": {
+        "train": 13,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "confused_1",
+        "field": "SignBankEnglishTranslations",
+        "translations": "confused, don't understand, CONFUSEDnoix"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "CHARGER",
+      "candidateGloss": "PLUG1",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 16,
+        "val": 3,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "plug_1",
+        "field": "SignBankEnglishTranslations",
+        "translations": "battery, charge, charger, cord, electric, electricity, insert, outlet, plug, plug in"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "CHARGER",
+      "candidateGloss": "PLUG2",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 15,
+        "val": 3,
+        "test": 13
+      },
+      "signerCounts": {
+        "train": 13,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "plug_2",
+        "field": "SignBankEnglishTranslations",
+        "translations": "battery, charge, charger, cord, electric, electricity, insert, outlet, plug, plug in"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "INJURY",
+      "candidateGloss": "PAIN",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 32,
+      "splitCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 14
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "pain",
+        "field": "SignBankEnglishTranslations",
+        "translations": "ache, hurt, injure, injury, pain"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "INJURY",
+      "candidateGloss": "HURT",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 30,
+      "splitCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "hurt",
+        "field": "SignBankEnglishTranslations",
+        "translations": "ache, hurt, injure, injury, pain"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "ASSIGNMENT",
+      "candidateGloss": "HOMEWORK",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 29,
+      "splitCounts": {
+        "train": 13,
+        "val": 5,
+        "test": 11
+      },
+      "signerCounts": {
+        "train": 13,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "homework",
+        "field": "SignBankEnglishTranslations",
+        "translations": "assignment, homework"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "ASSIGNMENT",
+      "candidateGloss": "ASSIGN",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 30,
+      "splitCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 11
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "assign",
+        "field": "SignBankEnglishTranslations",
+        "translations": "assign, assignment, move, place, placement, put there, set, set in place"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "WORRIED",
+      "candidateGloss": "CONCERNED",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "concerned",
+        "field": "SignBankEnglishTranslations",
+        "translations": "concern, concerned, worried"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "OKAY",
+      "candidateGloss": "FINE1",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 39,
+      "splitCounts": {
+        "train": 19,
+        "val": 4,
+        "test": 16
+      },
+      "signerCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "fine_1",
+        "field": "SignBankEnglishTranslations",
+        "translations": "all right, fine, okay, no problem"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "OKAY",
+      "candidateGloss": "FINE2",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 23,
+      "splitCounts": {
+        "train": 12,
+        "val": 3,
+        "test": 8
+      },
+      "signerCounts": {
+        "train": 11,
+        "val": 3,
+        "test": 8
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "fine_2",
+        "field": "SignBankEnglishTranslations",
+        "translations": "all right, fine, okay, no problem"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "OKAY",
+      "candidateGloss": "VALIDATE",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 30,
+      "splitCounts": {
+        "train": 14,
+        "val": 4,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 12,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "validate",
+        "field": "SignBankEnglishTranslations",
+        "translations": "approve, authenticate, authorize, okay, permit, validate, verify"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "OKAY",
+      "candidateGloss": "ALRIGHT",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 16,
+        "val": 5,
+        "test": 10
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 3,
+        "test": 10
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "alright",
+        "field": "SignBankEnglishTranslations",
+        "translations": "all right, alright, okay, sure"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "RICE",
+      "candidateGloss": "RAT",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 30,
+      "splitCounts": {
+        "train": 15,
+        "val": 4,
+        "test": 11
+      },
+      "signerCounts": {
+        "train": 14,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "rat",
+        "field": "SignBankEnglishTranslations",
+        "translations": "rat, mouse, rice, rats, rodent"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "HOW MUCH",
+      "candidateGloss": "MUCH",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 15,
+        "val": 3,
+        "test": 13
+      },
+      "signerCounts": {
+        "train": 15,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "much",
+        "field": "SignBankEnglishTranslations",
+        "translations": "a bunch, how many, how much, a lot, lot, many, much, quantity, too much"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "HOW MUCH",
+      "candidateGloss": "MANY",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 13,
+        "val": 6,
+        "test": 12
+      },
+      "signerCounts": {
+        "train": 13,
+        "val": 4,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "many",
+        "field": "SignBankEnglishTranslations",
+        "translations": "a lot, how much, many, multiple, numerous, quantity, volume"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "HOW MUCH",
+      "candidateGloss": "TOOMUCH",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 16,
+        "val": 4,
+        "test": 11
+      },
+      "signerCounts": {
+        "train": 15,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "too_much",
+        "field": "SignBankEnglishTranslations",
+        "translations": "a bunch, how many, how much, a lot, lot, many, much, quantity, too much"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+      "word": "HOW MUCH",
+      "candidateGloss": "MONEY2",
+      "mapping": "lexical-translation-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 31,
+      "splitCounts": {
+        "train": 15,
+        "val": 3,
+        "test": 13
+      },
+      "signerCounts": {
+        "train": 13,
+        "val": 3,
+        "test": 11
+      },
+      "signerIdsSharedAcrossSplits": [],
+      "evidence": {
+        "entryID": "money_2",
+        "field": "SignBankEnglishTranslations",
+        "translations": "cash, dollar, how much?, money"
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Review the lexical variant in context with an ASL reviewer; translations may collide with other catalog words. Do not merge, relabel, or enable from metadata. Use ASL Citizen terms for any eventual recordings, not ASL-LEX reference videos."
+    },
+    {
+      "dataset": "Rutgers/BU SignBank",
+      "word": "AMBULANCE",
+      "candidateGloss": "AMBULANCE",
+      "mapping": "main-entry-text-candidate",
+      "previousStatus": "needs-verified-training-source",
+      "metadataClips": 10,
+      "splitCounts": null,
+      "signerCounts": null,
+      "signerIdsSharedAcrossSplits": null,
+      "sourceFiles": {
+        "asllvd_signs_2024_06_27.csv": 2,
+        "rit_signs_2024_06_27.csv": 8
+      },
+      "status": "metadata-candidate-only",
+      "videoAvailabilityVerified": false,
+      "semanticMappingVerified": false,
+      "trained": false,
+      "nextStep": "Resolve signer identities and licensing before any downloads. Clip/session IDs are not signer IDs. Verify annotation timing, buffered clips, and slowed playback. Do not infer signer-disjoint partitions or publish videos from these metadata rows."
     }
   ]
 }

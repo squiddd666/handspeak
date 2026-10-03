@@ -11,8 +11,9 @@ ROOT=Path('/opt/handspeak-training/daily-words/citizen-research');fit.ROOT=ROOT
 LABELS=['NAME','HOME','HAVE','WANT','LOVE'];OTHER='OTHER MOVEMENT'
 torch.set_num_threads(2)
 class Net(nn.Module):
- def __init__(self,width,num_classes=None):
-  super().__init__();self.net=nn.Sequential(nn.Conv1d(153,width,5,padding=2),nn.ReLU(),nn.Dropout(.15),nn.Conv1d(width,width,3,padding=1),nn.ReLU(),nn.AdaptiveAvgPool1d(1),nn.Flatten(),nn.Linear(width,len(LABELS)+1 if num_classes is None else num_classes))
+ def __init__(self,width,num_classes=None,temporal_bins=1):
+  if temporal_bins not in (1,4):raise ValueError('Temporal bins must be 1 or 4')
+  super().__init__();self.net=nn.Sequential(nn.Conv1d(153,width,5,padding=2),nn.ReLU(),nn.Dropout(.15),nn.Conv1d(width,width,3,padding=1),nn.ReLU(),nn.AdaptiveAvgPool1d(temporal_bins),nn.Flatten(),nn.Linear(width*temporal_bins,len(LABELS)+1 if num_classes is None else num_classes))
  def forward(self,x):return self.net(x)
 def metrics(rows,out):
  m=fit.metrics(rows,out,LABELS)
@@ -33,12 +34,12 @@ def train_dtw(train,val):
  model=dict(version=1,encoding='two-hand-motion-v3',labels=LABELS,samples=refs,parameters=best['parameters'],status='private-research-only')
  path=ROOT/'dtw-private.json';path.write_text(json.dumps(model,separators=(',',':')))
  best.update(passesValidation=gate(best['validation']),sha256=hashlib.sha256(path.read_bytes()).hexdigest());(ROOT/'dtw-validation.json').write_text(json.dumps(best,indent=2));print('DTW result',json.dumps(best),flush=True)
-def train_temporal(train,val,negative_weight=1.0):
+def train_temporal(train,val,negative_weight=1.0,temporal_bins=1):
  augmented=train+[encoding.mirrored(r) for r in train]
  x=torch.tensor(np.stack([encoding.features(r) for r in augmented]));vx=torch.tensor(np.stack([encoding.features(r) for r in val]));y=torch.tensor([LABELS.index(r['label']) if r['label'] in LABELS else len(LABELS) for r in augmented])
  weights=1/torch.bincount(y,minlength=len(LABELS)+1).float().clamp(min=1);weights[-1]*=negative_weight;weights/=weights.mean();best=None;trials=[]
  for seed,width in [(17,16),(29,32)]:
-  torch.manual_seed(seed);net=Net(width);opt=torch.optim.AdamW(net.parameters(),lr=.003,weight_decay=.01)
+  torch.manual_seed(seed);net=Net(width,temporal_bins=temporal_bins);opt=torch.optim.AdamW(net.parameters(),lr=.003,weight_decay=.01)
   for epoch in range(1,121):
    net.train()
    for ids in torch.randperm(len(x)).split(32):
@@ -47,7 +48,9 @@ def train_temporal(train,val,negative_weight=1.0):
    net.eval()
    with torch.no_grad():probs=net(vx).softmax(1).numpy()
    for threshold,margin in itertools.product([.35,.5,.65,.8,.9,.97],[0,.1,.25,.4]):
-    m=metrics(val,outputs(val,probs,threshold,margin));entry=dict(seed=seed,width=width,epoch=epoch,threshold=threshold,margin=margin,validation=m);trials.append(entry)
+    m=metrics(val,outputs(val,probs,threshold,margin));entry=dict(seed=seed,width=width,epoch=epoch,threshold=threshold,margin=margin,validation=m)
+    if temporal_bins!=1:entry['temporalBins']=temporal_bins
+    trials.append(entry)
     if best is None or score(m)<score(best['validation']):
      best=entry;torch.save({'state':copy.deepcopy(net.state_dict()),'config':entry},ROOT/'temporal-private.pt')
    print('Temporal checkpoint',seed,epoch,'best',best['validation'],flush=True)

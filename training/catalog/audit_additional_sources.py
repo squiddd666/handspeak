@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import zipfile
 import csv
+from lexical_source_leads import source_leads
 
 SITE = Path(__file__).resolve().parents[2]
 SOURCE = Path('/opt/handspeak-training/vocabulary-source-audit/WLASL_v0.3.json')
@@ -90,6 +91,11 @@ def main():
             signerCounts={s: len(v) for s, v in signers.items()}, signerIdsSharedAcrossSplits=sorted(overlap),
             status='metadata-candidate-only', videoAvailabilityVerified=False, semanticMappingVerified=False,
             trained=False, nextStep='Verify meanings of numbered variants and permitted use before combining or training.'))
+    missing_before_lexical = [item['word'] for item in baseline['entries']
+        if item.get('baselineStatus', item['status']) == 'needs-verified-training-source'
+        and item['word'] not in {r['word'] for r in entries}]
+    lexical_entries, lexical_provenance = source_leads(missing_before_lexical, citizen, SOURCE.parent)
+    entries.extend(lexical_entries)
     newly_found = sorted({r['word'] for r in entries if r['previousStatus'] == 'needs-verified-training-source'})
     previously_missing = [r['word'] for r in baseline['entries'] if r.get('baselineStatus', r['status']) == 'needs-verified-training-source']
     remaining = [word for word in previously_missing if word not in newly_found]
@@ -99,6 +105,7 @@ def main():
                   additionalMetadataSource='https://download.microsoft.com/download/3/c/a/3ca92c78-1c4a-4a91-a7ee-6980c1d242ec/MS-ASL.zip',
                   additionalMetadataSha256=hashlib.sha256(msasl_path.read_bytes()).hexdigest(),
                   citizenVariantMetadataSha256={s: hashlib.sha256((citizen_root / (s + '.csv')).read_bytes()).hexdigest() for s in citizen},
+                  lexicalSourceProvenance=lexical_provenance,
                   metadataOnly=True, matchedCatalogEntries=len({r['word'] for r in entries}),
                   additionalCandidatesForPreviouslyMissingWords=newly_found,
                   stillWithoutExactTextCandidate=remaining, entries=entries)
@@ -106,13 +113,13 @@ def main():
     (root / 'additional-source-candidates.json').write_text(json.dumps(result, indent=2) + '\n')
     (root / 'additional-source-candidates.md').write_text(
         '# Additional source candidates — metadata only\n\n'
-        f"WLASL, MS-ASL, and ASL Citizen numbered-variant metadata have candidates for {len({r['word'] for r in entries})} catalog entries, "
+        f"WLASL, MS-ASL, ASL Citizen, and ASL-LEX/SignBank metadata have candidates for {len({r['word'] for r in entries})} catalog entries, "
         f"including **{len(newly_found)} of the 66** previously missing local-source entries. "
         'No videos were downloaded or trained in this source audit. These are source leads, '
         'not verified semantic mappings or enabled recognition words.\n\n'
         'New leads: ' + ', '.join(newly_found) + '.\n\n'
         f"The remaining {len(remaining)} entries without a text/synonym candidate in this comparison: "
-        ', '.join(remaining) + '.\n\n'
+        + ', '.join(remaining) + '.\n\n'
         'Counts reflect metadata, not accessible videos. Check signer identities across '
         'partitions and datasets, unknown IDs, duplicate clips, regional variants, and '
         'ambiguous English glosses before training. Source clips and model distribution '
@@ -121,6 +128,12 @@ def main():
         '[dataset description and C-UDA license reference](https://github.com/dxli94/WLASL/blob/master/index.md). '
         'Additional source: [Microsoft MS-ASL catalog](https://microsoft.github.io/data-for-society/dataset?d=MS-ASL-American-Sign-Language-Dataset). '
         'Numbered variants: [ASL Citizen](https://www.microsoft.com/en-us/research/project/asl-citizen/). '
+        'Lexical translation leads: [ASL-LEX](https://asl-lex.org/download.html) '
+        '(metadata CC BY-NC 4.0; reference videos excluded) and '
+        '[Rutgers/BU SignBank](https://dai.cs.rutgers.edu/asllvd/signbank/). '
+        'Only SignBank lexical translations are used; nondominant naming responses are excluded '
+        'because they may be guesses rather than equivalent signs. These translations can be '
+        'ambiguous and are never used to relabel training data automatically. '
         'The companion JSON records the metadata hash and per-word partition counts.\n')
     print(json.dumps({k: v for k, v in result.items() if k != 'entries'}, indent=2))
 

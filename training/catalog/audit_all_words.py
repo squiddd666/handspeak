@@ -36,13 +36,13 @@ report={'catalogEntries':len(rows),'statusCounts':dict(counts),'candidateCitizen
 out=ROOT/'reports/vocabulary-expansion';out.mkdir(exist_ok=True)
 (out/'all-201-readiness.json').write_text(json.dumps(report,indent=2)+'\n')
 with (out/'all-201-readiness.csv').open('w',newline='') as f:
- w=csv.writer(f);w.writerow(['word','status','candidate_source_glosses','train_signers','validation_signers','test_signers','local_popsign_clips','next_step','additional_dataset_glosses','original_source_status'])
+ w=csv.writer(f,lineterminator="\n");w.writerow(['word','status','candidate_source_glosses','train_signers','validation_signers','test_signers','local_popsign_clips','next_step','additional_dataset_glosses','original_source_status'])
  for r in rows:w.writerow([r['word'],r['status'],' | '.join(r['citizenCandidateGlosses']),*[r['citizenSignerCounts'][s] for s in ['train','val','test']],r['popSignLocalClips'],r['nextStep'],' | '.join(f"{x['dataset']}: {x['candidateGloss']} ({x['mapping']}; unverified)" for x in r['additionalSourceCandidates']),r['baselineStatus']])
 missing=[r['word'] for r in rows if r['status']=='needs-verified-training-source']
 (out/'README.md').write_text('# All 201 catalog words — readiness audit, 3 October 2026\n\n'+f"{len(rows)} entries checked: {counts['enabled-experimental']} enabled experimental entries, {counts['candidate-data-needs-validation']} additional entries with candidate or locally downloaded data, and {len(missing)} requiring a verified training source.\n\n"+'No new model trained or deployed in this audit. Candidate source glosses require semantic review; source metadata presence is not evidence of recognition. Previously rejected category models remain disabled.\n\n## Missing verified training source\n\n'+', '.join(missing)+'\n\nSee all-201-readiness.csv and all-201-readiness.json for the complete per-entry list.\n')
 assert len(rows)==201 and len({r['id'] for r in rows})==201
 followups=[]
-for name,title in [('completion-status.md','Current completion status'),('fresh-test/README.md','Fresh eight-word test'),('batch1/README.md','First training experiment'),('batch2/README.md','Expanded training experiment'),('batch2-rejection/README.md','Stronger-rejection experiment'),('additional-source-candidates.md','Additional source candidates (metadata only)')]:
+for name,title in [('completion-status.md','Current completion status'),('joint50/README.md','Joint 50-word experiment'),('joint50-phases/README.md','Motion-order experiment'),('joint50-recovery/README.md','Denser-tracking experiment'),('fresh-test/README.md','Fresh eight-word test'),('batch1/README.md','First training experiment'),('batch2/README.md','Expanded training experiment'),('batch2-rejection/README.md','Stronger-rejection experiment'),('additional-source-candidates.md','Additional source candidates (metadata only)')]:
  if (out/name).exists():followups.append(f'- [{title}]({name})')
 if followups:
  with (out/'README.md').open('a') as f:f.write('\n## Follow-up work\n\n'+'\n'.join(followups)+'\n')

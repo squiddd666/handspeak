@@ -1,0 +1,17 @@
+{
+  "attempted": 117,
+  "recovered": 75,
+  "byPartition": {
+    "train": {
+      "attempted": 81,
+      "recovered": 49
+    },
+    "val": {
+      "attempted": 36,
+      "recovered": 26
+    }
+  },
+  "deployed": false,
+  "independentTest": false,
+  "dataSha256": "23ada0ab30e43ab5797f11ba744aefb31a57037ec575ff5b1c9b2b4f6cda93ff"
+}

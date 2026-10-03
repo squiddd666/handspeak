@@ -1,8 +1,8 @@
 {
   "catalogEntries": 201,
   "statusCounts": {
-    "candidate-data-needs-validation": 169,
-    "needs-verified-training-source": 23,
+    "candidate-data-needs-validation": 179,
+    "needs-verified-training-source": 13,
     "enabled-experimental": 9
   },
   "candidateCitizenEntries": 124,
@@ -176,7 +176,7 @@
     {
       "id": "you-re-welcome",
       "word": "YOU'RE WELCOME",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -187,9 +187,23 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "WELCOME1",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 15,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "understand",
@@ -241,7 +255,7 @@
     {
       "id": "don-t-understand",
       "word": "DON'T UNDERSTAND",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -252,9 +266,23 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "CONFUSED1",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 37,
+          "signerCounts": {
+            "train": 13,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "again",
@@ -1005,7 +1033,7 @@
     {
       "id": "charger",
       "word": "CHARGER",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -1016,9 +1044,36 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "PLUG1",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 14,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "PLUG2",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 13,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "bed",
@@ -1433,7 +1488,7 @@
     {
       "id": "ambulance",
       "word": "AMBULANCE",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -1444,9 +1499,19 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "Rutgers/BU SignBank",
+          "candidateGloss": "AMBULANCE",
+          "mapping": "main-entry-text-candidate",
+          "metadataClips": 10,
+          "signerCounts": null,
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "nurse",
@@ -1550,7 +1615,7 @@
     {
       "id": "injury",
       "word": "INJURY",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -1561,9 +1626,36 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "PAIN",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 32,
+          "signerCounts": {
+            "train": 14,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "HURT",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 30,
+          "signerCounts": {
+            "train": 14,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "dizzy",
@@ -2511,7 +2603,7 @@
     {
       "id": "assignment",
       "word": "ASSIGNMENT",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -2522,9 +2614,36 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "HOMEWORK",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 29,
+          "signerCounts": {
+            "train": 13,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "ASSIGN",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 30,
+          "signerCounts": {
+            "train": 14,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "homework",
@@ -5987,7 +6106,7 @@
     {
       "id": "worried",
       "word": "WORRIED",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -5998,9 +6117,23 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "CONCERNED",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 14,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "nervous",
@@ -6264,7 +6397,7 @@
     {
       "id": "okay",
       "word": "OKAY",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -6275,9 +6408,62 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "FINE1",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 39,
+          "signerCounts": {
+            "train": 15,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "FINE2",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 23,
+          "signerCounts": {
+            "train": 11,
+            "val": 3,
+            "test": 8
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "VALIDATE",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 30,
+          "signerCounts": {
+            "train": 12,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "ALRIGHT",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 14,
+            "val": 3,
+            "test": 10
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "love",
@@ -7198,7 +7384,7 @@
     {
       "id": "rice",
       "word": "RICE",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -7209,9 +7395,23 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "RAT",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 30,
+          "signerCounts": {
+            "train": 14,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "bread",
@@ -7800,7 +8000,7 @@
     {
       "id": "how-much",
       "word": "HOW MUCH",
-      "status": "needs-verified-training-source",
+      "status": "candidate-data-needs-validation",
       "citizenCandidateGlosses": [],
       "citizenSignerCounts": {
         "train": 0,
@@ -7811,9 +8011,62 @@
       "sourceVersion": null,
       "learningVideo": false,
       "mappingNote": "No new mapping approved.",
-      "nextStep": "Obtain verified labeled movement recordings across separate training, validation, and test signers. Lesson links are not trained models.",
+      "nextStep": "Verify sign meaning and source licensing; train on training signers, tune on validation, freeze, and evaluate on untouched test signers plus negative movements.",
       "baselineStatus": "needs-verified-training-source",
-      "additionalSourceCandidates": []
+      "additionalSourceCandidates": [
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "MUCH",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 15,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "MANY",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 13,
+            "val": 4,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "TOOMUCH",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 15,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        },
+        {
+          "dataset": "ASL Citizen via ASL-LEX/SignBank metadata",
+          "candidateGloss": "MONEY2",
+          "mapping": "lexical-translation-candidate",
+          "metadataClips": 31,
+          "signerCounts": {
+            "train": 13,
+            "val": 3,
+            "test": 11
+          },
+          "videoAvailabilityVerified": false,
+          "semanticMappingVerified": false
+        }
+      ]
     },
     {
       "id": "can",
