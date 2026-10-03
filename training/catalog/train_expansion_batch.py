@@ -17,7 +17,19 @@ LABELS = ['THIRSTY', 'HOT', 'SICK', 'READ', 'GIVE', 'CALL', 'FIND',
           'NOW', 'TOMORROW', 'MILK']
 
 
-def prepare(source, root, negative_weight=1.0, labels=None, temporal_bins=1):
+def model_outputs(protocol, selected):
+    labels = protocol['labels']
+    rejection = protocol.get('rejectionLabels', [trainer.OTHER])
+    if not rejection or len(set(labels + rejection)) != len(labels + rejection):
+        raise ValueError('Invalid or overlapping output classes')
+    expected = labels + rejection
+    if (protocol.get('outputLabels', labels + [trainer.OTHER]) != expected or
+            selected.get('outputLabels', labels + [trainer.OTHER]) != expected):
+        raise ValueError('Checkpoint class order differs from frozen protocol')
+    return expected
+
+
+def prepare(source, root, negative_weight=1.0, labels=None, temporal_bins=1, separate_negatives=False):
     if temporal_bins not in (1, 4):
         raise ValueError('Temporal bins must be 1 or 4')
     custom_labels = labels is not None
@@ -81,12 +93,28 @@ def prepare(source, root, negative_weight=1.0, labels=None, temporal_bins=1):
             'Temporal features use center-frame body references where visible, '
             'otherwise wrist-centered fallback. Whole clips, not live capture. '
             'No test set is opened by this script.')
+        body_modes = sorted({r.get('bodyMode', 'missing') for r in data})
+        if 'per-frame pose' in body_modes:
+            protocol['bodyReferenceModes'] = body_modes
+            protocol['limitations'] = (
+                'Development validation data previously used in research. '
+                'Body references are measured per sampled frame where available; '
+                'features use wrist-centered fallback when shoulders are not visible. '
+                'Whole clips, not live capture. No test set is opened by this script.')
     if negative_weight != 1.0:
         protocol['negativeExampleLossMultiplier'] = negative_weight
         protocol['negativeWeightScope'] = 'Temporal training only; DTW unchanged.'
     if temporal_bins != 1:
         protocol['temporalBins'] = temporal_bins
         protocol['architectureChange'] = 'Pool into four ordered time regions instead of a single clip average.'
+    if separate_negatives:
+        rejected = sorted({r['label'] for r in train} - set(labels))
+        if not rejected or any(r['label'] not in labels + rejected for r in val):
+            raise ValueError('Every validation rejection label requires usable training examples')
+        protocol['rejectionLabels'] = rejected
+        protocol['outputLabels'] = labels + rejected
+        protocol['rejectionTraining'] = ('Learn each other-sign label separately with per-class loss balancing; '
+            'reject every non-target winning class without renormalization or fallback.')
     root.mkdir(parents=True, exist_ok=True)
     path = root / 'protocol.json'
     if path.exists() and json.loads(path.read_text()) != protocol:
@@ -106,12 +134,15 @@ if __name__ == '__main__':
     parser.add_argument('--labels-file', type=Path,
                         help='JSON list of target words; requires development coverage and negatives')
     parser.add_argument('--temporal-bins', type=int, choices=[1, 4], default=1)
+    parser.add_argument('--separate-negatives', action='store_true')
     args = parser.parse_args()
     if args.model != 'temporal' and args.temporal_bins != 1:
         parser.error('--temporal-bins only applies to temporal training')
+    if args.model != 'temporal' and args.separate_negatives:
+        parser.error('--separate-negatives only applies to temporal training')
     labels = json.loads(args.labels_file.read_text()) if args.labels_file else LABELS
     train, val = prepare(args.source, args.output, args.negative_weight,
-                         labels if args.labels_file else None, args.temporal_bins)
+                         labels if args.labels_file else None, args.temporal_bins, args.separate_negatives)
     trainer.LABELS = labels
     trainer.ROOT = args.output
     trainer.fit.ROOT = args.output
@@ -119,6 +150,8 @@ if __name__ == '__main__':
           f'{len(val)} validation clips; labels={labels}', flush=True)
     if args.model == 'temporal':
         trainer.train_temporal(train, val, negative_weight=args.negative_weight,
-                               temporal_bins=args.temporal_bins)
+                               temporal_bins=args.temporal_bins,
+                               rejection_labels=sorted({r['label'] for r in train} - set(labels))
+                               if args.separate_negatives else None)
     else:
         trainer.train_dtw(train, val)

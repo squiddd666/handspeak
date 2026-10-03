@@ -206,3 +206,109 @@ Do not start a second extraction/training process in the same experiment directo
 This transient unit survives terminal closure, but not a server reboot; rerun the
 command after reboot to resume caches. Existing validation/source hashes remain
 checked, and training restarts reproducibly after an interrupted training stage.
+
+## Separate rejection classes
+
+`--separate-negatives` keeps each non-target training label as its own internal
+output class. All such outputs are rejected, without renormalizing over targets
+or falling back to the runner-up. The exact class ordering is frozen in the
+protocol and selected checkpoint configuration, and verified by the reporting
+and browser-parity tools. Every validation negative label must have usable
+training examples. Existing models retain their original single OTHER output.
+
+This changes both the rejection representation and per-class loss balancing:
+seven distinct other-sign labels now each contribute a class, instead of sharing
+the weight of one OTHER class. Supported labels and the release gate are unchanged.
+
+```bash
+/opt/handspeak-training/venv/bin/python training/catalog/train_expansion_batch.py \
+  --source /opt/handspeak-training/vocabulary-expansion-joint50-balanced/development-features.json \
+  --labels-file /opt/handspeak-training/vocabulary-expansion-joint50/labels.json \
+  --output /opt/handspeak-training/vocabulary-expansion-joint50-separated \
+  --model temporal --separate-negatives
+```
+
+This experiment produced 76/210 correct, three wrong-word suggestions, 131 misses,
+and 1/90 other-sign false accepts. The combined-negative baseline had 94 correct,
+five wrong, 111 misses, and 8/90 false accepts. The new candidate reduced errors
+but missed more targets; neither passed the unchanged validation screen.
+
+`check_mirror_agreement.py` compares original prediction, the mean of original and
+mirrored probabilities, and agreement-gated mean prediction at the checkpoint's
+existing thresholds. It only reads development data, verifies hashes and baseline
+reproduction, and writes a diagnostic. It does not export or promote a model.
+Mirrored views are correlated, not new independent samples.
+
+## Residual motion and aligned-window experiments
+
+`train_motion_residual.py` uses the same frozen balanced development data and
+separate rejection labels. Its protocol freezes three seeds, 80 epochs, training-only
+normalization, time-warp augmentation, and a residual convolutional model with
+explicit differences and mean/max pooling. Validation chooses among checkpoints
+and the three final models' averaged probabilities using the existing gate and
+selection score. A rejection-class winner never falls back to a target class.
+Checkpoint reload must reproduce the selected metrics. This is development
+screening, not a deployment pipeline or independent test.
+
+```bash
+/opt/handspeak-training/venv/bin/python training/catalog/train_motion_residual.py \
+  --baseline /opt/handspeak-training/vocabulary-expansion-joint50-separated \
+  --output /opt/handspeak-training/vocabulary-expansion-motion-residual \
+  --report reports/vocabulary-expansion/motion-residual
+/opt/handspeak-training/venv/bin/python training/catalog/check_residual_browser.py \
+  --experiment /opt/handspeak-training/vocabulary-expansion-motion-residual \
+  --report reports/vocabulary-expansion/motion-residual
+```
+
+`prepare_motion_windows.py` creates a separate development input using the browser
+motion encoder's visible-run selection and brief bounded gap filling. It preserves
+every original sequence-quality decision, signer, hash, and split. Never overwrite
+an existing frozen input. Window tests compare against the actual JavaScript
+encoder before normalization. This variant changes preprocessing only when passed
+to the existing `train_expansion_batch.py` with otherwise unchanged flags.
+
+```bash
+/opt/handspeak-training/venv/bin/python training/catalog/prepare_motion_windows.py \
+  --baseline /opt/handspeak-training/vocabulary-expansion-joint50-separated \
+  --output /opt/handspeak-training/vocabulary-expansion-aligned-data
+/opt/handspeak-training/venv/bin/python training/catalog/train_expansion_batch.py \
+  --source /opt/handspeak-training/vocabulary-expansion-aligned-data/development-features.json \
+  --labels-file /opt/handspeak-training/vocabulary-expansion-aligned-data/labels.json \
+  --output /opt/handspeak-training/vocabulary-expansion-joint50-aligned \
+  --model temporal --separate-negatives
+```
+
+The browser residual implementation is evaluation-only. Its timing excludes hand
+and body detection, camera capture, and networking. It must not be presented as
+real-world camera latency. The production site does not load these research files.
+
+`--body-tips` adds 22 channels containing fingertip/body coordinates and hand/body
+scale. Tests demonstrate that the old encoding can be identical for different
+hand/body scales while these extra channels preserve the difference. This is a
+representation change, not evidence of an accuracy improvement. Browser feature
+parity covers this variant as well.
+
+`check_residual_consensus.py` screens member agreement and a separate rejection
+guard on frozen development data. It verifies both original checkpoints' metrics,
+requires aligned recording identities and unchanged quality decisions, and never
+uses the guard to suggest a runner-up label. This is additional model selection,
+not independent testing or deployment.
+
+## Dynamic body references
+
+`run_dynamic_pose_training.py` re-extracts 60 actual sampled frames for every frozen
+development recording using the existing hand detector settings and JavaScript
+quality checks. It measures body landmarks in each frame instead of repeating a
+center-frame reference, aligns the visible motion window, trains the residual
+model with body-tip features, verifies the checkpoint, and checks browser parity.
+It never deploys. The job uses a process lock, atomic caches, source/code/model
+hashes, and private source snapshots. Changed inputs or code stop the run.
+
+See [dynamic-body pipeline status](../../reports/vocabulary-expansion/dynamic-pose/README.md)
+for commands. Raw outputs must remain outside the repository and served releases.
+
+`audit_holdout_headers.py` reads exactly 512-byte tar headers for four established
+test archives. It never requests video payloads or evaluates a model. Its strict
+unseen-signer count excludes all signer IDs in prior manifest selections, including
+possibly unused reserved recordings. Remaining filenames are candidates only;
+content hashes and signer separation still need checking after a model is frozen.

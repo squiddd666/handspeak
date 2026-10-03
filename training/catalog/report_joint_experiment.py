@@ -28,11 +28,11 @@ def main():
     # Recheck partition/coverage guards and the frozen protocol before inference.
     _, rows = batch.prepare(source, root,
         negative_weight=protocol.get('negativeExampleLossMultiplier', 1.0), labels=labels,
-        temporal_bins=protocol.get('temporalBins', 1))
+        temporal_bins=protocol.get('temporalBins', 1), separate_negatives='rejectionLabels' in protocol)
     if selected.get('temporalBins', 1) != protocol.get('temporalBins', 1):
         raise ValueError('Checkpoint architecture differs from protocol')
     batch.trainer.LABELS = labels
-    net = batch.trainer.Net(selected['width'], num_classes=len(labels) + 1,
+    net = batch.trainer.Net(selected['width'], num_classes=len(batch.model_outputs(protocol, selected)),
                             temporal_bins=protocol.get('temporalBins', 1))
     net.load_state_dict(torch.load(checkpoint, map_location='cpu', weights_only=True)['state'])
     net.eval()

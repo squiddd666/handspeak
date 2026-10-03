@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "expected": "NAME",
+      "predicted": "NAME",
+      "top5": [
+        "NAME",
+        "CHEAT1",
+        "WEIGH",
+        "KNIFE2",
+        "TEMPORARY"
+      ],
+      "input": [
+        640,
+        480
+      ],
+      "split": "train"
+    },
+    {
+      "expected": "HOME",
+      "predicted": "HOME",
+      "top5": [
+        "HOME",
+        "KISS1",
+        "KISSONCHEEK",
+        "CELLPHONE",
+        "HEAD"
+      ],
+      "input": [
+        640,
+        480
+      ],
+      "split": "train"
+    },
+    {
+      "expected": "HAVE",
+      "predicted": "HAVE",
+      "top5": [
+        "HAVE",
+        "LIVE1",
+        "ANIMAL",
+        "PLAY",
+        "DOESNTMATTER"
+      ],
+      "input": [
+        640,
+        480
+      ],
+      "split": "train"
+    },
+    {
+      "expected": "WANT",
+      "predicted": "WANT1",
+      "top5": [
+        "WANT1",
+        "WANT2",
+        "WHAT2",
+        "LIFT1",
+        "WET"
+      ],
+      "input": [
+        640,
+        480
+      ],
+      "split": "train"
+    },
+    {
+      "expected": "LOVE",
+      "predicted": "LOVE",
+      "top5": [
+        "LOVE",
+        "HUG",
+        "MICROSCOPE2",
+        "CAUGHT",
+        "CATCHBASEBALL"
+      ],
+      "input": [
+        640,
+        480
+      ],
+      "split": "train"
+    }
+  ],
+  "note": "Sanity check on five existing ASL Citizen training recordings. Not validation, test accuracy, or deployment evidence.",
+  "deployed": false
+}

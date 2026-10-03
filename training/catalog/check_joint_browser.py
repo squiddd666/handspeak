@@ -39,7 +39,8 @@ def main():
     labels = protocol['labels']
     batch.trainer.LABELS = labels
     saved = torch.load(checkpoint, map_location='cpu', weights_only=True)
-    net = batch.trainer.Net(selected['width'], num_classes=len(labels)+1).eval()
+    output_labels = batch.model_outputs(protocol, selected)
+    net = batch.trainer.Net(selected['width'], num_classes=len(output_labels)).eval()
     net.load_state_dict(saved['state'])
     features = np.stack([batch.trainer.encoding.features(r) for r in samples])
     with torch.no_grad():
@@ -77,7 +78,7 @@ def main():
     if result['maxFeatureError'] >= 1e-5 or result['maxLogitError'] >= 1e-4 or not result['predictionsMatch']:
         raise ValueError(f'Browser parity failed: {result}')
     result.update(checkpointSha256=selected['sha256'], javascriptSha256=hashlib.sha256(script.read_bytes()).hexdigest(),
-        labelsCovered=len({r['label'] for r in samples}), outputClasses=len(labels)+1,
+        labelsCovered=len({r['label'] for r in samples}), outputClasses=len(output_labels),
         includesRejectedTracking=any(r.get('sequence') is None for r in samples),
         deployed=False, scope='Offline classifier parity on cached development landmarks. '
         'No camera, body-detector integration, live timing, independent accuracy, or deployment claim.')

@@ -3,9 +3,121 @@
 **Not complete; no new candidate has been deployed.** The current website models
 remain in place. Passing software tests does not demonstrate recognition accuracy.
 
+## Motion-feature continuation
+
+Completed development comparisons (210 target clips, 90 other-sign clips):
+
+| Candidate | Correct | Wrong word | Other-sign false accepts | Release |
+| --- | ---: | ---: | ---: | --- |
+| Separate-rejection baseline | 76 | 3 | 1 | Failed |
+| Residual motion ensemble | 145 | 4 | 4 | Failed |
+| Aligned windows, existing classifier | 94 | 8 | 2 | Failed |
+| Stable single-hand slots, existing classifier | 96 | 9 | 1 | Failed |
+| Residual model with aligned windows | 132 | 3 | 3 | Failed |
+| Aligned residual model with rejection guard | 132 | 3 | 2 | Failed |
+| Explicit fingertip/body geometry | 129 | 3 | 2 | Failed |
+
+The residual model uses explicit frame differences, training-only feature
+normalization, residual temporal convolutions, mean/max pooling, and signing-speed
+augmentation. Three seeds and their final ensemble use the unchanged acceptance
+screen. Its browser parity passed on 74 cached examples; offline classifier
+inference took about 301 ms median and 316 ms p95 on this server. These timings
+exclude camera and landmark detection and were measured while another training
+job competed for CPU. The residual candidate still has no correct FINE examples
+at its selected thresholds and has more false accepts than the baseline.
+
+The aligned residual model recognized at least one clip for all 50 targets, but
+still failed the error requirements. A separately trained rejection guard removed
+one other-sign false accept without removing the remaining errors. Explicit
+fingertip/body geometry also failed the accuracy screen. Its Python/Chromium
+predictions matched on 74 examples; single-model inference measured about 51 ms
+median and 64 ms p95, excluding camera and landmark extraction.
+
+The private pretrained ASL Citizen pilot completed: 3/50 target clips recognized,
+zero wrong suggestions and 0/7 other-sign false accepts. Eleven target names had
+no exact output-label match. This was one development clip per source label, not
+a full validation set. The input encoding matched the author's implementation at
+six lengths. Four of five exact labels matched in a separate training-source
+sanity check; WANT produced the specific output WANT1. No guessed synonym or
+numbered-variant mappings were used in the PopSign pilot. This model was not
+adopted. See [pilot and sources](pretrained-citizen/README.md).
+
+### Active follow-up: dynamic body references
+
+`handspeak-dynamic-pose.service` is extracting all 2,815 development recordings
+again, using 60 actual sampled frames and measuring the body in each frame.
+Earlier training repeated a single body reference across the entire clip, so it
+could not use actual head/upper-body movement. Existing hand detection thresholds
+and the JavaScript sequence-quality rules remain unchanged. Training and
+validation signers remain separate; no reserved test recording is opened.
+
+The managed job resumes completed extraction caches, then automatically trains,
+reloads the selected checkpoint, and checks browser parity. Models failing the
+accuracy screen remain withheld. Even a validation pass is not deployment-ready
+without independent evaluation, ordinary-movement negatives and live-camera tests.
+The job continues after terminal/chat closure; the transient systemd unit does
+not survive a server reboot. It is expected to take hours on this CPU-only server.
+
+- [Live job status](/opt/handspeak-training/vocabulary-expansion-dynamic-pose/job-status.json)
+- [Pipeline and commands](dynamic-pose/README.md)
+
+Twenty-seven relevant tests passed before this run. A real-video extractor smoke
+check produced 60 synchronized hand/body samples with actual increasing timestamps.
+
+A metadata-only check fully scanned held-out AIRPLANE, CAN, FINE and SHOWER
+archives. There are 147, 141, 128 and 17 previously unselected recording filenames,
+respectively, but no signer IDs outside prior manifest selections. This is a
+conservative exclusion: selected recordings may not all have been evaluated.
+Fresh recording tests remain possible after freezing a candidate, with content
+hash checks and explicit population limitations. Generalization to a genuinely
+new signer population and real-camera ordinary movements still needs new evidence.
+No test video payloads or landmarks were opened by this audit. See
+[header-only holdout audit](holdout-readiness.json).
+
+The user confirmed that only existing videos/OBS are available for testing. Use
+the [recorded-video/OBS evaluation scope](obs-validation-plan.md), keep accuracy
+requirements unchanged, and make no claim of testing newly recruited people or
+physical webcams. This does not pause the training job.
+
+The window audit found 2,636 of 2,815 development recordings had removable empty
+boundaries or a dominant visible run. Feature frames decreased from 138,973 to
+55,469; all original sequence-quality decisions remain unchanged. Five window
+tests passed, including comparisons against the JavaScript encoder. Three new
+model tests cover checkpoint reload, batch-independent inference, finite gradients,
+and rejection without a runner-up fallback. Three slot-stability tests cover
+coordinate preservation, missing/two-hand boundaries, and mirroring. Slot changes
+are a research hypothesis, not verified hand-identity corrections; they changed
+552 frame slots across 379 development clips without changing quality decisions.
+
+These runs do not deploy automatically. A development-screen pass still requires
+untouched evaluation, ordinary-movement negatives, and browser/camera integration
+checks before a new word is enabled on the live website.
+
 ## Expanded training job: all 50 candidate words
 
-The next experiment expands the existing PopSign training set toward 48 clips per
+**Completed:** the balanced-data model reached 94/210 correct, five wrong-word
+suggestions, 111 misses, and eight false accepts among 90 other-sign clips.
+Checkpoint reload and offline Chromium parity passed, but the unchanged accuracy
+screen failed. Nothing was deployed. See [balanced results](joint50-balanced/README.md).
+
+**Follow-up completed:** trained the seven other-sign labels as separate internal
+rejection classes instead of collapsing them into one class. The 50 supported
+targets, development recordings, and acceptance screen stay unchanged. All seven
+rejection outputs remain unsupported for this candidate; a rejected winner never
+falls back to another label. This also balances each rejection label separately
+in the training loss. The result was **76/210 correct, three wrong-word suggestions,
+131 misses, and one false accept among 90 other-sign clips**. Rejection improved,
+but recall decreased and the unchanged accuracy screen still failed. It was not
+deployed. [Separate-rejection results](joint50-separated/README.md).
+
+Checkpoint reload reproduced validation. Offline Chromium/Python parity passed on
+74 examples with the expanded 57-class head. Nineteen relevant regression tests
+passed, including rejection without runner-up fallback and frozen class ordering.
+Mirror averaging/agreement at unchanged thresholds yielded 72 correct, three wrong,
+135 misses, and two other-sign false accepts; this strategy was not adopted.
+These are reused development comparisons, not independent accuracy results.
+
+The balanced experiment expanded the existing PopSign training set toward 48 clips per
 target word, retaining prior clips and limiting additional recordings to two per
 signer. Most target words previously had only 9–12 training clips. Source glosses
 are taken from the established recordings (for example, PAIN uses `owie`), not
@@ -22,7 +134,7 @@ All 1,312 additional videos have downloaded. The combined input has 2,515 traini
 recordings (2,287 target-word recordings), with no duplicate recording hashes.
 Landmark extraction and then training/checkpoint verification run as one pipeline;
 status is recorded in the private experiment's `job-status.json`. No new accuracy
-result is available until that pipeline completes.
+result was available until that pipeline completed; its outcome is recorded above.
 
 The job is managed by `handspeak-joint50-balanced.service`, with a three-core CPU
 quota and 5 GiB memory limit. It resumes cached downloads/extractions and runs

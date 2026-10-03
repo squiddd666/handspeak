@@ -1,0 +1,25 @@
+{
+  "candidateSha256": "2506d66f5b6525efb5ae7779bc3adb320a47eff20b1a2a87c245b682f508f777",
+  "guardSha256": "63f2eec537b389d8d0527cf1cbf17f63f9a35e0ef43860ea4554ad97f81f6e62",
+  "candidateSourceSha256": "d2c79de7ea6a369bf81bd5f16c8ebb514d1ca7234cea79d6f06aaff63f531958",
+  "guardSourceSha256": "0bba8181b682c3e97ffb5ade5e3d438f3f331011918b2a45716ad7a6eb5e3268",
+  "thresholds": [
+    0.35,
+    0.5,
+    0.65,
+    0.8,
+    0.9,
+    0.97
+  ],
+  "margins": [
+    0,
+    0.1,
+    0.25,
+    0.4
+  ],
+  "rule": "Require selected count of member argmax votes for the averaged winner. Optional guard vetoes any global winning rejection class, without fallback.",
+  "implementationSha256": "dacff10be859d4af3442d8905442f3e99f06562c41455e54211e8d1cd93ce37e",
+  "deployed": false,
+  "independentTest": false,
+  "gate": "At least 50% correct, zero wrong supported and negative accepts, and at least one correct example per word."
+}

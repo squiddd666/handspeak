@@ -1,0 +1,39 @@
+{
+  "words": [
+    {
+      "label": "AIRPLANE",
+      "archiveCompletelyScanned": true,
+      "recordings": 151,
+      "previouslyUnselectedRecordings": 147,
+      "previouslyUnselectedSigners": 0,
+      "recordingsFromPreviouslyUnselectedSigners": 0
+    },
+    {
+      "label": "CAN",
+      "archiveCompletelyScanned": true,
+      "recordings": 145,
+      "previouslyUnselectedRecordings": 141,
+      "previouslyUnselectedSigners": 0,
+      "recordingsFromPreviouslyUnselectedSigners": 0
+    },
+    {
+      "label": "FINE",
+      "archiveCompletelyScanned": true,
+      "recordings": 132,
+      "previouslyUnselectedRecordings": 128,
+      "previouslyUnselectedSigners": 0,
+      "recordingsFromPreviouslyUnselectedSigners": 0
+    },
+    {
+      "label": "SHOWER",
+      "archiveCompletelyScanned": true,
+      "recordings": 19,
+      "previouslyUnselectedRecordings": 17,
+      "previouslyUnselectedSigners": 0,
+      "recordingsFromPreviouslyUnselectedSigners": 0
+    }
+  ],
+  "testMediaDownloaded": false,
+  "testFeaturesOpened": false,
+  "limitations": "Conservative metadata audit: previously selected signers are excluded even if their reserved clips may not have been evaluated. Unselected filenames still require content-hash checks after a candidate is frozen. No recognition or accuracy result."
+}

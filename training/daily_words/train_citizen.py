@@ -34,12 +34,13 @@ def train_dtw(train,val):
  model=dict(version=1,encoding='two-hand-motion-v3',labels=LABELS,samples=refs,parameters=best['parameters'],status='private-research-only')
  path=ROOT/'dtw-private.json';path.write_text(json.dumps(model,separators=(',',':')))
  best.update(passesValidation=gate(best['validation']),sha256=hashlib.sha256(path.read_bytes()).hexdigest());(ROOT/'dtw-validation.json').write_text(json.dumps(best,indent=2));print('DTW result',json.dumps(best),flush=True)
-def train_temporal(train,val,negative_weight=1.0,temporal_bins=1):
+def train_temporal(train,val,negative_weight=1.0,temporal_bins=1,rejection_labels=None):
+ output_labels=LABELS+(rejection_labels if rejection_labels is not None else [OTHER])
  augmented=train+[encoding.mirrored(r) for r in train]
- x=torch.tensor(np.stack([encoding.features(r) for r in augmented]));vx=torch.tensor(np.stack([encoding.features(r) for r in val]));y=torch.tensor([LABELS.index(r['label']) if r['label'] in LABELS else len(LABELS) for r in augmented])
- weights=1/torch.bincount(y,minlength=len(LABELS)+1).float().clamp(min=1);weights[-1]*=negative_weight;weights/=weights.mean();best=None;trials=[]
+ x=torch.tensor(np.stack([encoding.features(r) for r in augmented]));vx=torch.tensor(np.stack([encoding.features(r) for r in val]));y=torch.tensor([output_labels.index(r['label']) if rejection_labels is not None or r['label'] in LABELS else len(LABELS) for r in augmented])
+ weights=1/torch.bincount(y,minlength=len(output_labels)).float().clamp(min=1);weights[len(LABELS):]*=negative_weight;weights/=weights.mean();best=None;trials=[]
  for seed,width in [(17,16),(29,32)]:
-  torch.manual_seed(seed);net=Net(width,temporal_bins=temporal_bins);opt=torch.optim.AdamW(net.parameters(),lr=.003,weight_decay=.01)
+  torch.manual_seed(seed);net=Net(width,num_classes=len(output_labels),temporal_bins=temporal_bins);opt=torch.optim.AdamW(net.parameters(),lr=.003,weight_decay=.01)
   for epoch in range(1,121):
    net.train()
    for ids in torch.randperm(len(x)).split(32):
@@ -50,6 +51,7 @@ def train_temporal(train,val,negative_weight=1.0,temporal_bins=1):
    for threshold,margin in itertools.product([.35,.5,.65,.8,.9,.97],[0,.1,.25,.4]):
     m=metrics(val,outputs(val,probs,threshold,margin));entry=dict(seed=seed,width=width,epoch=epoch,threshold=threshold,margin=margin,validation=m)
     if temporal_bins!=1:entry['temporalBins']=temporal_bins
+    if rejection_labels is not None:entry['outputLabels']=output_labels
     trials.append(entry)
     if best is None or score(m)<score(best['validation']):
      best=entry;torch.save({'state':copy.deepcopy(net.state_dict()),'config':entry},ROOT/'temporal-private.pt')

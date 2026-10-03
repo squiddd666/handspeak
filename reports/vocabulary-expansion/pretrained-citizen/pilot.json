@@ -1,0 +1,1180 @@
+{
+  "targets": 50,
+  "rawTop1Correct": 3,
+  "correct": 3,
+  "wrong": 0,
+  "negativeFalse": 0,
+  "negativeTotal": 7,
+  "unmappedTargets": [
+    "SPEAK",
+    "BED",
+    "LOOK",
+    "HEAR",
+    "CALL",
+    "STORE",
+    "RIDE",
+    "NIGHT",
+    "FINE",
+    "MILK",
+    "CAN"
+  ],
+  "predictions": [
+    {
+      "expected": "SPEAK",
+      "sha256": "563d5df193e48a9c155f4d85429e4e3a934d323f4dad8974a40052dd34965246",
+      "rawTop1": "GARLIC",
+      "predicted": null,
+      "top5": [
+        "GARLIC",
+        "GOD",
+        "TOSSOUT",
+        "SCARF2",
+        "FIND"
+      ],
+      "inferenceMs": 402.4263460014481,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "LISTEN",
+      "sha256": "d3b371d8787d7c5b91b7f7424c3523b7bef1490d5cc4213eb2b02b974f2b8cfd",
+      "rawTop1": "TAKE",
+      "predicted": null,
+      "top5": [
+        "TAKE",
+        "INHALE",
+        "BITEONNECK",
+        "BITCH",
+        "DOG3"
+      ],
+      "inferenceMs": 310.58150000171736,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "HUNGRY",
+      "sha256": "6c49235913b0ca2d69c1b553dbfc867e316db37f91e1d71625f6867fa0c51b94",
+      "rawTop1": "HUNGRY",
+      "predicted": "HUNGRY",
+      "top5": [
+        "HUNGRY",
+        "UPSET2",
+        "SMOOTH",
+        "WISH",
+        "ADMIT"
+      ],
+      "inferenceMs": 307.93410900514573,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "THIRSTY",
+      "sha256": "0e74e306ad248fbfcbeac0ca247d19319e6960b90bf436cb9b5c83bc02137c15",
+      "rawTop1": "TEAR",
+      "predicted": null,
+      "top5": [
+        "TEAR",
+        "KNIGHT1",
+        "BOW3",
+        "RIBBONAWARD",
+        "HAIRDRYER1"
+      ],
+      "inferenceMs": 306.2912570021581,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "HOT",
+      "sha256": "53c529ed707ecb8c97b4131d6553dd9fa943a8a8ee9938075fd41cda708a8956",
+      "rawTop1": "HOT",
+      "predicted": "HOT",
+      "top5": [
+        "HOT",
+        "WOMAN1",
+        "TONGUE",
+        "RIDE1",
+        "BAD"
+      ],
+      "inferenceMs": 331.14522401592694,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "SHOES",
+      "sha256": "4b3d98490a94a58f585e0ed3383e1716b67bc501076dec870b08bec9330f212e",
+      "rawTop1": "DRAG2",
+      "predicted": null,
+      "top5": [
+        "DRAG2",
+        "DRIBBLE",
+        "PENGUIN",
+        "PITCHER",
+        "SILVER"
+      ],
+      "inferenceMs": 396.12206601304933,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "BED",
+      "sha256": "219786c22a490661cfe07a190526d36e8fa563e3568c27cf9c9b9226cab0292b",
+      "rawTop1": "BED1",
+      "predicted": null,
+      "top5": [
+        "BED1",
+        "EARRING",
+        "CELLPHONE",
+        "LONGAGO",
+        "BED2"
+      ],
+      "inferenceMs": 1238.222626998322,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "SHOWER",
+      "sha256": "e0309480ac2a0fd9620021d4358ac7e4eb17e1ba79017951469af750ede96be8",
+      "rawTop1": "OSTRICH",
+      "predicted": null,
+      "top5": [
+        "OSTRICH",
+        "GUILLOTINE2",
+        "SLIDE1",
+        "LICKENVELOPE2",
+        "KNIGHT1"
+      ],
+      "inferenceMs": 862.0491790061351,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "PAIN",
+      "sha256": "edbaef538a98b48adc71e07ae34cd2c6134b9b3406df8e3c5d20dcc2bae09368",
+      "rawTop1": "SHEEP",
+      "predicted": null,
+      "top5": [
+        "SHEEP",
+        "DOLPHIN3",
+        "STRUGGLE",
+        "PERFUME2",
+        "SNEAKADVENTURE"
+      ],
+      "inferenceMs": 1276.5931760077365,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "SICK",
+      "sha256": "d60186f5aa8e2cfe5a779d115db13ef42d1125d8c213de3b25fabcec4af40f92",
+      "rawTop1": "LETMESEE",
+      "predicted": null,
+      "top5": [
+        "LETMESEE",
+        "CRY3",
+        "YAWN1",
+        "OOPS",
+        "CRANKY"
+      ],
+      "inferenceMs": 875.9653030137997,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "BROTHER",
+      "sha256": "2d3bc0bf98bf9923bba320193f8bed31730af940f8d70acb02e89c002c85f302",
+      "rawTop1": "DAMN",
+      "predicted": null,
+      "top5": [
+        "DAMN",
+        "FLIPSWITCH",
+        "DOG4",
+        "WHIP",
+        "REFUSE"
+      ],
+      "inferenceMs": 1025.5629760213196,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "sha256": "8f0630b00685d9b5aa2bd64ab777e8c8a27bef71e66742f4be446c3cc1115dfe",
+      "rawTop1": "DIE",
+      "predicted": null,
+      "top5": [
+        "DIE",
+        "GRANDFATHER",
+        "VIDEOCAMERA2",
+        "BOWLING1",
+        "BASKETBALL2"
+      ],
+      "inferenceMs": 818.794427003013,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "GRANDFATHER",
+      "sha256": "c80d7dc0d7723dd44e8bbd8c8dd15f598013b122a088fae209d44619f929296d",
+      "rawTop1": "TRAVEL",
+      "predicted": null,
+      "top5": [
+        "TRAVEL",
+        "TOSS",
+        "ALLOVER",
+        "GROWUP",
+        "JOURNEY"
+      ],
+      "inferenceMs": 511.38124501449056,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "CHILD",
+      "sha256": "97c01f7b8608e07cd6d75ff5c0f29cddb131de9625f84d50bd3f374457504bfc",
+      "rawTop1": "ZIPPER",
+      "predicted": null,
+      "top5": [
+        "ZIPPER",
+        "KNIGHT1",
+        "NOSEBLEED",
+        "GREET2",
+        "FEDUP"
+      ],
+      "inferenceMs": 355.20802802057005,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "BOY",
+      "sha256": "d0df4cc0bfb803b8b16b8d45bbf034f9c1c0fe0fbdec1d47cd08d6dcff5e84a0",
+      "rawTop1": "HAIR2",
+      "predicted": null,
+      "top5": [
+        "HAIR2",
+        "FRACTION",
+        "BOY",
+        "FORFEIT",
+        "NEVER"
+      ],
+      "inferenceMs": 358.9861830114387,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "GIRL",
+      "sha256": "ef7bb5c476dc9c05802b7c94f264136e2856d4e14bb5d9dfed2c9c25e0d9bdbe",
+      "rawTop1": "COMMUTE",
+      "predicted": null,
+      "top5": [
+        "COMMUTE",
+        "MEMBER",
+        "WATCH",
+        "PIPE4",
+        "HOSPITAL1"
+      ],
+      "inferenceMs": 382.22187900100835,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "MAN",
+      "sha256": "2f987e3abfe43552bef067e9d06e1e98258153d4c2cb6c95bd43ad30eccf020f",
+      "rawTop1": "WOMAN1",
+      "predicted": null,
+      "top5": [
+        "WOMAN1",
+        "DARK2",
+        "WOMAN2",
+        "TOAST",
+        "DECLINE"
+      ],
+      "inferenceMs": 360.1890040154103,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "BOOK",
+      "sha256": "524978aebe3bad80ef40cdd90eaf03881157563e98ae299c4c363437b6390e6e",
+      "rawTop1": "THESE",
+      "predicted": null,
+      "top5": [
+        "THESE",
+        "AND",
+        "UPSET2",
+        "DONTLIKE",
+        "IMPROVE"
+      ],
+      "inferenceMs": 359.64117900584824,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "PEN",
+      "sha256": "3c7630de50f66cecc56b728ad48dcc6262e2a7af0d8e7a02316d4b275f0cf239",
+      "rawTop1": "WRITEONWALL",
+      "predicted": null,
+      "top5": [
+        "WRITEONWALL",
+        "GRAMMAR",
+        "EAST",
+        "ZOO",
+        "DRIBBLE"
+      ],
+      "inferenceMs": 366.6643899923656,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "PENCIL",
+      "sha256": "83af9a9dc3f0085606c6bf841b19c51545e8bb0087c8e3ee305c6574736844b1",
+      "rawTop1": "KNIGHT1",
+      "predicted": null,
+      "top5": [
+        "KNIGHT1",
+        "RIBBONAWARD",
+        "WALK-TIGHTROPE-CL",
+        "BOW3",
+        "BEAT"
+      ],
+      "inferenceMs": 401.6910780046601,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "READ",
+      "sha256": "456d2ccb46301488efbdc9df346078163ce1296e4683606e3f40680ec44c10fa",
+      "rawTop1": "NOSEBLEED",
+      "predicted": null,
+      "top5": [
+        "NOSEBLEED",
+        "KNIGHT1",
+        "CLAW",
+        "SCREWDRIVER2",
+        "SKATEBOARDING1"
+      ],
+      "inferenceMs": 355.1380520220846,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "GIVE",
+      "sha256": "0fe1d6dfc7d4d89a9d9b3adaffa74647c0e3cf628c17257690823975bd59fee6",
+      "rawTop1": "BAD",
+      "predicted": null,
+      "top5": [
+        "BAD",
+        "TRANSFER",
+        "BEST",
+        "FORFEIT",
+        "FRENCHFRIES"
+      ],
+      "inferenceMs": 455.87301699561067,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "LOOK",
+      "sha256": "a35d655e999fa5e51326829a94ff64554583c1d18c75798269b137f24506abfd",
+      "rawTop1": "NEUTRAL",
+      "predicted": null,
+      "top5": [
+        "NEUTRAL",
+        "NEED",
+        "HISTORY",
+        "NO",
+        "VANILLA"
+      ],
+      "inferenceMs": 718.7912320077885,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "SEE",
+      "sha256": "4aba3e0a82ed3cd33a53db3979663c956497cf7481d3e1ba39825f6ea101c1f9",
+      "rawTop1": "DONTFEELLIKE",
+      "predicted": null,
+      "top5": [
+        "DONTFEELLIKE",
+        "PRINCE",
+        "LIKE",
+        "WE",
+        "LETMESEE"
+      ],
+      "inferenceMs": 698.9321389992256,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "HEAR",
+      "sha256": "84df66be9a6e8fa67e5c3a4a71f996d458c34ab33d30e356b848a690e797a7a8",
+      "rawTop1": "WEIRD",
+      "predicted": null,
+      "top5": [
+        "WEIRD",
+        "SMOOTH",
+        "BOLT",
+        "SLIDE1",
+        "BLOUSE"
+      ],
+      "inferenceMs": 779.5697389810812,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "CALL",
+      "sha256": "32569c69c94704ecd3bc10cf0573ffc726c779a986273c4749d5a3fb4c19665c",
+      "rawTop1": "THANKYOU",
+      "predicted": null,
+      "top5": [
+        "THANKYOU",
+        "CALL1",
+        "HEAD",
+        "TOMORROW",
+        "FORFEIT"
+      ],
+      "inferenceMs": 812.1769540011883,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "FIND",
+      "sha256": "c42dd76ef8385161381b41bfcd5be10a9b61aaa4cb78a3212d56b2c59a79af85",
+      "rawTop1": "INHALE",
+      "predicted": null,
+      "top5": [
+        "INHALE",
+        "DRINK2",
+        "DONTFEELLIKE",
+        "COOL3",
+        "QTIP"
+      ],
+      "inferenceMs": 550.137348996941,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "HOME",
+      "sha256": "58e99545e87c124142173998e763bbb3be2d7dd9926b82c21047b0b97e80c2d9",
+      "rawTop1": "ZERO",
+      "predicted": null,
+      "top5": [
+        "ZERO",
+        "FAIR",
+        "KISS1",
+        "NIECE",
+        "EVEN"
+      ],
+      "inferenceMs": 656.6751269856468,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "STORE",
+      "sha256": "0108a0f07a922e5f2a66e88a289555aaa07d63e0a604cbfbec3e5c18ef40c853",
+      "rawTop1": "NIECE",
+      "predicted": null,
+      "top5": [
+        "NIECE",
+        "POWDER",
+        "BUMPY",
+        "TURBAN",
+        "TOOTHBRUSH-CA"
+      ],
+      "inferenceMs": 577.0168959861621,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "ROOM",
+      "sha256": "0bcaefcd6fff8d979453fa7fde542961bfb4217b5ca905947d052c24ec6972f1",
+      "rawTop1": "COME",
+      "predicted": null,
+      "top5": [
+        "COME",
+        "FIFTH",
+        "PAST",
+        "BREAKTIME",
+        "BOWLING2"
+      ],
+      "inferenceMs": 681.8424250232056,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "CAR",
+      "sha256": "b81548c4dcaf5af9c332e33190835f18347618d81ffef485814da60dd7c65215",
+      "rawTop1": "CANADA",
+      "predicted": null,
+      "top5": [
+        "CANADA",
+        "TUESDAY",
+        "MILK1",
+        "FENCING",
+        "SOAP2"
+      ],
+      "inferenceMs": 354.5067519880831,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "AIRPLANE",
+      "sha256": "be43581a29bc06e99a38b7bb65eadc0d2f24ffc831f932f95a14e7402e0560ab",
+      "rawTop1": "KISS1",
+      "predicted": null,
+      "top5": [
+        "KISS1",
+        "COOL3",
+        "NIECE",
+        "KID",
+        "GARLIC"
+      ],
+      "inferenceMs": 308.388528006617,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "RIDE",
+      "sha256": "198c3ec95e7815c6360c07316beac85336eb304344ecbb1c90d09ab71c12f10e",
+      "rawTop1": "FORFEIT",
+      "predicted": null,
+      "top5": [
+        "FORFEIT",
+        "SHAVE3",
+        "GARLIC",
+        "SOW",
+        "SILVER"
+      ],
+      "inferenceMs": 322.34141597291455,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "TOMORROW",
+      "sha256": "ff21b164a4295136c020fec617cff05628dceebf924d8b4f80fd026757b29b21",
+      "rawTop1": "TOMORROW",
+      "predicted": "TOMORROW",
+      "top5": [
+        "TOMORROW",
+        "WATCH",
+        "BLOUSE",
+        "SETUP",
+        "DRIVE"
+      ],
+      "inferenceMs": 310.9124909969978,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "YESTERDAY",
+      "sha256": "d0a91ea1b7d4601a42e7630a41439a0c23ccd05b86951db9ff90c9fbf6039c47",
+      "rawTop1": "FORFEIT",
+      "predicted": null,
+      "top5": [
+        "FORFEIT",
+        "GROWUP",
+        "GARLIC",
+        "FRACTION",
+        "FRENCH"
+      ],
+      "inferenceMs": 315.1392309810035,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "NOW",
+      "sha256": "5b6291651e931e7ede82e601c30cf5607cbcfa00d15d57411f2d0c36608c1e8b",
+      "rawTop1": "THANKYOU",
+      "predicted": null,
+      "top5": [
+        "THANKYOU",
+        "YELLOW",
+        "CALL1",
+        "NOW",
+        "DICE"
+      ],
+      "inferenceMs": 311.2431599874981,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "LATER",
+      "sha256": "8e9165c26d6b3c285eba7caa6c118f472c62a86590d28ce8610af96e18362294",
+      "rawTop1": "DRIBBLE",
+      "predicted": null,
+      "top5": [
+        "DRIBBLE",
+        "FLASHLIGHT4",
+        "BOW3",
+        "BRA3",
+        "INTUITIVE"
+      ],
+      "inferenceMs": 309.16623800294474,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "MORNING",
+      "sha256": "fd7e3f701fc9507c1cad70332b10a797f12e58930f7b025021ead1b23db6eb21",
+      "rawTop1": "ZIPPER",
+      "predicted": null,
+      "top5": [
+        "ZIPPER",
+        "NOTATHING",
+        "SMELLMONEY",
+        "LIGHTCANDLE",
+        "MAD"
+      ],
+      "inferenceMs": 310.76212800689973,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "NIGHT",
+      "sha256": "963db8e6a8cbfb8a849061712ed4634204857d8382cbe9275cc4d565b301cae3",
+      "rawTop1": "THIS/IT",
+      "predicted": null,
+      "top5": [
+        "THIS/IT",
+        "PENGUIN",
+        "CHICAGO",
+        "BOTTOM",
+        "BET"
+      ],
+      "inferenceMs": 299.89907299750485,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "FINE",
+      "sha256": "08f2aa0c9dabaa6da0a7bbbc3d791080a50d6718cb3e9b3d22f383e428d3289a",
+      "rawTop1": "FEDUP",
+      "predicted": null,
+      "top5": [
+        "FEDUP",
+        "CURIOUS",
+        "DIRTY",
+        "VOLUNTEER",
+        "COOL2"
+      ],
+      "inferenceMs": 310.377346992027,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "LIKE",
+      "sha256": "2f77ef1e45ad589991afc1de0f56b3182db02b1aa947dbbd555def8992df364d",
+      "rawTop1": "FACULTY",
+      "predicted": null,
+      "top5": [
+        "FACULTY",
+        "SOON2",
+        "WE",
+        "FEDUP",
+        "TRUTH"
+      ],
+      "inferenceMs": 340.59691498987377,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "STAY",
+      "sha256": "241d6c83ca08194ab67b657cbe98c1b5139bcf06006d1f5e18d46ca2098c6764",
+      "rawTop1": "MAPLE",
+      "predicted": null,
+      "top5": [
+        "MAPLE",
+        "REFUSE",
+        "INHALE",
+        "DECLINE",
+        "SHAVE1"
+      ],
+      "inferenceMs": 311.0475310240872,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "TABLE",
+      "sha256": "03a94f6beeef2422775cf56b43d5928d5dc989d6b2d0accbcc4f5adec473c3f9",
+      "rawTop1": "FEDUP",
+      "predicted": null,
+      "top5": [
+        "FEDUP",
+        "CHOPSTICKS",
+        "ON",
+        "SKATEBOARDING1",
+        "TRUTH"
+      ],
+      "inferenceMs": 311.15609299740754,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "CHAIR",
+      "sha256": "c26eb054e458ab0a297f67f1780c39ae56d09d305c0d7cc6082aca1eedd57aa9",
+      "rawTop1": "BENEFIT",
+      "predicted": null,
+      "top5": [
+        "BENEFIT",
+        "NEED",
+        "PIZZA1",
+        "DOLPHIN3",
+        "SWING1"
+      ],
+      "inferenceMs": 324.54196899197996,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "FISH",
+      "sha256": "4ca48d9c1a038c376717193a02d0d9bfc962d083163caf2d88d0a0e377092f63",
+      "rawTop1": "EXPERT",
+      "predicted": null,
+      "top5": [
+        "EXPERT",
+        "FISH",
+        "LICKENVELOPE1",
+        "CORNER",
+        "SOON2"
+      ],
+      "inferenceMs": 307.6247900025919,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "MILK",
+      "sha256": "62c1e96dcd5aefae2b4dfc6ce7ed3a6f5dd87642cdbcb1d7bbf2e16c4497ea8f",
+      "rawTop1": "MILK1",
+      "predicted": null,
+      "top5": [
+        "MILK1",
+        "FLIPSWITCH",
+        "AND",
+        "TAIL2",
+        "GREEN"
+      ],
+      "inferenceMs": 309.60438199690543,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "CAN",
+      "sha256": "e072796bf6ec5a98b5f5f4cfff427bd573e30889c16187ab6908de68bfb995c7",
+      "rawTop1": "DRIBBLE",
+      "predicted": null,
+      "top5": [
+        "DRIBBLE",
+        "KNIGHT1",
+        "SHAVE3",
+        "BOW3",
+        "RESIST"
+      ],
+      "inferenceMs": 312.0570970058907,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "HAVE",
+      "sha256": "2c089cafe17e5f68e43a05eac8f34f939fc3c58b33e5f328adcc022ceec50beb",
+      "rawTop1": "LETMESEE",
+      "predicted": null,
+      "top5": [
+        "LETMESEE",
+        "TASTE",
+        "MODEL2",
+        "TRUTH",
+        "KNIGHT1"
+      ],
+      "inferenceMs": 304.46087699965574,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "BECAUSE",
+      "sha256": "eed032efb2173b49baa4be59f95897345e40aaba6c19e13b287163e6de6df349",
+      "rawTop1": "CURL2",
+      "predicted": null,
+      "top5": [
+        "CURL2",
+        "BLOND",
+        "BEAK",
+        "CASTLE2",
+        "LEAF1"
+      ],
+      "inferenceMs": 306.6079919808544,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "HELLO",
+      "sha256": "1dec5ff830e7f4e9f76a10c0753717a4fd09e30b7b7573f59d3954f1059806e4",
+      "rawTop1": "ALLWAY",
+      "predicted": null,
+      "top5": [
+        "ALLWAY",
+        "FORFEIT",
+        "BEE1",
+        "OR",
+        "THROW2"
+      ],
+      "inferenceMs": 307.8832259925548,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "THANK YOU",
+      "sha256": "77ebce681b9de52f734b61a728a68eff575cc75becd01987630cc2a5511e16b6",
+      "rawTop1": "BOWLING2",
+      "predicted": null,
+      "top5": [
+        "BOWLING2",
+        "SCREAM",
+        "FRY",
+        "SMELLMONEY",
+        "TIMETOTIME"
+      ],
+      "inferenceMs": 308.6786170024425,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "PLEASE",
+      "sha256": "b54cce00bd11e1286f260a755e09dbcfcbc12e32791ff02830164277f5136762",
+      "rawTop1": "BOW3",
+      "predicted": null,
+      "top5": [
+        "BOW3",
+        "FLASHLIGHT4",
+        "COLOR",
+        "INTUITIVE",
+        "TRUTH"
+      ],
+      "inferenceMs": 307.655787008116,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "YES",
+      "sha256": "3d32f9fdc165e5572b43d7e86019adf99789c340677e27cc77e393fbc0bc92be",
+      "rawTop1": "YES",
+      "predicted": null,
+      "top5": [
+        "YES",
+        "REFUSE",
+        "NEED",
+        "PITCHER",
+        "DOG2"
+      ],
+      "inferenceMs": 329.85040300991386,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "NO",
+      "sha256": "215f0b8db16196c03f0d314ef55be3f10fad3d5d776e57915925e660a14e0303",
+      "rawTop1": "DOG4",
+      "predicted": null,
+      "top5": [
+        "DOG4",
+        "BITE1",
+        "FORFEIT",
+        "SIDE",
+        "JOURNEY"
+      ],
+      "inferenceMs": 312.0480990037322,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "FINISH",
+      "sha256": "c785af57048c31c867897505df4cde68a948599a94d2d9f99f89c2135c794d00",
+      "rawTop1": "SELF",
+      "predicted": null,
+      "top5": [
+        "SELF",
+        "CATCH1",
+        "BLOUSE",
+        "BOWLING2",
+        "CALIFORNIA"
+      ],
+      "inferenceMs": 307.7002099889796,
+      "exactMappingAvailable": true
+    },
+    {
+      "expected": "DRINK",
+      "sha256": "767f61cb13fa81b3af14f0c0f3c86604341e61a86399154155f135dfb649ee23",
+      "rawTop1": "FRACTION",
+      "predicted": null,
+      "top5": [
+        "FRACTION",
+        "FORFEIT",
+        "PREACHER",
+        "SHARP2",
+        "DRINK2"
+      ],
+      "inferenceMs": 311.1451400036458,
+      "exactMappingAvailable": false
+    },
+    {
+      "expected": "WATER",
+      "sha256": "3568516dbce71532ed29f2e959201bd555027ba2776b4f7fba52ff4c1ca20b4d",
+      "rawTop1": "WHISPER",
+      "predicted": null,
+      "top5": [
+        "WHISPER",
+        "COOL3",
+        "BITCH",
+        "DIRTY",
+        "WEIRD"
+      ],
+      "inferenceMs": 333.35562600404955,
+      "exactMappingAvailable": true
+    }
+  ],
+  "protocol": {
+    "sourceSha256": "0bba8181b682c3e97ffb5ade5e3d438f3f331011918b2a45716ad7a6eb5e3268",
+    "checkpointSha256": "b08d84afb5a0fdf4c723fd7be2db897b2490a921ccf538cff1b345f905934d68",
+    "metadataSha256": "87a105649b98ea577182ebfce49d59fe9ca834a2489384f6fe7bc03f14966329",
+    "upstreamRevision": "17f0148b00ef87a5957ec103da8d10bd8eb1fa23",
+    "implementationSha256": "c9445fb7bab3b765b730d1045d9785df46af9d15f320d50828055a8748da6ad0",
+    "selection": [
+      {
+        "label": "SPEAK",
+        "sha256": "563d5df193e48a9c155f4d85429e4e3a934d323f4dad8974a40052dd34965246"
+      },
+      {
+        "label": "LISTEN",
+        "sha256": "d3b371d8787d7c5b91b7f7424c3523b7bef1490d5cc4213eb2b02b974f2b8cfd"
+      },
+      {
+        "label": "HUNGRY",
+        "sha256": "6c49235913b0ca2d69c1b553dbfc867e316db37f91e1d71625f6867fa0c51b94"
+      },
+      {
+        "label": "THIRSTY",
+        "sha256": "0e74e306ad248fbfcbeac0ca247d19319e6960b90bf436cb9b5c83bc02137c15"
+      },
+      {
+        "label": "HOT",
+        "sha256": "53c529ed707ecb8c97b4131d6553dd9fa943a8a8ee9938075fd41cda708a8956"
+      },
+      {
+        "label": "SHOES",
+        "sha256": "4b3d98490a94a58f585e0ed3383e1716b67bc501076dec870b08bec9330f212e"
+      },
+      {
+        "label": "BED",
+        "sha256": "219786c22a490661cfe07a190526d36e8fa563e3568c27cf9c9b9226cab0292b"
+      },
+      {
+        "label": "SHOWER",
+        "sha256": "e0309480ac2a0fd9620021d4358ac7e4eb17e1ba79017951469af750ede96be8"
+      },
+      {
+        "label": "PAIN",
+        "sha256": "edbaef538a98b48adc71e07ae34cd2c6134b9b3406df8e3c5d20dcc2bae09368"
+      },
+      {
+        "label": "SICK",
+        "sha256": "d60186f5aa8e2cfe5a779d115db13ef42d1125d8c213de3b25fabcec4af40f92"
+      },
+      {
+        "label": "BROTHER",
+        "sha256": "2d3bc0bf98bf9923bba320193f8bed31730af940f8d70acb02e89c002c85f302"
+      },
+      {
+        "label": "GRANDMOTHER",
+        "sha256": "8f0630b00685d9b5aa2bd64ab777e8c8a27bef71e66742f4be446c3cc1115dfe"
+      },
+      {
+        "label": "GRANDFATHER",
+        "sha256": "c80d7dc0d7723dd44e8bbd8c8dd15f598013b122a088fae209d44619f929296d"
+      },
+      {
+        "label": "CHILD",
+        "sha256": "97c01f7b8608e07cd6d75ff5c0f29cddb131de9625f84d50bd3f374457504bfc"
+      },
+      {
+        "label": "BOY",
+        "sha256": "d0df4cc0bfb803b8b16b8d45bbf034f9c1c0fe0fbdec1d47cd08d6dcff5e84a0"
+      },
+      {
+        "label": "GIRL",
+        "sha256": "ef7bb5c476dc9c05802b7c94f264136e2856d4e14bb5d9dfed2c9c25e0d9bdbe"
+      },
+      {
+        "label": "MAN",
+        "sha256": "2f987e3abfe43552bef067e9d06e1e98258153d4c2cb6c95bd43ad30eccf020f"
+      },
+      {
+        "label": "BOOK",
+        "sha256": "524978aebe3bad80ef40cdd90eaf03881157563e98ae299c4c363437b6390e6e"
+      },
+      {
+        "label": "PEN",
+        "sha256": "3c7630de50f66cecc56b728ad48dcc6262e2a7af0d8e7a02316d4b275f0cf239"
+      },
+      {
+        "label": "PENCIL",
+        "sha256": "83af9a9dc3f0085606c6bf841b19c51545e8bb0087c8e3ee305c6574736844b1"
+      },
+      {
+        "label": "READ",
+        "sha256": "456d2ccb46301488efbdc9df346078163ce1296e4683606e3f40680ec44c10fa"
+      },
+      {
+        "label": "GIVE",
+        "sha256": "0fe1d6dfc7d4d89a9d9b3adaffa74647c0e3cf628c17257690823975bd59fee6"
+      },
+      {
+        "label": "LOOK",
+        "sha256": "a35d655e999fa5e51326829a94ff64554583c1d18c75798269b137f24506abfd"
+      },
+      {
+        "label": "SEE",
+        "sha256": "4aba3e0a82ed3cd33a53db3979663c956497cf7481d3e1ba39825f6ea101c1f9"
+      },
+      {
+        "label": "HEAR",
+        "sha256": "84df66be9a6e8fa67e5c3a4a71f996d458c34ab33d30e356b848a690e797a7a8"
+      },
+      {
+        "label": "CALL",
+        "sha256": "32569c69c94704ecd3bc10cf0573ffc726c779a986273c4749d5a3fb4c19665c"
+      },
+      {
+        "label": "FIND",
+        "sha256": "c42dd76ef8385161381b41bfcd5be10a9b61aaa4cb78a3212d56b2c59a79af85"
+      },
+      {
+        "label": "HOME",
+        "sha256": "58e99545e87c124142173998e763bbb3be2d7dd9926b82c21047b0b97e80c2d9"
+      },
+      {
+        "label": "STORE",
+        "sha256": "0108a0f07a922e5f2a66e88a289555aaa07d63e0a604cbfbec3e5c18ef40c853"
+      },
+      {
+        "label": "ROOM",
+        "sha256": "0bcaefcd6fff8d979453fa7fde542961bfb4217b5ca905947d052c24ec6972f1"
+      },
+      {
+        "label": "CAR",
+        "sha256": "b81548c4dcaf5af9c332e33190835f18347618d81ffef485814da60dd7c65215"
+      },
+      {
+        "label": "AIRPLANE",
+        "sha256": "be43581a29bc06e99a38b7bb65eadc0d2f24ffc831f932f95a14e7402e0560ab"
+      },
+      {
+        "label": "RIDE",
+        "sha256": "198c3ec95e7815c6360c07316beac85336eb304344ecbb1c90d09ab71c12f10e"
+      },
+      {
+        "label": "TOMORROW",
+        "sha256": "ff21b164a4295136c020fec617cff05628dceebf924d8b4f80fd026757b29b21"
+      },
+      {
+        "label": "YESTERDAY",
+        "sha256": "d0a91ea1b7d4601a42e7630a41439a0c23ccd05b86951db9ff90c9fbf6039c47"
+      },
+      {
+        "label": "NOW",
+        "sha256": "5b6291651e931e7ede82e601c30cf5607cbcfa00d15d57411f2d0c36608c1e8b"
+      },
+      {
+        "label": "LATER",
+        "sha256": "8e9165c26d6b3c285eba7caa6c118f472c62a86590d28ce8610af96e18362294"
+      },
+      {
+        "label": "MORNING",
+        "sha256": "fd7e3f701fc9507c1cad70332b10a797f12e58930f7b025021ead1b23db6eb21"
+      },
+      {
+        "label": "NIGHT",
+        "sha256": "963db8e6a8cbfb8a849061712ed4634204857d8382cbe9275cc4d565b301cae3"
+      },
+      {
+        "label": "FINE",
+        "sha256": "08f2aa0c9dabaa6da0a7bbbc3d791080a50d6718cb3e9b3d22f383e428d3289a"
+      },
+      {
+        "label": "LIKE",
+        "sha256": "2f77ef1e45ad589991afc1de0f56b3182db02b1aa947dbbd555def8992df364d"
+      },
+      {
+        "label": "STAY",
+        "sha256": "241d6c83ca08194ab67b657cbe98c1b5139bcf06006d1f5e18d46ca2098c6764"
+      },
+      {
+        "label": "TABLE",
+        "sha256": "03a94f6beeef2422775cf56b43d5928d5dc989d6b2d0accbcc4f5adec473c3f9"
+      },
+      {
+        "label": "CHAIR",
+        "sha256": "c26eb054e458ab0a297f67f1780c39ae56d09d305c0d7cc6082aca1eedd57aa9"
+      },
+      {
+        "label": "FISH",
+        "sha256": "4ca48d9c1a038c376717193a02d0d9bfc962d083163caf2d88d0a0e377092f63"
+      },
+      {
+        "label": "MILK",
+        "sha256": "62c1e96dcd5aefae2b4dfc6ce7ed3a6f5dd87642cdbcb1d7bbf2e16c4497ea8f"
+      },
+      {
+        "label": "CAN",
+        "sha256": "e072796bf6ec5a98b5f5f4cfff427bd573e30889c16187ab6908de68bfb995c7"
+      },
+      {
+        "label": "HAVE",
+        "sha256": "2c089cafe17e5f68e43a05eac8f34f939fc3c58b33e5f328adcc022ceec50beb"
+      },
+      {
+        "label": "BECAUSE",
+        "sha256": "eed032efb2173b49baa4be59f95897345e40aaba6c19e13b287163e6de6df349"
+      },
+      {
+        "label": "HELLO",
+        "sha256": "1dec5ff830e7f4e9f76a10c0753717a4fd09e30b7b7573f59d3954f1059806e4"
+      },
+      {
+        "label": "THANK YOU",
+        "sha256": "77ebce681b9de52f734b61a728a68eff575cc75becd01987630cc2a5511e16b6"
+      },
+      {
+        "label": "PLEASE",
+        "sha256": "b54cce00bd11e1286f260a755e09dbcfcbc12e32791ff02830164277f5136762"
+      },
+      {
+        "label": "YES",
+        "sha256": "3d32f9fdc165e5572b43d7e86019adf99789c340677e27cc77e393fbc0bc92be"
+      },
+      {
+        "label": "NO",
+        "sha256": "215f0b8db16196c03f0d314ef55be3f10fad3d5d776e57915925e660a14e0303"
+      },
+      {
+        "label": "FINISH",
+        "sha256": "c785af57048c31c867897505df4cde68a948599a94d2d9f99f89c2135c794d00"
+      },
+      {
+        "label": "DRINK",
+        "sha256": "767f61cb13fa81b3af14f0c0f3c86604341e61a86399154155f135dfb649ee23"
+      },
+      {
+        "label": "WATER",
+        "sha256": "3568516dbce71532ed29f2e959201bd555027ba2776b4f7fba52ff4c1ca20b4d"
+      }
+    ],
+    "targetLabels": [
+      "AIRPLANE",
+      "BECAUSE",
+      "BED",
+      "BOOK",
+      "BOY",
+      "BROTHER",
+      "CALL",
+      "CAN",
+      "CAR",
+      "CHAIR",
+      "CHILD",
+      "FIND",
+      "FINE",
+      "FINISH",
+      "FISH",
+      "GIRL",
+      "GIVE",
+      "GRANDFATHER",
+      "GRANDMOTHER",
+      "HAVE",
+      "HEAR",
+      "HOME",
+      "HOT",
+      "HUNGRY",
+      "LATER",
+      "LIKE",
+      "LISTEN",
+      "LOOK",
+      "MAN",
+      "MILK",
+      "MORNING",
+      "NIGHT",
+      "NOW",
+      "PAIN",
+      "PEN",
+      "PENCIL",
+      "READ",
+      "RIDE",
+      "ROOM",
+      "SEE",
+      "SHOES",
+      "SHOWER",
+      "SICK",
+      "SPEAK",
+      "STAY",
+      "STORE",
+      "TABLE",
+      "THIRSTY",
+      "TOMORROW",
+      "YESTERDAY"
+    ],
+    "outputClasses": 2731,
+    "threshold": 0.5,
+    "margin": 0.2,
+    "extraction": "Every original frame, max side 640, MediaPipe Holistic default complexity and detection 0.5. Pose and hands only; face points not retained.",
+    "limitations": [
+      "One deterministic validation recording per source label; diagnostic only, not a release screen.",
+      "Pretrained population overlap with PopSign is unverified. No independent accuracy claim.",
+      "Exact gloss matches only; unmapped target labels remain misses. No guessed variant/synonym mapping.",
+      "Keep existing sequence-quality rejection for comparison. Not a live detector integration.",
+      "Source code MIT; dataset has separate research terms. No public deployment or redistribution authorization is asserted."
+    ]
+  },
+  "passesRelease": false,
+  "deployed": false
+}

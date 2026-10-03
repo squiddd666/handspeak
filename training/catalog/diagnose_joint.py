@@ -27,10 +27,11 @@ def main():
     if selected.get('temporalBins', 1) != bins:
         raise ValueError('Selected architecture differs from frozen protocol')
     batch.prepare(source, args.experiment, labels=labels, temporal_bins=bins,
-                  negative_weight=protocol.get('negativeExampleLossMultiplier', 1.0))
+                  negative_weight=protocol.get('negativeExampleLossMultiplier', 1.0),
+                  separate_negatives='rejectionLabels' in protocol)
     data = json.loads(source.read_text())
     batch.trainer.LABELS = labels
-    net = batch.trainer.Net(selected['width'], num_classes=len(labels) + 1, temporal_bins=bins)
+    net = batch.trainer.Net(selected['width'], num_classes=len(batch.model_outputs(protocol, selected)), temporal_bins=bins)
     net.load_state_dict(torch.load(checkpoint, map_location='cpu', weights_only=True)['state'])
     net.eval()
     report = dict(checkpointSha256=selected['sha256'], sourceSha256=protocol['sourceSha256'],
