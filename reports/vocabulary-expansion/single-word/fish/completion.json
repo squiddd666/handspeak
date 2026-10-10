@@ -1,0 +1,7 @@
+{
+  "word": "FISH",
+  "trainingComplete": true,
+  "passesDevelopmentScreen": true,
+  "requiresFreshTests": true,
+  "deployed": false
+}

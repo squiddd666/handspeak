@@ -1,0 +1,218 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "independentAccuracyPassed": false,
+  "state": "complete",
+  "passesValidation": false,
+  "validation": {
+    "total": 210,
+    "correct": 137,
+    "wrong": 10,
+    "missed": 63,
+    "negativeTotal": 90,
+    "negativeFalse": 3,
+    "perWord": {
+      "AIRPLANE": {
+        "total": 4,
+        "correct": 4
+      },
+      "BECAUSE": {
+        "total": 4,
+        "correct": 3
+      },
+      "BED": {
+        "total": 4,
+        "correct": 0
+      },
+      "BOOK": {
+        "total": 6,
+        "correct": 2
+      },
+      "BOY": {
+        "total": 4,
+        "correct": 4
+      },
+      "BROTHER": {
+        "total": 4,
+        "correct": 3
+      },
+      "CALL": {
+        "total": 4,
+        "correct": 4
+      },
+      "CAN": {
+        "total": 4,
+        "correct": 4
+      },
+      "CAR": {
+        "total": 4,
+        "correct": 1
+      },
+      "CHAIR": {
+        "total": 4,
+        "correct": 3
+      },
+      "CHILD": {
+        "total": 4,
+        "correct": 2
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 3
+      },
+      "FINE": {
+        "total": 4,
+        "correct": 2
+      },
+      "FINISH": {
+        "total": 14,
+        "correct": 5
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 4
+      },
+      "GIRL": {
+        "total": 4,
+        "correct": 3
+      },
+      "GIVE": {
+        "total": 4,
+        "correct": 1
+      },
+      "GRANDFATHER": {
+        "total": 4,
+        "correct": 4
+      },
+      "GRANDMOTHER": {
+        "total": 4,
+        "correct": 1
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 4
+      },
+      "HEAR": {
+        "total": 4,
+        "correct": 4
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOT": {
+        "total": 4,
+        "correct": 3
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 4
+      },
+      "LATER": {
+        "total": 4,
+        "correct": 2
+      },
+      "LIKE": {
+        "total": 4,
+        "correct": 3
+      },
+      "LISTEN": {
+        "total": 4,
+        "correct": 3
+      },
+      "LOOK": {
+        "total": 4,
+        "correct": 2
+      },
+      "MAN": {
+        "total": 4,
+        "correct": 2
+      },
+      "MILK": {
+        "total": 4,
+        "correct": 2
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 2
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 3
+      },
+      "NOW": {
+        "total": 4,
+        "correct": 2
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 3
+      },
+      "PEN": {
+        "total": 4,
+        "correct": 3
+      },
+      "PENCIL": {
+        "total": 4,
+        "correct": 4
+      },
+      "READ": {
+        "total": 4,
+        "correct": 2
+      },
+      "RIDE": {
+        "total": 4,
+        "correct": 4
+      },
+      "ROOM": {
+        "total": 4,
+        "correct": 0
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 4
+      },
+      "SHOES": {
+        "total": 4,
+        "correct": 3
+      },
+      "SHOWER": {
+        "total": 2,
+        "correct": 0
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 4
+      },
+      "SPEAK": {
+        "total": 4,
+        "correct": 0
+      },
+      "STAY": {
+        "total": 4,
+        "correct": 3
+      },
+      "STORE": {
+        "total": 4,
+        "correct": 2
+      },
+      "TABLE": {
+        "total": 4,
+        "correct": 3
+      },
+      "THIRSTY": {
+        "total": 4,
+        "correct": 4
+      },
+      "TOMORROW": {
+        "total": 4,
+        "correct": 4
+      },
+      "YESTERDAY": {
+        "total": 4,
+        "correct": 2
+      }
+    }
+  },
+  "nextStep": "Validation failed; do not deploy"
+}

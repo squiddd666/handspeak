@@ -22,7 +22,7 @@ def main():
             hashlib.sha256(checkpoint.read_bytes()).hexdigest() != report['checkpointSha256']):
         raise ValueError('Frozen inputs changed')
     saved = torch.load(checkpoint, weights_only=True)
-    if saved['outputLabels'] != protocol['outputLabels'] or saved['selected'] != report['selected']:
+    if saved['outputLabels'] != protocol['outputLabels'] or json.loads(json.dumps(saved['selected'])) != report['selected']:
         raise ValueError('Checkpoint metadata mismatch')
     rows = json.loads(source.read_text())
     if any(r['split'] not in ('train', 'val') for r in rows):

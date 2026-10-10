@@ -1,0 +1,8 @@
+{
+  "word": "CALL",
+  "stage": "recording-check-complete",
+  "state": "complete",
+  "passesFreshSignGate": false,
+  "deployed": false,
+  "remaining": "Ordinary, browser-camera and integration checks determine readiness."
+}

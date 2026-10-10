@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Recorded percentages and sample counts for old/new words",
+    "Zero percent preserved for GO",
+    "Missing results marked Not measured",
+    "Video labels unchanged by badges",
+    "Selected vocabulary shows its recorded accuracy",
+    "Default model restoration",
+    "Mobile no horizontal overflow"
+  ],
+  "pageErrors": [],
+  "scope": "Frontend display and selection checks; no camera-accuracy or live-match confidence claim"
+}

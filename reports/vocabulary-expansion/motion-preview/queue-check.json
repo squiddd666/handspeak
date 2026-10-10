@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": [
+    "Changed expected sign discards in-flight result",
+    "Slow worker causes bounded-queue rejection, never stale suggestions"
+  ],
+  "scope": "Injected slow-worker control tests, not model accuracy"
+}

@@ -1,0 +1,288 @@
+{
+  "events": [
+    {
+      "label": null,
+      "timeMs": 5448.9000000059605,
+      "frames": 12,
+      "usable": false
+    }
+  ],
+  "frames": 16,
+  "tracked": 1,
+  "warmupMs": 909.5,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 2871.800000011921,
+  "sourceDurationMs": 2072.4230000000002,
+  "processingMedianMs": 274.2000000178814,
+  "processingP95Ms": 871.5999999940395,
+  "sourceFrameMedianMs": 568.7000000178814,
+  "sourceFrameP95Ms": 871.5999999940395,
+  "handMedianMs": 125.89999997615814,
+  "poseMedianMs": 139.90000000596046,
+  "tracking": [
+    {
+      "timeMs": 4.200000017881393,
+      "mediaTime": 0.003843,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 323,
+      "mediaTime": 0.317712,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 896.0999999940395,
+      "mediaTime": 0.669591,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1552.4000000059605,
+      "mediaTime": 1.017606,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 2427.9000000059605,
+      "mediaTime": 1.635185,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2871.800000011921,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3125.800000011921,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3351.7000000178814,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3602.2000000178814,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3875.0999999940395,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4101.700000017881,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4360,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4640,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4952.5999999940395,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 5229.700000017881,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 5453.0999999940395,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    }
+  ],
+  "mirror": false,
+  "preflightPlayback": {
+    "events": [
+      {
+        "label": null,
+        "timeMs": 4956.700000017881,
+        "frames": 12,
+        "usable": false
+      }
+    ],
+    "frames": 17,
+    "tracked": 1,
+    "warmupMs": 1190,
+    "warmupFrames": 3,
+    "wallPlaybackMs": 2977.9000000059605,
+    "sourceDurationMs": 2072.4230000000002,
+    "processingMedianMs": 263.2999999821186,
+    "processingP95Ms": 595.5999999940395,
+    "sourceFrameMedianMs": 535.3000000119209,
+    "sourceFrameP95Ms": 595.5999999940395,
+    "handMedianMs": 122.2999999821186,
+    "poseMedianMs": 141.7999999821186,
+    "tracking": [
+      {
+        "timeMs": 44.20000001788139,
+        "mediaTime": 0.04366,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 647.6000000238419,
+        "mediaTime": 0.44979,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 1218.6000000238419,
+        "mediaTime": 0.931681,
+        "sourceFrame": true,
+        "raw": 1,
+        "usable": 1
+      },
+      {
+        "timeMs": 1728.9000000059605,
+        "mediaTime": 1.324135,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2268.600000023842,
+        "mediaTime": 1.642179,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2666.7000000178814,
+        "mediaTime": 1.844614,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2977.9000000059605,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3256,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3515.7000000178814,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3775.600000023842,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4039.800000011921,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4281.600000023842,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4555,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4776.200000017881,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4957.600000023842,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 5168.600000023842,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 5415.4000000059605,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      }
+    ],
+    "mirror": false
+  },
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "400d27342591e48697902ed1cddfab929a636bc9e7408f37724d24d0514391ce",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated CPU-hand/CPU-task-pose browser prototype. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "nativeAspect": true,
+  "deployed": false
+}

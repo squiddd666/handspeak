@@ -1,14 +1,19 @@
 // Segment one moving sign at a time. No video is stored or uploaded.
-export function createAutomaticMotion(){
-  let previous=null,buffer=[],active=null,last=-Infinity,cooldown=0,armed=true,quietSince=null,aspect=null;
-  function reset(){previous=null;buffer=[];active=null;last=-Infinity;cooldown=0;armed=true;quietSince=null;aspect=null;}
+export function createAutomaticMotion({sampleIntervalMs=80}={}){
+  if(![30,80].includes(sampleIntervalMs))throw new Error('Unsupported capture interval');
+  let previous=null,buffer=[],active=null,last=-Infinity,cooldown=0,armed=true,quietSince=null,aspect=null,motionAt=-Infinity,lastMoving=false;
+  function reset(){previous=null;buffer=[];active=null;last=-Infinity;cooldown=0;armed=true;quietSince=null;aspect=null;motionAt=-Infinity;lastMoving=false;}
   function push(frame,now,imageAspect=1){
-    if(now-last<80)return null;
+    if(now-last<sampleIntervalMs)return null;
     if(now-last>1000||(aspect!==null&&Math.abs(aspect-imageAspect)>.01))reset();
     last=now;aspect=imageAspect;
     const visible=frame.some(Boolean);
-    let moving=false;
-    if(previous){
+    // Keep the established movement assessment cadence while optionally retaining
+    // more frames. Short signs can otherwise lose most of their visible samples.
+    let moving=lastMoving;
+    if(now-motionAt>=80){
+      moving=false;
+      if(previous){
       for(let side=0;side<2;side++){
         const a=previous[side],b=frame[side];
         if(!a||!b){if(b)moving=true;continue;}
@@ -16,8 +21,9 @@ export function createAutomaticMotion(){
         const delta=b.reduce((sum,p,i)=>sum+Math.hypot(p.x-a[i].x,(p.y-a[i].y)*imageAspect),0)/21/width;
         if(delta>.08)moving=true;
       }
+      }
+      previous=frame;motionAt=now;lastMoving=moving;
     }
-    previous=frame;
     if(!moving){if(quietSince===null)quietSince=now;}else quietSince=null;
     if(!armed){
       if(now>=cooldown&&quietSince!==null&&now-quietSince>=350)armed=true;

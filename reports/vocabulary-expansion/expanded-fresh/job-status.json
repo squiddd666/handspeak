@@ -1,0 +1,85 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 68,
+    "correct": 35,
+    "wrong": 0,
+    "missed": 33,
+    "negativeTotal": 80,
+    "negativeFalse": 0,
+    "perWord": {
+      "AIRPLANE": {
+        "total": 4,
+        "correct": 1
+      },
+      "BECAUSE": {
+        "total": 4,
+        "correct": 1
+      },
+      "CALL": {
+        "total": 4,
+        "correct": 3
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 3
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 3
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOT": {
+        "total": 4,
+        "correct": 1
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 2
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 2
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 2
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 2
+      },
+      "PEN": {
+        "total": 4,
+        "correct": 1
+      },
+      "RIDE": {
+        "total": 4,
+        "correct": 0
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 4
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 3
+      },
+      "TOMORROW": {
+        "total": 4,
+        "correct": 1
+      }
+    }
+  },
+  "passesRecordedClipGate": false,
+  "nextStep": "Candidate failed; no deployment"
+}

@@ -1,0 +1,113 @@
+{
+  "total": 12,
+  "falseSuggestions": 1,
+  "usableTrackedClips": 8,
+  "usablePerAction": {
+    "ApplyEyeMakeup": 1,
+    "BrushingTeeth": 3,
+    "ShavingBeard": 2,
+    "Typing": 2
+  },
+  "passesWholeClipScreen": false,
+  "checkpointSha256": "454b5ed628ae03f5fe5ea53b7f64bed624d6ffbafda81809b9602c261ecb4268",
+  "scope": "Fresh ordinary recording groups, not verified unique people or real-time camera accuracy",
+  "deployed": false,
+  "predictions": [
+    {
+      "action": "Typing",
+      "group": 22,
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "usable": true,
+      "trackedFrames": 60,
+      "predicted": null
+    },
+    {
+      "action": "Typing",
+      "group": 23,
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "usable": false,
+      "trackedFrames": 0,
+      "predicted": null
+    },
+    {
+      "action": "Typing",
+      "group": 24,
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "usable": true,
+      "trackedFrames": 60,
+      "predicted": null
+    },
+    {
+      "action": "BrushingTeeth",
+      "group": 22,
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "usable": true,
+      "trackedFrames": 41,
+      "predicted": null
+    },
+    {
+      "action": "BrushingTeeth",
+      "group": 23,
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "usable": true,
+      "trackedFrames": 49,
+      "predicted": null
+    },
+    {
+      "action": "BrushingTeeth",
+      "group": 24,
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "usable": true,
+      "trackedFrames": 57,
+      "predicted": null
+    },
+    {
+      "action": "ApplyEyeMakeup",
+      "group": 22,
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "usable": false,
+      "trackedFrames": 0,
+      "predicted": null
+    },
+    {
+      "action": "ApplyEyeMakeup",
+      "group": 23,
+      "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "usable": true,
+      "trackedFrames": 51,
+      "predicted": null
+    },
+    {
+      "action": "ApplyEyeMakeup",
+      "group": 24,
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "usable": false,
+      "trackedFrames": 19,
+      "predicted": null
+    },
+    {
+      "action": "ShavingBeard",
+      "group": 22,
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "usable": true,
+      "trackedFrames": 60,
+      "predicted": "HOME"
+    },
+    {
+      "action": "ShavingBeard",
+      "group": 23,
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "usable": false,
+      "trackedFrames": 0,
+      "predicted": null
+    },
+    {
+      "action": "ShavingBeard",
+      "group": 24,
+      "sha256": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "usable": true,
+      "trackedFrames": 57,
+      "predicted": null
+    }
+  ]
+}

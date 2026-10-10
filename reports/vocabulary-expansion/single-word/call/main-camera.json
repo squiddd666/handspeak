@@ -1,0 +1,67 @@
+{
+  "word": "CALL",
+  "mirror": false,
+  "scope": "Training video played through the actual main-app getUserMedia/detector/capture/classifier path. Isolated database. Not independent accuracy, physical camera or new-person evidence. Face tracking off.",
+  "fixtureSha256": "104085e993f2701e2421acfc7a84b2f74e085c4462a52c82e6794b371e9d7cdb",
+  "modelSha256": "86251e2b5f34b1c92edcc3db8605f6f5da65b9ee557f075bf92a52d70a19f703",
+  "results": [
+    {
+      "repetition": 1,
+      "diagnostic": {
+        "build": "20261010-single-1",
+        "delegate": "CPU",
+        "processingLagMs": 262,
+        "input": "640x480",
+        "processedFps": 6.6,
+        "rawHands": 0,
+        "usableHands": 0,
+        "mode": "words",
+        "vocabulary": "Camera vocabulary: CALL preview",
+        "model": "CALL category preview (1 words) \u00b7 0 personal examples",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": true,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "automatic",
+          "frames": 12,
+          "trackedFrames": 3,
+          "durationMs": 1515,
+          "validSequence": false,
+          "match": null
+        }
+      },
+      "feedback": "Capture incomplete: 3/12 frames had usable hands. Keep the full hand visible; check Camera diagnostics."
+    },
+    {
+      "repetition": 2,
+      "diagnostic": {
+        "build": "20261010-single-1",
+        "delegate": "CPU",
+        "processingLagMs": 617,
+        "input": "640x480",
+        "processedFps": 7.6,
+        "rawHands": 0,
+        "usableHands": 0,
+        "mode": "words",
+        "vocabulary": "Camera vocabulary: CALL preview",
+        "model": "CALL category preview (1 words) \u00b7 0 personal examples",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": true,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "automatic",
+          "frames": 12,
+          "trackedFrames": 3,
+          "durationMs": 1548,
+          "validSequence": false,
+          "match": null
+        }
+      },
+      "feedback": "Capture incomplete: 3/12 frames had usable hands. Keep the full hand visible; check Camera diagnostics."
+    }
+  ],
+  "pageErrors": [],
+  "deployed": false
+}

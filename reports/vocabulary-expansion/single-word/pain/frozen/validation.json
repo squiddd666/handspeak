@@ -1,0 +1,58 @@
+{
+  "passesDevelopmentScreen": true,
+  "framingValidation": [
+    {
+      "scale": 1,
+      "metrics": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "PAIN": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      }
+    },
+    {
+      "scale": 0.5625,
+      "metrics": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "PAIN": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      }
+    },
+    {
+      "scale": 1.3,
+      "metrics": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "PAIN": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      }
+    }
+  ],
+  "checkpointSha256": "546423b54fcf4a70d4cc9ccf4c1f3b968dc5aa85132d49b004fad92e834dca20",
+  "deployed": false
+}

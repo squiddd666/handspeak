@@ -3,6 +3,7 @@ import argparse
 import copy
 import hashlib
 import itertools
+import math
 import json
 import time
 from pathlib import Path
@@ -39,7 +40,29 @@ class MotionNet(nn.Module):
         return self.head(torch.cat([x.mean(2), x.amax(2)], 1))
 
 
-def augmented_batch(x):
+def masked_feature_noise(x):
+    """Jitter coordinates without inventing detections or moving local wrists."""
+    if x.shape[1] not in (153, 175):
+        raise ValueError('Unsupported feature layout')
+    out = x.clone()
+    noise = torch.randn_like(x) * .01
+    for offset in (0, 69):
+        present = x[:, offset:offset + 1] > 0
+        # Presence, local wrist (always zero), and body-valid flag are metadata.
+        out[:, offset + 4:offset + 68] += noise[:, offset + 4:offset + 68] * present
+    for offset in range(138, 153, 3):
+        out[:, offset + 1:offset + 3] += noise[:, offset + 1:offset + 3] * (x[:, offset:offset + 1] > 0)
+    if x.shape[1] == 175:
+        for offset, hand in ((153, 0), (164, 69)):
+            present = x[:, hand:hand + 1] > 0
+            out[:, offset:offset + 10] += noise[:, offset:offset + 10] * present
+            out[:, offset + 10:offset + 11] = (
+                x[:, offset + 10:offset + 11] + noise[:, offset + 10:offset + 11] * present
+            ).clamp(min=0)
+    return out
+
+
+def augmented_batch(x, masked=False):
     # Vary signing speed with a monotone, endpoint-preserving time warp.
     steps = torch.rand(len(x), 31, device=x.device) * .8 + .6
     times = torch.cat([torch.zeros(len(x), 1, device=x.device), steps.cumsum(1)], 1)
@@ -49,7 +72,7 @@ def augmented_batch(x):
     alpha = (times - lo).unsqueeze(1)
     warped = x.gather(2, lo[:, None].expand(-1, x.shape[1], -1)) * (1 - alpha)
     warped += x.gather(2, hi[:, None].expand(-1, x.shape[1], -1)) * alpha
-    return warped + torch.randn_like(warped) * .01
+    return masked_feature_noise(warped) if masked else warped + torch.randn_like(warped) * .01
 
 
 def select(rows, probs):
@@ -61,18 +84,34 @@ def select(rows, probs):
     return best
 
 
+def class_weights(y, classes, targets, target_weight=1.):
+    if not math.isfinite(target_weight) or target_weight <= 0:
+        raise ValueError('Target loss weight must be finite and positive')
+    weights = 1 / torch.bincount(y, minlength=classes).float().clamp(min=1)
+    weights[:targets] *= target_weight
+    return weights / weights.mean()
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--baseline', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--report', type=Path, required=True)
     p.add_argument('--body-tips', action='store_true')
+    p.add_argument('--labels-file', type=Path, help='Explicit target subset; other labels remain rejection classes')
+    p.add_argument('--target-weight', type=float, default=1.)
+    p.add_argument('--masked-augmentation', action='store_true',
+                   help='Preserve presence flags, missing coordinates, and local wrist origins')
     args = p.parse_args()
     baseline = json.loads((args.baseline / 'protocol.json').read_text())
     source = Path(baseline['source'])
     if hashlib.sha256(source.read_bytes()).hexdigest() != baseline['sourceSha256']:
         raise ValueError('Development source changed')
-    labels = baseline['labels']
+    labels = json.loads(args.labels_file.read_text()) if args.labels_file else baseline['labels']
+    if any(label not in baseline['labels'] for label in labels):
+        raise ValueError('Target subset must belong to baseline vocabulary')
+    if not math.isfinite(args.target_weight) or args.target_weight <= 0:
+        raise ValueError('Target loss weight must be finite and positive')
     train, val = batch.prepare(source, args.output, labels=labels, separate_negatives=True)
     protocol = json.loads((args.output / 'protocol.json').read_text())
     specification = dict(architecture='residual-motion-v1', seeds=[17, 29, 43], epochs=80,
@@ -86,6 +125,14 @@ def main():
     if args.body_tips:
         specification['featureEncoding'] = 'body-tips-v1'
         specification['featureImplementationSha256'] = hashlib.sha256(Path(body_tip_features.__file__).read_bytes()).hexdigest()
+    if args.masked_augmentation:
+        specification['augmentation'] = ('Horizontal mirror and monotone time warp; '
+            'coordinate noise 0.01 only for present landmarks, fixed local wrist origins, '
+            'unchanged presence/body flags, nonnegative hand/body scale')
+    if args.labels_file or args.target_weight != 1.:
+        specification['targetLabels'] = labels
+        specification['targetLossMultiplier'] = args.target_weight
+        specification['targetSelection'] = 'Development-selected subset; not independent release evidence'
     spec_path = args.output / 'motion-protocol.json'
     if spec_path.exists() and json.loads(spec_path.read_text()) != specification:
         raise ValueError('Experiment changed; use a new directory')
@@ -99,8 +146,7 @@ def main():
     output_labels = protocol['outputLabels']
     y = torch.tensor([output_labels.index(r['label']) for r in augmented])
     mean = x.mean((0, 2)); scale = x.std((0, 2)).clamp(min=.1)
-    weights = 1 / torch.bincount(y, minlength=len(output_labels)).float().clamp(min=1)
-    weights /= weights.mean()
+    weights = class_weights(y, len(output_labels), len(labels), args.target_weight)
     best = None
     trials = []
     final_states, final_probs = [], []
@@ -126,7 +172,7 @@ def main():
             net.train()
             for ids in torch.randperm(len(x)).split(64):
                 opt.zero_grad()
-                loss = nn.functional.cross_entropy(net(augmented_batch(x[ids])), y[ids],
+                loss = nn.functional.cross_entropy(net(augmented_batch(x[ids], masked=args.masked_augmentation)), y[ids],
                                                    weight=weights, label_smoothing=.05)
                 loss.backward()
                 nn.utils.clip_grad_norm_(net.parameters(), 5)

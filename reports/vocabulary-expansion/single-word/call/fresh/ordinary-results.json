@@ -1,0 +1,937 @@
+{
+  "scope": "Fresh recordings from predefined ordinary-action groups, not verified new people or real-time camera accuracy. Subwindows are correlated.",
+  "checkpointSha256": "ffb33cb42a21e854a1e06e631f957f7d510149e447262472e93762a84d539555",
+  "recordings": 24,
+  "examplesIncludingWindows": 90,
+  "usableWindowRecordingsPerAction": {
+    "ApplyEyeMakeup": 3,
+    "ApplyLipstick": 3,
+    "BrushingTeeth": 3,
+    "HeadMassage": 4,
+    "ShavingBeard": 2,
+    "Typing": 2
+  },
+  "falseSuggestions": 0,
+  "passesOrdinaryScreen": true,
+  "deployed": false,
+  "predictions": [
+    {
+      "sha256": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "exampleId": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "exampleId": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f:0:3000",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "exampleId": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f:2360:5200",
+      "action": "Typing",
+      "windowMs": [
+        2360,
+        5200
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "exampleId": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f:4720:7560",
+      "action": "Typing",
+      "windowMs": [
+        4720,
+        7560
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f",
+      "exampleId": "9fa1d431032aa9d47e3a3a4c7880beda3bc6c04f8471ebb2e0f5cad1a741f86f:7080:9960",
+      "action": "Typing",
+      "windowMs": [
+        7080,
+        9960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd",
+      "exampleId": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd",
+      "exampleId": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd:0:2960",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd",
+      "exampleId": "e00aa85bc1bfaaceaf2e012341681278872895f08d0233b41dc518e0c9d143bd:2480:5480",
+      "action": "Typing",
+      "windowMs": [
+        2480,
+        5480
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "exampleId": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "exampleId": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436:0:3000",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "exampleId": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436:2360:5200",
+      "action": "Typing",
+      "windowMs": [
+        2360,
+        5200
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "exampleId": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436:4720:7560",
+      "action": "Typing",
+      "windowMs": [
+        4720,
+        7560
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436",
+      "exampleId": "04fb48730812a48195b6b387e8485089faad858a8ae577c5b86bf3df5d1b1436:7080:9960",
+      "action": "Typing",
+      "windowMs": [
+        7080,
+        9960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192",
+      "exampleId": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192",
+      "exampleId": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192:0:2920",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192",
+      "exampleId": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192:2520:5440",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2520,
+        5440
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192",
+      "exampleId": "4efa24a69d1fb881f3cc9ccfee0236c798a02291968d9b3c95a59c33d9aba192:4920:7880",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        4920,
+        7880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144",
+      "exampleId": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144",
+      "exampleId": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144:0:2880",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        2880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144",
+      "exampleId": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144:2640:5520",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2640,
+        5520
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144",
+      "exampleId": "26720577b12fde29aaa99e5ad5069fbdc97c602feca8b0d812e9541ed3b2f144:5280:8200",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        5280,
+        8200
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa",
+      "exampleId": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa",
+      "exampleId": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa:0:2920",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa",
+      "exampleId": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa:2520:5440",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2520,
+        5440
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa",
+      "exampleId": "6921551a27fb63dabaed0b12d6d537c8eacc6fb56902f53688790522c9a74caa:4920:7880",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        4920,
+        7880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "exampleId": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "exampleId": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc:0:2920",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "exampleId": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc:2600:5360",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        2600,
+        5360
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "exampleId": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc:4840:7800",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        4840,
+        7800
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc",
+      "exampleId": "5344d8622123b94fc20cb117fee62f6a2bd1f2e6d627c91a80b85d55670b53bc:7280:10240",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        7280,
+        10240
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84",
+      "exampleId": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84",
+      "exampleId": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84:0:2960",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84",
+      "exampleId": "2e75568514fabafce0f71b5f812bcad9a0b05e9cf16f8deac23d0a89db4eec84:2200:5200",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        2200,
+        5200
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8",
+      "exampleId": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8",
+      "exampleId": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8:0:3000",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8",
+      "exampleId": "326666f796e0bd40a02eabd9280e04ee8acff06d5dc1029b80ecd7973763f9e8:1160:4160",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        1160,
+        4160
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "exampleId": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "exampleId": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794:0:2840",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        2840
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "exampleId": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794:2680:5360",
+      "action": "ShavingBeard",
+      "windowMs": [
+        2680,
+        5360
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "exampleId": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794:5200:7880",
+      "action": "ShavingBeard",
+      "windowMs": [
+        5200,
+        7880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794",
+      "exampleId": "30f13ed13bb04dae0d54dec35291af04b1f8dd13805204530d45ca678b543794:7720:10600",
+      "action": "ShavingBeard",
+      "windowMs": [
+        7720,
+        10600
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080",
+      "exampleId": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080",
+      "exampleId": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080:0:3000",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080",
+      "exampleId": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080:2160:5040",
+      "action": "ShavingBeard",
+      "windowMs": [
+        2160,
+        5040
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080",
+      "exampleId": "87d90d27f3688b3dd91a26fc26c70af571d37f3423b794cdcff8dbfafff60080:4200:7120",
+      "action": "ShavingBeard",
+      "windowMs": [
+        4200,
+        7120
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa",
+      "exampleId": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa",
+      "exampleId": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa:0:3000",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa",
+      "exampleId": "1a022a3b0ea41d1b201fb974babca752e615d0cc81d619e79b5b2855c96aa0fa:1000:3960",
+      "action": "ShavingBeard",
+      "windowMs": [
+        1000,
+        3960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3",
+      "exampleId": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3",
+      "exampleId": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3:0:2960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3",
+      "exampleId": "a57598f86b6f5e80a60531f6f3b06e0a5dcf53149dd0caa080833d16d8dbf3c3:1400:4400",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        1400,
+        4400
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431",
+      "exampleId": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431",
+      "exampleId": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431:0:2960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431",
+      "exampleId": "97c78eefcbc17da2e4710306746f50ea8e6f5c580689fc0d1d5e60ba5a9c3431:1280:4280",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        1280,
+        4280
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27",
+      "exampleId": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27",
+      "exampleId": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27:0:2960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27",
+      "exampleId": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27:1680:4520",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        1680,
+        4520
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27",
+      "exampleId": "6ef49bb74e33542a6f6bc0e5d6450e4302b1e86ff16d41a881b5d5bea3698a27:3240:6240",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        3240,
+        6240
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3",
+      "exampleId": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3",
+      "exampleId": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3:0:2960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3",
+      "exampleId": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3:2000:4960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        2000,
+        4960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3",
+      "exampleId": "729836f71f23af6f534ff0dc81b508f35c822339419df98ca1af4d29e399a0b3:4000:7000",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        4000,
+        7000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d",
+      "exampleId": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d",
+      "exampleId": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d:0:2960",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d",
+      "exampleId": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d:1520:4480",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        1520,
+        4480
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d",
+      "exampleId": "3734f7b97110e8ae507f4a676b1d35c8627bbd6ccf4915b4f83f652f34e5585d:3040:6040",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        3040,
+        6040
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae",
+      "exampleId": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae",
+      "action": "ApplyLipstick",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae",
+      "exampleId": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae:0:2920",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae",
+      "exampleId": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae:2920:5760",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        2920,
+        5760
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae",
+      "exampleId": "6dd72f9114653fd32e6671edef2dd02b1f6f8c429bf1c1282e0734a882c58aae:5760:8720",
+      "action": "ApplyLipstick",
+      "windowMs": [
+        5760,
+        8720
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a",
+      "exampleId": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a",
+      "exampleId": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a:0:2960",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a",
+      "exampleId": "66ed6c2fc17395ea029af345f9175920c59817d5ac465c68dcb3e00131a4851a:920:3920",
+      "action": "HeadMassage",
+      "windowMs": [
+        920,
+        3920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420",
+      "exampleId": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420",
+      "exampleId": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420:0:2960",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420",
+      "exampleId": "d78e056e238b2db62c02885ab1808d8da9b7c996a35a9d067cf92bcf1f895420:2200:5200",
+      "action": "HeadMassage",
+      "windowMs": [
+        2200,
+        5200
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c",
+      "exampleId": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c",
+      "exampleId": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c:0:3000",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c",
+      "exampleId": "3e29ee88e8d9f083f72eaa32fe6fabff2de36ca521e4c400497e3cfd6685f81c:1600:4560",
+      "action": "HeadMassage",
+      "windowMs": [
+        1600,
+        4560
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc",
+      "exampleId": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc",
+      "exampleId": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc:0:2960",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc",
+      "exampleId": "806630f580e53c9826b0aacbb641a92e295f69ab016cfeec8c61971d9dc66abc:2360:5360",
+      "action": "HeadMassage",
+      "windowMs": [
+        2360,
+        5360
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "exampleId": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "exampleId": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79:0:2960",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "exampleId": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79:2160:4960",
+      "action": "HeadMassage",
+      "windowMs": [
+        2160,
+        4960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "exampleId": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79:4200:7000",
+      "action": "HeadMassage",
+      "windowMs": [
+        4200,
+        7000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79",
+      "exampleId": "d06ff00e2661be2d369d38e5edc45968a6fa4abfa36fe16f635b84f06b11cf79:6200:9200",
+      "action": "HeadMassage",
+      "windowMs": [
+        6200,
+        9200
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a",
+      "exampleId": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a",
+      "action": "HeadMassage",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a",
+      "exampleId": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a:0:3000",
+      "action": "HeadMassage",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a",
+      "exampleId": "8ec32721f5b1431d81508b9aebd6779801531aed44f73fbd4a7083d7e95e0e6a:1720:4680",
+      "action": "HeadMassage",
+      "windowMs": [
+        1720,
+        4680
+      ],
+      "usable": false,
+      "predicted": null
+    }
+  ]
+}

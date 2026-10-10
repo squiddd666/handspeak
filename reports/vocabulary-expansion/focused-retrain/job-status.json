@@ -1,0 +1,9 @@
+{
+  "stage": "superseded",
+  "state": "complete",
+  "deployed": false,
+  "independentAccuracyPassed": false,
+  "reason": "First completed seed (17, epoch 80) frozen as the release candidate before opening its new test recordings. Remaining research seeds stopped to free resources for evaluation and the hands-only experiment. This is not a completed three-seed ensemble.",
+  "candidate": "/opt/handspeak-training/vocabulary-expansion-focused-seed17",
+  "evaluation": "/opt/handspeak-training/vocabulary-expansion-focused-seed17-fresh"
+}

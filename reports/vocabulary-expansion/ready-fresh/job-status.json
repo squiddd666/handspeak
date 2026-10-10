@@ -1,0 +1,121 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 104,
+    "correct": 77,
+    "wrong": 5,
+    "missed": 22,
+    "negativeTotal": 62,
+    "negativeFalse": 1,
+    "perWord": {
+      "AIRPLANE": {
+        "total": 4,
+        "correct": 3
+      },
+      "BECAUSE": {
+        "total": 4,
+        "correct": 3
+      },
+      "BOY": {
+        "total": 4,
+        "correct": 4
+      },
+      "BROTHER": {
+        "total": 4,
+        "correct": 3
+      },
+      "CALL": {
+        "total": 4,
+        "correct": 3
+      },
+      "CHAIR": {
+        "total": 4,
+        "correct": 2
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 4
+      },
+      "GIRL": {
+        "total": 4,
+        "correct": 3
+      },
+      "GRANDFATHER": {
+        "total": 4,
+        "correct": 3
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 3
+      },
+      "HEAR": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 4
+      },
+      "HOT": {
+        "total": 4,
+        "correct": 3
+      },
+      "LISTEN": {
+        "total": 4,
+        "correct": 2
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 4
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 4
+      },
+      "PEN": {
+        "total": 4,
+        "correct": 0
+      },
+      "PENCIL": {
+        "total": 4,
+        "correct": 3
+      },
+      "RIDE": {
+        "total": 4,
+        "correct": 2
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 3
+      },
+      "SHOES": {
+        "total": 4,
+        "correct": 3
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 3
+      },
+      "STAY": {
+        "total": 4,
+        "correct": 3
+      },
+      "TABLE": {
+        "total": 4,
+        "correct": 2
+      },
+      "THIRSTY": {
+        "total": 4,
+        "correct": 3
+      },
+      "TOMORROW": {
+        "total": 4,
+        "correct": 4
+      }
+    }
+  },
+  "passesRecordedClipGate": false,
+  "nextStep": "Candidate failed; no deployment"
+}

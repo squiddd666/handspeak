@@ -96,6 +96,7 @@ class MotionTests(unittest.TestCase):
         if pretrained:
             self.js.eval('const fetch=async()=>({ok:true,json:async()=>({version:1,encoding:"two-hand-motion-v3",parameters:{maxDistance:.65,minRatio:1.3,minVotes:2,mirror:true},samples:examples'+('.slice(0,3)' if invalid else '')+'})});')
         else:self.js.eval('const fetch=async()=>({ok:false});')
+        self.js.eval('\n'.join(l for l in (ROOT/'temporal-word-model.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
         self.js.eval('\n'.join(l for l in (ROOT/'motion-studio.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
         self.js.eval('const studio=createMotionStudio({isRunning:()=>true,onWord:w=>added.push(w),onStatus:()=>{},speak:w=>spoken.push(w),onFinish:()=>{if(!finishEnabled)return false;finishCalls++;return true;}});')
         model=json.loads((ROOT/'models/asl-knn.json').read_text())
@@ -239,6 +240,20 @@ class MotionTests(unittest.TestCase):
         self.assertEqual(self.js.eval('count'),1)
         self.js.eval('auto.push([null,null],15000);')
         self.assertFalse(self.js.eval('auto.isActive()'))
+    def test_optional_fast_capture_retains_short_visible_sign(self):
+        result=json.loads(self.js.eval('''JSON.stringify([80,30].map(sampleIntervalMs=>{
+          const a=createAutomaticMotion({sampleIntervalMs});let clips=[];
+          for(let t=0;t<2200;t+=32){
+            const h=t>=512&&t<960?Array.from({length:21},(_,i)=>({x:.2+i*.006+(t-512)*.0002,y:.4,z:0})):null;
+            const clip=a.push([h,null],t,1);if(clip)clips.push(clip);
+          }
+          return clips.map(c=>({tracked:c.frames.filter(f=>f.some(Boolean)).length,valid:encodeMotion(c.frames,1)!==null}));
+        }))'''))
+        self.assertEqual(len(result[0]),1)
+        self.assertFalse(result[0][0]['valid'])
+        self.assertEqual(len(result[1]),1)
+        self.assertTrue(result[1][0]['valid'])
+        self.assertGreaterEqual(result[1][0]['tracked'],8)
     def test_automatic_studio_requires_no_record_button(self):
         self.boot_studio(pretrained=True)
         self.js.eval("""

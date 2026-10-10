@@ -1,0 +1,114 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "independentAccuracyPassed": false,
+  "state": "complete",
+  "passesValidation": false,
+  "validation": {
+    "total": 106,
+    "correct": 45,
+    "wrong": 1,
+    "missed": 60,
+    "negativeTotal": 194,
+    "negativeFalse": 0,
+    "perWord": {
+      "BED": {
+        "total": 4,
+        "correct": 0
+      },
+      "BOOK": {
+        "total": 6,
+        "correct": 2
+      },
+      "CAN": {
+        "total": 4,
+        "correct": 4
+      },
+      "CAR": {
+        "total": 4,
+        "correct": 1
+      },
+      "CHILD": {
+        "total": 4,
+        "correct": 2
+      },
+      "FINE": {
+        "total": 4,
+        "correct": 1
+      },
+      "FINISH": {
+        "total": 14,
+        "correct": 3
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 4
+      },
+      "GIVE": {
+        "total": 4,
+        "correct": 1
+      },
+      "GRANDMOTHER": {
+        "total": 4,
+        "correct": 1
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 4
+      },
+      "LATER": {
+        "total": 4,
+        "correct": 2
+      },
+      "LIKE": {
+        "total": 4,
+        "correct": 3
+      },
+      "LOOK": {
+        "total": 4,
+        "correct": 3
+      },
+      "MAN": {
+        "total": 4,
+        "correct": 2
+      },
+      "MILK": {
+        "total": 4,
+        "correct": 2
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 2
+      },
+      "NOW": {
+        "total": 4,
+        "correct": 2
+      },
+      "READ": {
+        "total": 4,
+        "correct": 1
+      },
+      "ROOM": {
+        "total": 4,
+        "correct": 1
+      },
+      "SHOWER": {
+        "total": 2,
+        "correct": 0
+      },
+      "SPEAK": {
+        "total": 4,
+        "correct": 1
+      },
+      "STORE": {
+        "total": 4,
+        "correct": 1
+      },
+      "YESTERDAY": {
+        "total": 4,
+        "correct": 2
+      }
+    }
+  },
+  "nextStep": "Validation failed; do not deploy"
+}

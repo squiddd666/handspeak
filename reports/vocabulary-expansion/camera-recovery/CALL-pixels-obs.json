@@ -1,0 +1,465 @@
+{
+  "events": [
+    {
+      "label": null,
+      "timeMs": 2146.5,
+      "frames": 16,
+      "usable": false
+    }
+  ],
+  "frames": 61,
+  "tracked": 5,
+  "warmupMs": 465.5,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 2147.800000011921,
+  "sourceDurationMs": 2066.667,
+  "processingMedianMs": 66.09999999403954,
+  "processingP95Ms": 136.89999997615814,
+  "sourceFrameMedianMs": 78.59999999403954,
+  "sourceFrameP95Ms": 166.7000000178814,
+  "handMedianMs": 63.900000005960464,
+  "poseMedianMs": 0,
+  "tracking": [
+    {
+      "timeMs": 32.599999994039536,
+      "mediaTime": 0,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 118.7000000178814,
+      "mediaTime": 0.082612,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 201.59999999403954,
+      "mediaTime": 0.165478,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 278.80000001192093,
+      "mediaTime": 0.242729,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 354.7000000178814,
+      "mediaTime": 0.318605,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 429.80000001192093,
+      "mediaTime": 0.393805,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 509.30000001192093,
+      "mediaTime": 0.473244,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 586.9000000059605,
+      "mediaTime": 0.550788,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 678.7000000178814,
+      "mediaTime": 0.642627,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 761.5999999940395,
+      "mediaTime": 0.725538,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 931.9000000059605,
+      "mediaTime": 0.895808,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 1130.300000011921,
+      "mediaTime": 1.094213,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 1268.4000000059605,
+      "mediaTime": 1.232324,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 1401.5999999940395,
+      "mediaTime": 1.365588,
+      "sourceFrame": true,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 1545.2000000178814,
+      "mediaTime": 1.50908,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1683,
+      "mediaTime": 1.646926,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1760.4000000059605,
+      "mediaTime": 1.724344,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1833.5,
+      "mediaTime": 1.797434,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1908.4000000059605,
+      "mediaTime": 1.872307,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1996,
+      "mediaTime": 1.959938,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2072.0999999940395,
+      "mediaTime": 2.036046,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2147.800000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2214.5,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2280.300000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2347.800000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2414.7000000178814,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2481.5,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2551.2000000178814,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2617.9000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2684.4000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2751.300000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2818.2000000178814,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2885.800000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2953,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3018.5999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3084.5999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3150.0999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3217.300000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3283.0999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3348.0999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3414.2000000178814,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3481.4000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3554.0999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3620.5,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3687.0999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3752.4000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3817.5,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3884.4000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3950.800000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4017.4000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4082.7000000178814,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4148.5999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4214.300000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4280.200000017881,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4345.700000017881,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4411.700000017881,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4477,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4543.5999999940395,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4613.200000017881,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4679.9000000059605,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4745.300000011921,
+      "mediaTime": 2.066667,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    }
+  ],
+  "mirror": false,
+  "preflightPlayback": null,
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated browser prototype. GPU option uses software SwiftShader on this server. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "featureMode": "hands-only",
+  "delegate": "CPU",
+  "nativeAspect": false,
+  "deployed": false,
+  "imageDataInput": true,
+  "cameraFormat": true,
+  "playbackSha256": "104085e993f2701e2421acfc7a84b2f74e085c4462a52c82e6794b371e9d7cdb"
+}

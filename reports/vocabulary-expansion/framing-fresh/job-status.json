@@ -1,0 +1,60 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 44,
+    "correct": 28,
+    "wrong": 0,
+    "missed": 16,
+    "negativeTotal": 92,
+    "negativeFalse": 0,
+    "perWord": {
+      "CALL": {
+        "total": 4,
+        "correct": 3
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 3
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 3
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 1
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 3
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 1
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 3
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 3
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 3
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 3
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 2
+      }
+    }
+  },
+  "passesRecordedClipGate": true
+}

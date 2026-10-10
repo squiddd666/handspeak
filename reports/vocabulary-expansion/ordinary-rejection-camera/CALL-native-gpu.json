@@ -1,0 +1,101 @@
+{
+  "events": [],
+  "frames": 4,
+  "tracked": 0,
+  "warmupMs": 3807.699999988079,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 2364,
+  "sourceDurationMs": 2072.4230000000002,
+  "processingMedianMs": 1178.800000011921,
+  "processingP95Ms": 2351.600000023842,
+  "sourceFrameMedianMs": 2351.600000023842,
+  "sourceFrameP95Ms": 2351.600000023842,
+  "handMedianMs": 1178.699999988079,
+  "poseMedianMs": 0,
+  "tracking": [
+    {
+      "timeMs": 5.699999988079071,
+      "mediaTime": 0.005201,
+      "sourceFrame": true,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2364,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3543.5,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4653,
+      "mediaTime": 2.072423,
+      "sourceFrame": false,
+      "raw": 0,
+      "usable": 0
+    }
+  ],
+  "mirror": false,
+  "preflightPlayback": {
+    "events": [],
+    "frames": 4,
+    "tracked": 0,
+    "warmupMs": 9360.699999988079,
+    "warmupFrames": 3,
+    "wallPlaybackMs": 2509.5999999940395,
+    "sourceDurationMs": 2072.4230000000002,
+    "processingMedianMs": 1360.5,
+    "processingP95Ms": 2482.699999988079,
+    "sourceFrameMedianMs": 2482.699999988079,
+    "sourceFrameP95Ms": 2482.699999988079,
+    "handMedianMs": 1360.4000000059605,
+    "poseMedianMs": 0,
+    "tracking": [
+      {
+        "timeMs": 19.5,
+        "mediaTime": 0.01902,
+        "sourceFrame": true,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2509.5999999940395,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3667.699999988079,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4928.5999999940395,
+        "mediaTime": 2.072423,
+        "sourceFrame": false,
+        "raw": 0,
+        "usable": 0
+      }
+    ],
+    "mirror": false
+  },
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated browser prototype. GPU option uses software SwiftShader on this server. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "featureMode": "hands-only",
+  "delegate": "GPU",
+  "nativeAspect": true,
+  "deployed": false
+}

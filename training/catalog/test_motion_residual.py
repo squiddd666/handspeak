@@ -2,10 +2,38 @@ import io
 import unittest
 import numpy as np
 import torch
-from train_motion_residual import MotionNet, augmented_batch, batch
+from train_motion_residual import MotionNet, augmented_batch, masked_feature_noise, class_weights, batch
 
 
 class MotionResidualTest(unittest.TestCase):
+    def test_target_weight_keeps_rejection_classes_in_loss(self):
+        y = torch.tensor([0, 0, 1, 1, 2, 2, 3, 3])
+        weights = class_weights(y, 4, 2, 2.)
+        self.assertTrue((weights > 0).all())
+        self.assertAlmostEqual(float(weights[0] / weights[2]), 2.)
+        for invalid in (0, -1, float('nan'), float('inf')):
+            with self.assertRaises(ValueError):
+                class_weights(y, 4, 2, invalid)
+
+    def test_masked_augmentation_does_not_invent_absent_landmarks(self):
+        for channels in (153, 175):
+            x = torch.zeros(2, channels, 32)
+            self.assertTrue(torch.equal(augmented_batch(x, masked=True), x))
+
+    def test_masked_noise_preserves_metadata_and_wrist_origin(self):
+        x = torch.zeros(2, 175, 32)
+        x[:, 0] = 1
+        x[:, 68] = 1
+        x[:, 138] = 1
+        result = masked_feature_noise(x)
+        self.assertTrue(torch.equal(result[:, :4], x[:, :4]))
+        self.assertTrue(torch.equal(result[:, 68:139], x[:, 68:139]))
+        self.assertTrue(torch.equal(result[:, 141:153], x[:, 141:153]))
+        self.assertTrue(torch.equal(result[:, 164:], x[:, 164:]))
+        self.assertGreater(result[:, 4:68].abs().sum(), 0)
+        self.assertGreater(result[:, 139:141].abs().sum(), 0)
+        self.assertTrue((result[:, 163] >= 0).all())
+
     def test_checkpoint_round_trip_and_batch_independence(self):
         torch.manual_seed(17)
         net = MotionNet(4, torch.zeros(153), torch.ones(153)).eval()

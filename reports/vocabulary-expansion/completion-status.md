@@ -1,7 +1,99 @@
 # 201-word expansion: current status
 
-**Not complete; no new candidate has been deployed.** The current website models
-remain in place. Passing software tests does not demonstrate recognition accuracy.
+**Full 201-word recognition remains incomplete.** The main website recognizer
+has not been replaced. A separate [11-word camera-validation preview](https://handspeak.cvsu.dev/motion-preview-20261004/index.html)
+is live as an experimental test. Later recordings exposed additional failures;
+it is not approved for the main recognizer.
+
+## Current continuation
+
+[Individual-word training](single-word/README.md) is now underway. CALL completed
+but failed its new sign screen (4/4 correct, one false acceptance among 112 other
+signs); it is not published. FIND also failed ordinary-action regression. FISH
+is now training independently; the remaining words are queued. No new word from
+this run is ready for the live website yet.
+
+The [short-window experiment](windowed-ordinary-rejection/README.md) completed:
+29/44 known signs correct, zero wrong words, and 0/92 other-sign false accepts.
+It still produced HOME for an ordinary action; full clips and subwindows produced
+five HOME suggestions across 49 correlated examples. It was not deployed.
+
+An [eight-new-word candidate](novel-eight/README.md) also failed its fresh
+ordinary-movement evaluation: a head-massage subwindow produced MORNING among
+94 correlated examples from 24 recordings. All six actions had usable coverage. HOME, HAVE and HUNGRY are excluded, leaving
+CALL, FIND, FISH, MORNING, NIGHT, PAIN, SEE and SICK. Selection happened after
+viewing earlier failures and therefore requires new evidence. Development checks
+passed, but release screening failed. Sign-test acquisition was stopped before any
+new sign recording was downloaded or scored, preserving that unused test. That
+eight-word experiment has stopped; see the individual-word continuation above. The online preview's stale
+claims were corrected, but its model and the main recognizer are unchanged.
+
+The 50-word hands-only fine-tune completed but failed: 115/210 correct, three
+wrong words, 0/102 negative accepts, and no correct GRANDFATHER/SHOWER examples.
+It was not deployed. See [results](expanded-rejection/README.md).
+
+Browser debugging recovered stale file frames and demonstrated automatic CALL
+and HOME matches through the preview camera interface. HUNGRY queue overload and
+NIGHT under-tracking remain failures on this server. A worker implementation with
+bounded buffering passed lifecycle and stale-result checks; it is not yet published.
+See [camera diagnostics](camera-recovery/README.md).
+
+The [framing-calibrated candidate](framing-calibrated/README.md) passed development
+screening at all three landmark scales. Its browser decisions match Python on 231
+cases. Fresh recordings scored 28/44 correct, zero wrong words and 0/92
+other-sign false accepts. However, one of 12 fresh ordinary movements was falsely
+accepted as HOME, so this candidate failed release screening and was not deployed.
+The old preview model also failed these additional checks (30/44 correct, one wrong
+word, one other-sign false accept, and one ordinary-movement false accept).
+Full 201-word recognition is still incomplete; no broad model has passed all gates.
+
+## Earlier preview evidence (superseded by additional failures)
+
+- Words: CALL, FIND, FISH, HAVE, HOME, HUNGRY, MORNING, NIGHT, PAIN, SEE, SICK.
+- Hands-only model with ordinary-movement rejection: 34/44 reserved signs correct,
+  zero wrong words, ten misses, and 0/92 other-sign false suggestions. Every word
+  had at least two correct clips. The comparison set was shared with other frozen
+  candidates; outcomes were not read until this checkpoint was selected/frozen.
+- Fresh ordinary-action screen: 0/12 suggestions; eight usable tracked clips,
+  with coverage of all four action types. Recording groups are not verified people.
+- Browser/Python classifier parity passed on 77 examples. Inference median/p95:
+  52.4/59.5 ms, excluding the camera detector.
+- Live camera/OBS recognition, repeats, latency and main-vocabulary integration
+  remain unverified. Server software-rendered camera diagnostics were too slow.
+  Recorded checks do not establish new-person or continuous-sign accuracy.
+
+See [candidate results](ordinary-rejection-test/README.md) and
+[preview verification](motion-preview/browser-check.json). Main-model promotion still
+requires camera/OBS and integration evidence.
+
+
+## Expanded ordinary-action retraining
+
+Added 78 reviewed ordinary-action recordings (72 training, six validation),
+including lipstick application and head massage. Existing ASL rows and partitions
+were verified unchanged. Six separate rejection classes preserve the parent
+model's total initial ordinary-action probability mass.
+
+The completed 20-epoch run selected epoch 5 using development results only.
+It passed development gates at original, smaller and larger landmark scales:
+35/44, 31/44 and 33/44 correct respectively, zero wrong words and zero false accepts
+among 274 negative clips in each condition. These are repeated development clips.
+
+**Regression failed:** 21/44 previously scored signs correct, one wrong word,
+0/92 other-sign false accepts, and one false HOME among 12 ordinary-action clips.
+This is a known-recording regression check, not a new independent test. The frozen
+checkpoint is `6c2ece36c0f65ca5a459976d683557c38efb327d508ce87675ce71482ad9af91`.
+It was not deployed. See [results](split-ordinary-frozen/regression.json).
+
+Requiring agreement between original and mirrored classifier inputs also failed:
+28/44 known signs correct with no wrong words or other-sign false accepts, but the
+same ordinary movement still produced HOME. Thresholds were unchanged, and these
+replays are not fresh independent tests.
+
+An embedding-distance rejection experiment also retained the same grooming false
+match. Adding body context alone did not remove it in a diagnostic. Neither is
+presented as a proven fix. Full 201-word recognition remains incomplete; 13 catalog
+entries still lack a verified training source, and the broad model has not passed.
 
 ## Motion-feature continuation
 
@@ -16,6 +108,8 @@ Completed development comparisons (210 target clips, 90 other-sign clips):
 | Residual model with aligned windows | 132 | 3 | 3 | Failed |
 | Aligned residual model with rejection guard | 132 | 3 | 2 | Failed |
 | Explicit fingertip/body geometry | 129 | 3 | 2 | Failed |
+| Dynamic body references | 135 | 8 | 3 | Failed |
+| Corrected augmentation | 137 | 10 | 3 | Failed |
 
 The residual model uses explicit frame differences, training-only feature
 normalization, residual temporal convolutions, mean/max pooling, and signing-speed
@@ -42,27 +136,68 @@ sanity check; WANT produced the specific output WANT1. No guessed synonym or
 numbered-variant mappings were used in the PopSign pilot. This model was not
 adopted. See [pilot and sources](pretrained-citizen/README.md).
 
-### Active follow-up: dynamic body references
+### Dynamic-body result and augmentation correction
 
-`handspeak-dynamic-pose.service` is extracting all 2,815 development recordings
-again, using 60 actual sampled frames and measuring the body in each frame.
-Earlier training repeated a single body reference across the entire clip, so it
-could not use actual head/upper-body movement. Existing hand detection thresholds
-and the JavaScript sequence-quality rules remain unchanged. Training and
-validation signers remain separate; no reserved test recording is opened.
+The dynamic-body run completed all 2,815 recordings and failed validation:
+135/210 correct, eight wrong words, 67 misses, and three false accepts among
+90 other-sign recordings. ROOM, SHOWER and SPEAK had no accepted correct clips.
+Python and Chromium predictions matched on 75 cached examples. Median/p95
+classifier timings were 51.7/57.2 ms, excluding camera and landmark detection.
+No candidate was deployed.
 
-The managed job resumes completed extraction caches, then automatically trains,
-reloads the selected checkpoint, and checks browser parity. Models failing the
-accuracy screen remain withheld. Even a validation pass is not deployment-ready
-without independent evaluation, ordinary-movement negatives and live-camera tests.
-The job continues after terminal/chat closure; the transient systemd unit does
-not survive a server reboot. It is expected to take hours on this CPU-only server.
+A training defect was found: additive feature noise perturbed presence/body flags,
+zero-valued missing detections and wrist-origin coordinates. The opt-in correction
+jitters only coordinates belonging to present landmarks, preserves metadata and
+local wrist origins, and keeps hand/body scale nonnegative. Eight relevant tests
+passed. This is not yet evidence of higher recognition accuracy.
 
-- [Live job status](/opt/handspeak-training/vocabulary-expansion-dynamic-pose/job-status.json)
-- [Pipeline and commands](dynamic-pose/README.md)
+The corrected augmentation run completed and failed: 137/210 correct, ten wrong,
+63 missed and three other-sign false accepts. No replacement was deployed.
 
-Twenty-seven relevant tests passed before this run. A real-video extractor smoke
-check produced 60 synchronized hand/body samples with actual increasing timestamps.
+### Targeted training and recorded evaluation
+
+The [release-readiness audit](release-readiness/README.md) separates 26 promising
+development-only labels from 24 training priorities. **Zero new labels are ready
+for release:** shortlist results are reused validation, not independent tests.
+
+The focused 24-label run completed and failed: 45/106 correct, one wrong,
+60 missed and zero false accepts among 194 other-word clips. No deployment.
+
+Completed comparisons and follow-up:
+
+- `handspeak-ready-fresh-v2.service`: the frozen 26-label shortlist failed
+  fresh testing: 77/104 correct, five wrong, 22 missed and one false acceptance
+  among 62 other-sign clips. No deployment. Its development screen was 90/104
+  correct and zero wrong/negative accepts, demonstrating why fresh tests matter.
+  See [fresh evaluation protocol](ready-fresh/README.md).
+- `handspeak-priority-data-v2.service`: completed 220 additional training clips
+  and full retraining. Failed: 108/210 correct, one wrong, 101 missed and one false
+  accept among 90 other-sign clips. Six labels had no correct accepted examples.
+- `handspeak-expanded-fresh.service`: a development-selected 17-label subset of
+  the frozen 17-label model failed: 35/68 correct, zero wrong, 33 missed and
+  zero false accepts among 80 other-sign clips. RIDE was missed in all four clips.
+- Its limited ordinary-action screen passed: zero suggestions on 12 clips,
+  nine with usable hand tracking, covering four action types. This is not
+  automatic-camera or general everyday-movement accuracy.
+
+- `handspeak-focused-release.service`: the subsequent frozen 11-label candidate
+  failed on another 136 recordings: 29/44 correct, zero wrong, 15 missed and zero
+  false accepts among 92 other signs. NIGHT was missed in all four clips.
+  The prior 17-label outcomes were explicitly consumed for development selection;
+  they were not relabeled as independent evidence for this smaller vocabulary.
+- `handspeak-focused-retrain.service`: retraining these 11 labels with twice the
+  target loss weight. Its first completed seed was frozen at 40/44 development
+  matches; remaining seeds were superseded by evaluation. The recorded comparison
+  then passed at 38/44, zero wrong and zero other-sign false suggestions. It needs
+  live body tracking, so it was not promoted to the main camera pipeline.
+
+These jobs never deploy automatically. Passing recorded-clip tests still requires
+ordinary-movement and real-time integration/regression evidence before release.
+They survive terminal closure, but their transient units do not survive reboot.
+
+- [Fresh test status](/opt/handspeak-training/vocabulary-expansion-ready-fresh-v2/job-status.json)
+- [Data expansion status](/opt/handspeak-training/vocabulary-expansion-priority-data-v2/job-status.json)
+- [Readiness audit](release-readiness/audit.json)
 
 A metadata-only check fully scanned held-out AIRPLANE, CAN, FINE and SHOWER
 archives. There are 147, 141, 128 and 17 previously unselected recording filenames,

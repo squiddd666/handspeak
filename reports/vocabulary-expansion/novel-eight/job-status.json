@@ -1,0 +1,8 @@
+{
+  "stage": "stopped-after-ordinary-screen-failure",
+  "state": "stopped",
+  "deployed": false,
+  "reason": "Fresh ordinary-action screen produced a false MORNING. Preserve unscored sign recordings instead of spending an independent test on a candidate already known to fail.",
+  "downloadedSignRecordings": 0,
+  "hasSignTestResults": false
+}

@@ -1,0 +1,14 @@
+{
+  "cameraChecksRequired": false,
+  "integrationChecksRequired": false,
+  "publication": "Automatic experimental release after recorded accuracy gates pass",
+  "requiredChecks": [
+    "development",
+    "known signs and ordinary actions",
+    "ordinary-action windows",
+    "additional ordinary actions",
+    "fresh recorded signs"
+  ],
+  "authorization": "Owner requested: Passing candidates push online without camera and integration checks",
+  "passingWordBehavior": "Selectable single-word camera vocabulary; not merged into the default model"
+}

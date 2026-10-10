@@ -1,0 +1,26 @@
+{
+  "word": "SICK",
+  "deployed": true,
+  "deployedAt": "20261010T050413Z",
+  "modelFile": "models/motion-categories/single-sick.json",
+  "modelSha256": "8bafc0e89fced6a113e157422fab2d02b89068302d77740c7b365d8b3068758b",
+  "checkpointSha256": "d7b14a3bf617078b778073cabd2c42fbe01da94a7948bae312b1cd942a6300b2",
+  "backup": "/opt/handspeak-staging/deployment-backups/single-sick-20261010T050413Z",
+  "cameraTested": false,
+  "integrationTested": false,
+  "policy": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+  "recordedMetrics": {
+    "total": 4,
+    "correct": 3,
+    "wrong": 0,
+    "missed": 1,
+    "negativeTotal": 112,
+    "negativeFalse": 0,
+    "perWord": {
+      "SICK": {
+        "total": 4,
+        "correct": 3
+      }
+    }
+  }
+}

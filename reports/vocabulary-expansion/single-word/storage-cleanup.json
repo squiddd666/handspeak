@@ -1,0 +1,18 @@
+{
+  "removedDerivedVideos": 1168,
+  "derivedVideoBytesReclaimed": 1252194809,
+  "packageCacheBytesReclaimed": 213782528,
+  "redundantArchiveBytesReclaimed": 28885375,
+  "freeBytesAfter": 6651142144,
+  "preserved": [
+    "Original videos verified against manifest hashes",
+    "Extracted landmarks",
+    "Training sources and checkpoints",
+    "Website models and learning videos",
+    "Database and backups"
+  ],
+  "auditFiles": [
+    "/opt/handspeak-training/cleanup-derived-videos-20261010.json",
+    "/opt/handspeak-training/cleanup-model-archive-20261010.json"
+  ]
+}

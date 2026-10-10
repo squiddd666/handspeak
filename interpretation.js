@@ -1,18 +1,23 @@
 export function createInterpreter({getMessage,setMessage,speak=()=>{}}) {
   const $=s=>document.querySelector(s);
-  let result=null, applied=false, revision=0, lastSpoken=null;
+  let result=null, applied=false, revision=0, lastSpoken=null, interacted=false;
   const status=$('#interpretStatus'), box=$('#interpretResult'), button=$('#interpretButton');
   async function availability(){
-    try {const response=await fetch('/api/interpret/status');if(!response.ok)throw Error();const data=await response.json();status.textContent=data.available?'Local sentence assistant ready. Up to 500 characters.':'Local model is unavailable. Your draft and other features still work.';}
-    catch{status.textContent='Could not check the local model. You can retry interpretation.';}
+    try {const response=await fetch('/api/interpret/status');if(!response.ok)throw Error();const data=await response.json();if(!interacted)status.textContent=data.available?'Local sentence assistant ready. Up to 500 characters.':'Local model is unavailable. Your draft and other features still work.';}
+    catch{if(!interacted)status.textContent='Could not check the local model. You can retry interpretation.';}
   }
   async function interpret(autoSpeak=false){
-    if(button.disabled)return;
+    interacted=true;
+    if(button.disabled){status.textContent='An interpretation is already running. Wait for its result; sign FINISH again afterward to speak it.';return;}
     const requestRevision=revision;
     const original=getMessage();
-    if(!original.trim()||original.length>500){status.textContent='Enter 1–500 characters. Use Edit message to adjust your draft.';return;}
+    if(!original.trim()){status.textContent='Your draft is empty. Add recognized words to your message or use Edit message before interpreting.';return;}
+    if(original.length>500){status.textContent='Enter 1–500 characters. Use Edit message to adjust your draft.';return;}
     result=null;applied=false;box.hidden=true;button.disabled=true;
-    status.textContent='Interpreting on this server… This can take up to 45 seconds. Your draft is unchanged.';
+    const started=Date.now(),buttonLabel=button.textContent;
+    button.textContent='Interpreting…';button.setAttribute('aria-busy','true');
+    const progress=()=>{status.textContent=`Interpreting on this server… ${Math.floor((Date.now()-started)/1000)} seconds elapsed. The local model may take up to 45 seconds. Your draft is unchanged.`;};
+    progress();const ticker=setInterval(progress,1000);
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),50000);
     try {
       const response=await fetch('/api/interpret',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:original}),signal:controller.signal});
@@ -27,7 +32,7 @@ export function createInterpreter({getMessage,setMessage,speak=()=>{}}) {
         else{lastSpoken=original;speak(data.sentence);status.textContent='FINISH received — requested speech for the interpreted sentence. Original words remain in your draft. If audio is blocked, use Speak suggestion.';}
       }
     } catch(error){status.textContent=error.name==='AbortError'?'Interpretation timed out. Your draft is unchanged.':error.message;}
-    finally{clearTimeout(timer);button.disabled=false;}
+    finally{clearTimeout(timer);clearInterval(ticker);button.disabled=false;button.textContent=buttonLabel;button.removeAttribute('aria-busy');}
   }
   button.addEventListener('click',()=>{void interpret();});
   $('#speakInterpretation').addEventListener('click',()=>{if(result&&!result.needsClarification&&result.sentence)speak(result.sentence);});

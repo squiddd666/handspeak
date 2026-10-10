@@ -1,0 +1,18 @@
+{
+  "word": "FISH",
+  "sourceSha256": "8c25268c40e9a85a2f548fd468c59e1435782d5c74b292750a76af25e4d2869c",
+  "parentCheckpointSha256": "454b5ed628ae03f5fe5ea53b7f64bed624d6ffbafda81809b9602c261ecb4268",
+  "recipe": "One supported label; all other ASL signs and six ordinary actions remain competing rejection classes. Same fixed 20-epoch recipe, seed109, 5/10/20 development checkpoints and acceptance gates.",
+  "testPolicy": "No test data used in training or checkpoint selection. Fresh release checks required.",
+  "implementations": {
+    "/opt/handspeak/repository/training/catalog/train_single_word.py": "b1d8008745cbe0cac454764661bf27143c689e0f72557d7ef61a9875bdcd3c7a",
+    "/opt/handspeak/repository/training/catalog/train_split_ordinary_rejection.py": "c1ff093a9a1737185f62191848bf4daf7cbddc469c9ed36f6516cad4584fd370",
+    "/opt/handspeak/repository/training/catalog/freeze_split_candidate.py": "bd0a95951c5ba27f6cc6aa63a2e6605370a23bab176fdb679c75414b7697f6ad",
+    "/opt/handspeak/repository/training/catalog/remap_rejection_head.py": "5c3a1166af26be6ea9d202e7a3e5acf296b81c5d5ea2d8cb7dc6dbaf4c09e4a8",
+    "/opt/handspeak/repository/training/catalog/body_tip_features.py": "424121d02861a0e42dc8427c8c333b15c9758e241a23657e39f7a63bbc93c2ef",
+    "/opt/handspeak/repository/training/catalog/train_motion_residual.py": "41b0a0b6cd9d398ed163d91afc6c666af0b4eb800c9d060091ec40c12803c2ca",
+    "/opt/handspeak/repository/training/catalog/train_expansion_batch.py": "5352ad2dbad97ee437db987022b45ad213193812b98d87c2af88f0ffd0ffa41b",
+    "/opt/handspeak/repository/training/catalog/camera_framing.py": "ba929b73e03a67cbbdc4535baaeebfb5bc117118a59eb574d7ee6258ec7be896"
+  },
+  "deployed": false
+}

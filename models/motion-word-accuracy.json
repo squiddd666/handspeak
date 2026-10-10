@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "profiles": {
+    "default": {
+      "model": "Default six-word model",
+      "scope": "Regression test clips, including tracking failures; live-camera accuracy unverified.",
+      "words": {
+        "HELLO": {
+          "correct": 6,
+          "total": 12
+        },
+        "THANK YOU": {
+          "correct": 8,
+          "total": 12
+        },
+        "PLEASE": {
+          "correct": 11,
+          "total": 12
+        },
+        "YES": {
+          "correct": 8,
+          "total": 12
+        },
+        "NO": {
+          "correct": 3,
+          "total": 12
+        },
+        "FINISH": {
+          "correct": 2,
+          "total": 12
+        }
+      }
+    },
+    "expanded": {
+      "model": "Default + extra-word preview",
+      "scope": "Recorded clip checks; earlier words reuse regression clips. Live-camera accuracy unverified.",
+      "words": {
+        "FOOD": {
+          "correct": 1,
+          "total": 6
+        },
+        "HUNGRY": {
+          "correct": 2,
+          "total": 6
+        },
+        "LIKE": {
+          "correct": 2,
+          "total": 6
+        },
+        "GO": {
+          "correct": 0,
+          "total": 6
+        },
+        "HELLO": {
+          "correct": 2,
+          "total": 6
+        },
+        "THANK YOU": {
+          "correct": 4,
+          "total": 6
+        },
+        "PLEASE": {
+          "correct": 5,
+          "total": 6
+        },
+        "YES": {
+          "correct": 3,
+          "total": 6
+        },
+        "NO": {
+          "correct": 4,
+          "total": 6
+        },
+        "FINISH": {
+          "correct": 2,
+          "total": 6
+        },
+        "DRINK": {
+          "correct": 3,
+          "total": 8
+        },
+        "WATER": {
+          "correct": 5,
+          "total": 8
+        },
+        "BOOK": {
+          "correct": 1,
+          "total": 8
+        }
+      },
+      "modelSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9"
+    },
+    "daily": {
+      "model": "Five-word server preview",
+      "scope": "Held-out recorded clips, including tracking failures; live-camera accuracy unverified.",
+      "words": {
+        "NAME": {
+          "total": 11,
+          "correct": 6
+        },
+        "HOME": {
+          "total": 11,
+          "correct": 6
+        },
+        "HAVE": {
+          "total": 11,
+          "correct": 8
+        },
+        "WANT": {
+          "total": 22,
+          "correct": 15
+        },
+        "LOVE": {
+          "total": 11,
+          "correct": 9
+        }
+      },
+      "modelSha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec"
+    }
+  }
+}

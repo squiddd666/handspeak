@@ -1,0 +1,376 @@
+{
+  "events": [
+    {
+      "label": null,
+      "timeMs": 3156.699999988079,
+      "frames": 12,
+      "usable": false
+    }
+  ],
+  "frames": 27,
+  "tracked": 1,
+  "warmupMs": 562.9000000059605,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 2297.899999976158,
+  "sourceDurationMs": 2072.4230000000002,
+  "processingMedianMs": 142.19999998807907,
+  "processingP95Ms": 340.5,
+  "handMedianMs": 64.40000000596046,
+  "poseMedianMs": 78.40000000596046,
+  "tracking": [
+    {
+      "timeMs": 19.399999976158142,
+      "mediaTime": 0.316177,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 318.19999998807907,
+      "mediaTime": 0.599171,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 601.7999999821186,
+      "mediaTime": 0.942028,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 948.8999999761581,
+      "mediaTime": 1.314596,
+      "raw": 1,
+      "usable": 1
+    },
+    {
+      "timeMs": 1316.5,
+      "mediaTime": 1.630741,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1631.8999999761581,
+      "mediaTime": 1.870518,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 1871.8999999761581,
+      "mediaTime": 2.055321,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2056.5,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2297.899999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2450.2999999821186,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2589.699999988079,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2728.399999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 2875.5999999940395,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3017.199999988079,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3157.5999999940395,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3299.5999999940395,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3442.899999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3585.5999999940395,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3725.899999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 3868.399999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4013.5,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4154.699999988079,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4295.299999982119,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4437.299999982119,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4590.5999999940395,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4732.899999976158,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    },
+    {
+      "timeMs": 4873.699999988079,
+      "mediaTime": 2.072423,
+      "raw": 0,
+      "usable": 0
+    }
+  ],
+  "mirror": false,
+  "preflightPlayback": {
+    "events": [
+      {
+        "label": null,
+        "timeMs": 3057.5999999940395,
+        "frames": 12,
+        "usable": false
+      }
+    ],
+    "frames": 27,
+    "tracked": 2,
+    "warmupMs": 747.9000000059605,
+    "warmupFrames": 3,
+    "wallPlaybackMs": 2205,
+    "sourceDurationMs": 2072.4230000000002,
+    "processingMedianMs": 140.30000001192093,
+    "processingP95Ms": 336,
+    "handMedianMs": 64.19999998807907,
+    "poseMedianMs": 76,
+    "tracking": [
+      {
+        "timeMs": 11.199999988079071,
+        "mediaTime": 0.263568,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 265.2999999821186,
+        "mediaTime": 0.548157,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 552.3999999761581,
+        "mediaTime": 0.800045,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 801.0999999940395,
+        "mediaTime": 1.136794,
+        "raw": 1,
+        "usable": 1
+      },
+      {
+        "timeMs": 1139.5,
+        "mediaTime": 1.542333,
+        "raw": 1,
+        "usable": 1
+      },
+      {
+        "timeMs": 1544.2999999821186,
+        "mediaTime": 1.844847,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 1845.7999999821186,
+        "mediaTime": 2.024575,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2025.5999999940395,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2205,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2356.699999988079,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2495.2999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2637.699999988079,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2778.7999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 2917.7999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3058.2999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3196,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3335.899999976158,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3475.2999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3614.199999988079,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3754.399999976158,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 3895.5,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4035.2999999821186,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4178,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4316.899999976158,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4457,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4597.299999982119,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      },
+      {
+        "timeMs": 4740.399999976158,
+        "mediaTime": 2.072423,
+        "raw": 0,
+        "usable": 0
+      }
+    ],
+    "mirror": false
+  },
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "400d27342591e48697902ed1cddfab929a636bc9e7408f37724d24d0514391ce",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated CPU-hand/CPU-task-pose browser prototype. 640x480 letterbox. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "deployed": false
+}

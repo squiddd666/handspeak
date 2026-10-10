@@ -1,0 +1,7 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "passesDevelopmentScreen": true,
+  "nextStep": "Freeze and test only if all development conditions pass; never auto-deploy a failed model"
+}

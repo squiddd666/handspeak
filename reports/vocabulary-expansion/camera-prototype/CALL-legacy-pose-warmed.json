@@ -1,0 +1,18 @@
+{
+  "events": [],
+  "frames": 3,
+  "tracked": 0,
+  "warmupMs": 6000.0999999940395,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 2416.300000011921,
+  "sourceDurationMs": 2072.4230000000002,
+  "processingMedianMs": 1486.699999988079,
+  "processingP95Ms": 2407.4000000059605,
+  "mirror": false,
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "400d27342591e48697902ed1cddfab929a636bc9e7408f37724d24d0514391ce",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated CPU-hand/legacy-pose browser prototype. 640x480 letterbox. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "deployed": false
+}

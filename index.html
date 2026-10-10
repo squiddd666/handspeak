@@ -96,6 +96,7 @@
 
       <aside id="cameraLesson" aria-label="Selected sign lesson" hidden></aside>
       <section class="word-controls" id="wordRecognitionControls" aria-label="Experimental word recognition" hidden><h3>Words in motion · Experimental</h3>
+        <details class="camera-tip"><summary id="motionAccuracySummary">Recorded word accuracy</summary><p id="motionWordAccuracy">Loading recorded test results…</p><p>Correct test clips divided by all clips in the listed test. This is not confidence in the current camera match. Personal examples have no independently measured accuracy.</p></details>
 <section id="researchWords" class="trainer-card"><h3>Daily conversation · five-word preview</h3><p><b>NAME · HOME · HAVE · WANT · LOVE</b></p><p>Experimental: 44/66 held-out word clips matched; 2/48 unsupported signs were falsely accepted. This preview has limited accuracy. Review every suggestion. Results are not live-camera accuracy.</p><label class="speech-option"><input id="researchWordsToggle" type="checkbox" disabled> Enable five-word preview: send captured hand-landmark coordinates to this server</label><p class="camera-tip">Video stays on your device. Recorded coordinates are processed in memory and not stored. With Automatic words enabled, sign once and pause to send a captured sequence automatically. Review each match before adding it; optional automatic adding uses the setting below. Recording manually is still available.</p><div class="camera-actions"><button id="researchRecord" class="primary-button" type="button" disabled>Record a preview word</button><button id="researchCancel" class="secondary-button" type="button" disabled>Cancel recording</button><button id="researchAccept" class="secondary-button" type="button" disabled>Add reviewed word</button></div><p id="researchWordsStatus" role="status">Loading five-word preview…</p></section>
 <div id="standardWordOptions">
       <label class="speech-option"><input id="expandedWords" type="checkbox" checked disabled> Include 7 extra words (preview · enabled by default)</label>
@@ -261,7 +262,7 @@
               <label><input id="signExampleLoop" type="checkbox"> Repeat video</label>
               <button id="signExampleReplay" class="secondary-button" type="button">Play again</button>
             </div>
-            <p id="signExampleMode" class="recognition-feedback" role="status">HELLO · Automatic capture: start the camera, sign once, then pause. Review the match.</p><p id="signExampleHelp">Watch the hand shape, direction, and position near the face or body. Keep your hands and upper body visible when practicing. Examples show one signing variant; recognition may still miss a correct sign.</p>
+            <p id="signExampleMode" class="recognition-feedback" role="status">HELLO · Automatic capture: start the camera, sign once, then pause. Review the match.</p><p id="signExampleAccuracy" class="camera-tip">Loading recorded test accuracy…</p><p id="signExampleHelp">Watch the hand shape, direction, and position near the face or body. Keep your hands and upper body visible when practicing. Examples show one signing variant; recognition may still miss a correct sign.</p>
             <a id="signExamplePractice" class="primary-button" href="#workspace">Practice at camera</a>
             <p class="camera-tip">Examples: <a href="https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/">PopSign ASL v1.0</a>, Georgia Tech &amp; DPAN, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Resized and compressed. <a href="media/signs/README.md">Full credits</a>.</p>
           </div>
@@ -346,8 +347,8 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script type="module" src="guided-experience.js?v=20261003-auto-server-1"></script>
   <script type="module" src="auth.js?v=20261002-defense-1"></script>
-  <script type="module" src="sign-examples.js?v=20261003-auto-server-1"></script>
+  <script type="module" src="sign-examples.js?v=20261011-accuracy-1"></script>
   <script type="module" src="daily-words.js?v=20261003-guided-1"></script>
-  <script type="module" src="app.js?v=20261003-auto-server-1"></script>
+  <script type="module" src="app.js?v=20261011-llm-feedback-1"></script>
 </body>
 </html>

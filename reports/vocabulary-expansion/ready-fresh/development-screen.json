@@ -1,0 +1,114 @@
+{
+  "total": 104,
+  "correct": 90,
+  "wrong": 0,
+  "missed": 14,
+  "negativeTotal": 196,
+  "negativeFalse": 0,
+  "perWord": {
+    "AIRPLANE": {
+      "total": 4,
+      "correct": 4
+    },
+    "BECAUSE": {
+      "total": 4,
+      "correct": 3
+    },
+    "BOY": {
+      "total": 4,
+      "correct": 4
+    },
+    "BROTHER": {
+      "total": 4,
+      "correct": 3
+    },
+    "CALL": {
+      "total": 4,
+      "correct": 4
+    },
+    "CHAIR": {
+      "total": 4,
+      "correct": 3
+    },
+    "FIND": {
+      "total": 4,
+      "correct": 3
+    },
+    "GIRL": {
+      "total": 4,
+      "correct": 3
+    },
+    "GRANDFATHER": {
+      "total": 4,
+      "correct": 4
+    },
+    "HAVE": {
+      "total": 4,
+      "correct": 4
+    },
+    "HEAR": {
+      "total": 4,
+      "correct": 4
+    },
+    "HOME": {
+      "total": 4,
+      "correct": 3
+    },
+    "HOT": {
+      "total": 4,
+      "correct": 3
+    },
+    "LISTEN": {
+      "total": 4,
+      "correct": 3
+    },
+    "NIGHT": {
+      "total": 4,
+      "correct": 3
+    },
+    "PAIN": {
+      "total": 4,
+      "correct": 3
+    },
+    "PEN": {
+      "total": 4,
+      "correct": 3
+    },
+    "PENCIL": {
+      "total": 4,
+      "correct": 4
+    },
+    "RIDE": {
+      "total": 4,
+      "correct": 4
+    },
+    "SEE": {
+      "total": 4,
+      "correct": 4
+    },
+    "SHOES": {
+      "total": 4,
+      "correct": 3
+    },
+    "SICK": {
+      "total": 4,
+      "correct": 4
+    },
+    "STAY": {
+      "total": 4,
+      "correct": 3
+    },
+    "TABLE": {
+      "total": 4,
+      "correct": 3
+    },
+    "THIRSTY": {
+      "total": 4,
+      "correct": 4
+    },
+    "TOMORROW": {
+      "total": 4,
+      "correct": 4
+    }
+  }
+}

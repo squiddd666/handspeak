@@ -148,7 +148,7 @@
       "sourceLabel": null,
       "sourceVersion": null,
       "recognition": "not-pretrained",
-      "note": "The linked lesson discusses response choices; WELCOME is not a universal substitute for “you’re welcome.”",
+      "note": "The linked lesson discusses response choices; WELCOME is not a universal substitute for \u201cyou\u2019re welcome.\u201d",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/welcome.htm",
       "learningScope": "WELCOME and response usage",
@@ -518,12 +518,14 @@
       ],
       "sourceLabel": "sick",
       "sourceVersion": "v1_0",
-      "recognition": "not-pretrained",
+      "recognition": "category-preview",
       "note": "",
       "video": "media/signs/sick.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/sick/index.html",
-      "cameraGroups": [],
-      "testSummary": "Research check: 1/4 clips correctly matched this word. New category model is not enabled; evaluation was insufficient."
+      "cameraGroups": [
+        "single-sick"
+      ],
+      "testSummary": "Recorded screen: 3/4 correct, 0/112 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
     {
       "id": "fever",
@@ -1859,7 +1861,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "0"
       ],
@@ -1877,7 +1879,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "1"
       ],
@@ -1895,7 +1897,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "2"
       ],
@@ -1913,7 +1915,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "3"
       ],
@@ -1931,7 +1933,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "4"
       ],
@@ -1949,7 +1951,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "5"
       ],
@@ -1967,7 +1969,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "6"
       ],
@@ -1985,7 +1987,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "7"
       ],
@@ -2003,7 +2005,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "8"
       ],
@@ -2021,7 +2023,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "9"
       ],
@@ -2039,7 +2041,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "10"
       ],
@@ -2057,7 +2059,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "11"
       ],
@@ -2075,7 +2077,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "12"
       ],
@@ -2093,7 +2095,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "13"
       ],
@@ -2111,7 +2113,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "14"
       ],
@@ -2129,7 +2131,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "15"
       ],
@@ -2147,7 +2149,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "16"
       ],
@@ -2165,7 +2167,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "17"
       ],
@@ -2183,7 +2185,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "18"
       ],
@@ -2201,7 +2203,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "19"
       ],
@@ -2219,7 +2221,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "20"
       ],
@@ -2237,7 +2239,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "100"
       ],
@@ -2255,7 +2257,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
       "searchAliases": [
         "1000"
       ],
@@ -2805,12 +2807,14 @@
       ],
       "sourceLabel": "fish",
       "sourceVersion": "v1_0",
-      "recognition": "not-pretrained",
+      "recognition": "category-preview",
       "note": "",
       "video": "media/signs/fish.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/fish/index.html",
-      "cameraGroups": [],
-      "testSummary": "Research check: 0/4 clips correctly matched this word. New category model is not enabled; evaluation was insufficient."
+      "cameraGroups": [
+        "single-fish"
+      ],
+      "testSummary": "Recorded screen: 3/4 correct, 0/112 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
     {
       "id": "meat",
@@ -3031,7 +3035,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/d/dont-want.htm",
-      "learningScope": "DON’T WANT",
+      "learningScope": "DON\u2019T WANT",
       "cameraGroups": []
     },
     {
@@ -3075,7 +3079,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/d/dont-have.htm",
-      "learningScope": "DON’T HAVE",
+      "learningScope": "DON\u2019T HAVE",
       "cameraGroups": []
     },
     {

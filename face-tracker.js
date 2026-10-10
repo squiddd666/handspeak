@@ -10,9 +10,9 @@ export function facialExpression(scores){
   return cues.slice(0,2).join(' · ')||'No clear expression';
 }
 
-export function createFaceTracker(onState,onExpression=()=>{}){
+export function createFaceTracker(onState,onExpression=()=>{},{preferredDelegate='GPU'}={}){
   let enabled=true,model=null,pending=null,vision=null,fileset=null,connections=[];
-  let delegate='GPU',suspended=false;
+  let delegate=preferredDelegate==='CPU'?'CPU':'GPU',suspended=false;
   let landmarks=[],lastFrame=-Infinity;
   let scores={},candidate='',candidateSince=0,expression='';
   function showExpression(value){if(value!==expression){expression=value;onExpression(value);}}

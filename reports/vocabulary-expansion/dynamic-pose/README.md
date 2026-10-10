@@ -1,35 +1,11 @@
-# Dynamic-body training continuation
+# Residual motion experiment
 
-**Running; no new accuracy result or deployment yet.** The job reprocesses the
-2,815 frozen development recordings, measures body landmarks at each of 60 sampled
-frames, aligns the motion window, and trains the residual model with explicit
-fingertip/body features. It preserves existing hand-detector thresholds and
-sequence-quality rules. No reserved test recordings enter this pipeline.
+**Not deployed.** Development screen: 135/210 correct, 8 wrong supported-word predictions, 67 misses, 3/90 false accepts on other signs.
 
-Extraction caches, raw recordings and checkpoints stay outside the website.
-Checkpoint verification and offline browser parity run after training. A passing
-development screen still requires independent tests, ordinary-movement negatives
-and live-camera integration checks. The script never deploys a model.
+Passes unchanged validation gate: False. Checkpoint reload reproduced the result.
 
-Check progress:
+Uses the balanced development data and seven separate rejection classes. Adds training-only feature normalization, explicit frame differences, residual dilated convolutions, mean/max pooling, and time-warp augmentation. Multiple changes mean this experiment does not isolate the effect of any one change.
 
-```bash
-cat /opt/handspeak-training/vocabulary-expansion-dynamic-pose/job-status.json
-systemctl status handspeak-dynamic-pose.service
-journalctl -u handspeak-dynamic-pose.service -n 30 --no-pager
-```
+This variant also retains explicit fingertip/body coordinates and hand/body scale.
 
-The transient service survives terminal/chat closure, but not reboot. If it stops,
-inspect `job-status.json` and the service error before restarting. The same command
-resumes verified extraction caches; changed inputs or code require a new experiment
-directory. Accuracy failure is a completed experiment, not a successful release.
-
-```bash
-/opt/handspeak-training/venv/bin/python training/catalog/run_dynamic_pose_training.py \
-  --baseline /opt/handspeak-training/vocabulary-expansion-joint50-separated \
-  --output /opt/handspeak-training/vocabulary-expansion-dynamic-pose \
-  --report reports/vocabulary-expansion/dynamic-pose --workers 3
-```
-
-The extraction protocol freezes source hashes, model assets, code and detector
-settings. Source snapshots are retained in the private experiment directory.
+Previously inspected validation, not independent accuracy. Subsequent offline browser parity passed on 75 cached examples; see browser-parity.json. No ordinary movement negatives, automatic-camera timing, or untouched final test was evaluated here. All release requirements still apply. Raw videos and checkpoints stay outside the website.

@@ -1,0 +1,52 @@
+{
+  "scope": "Public HTTPS delivery and asset checks only; camera/integration testing remains waived",
+  "results": [
+    {
+      "path": "/",
+      "httpSuccess": true,
+      "matchesDeployedFile": true
+    },
+    {
+      "path": "app.js?v=20261010-single-1",
+      "httpSuccess": true,
+      "matchesDeployedFile": true
+    },
+    {
+      "path": "models/motion-categories/index.json?v=20261010-single-1",
+      "httpSuccess": true,
+      "matchesDeployedFile": true,
+      "newWords": [
+        [
+          "FISH"
+        ]
+      ]
+    },
+    {
+      "path": "models/motion-vocabulary.json?v=20261010-single-1",
+      "httpSuccess": true,
+      "matchesDeployedFile": true,
+      "fishEntry": [
+        {
+          "label": "FISH",
+          "cameraGroups": [
+            "single-fish"
+          ],
+          "recognition": "category-preview"
+        }
+      ]
+    },
+    {
+      "path": "models/motion-categories/single-fish.json?v=0190b652658cec69ed482de5b9e6532dbf59f89599ad8dae4039d1472cd701ca",
+      "httpSuccess": true,
+      "matchesDeployedFile": true
+    },
+    {
+      "path": "api/health",
+      "httpSuccess": true,
+      "health": {
+        "status": "ok",
+        "time": "2026-10-10T04:41:49+00:00"
+      }
+    }
+  ]
+}

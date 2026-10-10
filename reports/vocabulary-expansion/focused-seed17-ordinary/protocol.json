@@ -1,0 +1,23 @@
+{
+  "modelProtocolSha256": "7cc92fbc0b8222e26e140cec5295c0d7ed79e11ef7af01b0ea5278e45d6fd4c2",
+  "checkpointSha256": "7389ed9b2d3ad32aa59f8f4d5e3313093212ccbd699739c7b27903e4b735324c",
+  "manifestSha256": "944d2d64b1b677bee0c256cfde96a23d8fab1d09694df58962ab55e91e4cfe68",
+  "implementationSha256": "d812af0f15f4f7adaf95ae95fb95b73cb4760f39d75de8e8e354767ae91ad943",
+  "labels": [
+    "CALL",
+    "FIND",
+    "FISH",
+    "HAVE",
+    "HOME",
+    "HUNGRY",
+    "MORNING",
+    "NIGHT",
+    "PAIN",
+    "SEE",
+    "SICK"
+  ],
+  "gate": "Zero suggestions and at least one usable tracked clip per action",
+  "mediaPreviouslyUsedForEvaluation": true,
+  "scope": "Whole recorded clips, not rolling windows, real-time camera paths, or broad everyday-movement accuracy",
+  "deployed": false
+}

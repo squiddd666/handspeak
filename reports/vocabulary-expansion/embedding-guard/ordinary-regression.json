@@ -1,0 +1,80 @@
+{
+  "total": 12,
+  "falseSuggestions": 1,
+  "usablePerAction": {
+    "ApplyEyeMakeup": 1,
+    "BrushingTeeth": 3,
+    "ShavingBeard": 2,
+    "Typing": 2
+  },
+  "passesScreen": false,
+  "checkpointSha256": "454b5ed628ae03f5fe5ea53b7f64bed624d6ffbafda81809b9602c261ecb4268",
+  "guardSha256": "0468a60130eda1c4e16684977c0e3e95732883e0c18a61cec3474274ba955a07",
+  "releasePlanSha256": "fe4f095d76a7b6f236ab0421773b7b31eb86d64bb462b29c919b036d8106ef8a",
+  "manifestSha256": "49e5f3bae15d6a2fe6ffa3e1bf8d576516c2b28853528440b49509db2f04297b",
+  "implementationSha256": "9c375413edf0603ee9b41947cc3cfbe40706160861e81c3bd59c1e337c06a7da",
+  "scope": "Regression on ordinary clips already scored by the unguarded candidate. Not a fresh independent ordinary-action result.",
+  "deployed": false,
+  "predictions": [
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "predicted": "HOME"
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "predicted": null
+    },
+    {
+      "expected": "OTHER MOVEMENT",
+      "sha256": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "predicted": null
+    }
+  ]
+}

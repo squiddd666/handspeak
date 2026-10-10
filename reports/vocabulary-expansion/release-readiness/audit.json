@@ -1,0 +1,513 @@
+{
+  "sourceReport": "reports/vocabulary-expansion/masked-augmentation/validation.json",
+  "sourceSha256": "d1750ac5b0364727156f9e84439722d2c6e91cd2f5142c0624785abf439b20f8",
+  "ready": [],
+  "promising": [
+    "AIRPLANE",
+    "BECAUSE",
+    "BOY",
+    "BROTHER",
+    "CALL",
+    "CHAIR",
+    "FIND",
+    "GIRL",
+    "GRANDFATHER",
+    "HAVE",
+    "HEAR",
+    "HOME",
+    "HOT",
+    "LISTEN",
+    "NIGHT",
+    "PAIN",
+    "PEN",
+    "PENCIL",
+    "RIDE",
+    "SEE",
+    "SHOES",
+    "SICK",
+    "STAY",
+    "TABLE",
+    "THIRSTY",
+    "TOMORROW"
+  ],
+  "trainingPriority": [
+    "BED",
+    "BOOK",
+    "CAN",
+    "CAR",
+    "CHILD",
+    "FINE",
+    "FINISH",
+    "FISH",
+    "GIVE",
+    "GRANDMOTHER",
+    "HUNGRY",
+    "LATER",
+    "LIKE",
+    "LOOK",
+    "MAN",
+    "MILK",
+    "MORNING",
+    "NOW",
+    "READ",
+    "ROOM",
+    "SHOWER",
+    "SPEAK",
+    "STORE",
+    "YESTERDAY"
+  ],
+  "words": [
+    {
+      "label": "AIRPLANE",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "BECAUSE",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "BED",
+      "correct": 0,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "BOOK",
+      "correct": 2,
+      "total": 6,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "BOY",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "BROTHER",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "CALL",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "CAN",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "CAR",
+      "correct": 1,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "CHAIR",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "CHILD",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "FIND",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "FINE",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "FINISH",
+      "correct": 5,
+      "total": 14,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "FISH",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "GIRL",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "GIVE",
+      "correct": 1,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "GRANDFATHER",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "GRANDMOTHER",
+      "correct": 1,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "HAVE",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "HEAR",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "HOME",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "HOT",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "HUNGRY",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "LATER",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "LIKE",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "LISTEN",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "LOOK",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "MAN",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "MILK",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": true,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "MORNING",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "NIGHT",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "NOW",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "PAIN",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "PEN",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "PENCIL",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "READ",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "RIDE",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "ROOM",
+      "correct": 0,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "SEE",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "SHOES",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "SHOWER",
+      "correct": 0,
+      "total": 2,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "SICK",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "SPEAK",
+      "correct": 0,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "STAY",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "STORE",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "TABLE",
+      "correct": 3,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "THIRSTY",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "TOMORROW",
+      "correct": 4,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "promising-development-only",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    },
+    {
+      "label": "YESTERDAY",
+      "correct": 2,
+      "total": 4,
+      "receivedWrongSuggestions": false,
+      "status": "needs-training",
+      "readyForDeployment": false,
+      "reason": "No independent release/integration evidence for this candidate"
+    }
+  ],
+  "selection": "Reused validation: at least 75% correct and no incoming false suggestion; selection only, not a release gate",
+  "deployed": false
+}

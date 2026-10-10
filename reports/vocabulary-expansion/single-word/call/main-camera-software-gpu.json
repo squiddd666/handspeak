@@ -1,0 +1,49 @@
+{
+  "word": "CALL",
+  "mirror": false,
+  "scope": "Training video played through the actual main-app getUserMedia/detector/capture/classifier path. Isolated database. Not independent accuracy, physical camera or new-person evidence. Face tracking off.",
+  "fixtureSha256": "104085e993f2701e2421acfc7a84b2f74e085c4462a52c82e6794b371e9d7cdb",
+  "modelSha256": "86251e2b5f34b1c92edcc3db8605f6f5da65b9ee557f075bf92a52d70a19f703",
+  "results": [
+    {
+      "repetition": 1,
+      "diagnostic": {
+        "build": "20261010-single-1",
+        "input": "640x480",
+        "processedFps": 0.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "mode": "words",
+        "vocabulary": "Camera vocabulary: CALL preview",
+        "model": "CALL category preview (1 words) \u00b7 0 personal examples",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": true,
+        "faceTracking": false,
+        "lastCapture": null
+      },
+      "feedback": "Category preview enabled. Use only its listed words; review every match."
+    },
+    {
+      "repetition": 2,
+      "diagnostic": {
+        "build": "20261010-single-1",
+        "input": "640x480",
+        "processedFps": 0.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "mode": "words",
+        "vocabulary": "Camera vocabulary: CALL preview",
+        "model": "CALL category preview (1 words) \u00b7 0 personal examples",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": true,
+        "faceTracking": false,
+        "lastCapture": null
+      },
+      "feedback": "Category preview enabled. Use only its listed words; review every match."
+    }
+  ],
+  "pageErrors": [],
+  "deployed": false
+}

@@ -57,7 +57,7 @@ class ModelTests(unittest.TestCase):
             "({ok:false,json:async()=>({})});" if failure else
             "path.includes('asl-knn') ? ({ok:true,json:async()=>model}) : ({ok:false,json:async()=>({})});"
         ))
-        for name in ['sentence-builder.js','motion-model.js','automatic-motion.js','expanded-motion.js','motion-studio.js','face-tracker.js']:
+        for name in ['camera-performance.js','temporal-camera.js','temporal-word-model.js','sentence-builder.js','motion-model.js','automatic-motion.js','expanded-motion.js','motion-studio.js','face-tracker.js']:
             code='\n'.join(line for line in (ROOT/name).read_text().splitlines() if not line.startswith('import '))
             self.js.eval(code.replace('export ', ''))
         app = '\n'.join(line for line in (ROOT/'app.js').read_text().splitlines() if not line.startswith('import '))
@@ -130,6 +130,21 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(self.js.eval('aiSamples.length'), 0)
         self.assertEqual(self.js.eval('candidate'), '')
         self.assertFalse(self.js.eval('trainingActive'))
+
+    def test_cancelled_camera_start_cannot_stop_a_new_attempt(self):
+        self.boot_app()
+        self.js.eval('''
+          const navigator={mediaDevices:{getUserMedia(){}}};
+          let rejectOld;
+          createTemporalCamera=()=>({ready:new Promise((resolve,reject)=>{rejectOld=reject}),close(){}});
+          motionStudio.usesTemporalModel=()=>true;recognitionMode='words';
+          startCamera();stopCamera();
+          cameraAttempt++;cameraStarting=true;cameraButton.disabled=true;
+          rejectOld(Error('Old worker stopped'));
+        ''')
+        while self.js.execute_pending_job():pass
+        self.assertTrue(self.js.eval('cameraStarting'))
+        self.assertTrue(self.js.eval('cameraButton.disabled'))
 
 
     def test_camera_processes_new_frames_only_and_never_types_during_training(self):

@@ -1,0 +1,880 @@
+{
+  "events": [
+    {
+      "label": "CALL",
+      "timeMs": 6384.5,
+      "captureTimeMs": 2090.0999999940395,
+      "frames": 52,
+      "usable": true
+    }
+  ],
+  "frames": 141,
+  "tracked": 23,
+  "maxQueue": 99,
+  "maxLatencyMs": 6778.9000000059605,
+  "wallPlaybackMs": 2106.699999988079,
+  "sourceDurationMs": 2066.667,
+  "tracking": [
+    {
+      "timeMs": 28,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 382.80000001192093
+    },
+    {
+      "timeMs": 73.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 77.40000000596046
+    },
+    {
+      "timeMs": 106.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 75.10000002384186
+    },
+    {
+      "timeMs": 140.19999998807907,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 73.30000001192093
+    },
+    {
+      "timeMs": 178,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 75.09999999403954
+    },
+    {
+      "timeMs": 226.19999998807907,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 71.5
+    },
+    {
+      "timeMs": 256.90000000596046,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 70.30000001192093
+    },
+    {
+      "timeMs": 290,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 68
+    },
+    {
+      "timeMs": 323.40000000596046,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 70.09999999403954
+    },
+    {
+      "timeMs": 357.09999999403954,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 77.90000000596046
+    },
+    {
+      "timeMs": 390.19999998807907,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 74.90000000596046
+    },
+    {
+      "timeMs": 423.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 69.39999997615814
+    },
+    {
+      "timeMs": 456.90000000596046,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 75.30000001192093
+    },
+    {
+      "timeMs": 490.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 68.09999999403954
+    },
+    {
+      "timeMs": 523.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 67.40000000596046
+    },
+    {
+      "timeMs": 556.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 74.80000001192093
+    },
+    {
+      "timeMs": 591.1999999880791,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 71
+    },
+    {
+      "timeMs": 623.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 72.19999998807907
+    },
+    {
+      "timeMs": 657.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 66.90000000596046
+    },
+    {
+      "timeMs": 690.1999999880791,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 71.80000001192093
+    },
+    {
+      "timeMs": 723.5999999940395,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 149.7999999821186
+    },
+    {
+      "timeMs": 757,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 187.69999998807907
+    },
+    {
+      "timeMs": 790.2999999821186,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 190.2000000178814
+    },
+    {
+      "timeMs": 823.4000000059605,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 121
+    },
+    {
+      "timeMs": 857,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 120.40000000596046
+    },
+    {
+      "timeMs": 890.0999999940395,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 123.60000002384186
+    },
+    {
+      "timeMs": 923.6999999880791,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 126.19999998807907
+    },
+    {
+      "timeMs": 956.9000000059605,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 122.09999999403954
+    },
+    {
+      "timeMs": 990.6999999880791,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 119.5
+    },
+    {
+      "timeMs": 1023.5,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 125.19999998807907
+    },
+    {
+      "timeMs": 1057.699999988079,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 120.80000001192093
+    },
+    {
+      "timeMs": 1090,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 122.5
+    },
+    {
+      "timeMs": 1123.5,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 177.60000002384186
+    },
+    {
+      "timeMs": 1157,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 182.59999999403954
+    },
+    {
+      "timeMs": 1190,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 118
+    },
+    {
+      "timeMs": 1223.699999988079,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 125.2999999821186
+    },
+    {
+      "timeMs": 1256.5999999940395,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 121.89999997615814
+    },
+    {
+      "timeMs": 1290.199999988079,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 123.7000000178814
+    },
+    {
+      "timeMs": 1323.5,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 119
+    },
+    {
+      "timeMs": 1356.7999999821186,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 119.90000000596046
+    },
+    {
+      "timeMs": 1390.199999988079,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 120.7999999821186
+    },
+    {
+      "timeMs": 1423.5,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 175.90000000596046
+    },
+    {
+      "timeMs": 1456.9000000059605,
+      "raw": 1,
+      "usable": 1,
+      "processingMs": 119.19999998807907
+    },
+    {
+      "timeMs": 1490.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 118.80000001192093
+    },
+    {
+      "timeMs": 1523.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 73.30000001192093
+    },
+    {
+      "timeMs": 1556.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.89999997615814
+    },
+    {
+      "timeMs": 1590.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.30000001192093
+    },
+    {
+      "timeMs": 1623.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.400000005960464
+    },
+    {
+      "timeMs": 1656.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.400000005960464
+    },
+    {
+      "timeMs": 1690.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.5
+    },
+    {
+      "timeMs": 1723.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 1756.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.400000005960464
+    },
+    {
+      "timeMs": 1791.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.599999994039536
+    },
+    {
+      "timeMs": 1823.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 1856.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.29999998211861
+    },
+    {
+      "timeMs": 1890.199999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62
+    },
+    {
+      "timeMs": 1923.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62
+    },
+    {
+      "timeMs": 1957,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.29999998211861
+    },
+    {
+      "timeMs": 1990.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.70000001788139
+    },
+    {
+      "timeMs": 2023.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 121.40000000596046
+    },
+    {
+      "timeMs": 2056.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 65.59999999403954
+    },
+    {
+      "timeMs": 2090.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 61.900000005960464
+    },
+    {
+      "timeMs": 2123.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.70000001788139
+    },
+    {
+      "timeMs": 2156.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 2190.199999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.099999994039536
+    },
+    {
+      "timeMs": 2223.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.099999994039536
+    },
+    {
+      "timeMs": 2256.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 70.60000002384186
+    },
+    {
+      "timeMs": 2290,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.5
+    },
+    {
+      "timeMs": 2323.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.79999998211861
+    },
+    {
+      "timeMs": 2356.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.69999998807907
+    },
+    {
+      "timeMs": 2390,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.70000001788139
+    },
+    {
+      "timeMs": 2423.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.5
+    },
+    {
+      "timeMs": 2456.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 2490.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.30000001192093
+    },
+    {
+      "timeMs": 2523.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.29999998211861
+    },
+    {
+      "timeMs": 2556.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.900000005960464
+    },
+    {
+      "timeMs": 2590.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.69999998807907
+    },
+    {
+      "timeMs": 2623.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.80000001192093
+    },
+    {
+      "timeMs": 2656.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.79999998211861
+    },
+    {
+      "timeMs": 2690.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.10000002384186
+    },
+    {
+      "timeMs": 2723.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.30000001192093
+    },
+    {
+      "timeMs": 2756.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.80000001192093
+    },
+    {
+      "timeMs": 2790.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.10000002384186
+    },
+    {
+      "timeMs": 2823.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.900000005960464
+    },
+    {
+      "timeMs": 2856.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.5
+    },
+    {
+      "timeMs": 2890,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 67.19999998807907
+    },
+    {
+      "timeMs": 2923.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.599999994039536
+    },
+    {
+      "timeMs": 2956.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.30000001192093
+    },
+    {
+      "timeMs": 2990.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.60000002384186
+    },
+    {
+      "timeMs": 3023.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.19999998807907
+    },
+    {
+      "timeMs": 3056.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.599999994039536
+    },
+    {
+      "timeMs": 3090.199999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 3123.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.400000005960464
+    },
+    {
+      "timeMs": 3156.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 66.39999997615814
+    },
+    {
+      "timeMs": 3190.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.80000001192093
+    },
+    {
+      "timeMs": 3223.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.19999998807907
+    },
+    {
+      "timeMs": 3256.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.5
+    },
+    {
+      "timeMs": 3290.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 73.7000000178814
+    },
+    {
+      "timeMs": 3323.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.69999998807907
+    },
+    {
+      "timeMs": 3356.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.79999998211861
+    },
+    {
+      "timeMs": 3390.199999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.5
+    },
+    {
+      "timeMs": 3423.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.599999994039536
+    },
+    {
+      "timeMs": 3456.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 70.69999998807907
+    },
+    {
+      "timeMs": 3490,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 67.90000000596046
+    },
+    {
+      "timeMs": 3523.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.70000001788139
+    },
+    {
+      "timeMs": 3556.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.900000005960464
+    },
+    {
+      "timeMs": 3590.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.19999998807907
+    },
+    {
+      "timeMs": 3623.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.400000005960464
+    },
+    {
+      "timeMs": 3656.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.30000001192093
+    },
+    {
+      "timeMs": 3690.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.099999994039536
+    },
+    {
+      "timeMs": 3723.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.400000005960464
+    },
+    {
+      "timeMs": 3756.5999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.69999998807907
+    },
+    {
+      "timeMs": 3790,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.20000001788139
+    },
+    {
+      "timeMs": 3823.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.30000001192093
+    },
+    {
+      "timeMs": 3856.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.2999999821186
+    },
+    {
+      "timeMs": 3890,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 67.40000000596046
+    },
+    {
+      "timeMs": 3923.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.900000005960464
+    },
+    {
+      "timeMs": 3956.7999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.5
+    },
+    {
+      "timeMs": 3990,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.10000002384186
+    },
+    {
+      "timeMs": 4023.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.900000005960464
+    },
+    {
+      "timeMs": 4056.9000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.2999999821186
+    },
+    {
+      "timeMs": 4090.2999999821186,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.70000001788139
+    },
+    {
+      "timeMs": 4123.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.19999998807907
+    },
+    {
+      "timeMs": 4156.699999988079,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.099999994039536
+    },
+    {
+      "timeMs": 4190,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63
+    },
+    {
+      "timeMs": 4223.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.69999998807907
+    },
+    {
+      "timeMs": 4256.799999982119,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.70000001788139
+    },
+    {
+      "timeMs": 4290,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.30000001192093
+    },
+    {
+      "timeMs": 4323.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.10000002384186
+    },
+    {
+      "timeMs": 4356.5999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.5
+    },
+    {
+      "timeMs": 4390.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 64.80000001192093
+    },
+    {
+      "timeMs": 4423.4000000059605,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.5
+    },
+    {
+      "timeMs": 4456.5999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.599999994039536
+    },
+    {
+      "timeMs": 4490.0999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.30000001192093
+    },
+    {
+      "timeMs": 4523.299999982119,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 65
+    },
+    {
+      "timeMs": 4556.5999999940395,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.099999994039536
+    },
+    {
+      "timeMs": 4590,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 65
+    },
+    {
+      "timeMs": 4623.5,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.80000001192093
+    },
+    {
+      "timeMs": 4656.799999982119,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 62.5
+    },
+    {
+      "timeMs": 4690,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 63.599999994039536
+    },
+    {
+      "timeMs": 4723.299999982119,
+      "raw": 0,
+      "usable": 0,
+      "processingMs": 69
+    }
+  ],
+  "mirror": false,
+  "preflightPlayback": null,
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated browser prototype. GPU option uses software SwiftShader on this server. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "featureMode": "hands-only",
+  "delegate": "CPU",
+  "nativeAspect": false,
+  "deployed": false,
+  "imageDataInput": true,
+  "cameraFormat": true,
+  "buffered": true,
+  "playbackSha256": "104085e993f2701e2421acfc7a84b2f74e085c4462a52c82e6794b371e9d7cdb"
+}

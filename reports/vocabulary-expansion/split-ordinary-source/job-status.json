@@ -1,0 +1,8 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "additionalTrain": 72,
+  "additionalValidation": 6,
+  "total": 3173
+}

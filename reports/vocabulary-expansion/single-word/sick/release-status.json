@@ -1,0 +1,8 @@
+{
+  "word": "SICK",
+  "stage": "recording-check-complete",
+  "deployed": false,
+  "state": "complete",
+  "passesFreshSignGate": true,
+  "remaining": "Fresh ordinary-action screen, actual browser camera and integration checks before publishing"
+}

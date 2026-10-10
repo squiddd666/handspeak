@@ -1,0 +1,61 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 44,
+    "correct": 29,
+    "wrong": 0,
+    "missed": 15,
+    "negativeTotal": 92,
+    "negativeFalse": 0,
+    "perWord": {
+      "CALL": {
+        "total": 4,
+        "correct": 3
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 3
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 3
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 3
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 4
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 2
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 1
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 0
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 4
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 4
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 2
+      }
+    }
+  },
+  "passesRecordedClipGate": false,
+  "nextStep": "Candidate failed; no deployment"
+}

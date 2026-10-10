@@ -11,7 +11,7 @@ with sync_playwright() as p:
  page.goto('https://handspeak.cvsu.dev/__finish_test')
  page.evaluate('''async()=>{
  const {createInterpreter}=await import('/test-interpreter.js');window.spoken=[];window.requests=[];window.respond=null;
- window.fetch=async(url,options)=>url.endsWith('/status')?{ok:true,json:async()=>({available:true})}:new Promise(resolve=>{requests.push(JSON.parse(options.body));window.respond=(data,ok=true)=>resolve({ok,json:async()=>data});});
+ window.fetch=async(url,options)=>url.endsWith('/status')?new Promise(resolve=>{window.ready=()=>resolve({ok:true,json:async()=>({available:true})});}):new Promise(resolve=>{requests.push(JSON.parse(options.body));window.respond=(data,ok=true)=>resolve({ok,json:async()=>data});});
  window.draft='';window.edit=text=>{draft=text;document.querySelector('#messageText').textContent=text;};
  window.interpreter=createInterpreter({getMessage:()=>draft,setMessage:edit,speak:text=>spoken.push(text)});
  }''')
@@ -21,8 +21,14 @@ with sync_playwright() as p:
   page.evaluate('(unclear)=>respond({original:draft,sentence:unclear?"":"I want water, please.",needsClarification:unclear,note:"Review."})',unclear)
   page.wait_for_function('!document.querySelector("#interpretButton").disabled')
  edit('I WANT WATER PLEASE');assert not trigger();assert page.evaluate('requests.length')==0
- page.locator('#finishInterpretSpeak').check();trigger();trigger();assert page.evaluate('requests.length')==1
+ page.locator('#finishInterpretSpeak').check();trigger()
+ page.evaluate('ready()');page.wait_for_timeout(1100)
+ assert 'seconds elapsed' in page.locator('#interpretStatus').inner_text()
+ assert page.locator('#interpretButton').get_attribute('aria-busy')=='true'
+ trigger();assert page.evaluate('requests.length')==1
+ assert 'already running' in page.locator('#interpretStatus').inner_text()
  complete();assert page.evaluate('spoken')==['I want water, please.'];assert page.evaluate('draft')=='I WANT WATER PLEASE'
+ assert page.locator('#interpretButton').get_attribute('aria-busy') is None
  trigger();assert page.evaluate('requests.length')==1
  edit('I WANT FOOD');trigger();edit('CHANGED');complete();assert page.evaluate('spoken.length')==1
  edit('I WANT HOME');trigger();page.locator('#finishInterpretSpeak').uncheck();complete();assert page.evaluate('spoken.length')==1

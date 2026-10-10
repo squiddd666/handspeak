@@ -1,0 +1,25 @@
+{
+  "target": "/opt/handspeak/releases/1/motion-preview-20261004",
+  "url": "https://handspeak.cvsu.dev/motion-preview-20261004/index.html",
+  "scope": "Separate camera-validation preview; no main model promotion or backend/database changes",
+  "assets": {
+    "style.css": "ebcb560ebf4990d024f06d163e63426188423348beb064cae58e29414ff3a6f2",
+    "runtime.js": "992874083286313af0c148bf07aec78a401fda8001ad82f2efe6e14fa904d1e9",
+    "temporal-features.js": "0e81037693f3b5e6115bc218128afc44693d65181ecaa6dc06b9cc3eb2f2d605",
+    "app.js": "158cb409c2aa70ddd0f294a05fbd330acd23777c0b93e6f538cbbb26389450c3",
+    "boot.js": "47f5864d126b65c52c9a7cf89505e916a4bc10fdb9450e333b36a1356fb09c7f",
+    "model.json": "01e72460572738f9200ae65883e8934d46d5e1340bcf54b575b9b416e8fba875",
+    "gesture-model.js": "4c6693c44eeed129cd74b6e5f1bb13f451dc703a123ffb15ae45137f686de318",
+    "integrity.json": "9efea7e402d5f06139f2606f14c2bc2c88d949e9d44604c945e662332f4ec375",
+    "temporal-window.js": "e21bdbc887b9b2ad636a88918639046fcd90029c87e7579d3477136141e480d7",
+    "index.html": "c9f08aa2511f53a91fd6095ed88404f5b1efe5fa929af14c6cfae4463955f5f2",
+    "capture.js": "b6c412132f239b62429c45849925b1e351a6685fe4cc9a1d613f81c101ef9ffc",
+    "motion-model.js": "81d635a6f0e9cbb982d995a4a49882df93b4d2ef15497b68302fa0055c8becd2"
+  },
+  "unchangedMainAssets": {
+    "index.html": "8d99b08b42653aef014624fcbfc3caf6ab353b6efb1ed332a5fd6cfdd630d8a5",
+    "app.js": "40fb6a6626c9548324bb0fbada2dbc240f927f1850cbfeb895f03729523702bc",
+    "research-words.js": "fff33ec03b883fffb4d1f1717ec93ed9723c3ed730cd109d84318ffc7932757d"
+  },
+  "rollback": "Remove only the new motion-preview-20261004 directory; no prior preview existed"
+}

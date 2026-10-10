@@ -1,0 +1,20 @@
+{
+  "labels": [
+    "CALL",
+    "FIND",
+    "FISH",
+    "HAVE",
+    "HOME",
+    "HUNGRY",
+    "MORNING",
+    "NIGHT",
+    "PAIN",
+    "SEE",
+    "SICK"
+  ],
+  "sourceTestNowConsumedForDevelopment": "reports/vocabulary-expansion/expanded-fresh/test-results.json",
+  "sourceSha256": "e5124d959c907aae3862762e94c6adffe4ee66c6fd9165d6c8ddfb7f3d784a53",
+  "rule": "Retain signs with at least half correctly recognized in the failed 17-label candidate test; independent confirmation requires new recordings.",
+  "independentAccuracyPassed": false,
+  "deployed": false
+}

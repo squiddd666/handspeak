@@ -1,0 +1,17 @@
+{
+  "maxFeatureError": 4.643261171111135e-07,
+  "maxLogitError": 3.6715634550432696e-06,
+  "predictionsMatch": true,
+  "samples": 75,
+  "offlineInferenceMedianMs": 51.69999998807907,
+  "offlineInferenceP95Ms": 57.19999998807907,
+  "checkpointSha256": "12e25ffca83e612dd1f3e47d53ce088fe216e390d12d350418d0a1ed883a0b1d",
+  "outputClasses": 57,
+  "javascriptSha256": {
+    "temporal-browser.js": "0e81037693f3b5e6115bc218128afc44693d65181ecaa6dc06b9cc3eb2f2d605",
+    "motion-residual-browser.js": "aab9fcbaea87cabf6282b2c487e10ae485034552290a7a06aaccf43dfc3de9f7"
+  },
+  "labelsCovered": 57,
+  "deployed": false,
+  "scope": "Offline Chromium with cached development landmarks on this server. Timing includes feature encoding and classifier only, while training may compete for CPU. Not webcam throughput, body tracking, independent accuracy, or deployment."
+}

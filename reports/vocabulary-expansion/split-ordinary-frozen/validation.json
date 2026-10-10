@@ -1,0 +1,178 @@
+{
+  "passesDevelopmentScreen": true,
+  "framingValidation": [
+    {
+      "scale": 1,
+      "metrics": {
+        "total": 44,
+        "correct": 35,
+        "wrong": 0,
+        "missed": 9,
+        "negativeTotal": 274,
+        "negativeFalse": 0,
+        "perWord": {
+          "CALL": {
+            "total": 4,
+            "correct": 3
+          },
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          },
+          "HAVE": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "MORNING": {
+            "total": 4,
+            "correct": 3
+          },
+          "NIGHT": {
+            "total": 4,
+            "correct": 2
+          },
+          "PAIN": {
+            "total": 4,
+            "correct": 2
+          },
+          "SEE": {
+            "total": 4,
+            "correct": 4
+          },
+          "SICK": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "scale": 0.5625,
+      "metrics": {
+        "total": 44,
+        "correct": 31,
+        "wrong": 0,
+        "missed": 13,
+        "negativeTotal": 274,
+        "negativeFalse": 0,
+        "perWord": {
+          "CALL": {
+            "total": 4,
+            "correct": 3
+          },
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 1
+          },
+          "HAVE": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 2
+          },
+          "MORNING": {
+            "total": 4,
+            "correct": 2
+          },
+          "NIGHT": {
+            "total": 4,
+            "correct": 3
+          },
+          "PAIN": {
+            "total": 4,
+            "correct": 2
+          },
+          "SEE": {
+            "total": 4,
+            "correct": 4
+          },
+          "SICK": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "scale": 1.3,
+      "metrics": {
+        "total": 44,
+        "correct": 33,
+        "wrong": 0,
+        "missed": 11,
+        "negativeTotal": 274,
+        "negativeFalse": 0,
+        "perWord": {
+          "CALL": {
+            "total": 4,
+            "correct": 3
+          },
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          },
+          "HAVE": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 3
+          },
+          "MORNING": {
+            "total": 4,
+            "correct": 2
+          },
+          "NIGHT": {
+            "total": 4,
+            "correct": 2
+          },
+          "PAIN": {
+            "total": 4,
+            "correct": 2
+          },
+          "SEE": {
+            "total": 4,
+            "correct": 4
+          },
+          "SICK": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    }
+  ],
+  "checkpointSha256": "6c2ece36c0f65ca5a459976d683557c38efb327d508ce87675ce71482ad9af91",
+  "deployed": false
+}

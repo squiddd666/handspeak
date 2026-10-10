@@ -1,0 +1,8 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "passesDevelopmentScreen": true,
+  "passesRegressionScreen": false,
+  "nextStep": "Regression failed; no deployment."
+}

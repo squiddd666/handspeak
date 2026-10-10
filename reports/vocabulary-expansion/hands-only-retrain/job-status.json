@@ -1,0 +1,7 @@
+{
+  "stage": "superseded",
+  "state": "complete",
+  "deployed": false,
+  "reason": "First seed completed. Its best development checkpoint (epoch 20) was frozen for a separate recorded-clip evaluation. Remaining research seeds stopped; not a completed three-seed ensemble.",
+  "evaluation": "/opt/handspeak-training/vocabulary-expansion-hands-only-fresh"
+}

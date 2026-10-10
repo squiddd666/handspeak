@@ -1,0 +1,336 @@
+{
+  "selected": {
+    "epoch": 5,
+    "seed": 109,
+    "members": 1,
+    "threshold": 0.35,
+    "margin": 0,
+    "validation": {
+      "total": 4,
+      "correct": 3,
+      "wrong": 0,
+      "missed": 1,
+      "negativeTotal": 351,
+      "negativeFalse": 0,
+      "perWord": {
+        "FIND": {
+          "total": 4,
+          "correct": 3
+        }
+      }
+    },
+    "framingValidation": [
+      {
+        "scale": 1,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "FIND": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      },
+      {
+        "scale": 0.5625,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "FIND": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      },
+      {
+        "scale": 1.3,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "FIND": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      }
+    ],
+    "selectionScore": [
+      false,
+      3,
+      -9,
+      0
+    ]
+  },
+  "trials": [
+    {
+      "epoch": 5,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.35,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        3,
+        -9,
+        0
+      ]
+    },
+    {
+      "epoch": 10,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.35,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        3,
+        -9,
+        0
+      ]
+    },
+    {
+      "epoch": 20,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.35,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "FIND": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "FIND": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        3,
+        -9,
+        0
+      ]
+    }
+  ],
+  "passesValidation": true,
+  "checkpointReloadVerified": true,
+  "checkpointSha256": "5bfe028518dc0fd0c1256c7bed761ef5abd476196ac126f5aa3621b1c54b02f3",
+  "sourceSha256": "8c25268c40e9a85a2f548fd468c59e1435782d5c74b292750a76af25e4d2869c",
+  "deployed": false,
+  "errors": [
+    {
+      "expected": "FIND",
+      "predicted": null,
+      "sha256": "d15a3abad10c12fe3cc7eca6dc44a5e7b6f2d3c572b52e8871e8c4cc67883076"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "scope": "Training recordings fed through the real preview getUserMedia interface using a browser-generated stream. Not independent accuracy or physical camera evidence.",
+  "results": [
+    {
+      "label": "CALL",
+      "file": "CALL.mp4",
+      "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+      "playbackSha256": "104085e993f2701e2421acfc7a84b2f74e085c4462a52c82e6794b371e9d7cdb",
+      "mirror": false,
+      "report": {
+        "build": "20261004-worker-preview-2",
+        "scope": "Experimental preview; main recognizer unchanged",
+        "checkpoint": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+        "cameraActive": true,
+        "expected": "CALL",
+        "input": "960x720",
+        "delegate": "CPU",
+        "processedFps": 12.6,
+        "queueFrames": 0,
+        "lagMs": 74,
+        "processingMs": 66,
+        "overloads": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "lastCapture": {
+          "frames": 23,
+          "trackedFrames": 10,
+          "durationMs": 1611,
+          "label": "CALL",
+          "validSequence": true,
+          "classifierMs": 88,
+          "lagMs": 1086
+        },
+        "events": [
+          {
+            "frames": 23,
+            "trackedFrames": 10,
+            "durationMs": 1611,
+            "label": "CALL",
+            "validSequence": true,
+            "classifierMs": 88,
+            "lagMs": 1086,
+            "expected": "CALL"
+          }
+        ]
+      }
+    },
+    {
+      "label": "HOME",
+      "file": "HOME.mp4",
+      "sourceSha256": "c985b6b009bfb1e486ae8134bd42de0ddcf81813556c2abc2db5fb0c2161474f",
+      "playbackSha256": "aa61357ea2733df6e8a6b026bbea7476301229879c820b62223f4c554fd7021f",
+      "mirror": false,
+      "report": {
+        "build": "20261004-worker-preview-2",
+        "scope": "Experimental preview; main recognizer unchanged",
+        "checkpoint": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+        "cameraActive": true,
+        "expected": "HOME",
+        "input": "960x720",
+        "delegate": "CPU",
+        "processedFps": 14.2,
+        "queueFrames": 2,
+        "lagMs": 280,
+        "processingMs": 77,
+        "overloads": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "lastCapture": {
+          "frames": 28,
+          "trackedFrames": 10,
+          "durationMs": 1991,
+          "label": "HOME",
+          "validSequence": true,
+          "classifierMs": 63,
+          "lagMs": 1753
+        },
+        "events": [
+          {
+            "frames": 28,
+            "trackedFrames": 10,
+            "durationMs": 1991,
+            "label": "HOME",
+            "validSequence": true,
+            "classifierMs": 63,
+            "lagMs": 1753,
+            "expected": "HOME"
+          }
+        ]
+      }
+    },
+    {
+      "label": "HUNGRY",
+      "file": "HUNGRY.mp4",
+      "sourceSha256": "80a29409baa980aaa6ff8de74c8d0947bc67534950bf7790ace35d098178a356",
+      "playbackSha256": "a8e6f29135533f1529cd782186d114867a2bbcd396e791fb450ad9b5cec24425",
+      "mirror": false,
+      "report": {
+        "build": "20261004-worker-preview-2",
+        "scope": "Experimental preview; main recognizer unchanged",
+        "checkpoint": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+        "cameraActive": true,
+        "expected": "HUNGRY",
+        "input": "960x720",
+        "delegate": "CPU",
+        "processedFps": 12,
+        "queueFrames": 0,
+        "lagMs": 73,
+        "processingMs": 65,
+        "overloads": 1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "lastCapture": null,
+        "events": [
+          {
+            "frames": 28,
+            "trackedFrames": 13,
+            "durationMs": 1838,
+            "label": null,
+            "validSequence": true,
+            "classifierMs": 74,
+            "lagMs": 2411,
+            "expected": "HUNGRY"
+          }
+        ]
+      }
+    },
+    {
+      "label": "NIGHT",
+      "file": "NIGHT.mp4",
+      "sourceSha256": "817188e602675cc2b00709c57dccd0af8bf40fd378cf09ac2a3bcdf751ffce40",
+      "playbackSha256": "ef3b7b28fa56e3688042a8fc5a16a2bd0898d6992c743f04d367788cbe2ec81c",
+      "mirror": false,
+      "report": {
+        "build": "20261004-worker-preview-2",
+        "scope": "Experimental preview; main recognizer unchanged",
+        "checkpoint": "0890de66b466bf97d915bed825d1b83354d870ba3f29ac3e8a574bd78e488d98",
+        "cameraActive": true,
+        "expected": "NIGHT",
+        "input": "960x720",
+        "delegate": "CPU",
+        "processedFps": 11.8,
+        "queueFrames": 0,
+        "lagMs": 142,
+        "processingMs": 78,
+        "overloads": 1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "lastCapture": {
+          "frames": 19,
+          "trackedFrames": 6,
+          "durationMs": 1343,
+          "label": null,
+          "validSequence": false,
+          "classifierMs": 0,
+          "lagMs": 810
+        },
+        "events": [
+          {
+            "frames": 19,
+            "trackedFrames": 6,
+            "durationMs": 1343,
+            "label": null,
+            "validSequence": false,
+            "classifierMs": 0,
+            "lagMs": 810,
+            "expected": "NIGHT"
+          }
+        ]
+      }
+    }
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "label": null,
+      "timeMs": 4950.299999982119,
+      "frames": 12,
+      "usable": false
+    }
+  ],
+  "frames": 18,
+  "tracked": 1,
+  "warmupMs": 1094.5999999940395,
+  "warmupFrames": 3,
+  "wallPlaybackMs": 3038.199999988079,
+  "sourceDurationMs": 2072.4230000000002,
+  "processingMedianMs": 219.2000000178814,
+  "processingP95Ms": 937.1999999880791,
+  "mirror": false,
+  "expected": "CALL",
+  "sourceSha256": "b69f90e6495d2cd17f159cabceea3e7c3ff52c03426130c3a9c521df47383237",
+  "checkpointSha256": "400d27342591e48697902ed1cddfab929a636bc9e7408f37724d24d0514391ce",
+  "pageErrors": [],
+  "scope": "Single training recording played at wall-clock speed in an isolated CPU-hand/CPU-task-pose browser prototype. 640x480 letterbox. No face tracker, production integration, independent accuracy, or physical webcam claim.",
+  "deployed": false
+}

@@ -1,0 +1,61 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 44,
+    "correct": 38,
+    "wrong": 0,
+    "missed": 6,
+    "negativeTotal": 92,
+    "negativeFalse": 0,
+    "perWord": {
+      "CALL": {
+        "total": 4,
+        "correct": 4
+      },
+      "FIND": {
+        "total": 4,
+        "correct": 4
+      },
+      "FISH": {
+        "total": 4,
+        "correct": 2
+      },
+      "HAVE": {
+        "total": 4,
+        "correct": 4
+      },
+      "HOME": {
+        "total": 4,
+        "correct": 3
+      },
+      "HUNGRY": {
+        "total": 4,
+        "correct": 4
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 4
+      },
+      "NIGHT": {
+        "total": 4,
+        "correct": 3
+      },
+      "PAIN": {
+        "total": 4,
+        "correct": 3
+      },
+      "SEE": {
+        "total": 4,
+        "correct": 4
+      },
+      "SICK": {
+        "total": 4,
+        "correct": 3
+      }
+    }
+  },
+  "passesRecordedClipGate": true,
+  "nextStep": "Integration and real-time/ordinary-movement tests still required"
+}

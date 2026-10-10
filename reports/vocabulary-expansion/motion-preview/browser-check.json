@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Camera start/stop, model integrity, local diagnostic report, no-hand rejection, mobile overflow",
+    "Worker dependency download failure is visible and permits retry",
+    "Permission denial permits retry",
+    "Corrupt model is rejected and camera stopped"
+  ],
+  "scope": "UI/control tests with generated camera frames; not sign recognition accuracy"
+}

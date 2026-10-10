@@ -1,0 +1,22 @@
+{
+  "scope": "Diagnostic on the already-observed grooming false positive. Not independent accuracy.",
+  "checkpoint": "7389ed9b2d3ad32aa59f8f4d5e3313093212ccbd699739c7b27903e4b735324c",
+  "sourceSha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+  "frames": 60,
+  "bodyReferenceFrames": 60,
+  "noseVisibleFrames": 60,
+  "results": [
+    {
+      "condition": "body-context",
+      "winner": "HOME",
+      "suggestion": "HOME",
+      "score": 0.9400778412818909
+    },
+    {
+      "condition": "without-body",
+      "winner": "BOY",
+      "suggestion": null,
+      "score": 0.4365929067134857
+    }
+  ]
+}

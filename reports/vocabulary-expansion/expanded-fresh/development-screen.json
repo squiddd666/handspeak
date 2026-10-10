@@ -1,0 +1,78 @@
+{
+  "total": 68,
+  "correct": 60,
+  "wrong": 0,
+  "missed": 8,
+  "negativeTotal": 232,
+  "negativeFalse": 0,
+  "perWord": {
+    "AIRPLANE": {
+      "total": 4,
+      "correct": 4
+    },
+    "BECAUSE": {
+      "total": 4,
+      "correct": 4
+    },
+    "CALL": {
+      "total": 4,
+      "correct": 4
+    },
+    "FIND": {
+      "total": 4,
+      "correct": 3
+    },
+    "FISH": {
+      "total": 4,
+      "correct": 4
+    },
+    "HAVE": {
+      "total": 4,
+      "correct": 4
+    },
+    "HOME": {
+      "total": 4,
+      "correct": 3
+    },
+    "HOT": {
+      "total": 4,
+      "correct": 3
+    },
+    "HUNGRY": {
+      "total": 4,
+      "correct": 4
+    },
+    "MORNING": {
+      "total": 4,
+      "correct": 4
+    },
+    "NIGHT": {
+      "total": 4,
+      "correct": 3
+    },
+    "PAIN": {
+      "total": 4,
+      "correct": 3
+    },
+    "PEN": {
+      "total": 4,
+      "correct": 3
+    },
+    "RIDE": {
+      "total": 4,
+      "correct": 3
+    },
+    "SEE": {
+      "total": 4,
+      "correct": 3
+    },
+    "SICK": {
+      "total": 4,
+      "correct": 4
+    },
+    "TOMORROW": {
+      "total": 4,
+      "correct": 4
+    }
+  }
+}

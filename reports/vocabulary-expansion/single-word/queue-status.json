@@ -1,0 +1,32 @@
+{
+  "state": "failed",
+  "word": "PAIN",
+  "completed": [
+    {
+      "word": "FIND",
+      "outcome": "regression-failed",
+      "passesFreshSignGate": false
+    },
+    {
+      "word": "FISH",
+      "outcome": "published-experimental",
+      "deployed": true,
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "word": "SEE",
+      "outcome": "regression-failed",
+      "passesFreshSignGate": false
+    },
+    {
+      "word": "SICK",
+      "outcome": "published-experimental",
+      "deployed": true,
+      "cameraTested": false,
+      "integrationTested": false
+    }
+  ],
+  "deployed": true,
+  "error": "Command '['/opt/handspeak-training/venv/bin/python', '-u', '/opt/handspeak/repository/training/catalog/evaluate_single_word.py', '--word', 'PAIN']' returned non-zero exit status 1."
+}

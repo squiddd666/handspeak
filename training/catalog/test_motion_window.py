@@ -41,6 +41,27 @@ class MotionWindowTest(unittest.TestCase):
         row = self.row([[None, None]] * 12)
         self.assertEqual(align_window(row), row)
 
+    def test_browser_temporal_window_parity(self):
+        context = quickjs.Context()
+        context.eval('Array.prototype.at = function(i){return this[i < 0 ? this.length+i : i];};')
+        source = (Path(__file__).resolve().parents[2] /
+                  'training/accuracy/temporal-window-browser.js').read_text()
+        context.eval(source.replace('export ', ''))
+        rng = random.Random(824)
+        fixtures = [[[None, None]] * 12,
+                    [[hand(0), None]] + [[None, None]] * 4 + [[hand(1), None]] * 8]
+        for _ in range(100):
+            fixtures.append([[hand(rng.random()) if rng.random() > .45 else None,
+                              hand(rng.random()) if rng.random() > .6 else None]
+                             for _ in range(rng.randrange(1, 65))])
+        for frames in fixtures:
+            row = self.row(frames)
+            original = copy.deepcopy(row)
+            actual = json.loads(context.eval('JSON.stringify(alignTemporalWindow(' +
+                                               json.dumps(row) + '))'))
+            self.assertEqual(actual, align_window(row))
+            self.assertEqual(row, original)
+
     def test_windows_match_browser_encoder_before_normalization(self):
         context = quickjs.Context()
         source = (Path(__file__).resolve().parents[2] / 'motion-model.js').read_text()

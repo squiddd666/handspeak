@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "One-word tensor validation",
+    "Nonfinite and malformed weights rejected",
+    "Multiword pack rejected",
+    "No-hand rejection",
+    "Controlled logits: excluded winner rejected without fallback (not accuracy evidence)",
+    "Main motion component loads one-word pack",
+    "Other vocabulary isolated",
+    "Invalid replacement preserves current pack",
+    "Default six words restored"
+  ]
+}

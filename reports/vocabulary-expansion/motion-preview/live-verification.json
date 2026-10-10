@@ -1,0 +1,12 @@
+{
+  "assetsMatch": true,
+  "assetCount": 12,
+  "httpStatus": {
+    "/": "200",
+    "/api/health": "200",
+    "/data/mysql.json": "404",
+    "/api/admin/overview": "401"
+  },
+  "liveBrowserLoaded": true,
+  "mainModelPromoted": false
+}

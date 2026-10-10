@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "word": "FISH",
+      "buttonVisible": true,
+      "videoMetadataLoaded": true,
+      "practiceLoadsCorrectModel": true
+    },
+    {
+      "word": "SICK",
+      "buttonVisible": true,
+      "videoMetadataLoaded": true,
+      "practiceLoadsCorrectModel": true
+    }
+  ],
+  "mobileNoHorizontalOverflow": true,
+  "pageErrors": [],
+  "scope": "Watch & practice controls/video/model selection using deployed frontend; no camera or recognition accuracy test"
+}

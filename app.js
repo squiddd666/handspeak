@@ -1,9 +1,11 @@
+import {createTemporalCamera} from './temporal-camera.js?v=20261010-single-1';
+import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
 import {createResearchWords} from './research-words.js?v=20261003-auto-server-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261003-all-motion-1';
-import {createInterpreter} from './interpretation.js?v=20261003-finish-speech-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-accuracy-1';
+import {createInterpreter} from './interpretation.js?v=20261011-llm-feedback-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
-import { createFaceTracker } from './face-tracker.js?v=20261001-auto-cache-1';
-import { createMotionStudio } from './motion-studio.js?v=20261003-diagnostics-1';
+import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
+import { createMotionStudio } from './motion-studio.js?v=20261010-single-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -40,18 +42,18 @@ const faceTracker=createFaceTracker((state,detail)=>{
   $('#faceTrackingHelp').textContent=detail||(state==='No face'?'Face the camera with your whole face visible and light in front of you.':'Visible facial movements · not a measure of emotion');
 },expression=>{
   $('#faceExpression').textContent=expression;
-});
+},{preferredDelegate:preferredVisionDelegate()});
 $('#faceTrackingToggle').addEventListener('change',event=>faceTracker.setEnabled(event.target.checked));
-$('#faceRetry').addEventListener('click',()=>{void faceTracker.load();});
+$('#faceRetry').addEventListener('click',()=>{void prepareFaceTracker();});
 
 let recognitionMode = 'letters';
 const cameraDiagnostic={lastCapture:null,times:[],lastRender:0,rawHands:0,usableHands:0};
 function renderCameraDiagnostic(){
  const times=cameraDiagnostic.times,span=times.length>1?times[times.length-1]-times[0]:0;
- $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261003-diagnostics-1',input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
+ $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261010-single-1',delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
 }
 $('#copyCameraDiagnostics').addEventListener('click',async()=>{renderCameraDiagnostic();try{await navigator.clipboard.writeText($('#cameraDiagnostics').textContent);notify('Diagnostics copied. Paste them into this chat.');}catch{notify('Select and copy the text in Camera diagnostics.');}});
-let handLandmarker;
+let handLandmarker,handDelegate='',temporalCamera=null,temporalHands=[],temporalFrameAt=-Infinity,temporalLagMs=0;
 let stream;
 let running = false;
 let cameraStarting = false;
@@ -102,11 +104,12 @@ const motionStudio=createMotionStudio({
   onDiagnostic:data=>{cameraDiagnostic.lastCapture=data;renderCameraDiagnostic();},
   onFinish:()=>interpreter.finish()
 });
-createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();return motionStudio.setVocabulary(model,name);}});
+createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
 $('#motionTeach').addEventListener('click',()=>researchWords.disable(),true);
 
 function setRecognitionMode(mode,keepResearch=false){
   researchWords.cancel();if(!keepResearch)researchWords.disable();
+  if(temporalCamera&&mode!=='words')stopCamera();
   recognitionMode=mode;
   $('#wordRecognitionControls').hidden=mode!=='words';
   $('#recognitionMode').value=mode;
@@ -236,6 +239,13 @@ function setLive(letter){
   setRecognitionFeedback(letter&&committed===letter?`${letter} — recognized. Verify the draft before speaking.`:letter?`Hand detected · ${letter} — possible match. Hold steady.`:'Hand detected · No reliable match. Try a supported sign.');
 }
 
+async function prepareFaceTracker(){
+  try{
+    const vision=await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/+esm');
+    const files=await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/wasm');
+    await faceTracker.load(vision,files);
+  }catch{ $('#faceTrackingStatus').textContent='Unavailable';$('#faceRetry').hidden=false; }
+}
 async function loadRecognizer(){
   if(handLandmarker){void faceTracker.load();return;}
   cameraButton.disabled = true;
@@ -244,11 +254,12 @@ async function loadRecognizer(){
     const vision = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/+esm');
     const fileset = await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/wasm');
     const options={
-      baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task', delegate:'GPU'},
+      baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task', delegate:preferredVisionDelegate()},
       runningMode:'VIDEO', numHands:2, minHandDetectionConfidence:.65, minHandPresenceConfidence:.65, minTrackingConfidence:.6
     };
     try{handLandmarker=await vision.HandLandmarker.createFromOptions(fileset,options);}
-    catch{options.baseOptions.delegate='CPU';handLandmarker=await vision.HandLandmarker.createFromOptions(fileset,options);}
+    catch(error){if(options.baseOptions.delegate==='CPU')throw error;options.baseOptions.delegate='CPU';handLandmarker=await vision.HandLandmarker.createFromOptions(fileset,options);}
+    handDelegate=options.baseOptions.delegate;
     void faceTracker.load(vision,fileset);
   }catch(error){
     console.error(error);
@@ -266,12 +277,21 @@ async function startCamera(){
   clearInterval(demoTimer);
   try{
     if(!navigator.mediaDevices?.getUserMedia) throw new Error('Camera access is not supported by this browser.');
-    await loadRecognizer();
+    if(recognitionMode==='words'&&motionStudio.usesTemporalModel()){
+      temporalCamera=createTemporalCamera({
+        onDetection:(data,lag)=>{if(!running)return;temporalLagMs=lag;temporalHands=(data.landmarks||[]).filter(isUsableHand);temporalFrameAt=data.timestamp;consumeDetection(data,data.timestamp,data.imageAspect);},
+        onGap:()=>{motionStudio.cancel();temporalHands=[];setRecognitionFeedback('Camera timing changed or processing fell behind. Pause, then sign again.');},
+        onError:message=>{if(running){stopCamera();notify(message);}}
+      });
+      handDelegate=await temporalCamera.ready;void prepareFaceTracker();
+    }else await loadRecognizer();
+    if(attempt!==cameraAttempt)return;
     const acquired = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:960},height:{ideal:720}},audio:false});
     if(attempt!==cameraAttempt){acquired.getTracks().forEach(t=>t.stop());return;}
     stream=acquired;
     video.srcObject = stream;
     await video.play();
+    if(attempt!==cameraAttempt){acquired.getTracks().forEach(t=>t.stop());return;}
     running = true;
     $('#trackingState').textContent='LIVE';$('#captureFeed').textContent='LIVE';
     $('#pipelineTrack').classList.add('active');
@@ -283,17 +303,21 @@ async function startCamera(){
     setRecognitionFeedback('Camera ready — bring your hand into view.');
     detect();
   }catch(error){
+    if(attempt!==cameraAttempt)return;
     stopCamera();
     setRecognitionFeedback('Camera unavailable — check permission and try again.');
     notify(error.message || 'Camera permission was not granted.');
     $('#cameraHelp').textContent = 'Camera unavailable. Check camera permission and close other camera apps, or use the demonstration videos.';
-  }finally{cameraStarting=false;cameraButton.disabled=false;}
+  }finally{if(attempt===cameraAttempt){cameraStarting=false;cameraButton.disabled=false;}}
 }
 
 function stopCamera(){
+  temporalCamera?.close();temporalCamera=null;temporalHands=[];temporalLagMs=0;
   researchWords.cancel();
   setRecognitionFeedback('Camera off — select Start Signing to begin.');
   cameraAttempt++;
+  cameraStarting=false;
+  cameraButton.disabled=false;
   running = false;
   faceTracker.reset();
   $('#trackingState').textContent='STANDBY';$('#trackingHands').textContent='0 / 2';$('#captureFeed').textContent='OFFLINE';
@@ -337,7 +361,7 @@ function detect(){
     canvas.width=video.videoWidth;canvas.height=video.videoHeight;
     const now=performance.now();
     let detection={landmarks:[]};
-    if(handLandmarker){
+    if(handLandmarker&&!temporalCamera){
       try{detection=handLandmarker.detectForVideo(video,now);}
       catch(error){
         console.warn('Hand tracking stopped',error);
@@ -348,16 +372,25 @@ function detect(){
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
     faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing());
+    if(temporalCamera){
+      temporalCamera.push(video,now,motionStudio.isCapturing());
+      if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
+    }else consumeDetection(detection,now,video.videoHeight/video.videoWidth);
+  }
+  animationId=requestAnimationFrame(detect);
+}
+
+function consumeDetection(detection,now,imageAspect){
     const hands=(detection.landmarks||[]).filter(isUsableHand);
-    cameraDiagnostic.times.push(now);cameraDiagnostic.times=cameraDiagnostic.times.filter(t=>now-t<=2000);cameraDiagnostic.rawHands=(detection.landmarks||[]).length;cameraDiagnostic.usableHands=hands.length;
-    if(now-cameraDiagnostic.lastRender>=1000){cameraDiagnostic.lastRender=now;renderCameraDiagnostic();}
-    hands.forEach(drawHand);
+    const processedAt=performance.now();cameraDiagnostic.times.push(processedAt);cameraDiagnostic.times=cameraDiagnostic.times.filter(t=>processedAt-t<=2000);cameraDiagnostic.rawHands=(detection.landmarks||[]).length;cameraDiagnostic.usableHands=hands.length;
+    if(processedAt-cameraDiagnostic.lastRender>=1000){cameraDiagnostic.lastRender=processedAt;renderCameraDiagnostic();}
+    if(!temporalCamera)hands.forEach(drawHand);
     $('#trackingHands').textContent=`${hands.length} / 2`;
     if(recognitionMode==='words'){
       if(liveResult.hidden&&!motionStudio.isCapturing()&&!researchWords.active())setRecognitionFeedback(hands.length?($('#automaticWords').checked?'Hand detected — sign once, then pause.':'Hand detected — select Record a word to analyze.'):'No hand detected — bring your hands into view.');
       // Keep original handedness indices when rejecting clipped/small hands.
       const indices=(detection.landmarks||[]).map((p,i)=>isUsableHand(p)?i:-1).filter(i=>i>=0);
-      (researchWords.active()?researchWords:motionStudio).frame({landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:video.videoHeight/video.videoWidth},now);
+      (researchWords.active()?researchWords:motionStudio).frame({landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:imageAspect},now);
     }else if(hands.length===1){
       missingFrames=0;
       const points=hands[0];
@@ -376,8 +409,6 @@ function detect(){
       if(++missingFrames>8) committed='';
       if(hands.length>1)$('#cameraHelp').textContent='Use one hand for static letters, or switch to Words in motion.';
     }
-  }
-  animationId=requestAnimationFrame(detect);
 }
 
 $('#pipelineVoice').addEventListener('click',()=>{if(message)speakText(message);else notify('Add a message first');});

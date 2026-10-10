@@ -1,0 +1,21 @@
+{
+  "source": "/opt/handspeak-training/vocabulary-expansion-windowed-ordinary-source/development-features.json",
+  "sourceSha256": "8c25268c40e9a85a2f548fd468c59e1435782d5c74b292750a76af25e4d2869c",
+  "featureMode": "hands-only",
+  "parentSourceSha256": "89ebf566723070b515dfd5187c472d4fb63b6edc1b77010cb601c02a88ac9f91",
+  "rejectionActions": [
+    "MOVEMENT: ApplyEyeMakeup",
+    "MOVEMENT: ApplyLipstick",
+    "MOVEMENT: BrushingTeeth",
+    "MOVEMENT: HeadMassage",
+    "MOVEMENT: ShavingBeard",
+    "MOVEMENT: Typing"
+  ],
+  "trainClips": 2855,
+  "validationClips": 318,
+  "ordinaryGrouping": "Recording groups, not verified unique persons",
+  "windowPlanSha256": "47d8e4cbcf2cfbb588941661a888954b9771c260af3a012d2d22dc4e7905df31",
+  "additionalWindows": 313,
+  "usableTrainingWindows": 186,
+  "validationWindows": 37
+}

@@ -1,0 +1,26 @@
+{
+  "word": "FISH",
+  "deployed": true,
+  "deployedAt": "20261010T043306Z",
+  "modelFile": "models/motion-categories/single-fish.json",
+  "modelSha256": "0190b652658cec69ed482de5b9e6532dbf59f89599ad8dae4039d1472cd701ca",
+  "checkpointSha256": "afc2105894b48c2cdd77ff1d99a6ccfb7aa6bb6afd5e54feaa1772661facf5c3",
+  "backup": "/opt/handspeak-staging/deployment-backups/single-fish-20261010T043306Z",
+  "cameraTested": false,
+  "integrationTested": false,
+  "policy": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+  "recordedMetrics": {
+    "total": 4,
+    "correct": 3,
+    "wrong": 0,
+    "missed": 1,
+    "negativeTotal": 112,
+    "negativeFalse": 0,
+    "perWord": {
+      "FISH": {
+        "total": 4,
+        "correct": 3
+      }
+    }
+  }
+}

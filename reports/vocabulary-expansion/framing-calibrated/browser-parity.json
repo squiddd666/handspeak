@@ -1,0 +1,12 @@
+{
+  "checkpointSha256": "454b5ed628ae03f5fe5ea53b7f64bed624d6ffbafda81809b9602c261ecb4268",
+  "samples": 231,
+  "maxFeatureError": 4.643261171111135e-07,
+  "predictionsMatch": true,
+  "medianMs": 38.69999998807907,
+  "p95Ms": 41.599999994039536,
+  "scope": "Actual preview classifier parity on repeated development framing conditions; timing excludes hand detection. Not independent accuracy.",
+  "labelsCovered": 58,
+  "classifierSha256": "8946b8bf9d5c20059d6b88f29c46ac539aca03e18e957ec1931057a3d72f5798",
+  "modelJsonSha256": "60f10af12e911039a0c3f652c1d0ba9a178dc5977f07dce21bdf0b9abbb87058"
+}

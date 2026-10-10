@@ -1,0 +1,20 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "metrics": {
+    "total": 4,
+    "correct": 3,
+    "wrong": 0,
+    "missed": 1,
+    "negativeTotal": 112,
+    "negativeFalse": 0,
+    "perWord": {
+      "SICK": {
+        "total": 4,
+        "correct": 3
+      }
+    }
+  },
+  "passesRecordedClipGate": true
+}

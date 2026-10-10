@@ -1,6 +1,63 @@
 {
   "version": 1,
-  "groups": [],
-  "status": "withheld",
-  "reason": "New category models failed the accuracy and automatic-capture checks. Existing default and extra-word previews remain available."
+  "groups": [
+    {
+      "id": "single-fish",
+      "name": "FISH",
+      "labels": [
+        "FISH"
+      ],
+      "file": "models/motion-categories/single-fish.json",
+      "sha256": "0190b652658cec69ed482de5b9e6532dbf59f89599ad8dae4039d1472cd701ca",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 112,
+        "negativeFalse": 0,
+        "perWord": {
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "afc2105894b48c2cdd77ff1d99a6ccfb7aa6bb6afd5e54feaa1772661facf5c3",
+      "cameraTested": false,
+      "integrationTested": false
+    },
+    {
+      "id": "single-sick",
+      "name": "SICK",
+      "labels": [
+        "SICK"
+      ],
+      "file": "models/motion-categories/single-sick.json",
+      "sha256": "8bafc0e89fced6a113e157422fab2d02b89068302d77740c7b365d8b3068758b",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 112,
+        "negativeFalse": 0,
+        "perWord": {
+          "SICK": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "d7b14a3bf617078b778073cabd2c42fbe01da94a7948bae312b1cd942a6300b2",
+      "cameraTested": false,
+      "integrationTested": false
+    }
+  ],
+  "status": "experimental",
+  "reason": "Individual words passed recorded accuracy screens. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
 }

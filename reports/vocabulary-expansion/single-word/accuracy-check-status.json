@@ -1,0 +1,27 @@
+{
+  "CALL": {
+    "freshCorrect": 4,
+    "freshTotal": 4,
+    "otherSignFalseMatches": 1,
+    "otherSignTotal": 112,
+    "passed": false
+  },
+  "FIND": {
+    "knownCorrect": 3,
+    "knownTotal": 4,
+    "otherSignFalseMatches": 0,
+    "otherSignTotal": 132,
+    "ordinaryRecordingFalseMatches": 1,
+    "ordinaryRecordingTotal": 12,
+    "passed": false
+  },
+  "FISH": {
+    "knownChecksPassed": true,
+    "ordinaryWindowFalseMatches": 0,
+    "ordinaryWindowExamples": 49,
+    "additionalOrdinaryWindowFalseMatches": 0,
+    "additionalOrdinaryWindowExamples": 94,
+    "freshTest": "Blocked by disk space; no final accuracy result",
+    "passed": null
+  }
+}

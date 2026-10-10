@@ -1,0 +1,20 @@
+{
+  "stage": "complete",
+  "deployed": false,
+  "state": "complete",
+  "passesValidation": true,
+  "validation": {
+    "total": 4,
+    "correct": 4,
+    "wrong": 0,
+    "missed": 0,
+    "negativeTotal": 351,
+    "negativeFalse": 0,
+    "perWord": {
+      "SEE": {
+        "total": 4,
+        "correct": 4
+      }
+    }
+  }
+}

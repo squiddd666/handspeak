@@ -1,0 +1,15 @@
+{
+  "modelProtocolSha256": "bef2ccc5233ffc2ba2a0f36ac4feb226c12926c0e22ef5996096663d51e69bcf",
+  "checkpointSha256": "552ae582e79a143b49a4522c10e1d968ac84530af1ec6fb885a0ce727774e8c1",
+  "manifestSha256": "23f3719656e36606e42add163fde4467e0a5c865d8dc771cfb1d25fbaff5fe2d",
+  "reviewSha256": "ef955cd7f1f4a7e148d01d77f622b25f4df07823bf816c18cb7c5f5ba94ef819",
+  "implementations": {
+    "/opt/handspeak/repository/training/catalog/evaluate_novel_ordinary.py": "48282fcbf2b855206a1bd0db0e2fe6f0bc88335b854d3e143f65f6778637d6ed",
+    "/opt/handspeak/repository/training/catalog/run_dynamic_pose_training.py": "8fe241a05d181f87df03ab3aa87dcb870386956a633f6a5cef75711e7e6a4bc8",
+    "/opt/handspeak/repository/training/catalog/ordinary_windows.py": "4490a5b18bfb0413934ea8d99f13f09e03813ad4b9d0baa2980d2959ba9066d6",
+    "/opt/handspeak/repository/training/catalog/body_tip_features.py": "424121d02861a0e42dc8427c8c333b15c9758e241a23657e39f7a63bbc93c2ef",
+    "/opt/handspeak/repository/training/catalog/motion_window.py": "d675e8624e6efee3ce2532379446b3f78176369eb870bf9b59075c502c641827"
+  },
+  "rule": "Zero full-clip/window suggestions; at least one usable subwindow per action. All recordings retained, including tracking failures.",
+  "deployed": false
+}
