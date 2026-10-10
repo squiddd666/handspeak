@@ -1,9 +1,9 @@
 export function createInterpreter({getMessage,setMessage,speak=()=>{}}) {
   const $=s=>document.querySelector(s);
-  let result=null, applied=false, revision=0, lastSpoken=null, interacted=false;
+  let result=null, applied=false, revision=0, lastSpoken=null, interacted=false, warmChecks=0;
   const status=$('#interpretStatus'), box=$('#interpretResult'), button=$('#interpretButton');
   async function availability(){
-    try {const response=await fetch('/api/interpret/status');if(!response.ok)throw Error();const data=await response.json();if(!interacted)status.textContent=data.available?'Local sentence assistant ready. Up to 500 characters.':'Local model is unavailable. Your draft and other features still work.';}
+    try {const response=await fetch('/api/interpret/status');if(!response.ok)throw Error();const data=await response.json();if(!interacted){status.textContent=data.warming?'Local sentence assistant is warming up… Please wait a moment.':data.available?'Local sentence assistant ready. Up to 500 characters.':'Local model is unavailable. Your draft and other features still work.';if(data.warming&&warmChecks++<25)setTimeout(()=>void availability(),2000);}}
     catch{if(!interacted)status.textContent='Could not check the local model. You can retry interpretation.';}
   }
   async function interpret(autoSpeak=false){
@@ -36,7 +36,14 @@ export function createInterpreter({getMessage,setMessage,speak=()=>{}}) {
   }
   button.addEventListener('click',()=>{void interpret();});
   $('#speakInterpretation').addEventListener('click',()=>{if(result&&!result.needsClarification&&result.sentence)speak(result.sentence);});
-  $('#finishInterpretSpeak').addEventListener('change',()=>{revision++;});
+  $('#finishInterpretSpeak').addEventListener('change',()=>{
+    revision++;
+    const autoAdd=$('#sentenceAutoAdd');
+    if($('#finishInterpretSpeak').checked&&autoAdd){
+      autoAdd.checked=true;autoAdd.dispatchEvent(new Event('change'));
+      status.textContent='FINISH speech enabled. Detected words will be added to your draft automatically. Review them, then sign FINISH.';
+    }
+  });
   $('#interpretApply').addEventListener('click',()=>{
     if(!result||result.needsClarification)return;
     if(getMessage()!==result.original){status.textContent='Your draft changed. Interpret again before applying.';$('#interpretApply').disabled=true;return;}
@@ -48,6 +55,7 @@ export function createInterpreter({getMessage,setMessage,speak=()=>{}}) {
     setMessage(result.original);applied=false;$('#interpretUndo').hidden=true;$('#interpretApply').disabled=false;status.textContent='Original draft restored.';
   });
   new MutationObserver(()=>{revision++;lastSpoken=null;if(result&&!applied&&getMessage()!==result.original)$('#interpretApply').disabled=true;}).observe($('#messageText'),{childList:true,subtree:true,characterData:true});
+  if($('#finishInterpretSpeak').checked)$('#finishInterpretSpeak').dispatchEvent(new Event('change'));
   void availability();
   return {finish(){
     if(!$('#finishInterpretSpeak').checked)return false;

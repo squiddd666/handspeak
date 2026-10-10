@@ -1,11 +1,11 @@
 import {createTemporalCamera} from './temporal-camera.js?v=20261010-single-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
-import {createResearchWords} from './research-words.js?v=20261003-auto-server-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-accuracy-1';
-import {createInterpreter} from './interpretation.js?v=20261011-llm-feedback-1';
+import {createResearchWords} from './research-words.js?v=20261011-finish-draft-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-camera-percent-1';
+import {createInterpreter} from './interpretation.js?v=20261011-llm-warm-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
-import { createMotionStudio } from './motion-studio.js?v=20261010-single-1';
+import { createMotionStudio } from './motion-studio.js?v=20261011-finish-draft-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -18,6 +18,12 @@ const placeholder = $('#cameraPlaceholder');
 const liveResult = $('#liveResult');
 const liveLetter = $('#liveLetter');
 const liveConfidence = $('#liveConfidence');
+let vocabularyLibrary;
+function setWordCameraResult(word,detail,daily=false){
+  liveResult.hidden=word==='—';liveLetter.textContent=word;
+  liveConfidence.textContent=detail||'Possible match — verify before adding';
+  vocabularyLibrary?.showCameraAccuracy(word,{daily,personal:!daily&&motionStudio.hasPersonalWord(word)});
+}
 const messageText = $('#messageText');
 const toast = $('#toast');
 
@@ -93,18 +99,18 @@ function speakText(text){
 const interpreter=createInterpreter({speak:speakText,getMessage:()=>message,setMessage:text=>{message=text;renderMessage();}});
 
 const researchWords=createResearchWords({onWord:addWord,
- onStatus:(word,detail)=>{liveResult.hidden=word==='—';liveLetter.textContent=word;liveConfidence.textContent=detail;setRecognitionFeedback(detail||word);},
+ onStatus:(word,detail)=>{setWordCameraResult(word,detail,true);setRecognitionFeedback(detail||word);},
  onChange:enabled=>{motionStudio.cancel();liveResult.hidden=true;if(enabled)setRecognitionMode('words',true);}
 });
 const motionStudio=createMotionStudio({
   isRunning:()=>running && recognitionMode==='words',
   onWord:addWord,
-  onStatus:(word,detail)=>{liveResult.hidden=word==='—';liveLetter.textContent=word;liveConfidence.textContent=detail||'Possible match — verify before adding';setRecognitionFeedback(word==='—'?(detail||'Ready — sign once, then pause.'):`${word} — ${detail||'Possible match; verify before adding.'}`);},
+  onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(word==='—'?(detail||'Ready — sign once, then pause.'):`${word} — ${detail||'Possible match; verify before adding.'}`);},
   speak:speakText,
   onDiagnostic:data=>{cameraDiagnostic.lastCapture=data;renderCameraDiagnostic();},
   onFinish:()=>interpreter.finish()
 });
-createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
+vocabularyLibrary=createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
 $('#motionTeach').addEventListener('click',()=>researchWords.disable(),true);
 
 function setRecognitionMode(mode,keepResearch=false){
@@ -233,6 +239,7 @@ function setRecognitionFeedback(text){
   if(node && node.textContent!==text)node.textContent=text;
 }
 function setLive(letter){
+  vocabularyLibrary?.showCameraAccuracy(null);
   liveResult.hidden = false;
   liveLetter.textContent = letter || 'No reliable match';
   liveConfidence.textContent = letter?'Possible match — hold steady, then verify the text':'Adjust your hand and try a supported sign';

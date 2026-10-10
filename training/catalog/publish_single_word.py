@@ -16,7 +16,7 @@ BASE = Path('/opt/handspeak-training/single-word-20261010')
 REPORT = REPO/'reports/vocabulary-expansion/single-word'
 STAGE = Path('/opt/handspeak-staging/single-word-20261010/release-runtime')
 LIVE = Path('/opt/handspeak/current')
-ASSETS = ['app.js', 'index.html', 'interpretation.js', 'sign-examples.js', 'motion-accuracy.js', 'models/motion-word-accuracy.json', 'motion-studio.js', 'vocabulary-library.js', 'automatic-motion.js',
+ASSETS = ['app.js', 'index.html', 'experience.css', 'interpretation.js', 'research-words.js', 'sign-examples.js', 'motion-accuracy.js', 'models/motion-word-accuracy.json', 'motion-studio.js', 'vocabulary-library.js', 'automatic-motion.js',
           'face-tracker.js', 'temporal-word-model.js', 'camera-performance.js', 'temporal-camera.js',
           'hand-detection-worker.js'] + ['temporal-motion/'+name for name in
           ['classifier.js', 'runtime.js', 'temporal-features.js', 'temporal-window.js', 'motion-model.js', 'gesture-model.js']]

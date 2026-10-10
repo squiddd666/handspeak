@@ -557,6 +557,7 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
 def run(host: str = "127.0.0.1", port: int = 8000) -> None:
     initialize_database()
     server = ThreadingHTTPServer((host, port), HandSpeakHandler)
+    interpreter.warmup()
     print(f"HandSpeak Web is running at http://{host}:{port}")
     print("Press Ctrl+C to stop.")
     try:

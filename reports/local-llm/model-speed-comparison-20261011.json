@@ -1,0 +1,213 @@
+{
+  "method": "Sequential local API probes; fixed existing prompt and schema, two CPU threads. Small development examples, not a general quality benchmark. First call can include model loading.",
+  "results": [
+    {
+      "model": "qwen3:1.7b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 2.847,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "I want water, please.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "WATER PLEASE",
+      "seconds": 2.425,
+      "response": {
+        "original": "WATER PLEASE",
+        "sentence": "Water, please.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "I NO WANT FOOD",
+      "seconds": 3.155,
+      "response": {
+        "original": "I NO WANT FOOD",
+        "sentence": "I do not want food.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "YOU WANT WATER ?",
+      "seconds": 3.114,
+      "response": {
+        "original": "YOU WANT WATER ?",
+        "sentence": "Do you want water?",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "I WANT 2 WATER",
+      "seconds": 2.801,
+      "response": {
+        "original": "I WANT 2 WATER",
+        "sentence": "I want 2 waters.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "BOOK GO FOOD",
+      "seconds": 3.217,
+      "response": {
+        "original": "BOOK GO FOOD",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the book, going, and food related?",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 2.691,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "I want water, please.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:1.7b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 2.184,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "I want water, please.",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:1.7b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 7.707,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the water, please, and wanting related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "WATER PLEASE",
+      "seconds": 2.132,
+      "response": {
+        "original": "WATER PLEASE",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the water, please, and any other elements related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "I NO WANT FOOD",
+      "seconds": 2.066,
+      "response": {
+        "original": "I NO WANT FOOD",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the meaning of 'I NO WANT FOOD' related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "YOU WANT WATER ?",
+      "seconds": 1.794,
+      "response": {
+        "original": "YOU WANT WATER ?",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the water and wanting related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "I WANT 2 WATER",
+      "seconds": 1.827,
+      "response": {
+        "original": "I WANT 2 WATER",
+        "sentence": "I want 2 water",
+        "needsClarification": false,
+        "note": "Review the meaning before using this sentence.",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "BOOK GO FOOD",
+      "seconds": 1.587,
+      "response": {
+        "original": "BOOK GO FOOD",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the book, going, and food related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 1.938,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the water, please, and wanting related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    },
+    {
+      "model": "qwen3:0.6b",
+      "input": "I WANT WATER PLEASE",
+      "seconds": 1.694,
+      "response": {
+        "original": "I WANT WATER PLEASE",
+        "sentence": "",
+        "needsClarification": true,
+        "note": "How are the water, please, and wanting related?",
+        "model": "qwen3:0.6b",
+        "local": true
+      }
+    }
+  ]
+}

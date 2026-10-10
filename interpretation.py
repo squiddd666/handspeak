@@ -22,6 +22,18 @@ class Interpreter:
  def __init__(self):
   self.enabled=os.environ.get('HANDSPEAK_LLM_ENABLED')=='1';self.model=os.environ.get('HANDSPEAK_LLM_MODEL','qwen3:1.7b')
   self.slot=threading.BoundedSemaphore(1);self.lock=threading.Lock();self.attempts={}
+  self.warming=False
+ def payload(self,draft):
+  return {'model':self.model,'system':SYSTEM,'prompt':json.dumps({'draft':draft.strip()},ensure_ascii=False),'format':SCHEMA,'stream':False,'think':False,'keep_alive':-1,'options':{'temperature':0,'num_ctx':2048,'num_predict':200,'num_thread':2}}
+ def warmup(self):
+  if not self.enabled or not self.slot.acquire(blocking=False):return False
+  self.warming=True
+  def run():
+   try:self.request('generate',self.payload('HELLO'))
+   except (OSError,ValueError,KeyError,TypeError):pass
+   finally:self.warming=False;self.slot.release()
+  threading.Thread(target=run,daemon=True,name='sentence-model-warmup').start()
+  return True
  def request(self,path,payload=None,timeout=45):
   req=urllib.request.Request('http://127.0.0.1:11434/api/'+path,data=None if payload is None else json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
   # Ignore proxy environment settings: draft text can only reach the local service.
@@ -34,7 +46,7 @@ class Interpreter:
   if self.enabled:
    try:ready=any(m.get('name')==self.model for m in self.request('tags',timeout=2).get('models',[]))
    except (OSError,ValueError,KeyError,TypeError):pass
-  return {'available':ready,'model':self.model if self.enabled else None,'local':True,'maxCharacters':500}
+  return {'available':ready,'warming':self.warming,'model':self.model if self.enabled else None,'local':True,'maxCharacters':500}
  def interpret(self,draft,client):
   if not isinstance(draft,str) or not draft.strip() or len(draft)>500:raise InterpretationError(422,'Enter 1–500 characters to interpret. Edit a longer message first.')
   if any(ord(c)<32 and c not in '\n\t\r' for c in draft):raise InterpretationError(422,'Remove control characters from the draft.')
@@ -44,10 +56,10 @@ class Interpreter:
    self.attempts={k:[t for t in ts if now-t<60] for k,ts in self.attempts.items() if any(now-t<60 for t in ts)}
    if len(self.attempts.get(client,[]))>=3:raise InterpretationError(429,'Please wait one minute before another interpretation.')
    if len(self.attempts)>=10000 and client not in self.attempts:raise InterpretationError(503,'Interpretation is busy. Try again shortly.')
-   if not self.slot.acquire(blocking=False):raise InterpretationError(503,'Another interpretation is running. Try again shortly.')
+   if not self.slot.acquire(blocking=False):raise InterpretationError(503,'The local model is warming up. Try again shortly.' if self.warming else 'Another interpretation is running. Try again shortly.')
    self.attempts.setdefault(client,[]).append(now)
   try:
-   payload={'model':self.model,'system':SYSTEM,'prompt':json.dumps({'draft':draft.strip()},ensure_ascii=False),'format':SCHEMA,'stream':False,'think':False,'keep_alive':'10m','options':{'temperature':0,'num_ctx':2048,'num_predict':200,'num_thread':2}}
+   payload=self.payload(draft)
    result=self.request('generate',payload)
    if not isinstance(result,dict):raise ValueError('Invalid response')
    if result.get('done') is not True or result.get('done_reason')=='length':raise ValueError('Incomplete output')

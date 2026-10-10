@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-10T19:58:56.116697+00:00",
+  "site": "https://handspeak.cvsu.dev",
+  "seconds": 2.779,
+  "response": {
+    "original": "I WANT WATER PLEASE",
+    "sentence": "I want water, please.",
+    "needsClarification": false,
+    "note": "Review the meaning before using this sentence.",
+    "model": "qwen3:1.7b",
+    "local": true
+  },
+  "pageErrors": [],
+  "draftPreserved": true,
+  "cameraRecognitionTested": false
+}

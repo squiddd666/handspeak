@@ -182,6 +182,14 @@ class MotionTests(unittest.TestCase):
         self.js.eval("finishEnabled=false;record('',1,false);")
         self.assertEqual(self.js.eval('JSON.stringify(added)'), '["FINISH"]')
 
+    def test_enabling_auto_add_preserves_pending_word_once(self):
+        self.boot_studio()
+        self.js.eval("for(let i=0;i<3;i++){record('HELLO',1);record('BYE',-1)}record('',1,false);")
+        self.assertEqual(self.js.eval('added.length'),0)
+        self.js.eval("elements['#sentenceAutoAdd'].checked=true;elements['#sentenceAutoAdd'].change();elements['#sentenceAutoAdd'].change();")
+        self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
+        self.assertEqual(self.js.eval('spoken.length'),0)
+
     def test_nested_preview_keeps_older_words_priority(self):
         self.js.eval("const strict={maxDistance:.1,minRatio:1.3,minVotes:2,mirror:false};const prior={labels:['FAR'],parameters:strict,samples:Array.from({length:3},()=>({label:'FAR',sequence:sequence(3)}))};const expanded={labels:['FAR','NEW'],newLabels:['NEW'],parameters:strict,baselineExtra:prior,samples:prior.samples.concat(Array.from({length:3},()=>({label:'NEW',sequence:sequence(6)})))};")
         self.assertEqual(self.js.eval("recognizeExpandedMotion(sequence(3),examples,strict,expanded).label"),'FAR')

@@ -86,6 +86,7 @@ export function createResearchWords({onWord,onStatus,onChange}){
  $('#automaticWords').addEventListener('change',()=>{cancel();if(active())help($('#automaticWords').checked?'Automatic server capture enabled. Sign once, then pause.':'Automatic capture paused. You can record a word manually.');});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)cancel();});
  $('#researchAccept').addEventListener('click',()=>{if(active()&&pending&&onWord(pending)!==false){pending=null;help('Reviewed word added to your draft. Use Speak message when ready. Pause briefly before signing the next word.');controls();}});
+ $('#sentenceAutoAdd').addEventListener('change',()=>{if(active()&&pending&&$('#sentenceAutoAdd').checked&&onWord(pending)!==false){pending=null;help('Matched word added to your draft. Review it before speaking.');controls();}});
 
  document.addEventListener('handspeak:enable-word-preview',()=>{
   const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change',{bubbles:true}));

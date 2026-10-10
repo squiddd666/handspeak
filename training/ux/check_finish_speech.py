@@ -5,7 +5,7 @@ root=Path(__file__).resolve().parents[2]
 with sync_playwright() as p:
  b=p.chromium.launch(args=['--no-sandbox']);page=b.new_page()
  ids=['interpretStatus','interpretResult','interpretButton','interpretOriginal','interpretSuggestion','interpretNote','interpretUndo','interpretApply','speakInterpretation','messageText']
- html=''.join('<button id="'+i+'"></button>' for i in ids)+'<input type="checkbox" id="finishInterpretSpeak">'
+ html=''.join('<button id="'+i+'"></button>' for i in ids)+'<input type="checkbox" id="finishInterpretSpeak"><input type="checkbox" id="sentenceAutoAdd">'
  page.route('**/__finish_test',lambda r:r.fulfill(body=html,content_type='text/html'))
  page.route('**/test-interpreter.js',lambda r:r.fulfill(body=(root/'interpretation.js').read_text(),content_type='text/javascript'))
  page.goto('https://handspeak.cvsu.dev/__finish_test')
@@ -21,7 +21,7 @@ with sync_playwright() as p:
   page.evaluate('(unclear)=>respond({original:draft,sentence:unclear?"":"I want water, please.",needsClarification:unclear,note:"Review."})',unclear)
   page.wait_for_function('!document.querySelector("#interpretButton").disabled')
  edit('I WANT WATER PLEASE');assert not trigger();assert page.evaluate('requests.length')==0
- page.locator('#finishInterpretSpeak').check();trigger()
+ page.locator('#finishInterpretSpeak').check();assert page.locator('#sentenceAutoAdd').is_checked();trigger()
  page.evaluate('ready()');page.wait_for_timeout(1100)
  assert 'seconds elapsed' in page.locator('#interpretStatus').inner_text()
  assert page.locator('#interpretButton').get_attribute('aria-busy')=='true'

@@ -163,6 +163,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   $('#motionRecognize').addEventListener('click',()=>start(false));
   $('#motionCancel').addEventListener('click',cancel);
   $('#motionAccept').addEventListener('click',()=>acceptPending());
+  $('#sentenceAutoAdd').addEventListener('change',()=>{if($('#sentenceAutoAdd').checked&&pending&&pending.label!=='FINISH'){acceptPending(true);render();}});
   $('#motionRemove').addEventListener('click',()=>{
     if(capture)return;
     const label=$('#motionLabel').value.trim().replace(/\s+/g,' ').toUpperCase();
@@ -176,6 +177,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   void loadExpansion();
   return {
     usesTemporalModel:()=>isTemporalWordModel(categoryModel),
+    hasPersonalWord:label=>!isTemporalWordModel(categoryModel)&&examples.some(example=>example.label===label),
     setVocabulary(model,name=''){
       if(!defaultModel)return false;
       if(isTemporalWordModel(model)&&!validTemporalWordModel(model))return false;

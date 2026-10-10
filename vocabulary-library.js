@@ -3,6 +3,17 @@ const text=(tag,value,className)=>{const e=document.createElement(tag);e.textCon
 export function createVocabularyLibrary({onWord,setVocabulary}) {
   const $=s=>document.querySelector(s),size=12;
   let catalog=null,packs=[],page=0,active='',loadId=0,libraryId=0,accuracyProfiles={};
+  let cameraMatch=null;
+  function renderCameraAccuracy(){
+    const output=$('#liveWordAccuracy');if(!output)return;
+    output.hidden=!cameraMatch;if(!cameraMatch)return;
+    const {label,daily,personal}=cameraMatch;
+    const pack=packs.find(pack=>pack.id===active);
+    const profile=accuracyProfiles[daily?'daily':$('#expandedWords').checked&&!$('#expandedWords').disabled?'expanded':'default'];
+    const metrics=personal?null:!daily&&pack?publishedAccuracy(pack,label):profile?.words?.[label];
+    output.textContent=accuracyText(metrics);
+    output.title='Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified.';
+  }
   function renderMotionAccuracy(){
     const summary=$('#motionAccuracySummary'),body=$('#motionWordAccuracy');if(!summary||!body)return;
     const pack=packs.find(pack=>pack.id===active),daily=$('#researchWordsToggle').checked;
@@ -95,5 +106,9 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
   document.addEventListener('handspeak:default-practice',async event=>{if(!await activate(''))return;const extra=$('#expandedWords');if(!extra.disabled){extra.checked=extra.checked||['DRINK','WATER','BOOK','FOOD','HUNGRY','LIKE','GO'].includes(event.detail.label);extra.dispatchEvent(new Event('change'));}cameraMode();});
   document.addEventListener('handspeak:practice',event=>{const item=catalog?.items.find(i=>i.id===event.detail.id);if(item)void practice(item);});
   void load();
-  void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;render();renderMotionAccuracy();});
+  void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;render();renderMotionAccuracy();renderCameraAccuracy();});
+  return {showCameraAccuracy(label,{daily=false,personal=false}={}){
+    cameraMatch=typeof label==='string'&&/^[A-Z][A-Z '-]{0,29}$/.test(label)?{label,daily,personal}:null;
+    renderCameraAccuracy();
+  }};
 }
