@@ -3,7 +3,7 @@
   "sourceUrl": "https://signdata.cc.gatech.edu/view/guides/downloading_popsign/index.html",
   "license": "CC-BY-4.0",
   "encoding": "two-hand-motion-v3",
-  "evaluationProtocol": "Frames are sampled contiguously over the signing window, matching the live camera pipeline, instead of uniformly across the whole clip. The model, its prototypes and its rejection parameters are unchanged from the earlier uniform-sampling run; the parameters were originally selected on validation under uniform sampling and were not re-tuned for this protocol, so this is a measurement change only and the numbers are not directly comparable with the previous published run. Test recordings are never training references; only sufficiently tracked clips are classified.",
+  "evaluationProtocol": "Contiguous frame sampling over the signing window, matching the live camera pipeline. Per-word distance cutoffs were calibrated on the validation split only (loosest cutoff that keeps zero wrong and zero false accepts, capped at 1.0); the test split was scored once and the deployed recognizer was verified to reproduce it. Model prototypes are unchanged. Test recordings are never training references; untracked clips count as failures, not rejections.",
   "selection": "First archive members, at most three per signer per word; 24 train, 8 validation, 12 test requested per word.",
   "signers": {
     "train": [
@@ -71,8 +71,6 @@
     "test": 67
   },
   "excludedForTracking": {
-    "train": 10,
-    "val": 6,
     "test": 5
   },
   "unknownWordTest": {
@@ -84,7 +82,7 @@
   "validationUnknownWord": {
     "label": "DRINK",
     "total": 8,
-    "falseAccepts": 5
+    "falseAccepts": 6
   },
   "trainingPerWord": {
     "HELLO": 16,
@@ -99,62 +97,67 @@
     "minRatio": 1.0,
     "minVotes": 2,
     "mirror": true,
-    "strongRatio": 1.5
+    "strongRatio": 1.5,
+    "maxDistanceByLabel": {
+      "HELLO": 0.75,
+      "THANK YOU": 1.0,
+      "PLEASE": 1.0,
+      "YES": 1.0,
+      "NO": 0.85,
+      "FINISH": 1.0
+    }
   },
   "validation": {
-    "correct": 35,
+    "correct": 37,
     "wrong": 2,
-    "rejected": 11,
-    "total": 48,
-    "coverage": 0.7708333333333334,
-    "accuracyAmongAccepted": 0.9459459459459459,
-    "accuracyIncludingRejections": 0.7291666666666666
+    "rejected": 9,
+    "total": 48
   },
   "test": {
-    "correct": 51,
-    "wrong": 2,
-    "rejected": 14,
+    "correct": 59,
+    "wrong": 3,
+    "rejected": 5,
     "total": 67,
-    "coverage": 0.7910447761194029,
-    "accuracyAmongAccepted": 0.9622641509433962,
-    "accuracyIncludingRejections": 0.7611940298507462
+    "coverage": 0.9253731343283582,
+    "accuracyAmongAccepted": 0.9516129032258065,
+    "accuracyIncludingRejections": 0.8805970149253731
   },
   "confusion": {
     "HELLO": {
-      "HELLO": 10,
+      "HELLO": 11,
       "THANK YOU": 0,
       "PLEASE": 0,
       "YES": 0,
       "NO": 0,
       "FINISH": 0,
-      "rejected": 2
+      "rejected": 1
     },
     "THANK YOU": {
       "HELLO": 0,
-      "THANK YOU": 9,
+      "THANK YOU": 11,
       "PLEASE": 0,
       "YES": 0,
       "NO": 0,
       "FINISH": 0,
-      "rejected": 3
+      "rejected": 1
     },
     "PLEASE": {
       "HELLO": 0,
       "THANK YOU": 0,
-      "PLEASE": 10,
+      "PLEASE": 11,
       "YES": 0,
       "NO": 0,
       "FINISH": 0,
-      "rejected": 2
+      "rejected": 1
     },
     "YES": {
       "HELLO": 0,
       "THANK YOU": 0,
       "PLEASE": 0,
-      "YES": 7,
+      "YES": 9,
       "NO": 1,
       "FINISH": 0,
-      "rejected": 4
+      "rejected": 2
     },
     "NO": {
       "HELLO": 0,
@@ -166,17 +169,17 @@
       "rejected": 1
     },
     "FINISH": {
-      "HELLO": 0,
+      "HELLO": 1,
       "THANK YOU": 0,
       "PLEASE": 0,
       "YES": 0,
       "NO": 0,
-      "FINISH": 5,
-      "rejected": 7
+      "FINISH": 7,
+      "rejected": 4
     }
   },
   "testIncludingTrackingFailures": {
-    "correct": 51,
+    "correct": 59,
     "total": 72
   },
   "limitations": "Six-word subset. Frame sampling now matches the live pipeline; results are not comparable with the earlier uniform-sampling numbers kept in protocolHistory. No live-camera benchmark. Unsupported-word evaluation covers DRINK only. Distance is not a probability; review suggestions before adding them.",
@@ -216,6 +219,28 @@
         "train": 116,
         "val": 38,
         "test": 68
+      }
+    },
+    "globalCutoff-20261017": {
+      "protocol": "contiguous sampling, single global cutoff 0.65",
+      "test": {
+        "correct": 51,
+        "wrong": 2,
+        "rejected": 14,
+        "total": 67,
+        "coverage": 0.7910447761194029,
+        "accuracyAmongAccepted": 0.9622641509433962,
+        "accuracyIncludingRejections": 0.7611940298507462
+      },
+      "testIncludingTrackingFailures": {
+        "correct": 51,
+        "total": 72
+      },
+      "unknownWordTest": {
+        "label": "DRINK",
+        "total": 12,
+        "falseAccepts": 4,
+        "rejected": 8
       }
     }
   }

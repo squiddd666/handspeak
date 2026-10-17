@@ -2,23 +2,23 @@
   "version": 1,
   "profiles": {
     "default": {
-      "model": "Default six-word model (deployment-faithful frame sampling)",
-      "scope": "Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; live-camera accuracy still unverified. Protocol changed 2026-10-17; earlier numbers are in protocolHistory.",
+      "model": "Default six-word model with per-word distance cutoffs",
+      "scope": "Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified.",
       "words": {
         "HELLO": {
-          "correct": 10,
+          "correct": 11,
           "total": 12
         },
         "THANK YOU": {
-          "correct": 9,
+          "correct": 11,
           "total": 12
         },
         "PLEASE": {
-          "correct": 10,
+          "correct": 11,
           "total": 12
         },
         "YES": {
-          "correct": 7,
+          "correct": 9,
           "total": 12
         },
         "NO": {
@@ -26,11 +26,11 @@
           "total": 12
         },
         "FINISH": {
-          "correct": 5,
+          "correct": 7,
           "total": 12
         }
       },
-      "note": "Updated 2026-10-17 from uniform to contiguous frame sampling. Model, prototypes and rejection parameters unchanged. See models/asl-words-evaluation.json protocolHistory."
+      "note": "2026-10-17: contiguous sampling, then per-word distance cutoffs calibrated on validation. Model prototypes unchanged; recognizer verified in JavaScript. Earlier runs retained in protocolHistory."
     },
     "expanded": {
       "model": "Default + extra-word preview",
