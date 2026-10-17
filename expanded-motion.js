@@ -1,4 +1,4 @@
-import {recognizeMotion} from './motion-model.js?v=20261001-auto-cache-1';
+import {recognizeMotion} from './motion-model.js?v=20261018-perword-1';
 
 // The expanded vocabulary competes only when the user enables the preview.
 export function recognizeExpandedMotion(sequence, examples, parameters, expansion) {

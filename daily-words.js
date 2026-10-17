@@ -1,4 +1,4 @@
-import {validMotion} from './motion-model.js?v=20261001-auto-cache-1';
+import {validMotion} from './motion-model.js?v=20261018-perword-1';
 
 // Server preview and optional personal training are separate choices.
 const words=['NAME','HOME','HAVE','WANT','LOVE'];

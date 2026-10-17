@@ -116,7 +116,9 @@ export function recognizeMotion(sequence, examples, parameters={maxDistance:.65,
   const best=ranked[0],other=ranked.find(e=>e.label!==best.label);
   const separation=other?other.distance/(best.distance+1e-6):Infinity;
   const votes=ranked.slice(0,3).filter(e=>e.label===best.label).length;
-  if(best.distance>parameters.maxDistance || separation<parameters.minRatio
+  // Optional per-word distance cutoffs; falls back to the global maximum.
+  const limit=parameters.maxDistanceByLabel?.[best.label]??parameters.maxDistance;
+  if(best.distance>limit || separation<parameters.minRatio
     || (votes<parameters.minVotes&&separation<(parameters.strongRatio??Infinity)))return null;
   return {label:best.label,distance:best.distance};
 }

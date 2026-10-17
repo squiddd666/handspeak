@@ -2,7 +2,7 @@ import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
 import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261010-single-1';
 import {recognizeExpandedMotion} from './expanded-motion.js?v=20261002-sentences-1';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261010-single-1';
-import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261001-auto-cache-1';
+import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261018-perword-1';
 
 export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=>false,onDiagnostic=()=>{}}){
   const $=s=>document.querySelector(s), key='handspeak-motion-v3';
@@ -23,7 +23,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   }catch{}
   async function loadPretrained(){
     try{
-      const response=await fetch('./models/asl-words.json?v=20261001-auto-cache-1');
+      const response=await fetch('./models/asl-words.json?v=20261018-perword-1');
       if(!response.ok)throw new Error('Word model download failed');
       const model=await response.json();
       if(model.version!==1||model.encoding!=='two-hand-motion-v3'||!validMotionParameters(model.parameters)
