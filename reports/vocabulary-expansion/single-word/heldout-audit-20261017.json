@@ -1,0 +1,737 @@
+{
+  "generated": "2026-10-17",
+  "source_protocol": "pain/fresh/protocol.json",
+  "method": "Range-request scan of each label tar in the PopSign v1 test archive; a clip is eligible when its filename is not in knownNames and its signer is not in excludedSigners; scanning stops once 2 eligible clips are found.",
+  "requirement": "negativeClipsPerWord=2 for every label in mappings",
+  "labels": [
+    {
+      "label": "SHOWER",
+      "eligible": 1,
+      "mp4": 19,
+      "headers": 20,
+      "tar_bytes": 33146880,
+      "eligible_signers": [
+        "8037"
+      ],
+      "scanned_to_end": true,
+      "error": null
+    },
+    {
+      "label": "AIRPLANE",
+      "eligible": 2,
+      "mp4": 26,
+      "headers": 27,
+      "tar_bytes": 610324480,
+      "eligible_signers": [
+        "8039",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "BECAUSE",
+      "eligible": 2,
+      "mp4": 26,
+      "headers": 27,
+      "tar_bytes": 487710720,
+      "eligible_signers": [
+        "8037",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "BED",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 591831040,
+      "eligible_signers": [
+        "8039",
+        "8037"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "BOOK",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 576614400,
+      "eligible_signers": [
+        "8032",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "BOY",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 567859200,
+      "eligible_signers": [
+        "8031",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "BROTHER",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 118128640,
+      "eligible_signers": [
+        "8037"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "CALL",
+      "eligible": 2,
+      "mp4": 40,
+      "headers": 41,
+      "tar_bytes": 613099520,
+      "eligible_signers": [
+        "8031",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "CAN",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 546304000,
+      "eligible_signers": [
+        "8033",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "CAR",
+      "eligible": 2,
+      "mp4": 28,
+      "headers": 29,
+      "tar_bytes": 446965760,
+      "eligible_signers": [
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "CHAIR",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 418222080,
+      "eligible_signers": [
+        "8035",
+        "8031"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "CHILD",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 449351680,
+      "eligible_signers": [
+        "8038",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "DRINK",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 555970560,
+      "eligible_signers": [
+        "8038",
+        "8037"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "FIND",
+      "eligible": 2,
+      "mp4": 38,
+      "headers": 39,
+      "tar_bytes": 228823040,
+      "eligible_signers": [
+        "8031"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "FINE",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 544112640,
+      "eligible_signers": [
+        "8038",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "FINISH",
+      "eligible": 2,
+      "mp4": 42,
+      "headers": 43,
+      "tar_bytes": 573480960,
+      "eligible_signers": [
+        "8037",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "FISH",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 419328000,
+      "eligible_signers": [
+        "8031",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "GIRL",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 590448640,
+      "eligible_signers": [
+        "8035",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "GIVE",
+      "eligible": 2,
+      "mp4": 28,
+      "headers": 29,
+      "tar_bytes": 421662720,
+      "eligible_signers": [
+        "8035",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "GRANDFATHER",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 629053440,
+      "eligible_signers": [
+        "8039",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "GRANDMOTHER",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 562155520,
+      "eligible_signers": [
+        "8032",
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HAVE",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 566865920,
+      "eligible_signers": [
+        "8031",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HEAR",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 299376640,
+      "eligible_signers": [
+        "8038",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HELLO",
+      "eligible": 2,
+      "mp4": 42,
+      "headers": 43,
+      "tar_bytes": 570572800,
+      "eligible_signers": [
+        "8031",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HOME",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 611020800,
+      "eligible_signers": [
+        "8033",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HOT",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 549539840,
+      "eligible_signers": [
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "HUNGRY",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 571484160,
+      "eligible_signers": [
+        "8031",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "LATER",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 535285760,
+      "eligible_signers": [
+        "8032",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "LIKE",
+      "eligible": 2,
+      "mp4": 34,
+      "headers": 35,
+      "tar_bytes": 564428800,
+      "eligible_signers": [
+        "8031",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "LISTEN",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 388126720,
+      "eligible_signers": [
+        "8039",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "LOOK",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 550400000,
+      "eligible_signers": [
+        "8036",
+        "8037"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "MAN",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 424857600,
+      "eligible_signers": [
+        "8037",
+        "8031"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "MILK",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 592568320,
+      "eligible_signers": [
+        "8033",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "MORNING",
+      "eligible": 2,
+      "mp4": 30,
+      "headers": 31,
+      "tar_bytes": 585943040,
+      "eligible_signers": [
+        "8033",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "NIGHT",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 617144320,
+      "eligible_signers": [
+        "8037",
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "NO",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 562872320,
+      "eligible_signers": [
+        "8037",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "NOW",
+      "eligible": 2,
+      "mp4": 28,
+      "headers": 29,
+      "tar_bytes": 578037760,
+      "eligible_signers": [
+        "8037",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "PAIN",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 550287360,
+      "eligible_signers": [
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "PEN",
+      "eligible": 2,
+      "mp4": 26,
+      "headers": 27,
+      "tar_bytes": 693749760,
+      "eligible_signers": [
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "PENCIL",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 442716160,
+      "eligible_signers": [
+        "8037"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "PLEASE",
+      "eligible": 2,
+      "mp4": 42,
+      "headers": 43,
+      "tar_bytes": 637296640,
+      "eligible_signers": [
+        "8037",
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "READ",
+      "eligible": 2,
+      "mp4": 28,
+      "headers": 29,
+      "tar_bytes": 609239040,
+      "eligible_signers": [
+        "8037",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "RIDE",
+      "eligible": 2,
+      "mp4": 26,
+      "headers": 27,
+      "tar_bytes": 627066880,
+      "eligible_signers": [
+        "8031"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "ROOM",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 475842560,
+      "eligible_signers": [
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "SEE",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 561674240,
+      "eligible_signers": [
+        "8036",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "SHOES",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 582471680,
+      "eligible_signers": [
+        "8039",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "SICK",
+      "eligible": 2,
+      "mp4": 40,
+      "headers": 41,
+      "tar_bytes": 585594880,
+      "eligible_signers": [
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "SPEAK",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 607488000,
+      "eligible_signers": [
+        "8035",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "STAY",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 611932160,
+      "eligible_signers": [
+        "8033",
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "STORE",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 600422400,
+      "eligible_signers": [
+        "8038",
+        "8039"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "TABLE",
+      "eligible": 2,
+      "mp4": 24,
+      "headers": 25,
+      "tar_bytes": 638597120,
+      "eligible_signers": [
+        "8038",
+        "8036"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "THANK YOU",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 618833920,
+      "eligible_signers": [
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "THIRSTY",
+      "eligible": 2,
+      "mp4": 30,
+      "headers": 31,
+      "tar_bytes": 586915840,
+      "eligible_signers": [
+        "8037",
+        "8038"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "TOMORROW",
+      "eligible": 2,
+      "mp4": 32,
+      "headers": 33,
+      "tar_bytes": 590192640,
+      "eligible_signers": [
+        "8038",
+        "8031"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "WATER",
+      "eligible": 2,
+      "mp4": 38,
+      "headers": 39,
+      "tar_bytes": 586188800,
+      "eligible_signers": [
+        "8038",
+        "8035"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "YES",
+      "eligible": 2,
+      "mp4": 36,
+      "headers": 37,
+      "tar_bytes": 613529600,
+      "eligible_signers": [
+        "8039",
+        "8033"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    },
+    {
+      "label": "YESTERDAY",
+      "eligible": 2,
+      "mp4": 22,
+      "headers": 23,
+      "tar_bytes": 91535360,
+      "eligible_signers": [
+        "8038",
+        "8032"
+      ],
+      "scanned_to_end": false,
+      "error": null
+    }
+  ]
+}
