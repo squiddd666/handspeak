@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>chip harness</title>
+<style>.word-chip{display:inline-flex}</style>
+</head>
+<body>
+<div id="sentenceChips" class="sentence-chips" aria-label="Words in your draft"></div>
+<p id="sentenceProgress" role="status" aria-live="polite"></p>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="wordCorrectionDialog"><form id="wordCorrectionForm"><input id="wordCorrection"><p id="wordCorrectionError" role="alert"></p></form></dialog>
+<button id="removeChip"></button><button id="closeWordCorrection"></button><button id="stopSpeechButton"></button>
+<button id="openTutorial"></button><dialog id="tutorialDialog"><span id="tutorialCounter"></span><h2 id="tutorialTitle"></h2><p id="tutorialText"></p>
+<button id="tutorialPrevious"></button><button id="tutorialNext"></button><button id="tutorialSkip"></button></dialog>
+<select id="textSize"><option value="normal">normal</option></select><select id="speechRate"><option value="1">1</option></select>
+<section id="matchFeedback"><span id="matchFeedbackTitle"></span><button id="matchCorrect"></button><button id="matchWrong"></button>
+<form id="matchFeedbackForm"><input id="matchVerdict" type="hidden"><input id="expectedWord"><input id="feedbackConsent" type="checkbox">
+<button id="submitMatchFeedback" type="submit"></button></form><p id="matchFeedbackStatus" role="status"></p></section>
+<table><tbody id="recordedEvaluationRows"></tbody></table><p id="recordedEvaluationNote"></p>
+<script>localStorage.setItem('handspeak-tutorial-seen','1')</script>
+<script type="module">
+import {createExperienceUI} from './experience-ui.js';
+let message='HELLO THANK YOU';
+window.ui=createExperienceUI({getMessage:()=>message,setMessage:value=>{message=value;document.dispatchEvent(new CustomEvent('handspeak:draft-changed'));},stopSpeech:()=>{}});
+document.dispatchEvent(new CustomEvent('handspeak:draft-changed'));
+</script>
+</body>
+</html>
