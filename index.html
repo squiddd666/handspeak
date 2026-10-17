@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css?v=20261001-auto-cache-1">
   <link rel="stylesheet" href="studio-theme.css?v=20261002-sign-videos-1">
   <link rel="stylesheet" href="application.css?v=20261002-catalog-1">
-  <link rel="stylesheet" href="experience.css?v=20261011-sentence-panel-1">
+  <link rel="stylesheet" href="experience.css?v=20261011-features-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -31,11 +31,9 @@
       <a href="#evaluate">Evaluation</a>
       <a href="#about">About</a>
     </nav>
-    <div class="account-actions"><button class="secondary-button" id="accountButton" type="button">Sign in</button><button class="icon-button" id="contrastButton" type="button" aria-label="Toggle high contrast" title="Toggle high contrast" aria-pressed="false">◐</button></div>
+    <div class="account-actions"><button class="text-button" id="openTutorial" type="button">Quick guide</button><button class="icon-button" id="contrastButton" type="button" aria-label="Toggle high contrast" title="Toggle high contrast" aria-pressed="false">◐</button></div>
   </header>
 
-  <section class="account-summary" id="accountSummary" aria-label="Your account" hidden><strong id="accountIdentity"></strong><button class="text-button" id="changePasswordButton" type="button">Change password</button><a id="adminLink" href="admin.html" hidden>Admin dashboard</a><button class="text-button" id="signOutButton" type="button">Sign out</button></section>
-  <p id="accountNotice" class="account-notice" role="status"></p>
   <main id="main">
     <section class="hero" id="home">
       <span id="translate"></span>
@@ -96,7 +94,7 @@
       </article>
 
       <aside id="cameraLesson" aria-label="Selected sign lesson" hidden></aside>
-      <section class="word-controls" id="wordRecognitionControls" aria-label="Experimental word recognition" hidden><div class="word-review-bar"><div><h3>Words in motion</h3><p>Sign once, pause, then review the match.</p></div><button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button></div><details class="workspace-disclosure word-settings"><summary>Vocabulary &amp; recording options <span>Experimental</span></summary>
+      <section class="word-controls" id="wordRecognitionControls" aria-label="Experimental word recognition" hidden><div class="word-review-bar"><div><h3>Words in motion</h3><p>Sign once, pause, then review the match.</p></div><button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button></div><section id="matchFeedback" class="match-feedback" hidden><span id="matchFeedbackTitle"></span><button id="matchCorrect" class="text-button" type="button">Correct</button><button id="matchWrong" class="text-button" type="button">Wrong / missed</button><form id="matchFeedbackForm" hidden><input id="matchVerdict" type="hidden"><label>Expected word<input id="expectedWord" maxlength="80" required autocomplete="off"></label><label class="speech-option"><input id="feedbackConsent" type="checkbox" required> I agree to send the word labels and model name for admin review. No video or landmarks are sent.</label><button id="submitMatchFeedback" class="secondary-button" type="submit">Submit word feedback</button></form><p id="matchFeedbackStatus" role="status"></p></section><details class="workspace-disclosure word-settings"><summary>Vocabulary &amp; recording options <span>Experimental</span></summary>
         <details class="camera-tip"><summary id="motionAccuracySummary">Recorded word accuracy</summary><p id="motionWordAccuracy">Loading recorded test results…</p><p>Correct test clips divided by all clips in the listed test. This is not confidence in the current camera match. Personal examples have no independently measured accuracy.</p></details>
 <section id="researchWords" class="trainer-card"><h3>Daily conversation · five-word preview</h3><p><b>NAME · HOME · HAVE · WANT · LOVE</b></p><p>Experimental: 44/66 held-out word clips matched; 2/48 unsupported signs were falsely accepted. This preview has limited accuracy. Review every suggestion. Results are not live-camera accuracy.</p><label class="speech-option"><input id="researchWordsToggle" type="checkbox" disabled> Enable five-word preview: send captured hand-landmark coordinates to this server</label><p class="camera-tip">Video stays on your device. Recorded coordinates are processed in memory and not stored. With Automatic words enabled, sign once and pause to send a captured sequence automatically. Review each match before adding it; optional automatic adding uses the setting below. Recording manually is still available.</p><div class="camera-actions"><button id="researchRecord" class="primary-button" type="button" disabled>Record a preview word</button><button id="researchCancel" class="secondary-button" type="button" disabled>Cancel recording</button><button id="researchAccept" class="secondary-button" type="button" disabled>Add reviewed word</button></div><p id="researchWordsStatus" role="status">Loading five-word preview…</p></section>
 <div id="standardWordOptions">
@@ -129,6 +127,7 @@
           </div>
           <button class="text-button" id="clearButton" type="button">Clear all</button>
         </div>
+        <p id="sentenceProgress" class="sentence-progress" role="status" aria-live="polite">Collecting words…</p><div id="sentenceChips" class="sentence-chips" aria-label="Words in your draft"></div>
         <div class="message-box" id="messageBox" role="status" aria-live="polite">
           <p id="messageText"><span>Recognized words will appear here…</span></p>
           <div class="message-controls">
@@ -136,7 +135,7 @@
             <button id="backspaceButton" type="button" title="Delete last character" aria-label="Delete last character">⌫</button>
           </div>
         </div>
-        <section class="sentence-tools" aria-labelledby="sentenceToolsTitle">
+        <details class="workspace-disclosure accessibility-controls"><summary>Reading &amp; speech settings</summary><label>Text size<select id="textSize"><option value="normal">Normal</option><option value="large">Large</option></select></label><label>Speech speed<select id="speechRate"><option value="0.8">Slower</option><option value="1">Normal</option><option value="1.2">Faster</option></select></label><p>Keyboard shortcuts: Alt + Shift + S to speak, E to edit, X to stop. Shortcuts pause while typing.</p></details><section class="sentence-tools" aria-labelledby="sentenceToolsTitle">
           <h3 id="sentenceToolsTitle">Build a sentence</h3>
           <p class="camera-tip">Sign one word, then pause. Add the match to your draft, or turn on automatic adding below. Review the draft before speaking.</p>
           <label class="speech-option"><input id="sentenceAutoAdd" type="checkbox"> Automatically add motion matches to my draft</label>
@@ -159,7 +158,7 @@
         </details></section>
         <div class="output-actions">
           <button class="speak-button" id="speakButton" type="button"><span aria-hidden="true">◖</span> Speak message</button>
-          <button class="copy-button" id="copyButton" type="button">Copy text</button>
+          <button class="copy-button" id="stopSpeechButton" type="button" disabled>Stop speech</button><button class="copy-button" id="copyButton" type="button">Copy text</button>
           <button class="copy-button" id="saveButton" type="button">Save</button>
           <button class="copy-button" id="editMessageButton" type="button">Edit message</button>
         </div>
@@ -178,7 +177,7 @@
         <div><span class="eyebrow"><span></span> Saved translations</span><h2>Communication history</h2></div>
         <div class="section-actions"><button class="secondary-button" id="refreshHistory" type="button">Refresh</button><a class="primary-link" href="/api/export/sessions.csv">Export CSV</a></div>
       </div>
-      <p id="historyPrivacy" class="system-status">Your history is private to this browser or your signed-in account.</p>
+      <p id="historyPrivacy" class="system-status">Saved history is private to this browser. Clearing cookies removes your access.</p>
       <p id="systemStatus" class="system-status" role="status">Connecting to saved messages…</p>
       <div class="history-list" id="historyList"><p class="empty-state">No saved sessions yet.</p></div>
       <div class="dashboard" id="dashboard" aria-label="System metrics">
@@ -196,7 +195,7 @@
         <p>These are user ratings, not measured model accuracy. <a href="models/asl-evaluation.json">Letter tests</a> · <a href="models/asl-words-evaluation.json">Motion tests</a>. Submit the study’s 5-point evaluation for accuracy, usability, and performance. No account identity is attached to feedback. Administrators can read your comments; avoid personal information.</p>
         <div class="rating-summary"><span><b id="evaluationCount">0</b> responses</span><span>Accuracy <b id="ratingAccuracy">—</b></span><span>Usability <b id="ratingUsability">—</b></span><span>Performance <b id="ratingPerformance">—</b></span></div>
       </div>
-      <form class="evaluation-form" id="evaluationForm">
+      <section class="recorded-checks"><h3>Recorded recognition checks</h3><p id="recordedEvaluationNote">Whole-clip checks on different recorded subsets. These are not live-camera confidence or continuous-sentence accuracy. Default misses include tracking failures; unsupported-sign counts use tracked negative clips. User feedback is reported separately.</p><div class="table-scroll"><table><thead><tr><th>Model / subset</th><th>Correct</th><th>Wrong word</th><th>Missed</th><th>False matches on other signs</th></tr></thead><tbody id="recordedEvaluationRows"></tbody></table></div></section><form class="evaluation-form" id="evaluationForm">
         <label>Respondent type<select name="respondentType" required><option value="">Select one</option><option>Student</option><option>Educator</option><option>Deaf/Hard-of-Hearing</option><option>Hearing</option><option>Other</option></select></label>
         <div class="rating-row"><label for="accuracy">Recognition accuracy</label><output id="accuracyValue">5</output><input id="accuracy" name="accuracy" type="range" min="1" max="5" value="5"></div>
         <div class="rating-row"><label for="usability">Ease of use</label><output id="usabilityValue">5</output><input id="usability" name="usability" type="range" min="1" max="5" value="5"></div>
@@ -339,16 +338,17 @@
       <p>HandSpeak Web is a capstone prototype that uses computer vision to help bridge everyday communication between deaf, hard-of-hearing, and hearing individuals. It recognizes selected static letters and offers an experimental pretrained vocabulary for moving signs. Face landmarks are displayed for visual feedback; they are not used to interpret identity, emotions, or ASL grammar.</p>
       <div class="metrics"><div><b>7</b><span>Tested static letters</span></div><div><b>On-device</b><span>Camera recognition</span></div><div><b>0</b><span>frames stored</span></div></div>
     </section>
-    <details class="application-help"><summary>Help, privacy, and recognition limits</summary><p><b>Letters:</b> hold a supported letter steady. <b>Words:</b> select Words in motion, sign once, and pause. Watch the examples first; use Record a word if automatic capture misses the movement.</p><p>Camera frames and personal gesture examples stay on your device. The optional five-word preview sends recorded hand-landmark coordinates to the server for in-memory recognition; it does not upload video or save those coordinates. Saving sends your message and letter-detection statistics to this server. Interpret draft sends only the reviewed text to a local model on this server; it does not upload camera footage or save the draft automatically. Your history is linked to your account, or to a cookie when using the site as a guest. You can export or delete your saved messages. Account passwords are hashed; never send your password to the administrator.</p><p>Feedback is collected without linking it to your account; administrators can read submitted comments. Email verification and email delivery are not configured. For password recovery, ask the administrator for a private, single-use reset link.</p><p>This is an experimental ASL learning and recognition application, not a complete language translator. Similar and unsupported signs can be misidentified. Extra-word recognition is a preview. Always review suggestions before adding or speaking them.</p></details>
+    <details class="application-help"><summary>Help, privacy, and recognition limits</summary><p><b>Letters:</b> hold a supported letter steady. <b>Words:</b> select Words in motion, sign once, and pause. Watch the examples first; use Record a word if automatic capture misses the movement.</p><p>Camera frames and personal gesture examples stay on your device. The optional five-word preview sends recorded hand-landmark coordinates to the server for in-memory recognition; it does not upload video or save those coordinates. Saving sends your message and letter-detection statistics to this server. Interpret draft sends only the reviewed text to a local model on this server; it does not upload camera footage or save the draft automatically. Guest history is linked to a browser cookie. Clearing cookies removes access to guest history. Existing account sessions retain access to their saved data. You can export or delete your own saved messages.</p><p>Administrators can read submitted feedback. Public recognition, learning, and saving do not require sign-in.</p><p>This is an experimental ASL learning and recognition application, not a complete language translator. Similar and unsupported signs can be misidentified. Extra-word recognition is a preview. Always review suggestions before adding or speaking them.</p></details>
   </main>
-  <dialog class="account-dialog" id="accountDialog" aria-labelledby="accountTitle"><div class="dialog-heading"><h2 id="accountTitle">Welcome back</h2><button class="text-button" id="accountClose" type="button" aria-label="Close account dialog">Close</button></div><form id="accountForm"><label id="accountEmailGroup">Email<input id="accountEmail" type="email" autocomplete="username" maxlength="254" required></label><label id="currentPasswordGroup" hidden>Current password<input id="currentPassword" type="password" autocomplete="current-password" maxlength="128"></label><label>Password<input id="accountPassword" type="password" autocomplete="current-password" maxlength="128" required></label><label id="accountConfirmGroup" hidden>Confirm password<input id="accountConfirm" type="password" autocomplete="new-password" maxlength="128"></label><p id="accountHelp"></p><p id="accountError" class="form-status" role="alert"></p><button id="accountSubmit" class="primary-button" type="submit">Sign in</button></form><button id="accountSwitch" class="text-button" type="button">New here? Create an account</button></dialog>
 
+
+<dialog id="wordCorrectionDialog" class="feature-dialog" aria-labelledby="wordCorrectionTitle"><h2 id="wordCorrectionTitle">Correct this word</h2><form id="wordCorrectionForm"><label>Replacement<input id="wordCorrection" maxlength="80" required></label><p id="wordCorrectionError" role="alert"></p><button class="primary-button" type="submit">Replace word</button></form><button id="removeChip" class="secondary-button" type="button">Remove word</button><button id="closeWordCorrection" class="text-button" type="button">Cancel</button></dialog><dialog id="tutorialDialog" class="feature-dialog" aria-labelledby="tutorialTitle" aria-describedby="tutorialText"><span id="tutorialCounter"></span><h2 id="tutorialTitle"></h2><p id="tutorialText"></p><div class="dialog-actions"><button id="tutorialPrevious" class="secondary-button" type="button">Back</button><button id="tutorialNext" class="primary-button" type="button">Next</button><button id="tutorialSkip" class="text-button" type="button">Close guide</button></div></dialog>
   <footer><span>HANDSpeak / Cavite State University – Imus Campus</span><span><a href="defense.html">System guide</a> · Capstone prototype · 2026</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script type="module" src="guided-experience.js?v=20261003-auto-server-1"></script>
-  <script type="module" src="auth.js?v=20261002-defense-1"></script>
-  <script type="module" src="sign-examples.js?v=20261011-accuracy-1"></script>
+  <script type="module" src="guest-session.js?v=20261011-guest-1"></script>
+  <script type="module" src="sign-examples.js?v=20261011-features-1"></script>
   <script type="module" src="daily-words.js?v=20261003-guided-1"></script>
-  <script type="module" src="app.js?v=20261011-llm-warm-1"></script>
+  <script type="module" src="app.js?v=20261011-features-1"></script>
 </body>
 </html>

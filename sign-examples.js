@@ -1,3 +1,4 @@
+import {loadVocabularySettings,wordSettings,applyVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
 import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261011-accuracy-1';
 const video = document.querySelector('#signExampleVideo');
 const status = document.querySelector('#signExampleStatus');
@@ -28,7 +29,7 @@ function updateAccuracy(){
 }
 let external=false;
 function pauseAll(){video.pause();if(external&&embed.getAttribute('src'))embed.src=embed.getAttribute('src');}
-function instructions(id){const standard=buttons.some(b=>b.dataset.signExample===id),published=publishedExamples.get(id);document.querySelector("#signExampleMode").textContent=published?`${published.label} · Experimental word preview. Select Practice at camera to load its vocabulary, then start the camera, sign once and pause. Review every match; live-camera accuracy is unverified.`:daily.has(id)?`${id.toUpperCase()} · Automatic server capture: enable server landmark processing and Automatic words, start the camera, sign once, then pause. Review the match before signing again. Manual recording is also available.`:standard?`${id.toUpperCase()} · Automatic capture: start the camera, sign once, then pause. Review the match. You can also use Record a word.`:"Learning example · No enabled model for this word. Personal training is needed before camera practice.";}
+function instructions(id){const standard=buttons.some(b=>b.dataset.signExample===id),published=publishedExamples.get(id);document.querySelector("#signExampleMode").textContent=published?`${published.label} · Experimental word preview. Select Practice at camera to load its vocabulary, then start the camera, sign once and pause. Review every match; live-camera accuracy is unverified.`:daily.has(id)?`${id.toUpperCase()} · Automatic server capture: enable server landmark processing and Automatic words, start the camera, sign once, then pause. Review the match before signing again. Manual recording is also available.`:standard?`${id.toUpperCase()} · Automatic capture: start the camera, sign once, then pause. Review the match. You can also use Record a word.`:"Learning example · No enabled model for this word. Personal training is needed before camera practice.";const description=wordSettings(id).description;if(description)document.querySelector("#signExampleMode").textContent+=` ${description}`;}
 function chooseEmbedded(id,button=null){
  instructions(id);
  selection++;pauseAll();label=id.toUpperCase();libraryId=id;external=true;video.hidden=true;embed.hidden=false;playback.hidden=true;
@@ -55,8 +56,8 @@ function chooseExample(name,src,button=null,id=null){
   status.textContent=`${label} · Press play to watch. Review recognition availability in the vocabulary library.`;video.load();
   updateAccuracy();
 }
-for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4`,button,daily.has(id)?id:null);});
-document.addEventListener('handspeak:example',event=>{const data=event.detail;if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
+for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(wordSettings(id).video)chooseExample(button.dataset.signLabel,wordSettings(id).video,button,id);else if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4`,button,daily.has(id)?id:null);});
+document.addEventListener('handspeak:example',event=>{const data=event.detail;if(wordSettings(data.id).video){chooseExample(data.label,wordSettings(data.id).video,null,data.id);return;}if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
 speed.addEventListener('change', applySpeed);
 video.addEventListener('loadedmetadata', applySpeed);
 video.addEventListener('playing', () => { if(external)return;status.textContent = `${label} · ${video.playbackRate === 1 ? 'Normal speed' : `${video.playbackRate}× speed`}`; });
@@ -87,7 +88,8 @@ async function loadPublishedExamples(){
     if(!Array.isArray(catalog.items)||!Array.isArray(index.groups))return;
     publishedPacks=index.groups;
     const container=document.querySelector('.example-words');
-    for(const item of catalog.items){
+    await loadVocabularySettings();
+    for(const item of applyVocabularySettings(catalog.items)){
       if(typeof item.id!=='string'||typeof item.label!=='string'||!/^media\/signs\/[a-z0-9-]+\.mp4$/.test(item.video||''))continue;
       const enabled=index.groups.some(pack=>Array.isArray(pack.labels)&&pack.labels.includes(item.label)&&item.cameraGroups?.includes(pack.id));
       if(!enabled)continue;
@@ -105,3 +107,5 @@ async function loadPublishedExamples(){
 }
 void loadPublishedExamples();
 void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;updateAccuracy();});
+
+void loadVocabularySettings().then(()=>{for(const button of buttons){button.hidden=Boolean(wordSettings(button.dataset.signExample).hidden);}for(const option of document.querySelectorAll('#practiceWord option'))option.hidden=Boolean(wordSettings(option.value).hidden);for(const card of document.querySelectorAll('[data-daily-word]'))card.hidden=Boolean(wordSettings(card.dataset.dailyWord.toLowerCase()).hidden);if(buttons.find(b=>b.getAttribute('aria-pressed')==='true')?.hidden)buttons.find(b=>!b.hidden)?.click();});

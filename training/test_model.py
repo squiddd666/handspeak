@@ -43,14 +43,14 @@ class ModelTests(unittest.TestCase):
           const elements = {};
           const createInterpreter=()=>({});
           const createResearchWords=()=>({active:()=>false,cancel(){},disable(){},isCapturing:()=>false});
-          const createVocabularyLibrary=()=>({});
-          const document = {querySelectorAll:()=>[],querySelector: key => elements[key] ||= {
+          const createVocabularyLibrary=()=>({showCameraAccuracy(){}});
+          const CustomEvent=function(name,options){this.type=name;this.detail=options?.detail;}; const document = {dispatchEvent(){},querySelectorAll:()=>[],querySelector: key => elements[key] ||= {
             style:{}, listeners:{}, classList:{add(){}, remove(){}, toggle(){}},
             addEventListener(name, fn){this.listeners[name]=fn}, getContext(){return {clearRect(){}}}
           }};
           const window = {addEventListener(){}};
           const localStorage = {getItem(){return null},setItem(){},removeItem(){}};
-          const console = {warn(){}};
+          const console = {warn(){}}; const createExperienceUI=()=>{}; const loadVocabularySettings=async()=>({}); const isWordEnabled=()=>true;
           function setTimeout(){} function clearTimeout(){} function clearInterval(){} function cancelAnimationFrame(){}
         ''')
         self.js.eval('const fetch = async path => '+(
@@ -138,7 +138,11 @@ class ModelTests(unittest.TestCase):
           let rejectOld;
           createTemporalCamera=()=>({ready:new Promise((resolve,reject)=>{rejectOld=reject}),close(){}});
           motionStudio.usesTemporalModel=()=>true;recognitionMode='words';
-          startCamera();stopCamera();
+          startCamera();
+        ''')
+        while self.js.execute_pending_job():pass
+        self.js.eval('''
+          stopCamera();
           cameraAttempt++;cameraStarting=true;cameraButton.disabled=true;
           rejectOld(Error('Old worker stopped'));
         ''')

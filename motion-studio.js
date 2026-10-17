@@ -1,3 +1,4 @@
+import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
 import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261010-single-1';
 import {recognizeExpandedMotion} from './expanded-motion.js?v=20261002-sentences-1';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261010-single-1';
@@ -9,7 +10,8 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   let automatic=createAutomaticMotion();
   let autoWasActive=false,expansion=null,defaultModel=null,categoryModel=null;
   const expandedEnabled=()=>!categoryModel && $('#expandedWords').checked && expansion;
-  const recognize=(sequence,frames,aspect)=>{if(isTemporalWordModel(categoryModel))return recognizeTemporalWord(categoryModel,frames,aspect);if(!categoryModel)return recognizeExpandedMotion(sequence,allExamples(),parameters,expandedEnabled());const match=recognizeMotion(sequence,allExamples(),parameters);return match&&match.label!=='OTHER MOVEMENT'?match:null;};
+  const recognizeRaw=(sequence,frames,aspect)=>{if(isTemporalWordModel(categoryModel))return recognizeTemporalWord(categoryModel,frames,aspect);if(!categoryModel)return recognizeExpandedMotion(sequence,allExamples(),parameters,expandedEnabled());const match=recognizeMotion(sequence,allExamples(),parameters);return match&&match.label!=='OTHER MOVEMENT'?match:null;};
+  const recognize=(sequence,frames,aspect)=>{const match=recognizeRaw(sequence,frames,aspect);return match&&isWordEnabled(match.label)?match:null;};
   const allExamples=()=>baseExamples.concat(examples);
   function setHelp(message){$('#motionHelp').textContent=message;$('#motionCaptureStatus').textContent=message;}
   const labelOK=label=>typeof label==='string'&&/^[a-zA-Z][a-zA-Z '-]{0,29}$/.test(label);

@@ -23,10 +23,39 @@ class ApplicationTests(unittest.TestCase):
  def tearDownClass(cls):cls.server.shutdown();cls.server.server_close();cls.temp.cleanup()
  def setUp(self):
   with app.connect() as db:
-   for table in ['password_resets','auth_sessions','detections','sessions','users','evaluations']:db.execute('DELETE FROM '+table)
+   for table in ['password_resets','auth_sessions','detections','sessions','users','evaluations','vocabulary_settings','match_feedback']:db.execute('DELETE FROM '+table)
   app.AUTH_ATTEMPTS.clear();app.ADMIN_SETUP_PATH.write_text('private-setup-test-token');self.a=Client(self.base);self.b=Client(self.base)
  def register(self,c,email='user@example.test'):
   result=c.call('/api/auth/register',{'email':email,'password':PASSWORD,'role':'admin'});self.assertEqual(result[0],201,result);return c.call('/api/auth/me')[1]['user']
+ def test_username_admin_login_preserves_registration_rules(self):
+  with app.connect() as db:
+   db.execute('INSERT INTO users(id,email,password_hash,role,created_at) VALUES(?,?,?,?,?)',('username-admin-fixture','testadmin',app.password_hash(PASSWORD),'admin',app.utc_now()))
+  self.assertEqual(self.a.call('/api/auth/login',{'email':'testadmin','password':PASSWORD})[0],200)
+  self.assertEqual(self.a.call('/api/admin/overview')[0],200)
+  self.assertEqual(self.b.call('/api/auth/login',{'email':'testadmin','password':'incorrect'})[0],401)
+  self.assertEqual(self.b.call('/api/auth/register',{'email':'testadmin','password':PASSWORD})[0],422)
+ def test_vocabulary_controls_are_admin_only_and_paths_are_bounded(self):
+  self.assertEqual(self.b.call('/api/admin/experience')[0],401)
+  self.assertEqual(self.b.call('/api/admin/vocabulary-settings',{'id':'hello','hidden':True})[0],401)
+  self.assertEqual(self.b.call('/api/admin/practice-video?id=hello',{})[0],401)
+  self.admin()
+  self.assertEqual(self.a.call('/api/admin/practice-video?id=hello',{})[0],422)
+  self.assertEqual(self.a.call('/api/admin/vocabulary-settings',{'id':'hello','description':'Test description','video':'media/signs/hello.mp4','hidden':True})[0],200)
+  settings=self.b.call('/api/vocabulary-settings')[1]['items']['hello']
+  self.assertTrue(settings['hidden']);self.assertEqual(settings['label'],'HELLO')
+  self.assertEqual(self.a.call('/api/admin/vocabulary-settings',{'id':'hello','video':'../server.py'})[0],422)
+  self.assertEqual(self.a.call('/api/admin/vocabulary-settings',{'id':'invented'})[0],422)
+  self.register(self.b);self.assertEqual(self.b.call('/api/admin/experience')[0],403)
+ def test_match_feedback_requires_consent_and_admin_review(self):
+  report={'predicted':'WATER','expected':'PLEASE','verdict':'wrong','model':'Default + extra','consent':False}
+  self.assertEqual(self.b.call('/api/match-feedback',report)[0],422)
+  report['consent']=True;self.assertEqual(self.b.call('/api/match-feedback',report)[0],201)
+  self.admin();items=self.a.call('/api/admin/experience')[1]['feedback'];self.assertEqual(len(items),1)
+  self.assertNotIn('owner_id',items[0]);feedback_id=items[0]['id']
+  self.assertEqual(self.b.call('/api/admin/match-feedback',{'id':feedback_id,'status':'reviewed'})[0],401)
+  self.assertEqual(self.a.call('/api/admin/match-feedback',{'id':feedback_id,'status':'reviewed'})[0],200)
+  self.assertEqual(self.a.call('/api/admin/experience')[1]['feedback'][0]['status'],'reviewed')
+  report['verdict']='correct';self.assertEqual(self.b.call('/api/match-feedback',report)[0],422)
  def admin(self):
   self.assertEqual(self.a.call('/api/auth/setup',{'email':'admin@example.test','password':PASSWORD,'token':'private-setup-test-token'})[0],201)
  def save(self,c,message='HELLO'):

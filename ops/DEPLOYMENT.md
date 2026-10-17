@@ -45,3 +45,28 @@ Cloudflare client IPs are restored only from published trusted proxy networks so
 Recognition is experimental. The six-word default and three-word optional preview are not a validated continuous-sign translator. See the model evaluation files before making accuracy claims.
 
 Security implementation references: [OWASP password storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) and [OWASP session management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html).
+
+## Public sign-in removal — October 11, 2026
+
+The public translator no longer presents account login or registration. Guest messages remain scoped to the browser cookie; clearing it removes access. Existing account sessions and saved records are preserved. Administrator access is available at /account.html?signin=1; /admin.html links to that page. Legacy /?signin=1, setup fragments, and reset fragments redirect to the separate access page without putting fragment tokens into the query string. Authentication and administrator API protections remain enabled. The registration prompt is hidden on the separate administrator page.
+
+## Sentence workflow and learning administration — October 11, 2026
+
+The public page has editable sentence chips, FINISH/LLM/speech progress, an optional seven-step guide, larger text, speech speed and Stop speech. Alt+Shift+S speaks, E edits and X stops speech outside text fields and dialogs. Recorded correct, wrong and missed counts remain separate from live match quality; these changes do not improve model accuracy.
+
+Administrators can edit vocabulary descriptions, hide words from public lessons and recognition, assign existing practice clips or upload MP4 videos (20 MiB maximum, 120 seconds maximum). Use videos with appropriate rights and retain attribution. Uploads are probed using the installed /usr/bin/ffprobe; only /opt/handspeak/current/media/signs needs group write permission for the handspeak service. Uploading a lesson does not train a recognition model.
+
+Apply ops/migrations/20261011-experience.sql to MariaDB after a private database backup before deploying experience.py and server.py. The public /api/vocabulary-settings exposes only lesson overrides. /api/admin/experience, /api/admin/vocabulary-settings, /api/admin/practice-video and /api/admin/match-feedback require an active administrator. /api/match-feedback requires explicit consent and stores predicted/expected labels and model identifier, without camera frames or landmarks. Administrators mark reports reviewed or dismissed; reports never trigger training automatically.
+
+Regression checks: training/test_application.py and training/test_experience.py run with HANDSPEAK_MYSQL_CONFIG unset using temporary SQLite/files; training/ux/check_full_experience.py uses mocked API responses against loopback and writes no production data. Public dependencies are pinned in the single-word publisher runtime snapshot to prevent future word releases overwriting UI changes.
+
+## Storage and origin IP — October 17, 2026
+
+Google Cloud metadata confirms external IPv4 34.143.254.67. The disk is 100 GiB; the root filesystem has expanded to approximately 96 GiB, with 53 GiB free at verification. nginx IP host entries now use the new address; the retired sslip.io alias redirects to the canonical domain. Backend services continue using loopback and need no IP change.
+
+Direct HTTPS using the canonical hostname and the new origin IP returns 200, including /api/health. Cloudflare-proxied handspeak.cvsu.dev returned 522 at verification. The zone owner must check/update its origin A record to 34.143.254.67 (and remove any obsolete origin AAAA record if present). No Cloudflare credentials or DNS connector are available in this session, so external DNS was not modified.
+
+The current TLS certificate also includes handspeak.34.177.106.163.sslip.io. After canonical DNS is restored, reissue the handspeak certificate for handspeak.cvsu.dev alone and verify renewal; the retired IP-based name can no longer be validated at this server. Keep the existing certificate until a successful replacement is obtained.
+
+The owner subsequently updated Cloudflare DNS. Public HTTPS and /api/health returned 200 and the local LLM reported available. The handspeak certificate was successfully reissued for handspeak.cvsu.dev alone, expiring January 15, 2027, and nginx was reloaded. certbot.timer remains enabled.
+Certificate renewal dry-run also passed using the canonical hostname alone.

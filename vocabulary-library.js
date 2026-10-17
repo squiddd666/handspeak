@@ -1,3 +1,4 @@
+import {loadVocabularySettings,applyVocabularySettings,isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
 import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText} from './motion-accuracy.js?v=20261011-accuracy-1';
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
 export function createVocabularyLibrary({onWord,setVocabulary}) {
@@ -87,7 +88,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
       const response=await fetch('models/motion-vocabulary.json?v=20261010-single-1',{cache:'no-store'});if(!response.ok)throw Error();const data=await response.json();
       if(!Array.isArray(data.items)||!Array.isArray(data.categories))throw Error();
       let index={groups:[]};try{const r=await fetch('models/motion-categories/index.json?v=20261010-single-1',{cache:'no-store'});if(r.ok)index=await r.json();}catch{}
-      if(request!==libraryId)return;++loadId;catalog=data;packs=Array.isArray(index.groups)?index.groups:[];
+      if(request!==libraryId)return;++loadId;await loadVocabularySettings();data.items=applyVocabularySettings(data.items);catalog=data;packs=Array.isArray(index.groups)?index.groups.filter(pack=>pack.labels.some(isWordEnabled)):[];
       for(const item of catalog.items)item.cameraGroups=(item.cameraGroups||[]).filter(id=>packs.some(p=>p.id===id&&p.labels.includes(item.label)));
       if(active&&!packs.some(p=>p.id===active)){setVocabulary(null);active='';defaultLabel();}
       const select=$('#vocabularyCategory'),previous=select.value;select.replaceChildren(new Option('All categories',''));catalog.categories.forEach(c=>select.add(new Option(c.name,c.id)));select.value=previous;

@@ -14,6 +14,8 @@ function setMode(next) {
   $('#accountTitle').textContent = {login:'Welcome back',register:'Create your account',setup:'Create the administrator account',password:'Change your password',reset:'Set a new password'}[mode];
   $('#accountEmailGroup').hidden = ['password','reset'].includes(mode);
   $('#accountEmail').required = !$('#accountEmailGroup').hidden;
+  $('#accountEmail').type = mode === 'login' ? 'text' : 'email';
+  $('#accountEmailGroup').firstChild.textContent = mode === 'login' ? 'Username or email' : 'Email';
   $('#currentPasswordGroup').hidden = mode !== 'password';
   $('#currentPassword').required = mode === 'password';
   $('#accountPassword').autocomplete = mode === 'login' ? 'current-password' : 'new-password';
@@ -21,7 +23,7 @@ function setMode(next) {
   $('#accountConfirmGroup').hidden = mode === 'login';
   $('#accountConfirm').required = mode !== 'login';
   $('#accountSubmit').textContent = {login:'Sign in',register:'Create account',setup:'Create administrator',password:'Save password',reset:'Reset password'}[mode];
-  $('#accountSwitch').hidden = !['login','register'].includes(mode);
+  $('#accountSwitch').hidden = document.body.dataset.adminAccess === 'true' || !['login','register'].includes(mode);
   $('#accountSwitch').textContent = mode === 'login' ? 'New here? Create an account' : 'Already registered? Sign in';
   $('#accountHelp').textContent = mode === 'login' ? 'Forgot your password? Ask the site administrator for a password-reset link.' : 'Use 12–128 characters. Your email is your sign-in name; email delivery is not configured.';
 }

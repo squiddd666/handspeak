@@ -1,3 +1,4 @@
+import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261001-auto-cache-1';
 import {motionFrame,encodeMotion} from './motion-model.js?v=20261001-auto-cache-1';
 export function createResearchWords({onWord,onStatus,onChange}){
@@ -52,7 +53,7 @@ export function createResearchWords({onWord,onStatus,onChange}){
    const response=await fetch('/api/research-words',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sequence,consent:true}),signal:controller.signal});
    const data=await response.json();if(version!==revision||!active())return;
    if(!response.ok)throw Error(data.error||'Word recognition failed');
-   pending=['NAME','HOME','HAVE','WANT','LOVE'].includes(data.label)?data.label:null;
+   pending=['NAME','HOME','HAVE','WANT','LOVE'].includes(data.label)&&isWordEnabled(data.label)?data.label:null;
    help(pending?`Possible match: ${pending}. Check the word, then choose Add reviewed word.`:'No reliable match. Your sign may still be correct; this model has limited accuracy.');
    onStatus(pending||'No reliable match',pending?'Experimental server match — verify before adding.':'Try another sign after pausing; recognition is not guaranteed.');
    if(pending&&$('#sentenceAutoAdd').checked&&onWord(pending)!==false){help(`Added ${pending} to your draft. Review it before speaking.`);pending=null;}

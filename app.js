@@ -1,11 +1,13 @@
+import {createExperienceUI} from './experience-ui.js?v=20261011-features-1';
+import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
 import {createTemporalCamera} from './temporal-camera.js?v=20261010-single-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
-import {createResearchWords} from './research-words.js?v=20261011-finish-draft-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-camera-percent-1';
-import {createInterpreter} from './interpretation.js?v=20261011-llm-warm-1';
+import {createResearchWords} from './research-words.js?v=20261011-features-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-features-1';
+import {createInterpreter} from './interpretation.js?v=20261011-features-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
-import { createMotionStudio } from './motion-studio.js?v=20261011-finish-draft-1';
+import { createMotionStudio } from './motion-studio.js?v=20261011-features-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -23,6 +25,7 @@ function setWordCameraResult(word,detail,daily=false){
   liveResult.hidden=word==='—';liveLetter.textContent=word;
   liveConfidence.textContent=detail||'Possible match — verify before adding';
   vocabularyLibrary?.showCameraAccuracy(word,{daily,personal:!daily&&motionStudio.hasPersonalWord(word)});
+  document.dispatchEvent(new CustomEvent('handspeak:camera-match',{detail:{word,model:$('#activeVocabulary').textContent}}));
 }
 const messageText = $('#messageText');
 const toast = $('#toast');
@@ -87,12 +90,17 @@ let baseSamples = [];
 let baseModelState = 'Loading pretrained letters…';
 const HOLD_MS = 850;
 
+let speechRevision=0;
+function sentenceState(state,text){document.dispatchEvent(new CustomEvent('handspeak:sentence-state',{detail:{state,text}}));}
+function stopSpeech(){speechRevision++;window.speechSynthesis?.cancel();$('#pipelineVoice').classList.remove('active');sentenceState('stopped','Speech stopped · Your draft is unchanged.');}
 function speakText(text){
   if(!('speechSynthesis' in window)){notify('Speech is unavailable in this browser');return;}
-  window.speechSynthesis.cancel();
+  const currentSpeech=++speechRevision;window.speechSynthesis.cancel();
   const utterance=new SpeechSynthesisUtterance(text);
-  $('#pipelineVoice').classList.add('active');
-  utterance.onend=utterance.onerror=()=>$('#pipelineVoice').classList.remove('active');
+  utterance.rate=Number($('#speechRate')?.value||1);
+  $('#pipelineVoice').classList.add('active');sentenceState('speaking','Speaking… Use Stop speech to cancel.');
+  utterance.onend=()=>{if(currentSpeech!==speechRevision)return;$('#pipelineVoice').classList.remove('active');sentenceState('complete','Speech complete · Ready for your next sentence.');};
+  utterance.onerror=()=>{if(currentSpeech!==speechRevision)return;$('#pipelineVoice').classList.remove('active');sentenceState('error','Speech could not play. Try Speak message or check browser audio.');};
   window.speechSynthesis.speak(utterance);
 }
 
@@ -217,6 +225,7 @@ function renderMessage(){
   if(message) messageText.textContent = message;
   $('#captureTranscript').textContent=message||'Your words will appear here.';
   $('#pipelineReview').classList.toggle('active',Boolean(message));
+  document.dispatchEvent(new CustomEvent('handspeak:draft-changed'));
 }
 
 function updateSentence(next){
@@ -283,6 +292,7 @@ async function startCamera(){
   cameraStarting=true;cameraButton.disabled=true;const attempt=++cameraAttempt;
   clearInterval(demoTimer);
   try{
+    await loadVocabularySettings();if(attempt!==cameraAttempt)return;
     if(!navigator.mediaDevices?.getUserMedia) throw new Error('Camera access is not supported by this browser.');
     if(recognitionMode==='words'&&motionStudio.usesTemporalModel()){
       temporalCamera=createTemporalCamera({
@@ -541,3 +551,5 @@ $('#resetModelButton').addEventListener('click',()=>{
 });
 
 $('#mirrorPreview').addEventListener('change',()=>{const transform=$('#mirrorPreview').checked?'scaleX(-1)':'none';video.style.transform=transform;canvas.style.transform=transform;notify('Preview orientation changed. Recognition uses the original camera input.');});
+
+createExperienceUI({getMessage:()=>message,setMessage:text=>{message=text;renderMessage();},stopSpeech});

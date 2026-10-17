@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 from interpretation import interpreter, InterpretationError
 from research_words import research_words, ResearchError
+from experience import ExperienceStore, SQLITE_SCHEMA
 import io
 import json
 import mimetypes
@@ -122,6 +123,7 @@ def initialize_database() -> None:
                     created_at TEXT NOT NULL
                 );
             """)
+            db.executescript(SQLITE_SCHEMA)
             # Existing unowned records are retained but never assigned to a visitor.
             if "owner_id" not in {r[1] for r in db.execute("PRAGMA table_info(sessions)")}:
                 db.execute("ALTER TABLE sessions ADD COLUMN owner_id TEXT NOT NULL DEFAULT ''")
@@ -285,6 +287,14 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
                     rows = db.execute("SELECT id,respondent_type,accuracy,usability,performance,comments,created_at FROM evaluations ORDER BY id DESC").fetchall()
                 keys=["id","respondent_type","accuracy","usability","performance","comments","created_at"]
                 return self.csv_response(keys, [[row[k] for k in keys] for row in rows], "handspeak-feedback.csv")
+            if parsed.path == '/api/vocabulary-settings':
+                return self.json_response(ExperienceStore(connect,ROOT,APIError,utc_now).settings())
+            if parsed.path == '/api/admin/experience':
+                self.require_user(admin=True)
+                data=ExperienceStore(connect,ROOT,APIError,utc_now).overview()
+                data['llm']=interpreter.status()
+                data['models']=json.loads((ROOT/'models/motion-categories/index.json').read_text()).get('groups',[])
+                return self.json_response(data)
             if parsed.path == "/api/admin/overview":
                 self.require_user(admin=True)
                 query=parse_qs(parsed.query).get('q',[''])[0].strip()
@@ -325,7 +335,20 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
             parsed = urlparse(self.path)
             if parsed.path.startswith("/api/"): self.owner()
             self.check_origin()
+            if parsed.path == '/api/admin/practice-video':
+                self.require_user(admin=True)
+                try:length=int(self.headers.get('Content-Length','0'))
+                except ValueError:raise APIError(422,'Invalid upload length.')
+                self.connection.settimeout(30)
+                result=ExperienceStore(connect,ROOT,APIError,utc_now).upload(self.rfile,length,parse_qs(parsed.query).get('id',[''])[0],self.headers.get('Content-Type'))
+                return self.json_response(result,201)
             data = self.read_json()
+            if parsed.path == '/api/match-feedback':
+                return self.json_response(ExperienceStore(connect,ROOT,APIError,utc_now).feedback(data,self.owner()),201)
+            if parsed.path in {'/api/admin/vocabulary-settings','/api/admin/match-feedback'}:
+                self.require_user(admin=True)
+                store=ExperienceStore(connect,ROOT,APIError,utc_now)
+                return self.json_response(store.save(data) if parsed.path.endswith('vocabulary-settings') else store.review(data))
             if parsed.path.startswith("/api/auth/"): return self.auth_action(parsed.path, data)
             if parsed.path.startswith("/api/admin/"): return self.admin_action(parsed.path, data)
             if parsed.path == "/api/research-words":
@@ -373,8 +396,12 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
         self.throttle_auth()
         if path in {'/api/auth/register','/api/auth/setup','/api/auth/login'}:
             email = data.get('email', '')
-            if not isinstance(email, str) or len(email)>254 or not re.fullmatch(r'[^\s@]+@[^\s@]+\.[^\s@]+', email.strip()):
-                raise APIError(422, 'Enter a valid email address')
+            if not isinstance(email, str) or len(email)>254:
+                raise APIError(422, 'Enter a valid username or email address')
+            valid_email = re.fullmatch(r'[^\s@]+@[^\s@]+\.[^\s@]+', email.strip())
+            valid_username = path == '/api/auth/login' and re.fullmatch(r'[A-Za-z0-9_.-]{3,64}', email.strip())
+            if not (valid_email or valid_username):
+                raise APIError(422, 'Enter a valid username or email address' if path == '/api/auth/login' else 'Enter a valid email address')
             email = email.strip().lower()
             password = data.get('password')
             if not isinstance(password, str) or len(password)>128: raise APIError(422, 'Enter a valid password')
@@ -382,7 +409,7 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
                 with connect() as db: row = db.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
                 # Comparable password work for unknown users limits account probing.
                 valid = password_matches(password, row['password_hash']) if row else bool(password_hash(password)) and False
-                if not row or not valid or not row['active']: raise APIError(401, 'Email or password is incorrect')
+                if not row or not valid or not row['active']: raise APIError(401, 'Username/email or password is incorrect')
                 self.set_auth(row['id'])
                 return self.json_response({'ok':True})
             validate_password(password)

@@ -11,6 +11,7 @@ class MotionTests(unittest.TestCase):
         self.js.eval('\n'.join(l for l in (ROOT/'expanded-motion.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
         self.js.eval((ROOT/'automatic-motion.js').read_text().replace('export ',''))
         self.js.eval('''
+          let hiddenLabel=null;const isWordEnabled=label=>label!==hiddenLabel;
           function sequence(direction=1, speed=1){return Array.from({length:20},(_,i)=>[1,...Array.from({length:63},(_,c)=>c%3===0?direction*Math.pow(i/19,speed):c%3===1?c/100:0),...Array(64).fill(0)]);}
           const examples=[...Array.from({length:3},()=>({label:'FORWARD',sequence:sequence(1)})),...Array.from({length:3},()=>({label:'BACK',sequence:sequence(-1)}))];
         ''')
@@ -189,6 +190,11 @@ class MotionTests(unittest.TestCase):
         self.js.eval("elements['#sentenceAutoAdd'].checked=true;elements['#sentenceAutoAdd'].change();elements['#sentenceAutoAdd'].change();")
         self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
         self.assertEqual(self.js.eval('spoken.length'),0)
+    def test_hidden_word_match_is_rejected_without_relabeling(self):
+        self.boot_studio()
+        self.js.eval("for(let i=0;i<3;i++){record('HELLO',1);record('BYE',-1)}hiddenLabel='HELLO';record('',1,false);")
+        self.assertTrue(self.js.eval("elements['#motionAccept'].disabled"))
+        self.assertEqual(self.js.eval('added.length'),0)
 
     def test_nested_preview_keeps_older_words_priority(self):
         self.js.eval("const strict={maxDistance:.1,minRatio:1.3,minVotes:2,mirror:false};const prior={labels:['FAR'],parameters:strict,samples:Array.from({length:3},()=>({label:'FAR',sequence:sequence(3)}))};const expanded={labels:['FAR','NEW'],newLabels:['NEW'],parameters:strict,baselineExtra:prior,samples:prior.samples.concat(Array.from({length:3},()=>({label:'NEW',sequence:sequence(6)})))};")

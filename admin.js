@@ -15,7 +15,7 @@ async function load(){
     $('#adminFeedback').replaceChildren();
     if(!data.evaluations.length)$('#adminFeedback').append(text('p','No feedback yet.'));
     for(const item of data.evaluations){const card=document.createElement('article');card.className='feedback-item';card.append(text('strong',item.respondent_type),text('p',`Accuracy ${item.accuracy}/5 · Usability ${item.usability}/5 · Performance ${item.performance}/5`),text('p',item.comments||'No comment'),text('small',new Date(item.created_at).toLocaleString()));$('#adminFeedback').append(card);}
-  }catch(e){$('#adminContent').hidden=true;$('#adminStatus').textContent=e.message+'. Use the translator’s Sign in button to continue.';}
+  }catch(e){$('#adminContent').hidden=true;$('#adminStatus').textContent=e.message+'. Use Administrator sign in above to continue.';}
   finally{$('#adminRefresh').disabled=false;}
 }
 $('#adminRefresh').onclick=load;
