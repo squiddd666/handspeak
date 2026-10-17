@@ -1,0 +1,336 @@
+{
+  "selected": {
+    "epoch": 10,
+    "seed": 109,
+    "members": 1,
+    "threshold": 0.65,
+    "margin": 0,
+    "validation": {
+      "total": 4,
+      "correct": 3,
+      "wrong": 0,
+      "missed": 1,
+      "negativeTotal": 351,
+      "negativeFalse": 0,
+      "perWord": {
+        "NIGHT": {
+          "total": 4,
+          "correct": 3
+        }
+      }
+    },
+    "framingValidation": [
+      {
+        "scale": 1,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "NIGHT": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      },
+      {
+        "scale": 0.5625,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "NIGHT": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      },
+      {
+        "scale": 1.3,
+        "metrics": {
+          "total": 4,
+          "correct": 3,
+          "wrong": 0,
+          "missed": 1,
+          "negativeTotal": 351,
+          "negativeFalse": 0,
+          "perWord": {
+            "NIGHT": {
+              "total": 4,
+              "correct": 3
+            }
+          }
+        }
+      }
+    ],
+    "selectionScore": [
+      false,
+      3,
+      -9,
+      0
+    ]
+  },
+  "trials": [
+    {
+      "epoch": 5,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.8,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "NIGHT": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 2,
+            "wrong": 0,
+            "missed": 2,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 2
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        4,
+        -8,
+        0
+      ]
+    },
+    {
+      "epoch": 10,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "NIGHT": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        3,
+        -9,
+        0
+      ]
+    },
+    {
+      "epoch": 20,
+      "seed": 109,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 351,
+        "negativeFalse": 0,
+        "perWord": {
+          "NIGHT": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "framingValidation": [
+        {
+          "scale": 1,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 0.5625,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        },
+        {
+          "scale": 1.3,
+          "metrics": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "missed": 1,
+            "negativeTotal": 351,
+            "negativeFalse": 0,
+            "perWord": {
+              "NIGHT": {
+                "total": 4,
+                "correct": 3
+              }
+            }
+          }
+        }
+      ],
+      "selectionScore": [
+        false,
+        3,
+        -9,
+        0
+      ]
+    }
+  ],
+  "passesValidation": true,
+  "checkpointReloadVerified": true,
+  "checkpointSha256": "c16dbbac9110a154bb3b871a5cc5fb0e7f2ff9d372b8cf09b8863a12c015eecb",
+  "sourceSha256": "8c25268c40e9a85a2f548fd468c59e1435782d5c74b292750a76af25e4d2869c",
+  "deployed": false,
+  "errors": [
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "963db8e6a8cbfb8a849061712ed4634204857d8382cbe9275cc4d565b301cae3"
+    }
+  ]
+}

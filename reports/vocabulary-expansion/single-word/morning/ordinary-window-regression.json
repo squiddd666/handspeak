@@ -1,0 +1,523 @@
+{
+  "scope": "Known-recording regression with correlated timestamp windows, not independent accuracy or real-time segmentation",
+  "checkpointSha256": "3b228a6b46dfcadf62371bed8d37fbba2aba6f58732f39c9cdba77c7e6b4e94f",
+  "manifestSha256": "49e5f3bae15d6a2fe6ffa3e1bf8d576516c2b28853528440b49509db2f04297b",
+  "implementationSha256": "7641417bef42b64192a833c5904496461ccecb604d8d4cd198fd8ec4624e6e0b",
+  "recordings": 12,
+  "examplesIncludingWindows": 49,
+  "usableWindows": 25,
+  "usableWindowRecordingsPerAction": {
+    "ApplyEyeMakeup": 2,
+    "BrushingTeeth": 3,
+    "ShavingBeard": 2,
+    "Typing": 2
+  },
+  "falseSuggestions": 0,
+  "passesRegression": true,
+  "deployed": false,
+  "predictions": [
+    {
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "exampleId": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "exampleId": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3:0:2880",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        2880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "exampleId": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3:2360:5280",
+      "action": "Typing",
+      "windowMs": [
+        2360,
+        5280
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "exampleId": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3:4760:7680",
+      "action": "Typing",
+      "windowMs": [
+        4760,
+        7680
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3",
+      "exampleId": "d61009551faf41a1995ad84be3a5e9723300cf2ad0528d8017e8e032b6bc68f3:7160:10080",
+      "action": "Typing",
+      "windowMs": [
+        7160,
+        10080
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "exampleId": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "exampleId": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b:0:3000",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "exampleId": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b:2600:5440",
+      "action": "Typing",
+      "windowMs": [
+        2600,
+        5440
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b",
+      "exampleId": "b5f8940029a9d7aadcc1f3b6123a5076dd71ceade671de8ff4357220ab4f435b:5200:8080",
+      "action": "Typing",
+      "windowMs": [
+        5200,
+        8080
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "exampleId": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "action": "Typing",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "exampleId": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588:0:3000",
+      "action": "Typing",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "exampleId": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588:2480:5360",
+      "action": "Typing",
+      "windowMs": [
+        2480,
+        5360
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588",
+      "exampleId": "f76adc028524fef529bfd610802ec1e84afb3fcb9372a93846f82590f7d17588:4840:7760",
+      "action": "Typing",
+      "windowMs": [
+        4840,
+        7760
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "exampleId": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "exampleId": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816:0:2960",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "exampleId": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816:2200:5040",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2200,
+        5040
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816",
+      "exampleId": "c5568070162cf2451c50b8008e4112e79a76d3ba1dcb9e393f80f93298e8d816:4280:7280",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        4280,
+        7280
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "exampleId": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "exampleId": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a:0:3000",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "exampleId": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a:2600:5440",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2600,
+        5440
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a",
+      "exampleId": "a176541181584a025bc7e49565d281c3a4849cf822b996c46afd833b474ace0a:5200:8080",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        5200,
+        8080
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "exampleId": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "action": "BrushingTeeth",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "exampleId": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4:0:2920",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "exampleId": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4:2520:5440",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        2520,
+        5440
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4",
+      "exampleId": "800929082abcd9ac72c031e00a7cccd71d6e30d0ef80458f40be431c50fa47c4:4920:7880",
+      "action": "BrushingTeeth",
+      "windowMs": [
+        4920,
+        7880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "exampleId": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "exampleId": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1:0:2960",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "exampleId": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1:1920:4800",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        1920,
+        4800
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1",
+      "exampleId": "7c849fa0c6c206526f985770d63d5d8d15e92baa54291d31c1990b56422068a1:3760:6760",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        3760,
+        6760
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "exampleId": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "exampleId": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf:0:2960",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
+      "exampleId": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf:2360:5360",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        2360,
+        5360
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "exampleId": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "action": "ApplyEyeMakeup",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "exampleId": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c:0:2960",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        0,
+        2960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "exampleId": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c:2600:5400",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        2600,
+        5400
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "exampleId": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c:5040:7840",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        5040,
+        7840
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",
+      "exampleId": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c:7280:10280",
+      "action": "ApplyEyeMakeup",
+      "windowMs": [
+        7280,
+        10280
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "exampleId": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "exampleId": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e:0:2800",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        2800
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "exampleId": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e:3040:5840",
+      "action": "ShavingBeard",
+      "windowMs": [
+        3040,
+        5840
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "exampleId": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e:6080:8880",
+      "action": "ShavingBeard",
+      "windowMs": [
+        6080,
+        8880
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e",
+      "exampleId": "8e4e8a612e63e5fd00fcd41d3070b5007450cdb1c628e793e0aea379a016542e:9120:11960",
+      "action": "ShavingBeard",
+      "windowMs": [
+        9120,
+        11960
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "exampleId": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "exampleId": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998:0:3000",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        3000
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "exampleId": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998:1720:4640",
+      "action": "ShavingBeard",
+      "windowMs": [
+        1720,
+        4640
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998",
+      "exampleId": "65bd344fe0219d462bda9eeba8e62943de4ab5bb81c2b6a771682b24aa4ae998:3440:6400",
+      "action": "ShavingBeard",
+      "windowMs": [
+        3440,
+        6400
+      ],
+      "usable": false,
+      "predicted": null
+    },
+    {
+      "sha256": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "exampleId": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "action": "ShavingBeard",
+      "windowMs": null,
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "exampleId": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3:0:2920",
+      "action": "ShavingBeard",
+      "windowMs": [
+        0,
+        2920
+      ],
+      "usable": true,
+      "predicted": null
+    },
+    {
+      "sha256": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3",
+      "exampleId": "18e4bb6cfb8b2cda2bb9218c03683289cb953242dfc3a3f710819288ccff15a3:3040:6000",
+      "action": "ShavingBeard",
+      "windowMs": [
+        3040,
+        6000
+      ],
+      "usable": true,
+      "predicted": null
+    }
+  ]
+}

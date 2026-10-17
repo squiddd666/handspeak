@@ -7,6 +7,7 @@ import sys
 import time
 import check_split_regression as regression
 import evaluate_calibrated_candidate as evaluation
+import evaluate_calibrated_candidate_v2 as evaluation_v2
 from calibrate_word_thresholds import write,sha
 BASE=Path('/opt/handspeak-training/single-word-20261010')
 REPO=Path(__file__).resolve().parents[2]
@@ -31,8 +32,10 @@ def main():
         reports=['regression.json','ordinary-window-regression.json','additional-ordinary-regression.json']
         if not all(json.loads((report/name).read_text()).get('passesRegressionScreen',json.loads((report/name).read_text()).get('passesRegression',False)) for name in reports):status('regression-failed',state='complete');return
         status('fresh-sign-evaluation',state='running')
-        evaluation.SOURCE=root/'frozen';evaluation.ROOT=root/'fresh';evaluation.REPORT=report/'fresh';evaluation.base.ROOT=evaluation.ROOT;evaluation.base.REPORT=evaluation.REPORT
-        evaluation.main();result=json.loads((root/'fresh/test-results.json').read_text())
+        # v2 evaluator: the PopSign archive can no longer supply the 2 SHOWER held-out clips
+        # that select() requires, so the v1 fresh test fails before download. v2 excludes that
+        # negative label, records the exclusion in the protocol, and keeps every gate identical.
+        evaluation_v2.main(args.word);result=json.loads((root/'fresh-v2/test-results.json').read_text())
         status('recording-check-complete',state='complete',passesFreshSignGate=result['passesRecordedClipGate'],remaining='Fresh ordinary-action screen, actual browser camera and integration checks before publishing')
     except Exception as error:status('failed',state='failed',error=str(error));raise
 if __name__=='__main__':main()
