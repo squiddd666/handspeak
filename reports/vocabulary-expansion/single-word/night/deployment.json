@@ -1,0 +1,26 @@
+{
+  "word": "NIGHT",
+  "deployed": true,
+  "deployedAt": "20261017T081507Z",
+  "modelFile": "models/motion-categories/single-night.json",
+  "modelSha256": "acc8a02828753f55772546a25019f841591a786968e2685fb925585146a44c8d",
+  "checkpointSha256": "c16dbbac9110a154bb3b871a5cc5fb0e7f2ff9d372b8cf09b8863a12c015eecb",
+  "backup": "/opt/handspeak-staging/deployment-backups/single-night-20261017T081507Z",
+  "cameraTested": false,
+  "integrationTested": false,
+  "policy": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+  "recordedMetrics": {
+    "total": 4,
+    "correct": 4,
+    "wrong": 0,
+    "missed": 0,
+    "negativeTotal": 110,
+    "negativeFalse": 0,
+    "perWord": {
+      "NIGHT": {
+        "total": 4,
+        "correct": 4
+      }
+    }
+  }
+}

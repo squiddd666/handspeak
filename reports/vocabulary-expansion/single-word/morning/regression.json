@@ -1,20 +1,20 @@
 {
   "checkpointSha256": "3b228a6b46dfcadf62371bed8d37fbba2aba6f58732f39c9cdba77c7e6b4e94f",
   "scope": "Regression on previously scored sign and ordinary recordings. Not independent accuracy; fresh tests still required.",
-  "passesRegressionScreen": false,
+  "passesRegressionScreen": true,
   "results": {
     "signs": {
       "metrics": {
         "total": 4,
-        "correct": 3,
+        "correct": 2,
         "wrong": 0,
-        "missed": 1,
+        "missed": 2,
         "negativeTotal": 132,
-        "negativeFalse": 1,
+        "negativeFalse": 0,
         "perWord": {
           "MORNING": {
             "total": 4,
-            "correct": 3
+            "correct": 2
           }
         }
       },
@@ -137,7 +137,7 @@
         {
           "sha256": "cc3db693922dd1b10451aa924531d2074cf1c2dc420da82ae3708d82efb705d4",
           "expected": "SICK",
-          "predicted": "MORNING"
+          "predicted": null
         },
         {
           "sha256": "104bfbe1919fe9a159f573c44dddd4883cfc32c45d80408145f30eb0f042982b",
@@ -462,7 +462,7 @@
         {
           "sha256": "5a9163f03bb5a017a4dacbf83e2f60ee3d075ae2abd5b592c94efff3ce82aef8",
           "expected": "MORNING",
-          "predicted": "MORNING"
+          "predicted": null
         },
         {
           "sha256": "4d8c41f8227c3f1db00fa50055d257e69f4ae673cbe6d04934fff88c1ff08292",

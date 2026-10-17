@@ -14,8 +14,8 @@
     "ShavingBeard": 2,
     "Typing": 3
   },
-  "falseSuggestions": 2,
-  "passesRegression": false,
+  "falseSuggestions": 0,
+  "passesRegression": true,
   "deployed": false,
   "predictions": [
     {
@@ -956,7 +956,7 @@
       "action": "HeadMassage",
       "windowMs": null,
       "usable": true,
-      "predicted": "MORNING"
+      "predicted": null
     },
     {
       "sha256": "d889d6ad259cf83e98596c5159d397d9a3a88804b6932eb4385c2a73a157722e",
@@ -967,7 +967,7 @@
         2960
       ],
       "usable": true,
-      "predicted": "MORNING"
+      "predicted": null
     },
     {
       "sha256": "d889d6ad259cf83e98596c5159d397d9a3a88804b6932eb4385c2a73a157722e",

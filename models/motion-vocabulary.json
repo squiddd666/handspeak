@@ -1784,12 +1784,14 @@
       ],
       "sourceLabel": "night",
       "sourceVersion": "v1_0",
-      "recognition": "not-pretrained",
+      "recognition": "category-preview",
       "note": "",
       "video": "media/signs/night.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/night/index.html",
-      "cameraGroups": [],
-      "testSummary": "Research check: 1/4 clips correctly matched this word. New category model is not enabled; evaluation was insufficient."
+      "cameraGroups": [
+        "single-night"
+      ],
+      "testSummary": "Recorded screen: 4/4 correct, 0/110 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
     {
       "id": "early",

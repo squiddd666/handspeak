@@ -84,6 +84,34 @@
       "checkpointSha256": "546423b54fcf4a70d4cc9ccf4c1f3b968dc5aa85132d49b004fad92e834dca20",
       "cameraTested": false,
       "integrationTested": false
+    },
+    {
+      "id": "single-night",
+      "name": "NIGHT",
+      "labels": [
+        "NIGHT"
+      ],
+      "file": "models/motion-categories/single-night.json",
+      "sha256": "acc8a02828753f55772546a25019f841591a786968e2685fb925585146a44c8d",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "NIGHT": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "c16dbbac9110a154bb3b871a5cc5fb0e7f2ff9d372b8cf09b8863a12c015eecb",
+      "cameraTested": false,
+      "integrationTested": false
     }
   ],
   "status": "experimental",

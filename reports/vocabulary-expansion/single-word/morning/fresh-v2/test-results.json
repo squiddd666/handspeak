@@ -1,0 +1,597 @@
+{
+  "metrics": {
+    "total": 4,
+    "correct": 1,
+    "wrong": 0,
+    "missed": 3,
+    "negativeTotal": 110,
+    "negativeFalse": 0,
+    "perWord": {
+      "MORNING": {
+        "total": 4,
+        "correct": 1
+      }
+    }
+  },
+  "passesRecordedClipGate": false,
+  "checkpointSha256": "3b228a6b46dfcadf62371bed8d37fbba2aba6f58732f39c9cdba77c7e6b4e94f",
+  "scope": "Fresh recordings from existing held-out signer pool. No newly recruited people, ordinary-action or live-camera accuracy claim. SHOWER excluded from the negative panel: the archive cannot supply the required 2 clips.",
+  "excludedNegativeLabels": [
+    "SHOWER"
+  ],
+  "negativeLabelCount": 55,
+  "deployed": false,
+  "readyForDeployment": false,
+  "predictions": [
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "fff8997fe4620494522e468974db32f68d9d85367005de8ca04de1fd63fa79c1"
+    },
+    {
+      "expected": "SPEAK",
+      "predicted": null,
+      "sha256": "66898ca9aa7f9d72c7021741f4daf6f1649753991ff0e72b3fc05894e585947c"
+    },
+    {
+      "expected": "LISTEN",
+      "predicted": null,
+      "sha256": "f0d5591c264b25ee6c84225b04075901659a5f68554bc40dfab6cbdc7319af7c"
+    },
+    {
+      "expected": "LISTEN",
+      "predicted": null,
+      "sha256": "f0fe3702265ba9075ff7fad05d9948c0b5f192696db1e0fff0cbd0f7a8daf6af"
+    },
+    {
+      "expected": "HUNGRY",
+      "predicted": null,
+      "sha256": "6834d2e2cf91ab50e6f8f05fe19cf34b1fee2104cd0e6bd7e3e6574f73a04db2"
+    },
+    {
+      "expected": "HUNGRY",
+      "predicted": null,
+      "sha256": "74f63f1b54e899264af2778c143b1e920380cba5f57c3c6fca4a4d4d95d6aa92"
+    },
+    {
+      "expected": "THIRSTY",
+      "predicted": null,
+      "sha256": "6e541294dfe38434e32361f8f978ae1f42c0549cb3f93577d2d98a9f824bcd6a"
+    },
+    {
+      "expected": "THIRSTY",
+      "predicted": null,
+      "sha256": "465c6dd0fe227a36b10fd20e3873fa4ab696fa2316eb3bca921eb310afa7527a"
+    },
+    {
+      "expected": "HOT",
+      "predicted": null,
+      "sha256": "e48bebee2ff6e56535a658fd0f21da81de23ce420f2f0a6c7472707860701911"
+    },
+    {
+      "expected": "HOT",
+      "predicted": null,
+      "sha256": "269eaae4a2a0451654a1851531fc4ed6c655ffd3bdfbba38904cc90fbdf4291e"
+    },
+    {
+      "expected": "SHOES",
+      "predicted": null,
+      "sha256": "0bbf14a1ab94724f990c48e0015fa9b1cd82e6d1375bc8a6a316c0502f2ba4cf"
+    },
+    {
+      "expected": "SHOES",
+      "predicted": null,
+      "sha256": "3eadb17b993547a75afbdc8b8d901460767621c618010897b72ec5bbf1c958f1"
+    },
+    {
+      "expected": "BED",
+      "predicted": null,
+      "sha256": "3c948e9f0c6f101fdebe137637b69752b34465dbd913a227f9045a04202d6210"
+    },
+    {
+      "expected": "BED",
+      "predicted": null,
+      "sha256": "5511bee705f7298d2cbfe1e83b30bb027da1608a60dd93d19096512ff6b2c5d9"
+    },
+    {
+      "expected": "PAIN",
+      "predicted": null,
+      "sha256": "9033cf4981d3a0e61ed2756ef9b55212c62f8aad9765046f823a1744b7153ef7"
+    },
+    {
+      "expected": "PAIN",
+      "predicted": null,
+      "sha256": "138340e0d9af9e08a2e7d9c51b7ab5aa958665bedb7438ceb153d9c42434c62c"
+    },
+    {
+      "expected": "SICK",
+      "predicted": null,
+      "sha256": "ccc5ac7606a2e73e7acc78a1d9df2f8b1ccac22c79410bc0cfe7c177d4cedbd6"
+    },
+    {
+      "expected": "SICK",
+      "predicted": null,
+      "sha256": "6cb96f93f08fadc2cabeb2f4e9160c6646c08525cfd62de02227bf415ce97274"
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "684c8825d334d867c01cfca2ec2cecfed5e23241bba2f583b1d86df0f77a7ca4"
+    },
+    {
+      "expected": "BROTHER",
+      "predicted": null,
+      "sha256": "113f456e5bcee85f71668695b037067b7b52d858227c33064724ecc97888298d"
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "cb6d4648a1abc5ee1f40ad9b089607ae3c755e7247cbad1983c7e4dae113d9d5"
+    },
+    {
+      "expected": "GRANDMOTHER",
+      "predicted": null,
+      "sha256": "1fe7b9cf068691543ba802fad3229ea9d895517cf772a1ddfd805875a5dc9884"
+    },
+    {
+      "expected": "GRANDFATHER",
+      "predicted": null,
+      "sha256": "94f9658e0771e7bde5567ed64d8a1b3c046cd3b49ecc9e82ba89389a79463dd0"
+    },
+    {
+      "expected": "GRANDFATHER",
+      "predicted": null,
+      "sha256": "91fa15ffc63f4a4a3f931678ed30ddd5098336aa13b476fca645ac2364db6627"
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "4890b607358378ee39fbe0f65af37b4bf2dae607726881a84a3813a92efc4d42"
+    },
+    {
+      "expected": "CHILD",
+      "predicted": null,
+      "sha256": "20557a29066d12c84bf539350d3b84ece09c47c0fa7a9c49c2cefbf0ec8b8a28"
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "b6ed7e70371198c6cbc0b455564ef8686d78690f8b72febf9f1b33d60267f0cc"
+    },
+    {
+      "expected": "BOY",
+      "predicted": null,
+      "sha256": "ffa10c2354feeded83c1df951bee7e87caf6fbe77fe3e2a8e7db682705b02db1"
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "de55bc732c31ccee4deeabf626e882d44e0ebe97223f3650f433dd747cf560e4"
+    },
+    {
+      "expected": "GIRL",
+      "predicted": null,
+      "sha256": "a8033112cfd859c1523bb4b4ea3119dc90663cb6d92d7c37b46ca1e79b5c0577"
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "fc2edfb656cfd44655712b6466e30d7a10110f2405e2eef66ef7a151f7a7b4b7"
+    },
+    {
+      "expected": "MAN",
+      "predicted": null,
+      "sha256": "541b03635b27f6ca51224fee8f19defd8ffecb0dd2b0622bb724b79754e7cacb"
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "dcfc4fcc777b2aaa998cbe8bb9eac77dec4876f46796a73e48477c78ef1d9d03"
+    },
+    {
+      "expected": "BOOK",
+      "predicted": null,
+      "sha256": "a6e355a9051ed8ece80491b1b5d63debe64c1b3d40ec095c2f544abe647075ea"
+    },
+    {
+      "expected": "PEN",
+      "predicted": null,
+      "sha256": "f84d4eb3fa4038695ce7f9a4fd9d6a0a5b17ec0035b90923054ed150626a5583"
+    },
+    {
+      "expected": "PEN",
+      "predicted": null,
+      "sha256": "47b5d9fc936394d22dd0d133d407f2312b583bdd454663760d767d3b1c3dbdb0"
+    },
+    {
+      "expected": "PENCIL",
+      "predicted": null,
+      "sha256": "df2be5e9256fd66266afff5210e6970fc4b29bbc13f9f2d4101d1d38a0140f79"
+    },
+    {
+      "expected": "PENCIL",
+      "predicted": null,
+      "sha256": "155f22905451ed411de25933ce42badef0a965b454e1e5951da593f6ea876cfa"
+    },
+    {
+      "expected": "READ",
+      "predicted": null,
+      "sha256": "84581a03fb2edb09c19b979dad7763ffba88dbec4b23f5cad06bcfb10d5ee301"
+    },
+    {
+      "expected": "READ",
+      "predicted": null,
+      "sha256": "c7533f496bbb45c847e3c45373d789336e549beb2385065b2beb85a00be352e0"
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "e0c3929b208d4e83e41c45c01a2868d4da8bd1d426f3f83a42f91cc7075db33d"
+    },
+    {
+      "expected": "GIVE",
+      "predicted": null,
+      "sha256": "b480770efa772b5b64fc90c14499538a3d085c745ba705fce90e76c989a96293"
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "3bbdd3c5b31ef25da29a1aa24f3b011df9ac8d8ebfd0952c00d9d9dc5e037840"
+    },
+    {
+      "expected": "LOOK",
+      "predicted": null,
+      "sha256": "bf47d866f0d2683fef7f8fef3a975f39de0a218b62870de661c63712466ee248"
+    },
+    {
+      "expected": "SEE",
+      "predicted": null,
+      "sha256": "5f7ede81262c895f1db0545cb881423bf2aaa4596e762915d13eec41caece698"
+    },
+    {
+      "expected": "SEE",
+      "predicted": null,
+      "sha256": "a579eab64b6aa683817e246c06e9eeb9292866eb81f9193286ab862a09389057"
+    },
+    {
+      "expected": "HEAR",
+      "predicted": null,
+      "sha256": "3178ec886bb97f5b4f87478a2aff2dc8527e28a31a1ca2ec6cc25e4be2b232ee"
+    },
+    {
+      "expected": "HEAR",
+      "predicted": null,
+      "sha256": "76218abde9c18a16555086de523f72cd6e5ca070b957ed07c2009c69f01b41a5"
+    },
+    {
+      "expected": "CALL",
+      "predicted": null,
+      "sha256": "4b4df4c5e22e51049e63c8a1b98a9bfadbaef16bf831e72909cdf3205d9f1083"
+    },
+    {
+      "expected": "CALL",
+      "predicted": null,
+      "sha256": "94a44d663670ff80a8563d695b4589c9aacf4fae6aa4cfcad755d506436a8c41"
+    },
+    {
+      "expected": "FIND",
+      "predicted": null,
+      "sha256": "11ef129b8c1a31fc244ceea6213626d4d5569c084941d9de9c12dd9d0437edaf"
+    },
+    {
+      "expected": "FIND",
+      "predicted": null,
+      "sha256": "db400d4c37c299d1e30a3211f249ea5f3f473cb8c642d6fcc07d06c3482348b3"
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "4924b6da4e84812fe6a8fe793b266ce16618c1d4617ae929323fcbdf4739616c"
+    },
+    {
+      "expected": "HOME",
+      "predicted": null,
+      "sha256": "3c639dc29d7a58b59a73fbfaa867c555ec30b6eba42dfa3c9cc2717c7f2e5783"
+    },
+    {
+      "expected": "STORE",
+      "predicted": null,
+      "sha256": "7f9199ec23d1daa9b7c4054ec653597df2ea6944e3b605fb0f1c249d1ff34fbb"
+    },
+    {
+      "expected": "STORE",
+      "predicted": null,
+      "sha256": "8e052cbfb1db73c7e56a0bbd9eca86be8a86e0d0f60e52e4cc0aaa5f76b3cd6d"
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "487d5dcf4ed08e8201a7dad5fe0ca74c4729c827a00be1557fb9486a854c6bc2"
+    },
+    {
+      "expected": "ROOM",
+      "predicted": null,
+      "sha256": "d3eeb5b36abb402fb735a16147ad181e05285e83e8de38e947197217baf16fb2"
+    },
+    {
+      "expected": "CAR",
+      "predicted": null,
+      "sha256": "d793131bce5252561cf1c27cf485c3aa6beebe085efc4d3dec0424101e8c5dcb"
+    },
+    {
+      "expected": "CAR",
+      "predicted": null,
+      "sha256": "eb6f2f5e00f1364c57914c9cdf316d261cc66f47e9ad03c3c68dfb1e422c49fa"
+    },
+    {
+      "expected": "AIRPLANE",
+      "predicted": null,
+      "sha256": "0f22f5ebaad8cec78f4340160f33345aebeb9e9ed60643d2338b59d8e0ca06e0"
+    },
+    {
+      "expected": "AIRPLANE",
+      "predicted": null,
+      "sha256": "9404e6bb7b4a61b2f0a853e1c3659676b59603192a1b642c353af0cce407f391"
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "ade004a1274a236645a2fc1fa12083ccf46d4a12d619112d3553fe39514d4415"
+    },
+    {
+      "expected": "RIDE",
+      "predicted": null,
+      "sha256": "c58bea0df5efd560774ec2ce2b149e96df560af5325f097ebccc9d21e7a260cb"
+    },
+    {
+      "expected": "TOMORROW",
+      "predicted": null,
+      "sha256": "48241c7a5751eed454affb3db9d32308dd72d7f695861c2145e678c08fd4e152"
+    },
+    {
+      "expected": "TOMORROW",
+      "predicted": null,
+      "sha256": "50d54f656f33631a95d9132dd40fe12bc88bccbe48e7b4a116fd1c79c15822dc"
+    },
+    {
+      "expected": "YESTERDAY",
+      "predicted": null,
+      "sha256": "5d66c7283dd9091cf72b96d64f61bf43a0421a85450d852fcecac1e08071449d"
+    },
+    {
+      "expected": "YESTERDAY",
+      "predicted": null,
+      "sha256": "e7742ec33529448d96251b44b799cc6ed09f67f7b9cc4d8dfd62dc88703305b0"
+    },
+    {
+      "expected": "NOW",
+      "predicted": null,
+      "sha256": "74da90cece19940e430be28c1d99d6d053344623431782169ff73bf47787f2f2"
+    },
+    {
+      "expected": "NOW",
+      "predicted": null,
+      "sha256": "1b4f151c0dd06832dd335987ca957611c3f0e2c1286ac84d8068e22c3632eb32"
+    },
+    {
+      "expected": "LATER",
+      "predicted": null,
+      "sha256": "cd85aa2500732dc185bf8fd81527b5d2e0fafab0129189f82543b692b872e34e"
+    },
+    {
+      "expected": "LATER",
+      "predicted": null,
+      "sha256": "e9d36cb1e34b5546f413f4d11b04dc325248942b92d63f39ce3041316aed3162"
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "b19351c383307e90357e5bf6bae48aa0d6edf620afdeca5e4d346f75f515e8ef"
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "6f8660ca602cecac41497a3de5a5d00d57f72167fbb7ae283c81d22c23a8a695"
+    },
+    {
+      "expected": "MORNING",
+      "predicted": "MORNING",
+      "sha256": "27c77e9e9d5e9d8eb74c3d45eb18ef34c8d573c7f7b22eb8b421fd54283819c4"
+    },
+    {
+      "expected": "MORNING",
+      "predicted": null,
+      "sha256": "2e2c664a046b8b1f96546df01615a9bb2bd813e5640affde27490b9ec08a7029"
+    },
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "59947c0d5ad77223eb62fb2ca2f1393812ef4edd777972a2068a519070468ff3"
+    },
+    {
+      "expected": "NIGHT",
+      "predicted": null,
+      "sha256": "a4d6105a7656499f737e40248d64e914ad3f8fb009a75fcd39fac20dc16a34f0"
+    },
+    {
+      "expected": "FINE",
+      "predicted": null,
+      "sha256": "eea32945f2ed9315e4049ab07da7891901ad5043109dc84df8f41b4135723c7d"
+    },
+    {
+      "expected": "FINE",
+      "predicted": null,
+      "sha256": "f09d777cf150d18f543eede872ccbc52a44d0379a3622286e596b687302d7ddc"
+    },
+    {
+      "expected": "LIKE",
+      "predicted": null,
+      "sha256": "df6495165050916516198c4a7ae8b025bee929ec079bcc2b377320959fbfd2e6"
+    },
+    {
+      "expected": "LIKE",
+      "predicted": null,
+      "sha256": "b44de002183b20cf964fa000d12ecdfba2336c001f1462205a593a26a46c0224"
+    },
+    {
+      "expected": "STAY",
+      "predicted": null,
+      "sha256": "6e2e152a29e984043d44454ffebb5245ac728b11809d8a59808392e7037925d2"
+    },
+    {
+      "expected": "STAY",
+      "predicted": null,
+      "sha256": "29d5df23d58b1c269bbda0840045fef79b7899dd1ecf362f9f839546e633100b"
+    },
+    {
+      "expected": "TABLE",
+      "predicted": null,
+      "sha256": "4c76917c0cbf8428a0484f07e8ddb282fee3e3466ca60f4cbb2d107bf0bd0b6d"
+    },
+    {
+      "expected": "TABLE",
+      "predicted": null,
+      "sha256": "feb0aa4bb77b5a48f3690f041ed288435bac33119e93a80b72dcd6ebc550eece"
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "28c8df3b7a56681478d8898522f5c04692b46e33d5b00fcac46cdff0cf8c7dc9"
+    },
+    {
+      "expected": "CHAIR",
+      "predicted": null,
+      "sha256": "47d4c016172660874d8f629e6b8774821c6232f5593982a36008d20f949b83f5"
+    },
+    {
+      "expected": "FISH",
+      "predicted": null,
+      "sha256": "40d1aa0b151ded958594b23acaa4995946a4595fd57a38d690ad25937f7d5f1d"
+    },
+    {
+      "expected": "FISH",
+      "predicted": null,
+      "sha256": "20ee6326a1ba191073644ed3fc15e0ee2092e10ea15ac5a634718f9e33fd3e67"
+    },
+    {
+      "expected": "MILK",
+      "predicted": null,
+      "sha256": "9fa922cfd498002ecf7cace86daf06d6ab0010d0ffa9a7e3247f82074b051646"
+    },
+    {
+      "expected": "MILK",
+      "predicted": null,
+      "sha256": "2db0eb188c2d29b3fe5bb32f28417a78181f846c0c24a90ab322428f56a20495"
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "f5c762a6cb03cd11fa31ca88ab1164417da0043972855fdd275fbbdc1d7a46a9"
+    },
+    {
+      "expected": "CAN",
+      "predicted": null,
+      "sha256": "291e82f4840fd012a8cef5f2c94c2658aca403977bba2343a0c4509666cc46df"
+    },
+    {
+      "expected": "HAVE",
+      "predicted": null,
+      "sha256": "5e1af70e7a32c057b656450ac0f99604d3641bed109d0f011957c2023609f148"
+    },
+    {
+      "expected": "HAVE",
+      "predicted": null,
+      "sha256": "7f1084711de7c711c3ba3d6b41974fe86413353cdf25e5db09a25b19a9585382"
+    },
+    {
+      "expected": "BECAUSE",
+      "predicted": null,
+      "sha256": "339409d425ae19c48827c7dd3c8f325718de062b3bcb30af108cd3e82a5439b8"
+    },
+    {
+      "expected": "BECAUSE",
+      "predicted": null,
+      "sha256": "a3dc13254ab62f4055fdc2f44982825ee6acc4a04a9075d0bd02c0e903b2d8f1"
+    },
+    {
+      "expected": "HELLO",
+      "predicted": null,
+      "sha256": "5aa364996a73d52494ac95299d693b44befac6617084b55fe24d624cca0c506d"
+    },
+    {
+      "expected": "HELLO",
+      "predicted": null,
+      "sha256": "71d02779312c19d1dc975d6cbbaa8a03c190f4f91bf96dc04b4e7a4755e062df"
+    },
+    {
+      "expected": "THANK YOU",
+      "predicted": null,
+      "sha256": "08afc689b31ba182f1aa5b1324afac545567aadd725b2dafb3bf865b235f5ae7"
+    },
+    {
+      "expected": "THANK YOU",
+      "predicted": null,
+      "sha256": "60e5b3d796fb73adb57e440794d71976f5be340beb48dbd89c9aafee1517f3e2"
+    },
+    {
+      "expected": "PLEASE",
+      "predicted": null,
+      "sha256": "cd55b666b5ff4706726d9d75143c9cfdc9bf666364db1ab5ec07dcca32ff705b"
+    },
+    {
+      "expected": "PLEASE",
+      "predicted": null,
+      "sha256": "2ecdd582e4d11e68cd38d4b51b12f07f058c8a2be4067d23e2c280e7a42d3994"
+    },
+    {
+      "expected": "YES",
+      "predicted": null,
+      "sha256": "3314034981c33893d8c7a3bc0a318894b356b0fa1d15473354d79fbe87bb6e06"
+    },
+    {
+      "expected": "YES",
+      "predicted": null,
+      "sha256": "7b6cba57e58e20353d95fd403da97a1b6add05daca5c706ac6c60aa9d4218a33"
+    },
+    {
+      "expected": "NO",
+      "predicted": null,
+      "sha256": "cdfe2920b59806c222a13d936de68d658c0a238bab7412b597c0eea14318b787"
+    },
+    {
+      "expected": "NO",
+      "predicted": null,
+      "sha256": "971953993669c8cece377bcd13e54fd13d0f6e25f0eabd589bf7796c34bacf51"
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "01879416f2df6d7fb153f9079034c9f5db80d405afce469d7627a8975840c092"
+    },
+    {
+      "expected": "FINISH",
+      "predicted": null,
+      "sha256": "c2db8ba9d4c6fe748b8f17e06f9c7330484724fa2fafe1ca52798b7ba6843569"
+    },
+    {
+      "expected": "DRINK",
+      "predicted": null,
+      "sha256": "dbce8d0a1f2d87fa68a4ac06504c4dd28ed810020e2a4571936c696016fe4571"
+    },
+    {
+      "expected": "DRINK",
+      "predicted": null,
+      "sha256": "e0ce25f59204e1d68f0bbd406b6beafa713595f3b897e93cea007a1eb32a5e4a"
+    },
+    {
+      "expected": "WATER",
+      "predicted": null,
+      "sha256": "541dcbbe6c41452a48af2c07b1af5d25cc21c506b3e4fa768ffefce0867e9b5f"
+    },
+    {
+      "expected": "WATER",
+      "predicted": null,
+      "sha256": "294c9f7d557b3c64e3f58188def2615d8b17fa4af7b9cade6107a62f4d7798d1"
+    }
+  ]
+}
