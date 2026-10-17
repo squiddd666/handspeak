@@ -2,14 +2,44 @@ const $=s=>document.querySelector(s);
 const el=(tag,text)=>{const node=document.createElement(tag);node.textContent=text;return node;};
 export function createExperienceUI({getMessage,setMessage,stopSpeech}){
  const chips=$('#sentenceChips'),progress=$('#sentenceProgress');let editIndex=-1,lastMatch=null;
+ function announce(text){const toast=$('#toast');if(toast)toast.textContent=text;}
+ function openCorrection(index,word){editIndex=index;$('#wordCorrection').value=word;$('#wordCorrectionDialog').showModal();$('#wordCorrection').focus();}
+ function removeWord(index){
+  const words=getMessage().match(/\S+/g)||[];
+  if(index<0||index>=words.length)return;
+  const [removed]=words.splice(index,1);setMessage(words.join(' '));
+  announce(`Removed ${removed}. ${words.length} ${words.length===1?'word':'words'} left.`);
+  // Keep the keyboard caret with the list instead of dropping focus to the document.
+  queueMicrotask(()=>{const labels=[...chips.querySelectorAll('.word-chip-label')];
+   (labels[Math.min(index,labels.length-1)]||labels[labels.length-1])?.focus();});
+ }
  function render(){
   const words=getMessage().match(/\S+/g)||[];chips.replaceChildren();
-  words.forEach((word,index)=>{const button=el('button',word);button.type='button';button.className='word-chip';button.setAttribute('aria-label',`Edit word ${index+1}: ${word}`);button.onclick=()=>{editIndex=index;$('#wordCorrection').value=word;$('#wordCorrectionDialog').showModal();$('#wordCorrection').focus();};chips.append(button);});
-  if(!words.length)chips.append(el('span','Your sentence starts with the first added word.'));
+  words.forEach((word,index)=>{
+   const wrap=el('span');wrap.className='word-chip';
+   const label=el('button',word);label.type='button';label.className='word-chip-label';label.dataset.index=String(index);
+   label.setAttribute('aria-label',`Edit word ${index+1}: ${word}`);
+   label.onclick=()=>openCorrection(index,word);
+   const remove=el('button','\u00d7');remove.type='button';remove.className='word-chip-remove';remove.dataset.index=String(index);
+   remove.setAttribute('aria-label',`Remove word ${index+1}: ${word}`);remove.title='Remove word';
+   remove.onclick=event=>{event.stopPropagation();removeWord(index);};
+   wrap.append(label,remove);chips.append(wrap);
+  });
+  if(!words.length){const empty=el('span','Your sentence starts with the first added word.');empty.className='chips-empty';chips.append(empty);}
   progress.textContent=words.length?`${words.length} words collected · Review them, then sign FINISH.`:'Collecting words · Sign once, then pause.';
   // Never silently overwrite a correction dialog after the draft changes.
   if($('#wordCorrectionDialog').open){$('#wordCorrectionDialog').close();editIndex=-1;}
  }
+ // Arrow keys walk the chips, Home/End jump, Delete or Backspace removes the focused word.
+ chips.addEventListener('keydown',event=>{
+  const labels=[...chips.querySelectorAll('.word-chip-label')];const current=labels.indexOf(document.activeElement);
+  if(current<0)return;
+  const key=event.key;
+  if(key==='ArrowRight'||key==='ArrowLeft'){event.preventDefault();const step=key==='ArrowRight'?1:-1;labels[(current+step+labels.length)%labels.length].focus();}
+  else if(key==='Home'){event.preventDefault();labels[0].focus();}
+  else if(key==='End'){event.preventDefault();labels[labels.length-1].focus();}
+  else if(key==='Delete'||key==='Backspace'){event.preventDefault();removeWord(current);}
+ });
  document.addEventListener('handspeak:draft-changed',render);
  $('#wordCorrectionForm').onsubmit=event=>{
   event.preventDefault();const replacement=$('#wordCorrection').value.trim();const words=getMessage().match(/\S+/g)||[];
