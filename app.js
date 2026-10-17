@@ -1,4 +1,4 @@
-import {createExperienceUI} from './experience-ui.js?v=20261011-features-1';
+import {createExperienceUI} from './experience-ui.js?v=20261017-chips-1';
 import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
 import {createTemporalCamera} from './temporal-camera.js?v=20261010-single-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
