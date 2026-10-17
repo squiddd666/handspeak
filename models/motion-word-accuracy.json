@@ -33,51 +33,11 @@
       "note": "2026-10-17: contiguous sampling, then per-word distance cutoffs calibrated on validation. Model prototypes unchanged; recognizer verified in JavaScript. Earlier runs retained in protocolHistory."
     },
     "expanded": {
-      "model": "Default + extra-word preview",
-      "scope": "Recorded clip checks; earlier words reuse regression clips. Live-camera accuracy unverified.",
+      "model": "Expanded preview: seven extra words (deployment-faithful frame sampling)",
+      "scope": "Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18.",
       "words": {
-        "FOOD": {
-          "correct": 1,
-          "total": 6
-        },
-        "HUNGRY": {
-          "correct": 2,
-          "total": 6
-        },
-        "LIKE": {
-          "correct": 2,
-          "total": 6
-        },
-        "GO": {
-          "correct": 0,
-          "total": 6
-        },
-        "HELLO": {
-          "correct": 2,
-          "total": 6
-        },
-        "THANK YOU": {
-          "correct": 4,
-          "total": 6
-        },
-        "PLEASE": {
-          "correct": 5,
-          "total": 6
-        },
-        "YES": {
-          "correct": 3,
-          "total": 6
-        },
-        "NO": {
-          "correct": 4,
-          "total": 6
-        },
-        "FINISH": {
-          "correct": 2,
-          "total": 6
-        },
         "DRINK": {
-          "correct": 3,
+          "correct": 7,
           "total": 8
         },
         "WATER": {
@@ -85,11 +45,28 @@
           "total": 8
         },
         "BOOK": {
-          "correct": 1,
+          "correct": 5,
           "total": 8
+        },
+        "FOOD": {
+          "correct": 5,
+          "total": 5
+        },
+        "HUNGRY": {
+          "correct": 4,
+          "total": 5
+        },
+        "LIKE": {
+          "correct": 3,
+          "total": 6
+        },
+        "GO": {
+          "correct": 1,
+          "total": 6
         }
       },
-      "modelSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9"
+      "modelSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9",
+      "note": "2026-10-18: frame sampling changed from uniform to contiguous. Two test clips are still untrackable (1 FOOD-class clip and 1 GO clip). Model and parameters unchanged; per-word cutoffs were searched on validation and did not change the test result."
     },
     "daily": {
       "model": "Five-word server preview",

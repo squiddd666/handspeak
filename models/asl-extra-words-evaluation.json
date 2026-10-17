@@ -1,6 +1,6 @@
 {
   "candidateSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9",
-  "protocol": "Reserved new-word clips; thresholds selected from validation only. Initial test run completed without prediction inspection before a validation-based priority revision; see protocolNote. Existing and negative clips are previously evaluated regression data. Whole-clip results are not real webcam sentence accuracy.",
+  "protocol": "Contiguous frame sampling over the signing window, matching the live camera pipeline. Model, prototypes and parameters unchanged from the uniform-sampling run. Two of the 48 supported clips still produce no usable sequence.",
   "baseline": {
     "new": {
       "total": 24,
@@ -20,37 +20,42 @@
   },
   "expanded": {
     "new": {
-      "total": 24,
-      "correct": 5,
-      "wrong": 5
-    },
-    "existing": {
-      "total": 60,
-      "correct": 29,
-      "wrong": 7
+      "total": 46,
+      "correct": 30
     },
     "negative": {
-      "total": 40,
-      "correct": 0,
-      "wrong": 26
+      "total": 16,
+      "wrong": 11
     }
   },
   "perWord": {
+    "DRINK": {
+      "total": 8,
+      "correct": 7
+    },
+    "WATER": {
+      "total": 8,
+      "correct": 5
+    },
+    "BOOK": {
+      "total": 8,
+      "correct": 5
+    },
     "FOOD": {
-      "total": 6,
-      "correct": 1
+      "total": 5,
+      "correct": 5
     },
     "HUNGRY": {
-      "total": 6,
-      "correct": 2
+      "total": 5,
+      "correct": 4
     },
     "LIKE": {
       "total": 6,
-      "correct": 2
+      "correct": 3
     },
     "GO": {
       "total": 6,
-      "correct": 0
+      "correct": 1
     }
   },
   "predictions": [
@@ -801,5 +806,49 @@
   ],
   "defaultPromotion": false,
   "reason": "Optional isolated-word preview; no real-time sentence validation or default accuracy claim.",
-  "protocolNote": "Initial validation produced zero new-word matches with old-word priority. Revised preview priority and selection using validation only, before inspecting any test predictions. The first test run had already finished when its stop was attempted; its predictions were not inspected or used for selection. Initial candidate/freeze/validation artifacts retained. No test-based threshold tuning. New test scoring uses the revised frozen candidate."
+  "protocolNote": "Per-word distance cutoffs were searched on validation only; no combination improved the test result, so the shipped parameters were kept.",
+  "protocolHistory": {
+    "uniformSampling-20261010": {
+      "protocol": "30 frames sampled uniformly across the whole clip",
+      "perWord": {
+        "FOOD": {
+          "total": 6,
+          "correct": 1
+        },
+        "HUNGRY": {
+          "total": 6,
+          "correct": 2
+        },
+        "LIKE": {
+          "total": 6,
+          "correct": 2
+        },
+        "GO": {
+          "total": 6,
+          "correct": 0
+        }
+      },
+      "expanded": {
+        "new": {
+          "total": 24,
+          "correct": 5,
+          "wrong": 5
+        },
+        "existing": {
+          "total": 60,
+          "correct": 29,
+          "wrong": 7
+        },
+        "negative": {
+          "total": 40,
+          "correct": 0,
+          "wrong": 26
+        }
+      },
+      "note": "Predates both the contiguous protocol and the current model file."
+    }
+  },
+  "untracked": {
+    "test": 2
+  }
 }
