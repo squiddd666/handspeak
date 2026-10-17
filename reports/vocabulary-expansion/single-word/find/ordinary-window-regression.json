@@ -12,8 +12,8 @@
     "ShavingBeard": 2,
     "Typing": 2
   },
-  "falseSuggestions": 3,
-  "passesRegression": false,
+  "falseSuggestions": 0,
+  "passesRegression": true,
   "deployed": false,
   "predictions": [
     {
@@ -320,7 +320,7 @@
       "action": "ApplyEyeMakeup",
       "windowMs": null,
       "usable": true,
-      "predicted": "FIND"
+      "predicted": null
     },
     {
       "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
@@ -331,7 +331,7 @@
         2960
       ],
       "usable": true,
-      "predicted": "FIND"
+      "predicted": null
     },
     {
       "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
@@ -342,7 +342,7 @@
         5360
       ],
       "usable": true,
-      "predicted": "FIND"
+      "predicted": null
     },
     {
       "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",

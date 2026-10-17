@@ -112,6 +112,34 @@
       "checkpointSha256": "c16dbbac9110a154bb3b871a5cc5fb0e7f2ff9d372b8cf09b8863a12c015eecb",
       "cameraTested": false,
       "integrationTested": false
+    },
+    {
+      "id": "single-see",
+      "name": "SEE",
+      "labels": [
+        "SEE"
+      ],
+      "file": "models/motion-categories/single-see.json",
+      "sha256": "28e4a7842236734020dcecfa9144ee38c5b88e711f58471fff960edbdd1c0ab5",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 1,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "SEE": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "8a0112f9f9bc9ce52e90d982445df0ccb8167cd53eaf40b645dbe5f7da2c09a4",
+      "cameraTested": false,
+      "integrationTested": false
     }
   ],
   "status": "experimental",

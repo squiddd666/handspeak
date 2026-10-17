@@ -6,15 +6,15 @@
     "signs": {
       "metrics": {
         "total": 4,
-        "correct": 3,
+        "correct": 1,
         "wrong": 0,
-        "missed": 1,
+        "missed": 3,
         "negativeTotal": 132,
         "negativeFalse": 0,
         "perWord": {
           "FIND": {
             "total": 4,
-            "correct": 3
+            "correct": 1
           }
         }
       },
@@ -332,7 +332,7 @@
         {
           "sha256": "e9acb7219305a1cc67275104308f424180faf2b6992ffb386b4be4fdd7237fb4",
           "expected": "FIND",
-          "predicted": "FIND"
+          "predicted": null
         },
         {
           "sha256": "a7e415c74bc5762de468010f75f5f1f973d3f417910ab4ec975f67e826298043",
@@ -342,7 +342,7 @@
         {
           "sha256": "527a6c8724ddb1af8d912d0b7bc52ff99158032c80008f09721f46961a040f0b",
           "expected": "FIND",
-          "predicted": "FIND"
+          "predicted": null
         },
         {
           "sha256": "82d0ce7f774d7f9d727fa8fcf5d75f8b4a2d5262731b7f7fa3cf4919108b15af",
@@ -708,7 +708,7 @@
         "wrong": 0,
         "missed": 0,
         "negativeTotal": 12,
-        "negativeFalse": 1,
+        "negativeFalse": 0,
         "perWord": {
           "FIND": {
             "total": 0,
@@ -755,7 +755,7 @@
         {
           "sha256": "dc6a275a52667e7b39852098732dfb83a9cd14be18c230bfec9424e01ad5a4cf",
           "expected": "OTHER MOVEMENT",
-          "predicted": "FIND"
+          "predicted": null
         },
         {
           "sha256": "ca42c7e1dbff3e09555e0c264d0f4dd9036482f35c347fe8f2ef16d2ba16938c",

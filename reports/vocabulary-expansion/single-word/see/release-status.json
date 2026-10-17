@@ -1,6 +1,8 @@
 {
   "word": "SEE",
-  "stage": "regression-failed",
+  "stage": "recording-check-complete",
   "deployed": false,
-  "state": "complete"
+  "state": "complete",
+  "passesFreshSignGate": true,
+  "remaining": "Fresh ordinary-action screen, actual browser camera and integration checks before publishing"
 }

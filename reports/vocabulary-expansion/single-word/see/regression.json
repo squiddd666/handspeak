@@ -1,7 +1,7 @@
 {
   "checkpointSha256": "8a0112f9f9bc9ce52e90d982445df0ccb8167cd53eaf40b645dbe5f7da2c09a4",
   "scope": "Regression on previously scored sign and ordinary recordings. Not independent accuracy; fresh tests still required.",
-  "passesRegressionScreen": false,
+  "passesRegressionScreen": true,
   "results": {
     "signs": {
       "metrics": {
@@ -10,7 +10,7 @@
         "wrong": 0,
         "missed": 0,
         "negativeTotal": 132,
-        "negativeFalse": 1,
+        "negativeFalse": 0,
         "perWord": {
           "SEE": {
             "total": 4,
@@ -157,7 +157,7 @@
         {
           "sha256": "b73e945d84c9685689d308d731e9a73963bbc600442d53f07d950b036c89d333",
           "expected": "BROTHER",
-          "predicted": "SEE"
+          "predicted": null
         },
         {
           "sha256": "aafc6dfb12cd8a547aa75cdf13df3e2b52cea264a837b84abaf9401f334c26fc",
