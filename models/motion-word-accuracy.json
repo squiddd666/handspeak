@@ -93,30 +93,31 @@
     },
     "daily": {
       "model": "Five-word server preview",
-      "scope": "Held-out recorded clips, including tracking failures; live-camera accuracy unverified.",
+      "scope": "Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified.",
       "words": {
         "NAME": {
-          "total": 11,
-          "correct": 6
+          "correct": 8,
+          "total": 11
         },
         "HOME": {
-          "total": 11,
-          "correct": 6
+          "correct": 8,
+          "total": 11
         },
         "HAVE": {
-          "total": 11,
-          "correct": 8
+          "correct": 11,
+          "total": 11
         },
         "WANT": {
-          "total": 22,
-          "correct": 15
+          "correct": 15,
+          "total": 22
         },
         "LOVE": {
-          "total": 11,
-          "correct": 9
+          "correct": 9,
+          "total": 11
         }
       },
-      "modelSha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec"
+      "modelSha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec",
+      "note": "2026-10-18: contiguous sampling (44/66 -> 50/66) then per-word cutoffs (50/66 -> 51/66). Prototypes unchanged; server matcher verified against the scoring implementation."
     }
   }
 }

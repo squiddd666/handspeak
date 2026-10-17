@@ -2,7 +2,7 @@
 import os,json,math,threading,hashlib,time
 from pathlib import Path
 LABELS=['NAME','HOME','HAVE','WANT','LOVE']
-EXPECTED_SHA='acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec'
+EXPECTED_SHA='ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67'
 class ResearchError(Exception):
  def __init__(self,message,status=422):super().__init__(message);self.status=status
 
@@ -40,7 +40,7 @@ class ResearchWords:
    if count>=12 or (key not in self.requests and len(self.requests)>=4096):raise ResearchError("Recording limit reached. Wait a minute before trying again.",429)
    self.requests[key]=(start,count+1)
  def path(self):return os.environ.get('HANDSPEAK_RESEARCH_WORDS_MODEL','')
- def status(self):return {'available':bool(self.path() and Path(self.path()).is_file()),'labels':LABELS,'experimental':True,'test':{'correct':44,'total':66,'unsupportedFalse':2,'unsupportedTotal':48},'processing':'server-landmarks','retention':'not stored','manualOnly':True}
+ def status(self):return {'available':bool(self.path() and Path(self.path()).is_file()),'labels':LABELS,'experimental':True,'test':{'correct':51,'total':66,'unsupportedFalse':3,'unsupportedTotal':48},'processing':'server-landmarks','retention':'not stored','manualOnly':True}
  def predict(self,seq):
   if not valid_sequence(seq):raise ResearchError('Expected 20 frames of valid hand-landmark features.')
   if not self.lock.acquire(blocking=False):raise ResearchError('The five-word recognizer is busy. Try again shortly.',429)
@@ -56,7 +56,8 @@ class ResearchWords:
    a,b=prepared(seq),prepared(seq,True)
    ranked=sorted((min(distance(a,r),distance(b,r)),label) for label,r in self.refs)
    best,label=ranked[0];other=next((d for d,l in ranked if l!=label),float('inf'));p=self.model['parameters'];ratio=other/(best+1e-6);votes=sum(l==label for _,l in ranked[:3])
-   accepted=label in LABELS and best<=p['maxDistance'] and ratio>=p['minRatio'] and (votes>=p['minVotes'] or ratio>=p.get('strongRatio',float('inf')))
+   limit=p.get('maxDistanceByLabel',{}).get(label,p['maxDistance'])
+   accepted=label in LABELS and best<=limit and ratio>=p['minRatio'] and (votes>=p['minVotes'] or ratio>=p.get('strongRatio',float('inf')))
    return {'label':label if accepted else None,'match':'possible' if accepted else 'no-reliable-match','experimental':True}
   finally:self.lock.release()
 research_words=ResearchWords()
