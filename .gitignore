@@ -34,3 +34,6 @@ mysql*.json
 mysql*.cnf
 database-access.txt
 *.sql.gz
+
+# Harness copy of the experience module for the chip check
+training/ux/chips/experience-ui.js
