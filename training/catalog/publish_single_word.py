@@ -44,6 +44,11 @@ def encoded(value):
 
 def gate(word):
     root, report = BASE/word.lower(), REPORT/word.lower()
+    # A candidate tested through evaluate_calibrated_candidate_v2.py writes its evidence to
+    # fresh-v2/ (the v2 run excludes a negative label the archive cannot supply, see
+    # reports/vocabulary-expansion/single-word/heldout-audit-20261017.md). Prefer it when
+    # present; the recorded-clip limits below are identical for both paths.
+    tested = 'fresh-v2' if (report/'fresh-v2/test-results.json').exists() else 'fresh'
     p = read(root/'frozen/protocol.json')
     if p['labels'] != [word] or sha(root/'frozen/frozen.pt') != p['checkpointSha256']:
         raise ValueError('Frozen candidate identity changed')
@@ -53,15 +58,15 @@ def gate(word):
     for filename, flag in [('regression.json', 'passesRegressionScreen'),
                            ('ordinary-window-regression.json', 'passesRegression'),
                            ('additional-ordinary-regression.json', 'passesRegression'),
-                           ('fresh/test-results.json', 'passesRecordedClipGate')]:
+                           (f'{tested}/test-results.json', 'passesRecordedClipGate')]:
         r = read(report/filename)
         if r.get(flag) is not True or r['checkpointSha256'] != p['checkpointSha256']:
             raise ValueError(f'Accuracy release gate failed: {filename}')
-    result = read(report/'fresh/test-results.json'); m = result['metrics']
+    result = read(report/tested/'test-results.json'); m = result['metrics']
     if m['total'] < 4 or m['correct'] / m['total'] < .5 or m['wrong'] or m['negativeTotal'] < 100 or m['negativeFalse']:
         raise ValueError('Recorded metrics fail release limits')
-    fresh = read(root/'fresh/protocol.json')
-    if fresh['checkpointSha256'] != p['checkpointSha256'] or sha(root/'fresh/protocol.json') != (root/'fresh/protocol.sha256').read_text().strip():
+    fresh = read(root/tested/'protocol.json')
+    if fresh['checkpointSha256'] != p['checkpointSha256'] or sha(root/tested/'protocol.json') != (root/tested/'protocol.sha256').read_text().strip():
         raise ValueError('Fresh-test freeze changed')
     return p, result
 

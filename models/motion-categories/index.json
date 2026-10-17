@@ -56,6 +56,34 @@
       "checkpointSha256": "d7b14a3bf617078b778073cabd2c42fbe01da94a7948bae312b1cd942a6300b2",
       "cameraTested": false,
       "integrationTested": false
+    },
+    {
+      "id": "single-pain",
+      "name": "PAIN",
+      "labels": [
+        "PAIN"
+      ],
+      "file": "models/motion-categories/single-pain.json",
+      "sha256": "43933be6bafb4d98e3db90ccaac3fcfffd331a152a26eaea5613450ebe8c3bcf",
+      "status": "experimental",
+      "test": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0,
+        "negativeTotal": 110,
+        "negativeFalse": 0,
+        "perWord": {
+          "PAIN": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      },
+      "releaseNotice": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+      "checkpointSha256": "546423b54fcf4a70d4cc9ccf4c1f3b968dc5aa85132d49b004fad92e834dca20",
+      "cameraTested": false,
+      "integrationTested": false
     }
   ],
   "status": "experimental",

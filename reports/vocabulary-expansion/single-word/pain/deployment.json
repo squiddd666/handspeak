@@ -1,0 +1,26 @@
+{
+  "word": "PAIN",
+  "deployed": true,
+  "deployedAt": "20261017T074103Z",
+  "modelFile": "models/motion-categories/single-pain.json",
+  "modelSha256": "43933be6bafb4d98e3db90ccaac3fcfffd331a152a26eaea5613450ebe8c3bcf",
+  "checkpointSha256": "546423b54fcf4a70d4cc9ccf4c1f3b968dc5aa85132d49b004fad92e834dca20",
+  "backup": "/opt/handspeak-staging/deployment-backups/single-pain-20261017T074103Z",
+  "cameraTested": false,
+  "integrationTested": false,
+  "policy": "Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified.",
+  "recordedMetrics": {
+    "total": 4,
+    "correct": 4,
+    "wrong": 0,
+    "missed": 0,
+    "negativeTotal": 110,
+    "negativeFalse": 0,
+    "perWord": {
+      "PAIN": {
+        "total": 4,
+        "correct": 4
+      }
+    }
+  }
+}
