@@ -1,5 +1,5 @@
 import {loadVocabularySettings,wordSettings,applyVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
-import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261011-accuracy-1';
+import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261020-accuracy-1';
 const video = document.querySelector('#signExampleVideo');
 const status = document.querySelector('#signExampleStatus');
 const speed = document.querySelector('#signExampleSpeed');

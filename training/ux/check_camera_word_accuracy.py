@@ -13,16 +13,17 @@ with sync_playwright() as p:
    if name=='app.js':content+='\nwindow.__testWordResult=setWordCameraResult;\nwindow.__testVocabulary=vocabularyLibrary;'
    route.fulfill(body=content,content_type=mime)
   return handler
- for name in ['app.js','motion-studio.js','vocabulary-library.js']:
+ for name in ['app.js','motion-studio.js','vocabulary-library.js','motion-accuracy.js']:
   page.route('**/'+name+'?*',serve(name,'text/javascript'))
+ page.route('**/models/motion-word-accuracy.json',lambda route:route.fulfill(body=(root/'models/motion-word-accuracy.json').read_text(),content_type='application/json'))
  page.route('**/index.html',serve('index.html','text/html'))
  page.goto('http://127.0.0.1:8000/index.html#workspace',wait_until='domcontentloaded')
  page.wait_for_function("window.__testWordResult && !document.querySelector('#expandedWords').disabled && document.querySelector('#motionWordAccuracy').textContent.includes('HELLO')")
  def match(label,daily=False):page.evaluate('(args)=>__testWordResult(args[0],"Possible match — verify before adding",args[1])',[label,daily])
  page.locator('#recognitionMode').select_option('words')
- match('WATER');assert page.locator('#liveWordAccuracy').inner_text()=='Recorded accuracy: 62.5% (5/8 clips)'
- match('HELLO');assert '33.3% (2/6 clips)' in page.locator('#liveWordAccuracy').inner_text()
- page.locator('#expandedWords').uncheck();match('HELLO');assert '50% (6/12 clips)' in page.locator('#liveWordAccuracy').inner_text()
+ match('HELLO');assert '91.7% (11/12 clips)' in page.locator('#liveWordAccuracy').inner_text()
+ match('WATER');assert 'Not measured' in page.locator('#liveWordAccuracy').inner_text()
+ page.locator('#expandedWords').evaluate("e=>{e.checked=true;e.dispatchEvent(new Event('change'))}");match('WATER');assert page.locator('#liveWordAccuracy').inner_text()=='Recorded accuracy: 62.5% (5/8 clips)'
  match('WANT',True);assert '68.2% (15/22 clips)' in page.locator('#liveWordAccuracy').inner_text()
  page.locator('#cameraVocabulary').select_option('single-fish',force=True);page.wait_for_function("document.querySelector('#activeVocabulary').textContent.includes('FISH')")
  match('FISH');assert '75% (3/4 clips)' in page.locator('#liveWordAccuracy').inner_text()

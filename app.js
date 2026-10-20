@@ -1,6 +1,6 @@
-import {createExperienceUI} from './experience-ui.js?v=20261017-chips-1';
+import {createExperienceUI} from './experience-ui.js?v=20261020-accuracy-1';
 import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
-import {createTemporalCamera} from './temporal-camera.js?v=20261010-single-1';
+import {createTemporalCamera} from './temporal-camera.js?v=20261019-android-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
 import {createResearchWords} from './research-words.js?v=20261011-features-1';
 import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-features-1';
@@ -59,9 +59,10 @@ let recognitionMode = 'letters';
 const cameraDiagnostic={lastCapture:null,times:[],lastRender:0,rawHands:0,usableHands:0};
 function renderCameraDiagnostic(){
  const times=cameraDiagnostic.times,span=times.length>1?times[times.length-1]-times[0]:0;
- $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261010-single-1',delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
+ $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261019-android-1',trackerState:cameraDiagnostic.trackerState||'idle',trackerError:cameraDiagnostic.trackerError||null,delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
 }
 $('#copyCameraDiagnostics').addEventListener('click',async()=>{renderCameraDiagnostic();try{await navigator.clipboard.writeText($('#cameraDiagnostics').textContent);notify('Diagnostics copied. Paste them into this chat.');}catch{notify('Select and copy the text in Camera diagnostics.');}});
+let handVision,handFiles,handRecovery=null;
 let handLandmarker,handDelegate='',temporalCamera=null,temporalHands=[],temporalFrameAt=-Infinity,temporalLagMs=0;
 let stream;
 let running = false;
@@ -262,27 +263,44 @@ async function prepareFaceTracker(){
     await faceTracker.load(vision,files);
   }catch{ $('#faceTrackingStatus').textContent='Unavailable';$('#faceRetry').hidden=false; }
 }
+function createHandRecognizer(delegate){
+  return handVision.HandLandmarker.createFromOptions(handFiles,{
+    baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task',delegate},
+    runningMode:'VIDEO',numHands:2,minHandDetectionConfidence:.65,minHandPresenceConfidence:.65,minTrackingConfidence:.6
+  });
+}
+function handTrackerFailed(error){
+  console.warn('Hand tracking stopped',error);
+  try{handLandmarker?.close?.();}catch{}
+  handLandmarker=null;motionStudio.cancel();researchWords.cancel();
+  cameraDiagnostic.trackerError=String(error?.message||error).slice(0,500);
+  const failed=()=>{cameraDiagnostic.trackerState='failed';$('#cameraHelp').textContent='Hand tracking stopped. Stop and restart the camera to retry. Open Camera diagnostics for the error.';renderCameraDiagnostic();};
+  if(handDelegate!=='GPU'||!handVision||handRecovery){failed();return;}
+  const attempt=cameraAttempt;
+  cameraDiagnostic.trackerState='recovering';
+  $('#cameraHelp').textContent='Hand tracking is switching to CPU compatibility mode…';renderCameraDiagnostic();
+  const recovery=createHandRecognizer('CPU').then(model=>{
+    if(attempt!==cameraAttempt||!running){model.close?.();return;}
+    handLandmarker=model;handDelegate='CPU';cameraDiagnostic.trackerState='ready';lastVideoTime=-1;
+    $('#cameraHelp').textContent='Hand tracking restored in CPU compatibility mode. Bring your full hand into view, sign once, then pause.';renderCameraDiagnostic();
+  }).catch(fallbackError=>{if(attempt===cameraAttempt&&running){cameraDiagnostic.trackerError=String(fallbackError?.message||fallbackError).slice(0,500);failed();}}).finally(()=>{if(handRecovery===recovery)handRecovery=null;});
+  handRecovery=recovery;
+}
 async function loadRecognizer(){
   if(handLandmarker){void faceTracker.load();return;}
-  cameraButton.disabled = true;
-  cameraButton.textContent = 'Loading recognizer…';
+  cameraButton.disabled=true;cameraButton.textContent='Loading recognizer…';cameraDiagnostic.trackerState='loading';cameraDiagnostic.trackerError=null;
   try{
-    const vision = await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/+esm');
-    const fileset = await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/wasm');
-    const options={
-      baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task', delegate:preferredVisionDelegate()},
-      runningMode:'VIDEO', numHands:2, minHandDetectionConfidence:.65, minHandPresenceConfidence:.65, minTrackingConfidence:.6
-    };
-    try{handLandmarker=await vision.HandLandmarker.createFromOptions(fileset,options);}
-    catch(error){if(options.baseOptions.delegate==='CPU')throw error;options.baseOptions.delegate='CPU';handLandmarker=await vision.HandLandmarker.createFromOptions(fileset,options);}
-    handDelegate=options.baseOptions.delegate;
-    void faceTracker.load(vision,fileset);
+    handVision=await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/+esm');
+    handFiles=await handVision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/wasm');
+    handDelegate=preferredVisionDelegate();
+    try{handLandmarker=await createHandRecognizer(handDelegate);}
+    catch(error){if(handDelegate==='CPU')throw error;handDelegate='CPU';handLandmarker=await createHandRecognizer(handDelegate);}
+    cameraDiagnostic.trackerState='ready';void faceTracker.load(handVision,handFiles);
   }catch(error){
-    console.error(error);
+    console.error(error);cameraDiagnostic.trackerState='failed';cameraDiagnostic.trackerError=String(error?.message||error).slice(0,500);
     throw new Error('The recognition model could not be loaded. Check your internet connection.');
   }finally{
-    cameraButton.disabled = false;
-    cameraButton.innerHTML = '<span aria-hidden="true">◉</span> Start camera';
+    cameraButton.disabled=false;cameraButton.innerHTML='<span aria-hidden="true">◉</span> Start camera';
   }
 }
 
@@ -296,17 +314,17 @@ async function startCamera(){
     if(!navigator.mediaDevices?.getUserMedia) throw new Error('Camera access is not supported by this browser.');
     if(recognitionMode==='words'&&motionStudio.usesTemporalModel()){
       temporalCamera=createTemporalCamera({
-        onDetection:(data,lag)=>{if(!running)return;temporalLagMs=lag;temporalHands=(data.landmarks||[]).filter(isUsableHand);temporalFrameAt=data.timestamp;consumeDetection(data,data.timestamp,data.imageAspect);},
+        onDetection:(data,lag)=>{if(!running)return;handDelegate=temporalCamera?.getDelegate?.()||handDelegate;temporalLagMs=lag;temporalHands=(data.landmarks||[]).filter(isUsableHand);temporalFrameAt=data.timestamp;consumeDetection(data,data.timestamp,data.imageAspect);},
         onGap:()=>{motionStudio.cancel();temporalHands=[];setRecognitionFeedback('Camera timing changed or processing fell behind. Pause, then sign again.');},
-        onError:message=>{if(running){stopCamera();notify(message);}}
+        onError:message=>{cameraDiagnostic.trackerState='failed';cameraDiagnostic.trackerError=String(message).slice(0,500);if(running){stopCamera();$('#cameraHelp').textContent=message;renderCameraDiagnostic();notify(message);}}
       });
-      handDelegate=await temporalCamera.ready;void prepareFaceTracker();
+      handDelegate=await temporalCamera.ready;cameraDiagnostic.trackerState='ready';cameraDiagnostic.trackerError=null;void prepareFaceTracker();
     }else await loadRecognizer();
     if(attempt!==cameraAttempt)return;
     const acquired = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:960},height:{ideal:720}},audio:false});
     if(attempt!==cameraAttempt){acquired.getTracks().forEach(t=>t.stop());return;}
     stream=acquired;
-    video.srcObject = stream;
+    video.muted=true;video.playsInline=true;video.srcObject = stream;
     await video.play();
     if(attempt!==cameraAttempt){acquired.getTracks().forEach(t=>t.stop());return;}
     running = true;
@@ -381,10 +399,7 @@ function detect(){
     if(handLandmarker&&!temporalCamera){
       try{detection=handLandmarker.detectForVideo(video,now);}
       catch(error){
-        console.warn('Hand tracking stopped',error);
-        try{handLandmarker.close?.();}catch{}
-        handLandmarker=null;
-        $('#cameraHelp').textContent='Hand tracking stopped. Restart the camera to retry; face tracking can continue.';
+        handTrackerFailed(error);
       }
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -392,7 +407,8 @@ function detect(){
     if(temporalCamera){
       temporalCamera.push(video,now,motionStudio.isCapturing());
       if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
-    }else consumeDetection(detection,now,video.videoHeight/video.videoWidth);
+    }else if(handLandmarker)consumeDetection(detection,now,video.videoHeight/video.videoWidth);
+    else setRecognitionFeedback(cameraDiagnostic.trackerState==='recovering'?'Restoring hand tracking in CPU compatibility mode…':'Hand tracking unavailable — stop and restart the camera.');
   }
   animationId=requestAnimationFrame(detect);
 }

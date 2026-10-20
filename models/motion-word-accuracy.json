@@ -93,7 +93,7 @@
           "total": 11
         }
       },
-      "modelSha256": "acd51663999fcbc7c633af22583e788f522a42a151b5fe63a1d3dfac460317ec",
+      "modelSha256": "ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67",
       "note": "2026-10-18: contiguous sampling (44/66 -> 50/66) then per-word cutoffs (50/66 -> 51/66). Prototypes unchanged; server matcher verified against the scoring implementation."
     }
   }

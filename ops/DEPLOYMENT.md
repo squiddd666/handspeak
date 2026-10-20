@@ -70,3 +70,15 @@ The current TLS certificate also includes handspeak.34.177.106.163.sslip.io. Aft
 
 The owner subsequently updated Cloudflare DNS. Public HTTPS and /api/health returned 200 and the local LLM reported available. The handspeak certificate was successfully reissued for handspeak.cvsu.dev alone, expiring January 15, 2027, and nginx was reloaded. certbot.timer remains enabled.
 Certificate renewal dry-run also passed using the canonical hostname alone.
+
+## Android hand-tracking recovery — October 19, 2026
+
+A camera preview without hand outlines can result from detector failure before classification. Previously a runtime GPU error closed the main hand detector permanently until restart. Both main-thread and worker detectors now retry once on CPU; a second failure is surfaced without repeated retries. Interrupted sequences are discarded on recovery, and stopped/restarted camera sessions reject stale recovery results. Camera diagnostics now include trackerState and trackerError. Video playback is explicitly muted and inline.
+
+Verified with unit tests and Android Chrome browser emulation using the HELLO practice clip, an injected GPU error, and a real CPU MediaPipe detector. This is not a physical Android device test or a word-accuracy claim. If the phone still shows no outlines, request its Camera diagnostics, browser version, and device model; inspect rawHands versus usableHands before changing detection or classifier thresholds. Test harness: training/ux/check_android_tracking.py (--live uses deployed application assets).
+
+## Accuracy display correction — October 20, 2026
+
+The five-word server preview display now matches the deployed per-word-cutoff model: 51/66 supported clips correct, 15 misses, no wrong supported label, and 3/48 unsupported clips falsely accepted. Its displayed SHA-256 is the deployed private model hash `ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67`. The prior 44/66, 2/48 text and base-model hash were stale.
+
+The seven-word expanded preview is now off by default because its recorded check produced 30/46 correct and 11/16 unsupported false matches; GO produced 1/6 correct. Users may explicitly enable it for testing. The evaluation table reports wrong and missed counts as “Not separated” for this profile because the current published summary does not separate those outcomes. These are recorded-clip results, not live-camera accuracy.

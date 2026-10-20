@@ -1,0 +1,28 @@
+{
+  "deployedAssets": true,
+  "emulation": "Android Chrome, portrait viewport",
+  "injectedGpuFailure": true,
+  "realCpuDetectorRecovered": true,
+  "trackedFrames": 14,
+  "diagnostics": {
+    "build": "20261019-android-1",
+    "trackerState": "ready",
+    "trackerError": "Injected Android GPU context failure",
+    "delegate": "CPU",
+    "processingLagMs": 0,
+    "input": "480x640",
+    "processedFps": 11.8,
+    "rawHands": 1,
+    "usableHands": 1,
+    "mode": "words",
+    "vocabulary": "Camera vocabulary: Default + extra-word preview \u00b7 13 words",
+    "model": "6 pretrained words loaded + 7 preview words \u00b7 0 personal examples",
+    "extraWords": true,
+    "serverPreview": false,
+    "automaticWords": true,
+    "faceTracking": false,
+    "lastCapture": null
+  },
+  "pageErrors": [],
+  "limitation": "Desktop Chromium emulation with a recorded video; physical Android compatibility and word accuracy are not established."
+}

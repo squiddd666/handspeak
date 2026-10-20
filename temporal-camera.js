@@ -1,5 +1,5 @@
 export function createTemporalCamera({onDetection,onGap,onError}){
- const worker=new Worker('./hand-detection-worker.js?v=20261010-single-1'),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
+ const worker=new Worker('./hand-detection-worker.js?v=20261019-android-1'),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
  let queue=[],busy=false,closed=false,generation=0,last=-Infinity,delegate='',lag=0,resolveReady,rejectReady;
  const ready=new Promise((resolve,reject)=>{resolveReady=resolve;rejectReady=reject;});
  function reset(){generation++;queue=[];last=-Infinity;}
@@ -14,6 +14,7 @@ export function createTemporalCamera({onDetection,onGap,onError}){
  worker.onmessage=({data})=>{
   if(closed)return;
   if(data.type==='ready'){delegate=data.delegate;rejectReady=null;resolveReady(delegate);return;}
+  if(data.type==='delegate'){delegate=data.delegate;gap();return;}
   if(data.type==='error'){fail(data.message);return;}
   busy=false;
   if(data.generation===generation){lag=performance.now()-data.timestamp;if(lag>2500)gap();else onDetection(data,lag);}
@@ -21,7 +22,7 @@ export function createTemporalCamera({onDetection,onGap,onError}){
  };
  worker.postMessage({type:'init'});
  return {
-  ready,reset,
+  ready,reset,getDelegate:()=>delegate,
   push(video,now,active){
    if(closed||!delegate||now-last<(delegate==='GPU'?30:active?60:lag>500?120:80))return;
    last=now;const scale=Math.min(1,640/Math.max(video.videoWidth,video.videoHeight)),width=Math.round(video.videoWidth*scale),height=Math.round(video.videoHeight*scale);

@@ -1,5 +1,5 @@
 import {loadVocabularySettings,applyVocabularySettings,isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
-import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText} from './motion-accuracy.js?v=20261011-accuracy-1';
+import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText} from './motion-accuracy.js?v=20261020-accuracy-1';
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
 export function createVocabularyLibrary({onWord,setVocabulary}) {
   const $=s=>document.querySelector(s),size=12;

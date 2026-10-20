@@ -186,6 +186,38 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(self.js.eval('scheduled'),2)
         self.assertIsNone(self.js.eval('handLandmarker'))
 
+    def test_gpu_runtime_failure_retries_cpu_and_resumes_detection(self):
+        self.boot_app()
+        self.js.eval('''
+          const performance={now:()=>1000};function requestAnimationFrame(){}
+          let resolveCPU,closed=0,cpuCalls=0;
+          handVision={HandLandmarker:{createFromOptions(files,options){if(options.baseOptions.delegate!=='CPU')throw Error('Expected CPU');return new Promise(resolve=>{resolveCPU=resolve})}}};
+          handDelegate='GPU';handLandmarker={detectForVideo(){throw Error('Android GPU context lost')},close(){closed++}};
+          video.readyState=2;video.currentTime=1;video.videoWidth=640;video.videoHeight=480;running=true;
+          detect();
+        ''')
+        self.assertEqual(self.js.eval('cameraDiagnostic.trackerState'),'recovering')
+        self.assertEqual(self.js.eval('closed'),1)
+        self.js.eval("resolveCPU({detectForVideo(){cpuCalls++;return {landmarks:[]}},close(){closed++}})")
+        while self.js.execute_pending_job():pass
+        self.assertEqual(self.js.eval('handDelegate'),'CPU')
+        self.js.eval('video.currentTime=2;detect()')
+        self.assertEqual(self.js.eval('cpuCalls'),1)
+        self.assertEqual(self.js.eval('cameraDiagnostic.trackerState'),'ready')
+
+    def test_stopped_camera_discards_late_cpu_recovery(self):
+        self.boot_app()
+        self.js.eval('''
+          let resolveCPU,closed=0;
+          handVision={HandLandmarker:{createFromOptions(){return new Promise(resolve=>{resolveCPU=resolve})}}};
+          handDelegate='GPU';handLandmarker={close(){}};running=true;
+          handTrackerFailed(Error('GPU context lost'));stopCamera();
+          resolveCPU({close(){closed++}});
+        ''')
+        while self.js.execute_pending_job():pass
+        self.assertIsNone(self.js.eval('handLandmarker'))
+        self.assertEqual(self.js.eval('closed'),1)
+
     def test_camera_restart_retries_face_model(self):
         self.boot_app()
         self.js.eval('let faceLoads=0;faceTracker.load=()=>{faceLoads++};handLandmarker={};loadRecognizer();')
