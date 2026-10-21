@@ -776,8 +776,8 @@
       ],
       "sourceLabel": "baby",
       "sourceVersion": "v2_1",
-      "recognition": "not-pretrained",
-      "note": "",
+      "recognition": "default-preview",
+      "note": "Experimental hand-only BABY model. Passed 8/8 untouched ASL Citizen test clips with zero false accepts among 319 negatives; real-camera accuracy remains unverified.",
       "video": null,
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v2_1/game/baby/index.html",
       "cameraGroups": []

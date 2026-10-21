@@ -1,0 +1,18 @@
+{
+  "word": "BABY",
+  "correct": 8,
+  "total": 8,
+  "negativeFalse": 0,
+  "negativeTotal": 319,
+  "threshold": 0.15949016378650666,
+  "checkpointSha256": "fcc48a5dfff4122002f907baf51ec1bd3eb516428d8b59810980f085b87a466d",
+  "sourceSha256": {
+    "/opt/handspeak-training/citizen-capstone-nine-test/test-features.json": "b54ce9632984cbf5dd2684012920c732fad73d0cc5f1a141399254032e711ef4",
+    "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+    "/opt/handspeak-training/vocabulary-expansion-fresh-test/test-features.json": "b4a7532de6372e8c7b96d9ec2d1fc40ee2f2d7ecc9cc8bb924b266354dbe0dba",
+    "/opt/handspeak-training/daily-words/citizen-research/test-features.json": "d6bae37a7167cc147e1c3a43dc2594b89e1926d6c9e6e6322845ff2de8164278"
+  },
+  "passes": true,
+  "scope": "Frozen hand-only classifier and development threshold; no test tuning.",
+  "deployed": false
+}

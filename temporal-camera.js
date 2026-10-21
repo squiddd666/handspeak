@@ -1,5 +1,5 @@
 export function createTemporalCamera({onDetection,onGap,onError}){
- const worker=new Worker('./hand-detection-worker.js?v=20261019-android-1'),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
+ const worker=new Worker('./hand-detection-worker.js?v=20261020-tracking-1'),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
  let queue=[],busy=false,closed=false,generation=0,last=-Infinity,delegate='',lag=0,resolveReady,rejectReady;
  const ready=new Promise((resolve,reject)=>{resolveReady=resolve;rejectReady=reject;});
  function reset(){generation++;queue=[];last=-Infinity;}

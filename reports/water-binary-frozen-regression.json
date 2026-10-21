@@ -1,0 +1,9 @@
+{
+  "word": "WATER",
+  "correct": 2,
+  "supportedTotal": 4,
+  "negativeFalseAccepts": 0,
+  "negativeTotal": 221,
+  "threshold": 0.4099858211112976,
+  "checkpointSha256": "278cecc1fb0e99be34f871ec28a31a15933fbdb6953233bbbecfddf3a50cf7ca"
+}

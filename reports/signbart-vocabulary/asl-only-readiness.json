@@ -1,0 +1,38 @@
+{
+  "checkedOn": "2026-10-21",
+  "scope": ["American Sign Language", "WLASL", "ASL-Citizen"],
+  "excluded": ["LSA-64 (Argentinian Sign Language)", "KArSL (Arabic Sign Language)"],
+  "datasetVocabulary": {
+    "wlasl": 2000,
+    "aslCitizen": 2731,
+    "caseInsensitiveOverlap": 1159,
+    "uniqueAslGlosses": 3572
+  },
+  "liveModel": {
+    "name": "CAPSTONE_ASL phase-aware isolated recognizer",
+    "available": true,
+    "labels": 100,
+    "labelsVerifiedInAslCitizen": 100,
+    "labelsAlsoInWlasl": 16,
+    "recordedTop1": 0.6885,
+    "recordedTop5": 0.87,
+    "liveCameraAccuracyVerified": false,
+    "deployment": "live experimental preview"
+  },
+  "signBartCandidates": {
+    "additionalReadyLabels": 0,
+    "deployment": "rejected",
+    "reasons": [
+      "all advertised ASL checkpoint links return HTTP 404",
+      "exact checkpoint label maps are missing",
+      "published preprocessing fails its smoke test",
+      "published imports are inconsistent",
+      "the repository has no reuse license"
+    ]
+  },
+  "datasetPublication": {
+    "allowedOnPublicWebsite": false,
+    "reason": "Microsoft's accompanying research license limits the materials to noncommercial research and prohibits distributing or publishing the data or modifications."
+  },
+  "decision": "Keep the existing separately licensed 100-label model live as experimental. Do not publish the complete ASL-Citizen catalog or enable unsupported glosses as camera-recognized words."
+}

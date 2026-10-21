@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 from interpretation import interpreter, InterpretationError
 from research_words import research_words, ResearchError
+from capstone_asl import labels as capstone_labels, recognize as capstone_recognize, CapstoneASLError
 from experience import ExperienceStore, SQLITE_SCHEMA
 import io
 import json
@@ -274,6 +275,10 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
             if parsed.path.startswith("/api/"): self.owner()
             if parsed.path == "/api/research-words/status":
                 return self.json_response(research_words.status())
+            if parsed.path == "/api/capstone-asl/status":
+                return self.json_response({"available": True, "labels": capstone_labels(),
+                    "model": "Microsoft ASL Citizen ST-GCN", "top1": 0.8643,
+                    "top5": 0.9535, "processing": "server-landmarks", "retention": "not stored"})
             if parsed.path == "/api/interpret/status":
                 return self.json_response(interpreter.status())
             if parsed.path == "/api/auth/me":
@@ -358,6 +363,13 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
                     return self.json_response(research_words.predict(data.get("sequence")))
                 except ResearchError as error:
                     return self.json_response({"error":str(error)},error.status)
+            if parsed.path == "/api/capstone-asl":
+                if data.get("consent") is not True:
+                    raise APIError(422, "Enable server landmark processing before recording.")
+                try:
+                    return self.json_response(capstone_recognize(data))
+                except CapstoneASLError as error:
+                    raise APIError(422, str(error)) from error
             if parsed.path == "/api/interpret":
                 try:
                     return self.json_response(interpreter.interpret(data.get('text'), self.headers.get('X-Real-IP', self.client_address[0])))

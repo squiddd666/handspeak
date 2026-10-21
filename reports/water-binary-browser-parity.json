@@ -1,0 +1,8 @@
+{
+  "clips": 225,
+  "maxScoreDifference": 6.156428358078392e-08,
+  "decisionParity": true,
+  "totalInferenceMs": 1961.5,
+  "meanInferenceMs": 8.717777777777778,
+  "deployed": false
+}

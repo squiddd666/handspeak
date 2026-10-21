@@ -3,7 +3,7 @@ import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText} f
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
 export function createVocabularyLibrary({onWord,setVocabulary}) {
   const $=s=>document.querySelector(s),size=12;
-  let catalog=null,packs=[],page=0,active='',loadId=0,libraryId=0,accuracyProfiles={};
+  let catalog=null,packs=[],page=0,active='',loadId=0,libraryId=0,accuracyProfiles={},preparedId='';
   let cameraMatch=null;
   function renderCameraAccuracy(){
     const output=$('#liveWordAccuracy');if(!output)return;
@@ -60,6 +60,37 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
     $('#motionLabel').value=item.label;$('#motionLabel').closest('details').open=true;cameraMode();document.dispatchEvent(new CustomEvent('handspeak:navigate',{detail:{target:'#motionLabel'}}));$('#motionLabel').scrollIntoView({block:'center',behavior:'smooth'});$('#motionLabel').focus({preventScroll:true});
     $('#vocabularyCameraStatus').textContent=`${item.label} has no active pretrained model. Record at least three personal examples; this does not validate recognition accuracy.`;
   }
+  async function preparePractice(item){
+    if(item.recognition==='daily-preview'){
+      if(!$('#researchWordsToggle').disabled&&!$('#researchWordsToggle').checked){
+        $('#researchWordsToggle').checked=true;$('#researchWordsToggle').dispatchEvent(new Event('change'));
+      }
+      $('#signExampleMode').textContent+=` Camera vocabulary prepared: ${item.label} uses the five-word server preview.`;
+      return;
+    }
+    if(item.recognition==='default-preview'||item.recognition==='existing-preview'){
+      if(!await activate(''))return;
+      const extra=$('#expandedWords');
+      const needsExtra=['DRINK','WATER','BOOK','FOOD','HUNGRY','LIKE','GO'].includes(item.label);
+      if(needsExtra&&!extra.disabled&&!extra.checked){extra.checked=true;extra.dispatchEvent(new Event('change'));}
+      $('#signExampleMode').textContent+=` Camera vocabulary prepared for ${item.label}.`;
+    }
+  }
+  async function preparePracticeId(id){
+    const dailyIds=['name','home','have','want','love'];
+    const extraIds=['drink','water','book','food','hungry','like','go'];
+    if(dailyIds.includes(id)){
+      if(!$('#researchWordsToggle').disabled&&!$('#researchWordsToggle').checked){
+        $('#researchWordsToggle').checked=true;$('#researchWordsToggle').dispatchEvent(new Event('change'));
+      }
+      return;
+    }
+    if(extraIds.includes(id)){
+      if(!await activate(''))return;
+      const extra=$('#expandedWords');
+      if(!extra.disabled&&!extra.checked){extra.checked=true;extra.dispatchEvent(new Event('change'));}
+    }
+  }
   function render(){
     if(!catalog)return;const matches=filtered(),pages=Math.max(1,Math.ceil(matches.length/size));page=Math.min(page,pages-1);
     $('#vocabularyStatus').textContent=`${matches.length} of ${catalog.items.length} entries · videos, external lessons, and recognition availability are shown separately.`;
@@ -95,6 +126,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
       const camera=$('#cameraVocabulary');camera.replaceChildren(new Option('Default words',''));packs.forEach(p=>camera.add(new Option(p.name+' · preview',p.id)));camera.value=active;camera.closest('label').hidden=packs.length===0;
       if(!packs.length)$('#vocabularyCameraStatus').textContent='New category models did not pass evaluation. Default words and the existing extra-word preview remain available.';
       page=0;render();renderMotionAccuracy();
+      if(preparedId)void preparePracticeId(preparedId);
     }catch{if(request===libraryId)$('#vocabularyStatus').textContent='Vocabulary could not load. Use Reload library to retry.';}
     finally{if(request===libraryId)$('#vocabularyRetry').disabled=false;}
   }
@@ -106,6 +138,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
   defaultLabel();
   document.addEventListener('handspeak:default-practice',async event=>{if(!await activate(''))return;const extra=$('#expandedWords');if(!extra.disabled){extra.checked=extra.checked||['DRINK','WATER','BOOK','FOOD','HUNGRY','LIKE','GO'].includes(event.detail.label);extra.dispatchEvent(new Event('change'));}cameraMode();});
   document.addEventListener('handspeak:practice',event=>{const item=catalog?.items.find(i=>i.id===event.detail.id);if(item)void practice(item);});
+  document.addEventListener('handspeak:prepare-practice',event=>{preparedId=event.detail.id;void preparePracticeId(preparedId);});
   void load();
   void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;render();renderMotionAccuracy();renderCameraAccuracy();});
   return {showCameraAccuracy(label,{daily=false,personal=false}={}){

@@ -8,7 +8,7 @@ export function accuracyText(metrics){
   return `Recorded accuracy: ${percent}% (${metrics.correct}/${metrics.total} clips)`;
 }
 export function referenceAccuracy(profiles,label){
-  for(const name of ['default','expanded','daily']){
+  for(const name of ['default','expanded','daily','baby']){
     const profile=profiles[name],metrics=profile?.words?.[label];
     if(validAccuracy(metrics))return {...metrics,model:profile.model,scope:profile.scope};
   }

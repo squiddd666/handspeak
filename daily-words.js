@@ -40,7 +40,7 @@ for(const card of document.querySelectorAll('[data-daily-word]')){
     $('#dailyWordsStatus').textContent=`Try your personal ${label} gesture at the camera. Sign once, then pause; verify any suggested word.`;
   });
   card.querySelector('[data-daily-video]')?.addEventListener('click',()=>{
-    document.dispatchEvent(new CustomEvent('handspeak:example',{detail:{label,id:label.toLowerCase(),src:['HOME','HAVE'].includes(label)?`media/signs/${label.toLowerCase()}.mp4`:undefined}}));
+    document.dispatchEvent(new CustomEvent('handspeak:example',{detail:{label,id:label.toLowerCase(),src:['HOME','HAVE'].includes(label)?`media/signs/${label.toLowerCase()}.mp4?v=20261020-practice-2`:undefined}}));
     document.dispatchEvent(new CustomEvent('handspeak:navigate',{detail:{target:'#sign-examples'}}));$('#sign-examples').scrollIntoView({block:'start',behavior:'smooth'});
   });
 }

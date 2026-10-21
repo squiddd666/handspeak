@@ -1,0 +1,9 @@
+{
+  "clips": 225,
+  "maxScoreDifference": 2.536804077912791e-07,
+  "decisionParity": true,
+  "totalInferenceMs": 1901.7999999523163,
+  "meanInferenceMs": 8.452444444232517,
+  "scope": "Headless Chromium JavaScript runtime over cached browser-compatible landmarks; excludes landmark detection.",
+  "deployed": false
+}

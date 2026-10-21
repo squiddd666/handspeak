@@ -1,0 +1,522 @@
+{
+  "selected": {
+    "seed": 43,
+    "epoch": 80,
+    "members": 1,
+    "threshold": 0.5,
+    "margin": 0,
+    "validation": {
+      "total": 46,
+      "correct": 37,
+      "wrong": 0,
+      "missed": 9,
+      "negativeTotal": 254,
+      "negativeFalse": 0,
+      "perWord": {
+        "HELLO": {
+          "total": 14,
+          "correct": 11
+        },
+        "DRINK": {
+          "total": 14,
+          "correct": 12
+        },
+        "BOOK": {
+          "total": 6,
+          "correct": 3
+        },
+        "HUNGRY": {
+          "total": 4,
+          "correct": 4
+        },
+        "HOME": {
+          "total": 4,
+          "correct": 3
+        },
+        "FISH": {
+          "total": 4,
+          "correct": 4
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "seed": 17,
+      "epoch": 20,
+      "members": 1,
+      "threshold": 0.8,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 30,
+        "wrong": 0,
+        "missed": 16,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 10
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 8
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "epoch": 40,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 34,
+        "wrong": 0,
+        "missed": 12,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 10
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 11
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "epoch": 80,
+      "members": 1,
+      "threshold": 0.8,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 30,
+        "wrong": 0,
+        "missed": 16,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 8
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 9
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "epoch": 20,
+      "members": 1,
+      "threshold": 0.9,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 23,
+        "wrong": 0,
+        "missed": 23,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 9
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 4
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 1
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "epoch": 40,
+      "members": 1,
+      "threshold": 0.35,
+      "margin": 0.4,
+      "validation": {
+        "total": 46,
+        "correct": 34,
+        "wrong": 0,
+        "missed": 12,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 11
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 8
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 4
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "epoch": 80,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 33,
+        "wrong": 0,
+        "missed": 13,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 10
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 9
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "epoch": 20,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 29,
+        "wrong": 0,
+        "missed": 17,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 10
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 7
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "epoch": 40,
+      "members": 1,
+      "threshold": 0.65,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 32,
+        "wrong": 0,
+        "missed": 14,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 9
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 10
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 2
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "epoch": 80,
+      "members": 1,
+      "threshold": 0.5,
+      "margin": 0,
+      "validation": {
+        "total": 46,
+        "correct": 37,
+        "wrong": 0,
+        "missed": 9,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 11
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 12
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    },
+    {
+      "seeds": [
+        17,
+        29,
+        43
+      ],
+      "epoch": 80,
+      "members": 3,
+      "threshold": 0.35,
+      "margin": 0.25,
+      "validation": {
+        "total": 46,
+        "correct": 37,
+        "wrong": 0,
+        "missed": 9,
+        "negativeTotal": 254,
+        "negativeFalse": 0,
+        "perWord": {
+          "HELLO": {
+            "total": 14,
+            "correct": 11
+          },
+          "DRINK": {
+            "total": 14,
+            "correct": 12
+          },
+          "BOOK": {
+            "total": 6,
+            "correct": 3
+          },
+          "HUNGRY": {
+            "total": 4,
+            "correct": 4
+          },
+          "HOME": {
+            "total": 4,
+            "correct": 3
+          },
+          "FISH": {
+            "total": 4,
+            "correct": 4
+          }
+        }
+      }
+    }
+  ],
+  "passesValidation": true,
+  "checkpointSha256": "4991aac980d6af5f64f68d0ee894ac76faacfbf4c20c7217150182da3f9c8962",
+  "sourceSha256": "09c17806b4af91d7f9dcb17af8dc27ce23b650e2d4056313ce3ef212340621ec",
+  "checkpointReloadVerified": true,
+  "independentAccuracyPassed": false,
+  "deployed": false,
+  "elapsedSeconds": 487.94464968901593,
+  "errors": [
+    {
+      "sha256": "524978aebe3bad80ef40cdd90eaf03881157563e98ae299c4c363437b6390e6e",
+      "expected": "BOOK",
+      "predicted": null,
+      "usable": false
+    },
+    {
+      "sha256": "88bb115a0bfa100e388cf9fa0e55e99691ed3956007f05ace814005e5a9f340a",
+      "expected": "BOOK",
+      "predicted": null,
+      "usable": true
+    },
+    {
+      "sha256": "58e99545e87c124142173998e763bbb3be2d7dd9926b82c21047b0b97e80c2d9",
+      "expected": "HOME",
+      "predicted": null,
+      "usable": false
+    },
+    {
+      "sha256": "23eb3e86bd558f9feb78eb991185ff41c847c36f2e0b3fdbcf0c0e090d60cc5a",
+      "expected": "HELLO",
+      "predicted": null,
+      "usable": false
+    },
+    {
+      "sha256": "d47a647571c212553d5ccaa77f1a7b2c542e9c40d9729fa8ea85e7e18bcf40fe",
+      "expected": "HELLO",
+      "predicted": null,
+      "usable": false
+    },
+    {
+      "sha256": "2a44b077676a266b46088adec7f712747395135b895d82edff5c56ae35d1eea9",
+      "expected": "HELLO",
+      "predicted": null,
+      "usable": false
+    },
+    {
+      "sha256": "75ac676716df3e1bd312d2f9fe859d82bbf9c99773a4a4248ce26f10613fe3e2",
+      "expected": "DRINK",
+      "predicted": null,
+      "usable": true
+    },
+    {
+      "sha256": "c4caf0a934bb5de1a8fe4108c360abaeba0ae84b862ff4e0ff7195b31248d819",
+      "expected": "DRINK",
+      "predicted": null,
+      "usable": true
+    },
+    {
+      "sha256": "bf3c91a45c9e9f320dd5c8586cd40ac85ffdd95127f866da5d5d1e4699fd0cb8",
+      "expected": "BOOK",
+      "predicted": null,
+      "usable": true
+    }
+  ]
+}

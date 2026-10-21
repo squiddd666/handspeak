@@ -14,10 +14,11 @@ function show(target,update=true){
  current=view;if(update&&location.hash!==target)history.pushState(null,'',target);
 }
 document.addEventListener('handspeak:navigate',e=>show(e.detail.target));
-document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const target=a.hash||'#home';if(target==='#main')return;show(target);},true);
-window.addEventListener('popstate',()=>show(location.hash||'#home',false));
-window.addEventListener('hashchange',()=>show(location.hash||'#home',false));
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const target=a.hash||'#home';if(target==='#main')return;if(target==='#capstoneWords'){const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));}show(target);},true);
+window.addEventListener('popstate',()=>show(location.hash||'#workspace',false));
+window.addEventListener('hashchange',()=>show(location.hash||'#workspace',false));
 $('#startSigning').addEventListener('click',()=>show('#workspace'));
+$('#startFocusedDemo').addEventListener('click',()=>{const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));show('#workspace');});
 function dock(){show('#workspace');$('#cameraLesson').hidden=false;$('#cameraLesson').append(lesson);}
 function selectLesson(id){const button=words.find(b=>b.dataset.signExample===id);if(button){button.click();$('#practiceWord').value=id;$('#practiceInstructions').textContent=$('#signExampleMode').textContent;}}
 document.addEventListener('handspeak:default-practice',e=>{selectLesson(e.detail.label.toLowerCase().replaceAll(' ','-'));dock();});
@@ -35,4 +36,19 @@ $('#preparePractice').addEventListener('click',()=>{
 });
 // Keep the LLM comparison next to the editable message and speech controls.
 const interpreter=$('#interpretTitle').closest('section');$('#messageBox').closest('article').append(interpreter);
-show(location.hash||'#home',false);
+let simple=true;
+try{simple=localStorage.getItem('handspeak-simple-view')!=='off';}catch{}
+function renderSimpleView(){
+ document.body.classList.toggle('simple-mode',simple);
+ const button=$('#simpleViewButton');button.setAttribute('aria-pressed',String(simple));
+ button.textContent=simple?'Show more tools':'Use simple view';
+}
+$('#simpleViewButton').addEventListener('click',()=>{
+ simple=!simple;renderSimpleView();
+ try{localStorage.setItem('handspeak-simple-view',simple?'on':'off');}catch{}
+ $('#simpleViewButton').focus();
+});
+renderSimpleView();
+const initialTarget=location.hash||'#workspace';
+if(!location.hash)history.replaceState(null,'','#workspace');
+show(initialTarget,false);

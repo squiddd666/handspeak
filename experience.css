@@ -8,11 +8,12 @@ section[id],div[id]{scroll-margin-top:24px}
 .signing-flow li{counter-increment:step;border-top:1px solid #4b5947;padding:14px 6px;font-size:13px;line-height:1.6;color:#aeb8ae}.signing-flow li::before{content:'0' counter(step);display:block;color:#d5e6b9;font-size:11px;margin-bottom:8px}.signing-flow b{color:#eef3e9;font-size:15px}
 .hero .privacy-note{font-size:12px;line-height:1.6;max-width:620px;margin:auto}
 .vocabulary-tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0}.vocabulary-tiers article{padding:24px;border:1px solid #414a3c;border-radius:10px;background:#111511}.vocabulary-tiers h3{font-size:22px;margin:18px 0}.vocabulary-tiers p{font-size:14px;line-height:1.65;color:#bdc5bc}.vocabulary-tiers a{font-size:13px}.tier-badge{font-size:11px;color:#d5e6b9}.tier-badge.preview{color:#efd09c}.tier-badge.personal{color:#b5c9ee}
+.focused-demo{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;margin:24px 0 42px;padding:26px;border:1px solid #637653;border-radius:12px;background:#151c12}.focused-demo h3{margin:9px 0 15px;font-size:24px}.focused-demo p{margin:0 0 14px;color:#c4cec0;font-size:14px;line-height:1.7}.focused-demo .section-actions{align-items:center}.focused-demo .section-actions a:not(.primary-button){color:#d5e6b9;text-underline-offset:4px}
 .recognition-feedback{grid-column:1/-1;margin:0;padding:14px 18px;border-top:1px solid #394432;background:#171e15;color:#e0edcc;font-size:14px;line-height:1.5;min-height:50px}
 .word-controls{grid-column:1/-1;padding:22px;border:1px solid #384133;border-radius:8px;margin-top:16px}.word-controls .motion-grid{display:block}.word-controls .trainer-card{margin-top:16px}.word-controls p{line-height:1.6}.ai-section>.sentence-tools,.ai-section>.optional-training{grid-column:1/-1;width:100%}.ai-section>.sentence-tools{padding:24px;border:1px solid #414a3c;border-radius:8px}
 .site-header nav{display:flex;gap:18px}.site-header nav a{white-space:nowrap}.site-header nav a[href='#workspace']{color:#d5e6b9;font-weight:700}
 :focus-visible{outline:2px solid #d5e6b9;outline-offset:5px}
-@media(max-width:1050px){.site-header{height:auto;min-height:90px;display:grid;grid-template-columns:1fr auto;gap:18px;padding:18px 20px}.site-header nav{grid-column:1/-1;grid-row:2;flex-wrap:wrap;justify-content:center;gap:14px 20px}.account-actions{grid-column:2;grid-row:1}.vocabulary-tiers{grid-template-columns:1fr}}
+@media(max-width:1050px){.site-header{height:auto;min-height:90px;display:grid;grid-template-columns:1fr auto;gap:18px;padding:18px 20px}.site-header nav{grid-column:1/-1;grid-row:2;flex-wrap:wrap;justify-content:center;gap:14px 20px}.account-actions{grid-column:2;grid-row:1}.vocabulary-tiers,.focused-demo{grid-template-columns:1fr}}
 @media(max-width:480px){.hero{margin:30px auto;padding:0 18px}.hero h1{font-size:38px}.hero>p{font-size:15px}.hero-actions{gap:16px;flex-direction:column}.signing-flow{grid-template-columns:1fr 1fr;gap:8px 20px}.hero .privacy-note{font-size:11px}.word-controls{padding:16px}.site-header nav a{font-size:12px}.recognition-feedback{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .hero h1 br{display:block}.hero-actions .primary-button{flex:none;width:auto;min-width:190px}
@@ -61,6 +62,8 @@ section[id],div[id]{scroll-margin-top:24px}
 .word-controls{margin:0;padding:0;background:#111710;overflow:hidden}
 .word-review-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 22px}
 .word-review-bar h3{font-size:16px;margin:0 0 5px}.word-review-bar p{font-size:13px;color:#aeb8ae;margin:0}
+.featured-word-model{margin:18px 20px;padding:20px;background:#182016;border-color:#536548}
+.featured-model-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.featured-model-heading h3{margin:6px 0 0;font-size:19px}.featured-model-heading>strong{flex:none;padding:7px 10px;border:1px solid #657a53;border-radius:20px;color:#d9edbf;font-size:12px}.featured-word-model>.camera-actions{padding:0;flex-wrap:wrap}.featured-word-model #capstoneStatus{padding:11px 13px;background:#202a1c;border-radius:7px;color:#d8e8c8}.featured-word-model details>summary{cursor:pointer;color:#d5e6b9;font-weight:600}.featured-word-model #capstoneVocabulary{overflow-wrap:anywhere}
 .word-settings>*:not(summary){margin:16px 20px}.word-settings .trainer-card{padding:18px}
 .word-settings #standardWordOptions{padding:0 0 12px}
 .output-card{display:flex;flex-direction:column;padding:24px;gap:20px}
@@ -84,6 +87,7 @@ section[id],div[id]{scroll-margin-top:24px}
  .camera-stage .live-result>span{font-size:8px}.camera-stage .live-result strong{font-size:26px}.camera-stage .live-result small{font-size:11px}
  .workspace-disclosure>summary{padding:14px 18px}
  .word-review-bar{padding:18px;flex-wrap:wrap;gap:12px}
+ .featured-word-model{margin:14px;padding:17px}.featured-model-heading{align-items:center}.featured-model-heading h3{font-size:17px}.featured-word-model>.camera-actions button{width:100%}
  .output-card{padding:18px;gap:16px}.output-actions button{font-size:13px}
 }
 /* The docked lesson uses the practice selector instead of repeating its word grid. */
@@ -110,3 +114,26 @@ section[id],div[id]{scroll-margin-top:24px}
 body.large-text{font-size:18px}.large-text .camera-tip,.large-text .speech-option,.large-text .workspace-disclosure>summary,.large-text .sentence-progress,.large-text .word-chip-label,.large-text .output-actions button,.large-text .site-header nav a{font-size:17px!important}.large-text .message-box p{font-size:28px}.large-text .camera-stage .live-result small{font-size:15px}
 .admin-panel label{display:block;margin:14px 0}.admin-panel textarea,.admin-panel select,.admin-panel input:not([type=checkbox]){max-width:100%;padding:10px}.admin-panel textarea{width:100%;min-height:100px}.admin-feedback-actions{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:700px){.feature-dialog{padding:20px}.account-actions{gap:4px}.account-actions #openTutorial{font-size:12px}.recorded-checks{padding:16px}.large-text .site-header nav{gap:10px}}
+
+/* Default low-clutter view for keyboard, switch, cognitive, and mobile access. */
+body.simple-mode .site-header nav a:not([href="#workspace"]):not([href="#capstoneWords"]):not([href="#learn"]),
+body.simple-mode .practice-disclosure,
+body.simple-mode #wordCaptureButton,
+body.simple-mode #demoButton,
+body.simple-mode .example-camera-link,
+body.simple-mode .camera-settings,
+body.simple-mode .word-settings,
+body.simple-mode .workflow-strip,
+body.simple-mode .message-controls,
+body.simple-mode #copyButton,
+body.simple-mode #saveButton,
+body.simple-mode .sentence-tools,
+body.simple-mode .recognition-info,
+body.simple-mode #matchFeedback,
+body.simple-mode .interpretation-panel{display:none!important}
+body.simple-mode .workspace{grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);max-width:1080px}
+body.simple-mode .camera-actions #cameraButton{font-size:16px;min-height:52px}
+body.simple-mode .output-actions .speak-button{font-size:16px;min-height:52px}
+body.simple-mode button,body.simple-mode select,body.simple-mode a{touch-action:manipulation}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #d8f0b9;outline-offset:3px}
+@media(max-width:800px){body.simple-mode .workspace{grid-template-columns:1fr}#simpleViewButton{font-size:12px}.site-header{gap:8px}.account-actions{display:flex;align-items:center}.account-actions #openTutorial{display:none}}

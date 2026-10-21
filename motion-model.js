@@ -48,9 +48,12 @@ export function encodeMotion(frames,imageAspect=1){
   if(runStart>=0)runs.push({start:runStart,end:lastVisible,count});
   const strongest=runs.sort((a,b)=>b.count-a.count)[0];
   const observed=runs.reduce((sum,run)=>sum+run.count,0);
-  if(strongest&&strongest.count>=8&&strongest.count>=observed*.7)frames=frames.slice(strongest.start,strongest.end+1);
+  // Short signs can yield only five consecutive detections on slower phones or
+  // virtual cameras. Keep that coherent run instead of retaining several
+  // seconds of internal no-hand frames until the automatic timeout.
+  if(strongest&&strongest.count>=5&&strongest.count>=observed*.7)frames=frames.slice(strongest.start,strongest.end+1);
   const visible=frames.filter(frame=>frame.some(Boolean));
-  if(visible.length<8)return null;
+  if(visible.length<5)return null;
   if(visible.length/frames.length<.7)return null;
   // Center the entire movement so a different starting hand position does not
   // translate every frame away from the training references.
@@ -116,7 +119,10 @@ export function recognizeMotion(sequence, examples, parameters={maxDistance:.65,
   const best=ranked[0],other=ranked.find(e=>e.label!==best.label);
   const separation=other?other.distance/(best.distance+1e-6):Infinity;
   const votes=ranked.slice(0,3).filter(e=>e.label===best.label).length;
-  if(best.distance>parameters.maxDistance || separation<parameters.minRatio
+  const distanceLimit=parameters.usePerLabelCutoffs
+    ? parameters.maxDistanceByLabel?.[best.label]??parameters.maxDistance
+    : parameters.maxDistance;
+  if(best.distance>distanceLimit || separation<parameters.minRatio
     || (votes<parameters.minVotes&&separation<(parameters.strongRatio??Infinity)))return null;
   return {label:best.label,distance:best.distance};
 }

@@ -1,0 +1,61 @@
+{
+  "scope": "Previously frozen, inspected clips; fixed development thresholds; no tuning.",
+  "checkpointSha256": "f183d95cc4c5e7291c0ddc4361acee1e25a9a7472adbcd36875b0f03b69186c4",
+  "sourceSha256": {
+    "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+    "/opt/handspeak-training/vocabulary-expansion-fresh-test/test-features.json": "b4a7532de6372e8c7b96d9ec2d1fc40ee2f2d7ecc9cc8bb924b266354dbe0dba",
+    "/opt/handspeak-training/daily-words/citizen-research/test-features.json": "d6bae37a7167cc147e1c3a43dc2594b89e1926d6c9e6e6322845ff2de8164278"
+  },
+  "words": {
+    "HELLO": {
+      "correct": 9,
+      "total": 13,
+      "negativeFalse": 0,
+      "negativeTotal": 221,
+      "threshold": 0.2795942233634949,
+      "passes": true
+    },
+    "DRINK": {
+      "correct": 2,
+      "total": 4,
+      "negativeFalse": 1,
+      "negativeTotal": 230,
+      "threshold": 0.0661755459142685,
+      "passes": false
+    },
+    "BOOK": {
+      "correct": 3,
+      "total": 6,
+      "negativeFalse": 34,
+      "negativeTotal": 228,
+      "threshold": 0.5134029792381286,
+      "passes": false
+    },
+    "HUNGRY": {
+      "correct": 1,
+      "total": 1,
+      "negativeFalse": 4,
+      "negativeTotal": 233,
+      "threshold": 0.7717290924621582,
+      "passes": false
+    },
+    "HOME": {
+      "correct": 7,
+      "total": 8,
+      "negativeFalse": 2,
+      "negativeTotal": 226,
+      "threshold": 0.04245205165276528,
+      "passes": false
+    },
+    "FISH": {
+      "correct": 0,
+      "total": 0,
+      "negativeFalse": 0,
+      "negativeTotal": 234,
+      "threshold": 0.998184959752655,
+      "passes": false
+    }
+  },
+  "passesRegressionGate": false,
+  "deployed": false
+}

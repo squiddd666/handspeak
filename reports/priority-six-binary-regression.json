@@ -1,0 +1,55 @@
+{
+  "scope": "Previously frozen recorded-clip regression; fixed development thresholds; no regression tuning.",
+  "sourceSha256": {
+    "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+    "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+  },
+  "results": [
+    {
+      "word": "HELLO",
+      "correct": 3,
+      "supportedTotal": 5,
+      "negativeFalseAccepts": 2,
+      "negativeTotal": 220,
+      "threshold": 0.3869845377040863,
+      "checkpointSha256": "423909583a38ef29ee5a5a868d684ba7060c441d64bdca2232c9bdf07d0f762d"
+    },
+    {
+      "word": "BOOK",
+      "correct": 2,
+      "supportedTotal": 7,
+      "negativeFalseAccepts": 3,
+      "negativeTotal": 218,
+      "threshold": 0.7183450268341064,
+      "checkpointSha256": "0928daceba759fa15261a315a49729f81838d186a0c0fa8aea5da896c15dbb8b"
+    },
+    {
+      "word": "HUNGRY",
+      "correct": 0,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 5,
+      "negativeTotal": 221,
+      "threshold": 0.9624913738800048,
+      "checkpointSha256": "8f3c1d4c92257dda5b30027448300462c51f81a3a32d3cbc1596083e129e6ba9"
+    },
+    {
+      "word": "HOME",
+      "correct": 3,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 13,
+      "negativeTotal": 221,
+      "threshold": 0.325072418315506,
+      "checkpointSha256": "f73017fe20075ba91e045428554a8c31701272efcbce706d31ec4dc57afe8138"
+    },
+    {
+      "word": "FISH",
+      "correct": 1,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 1,
+      "negativeTotal": 221,
+      "threshold": 0.997583370072937,
+      "checkpointSha256": "bbdcd27fc11107dfbb4714766f5e869598f507c087e504eb950f8c69c6056aca"
+    }
+  ],
+  "deployed": false
+}

@@ -1,5 +1,5 @@
 import {loadVocabularySettings,wordSettings,applyVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
-import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261020-accuracy-1';
+import {loadAccuracyProfiles,referenceAccuracy,publishedAccuracy,accuracyText,validAccuracy} from './motion-accuracy.js?v=20261021-baby-1';
 const video = document.querySelector('#signExampleVideo');
 const status = document.querySelector('#signExampleStatus');
 const speed = document.querySelector('#signExampleSpeed');
@@ -8,8 +8,9 @@ for(const button of buttons)button.dataset.signLabel=button.textContent;
 const embed=document.querySelector('#signExampleEmbed');
 const lesson=document.querySelector('#signExampleLesson');
 const playback=document.querySelector('.example-playback');
-const embedded={name:'GbeC9TFuSX4',want:'IRUlCZ9jRjM',love:'DAZB0eVf5t0'};
+const embedded={name:'GbeC9TFuSX4',want:'IRUlCZ9jRjM',love:'DAZB0eVf5t0',baby:'UdYuyDhyzfI'};
 const daily=new Set(['name','home','have','want','love']);
+const extra=new Set(['drink','water','book','food','hungry','like','go']);
 const publishedExamples=new Map();
 let accuracyProfiles={},publishedPacks=[];
 function exampleAccuracy(name){
@@ -28,10 +29,14 @@ function updateAccuracy(){
   }
 }
 let external=false;
+function preparePractice(id){
+  document.dispatchEvent(new CustomEvent('handspeak:prepare-practice',{detail:{id}}));
+}
 function pauseAll(){video.pause();if(external&&embed.getAttribute('src'))embed.src=embed.getAttribute('src');}
-function instructions(id){const standard=buttons.some(b=>b.dataset.signExample===id),published=publishedExamples.get(id);document.querySelector("#signExampleMode").textContent=published?`${published.label} · Experimental word preview. Select Practice at camera to load its vocabulary, then start the camera, sign once and pause. Review every match; live-camera accuracy is unverified.`:daily.has(id)?`${id.toUpperCase()} · Automatic server capture: enable server landmark processing and Automatic words, start the camera, sign once, then pause. Review the match before signing again. Manual recording is also available.`:standard?`${id.toUpperCase()} · Automatic capture: start the camera, sign once, then pause. Review the match. You can also use Record a word.`:"Learning example · No enabled model for this word. Personal training is needed before camera practice.";const description=wordSettings(id).description;if(description)document.querySelector("#signExampleMode").textContent+=` ${description}`;}
+function instructions(id){const standard=buttons.some(b=>b.dataset.signExample===id),published=publishedExamples.get(id);document.querySelector("#signExampleMode").textContent=published?`${published.label} · Experimental word preview. Select Practice at camera to load its vocabulary, then start the camera, sign once and pause. Review every match; live-camera accuracy is unverified.`:daily.has(id)?`${id.toUpperCase()} · Five-word server preview prepared automatically. Start the camera, sign once, then pause. Review the match before signing again.`:extra.has(id)?`${id.toUpperCase()} · Extra-word preview prepared automatically. Start the camera, sign once, then pause. Review every match; live-camera accuracy is unverified.`:standard?`${id.toUpperCase()} · Automatic capture: start the camera, sign once, then pause. Review the match. You can also use Record a word.`:"Learning example · No enabled model for this word. Personal training is needed before camera practice.";const description=wordSettings(id).description;if(description)document.querySelector("#signExampleMode").textContent+=` ${description}`;}
 function chooseEmbedded(id,button=null){
  instructions(id);
+ preparePractice(id);
  selection++;pauseAll();label=id.toUpperCase();libraryId=id;external=true;video.hidden=true;embed.hidden=false;playback.hidden=true;
  embed.title=`${label} ASL lesson by ASL University`;embed.src=`https://www.youtube-nocookie.com/embed/${embedded[id]}?playsinline=1&rel=0`;
  lesson.hidden=false;lesson.href=`https://www.lifeprint.com/asl101/pages-signs/${id[0]}/${id}.htm`;lesson.textContent=`${label} lesson · ASL University / Bill Vicars (opens in a new tab)`;
@@ -49,14 +54,15 @@ async function play() {
 }
 let libraryId=null;
 function chooseExample(name,src,button=null,id=null){
-  instructions(id||src.split("/").pop().replace(".mp4",""));selection++;pauseAll();external=false;embed.hidden=true;embed.removeAttribute('src');video.hidden=false;playback.hidden=false;lesson.hidden=true;label=name;libraryId=id;
+  const selectedId=id||src.split("/").pop().split('?')[0].replace(".mp4","");
+  instructions(selectedId);preparePractice(selectedId);selection++;pauseAll();external=false;embed.hidden=true;embed.removeAttribute('src');video.hidden=false;playback.hidden=false;lesson.hidden=true;label=name;libraryId=id;
   for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
   video.src=src;video.setAttribute('aria-label',`${label} ASL gesture example`);
   const fallback=video.querySelector('a');fallback.href=video.src;fallback.textContent=`Download the ${label} example`;
   status.textContent=`${label} · Press play to watch. Review recognition availability in the vocabulary library.`;video.load();
   updateAccuracy();
 }
-for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(wordSettings(id).video)chooseExample(button.dataset.signLabel,wordSettings(id).video,button,id);else if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4`,button,daily.has(id)?id:null);});
+for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(wordSettings(id).video)chooseExample(button.dataset.signLabel,wordSettings(id).video,button,id);else if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4?v=20261020-practice-2`,button,daily.has(id)?id:null);});
 document.addEventListener('handspeak:example',event=>{const data=event.detail;if(wordSettings(data.id).video){chooseExample(data.label,wordSettings(data.id).video,null,data.id);return;}if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
 speed.addEventListener('change', applySpeed);
 video.addEventListener('loadedmetadata', applySpeed);

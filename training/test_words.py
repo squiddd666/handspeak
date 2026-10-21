@@ -33,6 +33,10 @@ class PretrainedWordTests(unittest.TestCase):
             predicted=self.js.eval('recognizeMotion(input,model.samples,model.parameters)?.label||null')
             self.assertEqual(predicted,row['expected'],f'Heldout example {i}')
             counts['rejected' if predicted is None else 'correct' if predicted==row['label'] else 'wrong']+=1
-        self.assertEqual(counts,{k:self.report['test'][k] for k in counts})
+        # asl-words-test.json stores the earlier uniformly sampled browser
+        # fixture. The current top-level report uses contiguous live-style
+        # sampling and contains a different set of usable recordings.
+        recorded=self.report['protocolHistory']['uniformSampling-20261010']['test']
+        self.assertEqual(counts,{k:recorded[k] for k in counts})
 
 if __name__=='__main__':unittest.main()

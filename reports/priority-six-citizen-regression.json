@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "word": "DRINK",
+      "correct": 3,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 6,
+      "negativeTotal": 221,
+      "usableClips": 225,
+      "checkpointSha256": "330b1df9158f0f0dadf985bb9177cdba08d1d425e582ecb660d4b4fbf34d992c",
+      "sourceSha256": {
+        "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+        "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+      },
+      "scope": "Previously frozen recorded-clip regression; no threshold tuning or new accuracy claim."
+    },
+    {
+      "word": "BOOK",
+      "correct": 4,
+      "supportedTotal": 7,
+      "negativeFalseAccepts": 2,
+      "negativeTotal": 218,
+      "usableClips": 225,
+      "checkpointSha256": "612288be8fddebc698baa619763a2a3a54cdbd9b30b688b6261bf98aa79ca99c",
+      "sourceSha256": {
+        "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+        "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+      },
+      "scope": "Previously frozen recorded-clip regression; no threshold tuning or new accuracy claim."
+    },
+    {
+      "word": "HUNGRY",
+      "correct": 0,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 2,
+      "negativeTotal": 221,
+      "usableClips": 225,
+      "checkpointSha256": "da4edbc0fdd8d2cc49773c1fdc31880831e3f2384fe2a686a87ab953841ef670",
+      "sourceSha256": {
+        "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+        "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+      },
+      "scope": "Previously frozen recorded-clip regression; no threshold tuning or new accuracy claim."
+    },
+    {
+      "word": "HOME",
+      "correct": 1,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 10,
+      "negativeTotal": 221,
+      "usableClips": 225,
+      "checkpointSha256": "e4d87c0fecdaac60f93821d13e8eaa0e52aa41156c6f5500ff9d49ba8fa7b694",
+      "sourceSha256": {
+        "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+        "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+      },
+      "scope": "Previously frozen recorded-clip regression; no threshold tuning or new accuracy claim."
+    },
+    {
+      "word": "FISH",
+      "correct": 0,
+      "supportedTotal": 4,
+      "negativeFalseAccepts": 2,
+      "negativeTotal": 221,
+      "usableClips": 225,
+      "checkpointSha256": "4abcf23a7b813b9dd98dde93e8aafad3ee955414066626e9b3454de3f0a56761",
+      "sourceSha256": {
+        "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+        "/opt/handspeak-training/vocabulary-v8/test-features.json": "0aabdf049fffaad50159cae32ddb059e8074b88139e1b5a3077613548d275ba4"
+      },
+      "scope": "Previously frozen recorded-clip regression; no threshold tuning or new accuracy claim."
+    }
+  ],
+  "deployed": false
+}

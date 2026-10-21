@@ -71,6 +71,12 @@ class MotionTests(unittest.TestCase):
         ''')
         self.assertTrue(self.js.eval('validMotion(encodeMotion(clip))'))
         self.assertIsNone(self.js.eval("encodeMotion(Array.from('XXXXXXXX..........XXXXXXXX',c=>c==='X'?[hand,null]:[null,null]))"))
+    def test_short_coherent_run_survives_intermittent_tracking(self):
+        self.js.eval('''
+          const hand=Array.from({length:21},(_,i)=>({x:.3+i*.01,y:.4,z:0}));
+          const clip=Array.from('X...XXXXX...X',c=>c==='X'?[hand,null]:[null,null]);
+        ''')
+        self.assertTrue(self.js.eval('validMotion(encodeMotion(clip))'))
     def test_whole_movement_is_centered(self):
         self.js.eval('''
           const moving=Array.from({length:20},(_,t)=>[Array.from({length:21},(_,i)=>({x:.2+i*.01+t*.008,y:.4,z:0})),null]);
@@ -98,6 +104,7 @@ class MotionTests(unittest.TestCase):
             self.js.eval('const fetch=async()=>({ok:true,json:async()=>({version:1,encoding:"two-hand-motion-v3",parameters:{maxDistance:.65,minRatio:1.3,minVotes:2,mirror:true},samples:examples'+('.slice(0,3)' if invalid else '')+'})});')
         else:self.js.eval('const fetch=async()=>({ok:false});')
         self.js.eval('\n'.join(l for l in (ROOT/'temporal-word-model.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
+        self.js.eval('const validHelloBinaryModel=()=>false;const recognizeHelloBinary=()=>null;')
         self.js.eval('\n'.join(l for l in (ROOT/'motion-studio.js').read_text().splitlines() if not l.startswith('import ')).replace('export ',''))
         self.js.eval('const studio=createMotionStudio({isRunning:()=>true,onWord:w=>added.push(w),onStatus:()=>{},speak:w=>spoken.push(w),onFinish:()=>{if(!finishEnabled)return false;finishCalls++;return true;}});')
         model=json.loads((ROOT/'models/asl-knn.json').read_text())
@@ -254,6 +261,14 @@ class MotionTests(unittest.TestCase):
         self.assertEqual(self.js.eval('count'),1)
         self.js.eval('auto.push([null,null],15000);')
         self.assertFalse(self.js.eval('auto.isActive()'))
+    def test_automatic_motion_starts_when_hand_first_appears(self):
+        self.js.eval("""
+          const appearance=createAutomaticMotion();
+          appearance.push([null,null],0);
+          const hand=Array.from({length:21},(_,i)=>({x:.3+i*.006,y:.4,z:0}));
+          appearance.push([hand,null],100);
+        """)
+        self.assertTrue(self.js.eval('appearance.isActive()'))
     def test_optional_fast_capture_retains_short_visible_sign(self):
         result=json.loads(self.js.eval('''JSON.stringify([80,30].map(sampleIntervalMs=>{
           const a=createAutomaticMotion({sampleIntervalMs});let clips=[];

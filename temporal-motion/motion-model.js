@@ -48,9 +48,9 @@ export function encodeMotion(frames,imageAspect=1){
   if(runStart>=0)runs.push({start:runStart,end:lastVisible,count});
   const strongest=runs.sort((a,b)=>b.count-a.count)[0];
   const observed=runs.reduce((sum,run)=>sum+run.count,0);
-  if(strongest&&strongest.count>=8&&strongest.count>=observed*.7)frames=frames.slice(strongest.start,strongest.end+1);
+  if(strongest&&strongest.count>=5&&strongest.count>=observed*.7)frames=frames.slice(strongest.start,strongest.end+1);
   const visible=frames.filter(frame=>frame.some(Boolean));
-  if(visible.length<8)return null;
+  if(visible.length<5)return null;
   if(visible.length/frames.length<.7)return null;
   // Center the entire movement so a different starting hand position does not
   // translate every frame away from the training references.

@@ -1,4 +1,14 @@
-# Final-defense application readiness — 2026-10-01 UTC
+# Final-defense application readiness — October 21, 2026
+
+## Recognition scope for presentation
+
+- Recommended focused demo: HELLO, THANK YOU, PLEASE, YES, NO, FINISH, NAME, HOME, HAVE, WANT, LOVE.
+- The six on-device words matched 59/72 recorded held-out clips. Four of 12 unsupported DRINK clips were falsely accepted.
+- The five-word opt-in server preview matched 51/66 held-out clips. Three of 48 unsupported clips were falsely accepted.
+- These results are recorded-clip evidence, not live-camera accuracy. Every suggestion requires user review before speech.
+- The unreliable seven-word extra preview is excluded from the recommended defense flow because 11/16 unsupported clips were falsely accepted.
+- The separate 100-word retrieval model remains experimental: 68.85% recorded top-1 and 87% top-5, with live-camera and per-word reliability unverified.
+- The ASL-Citizen 2,731-label dataset is research data, not a ready recognizer. Its complete catalog is not republished because the accompanying Microsoft research license prohibits distributing the data or modifications.
 
 ## Deployed
 

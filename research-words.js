@@ -1,6 +1,6 @@
 import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
-import {createAutomaticMotion} from './automatic-motion.js?v=20261001-auto-cache-1';
-import {motionFrame,encodeMotion} from './motion-model.js?v=20261018-perword-1';
+import {createAutomaticMotion} from './automatic-motion.js?v=20261020-appearance-1';
+import {motionFrame,encodeMotion} from './motion-model.js?v=20261020-short-runs-1';
 export function createResearchWords({onWord,onStatus,onChange}){
  const $=s=>document.querySelector(s),toggle=$('#researchWordsToggle');
  let available=false,recording=null,pending=null,request=null,timer=null,revision=0,last=-Infinity,authRevision=0,standardVocabulary=null;

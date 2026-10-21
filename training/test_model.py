@@ -44,6 +44,7 @@ class ModelTests(unittest.TestCase):
           const createInterpreter=()=>({});
           const createResearchWords=()=>({active:()=>false,cancel(){},disable(){},isCapturing:()=>false});
           const createVocabularyLibrary=()=>({showCameraAccuracy(){}});
+          const createCapstoneRecognition=()=>({frame(){},cancel(){},isCapturing:()=>false});
           const CustomEvent=function(name,options){this.type=name;this.detail=options?.detail;}; const document = {dispatchEvent(){},querySelectorAll:()=>[],querySelector: key => elements[key] ||= {
             style:{}, listeners:{}, classList:{add(){}, remove(){}, toggle(){}},
             addEventListener(name, fn){this.listeners[name]=fn}, getContext(){return {clearRect(){}}}

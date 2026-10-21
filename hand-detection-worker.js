@@ -7,7 +7,7 @@ self.onmessage=async({data})=>{
    const vision=await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/+esm');
    HandLandmarker=vision.HandLandmarker;files=await vision.FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.22-rc.20250304/wasm');
    delegate=preferredVisionDelegate(()=>new OffscreenCanvas(1,1));
-   options={baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task',delegate},runningMode:'VIDEO',numHands:2,minHandDetectionConfidence:.65,minHandPresenceConfidence:.65,minTrackingConfidence:.6};
+   options={baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task',delegate},runningMode:'VIDEO',numHands:2,minHandDetectionConfidence:.5,minHandPresenceConfidence:.5,minTrackingConfidence:.5};
    if(delegate==='GPU')options.canvas=new OffscreenCanvas(1,1);
    try{hands=await HandLandmarker.createFromOptions(files,options);}catch(error){if(delegate==='CPU')throw error;delete options.canvas;delegate='CPU';options.baseOptions.delegate=delegate;hands=await HandLandmarker.createFromOptions(files,options);}
    self.postMessage({type:'ready',delegate});return;

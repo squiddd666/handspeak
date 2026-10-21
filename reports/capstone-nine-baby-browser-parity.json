@@ -1,0 +1,10 @@
+{
+  "word": "BABY",
+  "clips": 327,
+  "maxScoreDifference": 1.7433314840331615e-07,
+  "decisionParity": true,
+  "totalInferenceMs": 2909.5,
+  "meanInferenceMs": 8.897553516819572,
+  "scope": "Headless Chromium over cached landmarks; excludes hand detection.",
+  "deployed": false
+}

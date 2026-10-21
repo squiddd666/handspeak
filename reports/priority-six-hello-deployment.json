@@ -1,0 +1,24 @@
+{
+  "word": "HELLO",
+  "deployed": true,
+  "deployedAt": "2026-10-21",
+  "modelFile": "models/hello-binary.json",
+  "modelSha256": "4beeaa65c78c6451ed24d06aa532e1b1d4a23a7d36a754301f107a050a312f7f",
+  "checkpointSha256": "2750a9e32ee7310277a6c297dfafc47c73ab63516a25e7ba4edea37d8d9f0ca1",
+  "development": {
+    "correct": 9,
+    "total": 14,
+    "negativeFalseAccepts": 0,
+    "negativeTotal": 341
+  },
+  "regression": {
+    "correct": 3,
+    "total": 5,
+    "negativeFalseAccepts": 0,
+    "negativeTotal": 220
+  },
+  "browserDecisionParity": true,
+  "applicationTests": 92,
+  "liveUrl": "https://handspeak.cvsu.dev/",
+  "integration": "Fallback only after the existing recognizer returns no match."
+}

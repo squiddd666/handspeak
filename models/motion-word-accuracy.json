@@ -95,6 +95,17 @@
       },
       "modelSha256": "ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67",
       "note": "2026-10-18: contiguous sampling (44/66 -> 50/66) then per-word cutoffs (50/66 -> 51/66). Prototypes unchanged; server matcher verified against the scoring implementation."
+    },
+    "baby": {
+      "model": "Experimental BABY hand-motion model",
+      "scope": "Untouched ASL Citizen recorded test clips: 8/8 recognized, with zero false accepts among 319 negative clips. Live-camera accuracy remains unverified.",
+      "words": {
+        "BABY": {
+          "correct": 8,
+          "total": 8
+        }
+      },
+      "note": "2026-10-21: evaluated on the reserved ASL Citizen test split and verified against the browser scoring implementation."
     }
   }
 }

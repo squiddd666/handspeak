@@ -21,7 +21,7 @@ export function createAutomaticMotion({sampleIntervalMs=80}={}){
         const delta=b.reduce((sum,p,i)=>sum+Math.hypot(p.x-a[i].x,(p.y-a[i].y)*imageAspect),0)/21/width;
         if(delta>.08)moving=true;
       }
-      }
+      }else if(visible)moving=true;
       previous=frame;motionAt=now;lastMoving=moving;
     }
     if(!moving){if(quietSince===null)quietSince=now;}else quietSince=null;

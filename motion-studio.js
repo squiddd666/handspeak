@@ -1,16 +1,17 @@
 import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
-import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261010-single-1';
-import {recognizeExpandedMotion} from './expanded-motion.js?v=20261002-sentences-1';
-import {createAutomaticMotion} from './automatic-motion.js?v=20261010-single-1';
-import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261018-perword-1';
+import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261020-short-runs-1';
+import {recognizeExpandedMotion} from './expanded-motion.js?v=20261020-camera-compatibility-2';
+import {createAutomaticMotion} from './automatic-motion.js?v=20261020-appearance-1';
+import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261020-per-label-1';
+import {validBinaryTemporalModel,recognizeBinaryTemporal} from './hello-binary.js?v=20261021-binary-2';
 
 export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=>false,onDiagnostic=()=>{}}){
   const $=s=>document.querySelector(s), key='handspeak-motion-v3';
   let examples=[],baseExamples=[],parameters,baseState='Loading pretrained words…',capture=null,pending=null,lastSample=-Infinity,legacyExamples=false;
   let automatic=createAutomaticMotion();
-  let autoWasActive=false,expansion=null,defaultModel=null,categoryModel=null;
+  let autoWasActive=false,expansion=null,defaultModel=null,categoryModel=null,binaryModels=[];
   const expandedEnabled=()=>!categoryModel && $('#expandedWords').checked && expansion;
-  const recognizeRaw=(sequence,frames,aspect)=>{if(isTemporalWordModel(categoryModel))return recognizeTemporalWord(categoryModel,frames,aspect);if(!categoryModel)return recognizeExpandedMotion(sequence,allExamples(),parameters,expandedEnabled());const match=recognizeMotion(sequence,allExamples(),parameters);return match&&match.label!=='OTHER MOVEMENT'?match:null;};
+  const recognizeRaw=(sequence,frames,aspect)=>{if(isTemporalWordModel(categoryModel))return recognizeTemporalWord(categoryModel,frames,aspect);if(!categoryModel){const existing=recognizeExpandedMotion(sequence,allExamples(),parameters,expandedEnabled(),defaultModel?.cameraCompatibility);if(existing)return existing;for(const model of binaryModels){const match=recognizeBinaryTemporal(model,frames,aspect);if(match)return match;}return null;}const match=recognizeMotion(sequence,allExamples(),parameters);return match&&match.label!=='OTHER MOVEMENT'?match:null;};
   const recognize=(sequence,frames,aspect)=>{const match=recognizeRaw(sequence,frames,aspect);return match&&isWordEnabled(match.label)?match:null;};
   const allExamples=()=>baseExamples.concat(examples);
   function setHelp(message){$('#motionHelp').textContent=message;$('#motionCaptureStatus').textContent=message;}
@@ -23,7 +24,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   }catch{}
   async function loadPretrained(){
     try{
-      const response=await fetch('./models/asl-words.json?v=20261018-perword-1');
+      const response=await fetch('./models/asl-words.json?v=20261020-camera-compatibility-2');
       if(!response.ok)throw new Error('Word model download failed');
       const model=await response.json();
       if(model.version!==1||model.encoding!=='two-hand-motion-v3'||!validMotionParameters(model.parameters)
@@ -39,7 +40,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   }
   async function loadExpansion(){
     try {
-      const response=await fetch('./models/asl-extra-words.json?v=20261002-sentences-1');
+      const response=await fetch('./models/asl-extra-words.json?v=20261020-camera-compatibility-2');
       if(!response.ok)throw new Error('Extra words unavailable');
       const model=await response.json();
       if(model.version!==1||model.encoding!=='two-hand-motion-v3'||!validMotionParameters(model.parameters)
@@ -61,12 +62,28 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
     }
     render();
   }
+  async function loadBinaryModels(){
+    const loaded=[];
+    for(const [path,word] of [
+      ['./models/hello-binary.json?v=20261021-binary-2','HELLO'],
+      ['./models/baby-binary.json?v=20261021-baby-1','BABY'],
+      ['./models/water-binary.json?v=20261021-water-1','WATER']
+    ])try{
+      const response=await fetch(path);
+      if(!response.ok)throw new Error(`${word} model download failed`);
+      const model=await response.json();
+      if(!validBinaryTemporalModel(model)||model.word!==word)throw new Error(`Invalid ${word} model`);
+      loaded.push(model);
+    }catch(error){console.warn(error);}
+    binaryModels=loaded;render();
+  }
   $('#expandedWords').addEventListener('change',()=>{
     cancel();onStatus('—');render();
     setHelp(expandedEnabled()?'Extra words preview enabled: DRINK, WATER, BOOK, FOOD, HUNGRY, LIKE, GO. Sign once, then pause.':'Using the original six words.');
   });
   function render(){
     const counts={};allExamples().filter(e=>e.label!=='OTHER MOVEMENT').forEach(e=>counts[e.label]=(counts[e.label]||0)+1);
+    binaryModels.forEach(model=>counts[model.word]=Math.max(3,counts[model.word]||0));
     $('#expandedWords').disabled=Boolean(categoryModel)||!expansion;
     if(expandedEnabled())expansion.samples.forEach(e=>counts[e.label]=(counts[e.label]||0)+1);
     $('#motionLibrary').textContent=isTemporalWordModel(categoryModel)?categoryModel.labels.join(' · '):Object.keys(counts).map(label=>counts[label]>=3?label:`${label} (needs ${3-counts[label]} more examples)`).join(' · ')||'No word examples loaded yet.';
@@ -146,7 +163,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
     const sequence=encodeMotion(clip.frames,clip.imageAspect);
     pending=sequence?recognize(sequence,clip.frames,clip.imageAspect):null;
     const tracked=clip.frames.filter(f=>f.some(Boolean)).length;
-    onDiagnostic({capture:'automatic',frames:clip.frames.length,trackedFrames:tracked,durationMs:Math.round(now-clip.start),validSequence:Boolean(sequence),match:pending?.label||null});
+    onDiagnostic({capture:'automatic',frames:clip.frames.length,trackedFrames:tracked,durationMs:Math.round(now-clip.start),validSequence:Boolean(sequence),match:pending?.label||null,sequence});
     const detail=pending?'Possible match — verify before adding':!sequence?`Capture incomplete: ${tracked}/${clip.frames.length} frames had usable hands. Keep the full hand visible; check Camera diagnostics.`:'Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.';
     onStatus(pending?.label||(clip.frames.length<12?'Not enough frames':!sequence?'Capture incomplete':'No reliable match'),detail);
     setHelp(pending?`Possible match: “${pending.label}”. Pause before your next sign. Review it before adding it.`:detail);
@@ -177,6 +194,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   render();
   void loadPretrained();
   void loadExpansion();
+  void loadBinaryModels();
   return {
     usesTemporalModel:()=>isTemporalWordModel(categoryModel),
     hasPersonalWord:label=>!isTemporalWordModel(categoryModel)&&examples.some(example=>example.label===label),

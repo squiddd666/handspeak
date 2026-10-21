@@ -13,25 +13,26 @@
   <link rel="stylesheet" href="styles.css?v=20261001-auto-cache-1">
   <link rel="stylesheet" href="studio-theme.css?v=20261002-sign-videos-1">
   <link rel="stylesheet" href="application.css?v=20261002-catalog-1">
-  <link rel="stylesheet" href="experience.css?v=20261017-chips-1">
+  <link rel="stylesheet" href="experience.css?v=20261021-defense-focus-1">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#workspace">Skip to sign recognition</a>
   <header class="site-header">
-    <a class="brand" href="#" aria-label="HandSpeak home">
+    <a class="brand" href="#workspace" aria-label="HandSpeak sign recognition">
       <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/><circle cx="12" cy="12" r="5"/></svg></span>
       <span>handspeak<span class="brand-version"> / studio</span></span>
     </a>
     <nav aria-label="Main navigation">
       <a href="#home">Home</a>
       <a class="active" href="#workspace">Sign Recognition</a>
+      <a href="#capstoneWords">100-Word Model</a>
       <a href="#learn">Learn</a>
       <a href="#ai-studio">AI Studio</a>
       <a href="#history">History</a>
       <a href="#evaluate">Evaluation</a>
       <a href="#about">About</a>
     </nav>
-    <div class="account-actions"><button class="text-button" id="openTutorial" type="button">Quick guide</button><button class="icon-button" id="contrastButton" type="button" aria-label="Toggle high contrast" title="Toggle high contrast" aria-pressed="false">◐</button></div>
+    <div class="account-actions"><button class="text-button" id="simpleViewButton" type="button" aria-pressed="true">Show more tools</button><button class="text-button" id="openTutorial" type="button">Quick guide</button><button class="icon-button" id="contrastButton" type="button" aria-label="Toggle high contrast" title="Toggle high contrast" aria-pressed="false">◐</button></div>
   </header>
 
   <main id="main">
@@ -94,7 +95,9 @@
       </article>
 
       <aside id="cameraLesson" aria-label="Selected sign lesson" hidden></aside>
-      <section class="word-controls" id="wordRecognitionControls" aria-label="Experimental word recognition" hidden><div class="word-review-bar"><div><h3>Words in motion</h3><p>Sign once, pause, then review the match.</p></div><button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button></div><section id="matchFeedback" class="match-feedback" hidden><span id="matchFeedbackTitle"></span><button id="matchCorrect" class="text-button" type="button">Correct</button><button id="matchWrong" class="text-button" type="button">Wrong / missed</button><form id="matchFeedbackForm" hidden><input id="matchVerdict" type="hidden"><label>Expected word<input id="expectedWord" maxlength="80" required autocomplete="off"></label><label class="speech-option"><input id="feedbackConsent" type="checkbox" required> I agree to send the word labels and model name for admin review. No video or landmarks are sent.</label><button id="submitMatchFeedback" class="secondary-button" type="submit">Submit word feedback</button></form><p id="matchFeedbackStatus" role="status"></p></section><details class="workspace-disclosure word-settings"><summary>Vocabulary &amp; recording options <span>Experimental</span></summary>
+      <section class="word-controls" id="wordRecognitionControls" aria-label="Experimental word recognition" hidden><div class="word-review-bar"><div><h3>Words in motion</h3><p>Sign once, pause, then review the match.</p></div><button class="secondary-button" id="motionAccept" type="button" disabled>Add matched word</button></div><section id="matchFeedback" class="match-feedback" hidden><span id="matchFeedbackTitle"></span><button id="matchCorrect" class="text-button" type="button">Correct</button><button id="matchWrong" class="text-button" type="button">Wrong / missed</button><form id="matchFeedbackForm" hidden><input id="matchVerdict" type="hidden"><label>Expected word<input id="expectedWord" maxlength="80" required autocomplete="off"></label><label class="speech-option"><input id="feedbackConsent" type="checkbox" required> I agree to send the word labels and model name for admin review. No video or landmarks are sent.</label><button id="submitMatchFeedback" class="secondary-button" type="submit">Submit word feedback</button></form><p id="matchFeedbackStatus" role="status"></p></section>
+<section id="capstoneWords" class="trainer-card featured-word-model" aria-labelledby="capstoneTitle"><div class="featured-model-heading"><div><span class="tier-badge preview">Experimental server model</span><h3 id="capstoneTitle">100-word isolated ASL model</h3></div><strong>100 signs</strong></div><p>Record one complete sign for three seconds. The model uses hands and upper-body pose and reports a top-five list. Held-out recorded test subset: 86.43% top-1 and 95.35% top-5 across 516 clips; live-camera accuracy is still unverified.</p><label class="speech-option"><input id="capstoneConsent" type="checkbox"> Enable server processing of extracted hand and upper-body coordinates</label><p class="camera-tip">Camera video is not uploaded or stored. Predictions are suggestions and must be reviewed.</p><div class="camera-actions"><button id="capstoneRecord" class="primary-button" type="button" disabled>Record a 100-word sign</button><button id="capstoneCancel" class="secondary-button" type="button">Cancel</button><button id="capstoneAccept" class="secondary-button" type="button" disabled>Add reviewed word</button></div><p id="capstoneStatus" role="status">Loading the 100-word model…</p><details class="camera-tip"><summary>See all 100 available signs</summary><p id="capstoneVocabulary">Loading vocabulary…</p></details><p class="camera-tip">Model and inference code: <a href="https://github.com/microsoft/ASL-citizen-code" target="_blank" rel="noopener noreferrer">Microsoft ASL Citizen</a>, MIT License. ASL Citizen training videos are not included.</p></section>
+<details class="workspace-disclosure word-settings"><summary>Other vocabulary &amp; recording options <span>Experimental</span></summary>
         <details class="camera-tip"><summary id="motionAccuracySummary">Recorded word accuracy</summary><p id="motionWordAccuracy">Loading recorded test results…</p><p>Correct test clips divided by all clips in the listed test. This is not confidence in the current camera match. Personal examples have no independently measured accuracy.</p></details>
 <section id="researchWords" class="trainer-card"><h3>Daily conversation · five-word preview</h3><p><b>NAME · HOME · HAVE · WANT · LOVE</b></p><p>Experimental: 51/66 held-out word clips matched; 3/48 unsupported signs were falsely accepted. This preview has limited accuracy. Review every suggestion. Results are not live-camera accuracy.</p><label class="speech-option"><input id="researchWordsToggle" type="checkbox" disabled> Enable five-word preview: send captured hand-landmark coordinates to this server</label><p class="camera-tip">Video stays on your device. Recorded coordinates are processed in memory and not stored. With Automatic words enabled, sign once and pause to send a captured sequence automatically. Review each match before adding it; optional automatic adding uses the setting below. Recording manually is still available.</p><div class="camera-actions"><button id="researchRecord" class="primary-button" type="button" disabled>Record a preview word</button><button id="researchCancel" class="secondary-button" type="button" disabled>Cancel recording</button><button id="researchAccept" class="secondary-button" type="button" disabled>Add reviewed word</button></div><p id="researchWordsStatus" role="status">Loading five-word preview…</p></section>
 <div id="standardWordOptions">
@@ -215,6 +218,10 @@
         <article><span class="tier-badge preview">Experimental / Preview</span><h3>Moving words</h3><p>Default: <b>HELLO, THANK YOU, PLEASE, YES, NO, FINISH.</b></p><p>Optional unreliable preview: DRINK, WATER, BOOK, FOOD, HUNGRY, LIKE, GO. Server preview: NAME, HOME, HAVE, WANT, LOVE (no sign-in required). These models can miss correct signs or suggest the wrong word. Review every match.</p><a href="models/asl-words-evaluation.json">Read motion evaluation</a></article>
         <article><span class="tier-badge personal">Personal Gestures</span><h3>Examples you teach</h3><p>The <b>5 gesture</b> and your own words need personal examples. They stay in this browser and have no independently measured accuracy.</p><a href="#ai-studio">Open AI Studio</a></article>
       </div>
+      <section class="focused-demo" aria-labelledby="focusedDemoTitle">
+        <div><span class="tier-badge preview">Recommended final-defense demo · experimental</span><h3 id="focusedDemoTitle">Focus on 11 conversation signs</h3><p><b>HELLO · THANK YOU · PLEASE · YES · NO · FINISH</b><br><b>NAME · HOME · HAVE · WANT · LOVE</b></p></div>
+        <div><p>The six default words matched 59/72 recorded test clips; 4/12 unsupported DRINK clips were falsely accepted. The five-word preview matched 51/66 held-out clips; 3/48 unsupported clips were falsely accepted. These are recorded tests, not live-camera accuracy.</p><p>For the five-word preview, enable server landmark processing first. Always review the suggested word before speech.</p><div class="section-actions"><a class="primary-button" id="startFocusedDemo" href="#workspace">Start focused demo</a><a href="models/defense-demo-vocabulary.json">Read demo evidence</a></div></div>
+      </section>
       <div class="sign-grid" id="signGrid"></div>
     </section>
 
@@ -252,9 +259,7 @@
               <button class="secondary-button" type="button" data-sign-example="have" aria-pressed="false">HAVE</button>
               <button class="secondary-button" type="button" data-sign-example="want" aria-pressed="false">WANT</button>
               <button class="secondary-button" type="button" data-sign-example="love" aria-pressed="false">LOVE</button>
-
-
-
+              <button class="secondary-button" type="button" data-sign-example="baby" aria-pressed="false">BABY</button>
             </div>
             <div class="example-playback">
               <label for="signExampleSpeed">Playback speed <select id="signExampleSpeed"><option value="1">Normal</option><option value="0.5">Slow · ½ speed</option><option value="0.25">Very slow · ¼ speed</option></select></label>
@@ -269,6 +274,7 @@
       </section>
       <section class="vocabulary-library" id="vocabulary" aria-labelledby="vocabularyTitle">
         <h3 id="vocabularyTitle">Explore 201 words &amp; phrases</h3>
+        <p class="camera-tip dataset-reference"><b>ASL-Citizen research dataset:</b> Microsoft documents about 2,731 isolated ASL signs and 84,000 recordings. Its dataset terms do not permit republishing the complete data catalog here. <a href="https://www.microsoft.com/en-us/research/project/asl-citizen/" target="_blank" rel="noopener noreferrer">View the official ASL-Citizen project and download terms</a>. Dataset entries are not automatically supported camera words.</p>
         <p>Find a sign by topic, watch an available example, or open a lesson. Recognition badges show which words have an enabled preview model. New category models did not pass evaluation. Other words can be practiced with personal recordings.</p>
         <div class="vocabulary-filters">
           <label>Search words<input id="vocabularySearch" type="search" maxlength="80" placeholder="e.g. ambulance, tomorrow, twenty"></label>
@@ -345,10 +351,10 @@
 <dialog id="wordCorrectionDialog" class="feature-dialog" aria-labelledby="wordCorrectionTitle"><h2 id="wordCorrectionTitle">Correct this word</h2><form id="wordCorrectionForm"><label>Replacement<input id="wordCorrection" maxlength="80" required></label><p id="wordCorrectionError" role="alert"></p><button class="primary-button" type="submit">Replace word</button></form><button id="removeChip" class="secondary-button" type="button">Remove word</button><button id="closeWordCorrection" class="text-button" type="button">Cancel</button></dialog><dialog id="tutorialDialog" class="feature-dialog" aria-labelledby="tutorialTitle" aria-describedby="tutorialText"><span id="tutorialCounter"></span><h2 id="tutorialTitle"></h2><p id="tutorialText"></p><div class="dialog-actions"><button id="tutorialPrevious" class="secondary-button" type="button">Back</button><button id="tutorialNext" class="primary-button" type="button">Next</button><button id="tutorialSkip" class="text-button" type="button">Close guide</button></div></dialog>
   <footer><span>HANDSpeak / Cavite State University – Imus Campus</span><span><a href="defense.html">System guide</a> · Capstone prototype · 2026</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="guided-experience.js?v=20261003-auto-server-1"></script>
+  <script type="module" src="guided-experience.js?v=20261021-defense-focus-1"></script>
   <script type="module" src="guest-session.js?v=20261011-guest-1"></script>
-  <script type="module" src="sign-examples.js?v=20261011-features-1"></script>
-  <script type="module" src="daily-words.js?v=20261003-guided-1"></script>
-  <script type="module" src="app.js?v=20261019-android-1"></script>
+  <script type="module" src="sign-examples.js?v=20261021-practice-mode-2"></script>
+  <script type="module" src="daily-words.js?v=20261020-practice-2"></script>
+  <script type="module" src="app.js?v=20261021-stgcn-1"></script>
 </body>
 </html>

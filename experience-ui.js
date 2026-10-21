@@ -74,7 +74,7 @@ export function createExperienceUI({getMessage,setMessage,stopSpeech}){
  $('#openTutorial').onclick=()=>{step=0;showStep();$('#tutorialDialog').showModal();};
  $('#tutorialPrevious').onclick=()=>{step=Math.max(0,step-1);showStep();};$('#tutorialNext').onclick=()=>{if(step===steps.length-1)remember();else{step++;showStep();}};
  $('#tutorialSkip').onclick=remember;$('#tutorialDialog').addEventListener('cancel',remember);
- try{if(!localStorage.getItem('handspeak-tutorial-seen')&&!new URLSearchParams(location.search).has('signin')&&!location.hash.includes('reset=')){showStep();$('#tutorialDialog').showModal();}}catch{}
+ // The guide is available on request. Do not block direct camera access with a dialog.
  const prefs={};try{Object.assign(prefs,JSON.parse(localStorage.getItem('handspeak-accessibility')||'{}'));}catch{}
  function access(){document.body.classList.toggle('large-text',$('#textSize').value==='large');try{localStorage.setItem('handspeak-accessibility',JSON.stringify({size:$('#textSize').value,rate:$('#speechRate').value}));}catch{}}
  $('#textSize').value=prefs.size==='large'?'large':'normal';$('#speechRate').value=['0.8','1','1.2'].includes(prefs.rate)?prefs.rate:'1';access();$('#textSize').onchange=access;$('#speechRate').onchange=access;

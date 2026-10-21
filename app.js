@@ -1,13 +1,14 @@
-import {createExperienceUI} from './experience-ui.js?v=20261020-accuracy-1';
+import {createExperienceUI} from './experience-ui.js?v=20261020-simple-view-1';
 import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-features-1';
-import {createTemporalCamera} from './temporal-camera.js?v=20261019-android-1';
+import {createTemporalCamera} from './temporal-camera.js?v=20261020-tracking-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
-import {createResearchWords} from './research-words.js?v=20261011-features-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261011-features-1';
+import {createResearchWords} from './research-words.js?v=20261020-short-runs-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261021-practice-mode-1';
 import {createInterpreter} from './interpretation.js?v=20261011-features-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
-import { createMotionStudio } from './motion-studio.js?v=20261011-features-1';
+import { createMotionStudio } from './motion-studio.js?v=20261021-water-1';
+import {createCapstoneRecognition} from './capstone-recognition.js?v=20261021-stgcn-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -59,7 +60,7 @@ let recognitionMode = 'letters';
 const cameraDiagnostic={lastCapture:null,times:[],lastRender:0,rawHands:0,usableHands:0};
 function renderCameraDiagnostic(){
  const times=cameraDiagnostic.times,span=times.length>1?times[times.length-1]-times[0]:0;
- $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261019-android-1',trackerState:cameraDiagnostic.trackerState||'idle',trackerError:cameraDiagnostic.trackerError||null,delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
+ $('#cameraDiagnostics').textContent=JSON.stringify({build:'20261020-motion-fixes-1',trackerState:cameraDiagnostic.trackerState||'idle',trackerError:cameraDiagnostic.trackerError||null,delegate:handDelegate,processingLagMs:Math.round(temporalLagMs),input:video.videoWidth+'x'+video.videoHeight,processedFps:span?Math.round((times.length-1)*10000/span)/10:0,rawHands:cameraDiagnostic.rawHands,usableHands:cameraDiagnostic.usableHands,mode:recognitionMode,vocabulary:$('#activeVocabulary').textContent,model:$('#motionModelStatus').textContent,extraWords:$('#expandedWords').checked,serverPreview:$('#researchWordsToggle').checked,automaticWords:$('#automaticWords').checked,faceTracking:$('#faceTrackingToggle').checked,lastCapture:cameraDiagnostic.lastCapture},null,2);
 }
 $('#copyCameraDiagnostics').addEventListener('click',async()=>{renderCameraDiagnostic();try{await navigator.clipboard.writeText($('#cameraDiagnostics').textContent);notify('Diagnostics copied. Paste them into this chat.');}catch{notify('Select and copy the text in Camera diagnostics.');}});
 let handVision,handFiles,handRecovery=null;
@@ -116,10 +117,19 @@ const motionStudio=createMotionStudio({
   onWord:addWord,
   onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(word==='—'?(detail||'Ready — sign once, then pause.'):`${word} — ${detail||'Possible match; verify before adding.'}`);},
   speak:speakText,
-  onDiagnostic:data=>{cameraDiagnostic.lastCapture=data;renderCameraDiagnostic();},
+  onDiagnostic:data=>{
+    const {sequence,...summary}=data;
+    if(new URLSearchParams(location.search).has('motionAudit'))globalThis.__lastMotionSequence=sequence||null;
+    cameraDiagnostic.lastCapture=summary;renderCameraDiagnostic();
+  },
   onFinish:()=>interpreter.finish()
 });
 vocabularyLibrary=createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
+const capstoneRecognition=createCapstoneRecognition({
+  isRunning:()=>running&&recognitionMode==='words',startCamera,onWord:addWord,
+  onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(`${word} — ${detail}`);},
+  prepare:()=>{researchWords.disable();if(motionStudio.usesTemporalModel()){motionStudio.setVocabulary(null);if(running||cameraStarting)stopCamera();}setRecognitionMode('words');motionStudio.cancel();}
+});
 $('#motionTeach').addEventListener('click',()=>researchWords.disable(),true);
 
 function setRecognitionMode(mode,keepResearch=false){
@@ -266,7 +276,7 @@ async function prepareFaceTracker(){
 function createHandRecognizer(delegate){
   return handVision.HandLandmarker.createFromOptions(handFiles,{
     baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task',delegate},
-    runningMode:'VIDEO',numHands:2,minHandDetectionConfidence:.65,minHandPresenceConfidence:.65,minTrackingConfidence:.6
+    runningMode:'VIDEO',numHands:2,minHandDetectionConfidence:.5,minHandPresenceConfidence:.5,minTrackingConfidence:.5
   });
 }
 function handTrackerFailed(error){
@@ -403,7 +413,7 @@ function detect(){
       }
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing());
+    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing());
     if(temporalCamera){
       temporalCamera.push(video,now,motionStudio.isCapturing());
       if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
@@ -423,7 +433,9 @@ function consumeDetection(detection,now,imageAspect){
       if(liveResult.hidden&&!motionStudio.isCapturing()&&!researchWords.active())setRecognitionFeedback(hands.length?($('#automaticWords').checked?'Hand detected — sign once, then pause.':'Hand detected — select Record a word to analyze.'):'No hand detected — bring your hands into view.');
       // Keep original handedness indices when rejecting clipped/small hands.
       const indices=(detection.landmarks||[]).map((p,i)=>isUsableHand(p)?i:-1).filter(i=>i>=0);
-      (researchWords.active()?researchWords:motionStudio).frame({landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:imageAspect},now);
+      const filtered={landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:imageAspect};
+      capstoneRecognition.frame(filtered,now,video);
+      if(!capstoneRecognition.isCapturing())(researchWords.active()?researchWords:motionStudio).frame(filtered,now);
     }else if(hands.length===1){
       missingFrames=0;
       const points=hands[0];

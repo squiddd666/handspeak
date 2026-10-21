@@ -2,7 +2,7 @@
 import os,json,math,threading,hashlib,time
 from pathlib import Path
 LABELS=['NAME','HOME','HAVE','WANT','LOVE']
-EXPECTED_SHA='ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67'
+EXPECTED_SHA='1d9e5ecc1305121c5825b80daade2001ac0c9d44e2d90fb60c4d64615ac4bcab'
 class ResearchError(Exception):
  def __init__(self,message,status=422):super().__init__(message);self.status=status
 
@@ -31,7 +31,7 @@ def distance(a,b):
  return previous[-1]/max(len(a),len(b))
 
 class ResearchWords:
- def __init__(self):self.lock=threading.Lock();self.model=None;self.refs=[];self.rate_lock=threading.Lock();self.requests={}
+ def __init__(self):self.lock=threading.Lock();self.model=None;self.refs=[];self.compat=[];self.rate_lock=threading.Lock();self.requests={}
  def admit(self,client):
   key=hashlib.sha256(str(client).encode()).hexdigest();now=time.monotonic()
   with self.rate_lock:
@@ -50,14 +50,21 @@ class ResearchWords:
      path=Path(self.path());raw=path.read_bytes()
      if hashlib.sha256(raw).hexdigest()!=EXPECTED_SHA:raise ValueError('Model hash mismatch')
      model=json.loads(raw)
-     if model['labels']!=LABELS or not all(valid_sequence(r['sequence']) for r in model['samples']):raise ValueError('Invalid model')
+     compatibility=model.get('cameraCompatibility',{})
+     if (model['labels']!=LABELS or not all(valid_sequence(r['sequence']) for r in model['samples'])
+       or compatibility.get('labels')!=['HOME','HAVE']
+       or not all(valid_sequence(r['sequence']) for r in compatibility.get('samples',[]))):raise ValueError('Invalid model')
      self.refs=[(r['label'],prepared(r['sequence'])) for r in model['samples']];self.model=model
+     self.compat=[(r['label'],prepared(r['sequence'])) for r in compatibility['samples']]
     except (OSError,ValueError,KeyError,TypeError):raise ResearchError('The five-word model is unavailable.',503)
    a,b=prepared(seq),prepared(seq,True)
-   ranked=sorted((min(distance(a,r),distance(b,r)),label) for label,r in self.refs)
-   best,label=ranked[0];other=next((d for d,l in ranked if l!=label),float('inf'));p=self.model['parameters'];ratio=other/(best+1e-6);votes=sum(l==label for _,l in ranked[:3])
-   limit=p.get('maxDistanceByLabel',{}).get(label,p['maxDistance'])
-   accepted=label in LABELS and best<=limit and ratio>=p['minRatio'] and (votes>=p['minVotes'] or ratio>=p.get('strongRatio',float('inf')))
-   return {'label':label if accepted else None,'match':'possible' if accepted else 'no-reliable-match','experimental':True}
+   def match(refs,p,allowed):
+    ranked=sorted((min(distance(a,r),distance(b,r)),label) for label,r in refs)
+    best,label=ranked[0];other=next((d for d,l in ranked if l!=label),float('inf'));ratio=other/(best+1e-6);votes=sum(l==label for _,l in ranked[:3])
+    limit=p.get('maxDistanceByLabel',{}).get(label,p['maxDistance'])
+    return label if label in allowed and best<=limit and ratio>=p['minRatio'] and (votes>=p['minVotes'] or ratio>=p.get('strongRatio',float('inf'))) else None
+   compatibility=self.model['cameraCompatibility'];label=match(self.compat,compatibility['parameters'],compatibility['labels'])
+   if label is None:label=match(self.refs,self.model['parameters'],LABELS)
+   return {'label':label,'match':'possible' if label else 'no-reliable-match','experimental':True}
   finally:self.lock.release()
 research_words=ResearchWords()

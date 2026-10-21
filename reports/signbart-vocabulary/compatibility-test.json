@@ -1,0 +1,38 @@
+{
+  "testedOn": "2026-10-21",
+  "sourceRepository": "https://github.com/TinhNguyen2312/SignBart",
+  "sourceCommit": "1b7d3d1a1df11ee9147464143ea002d2b8688970",
+  "result": "failed",
+  "safeToDeploy": false,
+  "checks": {
+    "wlaslVocabulary": {
+      "result": "provisional",
+      "detail": "The official WLASL v0.3 order provides 100, 300, 1000 and 2000-label prefix lists, but SignBart's missing label maps prevent checkpoint-order verification."
+    },
+    "aslCitizenVocabulary": {
+      "result": "failed",
+      "detail": "The complete 2731-label alphabetical baseline map is reproducible, but SignBart does not publish maps or selection rules for its 100, 200, 400 and 1000-class subsets."
+    },
+    "checkpointAvailability": {
+      "result": "failed",
+      "detail": "All nine advertised ASL Google Drive checkpoint IDs returned HTTP 404. The GitHub repository has no releases or committed weight files."
+    },
+    "sourceImport": {
+      "result": "failed",
+      "detail": "The documented top-level entry path fails because model.py imports decoder as a top-level module while decoder.py imports .attention and .layers as package-relative modules."
+    },
+    "preprocessing": {
+      "result": "failed",
+      "detail": "normalize_keypoints iterates scalar joint indices and passes a single 2-value point to _normalize_part, which expects a two-dimensional group of points; the smoke test raises IndexError."
+    },
+    "architectureSmokeTest": {
+      "result": "passed-after-import-fix",
+      "detail": "After changing decoder.py to consistent top-level imports, an untrained WLASL-100 configuration accepted a (1,16,75,2) tensor and produced finite (1,100) logits with 754532 parameters. This does not validate recognition."
+    },
+    "license": {
+      "result": "failed",
+      "detail": "No license file or license declaration was found in the SignBart repository."
+    }
+  },
+  "deploymentDecision": "Do not integrate SignBart checkpoints or claim support for its vocabulary. Require accessible weights, exact label maps, corrected preprocessing/import code, reuse permission, and signer-independent camera evaluation first."
+}

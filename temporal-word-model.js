@@ -1,4 +1,4 @@
-import {classify} from './temporal-motion/classifier.js';
+import {classify} from './temporal-motion/classifier.js?v=20261020-diagnostics-1';
 export const TEMPORAL_ENCODING='hands-only-body-tips-residual-v1';
 export const isTemporalWordModel=model=>model?.encoding===TEMPORAL_ENCODING;
 export function validTemporalWordModel(model){
@@ -20,5 +20,5 @@ export function validTemporalWordModel(model){
 }
 export function recognizeTemporalWord(model,frames,aspect){
  const result=classify(model,frames,aspect);
- return result.label?{label:result.label}:null;
+ return result.label?{label:result.label,confidence:result.confidence}:null;
 }

@@ -1,0 +1,88 @@
+{
+  "scope": "Frozen model and development thresholds evaluated on untouched ASL Citizen test signers plus previously frozen cross-source negatives. No tuning.",
+  "checkpointSha256": "e470a7c5f47993c631900c4198f6808454ecaf0efd29e50ebfbda922c6b2b120",
+  "testSourceSha256": "b54ce9632984cbf5dd2684012920c732fad73d0cc5f1a141399254032e711ef4",
+  "regressionSourceSha256": {
+    "/opt/handspeak-training/accuracy-v4/test-features.json": "67252fe6842e9767a4fca335a33a2b91e1f993247741aa5ddb8a98494ac85067",
+    "/opt/handspeak-training/vocabulary-expansion-fresh-test/test-features.json": "b4a7532de6372e8c7b96d9ec2d1fc40ee2f2d7ecc9cc8bb924b266354dbe0dba",
+    "/opt/handspeak-training/daily-words/citizen-research/test-features.json": "d6bae37a7167cc147e1c3a43dc2594b89e1926d6c9e6e6322845ff2de8164278"
+  },
+  "words": {
+    "BABY": {
+      "developmentPassed": true,
+      "correct": 8,
+      "total": 8,
+      "negativeFalse": 0,
+      "negativeTotal": 319,
+      "passesTestGate": true
+    },
+    "HOSPITAL": {
+      "developmentPassed": true,
+      "correct": 9,
+      "total": 11,
+      "negativeFalse": 11,
+      "negativeTotal": 316,
+      "passesTestGate": false
+    },
+    "NIGHT": {
+      "developmentPassed": false,
+      "correct": 6,
+      "total": 11,
+      "negativeFalse": 0,
+      "negativeTotal": 316,
+      "passesTestGate": false
+    },
+    "CONFUSED": {
+      "developmentPassed": true,
+      "correct": 10,
+      "total": 11,
+      "negativeFalse": 2,
+      "negativeTotal": 316,
+      "passesTestGate": false
+    },
+    "FINE": {
+      "developmentPassed": false,
+      "correct": 7,
+      "total": 11,
+      "negativeFalse": 0,
+      "negativeTotal": 316,
+      "passesTestGate": false
+    },
+    "MEAT": {
+      "developmentPassed": true,
+      "correct": 9,
+      "total": 10,
+      "negativeFalse": 3,
+      "negativeTotal": 317,
+      "passesTestGate": false
+    },
+    "BREAKFAST": {
+      "developmentPassed": true,
+      "correct": 10,
+      "total": 11,
+      "negativeFalse": 28,
+      "negativeTotal": 316,
+      "passesTestGate": false
+    },
+    "LUNCH": {
+      "developmentPassed": false,
+      "correct": 3,
+      "total": 10,
+      "negativeFalse": 4,
+      "negativeTotal": 317,
+      "passesTestGate": false
+    },
+    "DINNER": {
+      "developmentPassed": true,
+      "correct": 9,
+      "total": 10,
+      "negativeFalse": 11,
+      "negativeTotal": 317,
+      "passesTestGate": false
+    }
+  },
+  "passingWords": [
+    "BABY"
+  ],
+  "deployed": false
+}
