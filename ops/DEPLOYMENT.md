@@ -82,3 +82,33 @@ Verified with unit tests and Android Chrome browser emulation using the HELLO pr
 The five-word server preview display now matches the deployed per-word-cutoff model: 51/66 supported clips correct, 15 misses, no wrong supported label, and 3/48 unsupported clips falsely accepted. Its displayed SHA-256 is the deployed private model hash `ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67`. The prior 44/66, 2/48 text and base-model hash were stale.
 
 The seven-word expanded preview is now off by default because its recorded check produced 30/46 correct and 11/16 unsupported false matches; GO produced 1/6 correct. Users may explicitly enable it for testing. The evaluation table reports wrong and missed counts as “Not separated” for this profile because the current published summary does not separate those outcomes. These are recorded-clip results, not live-camera accuracy.
+
+## Five-word daily preview artifact — October 22, 2026
+
+The NAME · HOME · HAVE · WANT · LOVE preview is optional server code with no
+model in this checkout. `ResearchWords.path()` now resolves the artifact in this
+order:
+
+1. `$HANDSPEAK_RESEARCH_WORDS_MODEL` (existing deployments)
+2. `models/research-words.json` beside `server.py` (file-drop install)
+
+The file must still match the SHA-256 pinned in `research_words.py`
+(`EXPECTED_SHA`). Rebuilding it through `training/daily_words/` produces a new
+hash, so update the pin and the frozen test figures reported by
+`/api/research-words/status` together; do not edit one without the other.
+
+Without the artifact the server reports `available: false` and the Watch &
+practice panel shows “No enabled camera model” for those five words. That is
+deliberate: before this change the app fell through to the default 13-word
+vocabulary and answered NAME/HOME/HAVE/WANT/LOVE with a confident wrong word.
+
+## Single-word category previews — October 22, 2026
+
+`motion-studio.start()` refused to begin a manual recording unless two labels had
+at least three examples. Category previews (PAIN, SICK, SEE, NIGHT, FISH) are
+trained classifiers with no template samples, so that guard made the manual
+**Record a word** button silently do nothing for them while automatic capture
+still worked. The guard now skips category models, matching the condition already
+used by `automaticFrame()`. Verified in Chromium with the PAIN/SICK/SEE/NIGHT/FISH
+practice clips: the button enters its 1.5 s countdown and the classifier returns a
+result.

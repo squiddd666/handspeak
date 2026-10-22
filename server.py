@@ -4,7 +4,8 @@ from __future__ import annotations
 import csv
 from interpretation import interpreter, InterpretationError
 from research_words import research_words, ResearchError
-from capstone_asl import labels as capstone_labels, recognize as capstone_recognize, CapstoneASLError
+from capstone_asl_v3 import labels as capstone_labels, recognize as capstone_recognize, CapstoneASLError, core_labels as capstone_core_labels, extended_labels as capstone_extended_labels
+from beginner_asl import recognize as beginner_recognize, status as beginner_status, BeginnerASLError, available as beginner_available
 from experience import ExperienceStore, SQLITE_SCHEMA
 import io
 import json
@@ -277,8 +278,14 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
                 return self.json_response(research_words.status())
             if parsed.path == "/api/capstone-asl/status":
                 return self.json_response({"available": True, "labels": capstone_labels(),
-                    "model": "Microsoft ASL Citizen ST-GCN", "top1": 0.8643,
-                    "top5": 0.9535, "processing": "server-landmarks", "retention": "not stored"})
+                    "coreLabels": capstone_core_labels(),
+                    "extendedLabels": capstone_extended_labels(),
+                    "model": "HandSpeak ST-GCN v4 (100-word, one-hand tolerant, 4-checkpoint ensemble)",
+                    "top1": 0.744, "top5": 0.894,
+                    "processing": "server-landmarks", "retention": "not stored",
+                    "minFrames": 5, "oneHandTolerant": True})
+            if parsed.path == "/api/beginner-asl/status":
+                return self.json_response(beginner_status())
             if parsed.path == "/api/interpret/status":
                 return self.json_response(interpreter.status())
             if parsed.path == "/api/auth/me":
@@ -369,6 +376,15 @@ class HandSpeakHandler(SimpleHTTPRequestHandler):
                 try:
                     return self.json_response(capstone_recognize(data))
                 except CapstoneASLError as error:
+                    raise APIError(422, str(error)) from error
+            if parsed.path == "/api/beginner-asl":
+                if data.get("consent") is not True:
+                    raise APIError(422, "Enable server landmark processing before recording.")
+                if not beginner_available():
+                    raise APIError(503, "The Beginner model is unavailable.")
+                try:
+                    return self.json_response(beginner_recognize(data))
+                except BeginnerASLError as error:
                     raise APIError(422, str(error)) from error
             if parsed.path == "/api/interpret":
                 try:

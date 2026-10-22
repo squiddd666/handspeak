@@ -48,9 +48,20 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
       status.textContent=`${pack.name} preview: ${pack.labels.join(' · ')}. Use only these words; review every suggestion.${pack.test?` ${pack.labels.map(label=>accuracyText(publishedAccuracy(pack,label))).join(' · ')}; ${pack.test.negativeFalse}/${pack.test.negativeTotal} unsupported clips falsely accepted. This is not live-camera accuracy.`:''}${pack.releaseNotice?` ${pack.releaseNotice}`:''} Category changes reset the current capture.`;cameraMode();renderMotionAccuracy();return true;
     }catch{if(requested===loadId){select.value=active;status.textContent='Category could not load. The previous camera vocabulary remains selected. Try again.';}return false;}
   }
+  // The five-word preview is optional server code. When it is not installed the
+  // word has no camera model at all, so say so instead of letting the default
+  // vocabulary answer for it.
+  function dailyPreviewUnavailable(){const toggle=$('#researchWordsToggle');return Boolean(toggle&&toggle.disabled);}
+  function noModelMessage(label){return `${label} · No enabled camera model: the five-word server preview is not installed on this server. Watch the example, then teach this word or practice with the default words.`;}
   async function practice(item){
     if(item.recognition==='default-preview'){document.dispatchEvent(new CustomEvent('handspeak:default-practice',{detail:{label:item.label}}));return;}
-    if(item.recognition==='daily-preview'){document.dispatchEvent(new CustomEvent('handspeak:enable-word-preview'));return;}
+    if(item.recognition==='daily-preview'){
+      if(dailyPreviewUnavailable()){
+        $('#signExampleMode').textContent=noModelMessage(item.label);
+        $('#vocabularyCameraStatus').textContent=noModelMessage(item.label);
+      }
+      document.dispatchEvent(new CustomEvent('handspeak:enable-word-preview'));return;
+    }
     if(item.cameraGroups?.length){if(await activate(item.cameraGroups.includes(active)?active:item.cameraGroups[0])){document.dispatchEvent(new CustomEvent('handspeak:navigate',{detail:{target:'#workspace'}}));$('#workspace').scrollIntoView({block:'start',behavior:'smooth'});}return;}
     if(['existing-preview','daily-preview','default-preview'].includes(item.recognition)){
       if(!await activate(''))return;
@@ -62,6 +73,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
   }
   async function preparePractice(item){
     if(item.recognition==='daily-preview'){
+      if(dailyPreviewUnavailable()){$('#signExampleMode').textContent=noModelMessage(item.label);return;}
       if(!$('#researchWordsToggle').disabled&&!$('#researchWordsToggle').checked){
         $('#researchWordsToggle').checked=true;$('#researchWordsToggle').dispatchEvent(new Event('change'));
       }
@@ -80,6 +92,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
     const dailyIds=['name','home','have','want','love'];
     const extraIds=['drink','water','book','food','hungry','like','go'];
     if(dailyIds.includes(id)){
+      if(dailyPreviewUnavailable()){$('#signExampleMode').textContent=noModelMessage(id.toUpperCase());return;}
       if(!$('#researchWordsToggle').disabled&&!$('#researchWordsToggle').checked){
         $('#researchWordsToggle').checked=true;$('#researchWordsToggle').dispatchEvent(new Event('change'));
       }
@@ -116,7 +129,7 @@ export function createVocabularyLibrary({onWord,setVocabulary}) {
   async function load(){
     const request=++libraryId;$('#vocabularyRetry').disabled=true;
     try {
-      const response=await fetch('models/motion-vocabulary.json?v=20261010-single-1',{cache:'no-store'});if(!response.ok)throw Error();const data=await response.json();
+      const response=await fetch('models/motion-vocabulary.json?v=20261023-beginner-100',{cache:'no-store'});if(!response.ok)throw Error();const data=await response.json();
       if(!Array.isArray(data.items)||!Array.isArray(data.categories))throw Error();
       let index={groups:[]};try{const r=await fetch('models/motion-categories/index.json?v=20261010-single-1',{cache:'no-store'});if(r.ok)index=await r.json();}catch{}
       if(request!==libraryId)return;++loadId;await loadVocabularySettings();data.items=applyVocabularySettings(data.items);catalog=data;packs=Array.isArray(index.groups)?index.groups.filter(pack=>pack.labels.some(isWordEnabled)):[];

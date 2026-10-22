@@ -1,0 +1,1233 @@
+{
+  "version": 1,
+  "title": "Beginner Sign Language Vocabulary",
+  "description": "100 everyday words and expressions for a beginner sign language recognition dataset.",
+  "source": "Beginner_Sign_Language_100_Words.docx",
+  "languageNote": "These are vocabulary labels, not necessarily 100 distinct motions. Signs vary between Filipino Sign Language (FSL) and American Sign Language (ASL). Some expressions use multiple signs.",
+  "phases": [
+    {
+      "phase": 1,
+      "range": "1-30",
+      "focus": "Greetings, responses, questions, and pronouns"
+    },
+    {
+      "phase": 2,
+      "range": "31-60",
+      "focus": "People, family, actions, and requests"
+    },
+    {
+      "phase": 3,
+      "range": "61-80",
+      "focus": "Feelings, places, and directions"
+    },
+    {
+      "phase": 4,
+      "range": "81-100",
+      "focus": "Time, food, and objects"
+    }
+  ],
+  "categoryId": "beginner-100",
+  "words": [
+    {
+      "number": 1,
+      "id": "hello",
+      "label": "HELLO",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 2,
+      "id": "goodbye",
+      "label": "GOODBYE",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 3,
+      "id": "thank-you",
+      "label": "THANK YOU",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 4,
+      "id": "please",
+      "label": "PLEASE",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 5,
+      "id": "sorry",
+      "label": "SORRY",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 6,
+      "id": "yes",
+      "label": "YES",
+      "docCategory": "Responses",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 7,
+      "id": "no",
+      "label": "NO",
+      "docCategory": "Responses",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 8,
+      "id": "okay",
+      "label": "OKAY",
+      "docCategory": "Responses",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 9,
+      "id": "welcome",
+      "label": "WELCOME",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 10,
+      "id": "good-morning",
+      "label": "GOOD MORNING",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 11,
+      "id": "good-afternoon",
+      "label": "GOOD AFTERNOON",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 12,
+      "id": "good-night",
+      "label": "GOOD NIGHT",
+      "docCategory": "Greetings",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 13,
+      "id": "how",
+      "label": "HOW",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 14,
+      "id": "what",
+      "label": "WHAT",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 15,
+      "id": "who",
+      "label": "WHO",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 16,
+      "id": "where",
+      "label": "WHERE",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 17,
+      "id": "when",
+      "label": "WHEN",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 18,
+      "id": "why",
+      "label": "WHY",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 19,
+      "id": "which",
+      "label": "WHICH",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 20,
+      "id": "name",
+      "label": "NAME",
+      "docCategory": "Questions",
+      "catalogCategories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "daily-preview"
+    },
+    {
+      "number": 21,
+      "id": "i-me",
+      "label": "I / ME",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 22,
+      "id": "you",
+      "label": "YOU",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 23,
+      "id": "he-she",
+      "label": "HE / SHE",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 24,
+      "id": "we",
+      "label": "WE",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 25,
+      "id": "they",
+      "label": "THEY",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 26,
+      "id": "my-mine",
+      "label": "MY / MINE",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 27,
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 28,
+      "id": "this",
+      "label": "THIS",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 29,
+      "id": "that",
+      "label": "THAT",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 30,
+      "id": "everyone",
+      "label": "EVERYONE",
+      "docCategory": "Pronouns",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 1,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 31,
+      "id": "mother",
+      "label": "MOTHER",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 32,
+      "id": "father",
+      "label": "FATHER",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 33,
+      "id": "brother",
+      "label": "BROTHER",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 34,
+      "id": "sister",
+      "label": "SISTER",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 35,
+      "id": "baby",
+      "label": "BABY",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "default-preview"
+    },
+    {
+      "number": 36,
+      "id": "child",
+      "label": "CHILD",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 37,
+      "id": "friend",
+      "label": "FRIEND",
+      "docCategory": "People",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 38,
+      "id": "teacher",
+      "label": "TEACHER",
+      "docCategory": "People",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 39,
+      "id": "student",
+      "label": "STUDENT",
+      "docCategory": "People",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 40,
+      "id": "family",
+      "label": "FAMILY",
+      "docCategory": "Family",
+      "catalogCategories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 41,
+      "id": "eat",
+      "label": "EAT",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 42,
+      "id": "drink",
+      "label": "DRINK",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 43,
+      "id": "sleep",
+      "label": "SLEEP",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 44,
+      "id": "wake-up",
+      "label": "WAKE UP",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 45,
+      "id": "walk",
+      "label": "WALK",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 46,
+      "id": "run",
+      "label": "RUN",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 47,
+      "id": "sit",
+      "label": "SIT",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 48,
+      "id": "stand",
+      "label": "STAND",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 49,
+      "id": "go",
+      "label": "GO",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 50,
+      "id": "come",
+      "label": "COME",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 51,
+      "id": "help",
+      "label": "HELP",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 52,
+      "id": "stop",
+      "label": "STOP",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 53,
+      "id": "wait",
+      "label": "WAIT",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 54,
+      "id": "give",
+      "label": "GIVE",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 55,
+      "id": "take",
+      "label": "TAKE",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 56,
+      "id": "want",
+      "label": "WANT",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "daily-preview"
+    },
+    {
+      "number": 57,
+      "id": "need",
+      "label": "NEED",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 58,
+      "id": "like",
+      "label": "LIKE",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 59,
+      "id": "love",
+      "label": "LOVE",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "daily-preview"
+    },
+    {
+      "number": 60,
+      "id": "know",
+      "label": "KNOW",
+      "docCategory": "Actions",
+      "catalogCategories": [
+        "actions",
+        "beginner-100"
+      ],
+      "phase": 2,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 61,
+      "id": "happy",
+      "label": "HAPPY",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 62,
+      "id": "sad",
+      "label": "SAD",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 63,
+      "id": "angry",
+      "label": "ANGRY",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 64,
+      "id": "scared",
+      "label": "SCARED",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 65,
+      "id": "tired",
+      "label": "TIRED",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 66,
+      "id": "sick",
+      "label": "SICK",
+      "docCategory": "Emotions",
+      "catalogCategories": [
+        "health-emergency",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "category-preview"
+    },
+    {
+      "number": 67,
+      "id": "hungry",
+      "label": "HUNGRY",
+      "docCategory": "Feelings",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 68,
+      "id": "thirsty",
+      "label": "THIRSTY",
+      "docCategory": "Feelings",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 69,
+      "id": "good",
+      "label": "GOOD",
+      "docCategory": "Descriptions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 70,
+      "id": "bad",
+      "label": "BAD",
+      "docCategory": "Descriptions",
+      "catalogCategories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 71,
+      "id": "home",
+      "label": "HOME",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "daily-preview"
+    },
+    {
+      "number": 72,
+      "id": "school",
+      "label": "SCHOOL",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "school",
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 73,
+      "id": "hospital",
+      "label": "HOSPITAL",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 74,
+      "id": "store",
+      "label": "STORE",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 75,
+      "id": "bathroom",
+      "label": "BATHROOM",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 76,
+      "id": "work",
+      "label": "WORK",
+      "docCategory": "Places",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 77,
+      "id": "here",
+      "label": "HERE",
+      "docCategory": "Directions",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 78,
+      "id": "there",
+      "label": "THERE",
+      "docCategory": "Directions",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 79,
+      "id": "inside",
+      "label": "INSIDE",
+      "docCategory": "Directions",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 80,
+      "id": "outside",
+      "label": "OUTSIDE",
+      "docCategory": "Directions",
+      "catalogCategories": [
+        "places",
+        "beginner-100"
+      ],
+      "phase": 3,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 81,
+      "id": "today",
+      "label": "TODAY",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 82,
+      "id": "tomorrow",
+      "label": "TOMORROW",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 83,
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 84,
+      "id": "now",
+      "label": "NOW",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 85,
+      "id": "later",
+      "label": "LATER",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 86,
+      "id": "morning",
+      "label": "MORNING",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 87,
+      "id": "night",
+      "label": "NIGHT",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "category-preview"
+    },
+    {
+      "number": 88,
+      "id": "time",
+      "label": "TIME",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 89,
+      "id": "before",
+      "label": "BEFORE",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 90,
+      "id": "after",
+      "label": "AFTER",
+      "docCategory": "Time",
+      "catalogCategories": [
+        "time",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 91,
+      "id": "water",
+      "label": "WATER",
+      "docCategory": "Food / Drinks",
+      "catalogCategories": [
+        "food",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 92,
+      "id": "food",
+      "label": "FOOD",
+      "docCategory": "Food / Drinks",
+      "catalogCategories": [
+        "food",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 93,
+      "id": "rice",
+      "label": "RICE",
+      "docCategory": "Food",
+      "catalogCategories": [
+        "food",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 94,
+      "id": "milk",
+      "label": "MILK",
+      "docCategory": "Food / Drinks",
+      "catalogCategories": [
+        "food",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 95,
+      "id": "bread",
+      "label": "BREAD",
+      "docCategory": "Food",
+      "catalogCategories": [
+        "food",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 96,
+      "id": "money",
+      "label": "MONEY",
+      "docCategory": "Objects",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 97,
+      "id": "phone",
+      "label": "PHONE",
+      "docCategory": "Objects",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 98,
+      "id": "book",
+      "label": "BOOK",
+      "docCategory": "Objects",
+      "catalogCategories": [
+        "school",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "existing-preview"
+    },
+    {
+      "number": 99,
+      "id": "clothes",
+      "label": "CLOTHES",
+      "docCategory": "Objects",
+      "catalogCategories": [
+        "daily-needs",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    },
+    {
+      "number": 100,
+      "id": "bag",
+      "label": "BAG",
+      "docCategory": "Objects",
+      "catalogCategories": [
+        "common-objects",
+        "beginner-100"
+      ],
+      "phase": 4,
+      "recognition": "not-pretrained"
+    }
+  ]
+}

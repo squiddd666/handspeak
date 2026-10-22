@@ -2,7 +2,7 @@
 import os,json,math,threading,hashlib,time
 from pathlib import Path
 LABELS=['NAME','HOME','HAVE','WANT','LOVE']
-EXPECTED_SHA='1d9e5ecc1305121c5825b80daade2001ac0c9d44e2d90fb60c4d64615ac4bcab'
+EXPECTED_SHA='69df81e19cf745af8b3ab0ac9cf4b5fc14bb2503528ddd15882618c6d36ef183'
 class ResearchError(Exception):
  def __init__(self,message,status=422):super().__init__(message);self.status=status
 
@@ -39,8 +39,14 @@ class ResearchWords:
    start,count=self.requests.get(key,(now,0))
    if count>=12 or (key not in self.requests and len(self.requests)>=4096):raise ResearchError("Recording limit reached. Wait a minute before trying again.",429)
    self.requests[key]=(start,count+1)
- def path(self):return os.environ.get('HANDSPEAK_RESEARCH_WORDS_MODEL','')
- def status(self):return {'available':bool(self.path() and Path(self.path()).is_file()),'labels':LABELS,'experimental':True,'test':{'correct':51,'total':66,'unsupportedFalse':3,'unsupportedTotal':48},'processing':'server-landmarks','retention':'not stored','manualOnly':True}
+ def path(self):
+  override=os.environ.get('HANDSPEAK_RESEARCH_WORDS_MODEL','')
+  if override:return override
+  # Fall back to the bundled location so deploying the artifact is a file drop,
+  # not an environment change. The hash pin below still has to match.
+  default=Path(__file__).resolve().parent/'models/research-words.json'
+  return str(default) if default.is_file() else ''
+ def status(self):return {'available':bool(self.path() and Path(self.path()).is_file()),'labels':LABELS,'experimental':True,'test':{'correct':12,'total':24,'unsupportedFalse':0,'unsupportedTotal':0},'processing':'server-landmarks','retention':'not stored','manualOnly':True}
  def predict(self,seq):
   if not valid_sequence(seq):raise ResearchError('Expected 20 frames of valid hand-landmark features.')
   if not self.lock.acquire(blocking=False):raise ResearchError('The five-word recognizer is busy. Try again shortly.',429)
@@ -63,8 +69,13 @@ class ResearchWords:
     best,label=ranked[0];other=next((d for d,l in ranked if l!=label),float('inf'));ratio=other/(best+1e-6);votes=sum(l==label for _,l in ranked[:3])
     limit=p.get('maxDistanceByLabel',{}).get(label,p['maxDistance'])
     return label if label in allowed and best<=limit and ratio>=p['minRatio'] and (votes>=p['minVotes'] or ratio>=p.get('strongRatio',float('inf'))) else None
-   compatibility=self.model['cameraCompatibility'];label=match(self.compat,compatibility['parameters'],compatibility['labels'])
-   if label is None:label=match(self.refs,self.model['parameters'],LABELS)
+   # Prefer the five-word templates first. cameraCompatibility (HOME/HAVE only)
+   # used to run first and could claim WANT/NAME/LOVE clips that were merely
+   # nearer to a HOME/HAVE prototype than to nothing in that two-word set.
+   label=match(self.refs,self.model['parameters'],LABELS)
+   if label is None:
+    compatibility=self.model['cameraCompatibility']
+    label=match(self.compat,compatibility['parameters'],compatibility['labels'])
    return {'label':label,'match':'possible' if label else 'no-reliable-match','experimental':True}
   finally:self.lock.release()
 research_words=ResearchWords()

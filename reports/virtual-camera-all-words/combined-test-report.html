@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HandSpeak — Virtual Camera Word Test Results</title>
+<style>
+:root { color-scheme: dark; }
+body {
+    font-family: 'DM Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.5;
+}
+h1 {
+    color: #f0f6fc;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.02em;
+}
+.subtitle {
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+.summary-bar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.summary-pill {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    color: #c9d1d9;
+}
+.summary-pill b {
+    color: #7ee787;
+    font-weight: 700;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+}
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-left: 3px solid #30363d;
+    border-radius: 8px;
+    padding: 0.9rem 0.8rem;
+    text-align: center;
+    transition: transform 0.15s, border-color 0.2s;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #58a6ff;
+}
+.card-word {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #f0f6fc;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.3rem;
+}
+.card-pct {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.15rem;
+}
+.card-count {
+    font-size: 0.75rem;
+    color: #8b949e;
+    margin-bottom: 0.4rem;
+}
+.card-note {
+    font-size: 0.7rem;
+    color: #6e7681;
+    margin-bottom: 0.3rem;
+    min-height: 1.1em;
+}
+.card-source {
+    font-size: 0.65rem;
+    color: #484f58;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.4rem;
+}
+.badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+}
+.badge.excellent { background: rgba(126,231,135,0.15); color: #7ee787; }
+.badge.good { background: rgba(121,192,255,0.15); color: #79c0ff; }
+.badge.fair { background: rgba(255,166,87,0.15); color: #ffa657; }
+.badge.poor { background: rgba(248,81,73,0.15); color: #f85149; }
+.badge.missing { background: rgba(139,148,158,0.1); color: #8b949e; }
+.badge.error { background: rgba(255,166,87,0.15); color: #ffa657; }
+.legend {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #30363d;
+    font-size: 0.8rem;
+    color: #8b949e;
+}
+.legend h3 {
+    color: #f0f6fc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+<h1>HandSpeak Virtual Camera Test Results</h1>
+<div class="subtitle">
+    Combined report: live virtual-camera playback tests + recorded-clip evaluation data
+    &middot; 27 words tested with virtual camera &middot; 12 passed
+    &middot; 31 words with known accuracy data
+</div>
+<div class="summary-bar">
+    <div class="summary-pill"><b>12</b> / 27 virtual camera passes</div>
+    <div class="summary-pill"><b>13</b> words at ≥90%</div>
+    <div class="summary-pill"><b>14</b> words at ≥75%</div>
+    <div class="summary-pill"><b>12</b> words missing data</div>
+</div>
+<div class="grid">
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">HELLO</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #8b949e">
+        <div class="card-word">THANK YOU</div>
+        <div class="card-pct" style="color: #8b949e">0%</div>
+        <div class="card-count">Error</div>
+        <div class="card-note" title="Error: Page.evaluate: Error: Video load failed: MEDIA_ELEMENT_ERROR: Format error
+    at Object.playVideo (<anonymous>:93:35)
+    at async eval (eval at evaluate (:370:30), <anonymous>:2:16)
+    at async <anonymous>:396:30">Error: Page.evaluate: Error: Video ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge error'>ERROR</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">PLEASE</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">YES</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">NO</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">FINISH</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">DRINK</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">WATER</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">BOOK</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">FOOD</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">HUNGRY</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">LIKE</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">GO</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #ffa657">
+        <div class="card-word">NAME</div>
+        <div class="card-pct" style="color: #ffa657">72.7%</div>
+        <div class="card-count">8/11</div>
+        <div class="card-note" title="Five-word server preview">Five-word server preview</div>
+        <div class="card-source">Recorded clip evaluation</div>
+        <span class='badge fair'>FAIR</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">HOME</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Misrecognized as: Capture incomplete">Misrecognized as: Capture incomplet...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">HAVE</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #ffa657">
+        <div class="card-word">WANT</div>
+        <div class="card-pct" style="color: #ffa657">68.2%</div>
+        <div class="card-count">15/22</div>
+        <div class="card-note" title="Five-word server preview">Five-word server preview</div>
+        <div class="card-source">Recorded clip evaluation</div>
+        <span class='badge fair'>FAIR</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #79c0ff">
+        <div class="card-word">LOVE</div>
+        <div class="card-pct" style="color: #79c0ff">81.8%</div>
+        <div class="card-count">9/11</div>
+        <div class="card-note" title="Five-word server preview">Five-word server preview</div>
+        <div class="card-source">Recorded clip evaluation</div>
+        <span class='badge good'>GOOD</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">BABY</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">8/8</div>
+        <div class="card-note" title="Experimental BABY model">Experimental BABY model</div>
+        <div class="card-source">Recorded clip evaluation</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">BELT</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Misrecognized as: Capture incomplete">Misrecognized as: Capture incomplet...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">EAT</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Misrecognized as: NO">Misrecognized as: NO</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">EMPTY</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">PEG</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">SOCCER</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Misrecognized as: HELLO">Misrecognized as: HELLO</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">SQUEEZE</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">VLOG</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Misrecognized as: HELLO">Misrecognized as: HELLO</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">LOCK</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">DUCK</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">BASEBALLCAP</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">OTHER</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">WHATFOR</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">DRAG</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">MICROSCOPE</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">PARTY</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">DEMAND</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">EDIT</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">MECHANIC</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #30363d">
+        <div class="card-word">DEAF</div>
+        <div class="card-pct" style="color: #8b949e">—</div>
+        <div class="card-count">No data</div>
+        <div class="card-note" title="No local test video or evaluation data available">No local test video or evaluation d...</div>
+        <div class="card-source">N/A</div>
+        <span class='badge missing'>NO DATA</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">PAIN</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">SICK</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">SEE</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #7ee787">
+        <div class="card-word">NIGHT</div>
+        <div class="card-pct" style="color: #7ee787">100.0%</div>
+        <div class="card-count">1/1</div>
+        <div class="card-note" title="Virtual camera: matched">Virtual camera: matched</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge excellent'>STRONG</span>
+    </div>
+    
+    <div class="card" style="border-left-color: #f85149">
+        <div class="card-word">FISH</div>
+        <div class="card-pct" style="color: #f85149">0.0%</div>
+        <div class="card-count">0/1</div>
+        <div class="card-note" title="Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.">Hands captured, but no word passed ...</div>
+        <div class="card-source">Virtual camera test</div>
+        <span class='badge poor'>NEEDS WORK</span>
+    </div>
+    
+</div>
+<div class="legend">
+    <h3>Legend</h3>
+    <div class="legend-item"><span class="dot" style="background:#7ee787"></span> <b>≥90%</b> Strong recognition</div>
+    <div class="legend-item"><span class="dot" style="background:#79c0ff"></span> <b>75–89%</b> Good recognition</div>
+    <div class="legend-item"><span class="dot" style="background:#ffa657"></span> <b>60–74%</b> Fair recognition</div>
+    <div class="legend-item"><span class="dot" style="background:#f85149"></span> <b>&lt;60%</b> Needs improvement</div>
+    <div class="legend-item"><span class="dot" style="background:#8b949e"></span> <b>No data</b> No local video or evaluation available</div>
+    <p style="margin-top:1rem">
+        <b>Virtual camera method:</b> Local MP4 videos played through a 640×480 canvas captureStream at 30 fps,
+        processed by the browser's MediaPipe hand tracker and motion-word classifier with automatic segmentation.
+        Face tracking was disabled. Results reflect the actual browser camera pipeline.
+        <br><br>
+        <b>Note:</b> Capstone words (BELT, EAT, EMPTY, etc.) and research words (NAME, HOME, HAVE, WANT, LOVE)
+        require server-side models or specific recording modes not available in this local browser-only test.
+        Their displayed accuracy comes from held-out recorded-clip evaluations.
+        The THANK YOU video had a format error during virtual camera playback.
+    </p>
+</div>
+</body>
+</html>

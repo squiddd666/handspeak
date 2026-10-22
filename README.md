@@ -248,6 +248,8 @@ The October 2026 accuracy experiment trained an additional temporal candidate. I
 
 The Moving signs section includes thirteen silent, attributed ASL examples: HELLO, THANK YOU, PLEASE, YES, NO, FINISH, DRINK, WATER, BOOK, FOOD, HUNGRY, LIKE, and GO. Controls include normal/slow playback, repeat, replay, and Practice at camera. Playback requires a user action and pauses when hidden or outside the viewport. Full training videos stay outside the website; see [credits](media/signs/README.md) and [provenance](media/signs/sources.json).
 
+The seven core vocabulary words (BELT, EAT, EMPTY, PEG, SOCCER, SQUEEZE, VLOG) each have a local example too: an ASL Citizen test-split recording of that gloss, muted, scaled to 480 px wide and trimmed to a 2.2 s window that opens on the sign, plus a Signing Savvy lesson link. These are the only ASL Citizen recordings in the repository and their dataset terms restrict redistribution — see [core provenance](media/signs/core-sources.json) and the licence caveat in the [credits](media/signs/README.md).
+
 The **Try 7 extra words (preview)** checkbox is off by default. Practice at camera enables it for an extra-word video. The new four-word extension matched 5/24 reserved clips and increased unsupported false suggestions. Default six-word recognition is unchanged when the preview is disabled. See [current results](models/asl-extra-words-evaluation.json).
 
 ## Final-defense deployment

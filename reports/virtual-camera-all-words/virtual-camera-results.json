@@ -1,0 +1,395 @@
+{
+  "timestamp": "2026-10-22T19:06:32Z",
+  "method": "Local MP4 playback through 640x480 canvas captureStream, browser camera processing, automatic segmentation, face tracking off.",
+  "server_url": "http://127.0.0.1:63523",
+  "words_tested": 26,
+  "words_with_errors": 1,
+  "correct_count": 12,
+  "results": [
+    {
+      "word": "HELLO",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 2.133333,
+      "playback_ms": 2366,
+      "event_count": 4
+    },
+    {
+      "word": "THANK YOU",
+      "error": "Page.evaluate: Error: Video load failed: MEDIA_ELEMENT_ERROR: Format error\n    at Object.playVideo (<anonymous>:93:35)\n    at async eval (eval at evaluate (:370:30), <anonymous>:2:16)\n    at async <anonymous>:396:30"
+    },
+    {
+      "word": "PLEASE",
+      "recognized_words": [
+        "PLEASE"
+      ],
+      "unique_recognized": [
+        "PLEASE"
+      ],
+      "correct": true,
+      "final_live": "PLEASE",
+      "final_status": "Possible match: \u201cPLEASE\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "PLEASE \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 1.1,
+      "playback_ms": 1320.9000000059605,
+      "event_count": 5
+    },
+    {
+      "word": "YES",
+      "recognized_words": [
+        "YES"
+      ],
+      "unique_recognized": [
+        "YES"
+      ],
+      "correct": true,
+      "final_live": "YES",
+      "final_status": "Possible match: \u201cYES\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "YES \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 1.7,
+      "playback_ms": 1886.2000000029802,
+      "event_count": 6
+    },
+    {
+      "word": "NO",
+      "recognized_words": [
+        "NO"
+      ],
+      "unique_recognized": [
+        "NO"
+      ],
+      "correct": true,
+      "final_live": "NO",
+      "final_status": "Possible match: \u201cNO\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "NO \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2,
+      "playback_ms": 2187.2999999970198,
+      "event_count": 6
+    },
+    {
+      "word": "FINISH",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 1.691667,
+      "playback_ms": 1775.5,
+      "event_count": 4
+    },
+    {
+      "word": "DRINK",
+      "recognized_words": [
+        "DRINK"
+      ],
+      "unique_recognized": [
+        "DRINK"
+      ],
+      "correct": true,
+      "final_live": "DRINK",
+      "final_status": "Possible match: \u201cDRINK\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "DRINK \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.044693,
+      "playback_ms": 2200.5,
+      "event_count": 6
+    },
+    {
+      "word": "WATER",
+      "recognized_words": [
+        "WATER"
+      ],
+      "unique_recognized": [
+        "WATER"
+      ],
+      "correct": true,
+      "final_live": "WATER",
+      "final_status": "Possible match: \u201cWATER\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "WATER \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.333333,
+      "playback_ms": 2474.5,
+      "event_count": 6
+    },
+    {
+      "word": "BOOK",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 1.366667,
+      "playback_ms": 1507,
+      "event_count": 4
+    },
+    {
+      "word": "FOOD",
+      "recognized_words": [
+        "FOOD"
+      ],
+      "unique_recognized": [
+        "FOOD"
+      ],
+      "correct": true,
+      "final_live": "FOOD",
+      "final_status": "Possible match: \u201cFOOD\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "FOOD \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 1.383333,
+      "playback_ms": 1474.0999999940395,
+      "event_count": 6
+    },
+    {
+      "word": "HUNGRY",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 2.1,
+      "playback_ms": 2287.9000000059605,
+      "event_count": 5
+    },
+    {
+      "word": "LIKE",
+      "recognized_words": [
+        "LIKE"
+      ],
+      "unique_recognized": [
+        "LIKE"
+      ],
+      "correct": true,
+      "final_live": "LIKE",
+      "final_status": "Possible match: \u201cLIKE\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "LIKE \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.191667,
+      "playback_ms": 2431.2999999970198,
+      "event_count": 5
+    },
+    {
+      "word": "GO",
+      "recognized_words": [
+        "GO"
+      ],
+      "unique_recognized": [
+        "GO"
+      ],
+      "correct": true,
+      "final_live": "GO",
+      "final_status": "Possible match: \u201cGO\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "GO \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 1.9019,
+      "playback_ms": 2068.5999999940395,
+      "event_count": 6
+    },
+    {
+      "word": "BELT",
+      "recognized_words": [
+        "Capture incomplete"
+      ],
+      "unique_recognized": [
+        "Capture incomplete"
+      ],
+      "correct": false,
+      "final_live": "Capture incomplete",
+      "final_status": "Capture incomplete: 5/18 frames had usable hands. Keep the full hand visible; check Camera diagnostics.",
+      "final_feedback": "Capture incomplete \u2014 Capture incomplete: 5/18 frames had usable hands. Keep the full hand visible; check Camera diagnostics.",
+      "video_duration": 2.2,
+      "playback_ms": 2306.7000000029802,
+      "event_count": 5
+    },
+    {
+      "word": "EAT",
+      "recognized_words": [
+        "NO"
+      ],
+      "unique_recognized": [
+        "NO"
+      ],
+      "correct": false,
+      "final_live": "NO",
+      "final_status": "Possible match: \u201cNO\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "NO \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.2,
+      "playback_ms": 2364.3999999910593,
+      "event_count": 5
+    },
+    {
+      "word": "EMPTY",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 1.9,
+      "playback_ms": 2079.7000000029802,
+      "event_count": 6
+    },
+    {
+      "word": "PEG",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 2.2,
+      "playback_ms": 2317.7000000029802,
+      "event_count": 5
+    },
+    {
+      "word": "SOCCER",
+      "recognized_words": [
+        "HELLO"
+      ],
+      "unique_recognized": [
+        "HELLO"
+      ],
+      "correct": false,
+      "final_live": "HELLO",
+      "final_status": "Possible match: \u201cHELLO\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "HELLO \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.2022,
+      "playback_ms": 2361,
+      "event_count": 6
+    },
+    {
+      "word": "SQUEEZE",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 2.2,
+      "playback_ms": 2307.7999999970198,
+      "event_count": 5
+    },
+    {
+      "word": "VLOG",
+      "recognized_words": [
+        "HELLO"
+      ],
+      "unique_recognized": [
+        "HELLO"
+      ],
+      "correct": false,
+      "final_live": "HELLO",
+      "final_status": "Possible match: \u201cHELLO\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "HELLO \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.2,
+      "playback_ms": 2282.0999999940395,
+      "event_count": 6
+    },
+    {
+      "word": "FISH",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 2.27933,
+      "playback_ms": 2296.5,
+      "event_count": 4
+    },
+    {
+      "word": "NIGHT",
+      "recognized_words": [
+        "NIGHT"
+      ],
+      "unique_recognized": [
+        "NIGHT"
+      ],
+      "correct": true,
+      "final_live": "NIGHT",
+      "final_status": "Possible match: \u201cNIGHT\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "NIGHT \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.633333,
+      "playback_ms": 2653.7999999970198,
+      "event_count": 6
+    },
+    {
+      "word": "PAIN",
+      "recognized_words": [
+        "PAIN"
+      ],
+      "unique_recognized": [
+        "PAIN"
+      ],
+      "correct": true,
+      "final_live": "PAIN",
+      "final_status": "Possible match: \u201cPAIN\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "PAIN \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.666667,
+      "playback_ms": 2688.6000000089407,
+      "event_count": 5
+    },
+    {
+      "word": "SEE",
+      "recognized_words": [
+        "SEE"
+      ],
+      "unique_recognized": [
+        "SEE"
+      ],
+      "correct": true,
+      "final_live": "SEE",
+      "final_status": "Possible match: \u201cSEE\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "SEE \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.874652,
+      "playback_ms": 2889.1000000089407,
+      "event_count": 6
+    },
+    {
+      "word": "SICK",
+      "recognized_words": [
+        "SICK"
+      ],
+      "unique_recognized": [
+        "SICK"
+      ],
+      "correct": true,
+      "final_live": "SICK",
+      "final_status": "Possible match: \u201cSICK\u201d. Pause before your next sign. Review it before adding it.",
+      "final_feedback": "SICK \u2014 Possible match \u2014 verify before adding",
+      "video_duration": 2.325,
+      "playback_ms": 2314.2999999970198,
+      "event_count": 6
+    },
+    {
+      "word": "HAVE",
+      "recognized_words": [],
+      "unique_recognized": [],
+      "correct": false,
+      "final_live": "No reliable match",
+      "final_status": "Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "final_feedback": "No reliable match \u2014 Hands captured, but no word passed the matching checks. Check the active vocabulary and Camera diagnostics.",
+      "video_duration": 4.237567,
+      "playback_ms": 4383,
+      "event_count": 4
+    },
+    {
+      "word": "HOME",
+      "recognized_words": [
+        "Capture incomplete"
+      ],
+      "unique_recognized": [
+        "Capture incomplete"
+      ],
+      "correct": false,
+      "final_live": "Capture incomplete",
+      "final_status": "Capture incomplete: 5/19 frames had usable hands. Keep the full hand visible; check Camera diagnostics.",
+      "final_feedback": "Capture incomplete \u2014 Capture incomplete: 5/19 frames had usable hands. Keep the full hand visible; check Camera diagnostics.",
+      "video_duration": 1.8,
+      "playback_ms": 1915,
+      "event_count": 5
+    }
+  ],
+  "page_errors": []
+}

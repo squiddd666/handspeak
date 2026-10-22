@@ -118,7 +118,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
       }catch{setHelp('Could not save this recording. Browser storage may be full.');}
     }else{
       pending=recognize(sequence,active.frames,active.imageAspect||1);
-      onDiagnostic({capture:'manual',frames:active.frames.length,trackedFrames:tracked,validSequence:true,match:pending?.label||null});
+      onDiagnostic({capture:'manual',frames:active.frames.length,trackedFrames:tracked,validSequence:true,match:pending?.label||null,sequence});
       setHelp(pending?`Possible match: “${pending.label}”. Check it before adding it to your message.`:`Captured ${active.frames.length} frames, but the model found no clear match. This experimental model may not recognize your signing reliably.`);
       onStatus(pending?.label||'No reliable match',pending?'Possible match — verify before adding':'The model did not recognize this recording. Your sign may still be correct.');
       maybeAddToSentence();
@@ -134,7 +134,10 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
       setHelp('Library limit reached (8 recordings per word, 96 total). Remove a word to record more.');return;
     }
     const counts={};allExamples().forEach(e=>counts[e.label]=(counts[e.label]||0)+1);
-    if(!teach && Object.values(counts).filter(n=>n>=3).length<2){setHelp('The word model is not ready. Wait for it to load, or reload the page.');return;}
+    // A category preview is a trained classifier with no template samples, so the
+    // "two words with three examples" rule does not apply to it. Without this the
+    // manual Record button silently did nothing for single-word previews.
+    if(!teach && !isTemporalWordModel(categoryModel) && Object.values(counts).filter(n=>n>=3).length<2){setHelp('The word model is not ready. Wait for it to load, or reload the page.');return;}
     automatic.reset();autoWasActive=false;
     pending=null;render();onStatus('—','Get ready — recording starts after the countdown.');lastSample=-Infinity;
     const now=performance.now();

@@ -61,6 +61,10 @@
     {
       "id": "question-response-words",
       "name": "Question/response words"
+    },
+    {
+      "id": "beginner-100",
+      "name": "Beginner 100"
     }
   ],
   "items": [
@@ -68,7 +72,8 @@
       "id": "good-morning",
       "label": "GOOD MORNING",
       "categories": [
-        "greetings-communication"
+        "greetings-communication",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -83,7 +88,8 @@
       "id": "good-afternoon",
       "label": "GOOD AFTERNOON",
       "categories": [
-        "greetings-communication"
+        "greetings-communication",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -113,7 +119,8 @@
       "id": "welcome",
       "label": "WELCOME",
       "categories": [
-        "greetings-communication"
+        "greetings-communication",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -148,7 +155,7 @@
       "sourceLabel": null,
       "sourceVersion": null,
       "recognition": "not-pretrained",
-      "note": "The linked lesson discusses response choices; WELCOME is not a universal substitute for \u201cyou\u2019re welcome.\u201d",
+      "note": "The linked lesson discusses response choices; WELCOME is not a universal substitute for “you’re welcome.”",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/welcome.htm",
       "learningScope": "WELCOME and response usage",
@@ -232,7 +239,8 @@
       "id": "name",
       "label": "NAME",
       "categories": [
-        "greetings-communication"
+        "greetings-communication",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -294,7 +302,8 @@
       "id": "hungry",
       "label": "HUNGRY",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": "hungry",
       "sourceVersion": "v1_0",
@@ -309,7 +318,8 @@
       "id": "thirsty",
       "label": "THIRSTY",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": "thirsty",
       "sourceVersion": "v1_0",
@@ -367,7 +377,8 @@
       "id": "clothes",
       "label": "CLOTHES",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -397,7 +408,8 @@
       "id": "money",
       "label": "MONEY",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -412,7 +424,8 @@
       "id": "phone",
       "label": "PHONE",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -485,7 +498,8 @@
       "id": "work",
       "label": "WORK",
       "categories": [
-        "daily-needs"
+        "daily-needs",
+        "beginner-100"
       ],
       "sourceLabel": "work",
       "sourceVersion": "v2_1",
@@ -508,7 +522,7 @@
       "video": "media/signs/pain.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/owie/index.html",
       "cameraGroups": [
-        "single-pain"
+        "pack-dtw"
       ],
       "testSummary": "Recorded screen: 4/4 correct, 0/110 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
@@ -516,7 +530,8 @@
       "id": "sick",
       "label": "SICK",
       "categories": [
-        "health-emergency"
+        "health-emergency",
+        "beginner-100"
       ],
       "sourceLabel": "sick",
       "sourceVersion": "v1_0",
@@ -525,7 +540,7 @@
       "video": "media/signs/sick.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/sick/index.html",
       "cameraGroups": [
-        "single-sick"
+        "pack-dtw"
       ],
       "testSummary": "Recorded screen: 3/4 correct, 0/112 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
@@ -713,7 +728,8 @@
       "id": "brother",
       "label": "BROTHER",
       "categories": [
-        "family-people"
+        "family-people",
+        "beginner-100"
       ],
       "sourceLabel": "brother",
       "sourceVersion": "v1_0",
@@ -728,7 +744,8 @@
       "id": "sister",
       "label": "SISTER",
       "categories": [
-        "family-people"
+        "family-people",
+        "beginner-100"
       ],
       "sourceLabel": "sister",
       "sourceVersion": "v2_1",
@@ -772,7 +789,8 @@
       "id": "baby",
       "label": "BABY",
       "categories": [
-        "family-people"
+        "family-people",
+        "beginner-100"
       ],
       "sourceLabel": "baby",
       "sourceVersion": "v2_1",
@@ -786,7 +804,8 @@
       "id": "child",
       "label": "CHILD",
       "categories": [
-        "family-people"
+        "family-people",
+        "beginner-100"
       ],
       "sourceLabel": "child",
       "sourceVersion": "v1_0",
@@ -892,7 +911,8 @@
       "label": "SCHOOL",
       "categories": [
         "school",
-        "places"
+        "places",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -922,7 +942,8 @@
       "id": "book",
       "label": "BOOK",
       "categories": [
-        "school"
+        "school",
+        "beginner-100"
       ],
       "sourceLabel": "book",
       "sourceVersion": "v1_0",
@@ -1131,7 +1152,8 @@
       "id": "walk",
       "label": "WALK",
       "categories": [
-        "actions"
+        "actions",
+        "beginner-100"
       ],
       "sourceLabel": "walk",
       "sourceVersion": "v2_1",
@@ -1145,7 +1167,8 @@
       "id": "run",
       "label": "RUN",
       "categories": [
-        "actions"
+        "actions",
+        "beginner-100"
       ],
       "sourceLabel": "run",
       "sourceVersion": "v2_1",
@@ -1159,7 +1182,8 @@
       "id": "give",
       "label": "GIVE",
       "categories": [
-        "actions"
+        "actions",
+        "beginner-100"
       ],
       "sourceLabel": "give",
       "sourceVersion": "v1_0",
@@ -1174,7 +1198,8 @@
       "id": "take",
       "label": "TAKE",
       "categories": [
-        "actions"
+        "actions",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -1256,7 +1281,7 @@
       "video": "media/signs/see.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/see/index.html",
       "cameraGroups": [
-        "single-see"
+        "pack-dtw"
       ],
       "testSummary": "Recorded screen: 3/4 correct, 0/110 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
@@ -1338,7 +1363,8 @@
       "id": "know",
       "label": "KNOW",
       "categories": [
-        "actions"
+        "actions",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -1383,7 +1409,8 @@
       "id": "home",
       "label": "HOME",
       "categories": [
-        "places"
+        "places",
+        "beginner-100"
       ],
       "sourceLabel": "home",
       "sourceVersion": "v1_0",
@@ -1398,7 +1425,8 @@
       "id": "hospital",
       "label": "HOSPITAL",
       "categories": [
-        "places"
+        "places",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -1413,7 +1441,8 @@
       "id": "store",
       "label": "STORE",
       "categories": [
-        "places"
+        "places",
+        "beginner-100"
       ],
       "sourceLabel": "store",
       "sourceVersion": "v1_0",
@@ -1663,7 +1692,8 @@
       "id": "today",
       "label": "TODAY",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "today",
       "sourceVersion": "v2_1",
@@ -1677,7 +1707,8 @@
       "id": "tomorrow",
       "label": "TOMORROW",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "tomorrow",
       "sourceVersion": "v1_0",
@@ -1692,7 +1723,8 @@
       "id": "yesterday",
       "label": "YESTERDAY",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "yesterday",
       "sourceVersion": "v1_0",
@@ -1707,7 +1739,8 @@
       "id": "now",
       "label": "NOW",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "now",
       "sourceVersion": "v1_0",
@@ -1722,7 +1755,8 @@
       "id": "later",
       "label": "LATER",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "later",
       "sourceVersion": "v1_0",
@@ -1737,7 +1771,8 @@
       "id": "morning",
       "label": "MORNING",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "morning",
       "sourceVersion": "v1_0",
@@ -1782,7 +1817,8 @@
       "id": "night",
       "label": "NIGHT",
       "categories": [
-        "time"
+        "time",
+        "beginner-100"
       ],
       "sourceLabel": "night",
       "sourceVersion": "v1_0",
@@ -1791,9 +1827,9 @@
       "video": "media/signs/night.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/night/index.html",
       "cameraGroups": [
-        "single-night"
+        "pack-dtw"
       ],
-      "testSummary": "Recorded screen: 4/4 correct, 0/110 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
+      "testSummary": "DTW research model from ASL Citizen pack clips: leave-one-participant-out 18/30 correct, 0 false substitutions (FISH 4/6, PAIN 4/6, SEE 5/6, SICK 4/6, NIGHT 1/6). Cross-signer recall lower; expand templates to improve. Live-camera accuracy unverified."
     },
     {
       "id": "early",
@@ -1867,7 +1903,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "0"
       ],
@@ -1885,7 +1921,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "1"
       ],
@@ -1903,7 +1939,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "2"
       ],
@@ -1921,7 +1957,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "3"
       ],
@@ -1939,7 +1975,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "4"
       ],
@@ -1957,7 +1993,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "5"
       ],
@@ -1975,7 +2011,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "6"
       ],
@@ -1993,7 +2029,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "7"
       ],
@@ -2011,7 +2047,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "8"
       ],
@@ -2029,7 +2065,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "9"
       ],
@@ -2047,7 +2083,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "10"
       ],
@@ -2065,7 +2101,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "11"
       ],
@@ -2083,7 +2119,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "12"
       ],
@@ -2101,7 +2137,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "13"
       ],
@@ -2119,7 +2155,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "14"
       ],
@@ -2137,7 +2173,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "15"
       ],
@@ -2155,7 +2191,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "16"
       ],
@@ -2173,7 +2209,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "17"
       ],
@@ -2191,7 +2227,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "18"
       ],
@@ -2209,7 +2245,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "19"
       ],
@@ -2227,7 +2263,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "20"
       ],
@@ -2245,7 +2281,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "100"
       ],
@@ -2263,7 +2299,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/numbers.htm",
-      "learningScope": "Numbers lesson, including 0\u201320, hundreds and thousands",
+      "learningScope": "Numbers lesson, including 0–20, hundreds and thousands",
       "searchAliases": [
         "1000"
       ],
@@ -2393,7 +2429,8 @@
       "id": "okay",
       "label": "OKAY",
       "categories": [
-        "feelings"
+        "feelings",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -2408,7 +2445,8 @@
       "id": "love",
       "label": "LOVE",
       "categories": [
-        "feelings"
+        "feelings",
+        "beginner-100"
       ],
       "sourceLabel": "love",
       "sourceVersion": "v2_1",
@@ -2424,7 +2462,8 @@
       "id": "like",
       "label": "LIKE",
       "categories": [
-        "feelings"
+        "feelings",
+        "beginner-100"
       ],
       "sourceLabel": "like",
       "sourceVersion": "v1_0",
@@ -2646,7 +2685,8 @@
       "id": "bag",
       "label": "BAG",
       "categories": [
-        "common-objects"
+        "common-objects",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -2765,7 +2805,8 @@
       "id": "rice",
       "label": "RICE",
       "categories": [
-        "food"
+        "food",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -2780,7 +2821,8 @@
       "id": "bread",
       "label": "BREAD",
       "categories": [
-        "food"
+        "food",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -2818,7 +2860,7 @@
       "video": "media/signs/fish.mp4",
       "learningUrl": "https://signdata.cc.gatech.edu/view/datasets/popsign_v1_0/game/fish/index.html",
       "cameraGroups": [
-        "single-fish"
+        "pack-dtw"
       ],
       "testSummary": "Recorded screen: 3/4 correct, 0/112 other signs falsely accepted. Experimental: camera and application integration checks were waived by the site owner; live-camera accuracy is unverified."
     },
@@ -2871,7 +2913,8 @@
       "id": "milk",
       "label": "MILK",
       "categories": [
-        "food"
+        "food",
+        "beginner-100"
       ],
       "sourceLabel": "milk",
       "sourceVersion": "v1_0",
@@ -2942,7 +2985,8 @@
       "id": "which",
       "label": "WHICH",
       "categories": [
-        "question-response-words"
+        "question-response-words",
+        "beginner-100"
       ],
       "sourceLabel": "which",
       "sourceVersion": "v2_1",
@@ -3016,7 +3060,8 @@
       "id": "want",
       "label": "WANT",
       "categories": [
-        "question-response-words"
+        "question-response-words",
+        "beginner-100"
       ],
       "sourceLabel": null,
       "sourceVersion": null,
@@ -3041,14 +3086,15 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/d/dont-want.htm",
-      "learningScope": "DON\u2019T WANT",
+      "learningScope": "DON’T WANT",
       "cameraGroups": []
     },
     {
       "id": "need",
       "label": "NEED",
       "categories": [
-        "question-response-words"
+        "question-response-words",
+        "beginner-100"
       ],
       "sourceLabel": "needneedto",
       "sourceVersion": "v2_1",
@@ -3085,7 +3131,7 @@
       "note": "",
       "video": null,
       "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/d/dont-have.htm",
-      "learningScope": "DON\u2019T HAVE",
+      "learningScope": "DON’T HAVE",
       "cameraGroups": []
     },
     {
@@ -3134,6 +3180,950 @@
       "cameraGroups": [],
       "video": "media/signs/finish.mp4",
       "note": "Included in the default six-word motion model. Recognition is experimental; review each match. Sign once, then pause, or use Record a word."
+    },
+    {
+      "id": "hello",
+      "label": "HELLO",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "default-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/hello.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/hello.htm",
+      "cameraGroups": [],
+      "learningScope": "HELLO"
+    },
+    {
+      "id": "goodbye",
+      "label": "GOODBYE",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/g/good-bye.htm",
+      "cameraGroups": [],
+      "learningScope": "GOODBYE"
+    },
+    {
+      "id": "thank-you",
+      "label": "THANK YOU",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "default-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/thank-you.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/thankyou.htm",
+      "cameraGroups": [],
+      "learningScope": "THANK YOU"
+    },
+    {
+      "id": "please",
+      "label": "PLEASE",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "default-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/please.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/p/please.htm",
+      "cameraGroups": [],
+      "learningScope": "PLEASE"
+    },
+    {
+      "id": "sorry",
+      "label": "SORRY",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/sorry.htm",
+      "cameraGroups": [],
+      "learningScope": "SORRY"
+    },
+    {
+      "id": "yes",
+      "label": "YES",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "default-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/yes.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/y/yes.htm",
+      "cameraGroups": [],
+      "learningScope": "YES"
+    },
+    {
+      "id": "no",
+      "label": "NO",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "default-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/no.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/n/no.htm",
+      "cameraGroups": [],
+      "learningScope": "NO"
+    },
+    {
+      "id": "good-night",
+      "label": "GOOD NIGHT",
+      "categories": [
+        "greetings-communication",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/g/goodnight.htm",
+      "cameraGroups": [],
+      "learningScope": "GOOD NIGHT"
+    },
+    {
+      "id": "how",
+      "label": "HOW",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/how.htm",
+      "cameraGroups": [],
+      "learningScope": "HOW"
+    },
+    {
+      "id": "what",
+      "label": "WHAT",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/what.htm",
+      "cameraGroups": [],
+      "learningScope": "WHAT"
+    },
+    {
+      "id": "who",
+      "label": "WHO",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/who.htm",
+      "cameraGroups": [],
+      "learningScope": "WHO"
+    },
+    {
+      "id": "where",
+      "label": "WHERE",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/where.htm",
+      "cameraGroups": [],
+      "learningScope": "WHERE"
+    },
+    {
+      "id": "when",
+      "label": "WHEN",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/when.htm",
+      "cameraGroups": [],
+      "learningScope": "WHEN"
+    },
+    {
+      "id": "why",
+      "label": "WHY",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/why.htm",
+      "cameraGroups": [],
+      "learningScope": "WHY"
+    },
+    {
+      "id": "i-me",
+      "label": "I / ME",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/i/i.htm",
+      "cameraGroups": [],
+      "learningScope": "I / ME",
+      "searchAliases": [
+        "I",
+        "ME"
+      ]
+    },
+    {
+      "id": "you",
+      "label": "YOU",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/y/you.htm",
+      "cameraGroups": [],
+      "learningScope": "YOU"
+    },
+    {
+      "id": "he-she",
+      "label": "HE / SHE",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/he.htm",
+      "cameraGroups": [],
+      "learningScope": "HE / SHE",
+      "searchAliases": [
+        "HE",
+        "SHE"
+      ]
+    },
+    {
+      "id": "we",
+      "label": "WE",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/we.htm",
+      "cameraGroups": [],
+      "learningScope": "WE"
+    },
+    {
+      "id": "they",
+      "label": "THEY",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/they.htm",
+      "cameraGroups": [],
+      "learningScope": "THEY"
+    },
+    {
+      "id": "my-mine",
+      "label": "MY / MINE",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/m/my.htm",
+      "cameraGroups": [],
+      "learningScope": "MY / MINE",
+      "searchAliases": [
+        "MY",
+        "MINE"
+      ]
+    },
+    {
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/y/your.htm",
+      "cameraGroups": [],
+      "learningScope": "YOUR / YOURS",
+      "searchAliases": [
+        "YOUR",
+        "YOURS"
+      ]
+    },
+    {
+      "id": "this",
+      "label": "THIS",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/this.htm",
+      "cameraGroups": [],
+      "learningScope": "THIS"
+    },
+    {
+      "id": "that",
+      "label": "THAT",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/that.htm",
+      "cameraGroups": [],
+      "learningScope": "THAT"
+    },
+    {
+      "id": "everyone",
+      "label": "EVERYONE",
+      "categories": [
+        "question-response-words",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/e/everyone.htm",
+      "cameraGroups": [],
+      "learningScope": "EVERYONE"
+    },
+    {
+      "id": "mother",
+      "label": "MOTHER",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/m/mother.htm",
+      "cameraGroups": [],
+      "learningScope": "MOTHER"
+    },
+    {
+      "id": "father",
+      "label": "FATHER",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/f/father.htm",
+      "cameraGroups": [],
+      "learningScope": "FATHER"
+    },
+    {
+      "id": "friend",
+      "label": "FRIEND",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/f/friend.htm",
+      "cameraGroups": [],
+      "learningScope": "FRIEND"
+    },
+    {
+      "id": "teacher",
+      "label": "TEACHER",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/teacher.htm",
+      "cameraGroups": [],
+      "learningScope": "TEACHER"
+    },
+    {
+      "id": "student",
+      "label": "STUDENT",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/student.htm",
+      "cameraGroups": [],
+      "learningScope": "STUDENT"
+    },
+    {
+      "id": "family",
+      "label": "FAMILY",
+      "categories": [
+        "family-people",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/f/family.htm",
+      "cameraGroups": [],
+      "learningScope": "FAMILY"
+    },
+    {
+      "id": "eat",
+      "label": "EAT",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/eat.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/e/eat.htm",
+      "cameraGroups": [],
+      "learningScope": "EAT"
+    },
+    {
+      "id": "drink",
+      "label": "DRINK",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "existing-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/drink.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/d/drink.htm",
+      "cameraGroups": [],
+      "learningScope": "DRINK"
+    },
+    {
+      "id": "sleep",
+      "label": "SLEEP",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/sleep.htm",
+      "cameraGroups": [],
+      "learningScope": "SLEEP"
+    },
+    {
+      "id": "wake-up",
+      "label": "WAKE UP",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/wakeup.htm",
+      "cameraGroups": [],
+      "learningScope": "WAKE UP"
+    },
+    {
+      "id": "sit",
+      "label": "SIT",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/sit.htm",
+      "cameraGroups": [],
+      "learningScope": "SIT"
+    },
+    {
+      "id": "stand",
+      "label": "STAND",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/stand.htm",
+      "cameraGroups": [],
+      "learningScope": "STAND"
+    },
+    {
+      "id": "go",
+      "label": "GO",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "existing-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/go.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/g/go.htm",
+      "cameraGroups": [],
+      "learningScope": "GO"
+    },
+    {
+      "id": "come",
+      "label": "COME",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/c/come.htm",
+      "cameraGroups": [],
+      "learningScope": "COME"
+    },
+    {
+      "id": "help",
+      "label": "HELP",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/help.htm",
+      "cameraGroups": [],
+      "learningScope": "HELP"
+    },
+    {
+      "id": "stop",
+      "label": "STOP",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/stop.htm",
+      "cameraGroups": [],
+      "learningScope": "STOP"
+    },
+    {
+      "id": "wait",
+      "label": "WAIT",
+      "categories": [
+        "actions",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/wait.htm",
+      "cameraGroups": [],
+      "learningScope": "WAIT"
+    },
+    {
+      "id": "happy",
+      "label": "HAPPY",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/happy.htm",
+      "cameraGroups": [],
+      "learningScope": "HAPPY"
+    },
+    {
+      "id": "sad",
+      "label": "SAD",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/sad.htm",
+      "cameraGroups": [],
+      "learningScope": "SAD"
+    },
+    {
+      "id": "angry",
+      "label": "ANGRY",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/a/angry.htm",
+      "cameraGroups": [],
+      "learningScope": "ANGRY"
+    },
+    {
+      "id": "scared",
+      "label": "SCARED",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/s/scared.htm",
+      "cameraGroups": [],
+      "learningScope": "SCARED"
+    },
+    {
+      "id": "tired",
+      "label": "TIRED",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/tired.htm",
+      "cameraGroups": [],
+      "learningScope": "TIRED"
+    },
+    {
+      "id": "good",
+      "label": "GOOD",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/g/good.htm",
+      "cameraGroups": [],
+      "learningScope": "GOOD"
+    },
+    {
+      "id": "bad",
+      "label": "BAD",
+      "categories": [
+        "feelings",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/b/bad.htm",
+      "cameraGroups": [],
+      "learningScope": "BAD"
+    },
+    {
+      "id": "bathroom",
+      "label": "BATHROOM",
+      "categories": [
+        "places",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/b/bathroom.htm",
+      "cameraGroups": [],
+      "learningScope": "BATHROOM"
+    },
+    {
+      "id": "here",
+      "label": "HERE",
+      "categories": [
+        "places",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/h/here.htm",
+      "cameraGroups": [],
+      "learningScope": "HERE"
+    },
+    {
+      "id": "there",
+      "label": "THERE",
+      "categories": [
+        "places",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/there.htm",
+      "cameraGroups": [],
+      "learningScope": "THERE"
+    },
+    {
+      "id": "inside",
+      "label": "INSIDE",
+      "categories": [
+        "places",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/i/in.htm",
+      "cameraGroups": [],
+      "learningScope": "INSIDE"
+    },
+    {
+      "id": "outside",
+      "label": "OUTSIDE",
+      "categories": [
+        "places",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/o/outside.htm",
+      "cameraGroups": [],
+      "learningScope": "OUTSIDE"
+    },
+    {
+      "id": "time",
+      "label": "TIME",
+      "categories": [
+        "time",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/t/time.htm",
+      "cameraGroups": [],
+      "learningScope": "TIME"
+    },
+    {
+      "id": "before",
+      "label": "BEFORE",
+      "categories": [
+        "time",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/b/before.htm",
+      "cameraGroups": [],
+      "learningScope": "BEFORE"
+    },
+    {
+      "id": "after",
+      "label": "AFTER",
+      "categories": [
+        "time",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "not-pretrained",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": null,
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/a/after.htm",
+      "cameraGroups": [],
+      "learningScope": "AFTER"
+    },
+    {
+      "id": "water",
+      "label": "WATER",
+      "categories": [
+        "food",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "existing-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/water.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/w/water.htm",
+      "cameraGroups": [],
+      "learningScope": "WATER"
+    },
+    {
+      "id": "food",
+      "label": "FOOD",
+      "categories": [
+        "food",
+        "beginner-100"
+      ],
+      "sourceLabel": null,
+      "sourceVersion": null,
+      "recognition": "existing-preview",
+      "note": "Beginner 100 vocabulary (dataset label). Signs may differ between FSL and ASL.",
+      "video": "media/signs/food.mp4",
+      "learningUrl": "https://www.lifeprint.com/asl101/pages-signs/f/food.htm",
+      "cameraGroups": [],
+      "learningScope": "FOOD"
     }
   ]
 }

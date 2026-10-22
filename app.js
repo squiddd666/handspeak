@@ -3,12 +3,13 @@ import {loadVocabularySettings} from './vocabulary-settings.js?v=20261011-featur
 import {createTemporalCamera} from './temporal-camera.js?v=20261020-tracking-1';
 import {preferredVisionDelegate} from './camera-performance.js?v=20261010-single-1';
 import {createResearchWords} from './research-words.js?v=20261020-short-runs-1';
-import {createVocabularyLibrary} from './vocabulary-library.js?v=20261021-practice-mode-1';
+import {createVocabularyLibrary} from './vocabulary-library.js?v=20261022-nomodel-1';
 import {createInterpreter} from './interpretation.js?v=20261011-features-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
-import { createMotionStudio } from './motion-studio.js?v=20261021-water-1';
+import { createMotionStudio } from './motion-studio.js?v=20261022-category-manual-1';
 import {createCapstoneRecognition} from './capstone-recognition.js?v=20261021-stgcn-1';
+import {createBeginnerRecognition} from './beginner-recognition.js?v=20261023-beginner-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -126,6 +127,11 @@ const motionStudio=createMotionStudio({
 });
 vocabularyLibrary=createVocabularyLibrary({onWord:addWord,setVocabulary:(model,name)=>{researchWords.disable();const prior=motionStudio.usesTemporalModel(),accepted=motionStudio.setVocabulary(model,name);if(accepted){temporalCamera?.reset();if((running||cameraStarting)&&prior!==motionStudio.usesTemporalModel())stopCamera();}return accepted;}});
 const capstoneRecognition=createCapstoneRecognition({
+  isRunning:()=>running&&recognitionMode==='words',startCamera,onWord:addWord,
+  onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(`${word} — ${detail}`);},
+  prepare:()=>{researchWords.disable();if(motionStudio.usesTemporalModel()){motionStudio.setVocabulary(null);if(running||cameraStarting)stopCamera();}setRecognitionMode('words');motionStudio.cancel();}
+});
+const beginnerRecognition=createBeginnerRecognition({
   isRunning:()=>running&&recognitionMode==='words',startCamera,onWord:addWord,
   onStatus:(word,detail)=>{setWordCameraResult(word,detail);setRecognitionFeedback(`${word} — ${detail}`);},
   prepare:()=>{researchWords.disable();if(motionStudio.usesTemporalModel()){motionStudio.setVocabulary(null);if(running||cameraStarting)stopCamera();}setRecognitionMode('words');motionStudio.cancel();}
@@ -413,7 +419,7 @@ function detect(){
       }
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing());
+    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing()||beginnerRecognition.isCapturing());
     if(temporalCamera){
       temporalCamera.push(video,now,motionStudio.isCapturing());
       if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
@@ -435,7 +441,8 @@ function consumeDetection(detection,now,imageAspect){
       const indices=(detection.landmarks||[]).map((p,i)=>isUsableHand(p)?i:-1).filter(i=>i>=0);
       const filtered={landmarks:indices.map(i=>detection.landmarks[i]),handedness:indices.map(i=>detection.handedness?.[i]),imageAspect:imageAspect};
       capstoneRecognition.frame(filtered,now,video);
-      if(!capstoneRecognition.isCapturing())(researchWords.active()?researchWords:motionStudio).frame(filtered,now);
+      beginnerRecognition.frame(filtered,now,video);
+      if(!capstoneRecognition.isCapturing()&&!beginnerRecognition.isCapturing())(researchWords.active()?researchWords:motionStudio).frame(filtered,now);
     }else if(hands.length===1){
       missingFrames=0;
       const points=hands[0];
