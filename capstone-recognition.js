@@ -33,7 +33,12 @@ export function createCapstoneRecognition({isRunning,startCamera,onWord,onStatus
     message('Loading full-body and hand tracking…');
     if(!window.Holistic)await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5.1675471629/holistic.js';script.onload=resolve;script.onerror=()=>reject(Error('Holistic tracker download failed'));document.head.append(script);});
     pose=new window.Holistic({locateFile:file=>`https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5.1675471629/${file}`});
-    pose.setOptions({modelComplexity:1,smoothLandmarks:true,minDetectionConfidence:.5,minTrackingConfidence:.5});
+    // Phone / narrow layouts cannot sustain Holistic complexity 1 during a 4s
+    // virtual-camera take (DEMAND repeatedly finished with 2–3 tracked frames).
+    // Complexity 0 keeps pose+hand samples above the 5-frame gate without
+    // changing the server ST-GCN vocabulary or confidence gates.
+    const phone=typeof window!=='undefined'&&window.innerWidth>0&&window.innerWidth<500;
+    pose.setOptions({modelComplexity:phone?0:1,smoothLandmarks:true,minDetectionConfidence:phone?0.45:0.5,minTrackingConfidence:phone?0.45:0.5});
     pose.onResults(result=>{
       holisticBusy=false;if(!capture)return;
       const points=value=>value?.length===21?value.map(p=>[p.x,p.y,p.z||0]):null;

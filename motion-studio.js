@@ -1,8 +1,8 @@
 import {isWordEnabled} from './vocabulary-settings.js?v=20261011-features-1';
 import {isTemporalWordModel,validTemporalWordModel,recognizeTemporalWord} from './temporal-word-model.js?v=20261020-short-runs-1';
-import {recognizeExpandedMotion} from './expanded-motion.js?v=20261020-camera-compatibility-2';
+import {recognizeExpandedMotion} from './expanded-motion.js?v=20261023-hungry-cutoff-2';
 import {createAutomaticMotion} from './automatic-motion.js?v=20261020-appearance-1';
-import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261020-per-label-1';
+import {motionFrame,encodeMotion,validMotion,recognizeMotion,validMotionParameters} from './motion-model.js?v=20261023-hungry-cutoff-1';
 import {validBinaryTemporalModel,recognizeBinaryTemporal} from './hello-binary.js?v=20261021-binary-2';
 
 export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=>false,onDiagnostic=()=>{}}){
@@ -40,7 +40,7 @@ export function createMotionStudio({isRunning,onWord,onStatus,speak,onFinish=()=
   }
   async function loadExpansion(){
     try {
-      const response=await fetch('./models/asl-extra-words.json?v=20261020-camera-compatibility-2');
+      const response=await fetch('./models/asl-extra-words.json?v=20261023-hungry-cutoff-1');
       if(!response.ok)throw new Error('Extra words unavailable');
       const model=await response.json();
       if(model.version!==1||model.encoding!=='two-hand-motion-v3'||!validMotionParameters(model.parameters)

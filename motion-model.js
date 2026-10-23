@@ -119,9 +119,10 @@ export function recognizeMotion(sequence, examples, parameters={maxDistance:.65,
   const best=ranked[0],other=ranked.find(e=>e.label!==best.label);
   const separation=other?other.distance/(best.distance+1e-6):Infinity;
   const votes=ranked.slice(0,3).filter(e=>e.label===best.label).length;
-  const distanceLimit=parameters.usePerLabelCutoffs
-    ? parameters.maxDistanceByLabel?.[best.label]??parameters.maxDistance
-    : parameters.maxDistance;
+  // Prefer per-label cutoffs whenever present (asl-extra HUNGRY:1.5, asl-words,
+  // pack-dtw). Gating only on usePerLabelCutoffs left asl-extra's HUNGRY limit
+  // unused, so phone suite clips just over maxDistance=0.8 returned null.
+  const distanceLimit=parameters.maxDistanceByLabel?.[best.label]??parameters.maxDistance;
   if(best.distance>distanceLimit || separation<parameters.minRatio
     || (votes<parameters.minVotes&&separation<(parameters.strongRatio??Infinity)))return null;
   return {label:best.label,distance:best.distance};

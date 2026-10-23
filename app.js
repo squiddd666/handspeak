@@ -8,7 +8,7 @@ import {createInterpreter} from './interpretation.js?v=20261011-features-1';
 import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=20261002-sentences-1';
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
 import { createMotionStudio } from './motion-studio.js?v=20261022-category-manual-1';
-import {createCapstoneRecognition} from './capstone-recognition.js?v=20261021-stgcn-1';
+import {createCapstoneRecognition} from './capstone-recognition.js?v=20261023-holistic-phone-1';
 import {createBeginnerRecognition} from './beginner-recognition.js?v=20261023-beginner-1';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
