@@ -13,10 +13,23 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent
 ROOT = REPO / "third_party" / "microsoft_asl_citizen"
+# Prefer latest denser Beginner checkpoints first.
 CKPT_CANDIDATES = [
-    REPO.parent.parent / "hs-eval" / "models" / "beginner100-v1.pt",
-    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner100-v1.pt"),
+    REPO / "models" / "beginner-phase123-v1.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase123-v1.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner-phase123-v1.pt",
+    REPO / "models" / "beginner-phase12-v2.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase12-v2.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner-phase12-v2.pt",
+    REPO / "models" / "beginner-phase12-v1.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase12-v1.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner-phase12-v1.pt",
+    REPO / "models" / "beginner-phase1-v1.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase1-v1.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner-phase1-v1.pt",
     REPO / "models" / "beginner100-v1.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner100-v1.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner100-v1.pt",
 ]
 LABEL_MAP = Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\beginner-100\label-map.json")
 HAND_POINTS = [0, 4, 5, 8, 9, 12, 13, 16, 17, 20]
@@ -62,11 +75,30 @@ def labels() -> list[str]:
 
 def status() -> dict:
     labs = labels()
+    path = _checkpoint_path()
+    name = path.name if path else "unavailable"
+    if "phase123" in name:
+        model_name = "HandSpeak ST-GCN beginner-phase123-v1 (phases 1–3 denser)"
+        phase = "1-3"
+    elif "phase12-v2" in name or "phase12_v2" in name:
+        model_name = "HandSpeak ST-GCN beginner-phase12-v2 (weak-word boost)"
+        phase = "1-2-v2"
+    elif "phase12" in name:
+        model_name = "HandSpeak ST-GCN beginner-phase12-v1 (phases 1–2 denser)"
+        phase = "1-2"
+    elif "phase1" in name:
+        model_name = "HandSpeak ST-GCN beginner-phase1-v1 (greetings/questions/pronouns)"
+        phase = 1
+    else:
+        model_name = "HandSpeak ST-GCN beginner100-v1 (missing Beginner words)"
+        phase = "full-missing"
     return {
         "available": available(),
         "labels": labs,
         "vocabularySize": len(labs),
-        "model": "HandSpeak ST-GCN beginner100-v1 (missing Beginner words)",
+        "model": model_name,
+        "checkpoint": name,
+        "phase": phase,
         "experimental": True,
         "liveCameraAccuracyVerified": False,
     }

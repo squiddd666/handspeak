@@ -28,16 +28,18 @@ document.addEventListener('handspeak:practice',e=>{selectLesson(e.detail.id);doc
 document.addEventListener('handspeak:capstone-practice',e=>{
   const name=e.detail?.label||'Core 7-word';
   const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));
+  const extended=['lock','duck','baseballcap','other','whatfor','drag','microscope','party','demand','edit','mechanic','deaf'];
+  const isExtended=extended.includes(e.detail?.id);
   // A word from the extended tier needs the extended vocabulary selected.
   const vocab=$('#capstoneVocabMode');
   if(vocab){
-    const extended=['lock','duck','baseballcap','other','whatfor','drag','microscope','party','demand','edit','mechanic','deaf'];
-    vocab.value=extended.includes(e.detail?.id)?'extended':'core';
+    vocab.value=isExtended?'extended':'core';
     vocab.dispatchEvent(new Event('change'));
   }
   if(e.detail?.id)$('#practiceWord').value=e.detail.id;
   dock();
-  $('#practiceInstructions').textContent=`${name} · Core camera model. Record one complete sign for four seconds, then review the top five before adding the word. No example video is available for this sign.`;
+  const tier=isExtended?'Extended 19-word':'Core 7-word';
+  $('#practiceInstructions').textContent=`${name} · ${tier} camera model. Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`;
 });
 document.addEventListener('handspeak:enable-word-preview',e=>{if(e.detail?.id){selectLesson(e.detail.id);dock();}else show('#workspace');});
 const words=[...document.querySelectorAll('[data-sign-example]')];
@@ -47,8 +49,8 @@ $('#preparePractice').addEventListener('click',()=>{
  if(!button){$('#practiceInstructions').textContent='Choose a word first.';return;}
  button.click();dock();
  const daily=['name','home','have','want','love'].includes(id);
- const core=['belt','eat','empty','peg','soccer','squeeze','vlog'].includes(id);
- if(core){$('#signExamplePractice').click();}
+ const camera=['belt','eat','empty','peg','soccer','squeeze','vlog','lock','duck','baseballcap','other','whatfor','drag','microscope','party','demand','edit','mechanic','deaf'].includes(id);
+ if(camera){$('#signExamplePractice').click();}
  else if(daily){const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));$('#practiceInstructions').textContent='Automatic server capture · Enable five-word server processing below and Automatic words. Start the camera, sign once, then pause. Review each result. Manual recording is also available.';}
  else{$('#signExamplePractice').click();$('#practiceInstructions').textContent='Automatic capture · Start the camera, sign once, then pause. Review the suggested word. If capture misses your movement, use Record a word.';}
 });

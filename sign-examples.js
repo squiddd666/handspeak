@@ -15,10 +15,10 @@ const extra=new Set(['drink','water','book','food','hungry','like','go']);
 // short local example in media/signs/ (trimmed to the sign, audio removed) plus
 // the publisher lesson link. Provenance: media/signs/core-sources.json.
 const coreWords=new Map([['belt','BELT'],['eat','EAT'],['empty','EMPTY'],['peg','PEG'],['soccer','SOCCER'],['squeeze','SQUEEZE'],['vlog','VLOG']]);
-const CORE_VIDEO_VERSION='20261022-core-1';
-// Extended tier: 12 further words that clear the same deployability bar. No
-// local example video — the ASL Citizen terms restrict redistribution, so these
-// link out to a publisher lesson instead.
+const CORE_VIDEO_VERSION='20261023-extended-1';
+// Extended tier: 12 further words that clear the same deployability bar. Each
+// ships a short local ASL Citizen example in media/signs/ (same trim pipeline as
+// the core 7) plus the Signing Savvy lesson link.
 const extendedWords=new Map([['lock','LOCK'],['duck','DUCK'],['baseballcap','BASEBALLCAP'],['other','OTHER'],['whatfor','WHATFOR'],['drag','DRAG'],['microscope','MICROSCOPE'],['party','PARTY'],['demand','DEMAND'],['edit','EDIT'],['mechanic','MECHANIC'],['deaf','DEAF']]);
 const cameraWords=new Map([...coreWords,...extendedWords]);
 const coreLessons={belt:'https://www.signingsavvy.com/search/belt',eat:'https://www.signingsavvy.com/search/eat',empty:'https://www.signingsavvy.com/search/empty',peg:'https://www.signingsavvy.com/search/peg',soccer:'https://www.signingsavvy.com/search/soccer',squeeze:'https://www.signingsavvy.com/search/squeeze',vlog:'https://www.signingsavvy.com/search/vlog',
@@ -85,21 +85,18 @@ async function play() {
 let libraryId=null;
 function chooseCorePractice(id,button=null){
   const name=cameraWords.get(id);
-  const hasVideo=coreWords.has(id);
+  const isCore=coreWords.has(id);
+  const tier=isCore?'Core 7-word':'Extended 19-word';
   selection++;pauseAll();external=false;libraryId=CORE_SENTINEL;label=name;coreId=id;
-  video.hidden=!hasVideo;embed.hidden=true;embed.removeAttribute('src');playback.hidden=!hasVideo;
+  video.hidden=false;embed.hidden=true;embed.removeAttribute('src');playback.hidden=false;
   lesson.hidden=false;lesson.href=coreLessons[id];lesson.textContent=`${name} lesson · Signing Savvy (opens in a new tab)`;
   for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
-  if(hasVideo)video.src=`media/signs/${id}.mp4?v=${CORE_VIDEO_VERSION}`;
+  video.src=`media/signs/${id}.mp4?v=${CORE_VIDEO_VERSION}`;
   video.setAttribute('aria-label',`${label} ASL sign example from the ASL Citizen research dataset`);
   const fallback=video.querySelector('a');fallback.href=video.src;fallback.textContent=`Download the ${label} example`;
-  status.textContent=hasVideo
-    ?`${label} · Press play to watch. ASL Citizen research example, trimmed to the sign.`
-    :`${label} · No example video: the ASL-Citizen dataset terms do not allow republishing its recordings. Open the lesson link to see the sign, then practice with the camera model.`;
-  document.querySelector('#signExampleMode').textContent=hasVideo
-    ?`${name} · Core 7-word camera model ready. Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`
-    :`${name} · Extended 19-word camera model ready. Record one complete sign for four seconds and review the top five before adding the word.`;
-  if(hasVideo)video.load();
+  status.textContent=`${label} · Press play to watch. ASL Citizen research example, trimmed to the sign.`;
+  document.querySelector('#signExampleMode').textContent=`${name} · ${tier} camera model ready. Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`;
+  video.load();
   updateAccuracy();
 }
 function chooseExample(name,src,button=null,id=null){
@@ -117,7 +114,7 @@ speed.addEventListener('change', applySpeed);
 video.addEventListener('loadedmetadata', () => { video.dataset.orientation = video.videoWidth >= video.videoHeight ? 'landscape' : 'portrait'; applySpeed(); });
 video.addEventListener('playing', () => { if(external)return;status.textContent = `${label} · ${video.playbackRate === 1 ? 'Normal speed' : `${video.playbackRate}× speed`}`; });
 video.addEventListener('ended', () => { if(external)return;status.textContent = `${label} · Play again or try it at the camera.`; });
-video.addEventListener('error', () => { if(external)return;status.textContent = libraryId===CORE_SENTINEL && coreWords.has(coreId) ? `${label} · Example video could not load. Open the lesson link, then practice with the core 7-word camera model.` : `${label} · Video could not load. Select the word again to retry.`; });
+video.addEventListener('error', () => { if(external)return;status.textContent = libraryId===CORE_SENTINEL && cameraWords.has(coreId) ? `${label} · Example video could not load. Open the lesson link, then practice with the camera model.` : `${label} · Video could not load. Select the word again to retry.`; });
 document.querySelector('#signExampleLoop').addEventListener('change', event => { video.loop = event.target.checked; });
 document.querySelector('#signExampleReplay').addEventListener('click', () => { video.currentTime = 0; play(); });
 document.querySelector('#signExamplePractice').addEventListener('click', () => {

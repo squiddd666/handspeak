@@ -1,4 +1,4 @@
-import {recognizeMotion} from './motion-model.js?v=20261023-hungry-cutoff-2';
+import {recognizeMotion} from './motion-model.js?v=20261023-hungry-cutoff-3';
 
 // The expanded vocabulary competes only when the user enables the preview.
 const compatibilityMatch=(sequence,profile)=>profile&&recognizeMotion(sequence,profile.samples,profile.parameters);
@@ -10,14 +10,18 @@ export function recognizeExpandedMotion(sequence, examples, parameters, expansio
   const extraPractice=compatibilityMatch(sequence,expansion.cameraCompatibility);
   if(extraPractice)return extraPractice;
   if (expansion.baselineExtra) {
-    // Extra-seven alone first: on phone clips PLEASE is often a slightly closer
-    // joint neighbor than HUNGRY but above maxDistance 0.8, so joint-only returned
-    // null even when HUNGRY sat inside maxDistanceByLabel 1.5 among extra words.
+    // Score default-six and extra-seven separately. When both pass their gates,
+    // take the closer distance so PLEASE/YES are not stolen by looser extra
+    // cutoffs (HUNGRY 1.5). When default has no match under its tighter gate,
+    // accept extra-only so HUNGRY still works if PLEASE is a nearer joint
+    // neighbor but above maxDistance 0.8.
     const extraLabels = new Set(expansion.labels || expansion.samples.map(s => s.label));
     const extraOnly = recognizeMotion(sequence, expansion.samples, expansion.parameters);
+    if (existing && extraOnly) {
+      return extraOnly.distance < existing.distance ? extraOnly : existing;
+    }
+    if (existing) return existing;
     if (extraOnly) return extraOnly;
-    // Joint may still confirm an extra label against the default six; never
-    // return PLEASE/YES/etc. during expanded practice (that was the old miss).
     const joint = recognizeMotion(sequence, examples.concat(expansion.samples), expansion.parameters);
     if (joint && extraLabels.has(joint.label)) return joint;
     const prior = expansion.baselineExtra;
