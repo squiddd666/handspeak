@@ -15,6 +15,9 @@ REPO = Path(__file__).resolve().parent
 ROOT = REPO / "third_party" / "microsoft_asl_citizen"
 # Prefer latest denser Beginner checkpoints first.
 CKPT_CANDIDATES = [
+    REPO / "models" / "beginner-phase123-v2.pt",
+    Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase123-v2.pt"),
+    REPO.parent.parent / "hs-eval" / "models" / "beginner-phase123-v2.pt",
     REPO / "models" / "beginner-phase123-v1.pt",
     Path(r"C:\Users\Squid\Desktop\capstone\hs-eval\models\beginner-phase123-v1.pt"),
     REPO.parent.parent / "hs-eval" / "models" / "beginner-phase123-v1.pt",
@@ -77,7 +80,10 @@ def status() -> dict:
     labs = labels()
     path = _checkpoint_path()
     name = path.name if path else "unavailable"
-    if "phase123" in name:
+    if "phase123-v2" in name:
+        model_name = "HandSpeak ST-GCN beginner-phase123-v2 (ready-boost)"
+        phase = "1-3-v2"
+    elif "phase123" in name:
         model_name = "HandSpeak ST-GCN beginner-phase123-v1 (phases 1–3 denser)"
         phase = "1-3"
     elif "phase12-v2" in name or "phase12_v2" in name:
