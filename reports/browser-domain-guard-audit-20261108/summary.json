@@ -1,0 +1,188 @@
+{
+  "candidateSha256": "a3c1b24c82b655202d1172a5598955874410c11623e304c63282df1d84e804e0",
+  "sources": 54,
+  "contractsPassed": 54,
+  "pairedFrames": 3450,
+  "comparison": {
+    "default": {
+      "baseline": {
+        "attempts": 18,
+        "correct": 12,
+        "wrong": 1,
+        "noMatch": 5,
+        "negativeAttempts": 36,
+        "negativeFalse": 22,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.6111111111111112
+      },
+      "candidate": {
+        "attempts": 18,
+        "correct": 8,
+        "wrong": 0,
+        "noMatch": 10,
+        "negativeAttempts": 36,
+        "negativeFalse": 14,
+        "precision": 1.0,
+        "negativeFalseRate": 0.3888888888888889
+      },
+      "lostCorrectSources": [
+        {
+          "id": "guard-audit-008",
+          "label": "PLEASE",
+          "before": "PLEASE",
+          "after": null
+        },
+        {
+          "id": "guard-audit-010",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        },
+        {
+          "id": "guard-audit-011",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        },
+        {
+          "id": "guard-audit-012",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        }
+      ],
+      "positiveRetentionPassed": false
+    },
+    "expanded": {
+      "baseline": {
+        "attempts": 36,
+        "correct": 23,
+        "wrong": 8,
+        "noMatch": 5,
+        "negativeAttempts": 18,
+        "negativeFalse": 14,
+        "precision": 0.7419354838709677,
+        "negativeFalseRate": 0.7777777777777778
+      },
+      "candidate": {
+        "attempts": 36,
+        "correct": 16,
+        "wrong": 6,
+        "noMatch": 14,
+        "negativeAttempts": 18,
+        "negativeFalse": 5,
+        "precision": 0.7272727272727273,
+        "negativeFalseRate": 0.2777777777777778
+      },
+      "lostCorrectSources": [
+        {
+          "id": "guard-audit-008",
+          "label": "PLEASE",
+          "before": "PLEASE",
+          "after": null
+        },
+        {
+          "id": "guard-audit-010",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        },
+        {
+          "id": "guard-audit-011",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        },
+        {
+          "id": "guard-audit-012",
+          "label": "YES",
+          "before": "YES",
+          "after": null
+        },
+        {
+          "id": "guard-audit-022",
+          "label": "WATER",
+          "before": "WATER",
+          "after": null
+        },
+        {
+          "id": "guard-audit-023",
+          "label": "WATER",
+          "before": "WATER",
+          "after": null
+        },
+        {
+          "id": "guard-audit-024",
+          "label": "WATER",
+          "before": "WATER",
+          "after": null
+        }
+      ],
+      "positiveRetentionPassed": false
+    },
+    "daily": {
+      "baseline": {
+        "attempts": 6,
+        "correct": 2,
+        "wrong": 3,
+        "noMatch": 1,
+        "negativeAttempts": 48,
+        "negativeFalse": 21,
+        "precision": 0.4,
+        "negativeFalseRate": 0.4375
+      },
+      "candidate": {
+        "attempts": 6,
+        "correct": 2,
+        "wrong": 3,
+        "noMatch": 1,
+        "negativeAttempts": 48,
+        "negativeFalse": 21,
+        "precision": 0.4,
+        "negativeFalseRate": 0.4375
+      },
+      "lostCorrectSources": [],
+      "positiveRetentionPassed": true
+    },
+    "pack": {
+      "baseline": {
+        "attempts": 9,
+        "correct": 6,
+        "wrong": 3,
+        "noMatch": 0,
+        "negativeAttempts": 45,
+        "negativeFalse": 40,
+        "precision": 0.6666666666666666,
+        "negativeFalseRate": 0.8888888888888888
+      },
+      "candidate": {
+        "attempts": 9,
+        "correct": 6,
+        "wrong": 2,
+        "noMatch": 1,
+        "negativeAttempts": 45,
+        "negativeFalse": 40,
+        "precision": 0.75,
+        "negativeFalseRate": 0.8888888888888888
+      },
+      "lostCorrectSources": [],
+      "positiveRetentionPassed": true
+    }
+  },
+  "realProductionReceipts": 216,
+  "allFrozenInputsUnchanged": true,
+  "frozenInputs": 247,
+  "positiveRetentionPassed": false,
+  "deployed": false,
+  "fullyFixed": false,
+  "trainingAllowed": false,
+  "calibrationAllowed": false,
+  "decision": "Reject production promotion: correct independent-audit source(s) lost.",
+  "scope": "Unused-recording known-signer audit, not full198 or unseen-signers/live camera.",
+  "inputHashes": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\browser-domain-guard-audit-20261108\\protocol.json": "560da82f61c91f3f6396dfd3901ef87441952643aee68c2a025cf0492d8fc6b2",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\browser-domain-guard-audit-20261108\\browser-ledger\\checkpoint.json": "eeac95c30db042e704a20c47b6ad33429c898cd5902fc14d837fac29a602874b",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\browser-domain-guard-audit-20261108\\browser-ledger\\guard\\checkpoint.json": "1e7e797a4da6a9f615b61a687c3dddf2ae997847b116ba9d0f08effd46631cce",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\browser-domain-guard-audit-20261108\\cleanup-receipt.json": "7f5462278a623a29759de86e0282a4aa6549b9fbb11b0412e5edad15a23411e0"
+  }
+}

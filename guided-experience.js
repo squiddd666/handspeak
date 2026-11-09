@@ -41,6 +41,21 @@ document.addEventListener('handspeak:capstone-practice',e=>{
   const tier=isExtended?'Extended 19-word':'Core 7-word';
   $('#practiceInstructions').textContent=`${name} · ${tier} camera model. Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`;
 });
+document.addEventListener('handspeak:beginner-practice',e=>{
+  const name=e.detail?.label||'Beginner ready';
+  const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));
+  if(e.detail?.id)$('#practiceWord').value=e.detail.id;
+  const consent=$('#beginnerConsent');
+  if(consent&&!consent.checked){consent.checked=true;consent.dispatchEvent(new Event('change'));}
+  const panel=$('#beginnerWords');
+  const closed=['SCHOOL','SISTER','WE'];
+  if(panel)panel.dataset.closedLabels=closed.includes(name)?closed.join('|'):'';
+  dock();
+  panel?.scrollIntoView({block:'nearest',behavior:'smooth'});
+  $('#practiceInstructions').textContent=closed.includes(name)
+    ?`${name} · Closed practice for SCHOOL, SISTER, and WE. Record one complete sign for four seconds and review before adding.`
+    :`${name} · Beginner ready camera model. Enable landmark processing if needed, watch the example, then record one complete sign for four seconds and review before adding.`;
+});
 document.addEventListener('handspeak:enable-word-preview',e=>{if(e.detail?.id){selectLesson(e.detail.id);dock();}else show('#workspace');});
 const words=[...document.querySelectorAll('[data-sign-example]')];
 for(const b of words)$('#practiceWord').add(new Option(b.textContent,b.dataset.signExample));
@@ -52,7 +67,7 @@ $('#preparePractice').addEventListener('click',()=>{
  const camera=['belt','eat','empty','peg','soccer','squeeze','vlog','lock','duck','baseballcap','other','whatfor','drag','microscope','party','demand','edit','mechanic','deaf'].includes(id);
  if(camera){$('#signExamplePractice').click();}
  else if(daily){const mode=$('#recognitionMode');mode.value='words';mode.dispatchEvent(new Event('change'));$('#practiceInstructions').textContent='Automatic server capture · Enable five-word server processing below and Automatic words. Start the camera, sign once, then pause. Review each result. Manual recording is also available.';}
- else{$('#signExamplePractice').click();$('#practiceInstructions').textContent='Automatic capture · Start the camera, sign once, then pause. Review the suggested word. If capture misses your movement, use Record a word.';}
+ else{$('#signExamplePractice').click();$('#practiceInstructions').textContent=button?.dataset?.signLabel&&document.querySelector('#signExampleMode')?.textContent?.includes('Beginner ready')?'Beginner ready model · Enable landmark processing below, record one complete sign for four seconds, and review before adding.':'Automatic capture · Start the camera, sign once, then pause. Review the suggested word. If capture misses your movement, use Record a word.';}
 });
 // Keep the LLM comparison next to the editable message and speech controls.
 const interpreter=$('#interpretTitle').closest('section');$('#messageBox').closest('article').append(interpreter);

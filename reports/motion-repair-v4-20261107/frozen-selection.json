@@ -1,0 +1,15 @@
+{
+  "selectedAt": "2026-11-06T23:15:23.308130+00:00",
+  "baselineSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "selectionSha256": {
+    "beginner": "c77f9e1f8ee500a83fbc88eacbb91cb0ea73bf2a6742a34e19f17aa5681affc8",
+    "capstone": "acf849907a08c396c330e4f58650183e5c43acbda1d77ad9400613a2ff979e6d"
+  },
+  "auxiliarySha256": {
+    "beginner": "f22765f117b43333f9afabce5ad2892c00452d665aea3d6af8ec927dac0f1525",
+    "capstone": "125706db7988504acba0772c846eceb4a11083b770efd9fc283ac81eb9703238"
+  },
+  "testUsedForSelection": false,
+  "watchClipsUsedForSelection": false,
+  "predeclaredDeploymentGate": "Same test attempts: more correct accepts, no extra known-word errors or unsupported accepts in any served mode. No retuning; no installation by this script."
+}

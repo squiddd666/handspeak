@@ -1,0 +1,2562 @@
+{
+  "schema": 1,
+  "startedAt": "2026-11-07T00:25:12.347Z",
+  "scope": "Watch & Learn reference-clip smoke tests through the actual live capture pipeline. Not independent held-out or live-user accuracy.",
+  "geometry": {
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "fit": "contain/letterbox",
+    "cropping": false,
+    "pixelFlip": false
+  },
+  "isolation": {
+    "host": "127.0.0.1",
+    "storage": "in-memory only",
+    "realCameraCalls": 0,
+    "microphoneCalls": 0,
+    "getUserMediaCalls": 20
+  },
+  "indexSha256": "cf266c4b4075a6769d0a9ced8f2d6ca211b6ce93dee5fd251755495ab53cc435",
+  "bootstrapSha256": "c80103b67551da68f38c4cf7c37c0892ceadea23bba398e2e15649ad4023c0e0",
+  "runtimeSha256": {
+    "app.js": "96375f32ad1a9af9e1c2e049fa51f7bbef9ea45c9116d2511700ef76b0578540",
+    "landmark-capture.js": "513ad4946230e092dd85ab100721e84301bda013dcf769f32d149648802f6a75",
+    "capstone-recognition.js": "6c0e57b78321b2ceb55b193cdb2f041b8c36e672740eb88373f9853a883c6cb7",
+    "beginner-recognition.js": "a990573357871f1382a706476c50a698a9705bddc03678bc9772ace1ffb9803d",
+    "motion-studio.js": "9648430e0cb05bdfd69451fd555f6f5a0773f6ff79c544e5b2ee59f2e70780e0",
+    "research-words.js": "e4f6396480363ad768c51056ff94e3eac1bc5190d291961d5e4c975cb810790e",
+    "capstone_asl_v3.py": "1a8a77f45a9a4c47ae9dd2c4cb4701fdcb1546da699ab8fff309ddb927560f0e",
+    "beginner_asl.py": "8755aa7254129842abb93c973726179bbe5852aa89428df5e90e2f2aa96cd6f5",
+    "sign_features.py": "a59003bb14eb17cc42103a432f66b79ac5634d3cba97c20dbde165ff70076722",
+    "motion_calibration.py": "bfb42767a48e450e69f6abf0650c0785001a92591a5f9cb19d136652155c30a1",
+    "motion-accuracy.js": "2b09405beb45376788219b27aa117ea11442d3fa2bc0ad23ef40032385c52e0f",
+    "models/motion-word-accuracy.json": "269316c289cd54bb185f4a39d1c90955f413990d15c07290162dac5b61d3a5a2",
+    "body-hand-recovery.js": "a24f4aca09ce168bc8fcd32b7a966ff09e9631eec12371bda1576b576e6a8350",
+    "hand-recovery-worker.js": "60880e41bdbce73e94b63e878ef5e24a4874e49dc25f7e2aebe6e55c22ee15d9",
+    "handshape_features.py": "001511585b0334493823d9f969a44c15643507582f21922d52ce59471aed82c5",
+    "handshape_model.py": "270296ddaceb2f7c9cbc01d2024d12b752422b9639eff089bcb6fdac131ac286",
+    "handshape_inference.py": "b83e3510ba6f8e5e67962157f6165f6ff4c8449e5218e1d12a7b1ebd09ff3c06"
+  },
+  "runnerSha256": "b8a01dbf710cb81622c3b1f7f1b76281c032928ca0e2483d23e49203b7afea70",
+  "activeModelSha256": {
+    "beginner": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "capstone": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417"
+  },
+  "calibrationSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "activeAuxiliaryModelSha256": {
+    "beginner": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+    "capstone": "5313f8aec70f31b6b07eea2251609cce0f4237d42b9392c253dba47de6a69547"
+  },
+  "recognitionLabels": 198,
+  "attempts": [
+    {
+      "number": 1,
+      "id": "school",
+      "label": "SCHOOL",
+      "clip": "media/research-signs/school.mp4",
+      "clipSha256": "3d2b197bb8a6597ae86ec1f579c316770b001c37469cd187f2561da0bb28bdef",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.833008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:25:43.730Z",
+      "drawFramesStart": 753,
+      "events": [
+        {
+          "at": "2026-11-07T00:25:50.109Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:25:43.733Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:25:45.596Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:25:50.110Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:25:54.218Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:25:58.056Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:25:50.110Z",
+      "finishedAt": "2026-11-07T00:25:58.274Z",
+      "elapsedMs": 14544,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.833008,
+        "duration": 2.833008,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 208
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 1.2,
+        "rawHands": 1,
+        "usableHands": 1,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 7947,
+          "recordingWindowMs": 4000,
+          "processedFrames": 14,
+          "sampledFrames": 14,
+          "peakBufferedFrames": 9,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 1,
+          "poseFrames": 14,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 2,
+      "id": "store",
+      "label": "STORE",
+      "clip": "media/signs/store.mp4",
+      "clipSha256": "c053defc4b40c7eac178866b05212c4e54e4e60e36c759c1a4fe5d0716c93afd",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.738162,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:26:00.132Z",
+      "drawFramesStart": 973,
+      "events": [
+        {
+          "at": "2026-11-07T00:26:03.402Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:26:08.022Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:26:00.136Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:26:00.157Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:26:03.403Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:26:07.656Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:26:08.023Z",
+          "text": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. STAND · 2. WALK · 3. YESTERDAY · 4. STORE · 5. NEED. Nothing added. Sign again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:26:03.403Z",
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 8,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [],
+        "suggestions": [
+          {
+            "label": "STAND",
+            "score": 0.352902
+          },
+          {
+            "label": "WALK",
+            "score": 0.220342
+          },
+          {
+            "label": "YESTERDAY",
+            "score": 0.120138
+          },
+          {
+            "label": "STORE",
+            "score": 0.092764
+          },
+          {
+            "label": "NEED",
+            "score": 0.028761
+          }
+        ],
+        "rejectionReason": "ambiguous",
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.967916,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:26:08.254Z",
+      "elapsedMs": 8122,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.738162,
+        "duration": 1.738162,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 33
+      },
+      "status": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. STAND · 2. WALK · 3. YESTERDAY · 4. STORE · 5. NEED. Nothing added. Sign again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 5,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 8,
+          "trackedFrames": 8,
+          "durationMs": 4251,
+          "recordingWindowMs": 4000,
+          "processedFrames": 20,
+          "sampledFrames": 20,
+          "peakBufferedFrames": 5,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 20,
+          "handFrames": 8,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 3,
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "clip": "media/signs/yesterday.mp4",
+      "clipSha256": "eb1d44b66f692b4e41b148b53893a5eac2174b34fbbb057905080f1292bee3a0",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.437326,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:26:10.606Z",
+      "drawFramesStart": 1017,
+      "events": [
+        {
+          "at": "2026-11-07T00:26:14.429Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:26:21.760Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:26:10.607Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:26:10.623Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:26:14.430Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:26:19.101Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:26:21.078Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:26:21.760Z",
+          "text": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. YESTERDAY · 2. STAND · 3. TAKE · 4. GOOD NIGHT · 5. MILK. Nothing added. Sign again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:26:14.430Z",
+      "playbackEndedAt": "2026-11-07T00:26:18.093Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 17,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [],
+        "suggestions": [
+          {
+            "label": "YESTERDAY",
+            "score": 0.292634
+          },
+          {
+            "label": "STAND",
+            "score": 0.089324
+          },
+          {
+            "label": "TAKE",
+            "score": 0.070281
+          },
+          {
+            "label": "GOOD NIGHT",
+            "score": 0.064738
+          },
+          {
+            "label": "MILK",
+            "score": 0.060631
+          }
+        ],
+        "rejectionReason": "ambiguous",
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.841091,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:26:21.981Z",
+      "elapsedMs": 11376,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.437326,
+        "duration": 1.437326,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 66
+      },
+      "status": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. YESTERDAY · 2. STAND · 3. TAKE · 4. GOOD NIGHT · 5. MILK. Nothing added. Sign again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 17,
+          "trackedFrames": 17,
+          "durationMs": 6648,
+          "recordingWindowMs": 4000,
+          "processedFrames": 23,
+          "sampledFrames": 23,
+          "peakBufferedFrames": 6,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 17,
+          "handFrames": 17,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 4,
+      "id": "now",
+      "label": "NOW",
+      "clip": "media/signs/now.mp4",
+      "clipSha256": "a5db5d79a30657ae7b1cd103cb9fd19dae74ee35d32c3c461f9038234509d703",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.566667,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:26:23.835Z",
+      "drawFramesStart": 1093,
+      "events": [
+        {
+          "at": "2026-11-07T00:26:26.979Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:26:23.838Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:26:23.857Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:26:26.980Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:26:31.019Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:26:26.980Z",
+      "playbackEndedAt": "2026-11-07T00:26:29.032Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:26:31.261Z",
+      "elapsedMs": 7426,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.566667,
+        "duration": 1.566667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 20
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 9.6,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4040,
+          "recordingWindowMs": 4000,
+          "processedFrames": 30,
+          "sampledFrames": 30,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 11,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 5,
+      "id": "later",
+      "label": "LATER",
+      "clip": "media/signs/later.mp4",
+      "clipSha256": "02b39d631c45fa944f4aad40033cee5b506ca37b41d3c529cf0a79b30350c768",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 6.35,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:26:33.957Z",
+      "drawFramesStart": 1127,
+      "events": [],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:26:33.960Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:26:33.979Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:26:49.056Z",
+          "text": "Body tracker could not warm up. Keep your upper body visible and try again."
+        }
+      ],
+      "playbackStarted": false,
+      "finishedAt": "2026-11-07T00:26:49.268Z",
+      "elapsedMs": 15312,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 0,
+        "duration": 6.35,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 73
+      },
+      "status": "Body tracker could not warm up. Keep your upper body visible and try again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 8.8,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4040,
+          "recordingWindowMs": 4000,
+          "processedFrames": 30,
+          "sampledFrames": 30,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 11,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 6,
+      "id": "bag",
+      "label": "BAG",
+      "clip": "media/research-signs/bag.mp4",
+      "clipSha256": "b139f86594f832d9a977ca4bcc273f71d9ae85f76fc77c3708bf99bd0a88d94b",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.4,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:26:51.694Z",
+      "drawFramesStart": 1225,
+      "events": [
+        {
+          "at": "2026-11-07T00:26:54.935Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:27:12.956Z",
+          "word": "BAG",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:26:51.697Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:26:51.714Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:26:54.936Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:26:59.095Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:27:12.508Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:27:12.958Z",
+          "text": "Possible match: BAG. Top five: 1. BAG · 2. WE · 3. GOODBYE · 4. I / ME · 5. NEED. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:26:54.936Z",
+      "playbackEndedAt": "2026-11-07T00:27:02.704Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 15,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "BAG",
+            "score": 0.825944
+          },
+          {
+            "label": "WE",
+            "score": 0.111692
+          },
+          {
+            "label": "GOODBYE",
+            "score": 0.006367
+          },
+          {
+            "label": "I / ME",
+            "score": 0.00572
+          },
+          {
+            "label": "NEED",
+            "score": 0.004437
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "BAG",
+            "score": 0.825944
+          },
+          {
+            "label": "WE",
+            "score": 0.111692
+          },
+          {
+            "label": "GOODBYE",
+            "score": 0.006367
+          },
+          {
+            "label": "I / ME",
+            "score": 0.00572
+          },
+          {
+            "label": "NEED",
+            "score": 0.004437
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.987525,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:27:13.194Z",
+      "elapsedMs": 21500,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.4,
+        "duration": 3.4,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 275
+      },
+      "status": "Possible match: BAG. Top five: 1. BAG · 2. WE · 3. GOODBYE · 4. I / ME · 5. NEED. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 10.3,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 15,
+          "trackedFrames": 15,
+          "durationMs": 17572,
+          "recordingWindowMs": 4000,
+          "processedFrames": 28,
+          "sampledFrames": 28,
+          "peakBufferedFrames": 17,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 26,
+          "handFrames": 15,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "BAG",
+      "correct": true
+    },
+    {
+      "number": 7,
+      "id": "need",
+      "label": "NEED",
+      "clip": "media/research-signs/need.mp4",
+      "clipSha256": "41e3226b1772a4ae4fa2e36c84dbf77f4f208742cc0e464b8b73164df346bfe4",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.066667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:27:14.564Z",
+      "drawFramesStart": 1512,
+      "events": [
+        {
+          "at": "2026-11-07T00:27:17.832Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:27:14.566Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:27:14.596Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:27:17.834Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:27:21.880Z",
+          "text": "Not enough tracked frames (3/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:27:17.834Z",
+      "playbackEndedAt": "2026-11-07T00:27:19.348Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:27:22.072Z",
+      "elapsedMs": 7508,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.066667,
+        "duration": 1.066667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 23
+      },
+      "status": "Not enough tracked frames (3/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 11.4,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4048,
+          "recordingWindowMs": 4000,
+          "processedFrames": 36,
+          "sampledFrames": 36,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 8,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 8,
+      "id": "sorry",
+      "label": "SORRY",
+      "clip": "media/research-signs/sorry.mp4",
+      "clipSha256": "023e23ea31229c14eb0ccc396982ac4d232a1d061c0d34a6873ad38a51fd7434",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.4,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:27:24.808Z",
+      "drawFramesStart": 1553,
+      "events": [
+        {
+          "at": "2026-11-07T00:27:27.354Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:27:31.789Z",
+          "word": "SORRY",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:27:24.810Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:27:24.832Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:27:27.355Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:27:31.452Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:27:31.790Z",
+          "text": "Possible match: SORRY. Top five: 1. SORRY · 2. WHICH · 3. I / ME · 4. TOMORROW · 5. PHONE. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:27:27.355Z",
+      "playbackEndedAt": "2026-11-07T00:27:29.909Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 6,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "SORRY",
+            "score": 0.975939
+          },
+          {
+            "label": "WHICH",
+            "score": 0.00955
+          },
+          {
+            "label": "I / ME",
+            "score": 0.003079
+          },
+          {
+            "label": "TOMORROW",
+            "score": 0.002628
+          },
+          {
+            "label": "PHONE",
+            "score": 0.002378
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "SORRY",
+            "score": 0.975939
+          },
+          {
+            "label": "WHICH",
+            "score": 0.00955
+          },
+          {
+            "label": "I / ME",
+            "score": 0.003079
+          },
+          {
+            "label": "TOMORROW",
+            "score": 0.002628
+          },
+          {
+            "label": "PHONE",
+            "score": 0.002378
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.4,
+        "vocabularyMass": 0.992012,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:27:32.258Z",
+      "elapsedMs": 7450,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.4,
+        "duration": 1.4,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 32
+      },
+      "status": "Possible match: SORRY. Top five: 1. SORRY · 2. WHICH · 3. I / ME · 4. TOMORROW · 5. PHONE. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 11,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 6,
+          "trackedFrames": 6,
+          "durationMs": 4097,
+          "recordingWindowMs": 4000,
+          "processedFrames": 30,
+          "sampledFrames": 30,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 12,
+          "handFrames": 6,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "SORRY",
+      "correct": true
+    },
+    {
+      "number": 9,
+      "id": "we",
+      "label": "WE",
+      "clip": "media/research-signs/we.mp4",
+      "clipSha256": "3c78671280a12f5c8d2427db82aff9a4072911d3ac2eaa44ee49917601f0a512",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.233333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:27:33.706Z",
+      "drawFramesStart": 1597,
+      "events": [
+        {
+          "at": "2026-11-07T00:27:36.798Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:27:33.708Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:27:33.738Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:27:36.800Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:27:40.820Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:27:36.800Z",
+      "playbackEndedAt": "2026-11-07T00:27:38.769Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:27:41.022Z",
+      "elapsedMs": 7316,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.233333,
+        "duration": 1.233333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 21
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 11,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4023,
+          "recordingWindowMs": 4000,
+          "processedFrames": 32,
+          "sampledFrames": 32,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 10,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 10,
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "clip": "media/research-signs/your-yours.mp4",
+      "clipSha256": "69b42d02acb595c5cac92df7acb727698003ea267fbe0f630218b92079b6ac85",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.233333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:27:43.966Z",
+      "drawFramesStart": 1644,
+      "events": [
+        {
+          "at": "2026-11-07T00:27:46.520Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:27:43.970Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:27:43.991Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:27:46.543Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:27:50.577Z",
+          "text": "Not enough tracked frames (4/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:27:46.543Z",
+      "playbackEndedAt": "2026-11-07T00:27:48.570Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:27:50.781Z",
+      "elapsedMs": 6815,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.233333,
+        "duration": 1.233333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 21
+      },
+      "status": "Not enough tracked frames (4/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 12,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 4,
+          "trackedFrames": 4,
+          "durationMs": 4057,
+          "recordingWindowMs": 4000,
+          "processedFrames": 30,
+          "sampledFrames": 30,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 10,
+          "handFrames": 4,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 11,
+      "id": "eat",
+      "label": "EAT",
+      "clip": "media/signs/eat.mp4",
+      "clipSha256": "cd95cf12913b5388ca8f4dbf180471f2e2befa1f3e54ecc9fe9b112c5ac4b34d",
+      "family": "capstone",
+      "vocabulary": "core",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.2,
+      "sourceDimensions": [
+        480,
+        360
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:27:53.760Z",
+      "drawFramesStart": 1682,
+      "events": [
+        {
+          "at": "2026-11-07T00:27:56.848Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:28:09.721Z",
+          "word": "EAT",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:27:53.764Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:27:53.785Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:27:56.849Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:28:00.855Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:28:07.158Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:28:09.724Z",
+          "text": "Possible match: EAT. Top five (7-word core): 1. EAT · 2. SOCCER · 3. EMPTY · 4. SQUEEZE · 5. PEG. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:27:56.850Z",
+      "playbackEndedAt": "2026-11-07T00:28:01.617Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 6,
+        "sequenceFrames": null,
+        "vocabulary": "core"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "core",
+        "predictions": [
+          {
+            "label": "EAT1",
+            "score": 0.993707
+          },
+          {
+            "label": "SOCCER2",
+            "score": 0.003587
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.001303
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.000814
+          },
+          {
+            "label": "PEG2",
+            "score": 0.000414
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "EAT1",
+            "score": 0.993707
+          },
+          {
+            "label": "SOCCER2",
+            "score": 0.003587
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.001303
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.000814
+          },
+          {
+            "label": "PEG2",
+            "score": 0.000414
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": 0.85,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.761519,
+        "model": "HandSpeak ST-GCN capstone100-v4-ensemble (4-checkpoint)",
+        "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "auxiliarySha256": null,
+        "auxiliaryWeight": 0,
+        "auxiliaryFeatureVersion": null,
+        "preprocessorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:28:10.135Z",
+      "elapsedMs": 16375,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.2,
+        "duration": 2.2,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 214
+      },
+      "status": "Possible match: EAT. Top five (7-word core): 1. EAT · 2. SOCCER · 3. EMPTY · 4. SQUEEZE · 5. PEG. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 6,
+          "trackedFrames": 6,
+          "durationMs": 10309,
+          "recordingWindowMs": 4000,
+          "processedFrames": 22,
+          "sampledFrames": 22,
+          "peakBufferedFrames": 12,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 1,
+          "poseFrames": 21,
+          "handFrames": 6,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "EAT1",
+      "correct": true
+    },
+    {
+      "number": 12,
+      "id": "before",
+      "label": "BEFORE",
+      "clip": "media/research-signs/before.mp4",
+      "clipSha256": "7d84dd8fc6bfc3fc8abeb752476af0b49e398b554672fbe049f0788ff7b60b39",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.266016,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:28:12.057Z",
+      "drawFramesStart": 1917,
+      "events": [
+        {
+          "at": "2026-11-07T00:28:15.223Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:28:22.877Z",
+          "word": "SCHOOL",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:28:12.059Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:28:12.080Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:28:15.224Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:28:20.182Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:28:22.879Z",
+          "text": "Possible match: SCHOOL. Top five: 1. SCHOOL · 2. YOUR / YOURS · 3. MONEY · 4. FAMILY · 5. WAIT. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:28:15.224Z",
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 9,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "playbackEndedAt": "2026-11-07T00:28:21.854Z",
+      "completeSourcePlayed": true,
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "SCHOOL",
+            "score": 0.873292
+          },
+          {
+            "label": "YOUR / YOURS",
+            "score": 0.052653
+          },
+          {
+            "label": "MONEY",
+            "score": 0.006697
+          },
+          {
+            "label": "FAMILY",
+            "score": 0.003725
+          },
+          {
+            "label": "WAIT",
+            "score": 0.003099
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "SCHOOL",
+            "score": 0.873292
+          },
+          {
+            "label": "YOUR / YOURS",
+            "score": 0.052653
+          },
+          {
+            "label": "MONEY",
+            "score": 0.006697
+          },
+          {
+            "label": "FAMILY",
+            "score": 0.003725
+          },
+          {
+            "label": "WAIT",
+            "score": 0.003099
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.718799,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:28:23.122Z",
+      "elapsedMs": 11065,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.266016,
+        "duration": 3.266016,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 92
+      },
+      "status": "Possible match: SCHOOL. Top five: 1. SCHOOL · 2. YOUR / YOURS · 3. MONEY · 4. FAMILY · 5. WAIT. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 9,
+          "trackedFrames": 9,
+          "durationMs": 4958,
+          "recordingWindowMs": 4000,
+          "processedFrames": 20,
+          "sampledFrames": 20,
+          "peakBufferedFrames": 6,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 18,
+          "handFrames": 9,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "SCHOOL",
+      "correct": false
+    },
+    {
+      "number": 13,
+      "id": "after",
+      "label": "AFTER",
+      "clip": "media/research-signs/after.mp4",
+      "clipSha256": "7195f0dd6656789fae448e182a8e01ba000e3880bb2656cf1c9a8398ddffb107",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.433008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:28:24.590Z",
+      "drawFramesStart": 2022,
+      "events": [
+        {
+          "at": "2026-11-07T00:28:27.867Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:28:32.810Z",
+          "word": "AFTER",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:28:24.595Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:28:24.614Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:28:27.869Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:28:31.891Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:28:32.812Z",
+          "text": "Possible match: AFTER. Top five: 1. AFTER · 2. GOOD NIGHT · 3. GOOD AFTERNOON · 4. HELP · 5. GOOD MORNING. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:28:27.869Z",
+      "playbackEndedAt": "2026-11-07T00:28:29.960Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 5,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "AFTER",
+            "score": 0.855421
+          },
+          {
+            "label": "GOOD NIGHT",
+            "score": 0.043152
+          },
+          {
+            "label": "GOOD AFTERNOON",
+            "score": 0.032971
+          },
+          {
+            "label": "HELP",
+            "score": 0.008603
+          },
+          {
+            "label": "GOOD MORNING",
+            "score": 0.005498
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "AFTER",
+            "score": 0.855421
+          },
+          {
+            "label": "GOOD NIGHT",
+            "score": 0.043152
+          },
+          {
+            "label": "GOOD AFTERNOON",
+            "score": 0.032971
+          },
+          {
+            "label": "HELP",
+            "score": 0.008603
+          },
+          {
+            "label": "GOOD MORNING",
+            "score": 0.005498
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.911001,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:28:32.968Z",
+      "elapsedMs": 8378,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.433008,
+        "duration": 1.433008,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 47
+      },
+      "status": "Possible match: AFTER. Top five: 1. AFTER · 2. GOOD NIGHT · 3. GOOD AFTERNOON · 4. HELP · 5. GOOD MORNING. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 5,
+          "trackedFrames": 5,
+          "durationMs": 4021,
+          "recordingWindowMs": 4000,
+          "processedFrames": 31,
+          "sampledFrames": 31,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 10,
+          "handFrames": 5,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "AFTER",
+      "correct": true
+    },
+    {
+      "number": 14,
+      "id": "patient",
+      "label": "PATIENT",
+      "clip": "media/research-signs/patient.mp4",
+      "clipSha256": "016b0c2011e6afc8478c93837712b6ffe7e3688ecd95268e3ece1d9e32f840f9",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.933333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:28:35.027Z",
+      "drawFramesStart": 2083,
+      "events": [
+        {
+          "at": "2026-11-07T00:28:37.857Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:28:35.029Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:28:35.047Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:28:37.859Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:28:41.890Z",
+          "text": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:28:37.859Z",
+      "finishedAt": "2026-11-07T00:28:42.087Z",
+      "elapsedMs": 7061,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.933333,
+        "duration": 2.933333,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 18
+      },
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4033,
+          "recordingWindowMs": 4000,
+          "processedFrames": 20,
+          "sampledFrames": 20,
+          "peakBufferedFrames": 3,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 20,
+          "handFrames": 2,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 15,
+      "id": "pipe",
+      "label": "PIPE",
+      "clip": "media/research-signs/pipe.mp4",
+      "clipSha256": "5d9770d662e9f34d21275660c6d2be625ffa344596b502c8f879ef979fe3b0fd",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.466667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:28:44.850Z",
+      "drawFramesStart": 2124,
+      "events": [
+        {
+          "at": "2026-11-07T00:28:47.975Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:28:44.853Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:28:44.872Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:28:47.976Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:28:52.032Z",
+          "text": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:28:47.977Z",
+      "playbackEndedAt": "2026-11-07T00:28:50.141Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:28:52.250Z",
+      "elapsedMs": 7400,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.466667,
+        "duration": 1.466667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 22
+      },
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 4,
+          "trackedFrames": 4,
+          "durationMs": 4057,
+          "recordingWindowMs": 4000,
+          "processedFrames": 34,
+          "sampledFrames": 34,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 11,
+          "handFrames": 4,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 16,
+      "id": "since",
+      "label": "SINCE",
+      "clip": "media/research-signs/since.mp4",
+      "clipSha256": "be1f2199ff3a235f24cd721cc8d784d891ec5d2da9536ca65bbbe69232e4f70c",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.566667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:28:54.429Z",
+      "drawFramesStart": 2162,
+      "events": [
+        {
+          "at": "2026-11-07T00:28:57.223Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:28:54.433Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:28:54.451Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:28:57.224Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:29:01.285Z",
+          "text": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:28:57.224Z",
+      "playbackEndedAt": "2026-11-07T00:28:59.620Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:29:01.514Z",
+      "elapsedMs": 7085,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.566667,
+        "duration": 1.566667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 22
+      },
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 10.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4062,
+          "recordingWindowMs": 4000,
+          "processedFrames": 33,
+          "sampledFrames": 33,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 15,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 17,
+      "id": "soccer",
+      "label": "SOCCER",
+      "clip": "media/signs/soccer.mp4",
+      "clipSha256": "23957f5b2c20ccef6a12450e5c81fbe0e4d9f1db66806c46863c7eea1d2ab8b4",
+      "family": "capstone",
+      "vocabulary": "core",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.2022,
+      "sourceDimensions": [
+        480,
+        360
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:29:04.100Z",
+      "drawFramesStart": 2196,
+      "events": [
+        {
+          "at": "2026-11-07T00:29:07.087Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-07T00:29:15.885Z",
+          "word": "SOCCER",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:29:04.102Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:29:04.119Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:29:07.089Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:29:11.089Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:29:12.420Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:29:15.887Z",
+          "text": "Possible match: SOCCER. Top five (7-word core): 1. SOCCER · 2. SQUEEZE · 3. EMPTY · 4. VLOG · 5. BELT. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:29:07.089Z",
+      "playbackEndedAt": "2026-11-07T00:29:10.237Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 11,
+        "sequenceFrames": null,
+        "vocabulary": "core"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "core",
+        "predictions": [
+          {
+            "label": "SOCCER2",
+            "score": 0.978068
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.016666
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.004078
+          },
+          {
+            "label": "VLOG",
+            "score": 0.000814
+          },
+          {
+            "label": "BELT1",
+            "score": 0.000148
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "SOCCER2",
+            "score": 0.978068
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.016666
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.004078
+          },
+          {
+            "label": "VLOG",
+            "score": 0.000814
+          },
+          {
+            "label": "BELT1",
+            "score": 0.000148
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": 0.8,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.661431,
+        "model": "HandSpeak ST-GCN capstone100-v4-ensemble (4-checkpoint)",
+        "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "auxiliarySha256": null,
+        "auxiliaryWeight": 0,
+        "auxiliaryFeatureVersion": null,
+        "preprocessorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:29:16.067Z",
+      "elapsedMs": 11968,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.2022,
+        "duration": 2.2022,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 129
+      },
+      "status": "Possible match: SOCCER. Top five (7-word core): 1. SOCCER · 2. SQUEEZE · 3. EMPTY · 4. VLOG · 5. BELT. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 11,
+          "trackedFrames": 11,
+          "durationMs": 5331,
+          "recordingWindowMs": 4000,
+          "processedFrames": 18,
+          "sampledFrames": 18,
+          "peakBufferedFrames": 2,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 13,
+          "handFrames": 11,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "SOCCER2",
+      "correct": true
+    },
+    {
+      "number": 18,
+      "id": "tail",
+      "label": "TAIL",
+      "clip": "media/research-signs/tail.mp4",
+      "clipSha256": "c50b3ebfe358ec94b421b1ee35f5104cd7734e9d3b5802b20aec88811dcf3d69",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.3,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:29:18.043Z",
+      "drawFramesStart": 2340,
+      "events": [
+        {
+          "at": "2026-11-07T00:29:20.753Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:29:18.046Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:29:18.068Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:29:20.756Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:29:24.911Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:29:25.889Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:29:45.894Z",
+          "text": "Recognition timed out. Try again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:29:20.756Z",
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 9,
+        "sequenceFrames": null,
+        "vocabulary": "full"
+      },
+      "playbackEndedAt": "2026-11-07T00:29:27.434Z",
+      "completeSourcePlayed": true,
+      "requestError": "AbortError: signal is aborted without reason",
+      "finishedAt": "2026-11-07T00:29:46.132Z",
+      "elapsedMs": 28089,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.3,
+        "duration": 3.3,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 589
+      },
+      "status": "Recognition timed out. Try again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 9,
+          "trackedFrames": 9,
+          "durationMs": 5135,
+          "recordingWindowMs": 4000,
+          "processedFrames": 26,
+          "sampledFrames": 26,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 23,
+          "handFrames": 9,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 19,
+      "id": "third",
+      "label": "THIRD",
+      "clip": "media/research-signs/third.mp4",
+      "clipSha256": "7d84dab28bed4e330c5f2f9fbf3fc4e08f820bcd5d57d4c5176111c50f38e7ab",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.133333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:29:48.460Z",
+      "drawFramesStart": 2951,
+      "events": [
+        {
+          "at": "2026-11-07T00:29:50.964Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:29:48.464Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:29:48.485Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:29:50.966Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:29:54.965Z",
+          "text": "Not enough tracked frames (0/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:29:50.966Z",
+      "playbackEndedAt": "2026-11-07T00:29:52.270Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:29:55.152Z",
+      "elapsedMs": 6692,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.133333,
+        "duration": 1.133333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 26
+      },
+      "status": "Not enough tracked frames (0/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 0,
+          "trackedFrames": 0,
+          "durationMs": 4000,
+          "recordingWindowMs": 4000,
+          "processedFrames": 41,
+          "sampledFrames": 41,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 8,
+          "handFrames": 0,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 20,
+      "id": "twins",
+      "label": "TWINS",
+      "clip": "media/research-signs/twins.mp4",
+      "clipSha256": "134540b534d6d6f52021c7e153a939536b391640659578d02338c605636605ad",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.833333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:29:57.507Z",
+      "drawFramesStart": 2997,
+      "events": [
+        {
+          "at": "2026-11-07T00:30:00.310Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:29:57.511Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:29:57.531Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:30:00.312Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:30:04.446Z",
+          "text": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:30:00.312Z",
+      "finishedAt": "2026-11-07T00:30:04.810Z",
+      "elapsedMs": 7303,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.833333,
+        "duration": 2.833333,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 19
+      },
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 2.7,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4136,
+          "recordingWindowMs": 4000,
+          "processedFrames": 17,
+          "sampledFrames": 17,
+          "peakBufferedFrames": 4,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 2,
+          "poseFrames": 17,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    }
+  ]
+}

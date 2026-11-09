@@ -1,0 +1,41 @@
+{
+  "verifiedAtUtc": "2026-11-07T11:20:59.839766+00:00",
+  "frozenFilesVerifiedUnchanged": true,
+  "allSourceHashesVerified": true,
+  "outcomesPerPipeline": 76,
+  "allAppendOnlyBrowserRecordsVerified": true,
+  "metricsIndependentlyRecomputed": true,
+  "reportOutcomes": 152,
+  "evidenceReceipts": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\native-evidence-receipt.json": "54f88376d3e4d378d9e8dcba45f9c4308646074e8be66cc9b9e2ce57799b2489"
+  },
+  "protocols": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\protocol.json": "5abe246d58970f04fa5673db7c88e619576f2a937134fb5bdff13963c2a5c8bc",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v2\\protocol.json": "8351149cc8e6e52f63d009c35f2c7329b149e6fb9b3bfd1eea616c1ed8affcbb",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\protocol.json": "1ed817d89a302798b56034b3c79beab323d4efbcab5fb9593851916a395ee3a5"
+  },
+  "bootDiagnostics": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v2\\boot-diagnostics.json": "5c7fbd433235ae1c9ae46881b43a83d0975bf913eaf06a6c87622fc4c3a32a5b"
+  },
+  "browserDriverExitCode": 0,
+  "realCameraCalls": 0,
+  "microphoneCalls": 0,
+  "thisTurnTests": {
+    "targetedPythonPassed": 4,
+    "transportV3SyntaxCheckPassed": true,
+    "captureContractJavaScriptPassed": 23
+  },
+  "reportFilesSha256": {
+    "README.md": "8949ef17a02a90c46f69b97f27f6dfaf685e771120989597e884d2240a7f8bc2",
+    "PROVENANCE.md": "44b167420c14b4056657796c75dd03d114d15b1a944a74bf3c3f85d3191cf30b",
+    "summary.json": "7c8db558281f1dfbe7d5a75a6da3ac197e10668d43f3a04cf25a8a1c9b90746c",
+    "outcomes.json": "bdb8b26e0cc2fb8c7cf344987702514e3a2d94f13a5a29392f1410a09d7b116a",
+    "remaining-errors.json": "de4a58aea20f5aa2c0c562dcc5f020a50a4e3e5912d60db59b95b725827094e8",
+    "triage.json": "4b5f8624ed301edabbd3a56dcf0c28016896ca0d28cd4d581f9859746655ed64"
+  },
+  "cleanupReceipt": {
+    "path": "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\cleanup-receipt.json",
+    "sha256": "df9f0915f8383be083ed28d6cbd1fa38ecdb12e52e9fcb1e98f2c459e78c8148"
+  },
+  "ownedAuditPortsAndProcessesStopped": true
+}

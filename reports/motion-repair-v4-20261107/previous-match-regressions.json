@@ -1,0 +1,114 @@
+[
+  {
+    "id": "bad",
+    "label": "BAD",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "finish",
+    "label": "FINISH",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "no accepted manual match"
+  },
+  {
+    "id": "foreigner",
+    "label": "FOREIGNER",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "hungry",
+    "label": "HUNGRY",
+    "before": "matched",
+    "after": "wrong",
+    "prediction": "THANK YOU",
+    "diagnosis": "accepted wrong label"
+  },
+  {
+    "id": "pipe",
+    "label": "PIPE",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "insufficient tracking"
+  },
+  {
+    "id": "scrolldown",
+    "label": "SCROLLDOWN",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "shark",
+    "label": "SHARK",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "sorry",
+    "label": "SORRY",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "insufficient tracking"
+  },
+  {
+    "id": "they",
+    "label": "THEY",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "tomorrow",
+    "label": "TOMORROW",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "tractor",
+    "label": "TRACTOR",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "twins",
+    "label": "TWINS",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "insufficient tracking"
+  },
+  {
+    "id": "who",
+    "label": "WHO",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "correct top suggestion rejected"
+  },
+  {
+    "id": "your-yours",
+    "label": "YOUR / YOURS",
+    "before": "matched",
+    "after": "no match",
+    "prediction": null,
+    "diagnosis": "insufficient tracking"
+  }
+]

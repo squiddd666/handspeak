@@ -1,0 +1,170 @@
+{
+  "candidateSha256": "a3c1b24c82b655202d1172a5598955874410c11623e304c63282df1d84e804e0",
+  "comparison": {
+    "default": {
+      "baseline": {
+        "attempts": 18,
+        "correct": 14,
+        "wrong": 1,
+        "noMatch": 3,
+        "negativeAttempts": 114,
+        "negativeFalse": 31,
+        "precision": 0.9333333333333333,
+        "negativeFalseRate": 0.2719298245614035
+      },
+      "candidate": {
+        "attempts": 18,
+        "correct": 14,
+        "wrong": 0,
+        "noMatch": 4,
+        "negativeAttempts": 114,
+        "negativeFalse": 17,
+        "precision": 1.0,
+        "negativeFalseRate": 0.14912280701754385
+      },
+      "guarded": {
+        "attempts": 18,
+        "correct": 14,
+        "wrong": 0,
+        "noMatch": 4,
+        "negativeAttempts": 114,
+        "negativeFalse": 17,
+        "precision": 1.0,
+        "negativeFalseRate": 0.14912280701754385
+      },
+      "guardClasses": [
+        "HELLO",
+        "PLEASE",
+        "YES"
+      ],
+      "recoveryClasses": []
+    },
+    "expanded": {
+      "baseline": {
+        "attempts": 37,
+        "correct": 24,
+        "wrong": 4,
+        "noMatch": 9,
+        "negativeAttempts": 95,
+        "negativeFalse": 32,
+        "precision": 0.8571428571428571,
+        "negativeFalseRate": 0.3368421052631579
+      },
+      "candidate": {
+        "attempts": 37,
+        "correct": 24,
+        "wrong": 2,
+        "noMatch": 11,
+        "negativeAttempts": 95,
+        "negativeFalse": 17,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.17894736842105263
+      },
+      "guarded": {
+        "attempts": 37,
+        "correct": 24,
+        "wrong": 2,
+        "noMatch": 11,
+        "negativeAttempts": 95,
+        "negativeFalse": 17,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.17894736842105263
+      },
+      "guardClasses": [
+        "HELLO",
+        "PLEASE",
+        "YES",
+        "WATER",
+        "FOOD"
+      ],
+      "recoveryClasses": []
+    },
+    "daily": {
+      "baseline": {
+        "attempts": 15,
+        "correct": 13,
+        "wrong": 0,
+        "noMatch": 2,
+        "negativeAttempts": 117,
+        "negativeFalse": 51,
+        "precision": 1.0,
+        "negativeFalseRate": 0.4358974358974359
+      },
+      "candidate": {
+        "attempts": 15,
+        "correct": 13,
+        "wrong": 0,
+        "noMatch": 2,
+        "negativeAttempts": 117,
+        "negativeFalse": 42,
+        "precision": 1.0,
+        "negativeFalseRate": 0.358974358974359
+      },
+      "guarded": {
+        "attempts": 15,
+        "correct": 13,
+        "wrong": 0,
+        "noMatch": 2,
+        "negativeAttempts": 117,
+        "negativeFalse": 42,
+        "precision": 1.0,
+        "negativeFalseRate": 0.358974358974359
+      },
+      "guardClasses": [
+        "NAME",
+        "HAVE",
+        "WANT"
+      ],
+      "recoveryClasses": []
+    },
+    "pack": {
+      "baseline": {
+        "attempts": 14,
+        "correct": 12,
+        "wrong": 1,
+        "noMatch": 1,
+        "negativeAttempts": 118,
+        "negativeFalse": 107,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.9067796610169492
+      },
+      "candidate": {
+        "attempts": 14,
+        "correct": 12,
+        "wrong": 1,
+        "noMatch": 1,
+        "negativeAttempts": 118,
+        "negativeFalse": 92,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.7796610169491526
+      },
+      "guarded": {
+        "attempts": 14,
+        "correct": 12,
+        "wrong": 1,
+        "noMatch": 1,
+        "negativeAttempts": 118,
+        "negativeFalse": 92,
+        "precision": 0.9230769230769231,
+        "negativeFalseRate": 0.7796610169491526
+      },
+      "guardClasses": [
+        "FISH",
+        "PAIN",
+        "SICK"
+      ],
+      "recoveryClasses": []
+    }
+  },
+  "trainSources": 141,
+  "references": 141,
+  "validationSources": 132,
+  "failedValidationCaptures": 1,
+  "parity": {
+    "cases": 132,
+    "modeOutcomes": 528,
+    "predictionsIdentical": true,
+    "maxDistanceOrRatioError": 3.9968028886505635e-15
+  },
+  "seconds": 32.737
+}

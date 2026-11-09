@@ -1,0 +1,1849 @@
+{
+  "featureVersion": "body-manual-aspect-v1",
+  "validationRecordings": 228,
+  "predictionMatches": 228,
+  "featureMaxAbsError": 2.384185791015625e-07,
+  "mirrorMaxAbsError": 2.384185791015625e-07,
+  "distanceMaxAbsError": 3.702642423220048e-08,
+  "modelChangesInstalled": false,
+  "testUsedForSelection": false,
+  "watchExcluded": true,
+  "sourcesAndParticipantsDisjoint": true,
+  "browserCaptureParityVerified": false,
+  "liveCameraAccuracyVerified": false,
+  "inputsSha256": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\motion-repair-v4-20261107\\native-trainval.jsonl": "3907df01c6ddfcc3fa55a0a952bc730a5d810fda382be461b0e281c7c0ffcc5f",
+    "reports\\motion-repair-v5-20261107\\candidates\\body-manual-24.json": "ce9ce544e1f55bbb16912183606beea1fb0fa1d05fed8f683e5f5c503ca43c48",
+    "body_manual_features.py": "4e31a03f775545a5b639feb9c0f5d7f918840700c72e89224f6c0ad5ff8704c0",
+    "handshape_features.py": "001511585b0334493823d9f969a44c15643507582f21922d52ce59471aed82c5",
+    "training\\experimental\\body_manual_runtime.mjs": "07dfb86f7014bc489bd6aecb6ea5bafdbc81234bdd2ae7986d063be074953d8f",
+    "scripts\\verify_body_manual_runtime.mjs": "ad82972180db3df154c3cdd9303dd55d25ece881c5fc0506eb8149da26b6d326"
+  },
+  "records": [
+    {
+      "file": "16245161605115355-AFTER.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.2999151643988682e-08
+    },
+    {
+      "file": "7833431773780957-AFTER.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 2.2621682305157265e-11
+    },
+    {
+      "file": "4946642527195848-AFTER.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "776837683707674-ANGRY.mp4",
+      "prediction": "HAVE",
+      "tracked": true,
+      "featureMaxAbsError": 1.862645149230957e-09,
+      "mirrorMaxAbsError": 1.862645149230957e-09,
+      "distanceAbsError": 1.9539925233402755e-14
+    },
+    {
+      "file": "48220722485733747-ANGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "9167479595954919-ANGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "6630832264683122-BABY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "38156047806779547-BABY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 1.1967982160854262e-11
+    },
+    {
+      "file": "14107125849434854-BABY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "7013330493682821-BABY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.3436673884648087e-08
+    },
+    {
+      "file": "647818976594698-BABY 2.mp4",
+      "prediction": "BABY",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "7803719476282813-BABY 2.mp4",
+      "prediction": "BABY",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 4.9719145467364e-09
+    },
+    {
+      "file": "5773958570762612-BABY 2.mp4",
+      "prediction": "BABY",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "5369984582921237-BEFORE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.7151642045808444e-10
+    },
+    {
+      "file": "18140021240558846-BEFORE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.8231296083914827e-08
+    },
+    {
+      "file": "11574898513671861-BEFORE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.2478124866710516e-08
+    },
+    {
+      "file": "4405635468661042-BEFORE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "6769051062367408-BEFORE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.26784138743119e-11
+    },
+    {
+      "file": "14652404970670685-BOOK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 4.315748758365601e-09
+    },
+    {
+      "file": "7210851228367339-BOOK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 4.265143793702464e-12
+    },
+    {
+      "file": "21653364727074398-BOOK.mp4",
+      "prediction": "BOOK",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.3283987021495136e-08
+    },
+    {
+      "file": "8364442922972546-BOOK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 2.8410274133250368e-11
+    },
+    {
+      "file": "5204755360986577-CHILD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.1016813317453753e-08
+    },
+    {
+      "file": "6777361164611742-CHILD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 6.861964135795873e-09
+    },
+    {
+      "file": "10387412267108864-CHILD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "08822684142689163-CHILD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.7881393432617188e-07,
+      "mirrorMaxAbsError": 1.7881393432617188e-07,
+      "distanceAbsError": 3.702642423220048e-08
+    },
+    {
+      "file": "3255004854514185-CHILD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.7755575615628914e-17
+    },
+    {
+      "file": "16945051524554744-DEVELOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "7877312690929996-DEVELOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 7.405911106594942e-09
+    },
+    {
+      "file": "1362215264165989-DEVELOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 7.3362231844953385e-09
+    },
+    {
+      "file": "5579456931257181-DOG.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "5208069588201667-DOG.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.4580229573967216e-08
+    },
+    {
+      "file": "15011820658062458-DOG.mp4",
+      "prediction": null,
+      "tracked": false,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "799770954333842-DOG.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 2.6234792116497374e-11
+    },
+    {
+      "file": "7071450710791192-DRINK.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 6.883105196919814e-13
+    },
+    {
+      "file": "8038145060553852-DRINK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 2.498873330480933e-11
+    },
+    {
+      "file": "37918472044314444-DRINK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.8208629048999114e-11
+    },
+    {
+      "file": "7313509467149351-DRINK.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 7.90743237555347e-09
+    },
+    {
+      "file": "36996117552353014-DRINK 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "7875424216858471-DRINK 2.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.7755575615628914e-17
+    },
+    {
+      "file": "7331110745964862-DRINK 2.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 1.6977340450141654e-08
+    },
+    {
+      "file": "5470582351678035-DRINK 2.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 9.848927229327842e-12
+    },
+    {
+      "file": "6484470716683486-DRINK 2.mp4",
+      "prediction": "DRINK",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.3549829980252781e-08
+    },
+    {
+      "file": "0392835216734122-EAT.mp4",
+      "prediction": "FOOD",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 7.424674708378376e-09
+    },
+    {
+      "file": "8779902440064791-EAT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "009883456113471967-EAT.mp4",
+      "prediction": "FOOD",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "744008724339543-EAT.mp4",
+      "prediction": "FOOD",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 4.526754360245633e-09
+    },
+    {
+      "file": "16004917375203398-FAMILY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.7881393432617188e-07,
+      "mirrorMaxAbsError": 1.7881393432617188e-07,
+      "distanceAbsError": 3.0222013780445423e-09
+    },
+    {
+      "file": "7397889710801269-FAMILY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 7.216449660063518e-16
+    },
+    {
+      "file": "9733795834896177-FAMILY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 6.661338147750939e-16
+    },
+    {
+      "file": "3860077714893173-FINISH.mp4",
+      "prediction": "FINISH",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.585291559136337e-08
+    },
+    {
+      "file": "8804372922780734-FINISH.mp4",
+      "prediction": "FINISH",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "24803980252556834-FINISH.mp4",
+      "prediction": "FINISH",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "2557681165642225-FISH.mp4",
+      "prediction": "FISH",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "4402830392789814-FISH.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "5246286193674587-FISH.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 7.34323712947571e-12
+    },
+    {
+      "file": "7467051913033149-FISH.mp4",
+      "prediction": "FISH",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "05163066213189427-FRIEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "6298947790810541-FRIEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.0858511645395197e-08
+    },
+    {
+      "file": "29341979023390885-FRIEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 3.455846719901956e-12
+    },
+    {
+      "file": "6721385997956766-GO.mp4",
+      "prediction": "GO",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 6.604814806188131e-09
+    },
+    {
+      "file": "5587884729767747-GO.mp4",
+      "prediction": "GO",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 4.083206550653529e-09
+    },
+    {
+      "file": "3702604002311216-GO.mp4",
+      "prediction": "GO",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "07732970042675213-HAPPY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.3877787807814457e-16
+    },
+    {
+      "file": "6098755056170255-HAPPY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "3698632660671215-HAPPY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 1.711769614942682e-12
+    },
+    {
+      "file": "09691552256972735-HAPPY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 3.948447735435678e-09
+    },
+    {
+      "file": "24752713514497837-HAVE.mp4",
+      "prediction": "HAVE",
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 6.658562590189376e-13
+    },
+    {
+      "file": "34434859291457975-HAVE.mp4",
+      "prediction": "HAVE",
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 1.7882917369149709e-12
+    },
+    {
+      "file": "8252872177970572-HAVE.mp4",
+      "prediction": "HAVE",
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 6.384337503106963e-13
+    },
+    {
+      "file": "3970565843655667-HAVE.mp4",
+      "prediction": "HAVE",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 4.2080561257762383e-11
+    },
+    {
+      "file": "05614933522741539-HELLO.mp4",
+      "prediction": "HELLO",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.9511826931939424e-08
+    },
+    {
+      "file": "20675411351630046-HELLO.mp4",
+      "prediction": "HELLO",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "020030442376253177-HELLO.mp4",
+      "prediction": "HELLO",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "16493550450776628-HELLO.mp4",
+      "prediction": "HELLO",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.8041124150158794e-16
+    },
+    {
+      "file": "5938307461368451-HOME.mp4",
+      "prediction": "HOME",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "4111158323472113-HOME.mp4",
+      "prediction": "HOME",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "5358205730570242-HOME.mp4",
+      "prediction": "HOME",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "049094629596487804-HOME.mp4",
+      "prediction": "HOME",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "10542513580735968-HOW.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 5.1856614557976854e-09
+    },
+    {
+      "file": "971003020665846-HOW.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.2352503353518784e-08
+    },
+    {
+      "file": "6271713081961889-HOW.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 3.3113289887864994e-11
+    },
+    {
+      "file": "2274519559281516-HOW 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "48721608073646605-HOW 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "026060585634413602-HOW 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 3.12194714524594e-13
+    },
+    {
+      "file": "8724961433813252-HUNGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.7755575615628914e-17
+    },
+    {
+      "file": "306250682526525-HUNGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "8727936955185542-HUNGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 7.19588699737983e-09
+    },
+    {
+      "file": "8525529504952978-HUNGRY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 1.351474487876203e-12
+    },
+    {
+      "file": "9071214192313297-JOKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "13644697492397184-JOKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 4.3365311341858614e-13
+    },
+    {
+      "file": "7706511460115826-JOKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.757277656722067e-11
+    },
+    {
+      "file": "3111036230854072-KNIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "43742087186225564-KNIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "7927387280867586-KNIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 2.3735680088066147e-11
+    },
+    {
+      "file": "8042345903835753-LIKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 1.5046444451494168e-08
+    },
+    {
+      "file": "11163894424136789-LIKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.456438969427154e-09
+    },
+    {
+      "file": "16373316542801275-LIKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.7881393432617188e-07,
+      "mirrorMaxAbsError": 1.7881393432617188e-07,
+      "distanceAbsError": 1.0030604735700166e-08
+    },
+    {
+      "file": "7300348171338833-LOVE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "25439044778685105-LOVE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "20482432773002457-LOVE.mp4",
+      "prediction": "LOVE",
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 1.7223915460551353e-08
+    },
+    {
+      "file": "2631901034056372-LOVE.mp4",
+      "prediction": "LOVE",
+      "tracked": true,
+      "featureMaxAbsError": 3.725290298461914e-09,
+      "mirrorMaxAbsError": 3.725290298461914e-09,
+      "distanceAbsError": 3.0558888752807434e-13
+    },
+    {
+      "file": "23909248218883028-LOVE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "22086947347372266-MEA CULPA.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.647793233087839e-09
+    },
+    {
+      "file": "8512964715294218-MEA CULPA.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "9193116349380914-MEA CULPA.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.971058177259067e-09
+    },
+    {
+      "file": "07130413211667141-MEA CULPA.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.5137762982296863e-09
+    },
+    {
+      "file": "38571484397842015-MOUTH.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 1.0536016503692736e-12
+    },
+    {
+      "file": "08629381582280149-MOUTH.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.754117793355107e-09
+    },
+    {
+      "file": "3108143937298642-MOUTH.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "39474504957896217-MOVIE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "671764401941833-MOVIE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 2.073574645322651e-11
+    },
+    {
+      "file": "2838376949179944-MOVIE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.2560289454106623e-11
+    },
+    {
+      "file": "5535338426456671-MOVIE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 3.3306690738754696e-16
+    },
+    {
+      "file": "3211415289488089-MY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.7881393432617188e-07,
+      "mirrorMaxAbsError": 1.7881393432617188e-07,
+      "distanceAbsError": 6.744541550252059e-09
+    },
+    {
+      "file": "6682245340769342-MY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "14107936727280213-MY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.3877787807814457e-16
+    },
+    {
+      "file": "895022317746502-MY.mp4",
+      "prediction": "PLEASE",
+      "tracked": true,
+      "featureMaxAbsError": 3.725290298461914e-09,
+      "mirrorMaxAbsError": 3.725290298461914e-09,
+      "distanceAbsError": 3.0576929876957593e-13
+    },
+    {
+      "file": "5439490417710435-NAME.mp4",
+      "prediction": "NAME",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.969426954850917e-09
+    },
+    {
+      "file": "6442814975743945-NAME.mp4",
+      "prediction": "NAME",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.218825371855473e-12
+    },
+    {
+      "file": "1420689770801613-NAME.mp4",
+      "prediction": "NAME",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.452200310003704e-08
+    },
+    {
+      "file": "9031073980623976-NAME.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "04669408879006931-NEED.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.73870303155077e-08
+    },
+    {
+      "file": "6330153558265055-NEED.mp4",
+      "prediction": "YES",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "30879418056454777-NEED.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.2449597736340365e-09
+    },
+    {
+      "file": "08017581684003039-NIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.2702811025278038e-09
+    },
+    {
+      "file": "4973489684078234-NIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 4.404172360139569e-09
+    },
+    {
+      "file": "21645197130695215-NIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "8175976377678535-NIGHT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 3.725290298461914e-09,
+      "mirrorMaxAbsError": 3.725290298461914e-09,
+      "distanceAbsError": 4.139577569617359e-12
+    },
+    {
+      "file": "08433061936933717-NIGHT.mp4",
+      "prediction": "NIGHT",
+      "tracked": true,
+      "featureMaxAbsError": 3.725290298461914e-09,
+      "mirrorMaxAbsError": 3.725290298461914e-09,
+      "distanceAbsError": 3.1452618287630685e-13
+    },
+    {
+      "file": "17578216510347966-NIGHT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.5557425681045345e-08
+    },
+    {
+      "file": "14604658627131673-NIGHT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 2.4177326807262034e-12
+    },
+    {
+      "file": "7144380745633421-NIGHT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.348496397353017e-08
+    },
+    {
+      "file": "8323715285073319-NO.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 3.843769247335871e-09
+    },
+    {
+      "file": "8079226457278508-NO.mp4",
+      "prediction": "NO",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "4656606080155459-NO.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 1.055433518359905e-12
+    },
+    {
+      "file": "17849995657443585-OFFEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "7542420326328318-OFFEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 7.317598860190344e-09
+    },
+    {
+      "file": "5153555196709101-OFFEND.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "5646942405877946-PAIN.mp4",
+      "prediction": "PAIN",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 5.876315212205441e-09
+    },
+    {
+      "file": "7699770097456944-PAIN.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 3.3306690738754696e-16
+    },
+    {
+      "file": "2527077785378311-PAIN.mp4",
+      "prediction": "PAIN",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.0549985157991557e-08
+    },
+    {
+      "file": "9856203057311912-PAIN.mp4",
+      "prediction": "PAIN",
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 1.85357285076293e-12
+    },
+    {
+      "file": "4096147054343935-PLEASE.mp4",
+      "prediction": "PLEASE",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 9.138721529522442e-09
+    },
+    {
+      "file": "42961246858695024-PLEASE.mp4",
+      "prediction": "PLEASE",
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 9.456185834366693e-13
+    },
+    {
+      "file": "05859480723249688-PLEASE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 4.037389145228332e-09
+    },
+    {
+      "file": "6330094542104612-PLEASE.mp4",
+      "prediction": "PLEASE",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.498001805406602e-16
+    },
+    {
+      "file": "3043245354055728-SAD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.1530035592954846e-08
+    },
+    {
+      "file": "29913355059297864-SAD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 6.070023816917569e-09
+    },
+    {
+      "file": "9009874398583952-SAD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "04551864995837951-SAD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "7861062216231951-SCHOOL.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.6865343283333232e-11
+    },
+    {
+      "file": "02185976473813267-SCHOOL.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "24442962392359258-SCHOOL.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.18030063290098e-13
+    },
+    {
+      "file": "680337953755801-SEE.mp4",
+      "prediction": "SEE",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.4263867864627855e-11
+    },
+    {
+      "file": "6449291006787454-SEE.mp4",
+      "prediction": "SEE",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.2059897275262799e-08
+    },
+    {
+      "file": "9233469754453538-SEE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.0395240224170266e-11
+    },
+    {
+      "file": "03811374335244233-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.862645149230957e-09,
+      "mirrorMaxAbsError": 1.862645149230957e-09,
+      "distanceAbsError": 1.7635892746170612e-13
+    },
+    {
+      "file": "7378344278159965-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "8690203020403533-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "9164621293102129-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.4591639169457835e-08
+    },
+    {
+      "file": "19705898046574566-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 8.992806499463768e-15
+    },
+    {
+      "file": "9138085505451088-SHOP.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "414412406242181-SHOP 1.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 9.313225746154785e-10,
+      "mirrorMaxAbsError": 9.313225746154785e-10,
+      "distanceAbsError": 2.3925306180672123e-13
+    },
+    {
+      "file": "3960827804492326-SHOP 1.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 9.030827863298896e-09
+    },
+    {
+      "file": "7499462734993416-SHOP 1.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 1.2079226507921703e-13
+    },
+    {
+      "file": "4657156880345066-SHOP 1.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 7.9818374132401e-12
+    },
+    {
+      "file": "08956501268165051-SICK.mp4",
+      "prediction": "SICK",
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 2.1505211833527937e-08
+    },
+    {
+      "file": "47832051707828005-SICK.mp4",
+      "prediction": "SICK",
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 4.582056956081715e-12
+    },
+    {
+      "file": "3176950945974586-SICK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 5.4767856916271285e-12
+    },
+    {
+      "file": "45273738498753846-SICK.mp4",
+      "prediction": "SICK",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "6510055063291724-SINCE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "08309062831856617-SINCE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.6732122071493336e-09
+    },
+    {
+      "file": "09683791321081148-SINCE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.878419642054041e-11
+    },
+    {
+      "file": "09372722526789401-TAKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 6.247441675100163e-09
+    },
+    {
+      "file": "6968328028731545-TAKE.mp4",
+      "prediction": null,
+      "tracked": false,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "4805934647756538-TAKE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 6.543308173068141e-09
+    },
+    {
+      "file": "0006320057552187119-THANK YOU.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 3.986608043682338e-09
+    },
+    {
+      "file": "7976564165646398-THANK YOU.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "16870669316247833-THANK YOU.mp4",
+      "prediction": "THANK YOU",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "9598803772091737-THEY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 1.2511546354510017e-08
+    },
+    {
+      "file": "2151941336300882-THEY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "38731487247930807-THEY.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "294898590824912-THEY 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "4631380312407023-THEY 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.131083199323868e-09
+    },
+    {
+      "file": "9045692755626522-THEY 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.7881393432617188e-07,
+      "mirrorMaxAbsError": 1.7881393432617188e-07,
+      "distanceAbsError": 2.2349661010778732e-10
+    },
+    {
+      "file": "3511414357256921-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.7755575615628914e-17
+    },
+    {
+      "file": "3712777130687983-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 3.0755981650365527e-09
+    },
+    {
+      "file": "74247500952737-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.942890293094024e-16
+    },
+    {
+      "file": "5928105475163117-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 7.450580596923828e-09,
+      "mirrorMaxAbsError": 7.450580596923828e-09,
+      "distanceAbsError": 5.662692537100611e-13
+    },
+    {
+      "file": "6240048986671136-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "6781872514409673-THIRD.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 1.4639123246951158e-12
+    },
+    {
+      "file": "5419469718181713-WAIT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 9.738699180417143e-09
+    },
+    {
+      "file": "6368510219023522-WAIT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.4112155888312827e-11
+    },
+    {
+      "file": "5205785031120291-WAIT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 4.440892098500626e-16
+    },
+    {
+      "file": "19418271966399425-WAIT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 1.0212830581224352e-11
+    },
+    {
+      "file": "35511966117206395-WALK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.9802322387695312e-08,
+      "mirrorMaxAbsError": 2.9802322387695312e-08,
+      "distanceAbsError": 3.070654841508258e-12
+    },
+    {
+      "file": "3559344612386124-WALK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 2.220446049250313e-16
+    },
+    {
+      "file": "5842912162799925-WALK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.1349032824625738e-11
+    },
+    {
+      "file": "1781284816177522-WALK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 7.549516567451064e-15
+    },
+    {
+      "file": "015658363941112086-WALK.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.1524588838796035e-08
+    },
+    {
+      "file": "6775293938589453-WALK 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "3238464174904878-WALK 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 2.384185791015625e-07,
+      "mirrorMaxAbsError": 2.384185791015625e-07,
+      "distanceAbsError": 1.6759776289010375e-08
+    },
+    {
+      "file": "2813287658544088-WALK 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "4985755234118108-WALK 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "9659002140360071-WANT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 4.259592678579338e-11
+    },
+    {
+      "file": "9085692028177397-WANT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 1.55928603362554e-11
+    },
+    {
+      "file": "3964716837264739-WANT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 7.3163920477625766e-09
+    },
+    {
+      "file": "8782648080433364-WANT 2.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 1.7356834081105887e-08
+    },
+    {
+      "file": "3330583417668693-WANT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.423613532087643e-09
+    },
+    {
+      "file": "8459253067700705-WANT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 2.0383184029526547e-09
+    },
+    {
+      "file": "10421760727572105-WANT.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "414141284745577-WATER.mp4",
+      "prediction": "WATER",
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 6.0212974606344005e-09
+    },
+    {
+      "file": "9850177164607337-WATER.mp4",
+      "prediction": "WATER",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.3877787807814457e-16
+    },
+    {
+      "file": "03174577769237463-WATER.mp4",
+      "prediction": null,
+      "tracked": false,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "7530258985595248-WATER.mp4",
+      "prediction": "WATER",
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "14563849425095032-WE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 6.456083612160768e-09
+    },
+    {
+      "file": "6868122993341472-WE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 5.0805923357266636e-09
+    },
+    {
+      "file": "11801482805093366-WE.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.1920928955078125e-07,
+      "mirrorMaxAbsError": 1.1920928955078125e-07,
+      "distanceAbsError": 7.439460159019973e-11
+    },
+    {
+      "file": "9161842981344352-YES.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 5.551115123125783e-17
+    },
+    {
+      "file": "9715589334909431-YES.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.1102230246251565e-16
+    },
+    {
+      "file": "8977694836593926-YES.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 1.4901161193847656e-08,
+      "mirrorMaxAbsError": 1.4901161193847656e-08,
+      "distanceAbsError": 7.574468829929515e-12
+    },
+    {
+      "file": "26056519285644875-YES.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "42327270691916885-YES.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "2596986287783567-YOUR.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 8.326672684688674e-17
+    },
+    {
+      "file": "15592377033295812-YOUR.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 1.6653345369377348e-16
+    },
+    {
+      "file": "7464906167030079-YOUR.mp4",
+      "prediction": null,
+      "tracked": false,
+      "featureMaxAbsError": 0.0,
+      "mirrorMaxAbsError": 0.0,
+      "distanceAbsError": 0.0
+    },
+    {
+      "file": "16110924695348516-YOUR.mp4",
+      "prediction": null,
+      "tracked": true,
+      "featureMaxAbsError": 5.960464477539063e-08,
+      "mirrorMaxAbsError": 5.960464477539063e-08,
+      "distanceAbsError": 5.163940830499314e-09
+    }
+  ],
+  "scope": "Validation-only deterministic JS/Python parity. Existing frozen v5 candidate remains offline. No gate/policy/weight changes. Native Holistic body and Tasks manual streams stay separate. This does not repair the known NO regression or establish browser capture parity."
+}

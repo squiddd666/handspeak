@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "publishedAt": "2026-11-06T21:01:07+00:00",
+  "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+  "calibrationSha256": "94f4b22290cb3f83ff265cdbd276aab0edd061281eb838fc805af2da5e4bcbf7",
+  "testUsedForSelection": false,
+  "watchClipsExcluded": true,
+  "archivesPreserved": true,
+  "profiles": {
+    "beginner": {
+      "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+      "calibrationEvidenceSha256": "53dba1108c49cbb6d345249c91b00179fc6bdaa04c713f859b22876ed2427f52",
+      "sourceReportSha256": "b68059fbfd27b6339943a153a91694410336555cf5cea3d58c8ac3f4252244cc",
+      "totals": {
+        "attempts": 747,
+        "correct": 394,
+        "wrong": 23,
+        "noMatch": 330,
+        "tracked": 641,
+        "negativeAttempts": 1166,
+        "negativeFalse": 174
+      },
+      "watchKnownExcluded": 68,
+      "watchNegativeExcluded": 77
+    },
+    "capstoneFull": {
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationEvidenceSha256": "20f7cc2406c4615e743c96b217d9537962e4ebbe5e415c88485ed1cd75d647c3",
+      "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+      "totals": {
+        "attempts": 1206,
+        "correct": 515,
+        "wrong": 30,
+        "noMatch": 661,
+        "tracked": 926,
+        "negativeAttempts": 689,
+        "negativeFalse": 103
+      },
+      "watchKnownExcluded": 80,
+      "watchNegativeExcluded": 59
+    },
+    "capstoneCore": {
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationEvidenceSha256": "20f7cc2406c4615e743c96b217d9537962e4ebbe5e415c88485ed1cd75d647c3",
+      "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+      "totals": {
+        "attempts": 89,
+        "correct": 55,
+        "wrong": 0,
+        "noMatch": 34,
+        "tracked": 66,
+        "negativeAttempts": 1806,
+        "negativeFalse": 103
+      },
+      "watchKnownExcluded": 80,
+      "watchNegativeExcluded": 59
+    },
+    "capstoneExtended": {
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationEvidenceSha256": "20f7cc2406c4615e743c96b217d9537962e4ebbe5e415c88485ed1cd75d647c3",
+      "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+      "totals": {
+        "attempts": 261,
+        "correct": 168,
+        "wrong": 2,
+        "noMatch": 91,
+        "tracked": 200,
+        "negativeAttempts": 1634,
+        "negativeFalse": 92
+      },
+      "watchKnownExcluded": 80,
+      "watchNegativeExcluded": 59
+    }
+  },
+  "note": "Frozen held-out recorded benchmarks, not Watch clip smoke tests or physical live-camera accuracy. Failures and unsupported false accepts are retained."
+}

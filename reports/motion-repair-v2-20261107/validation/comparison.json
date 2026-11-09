@@ -1,0 +1,72 @@
+[
+  {
+    "candidate": "beginner-aspect-v2",
+    "checkpoint": "..\\hs-eval\\motion-repair-20261107\\beginner-aspect-v2.pt",
+    "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "features": "..\\hs-eval\\motion-repair-20261107\\features-beginner-repaired.jsonl",
+    "featuresSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+    "split": "val",
+    "minFrames": 5,
+    "preprocessorVersion": "masked-v2",
+    "mirrorTta": false,
+    "mirrorVersion": "anatomical-v2",
+    "snapshots": 1,
+    "probabilities": "reports\\motion-repair-v2-20261107\\validation\\beginner-aspect-v2.npz",
+    "probabilitiesSha256": "964017c75c034754c7010600a9802565fe24a73e0b38e2dd686442b2d34a0763",
+    "raw": {
+      "attempts": 296,
+      "tracked": 267,
+      "correct": 214,
+      "wrong": 53,
+      "noMatch": 29,
+      "accuracy": 0.722973,
+      "macroAccuracy": 0.730108,
+      "precision": 0.801498
+    },
+    "gate050": {
+      "attempts": 296,
+      "tracked": 267,
+      "correct": 194,
+      "wrong": 34,
+      "noMatch": 68,
+      "accuracy": 0.655405,
+      "macroAccuracy": 0.669876,
+      "precision": 0.850877
+    }
+  },
+  {
+    "candidate": "beginner-aspect-v2-tta",
+    "checkpoint": "..\\hs-eval\\motion-repair-20261107\\beginner-aspect-v2.pt",
+    "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "features": "..\\hs-eval\\motion-repair-20261107\\features-beginner-repaired.jsonl",
+    "featuresSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+    "split": "val",
+    "minFrames": 5,
+    "preprocessorVersion": "masked-v2",
+    "mirrorTta": true,
+    "mirrorVersion": "anatomical-v2",
+    "snapshots": 1,
+    "probabilities": "reports\\motion-repair-v2-20261107\\validation\\beginner-aspect-v2-tta.npz",
+    "probabilitiesSha256": "b94aec6ad476d4900b9241de8319f50b1b06075c2a180fd432c2b01b4959c01f",
+    "raw": {
+      "attempts": 296,
+      "tracked": 267,
+      "correct": 223,
+      "wrong": 44,
+      "noMatch": 29,
+      "accuracy": 0.753378,
+      "macroAccuracy": 0.758303,
+      "precision": 0.835206
+    },
+    "gate050": {
+      "attempts": 296,
+      "tracked": 267,
+      "correct": 202,
+      "wrong": 22,
+      "noMatch": 72,
+      "accuracy": 0.682432,
+      "macroAccuracy": 0.694771,
+      "precision": 0.901786
+    }
+  }
+]

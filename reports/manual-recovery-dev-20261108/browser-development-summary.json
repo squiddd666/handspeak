@@ -1,0 +1,208 @@
+{
+  "scope": "34-clip same-source browser DEVELOPMENT, not fresh test/new signers/full-198 accuracy",
+  "attempts": 34,
+  "contractsPassed": 33,
+  "pairCount": 2248,
+  "apiReceipts": 128,
+  "comparison": {
+    "val": {
+      "default": {
+        "baseline": {
+          "attempts": 7,
+          "correct": 3,
+          "wrong": 1,
+          "noMatch": 3,
+          "negativeAttempts": 23,
+          "negativeFalse": 7,
+          "precision": 0.75,
+          "negativeFalseRate": 0.30434782608695654
+        },
+        "guard": {
+          "attempts": 7,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 4,
+          "negativeAttempts": 23,
+          "negativeFalse": 1,
+          "precision": 1.0,
+          "negativeFalseRate": 0.043478260869565216
+        },
+        "lostCorrect": []
+      },
+      "expanded": {
+        "baseline": {
+          "attempts": 14,
+          "correct": 7,
+          "wrong": 2,
+          "noMatch": 5,
+          "negativeAttempts": 16,
+          "negativeFalse": 4,
+          "precision": 0.7777777777777778,
+          "negativeFalseRate": 0.25
+        },
+        "guard": {
+          "attempts": 14,
+          "correct": 6,
+          "wrong": 0,
+          "noMatch": 8,
+          "negativeAttempts": 16,
+          "negativeFalse": 0,
+          "precision": 1.0,
+          "negativeFalseRate": 0.0
+        },
+        "lostCorrect": [
+          "HUNGRY"
+        ]
+      },
+      "daily": {
+        "baseline": {
+          "attempts": 5,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 25,
+          "negativeFalse": 12,
+          "precision": 1.0,
+          "negativeFalseRate": 0.48
+        },
+        "guard": {
+          "attempts": 5,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 25,
+          "negativeFalse": 3,
+          "precision": 1.0,
+          "negativeFalseRate": 0.12
+        },
+        "lostCorrect": []
+      },
+      "pack": {
+        "baseline": {
+          "attempts": 5,
+          "correct": 5,
+          "wrong": 0,
+          "noMatch": 0,
+          "negativeAttempts": 25,
+          "negativeFalse": 21,
+          "precision": 1.0,
+          "negativeFalseRate": 0.84
+        },
+        "guard": {
+          "attempts": 5,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 25,
+          "negativeFalse": 7,
+          "precision": 1.0,
+          "negativeFalseRate": 0.28
+        },
+        "lostCorrect": [
+          "NIGHT"
+        ]
+      }
+    },
+    "train": {
+      "default": {
+        "baseline": {
+          "attempts": 1,
+          "correct": 1,
+          "wrong": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "precision": 1.0,
+          "negativeFalseRate": 0.0
+        },
+        "guard": {
+          "attempts": 1,
+          "correct": 1,
+          "wrong": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "precision": 1.0,
+          "negativeFalseRate": 0.0
+        },
+        "lostCorrect": []
+      },
+      "expanded": {
+        "baseline": {
+          "attempts": 2,
+          "correct": 1,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "precision": 1.0,
+          "negativeFalseRate": 0.0
+        },
+        "guard": {
+          "attempts": 2,
+          "correct": 1,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "precision": 1.0,
+          "negativeFalseRate": 0.0
+        },
+        "lostCorrect": []
+      },
+      "daily": {
+        "baseline": {
+          "attempts": 1,
+          "correct": 1,
+          "wrong": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "negativeFalse": 1,
+          "precision": 1.0,
+          "negativeFalseRate": 0.3333333333333333
+        },
+        "guard": {
+          "attempts": 1,
+          "correct": 0,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "precision": 0.0,
+          "negativeFalseRate": 0.0
+        },
+        "lostCorrect": [
+          "HAVE"
+        ]
+      },
+      "pack": {
+        "baseline": {
+          "attempts": 1,
+          "correct": 0,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 3,
+          "negativeFalse": 2,
+          "precision": 0.0,
+          "negativeFalseRate": 0.6666666666666666
+        },
+        "guard": {
+          "attempts": 1,
+          "correct": 0,
+          "wrong": 0,
+          "noMatch": 1,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "precision": 0.0,
+          "negativeFalseRate": 0.0
+        },
+        "lostCorrect": []
+      }
+    }
+  },
+  "productionUnchanged": true,
+  "allFrozenInputsUnchanged": true,
+  "guardDidNotAddWords": true,
+  "physicalCameraCalls": 0,
+  "microphoneCalls": 0
+}

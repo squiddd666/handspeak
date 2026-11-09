@@ -1,0 +1,1216 @@
+{
+  "url": "http://127.0.0.1:8000/#sign-examples",
+  "videoCoverage": "198/198 recognition labels have reference videos available here · 147 local research clips added. Recognition models remain separate; all 198 cannot be active as one vocabulary.",
+  "scoreCoverage": "198 of 198 recognition labels have recorded test results. Separate-model benchmarks, not live-camera accuracy.",
+  "recognitionButtons": 198,
+  "unmeasured": [],
+  "camera": "◉ Start camera",
+  "buttons": [
+    {
+      "id": "bye",
+      "label": "BYE",
+      "score": "3D demo · learning only",
+      "title": "Learning-only Kai demo: the bundled reference performance when available, otherwise Studio Galt motion. No new camera-recognition model is enabled for this word."
+    },
+    {
+      "id": "my",
+      "label": "MY",
+      "score": "3D demo · learning only",
+      "title": "Learning-only Kai demo: the bundled reference performance when available, otherwise Studio Galt motion. No new camera-recognition model is enabled for this word."
+    },
+    {
+      "id": "brother",
+      "label": "BROTHER",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "buy",
+      "label": "BUY",
+      "score": "3D demo · learning only",
+      "title": "Learning-only Kai demo: the bundled reference performance when available, otherwise Studio Galt motion. No new camera-recognition model is enabled for this word."
+    },
+    {
+      "id": "hello",
+      "label": "HELLO",
+      "score": "91.7% test · 11/12",
+      "title": "Recorded accuracy: 91.7% (11/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "thank-you",
+      "label": "THANK YOU",
+      "score": "91.7% test · 11/12",
+      "title": "Recorded accuracy: 91.7% (11/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "please",
+      "label": "PLEASE",
+      "score": "91.7% test · 11/12",
+      "title": "Recorded accuracy: 91.7% (11/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "yes",
+      "label": "YES",
+      "score": "75% test · 9/12",
+      "title": "Recorded accuracy: 75% (9/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "no",
+      "label": "NO",
+      "score": "83.3% test · 10/12",
+      "title": "Recorded accuracy: 83.3% (10/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "finish",
+      "label": "FINISH",
+      "score": "58.3% test · 7/12",
+      "title": "Recorded accuracy: 58.3% (7/12 clips) · Default six-word model with per-word distance cutoffs. Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified."
+    },
+    {
+      "id": "drink",
+      "label": "DRINK",
+      "score": "87.5% test · 7/8",
+      "title": "Recorded accuracy: 87.5% (7/8 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "water",
+      "label": "WATER",
+      "score": "62.5% test · 5/8",
+      "title": "Recorded accuracy: 62.5% (5/8 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "book",
+      "label": "BOOK",
+      "score": "62.5% test · 5/8",
+      "title": "Recorded accuracy: 62.5% (5/8 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "food",
+      "label": "FOOD",
+      "score": "100% test · 5/5",
+      "title": "Recorded accuracy: 100% (5/5 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "hungry",
+      "label": "HUNGRY",
+      "score": "80% test · 4/5",
+      "title": "Recorded accuracy: 80% (4/5 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "like",
+      "label": "LIKE",
+      "score": "50% test · 3/6",
+      "title": "Recorded accuracy: 50% (3/6 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "go",
+      "label": "GO",
+      "score": "16.7% test · 1/6",
+      "title": "Recorded accuracy: 16.7% (1/6 clips) · Expanded preview: seven extra words (deployment-faithful frame sampling). Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18."
+    },
+    {
+      "id": "name",
+      "label": "NAME",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Five-word server preview. Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified."
+    },
+    {
+      "id": "home",
+      "label": "HOME",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Five-word server preview. Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified."
+    },
+    {
+      "id": "have",
+      "label": "HAVE",
+      "score": "100% test · 11/11",
+      "title": "Recorded accuracy: 100% (11/11 clips) · Five-word server preview. Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified."
+    },
+    {
+      "id": "want",
+      "label": "WANT",
+      "score": "68.2% test · 15/22",
+      "title": "Recorded accuracy: 68.2% (15/22 clips) · Five-word server preview. Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified."
+    },
+    {
+      "id": "love",
+      "label": "LOVE",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Five-word server preview. Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified."
+    },
+    {
+      "id": "baby",
+      "label": "BABY",
+      "score": "100% test · 8/8",
+      "title": "Recorded accuracy: 100% (8/8 clips) · Experimental BABY hand-motion model. Untouched ASL Citizen recorded test clips: 8/8 recognized, with zero false accepts among 319 negative clips. Live-camera accuracy remains unverified."
+    },
+    {
+      "id": "belt",
+      "label": "BELT",
+      "score": "92.9% test · 13/14",
+      "title": "Core 7-word ST-GCN, held-out test split: 13/14 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "eat",
+      "label": "EAT",
+      "score": "90.9% test · 10/11",
+      "title": "Core 7-word ST-GCN, held-out test split: 10/11 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "empty",
+      "label": "EMPTY",
+      "score": "87.5% test · 7/8",
+      "title": "Core 7-word ST-GCN, held-out test split: 7/8 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "peg",
+      "label": "PEG",
+      "score": "87.5% test · 7/8",
+      "title": "Core 7-word ST-GCN, held-out test split: 7/8 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "soccer",
+      "label": "SOCCER",
+      "score": "100% test · 8/8",
+      "title": "Core 7-word ST-GCN, held-out test split: 8/8 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "squeeze",
+      "label": "SQUEEZE",
+      "score": "87.5% test · 7/8",
+      "title": "Core 7-word ST-GCN, held-out test split: 7/8 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "vlog",
+      "label": "VLOG",
+      "score": "100% test · 9/9",
+      "title": "Core 7-word ST-GCN, held-out test split: 9/9 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "lock",
+      "label": "LOCK",
+      "score": "90% test · 9/10",
+      "title": "Extended 19-word ST-GCN, held-out test split: 9/10 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "duck",
+      "label": "DUCK",
+      "score": "88.9% test · 8/9",
+      "title": "Extended 19-word ST-GCN, held-out test split: 8/9 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "baseballcap",
+      "label": "BASEBALLCAP",
+      "score": "88.9% test · 8/9",
+      "title": "Extended 19-word ST-GCN, held-out test split: 8/9 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "other",
+      "label": "OTHER",
+      "score": "87.5% test · 7/8",
+      "title": "Extended 19-word ST-GCN, held-out test split: 7/8 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "whatfor",
+      "label": "WHATFOR",
+      "score": "85.7% test · 12/14",
+      "title": "Extended 19-word ST-GCN, held-out test split: 12/14 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "drag",
+      "label": "DRAG",
+      "score": "84.6% test · 11/13",
+      "title": "Extended 19-word ST-GCN, held-out test split: 11/13 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "microscope",
+      "label": "MICROSCOPE",
+      "score": "84.6% test · 11/13",
+      "title": "Extended 19-word ST-GCN, held-out test split: 11/13 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "party",
+      "label": "PARTY",
+      "score": "81.8% test · 9/11",
+      "title": "Extended 19-word ST-GCN, held-out test split: 9/11 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "demand",
+      "label": "DEMAND",
+      "score": "81.8% test · 9/11",
+      "title": "Extended 19-word ST-GCN, held-out test split: 9/11 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "edit",
+      "label": "EDIT",
+      "score": "81.8% test · 9/11",
+      "title": "Extended 19-word ST-GCN, held-out test split: 9/11 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "mechanic",
+      "label": "MECHANIC",
+      "score": "80% test · 12/15",
+      "title": "Extended 19-word ST-GCN, held-out test split: 12/15 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "deaf",
+      "label": "DEAF",
+      "score": "80% test · 8/10",
+      "title": "Extended 19-word ST-GCN, held-out test split: 8/10 correct. Live-camera accuracy is unverified."
+    },
+    {
+      "id": "8hour",
+      "label": "8HOUR",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "after",
+      "label": "AFTER",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "angry",
+      "label": "ANGRY",
+      "score": "100% test · 5/5",
+      "title": "Recorded accuracy: 100% (5/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "anyone",
+      "label": "ANYONE",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "apple",
+      "label": "APPLE",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "articulatesign",
+      "label": "ARTICULATESIGN",
+      "score": "87.5% test · 7/8",
+      "title": "Recorded accuracy: 87.5% (7/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "axe",
+      "label": "AXE",
+      "score": "46.2% test · 6/13",
+      "title": "Recorded accuracy: 46.2% (6/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "backpack",
+      "label": "BACKPACK",
+      "score": "58.3% test · 7/12",
+      "title": "Recorded accuracy: 58.3% (7/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "bad",
+      "label": "BAD",
+      "score": "71.4% test · 5/7",
+      "title": "Recorded accuracy: 71.4% (5/7 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "bag",
+      "label": "BAG",
+      "score": "100% test · 11/11",
+      "title": "Recorded accuracy: 100% (11/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "basketball",
+      "label": "BASKETBALL",
+      "score": "43.8% test · 7/16",
+      "title": "Recorded accuracy: 43.8% (7/16 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "bathroom",
+      "label": "BATHROOM",
+      "score": "100% test · 11/11",
+      "title": "Recorded accuracy: 100% (11/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "bee",
+      "label": "BEE",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "before",
+      "label": "BEFORE",
+      "score": "100% test · 10/10",
+      "title": "Recorded accuracy: 100% (10/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "bite",
+      "label": "BITE",
+      "score": "84.6% test · 11/13",
+      "title": "Recorded accuracy: 84.6% (11/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "bread",
+      "label": "BREAD",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "breakfast",
+      "label": "BREAKFAST",
+      "score": "53.8% test · 7/13",
+      "title": "Recorded accuracy: 53.8% (7/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "calendar",
+      "label": "CALENDAR",
+      "score": "57.1% test · 8/14",
+      "title": "Recorded accuracy: 57.1% (8/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "cancer",
+      "label": "CANCER",
+      "score": "66.7% test · 10/15",
+      "title": "Recorded accuracy: 66.7% (10/15 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "capture",
+      "label": "CAPTURE",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "catapult",
+      "label": "CATAPULT",
+      "score": "62.5% test · 5/8",
+      "title": "Recorded accuracy: 62.5% (5/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "cemetery",
+      "label": "CEMETERY",
+      "score": "58.3% test · 7/12",
+      "title": "Recorded accuracy: 58.3% (7/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "cheek",
+      "label": "CHEEK",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "cheesegrater",
+      "label": "CHEESEGRATER",
+      "score": "40% test · 4/10",
+      "title": "Recorded accuracy: 40% (4/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "child",
+      "label": "CHILD",
+      "score": "83.3% test · 5/6",
+      "title": "Recorded accuracy: 83.3% (5/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "christmas",
+      "label": "CHRISTMAS",
+      "score": "62.5% test · 10/16",
+      "title": "Recorded accuracy: 62.5% (10/16 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "close",
+      "label": "CLOSE",
+      "score": "66.7% test · 6/9",
+      "title": "Recorded accuracy: 66.7% (6/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "clothes",
+      "label": "CLOTHES",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "comb",
+      "label": "COMB",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "come",
+      "label": "COME",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "confused",
+      "label": "CONFUSED",
+      "score": "61.5% test · 8/13",
+      "title": "Recorded accuracy: 61.5% (8/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "dark",
+      "label": "DARK",
+      "score": "69.2% test · 9/13",
+      "title": "Recorded accuracy: 69.2% (9/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "decide",
+      "label": "DECIDE",
+      "score": "38.5% test · 5/13",
+      "title": "Recorded accuracy: 38.5% (5/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "develop",
+      "label": "DEVELOP",
+      "score": "50% test · 7/14",
+      "title": "Recorded accuracy: 50% (7/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "dinner",
+      "label": "DINNER",
+      "score": "50% test · 7/14",
+      "title": "Recorded accuracy: 50% (7/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "dog",
+      "label": "DOG",
+      "score": "64.3% test · 9/14",
+      "title": "Recorded accuracy: 64.3% (9/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "downsize",
+      "label": "DOWNSIZE",
+      "score": "91.7% test · 11/12",
+      "title": "Recorded accuracy: 91.7% (11/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "elevator",
+      "label": "ELEVATOR",
+      "score": "50% test · 7/14",
+      "title": "Recorded accuracy: 50% (7/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "erupt",
+      "label": "ERUPT",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "everyone",
+      "label": "EVERYONE",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "family",
+      "label": "FAMILY",
+      "score": "100% test · 4/4",
+      "title": "Recorded accuracy: 100% (4/4 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "father",
+      "label": "FATHER",
+      "score": "90% test · 9/10",
+      "title": "Recorded accuracy: 90% (9/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "fine",
+      "label": "FINE",
+      "score": "53.3% test · 8/15",
+      "title": "Recorded accuracy: 53.3% (8/15 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "fish",
+      "label": "FISH",
+      "score": "66.7% test · 2/3",
+      "title": "Recorded accuracy: 66.7% (2/3 clips) · Pack words (DTW) preview. Fresh recorded clips; live-camera accuracy unverified."
+    },
+    {
+      "id": "float",
+      "label": "FLOAT",
+      "score": "87.5% test · 7/8",
+      "title": "Recorded accuracy: 87.5% (7/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "foreigner",
+      "label": "FOREIGNER",
+      "score": "93.8% test · 15/16",
+      "title": "Recorded accuracy: 93.8% (15/16 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "friend",
+      "label": "FRIEND",
+      "score": "83.3% test · 5/6",
+      "title": "Recorded accuracy: 83.3% (5/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "give",
+      "label": "GIVE",
+      "score": "60% test · 3/5",
+      "title": "Recorded accuracy: 60% (3/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "good",
+      "label": "GOOD",
+      "score": "50% test · 2/4",
+      "title": "Recorded accuracy: 50% (2/4 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "good-afternoon",
+      "label": "GOOD AFTERNOON",
+      "score": "60% test · 3/5",
+      "title": "Recorded accuracy: 60% (3/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests. This benchmark tests the isolated AFTERNOON component labeled GOOD AFTERNOON, not the complete greeting sequence."
+    },
+    {
+      "id": "good-morning",
+      "label": "GOOD MORNING",
+      "score": "0% test · 0/1",
+      "title": "Recorded accuracy: 0% (0/1 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests. This benchmark tests the isolated MORNING component labeled GOOD MORNING, not the complete greeting sequence."
+    },
+    {
+      "id": "good-night",
+      "label": "GOOD NIGHT",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests. This benchmark tests the isolated NIGHT1, NIGHT2 component labeled GOOD NIGHT, not the complete greeting sequence."
+    },
+    {
+      "id": "goodbye",
+      "label": "GOODBYE",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "grammar",
+      "label": "GRAMMAR",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "guess",
+      "label": "GUESS",
+      "score": "41.7% test · 5/12",
+      "title": "Recorded accuracy: 41.7% (5/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "halloween",
+      "label": "HALLOWEEN",
+      "score": "69.2% test · 9/13",
+      "title": "Recorded accuracy: 69.2% (9/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "happy",
+      "label": "HAPPY",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "he-she",
+      "label": "HE / SHE",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "helicopter",
+      "label": "HELICOPTER",
+      "score": "90% test · 9/10",
+      "title": "Recorded accuracy: 90% (9/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "help",
+      "label": "HELP",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "here",
+      "label": "HERE",
+      "score": "100% test · 5/5",
+      "title": "Recorded accuracy: 100% (5/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "hope",
+      "label": "HOPE",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "hospital",
+      "label": "HOSPITAL",
+      "score": "73.3% test · 11/15",
+      "title": "Recorded accuracy: 73.3% (11/15 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "how",
+      "label": "HOW",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "hurdle-trip",
+      "label": "HURDLE / TRIP",
+      "score": "46.2% test · 6/13",
+      "title": "Recorded accuracy: 46.2% (6/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "i-me",
+      "label": "I / ME",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "impossible",
+      "label": "IMPOSSIBLE",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "inside",
+      "label": "INSIDE",
+      "score": "44.4% test · 4/9",
+      "title": "Recorded accuracy: 44.4% (4/9 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "intuitive",
+      "label": "INTUITIVE",
+      "score": "55.6% test · 5/9",
+      "title": "Recorded accuracy: 55.6% (5/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "jewelry",
+      "label": "JEWELRY",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "joke",
+      "label": "JOKE",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "knight",
+      "label": "KNIGHT",
+      "score": "50% test · 4/8",
+      "title": "Recorded accuracy: 50% (4/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "know",
+      "label": "KNOW",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "later",
+      "label": "LATER",
+      "score": "55.6% test · 5/9",
+      "title": "Recorded accuracy: 55.6% (5/9 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "lettuce",
+      "label": "LETTUCE",
+      "score": "66.7% test · 10/15",
+      "title": "Recorded accuracy: 66.7% (10/15 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "lunch",
+      "label": "LUNCH",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "maple",
+      "label": "MAPLE",
+      "score": "77.8% test · 7/9",
+      "title": "Recorded accuracy: 77.8% (7/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "meaculpa",
+      "label": "MEACULPA",
+      "score": "37.5% test · 3/8",
+      "title": "Recorded accuracy: 37.5% (3/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "meat",
+      "label": "MEAT",
+      "score": "33.3% test · 3/9",
+      "title": "Recorded accuracy: 33.3% (3/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "milk",
+      "label": "MILK",
+      "score": "90.9% test · 10/11",
+      "title": "Recorded accuracy: 90.9% (10/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "money",
+      "label": "MONEY",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "morning",
+      "label": "MORNING",
+      "score": "90% test · 9/10",
+      "title": "Recorded accuracy: 90% (9/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "mother",
+      "label": "MOTHER",
+      "score": "83.3% test · 5/6",
+      "title": "Recorded accuracy: 83.3% (5/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "mouth",
+      "label": "MOUTH",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "movie",
+      "label": "MOVIE",
+      "score": "50% test · 8/16",
+      "title": "Recorded accuracy: 50% (8/16 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "my-mine",
+      "label": "MY / MINE",
+      "score": "100% test · 5/5",
+      "title": "Recorded accuracy: 100% (5/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "myself",
+      "label": "MYSELF",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "need",
+      "label": "NEED",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "night",
+      "label": "NIGHT",
+      "score": "66.7% test · 2/3",
+      "title": "Recorded accuracy: 66.7% (2/3 clips) · Pack words (DTW) preview. Fresh recorded clips; live-camera accuracy unverified."
+    },
+    {
+      "id": "noon",
+      "label": "NOON",
+      "score": "33.3% test · 4/12",
+      "title": "Recorded accuracy: 33.3% (4/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "now",
+      "label": "NOW",
+      "score": "60% test · 6/10",
+      "title": "Recorded accuracy: 60% (6/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "offend",
+      "label": "OFFEND",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "okay",
+      "label": "OKAY",
+      "score": "90% test · 9/10",
+      "title": "Recorded accuracy: 90% (9/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "outside",
+      "label": "OUTSIDE",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "pain",
+      "label": "PAIN",
+      "score": "33.3% test · 1/3",
+      "title": "Recorded accuracy: 33.3% (1/3 clips) · Pack words (DTW) preview. Fresh recorded clips; live-camera accuracy unverified."
+    },
+    {
+      "id": "patient",
+      "label": "PATIENT",
+      "score": "46.2% test · 6/13",
+      "title": "Recorded accuracy: 46.2% (6/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "phone",
+      "label": "PHONE",
+      "score": "90.9% test · 10/11",
+      "title": "Recorded accuracy: 90.9% (10/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "pipe",
+      "label": "PIPE",
+      "score": "66.7% test · 6/9",
+      "title": "Recorded accuracy: 66.7% (6/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "ponder",
+      "label": "PONDER",
+      "score": "50% test · 6/12",
+      "title": "Recorded accuracy: 50% (6/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "press",
+      "label": "PRESS",
+      "score": "50% test · 4/8",
+      "title": "Recorded accuracy: 50% (4/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "razor",
+      "label": "RAZOR",
+      "score": "44.4% test · 4/9",
+      "title": "Recorded accuracy: 44.4% (4/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "river",
+      "label": "RIVER",
+      "score": "66.7% test · 10/15",
+      "title": "Recorded accuracy: 66.7% (10/15 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "rockingchair",
+      "label": "ROCKINGCHAIR",
+      "score": "78.6% test · 11/14",
+      "title": "Recorded accuracy: 78.6% (11/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "run",
+      "label": "RUN",
+      "score": "60% test · 3/5",
+      "title": "Recorded accuracy: 60% (3/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "sad",
+      "label": "SAD",
+      "score": "100% test · 4/4",
+      "title": "Recorded accuracy: 100% (4/4 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "scared",
+      "label": "SCARED",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "school",
+      "label": "SCHOOL",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "scrolldown",
+      "label": "SCROLLDOWN",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "see",
+      "label": "SEE",
+      "score": "100% test · 3/3",
+      "title": "Recorded accuracy: 100% (3/3 clips) · Pack words (DTW) preview. Fresh recorded clips; live-camera accuracy unverified."
+    },
+    {
+      "id": "shark",
+      "label": "SHARK",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "shave",
+      "label": "SHAVE",
+      "score": "69.2% test · 9/13",
+      "title": "Recorded accuracy: 69.2% (9/13 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "shocked",
+      "label": "SHOCKED",
+      "score": "60% test · 6/10",
+      "title": "Recorded accuracy: 60% (6/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "sick",
+      "label": "SICK",
+      "score": "66.7% test · 2/3",
+      "title": "Recorded accuracy: 66.7% (2/3 clips) · Pack words (DTW) preview. Fresh recorded clips; live-camera accuracy unverified."
+    },
+    {
+      "id": "since",
+      "label": "SINCE",
+      "score": "66.7% test · 6/9",
+      "title": "Recorded accuracy: 66.7% (6/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "sink",
+      "label": "SINK",
+      "score": "62.5% test · 5/8",
+      "title": "Recorded accuracy: 62.5% (5/8 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "sister",
+      "label": "SISTER",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "sit",
+      "label": "SIT",
+      "score": "100% test · 5/5",
+      "title": "Recorded accuracy: 100% (5/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "sleep",
+      "label": "SLEEP",
+      "score": "75% test · 6/8",
+      "title": "Recorded accuracy: 75% (6/8 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "slide",
+      "label": "SLIDE",
+      "score": "60% test · 6/10",
+      "title": "Recorded accuracy: 60% (6/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "sorry",
+      "label": "SORRY",
+      "score": "100% test · 3/3",
+      "title": "Recorded accuracy: 100% (3/3 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "stand",
+      "label": "STAND",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "stop",
+      "label": "STOP",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "store",
+      "label": "STORE",
+      "score": "80% test · 4/5",
+      "title": "Recorded accuracy: 80% (4/5 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "student",
+      "label": "STUDENT",
+      "score": "50% test · 3/6",
+      "title": "Recorded accuracy: 50% (3/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "sweater",
+      "label": "SWEATER",
+      "score": "60% test · 6/10",
+      "title": "Recorded accuracy: 60% (6/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "tail",
+      "label": "TAIL",
+      "score": "10% test · 1/10",
+      "title": "Recorded accuracy: 10% (1/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "take",
+      "label": "TAKE",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "teach",
+      "label": "TEACH",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "teacher",
+      "label": "TEACHER",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "that",
+      "label": "THAT",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "there",
+      "label": "THERE",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "they",
+      "label": "THEY",
+      "score": "50% test · 7/14",
+      "title": "Recorded accuracy: 50% (7/14 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "third",
+      "label": "THIRD",
+      "score": "75% test · 9/12",
+      "title": "Recorded accuracy: 75% (9/12 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "thirsty",
+      "label": "THIRSTY",
+      "score": "55.6% test · 5/9",
+      "title": "Recorded accuracy: 55.6% (5/9 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "this",
+      "label": "THIS",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "time",
+      "label": "TIME",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "tired",
+      "label": "TIRED",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "today",
+      "label": "TODAY",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "tomato",
+      "label": "TOMATO",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "tomorrow",
+      "label": "TOMORROW",
+      "score": "100% test · 8/8",
+      "title": "Recorded accuracy: 100% (8/8 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "tractor",
+      "label": "TRACTOR",
+      "score": "100% test · 9/9",
+      "title": "Recorded accuracy: 100% (9/9 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "twins",
+      "label": "TWINS",
+      "score": "70% test · 7/10",
+      "title": "Recorded accuracy: 70% (7/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "vomit",
+      "label": "VOMIT",
+      "score": "60% test · 6/10",
+      "title": "Recorded accuracy: 60% (6/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "wait",
+      "label": "WAIT",
+      "score": "54.5% test · 6/11",
+      "title": "Recorded accuracy: 54.5% (6/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "wake-up",
+      "label": "WAKE UP",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "walk",
+      "label": "WALK",
+      "score": "50% test · 3/6",
+      "title": "Recorded accuracy: 50% (3/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "walk-tightrope-cl",
+      "label": "WALK TIGHTROPE CL",
+      "score": "30% test · 3/10",
+      "title": "Recorded accuracy: 30% (3/10 clips) · Full 100-word ST-GCN ensemble · recorded benchmark. Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy."
+    },
+    {
+      "id": "we",
+      "label": "WE",
+      "score": "45.5% test · 5/11",
+      "title": "Recorded accuracy: 45.5% (5/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "welcome",
+      "label": "WELCOME",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "what",
+      "label": "WHAT",
+      "score": "63.6% test · 7/11",
+      "title": "Recorded accuracy: 63.6% (7/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "when",
+      "label": "WHEN",
+      "score": "72.7% test · 8/11",
+      "title": "Recorded accuracy: 72.7% (8/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "where",
+      "label": "WHERE",
+      "score": "50% test · 5/10",
+      "title": "Recorded accuracy: 50% (5/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "which",
+      "label": "WHICH",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "who",
+      "label": "WHO",
+      "score": "81.8% test · 9/11",
+      "title": "Recorded accuracy: 81.8% (9/11 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "why",
+      "label": "WHY",
+      "score": "90% test · 9/10",
+      "title": "Recorded accuracy: 90% (9/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "work",
+      "label": "WORK",
+      "score": "83.3% test · 5/6",
+      "title": "Recorded accuracy: 83.3% (5/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "score": "100% test · 10/10",
+      "title": "Recorded accuracy: 100% (10/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "you",
+      "label": "YOU",
+      "score": "80% test · 8/10",
+      "title": "Recorded accuracy: 80% (8/10 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    },
+    {
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "score": "100% test · 6/6",
+      "title": "Recorded accuracy: 100% (6/6 clips) · Beginner-79 ST-GCN need79-v1 · recorded benchmark. Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests."
+    }
+  ]
+}

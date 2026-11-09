@@ -1,0 +1,22 @@
+test_contract (test_handshape_features.HandshapeFeatureTests.test_contract) ... ok
+test_gap_not_invented (test_handshape_features.HandshapeFeatureTests.test_gap_not_invented) ... ok
+test_mirror_is_involution (test_handshape_features.HandshapeFeatureTests.test_mirror_is_involution) ... ok
+test_missing_side_stays_zero (test_handshape_features.HandshapeFeatureTests.test_missing_side_stays_zero) ... ok
+test_pose_z_does_not_contaminate_hand_depth (test_handshape_features.HandshapeFeatureTests.test_pose_z_does_not_contaminate_hand_depth) ... ok
+test_reject_invalid_and_untracked (test_handshape_features.HandshapeFeatureTests.test_reject_invalid_and_untracked) ... ok
+test_translation_and_size_invariant (test_handshape_features.HandshapeFeatureTests.test_translation_and_size_invariant) ... ok
+test_anatomical_mirror_is_an_involution (test_sign_features.FeatureTests.test_anatomical_mirror_is_an_involution) ... ok
+test_empty_hands_cannot_create_a_word_prediction (test_sign_features.FeatureTests.test_empty_hands_cannot_create_a_word_prediction) ... ok
+test_gap_cannot_create_phantom_interpolated_hands (test_sign_features.FeatureTests.test_gap_cannot_create_phantom_interpolated_hands) ... ok
+test_legacy_feature_math_stays_compatible (test_sign_features.FeatureTests.test_legacy_feature_math_stays_compatible) ... ok
+test_missing_hand_is_zero_after_normalization (test_sign_features.FeatureTests.test_missing_hand_is_zero_after_normalization) ... ok
+test_validation_rejects_malformed_or_nonfinite_landmarks (test_sign_features.FeatureTests.test_validation_rejects_malformed_or_nonfinite_landmarks) ... ok
+test_checkpoint_change_invalidates_stale_calibration (test_sign_features.GateTests.test_checkpoint_change_invalidates_stale_calibration) ... ok
+test_close_scores_remain_unaccepted_suggestions (test_sign_features.GateTests.test_close_scores_remain_unaccepted_suggestions) ... ok
+test_policy_never_uses_expected_practice_word (test_sign_features.GateTests.test_policy_never_uses_expected_practice_word) ... ok
+test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match (test_sign_features.GateTests.test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.198s
+
+OK

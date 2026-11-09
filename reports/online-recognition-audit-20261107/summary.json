@@ -1,0 +1,2211 @@
+{
+  "native": {
+    "outcomes": 76,
+    "failed": 0,
+    "metrics": {
+      "candidate": {
+        "positiveAttempts": 69,
+        "matched": 14,
+        "incorrect": 1,
+        "noMatch": 54,
+        "negativeAttempts": 7,
+        "falseAccepts": 0,
+        "correctRejections": 7
+      },
+      "default": {
+        "positiveAttempts": 18,
+        "matched": 13,
+        "incorrect": 0,
+        "noMatch": 5,
+        "negativeAttempts": 58,
+        "falseAccepts": 30,
+        "correctRejections": 28
+      },
+      "expanded": {
+        "positiveAttempts": 51,
+        "matched": 26,
+        "incorrect": 14,
+        "noMatch": 11,
+        "negativeAttempts": 25,
+        "falseAccepts": 21,
+        "correctRejections": 4
+      },
+      "daily": {
+        "positiveAttempts": 6,
+        "matched": 3,
+        "incorrect": 2,
+        "noMatch": 1,
+        "negativeAttempts": 70,
+        "falseAccepts": 39,
+        "correctRejections": 31
+      },
+      "pack": {
+        "positiveAttempts": 12,
+        "matched": 9,
+        "incorrect": 1,
+        "noMatch": 2,
+        "negativeAttempts": 64,
+        "falseAccepts": 53,
+        "correctRejections": 11
+      }
+    },
+    "perLabel": {
+      "APPLE": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "BOOK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 1,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "CAR": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "DOG": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 1,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 1,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 1,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 1,
+          "correctRejections": 0
+        }
+      },
+      "DRINK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "FINISH": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 2,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "FISH": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "FOOD": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 4,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 2,
+          "correctRejections": 4
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 5,
+          "incorrect": 1,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 5,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 6,
+          "correctRejections": 0
+        }
+      },
+      "GO": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 2,
+          "correctRejections": 4
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 3,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 2,
+          "correctRejections": 4
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 4,
+          "correctRejections": 2
+        }
+      },
+      "HAVE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 2,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "HELLO": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 1,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "HOME": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "daily": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "HUNGRY": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 4,
+          "correctRejections": 2
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 3,
+          "incorrect": 1,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 3,
+          "correctRejections": 3
+        }
+      },
+      "LIKE": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 5,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 5,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 2,
+          "incorrect": 3,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 5,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 6,
+          "correctRejections": 0
+        }
+      },
+      "NIGHT": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "NO": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 1,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "PLEASE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 1,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "SEE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "SICK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 1,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 1,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "THANK YOU": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 2,
+          "incorrect": 0,
+          "noMatch": 1,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        }
+      },
+      "WATER": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 2,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      },
+      "YES": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 3,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 3,
+          "correctRejections": 0
+        }
+      }
+    }
+  },
+  "browser": {
+    "outcomes": 76,
+    "failed": 1,
+    "metrics": {
+      "candidate": {
+        "positiveAttempts": 69,
+        "matched": 1,
+        "incorrect": 0,
+        "noMatch": 68,
+        "negativeAttempts": 7,
+        "falseAccepts": 0,
+        "correctRejections": 7
+      },
+      "default": {
+        "positiveAttempts": 18,
+        "matched": 1,
+        "incorrect": 0,
+        "noMatch": 17,
+        "negativeAttempts": 58,
+        "falseAccepts": 0,
+        "correctRejections": 58
+      },
+      "expanded": {
+        "positiveAttempts": 51,
+        "matched": 0,
+        "incorrect": 1,
+        "noMatch": 50,
+        "negativeAttempts": 25,
+        "falseAccepts": 0,
+        "correctRejections": 25
+      },
+      "daily": {
+        "positiveAttempts": 6,
+        "matched": 0,
+        "incorrect": 0,
+        "noMatch": 6,
+        "negativeAttempts": 70,
+        "falseAccepts": 0,
+        "correctRejections": 70
+      },
+      "pack": {
+        "positiveAttempts": 12,
+        "matched": 0,
+        "incorrect": 0,
+        "noMatch": 12,
+        "negativeAttempts": 64,
+        "falseAccepts": 1,
+        "correctRejections": 63
+      }
+    },
+    "perLabel": {
+      "APPLE": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "BOOK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "CAR": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "DOG": {
+        "candidate": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 1,
+          "falseAccepts": 0,
+          "correctRejections": 1
+        }
+      },
+      "DRINK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "FINISH": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "FISH": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "FOOD": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        }
+      },
+      "GO": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        }
+      },
+      "HAVE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "HELLO": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "HOME": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "HUNGRY": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 5,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        }
+      },
+      "LIKE": {
+        "candidate": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "expanded": {
+          "positiveAttempts": 6,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 6,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 6,
+          "falseAccepts": 0,
+          "correctRejections": 6
+        }
+      },
+      "NIGHT": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "NO": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "PLEASE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "SEE": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "SICK": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        }
+      },
+      "THANK YOU": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 1,
+          "incorrect": 0,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 1,
+          "noMatch": 2,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 1,
+          "correctRejections": 2
+        }
+      },
+      "WATER": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      },
+      "YES": {
+        "candidate": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "default": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "expanded": {
+          "positiveAttempts": 3,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 3,
+          "negativeAttempts": 0,
+          "falseAccepts": 0,
+          "correctRejections": 0
+        },
+        "daily": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        },
+        "pack": {
+          "positiveAttempts": 0,
+          "matched": 0,
+          "incorrect": 0,
+          "noMatch": 0,
+          "negativeAttempts": 3,
+          "falseAccepts": 0,
+          "correctRejections": 3
+        }
+      }
+    },
+    "captureContractsPassed": 75,
+    "pairedFrames": 381,
+    "truncatedPlaybacks": 0,
+    "realCameraCalls": 0,
+    "microphoneCalls": 0
+  },
+  "cohortRecordings": 76,
+  "positiveCandidateRecordings": 69,
+  "negativeCandidateRecordings": 7,
+  "candidateWordCoverage": 19,
+  "missingCandidateWords": [
+    "BABY",
+    "LOVE",
+    "NAME",
+    "PAIN",
+    "WANT"
+  ],
+  "knownSigners": 8,
+  "freshNewSignerAudit": false,
+  "all198Tested": false,
+  "fullProductionAppRoutingVerified": false,
+  "modelAndRuntimeUnchanged": true,
+  "trained": false,
+  "thresholdsChanged": false,
+  "candidatePromoted": false,
+  "selectionAfterPredictions": false,
+  "liveCameraAccuracyVerified": false,
+  "sourceEvidenceSha256": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\protocol.json": "1ed817d89a302798b56034b3c79beab323d4efbcab5fb9593851916a395ee3a5",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\native.jsonl": "e4028206c5e74075223f46212a1b9d716e8db4372d380823133e2570ed33b1fb",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\native-predictions.jsonl": "985c7ad9b1cec2a7bd91f24b61571ddac17854a03689bfa441d5696dc1274a8c",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\browser-ledger\\checkpoint.json": "f4631eb41dde2d1c2b4a0c5bc8b4cf9623dc832fa8cf265829e77e278ad54a97",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\fixture.json": "4852beedcaedb6ee6df5c7a50d24bc41f4343b7eaaad382a7d4c308722a63ee2",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\fixture.html": "1296245d1202b0cc5a60163ea203024c0d600414c13cb899fdcf23ae592e54c3",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-recognition-audit-20261107\\browser-transport-v3\\browser-version.json": "b0068caaf6915918776fb7e83c9a2a1a24d3e57cbdebd2ee0e30d7c92711b6ba"
+  }
+}

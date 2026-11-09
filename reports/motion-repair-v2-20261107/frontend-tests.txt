@@ -1,0 +1,46 @@
+✔ frozen canvas and live video dimensions are both supported (3.6462ms)
+✔ crop points return to the full image, with depth scaled by width (0.6513ms)
+✔ crossed hands are assigned by pose anatomy rather than screen order (1.6459ms)
+✔ one observation cannot fill two missing slots (0.4663ms)
+✔ known Holistic hand is retained and cannot be duplicated by recovery (0.3073ms)
+✔ distant and tiny detections cannot invent hands (0.2891ms)
+✔ unseen wrists are not cropped and crops stay within the image (0.4668ms)
+✔ dedicated recovery uses IMAGE mode and the same frozen frame (1.9546ms)
+✔ countdown warms the real tracker but contributes no model frames (4.4345ms)
+✔ recording cannot start until the in-flight warm-up has completed (0.6919ms)
+✔ deadline drains and retains the last recording result even while busy (2.4458ms)
+✔ capture finishes on a timer without waiting for a new camera frame (1.4732ms)
+✔ duplicate images are never counted as fresh tracked frames (0.8626ms)
+✔ invalid pose, malformed hands, and blank frames cannot pass as tracking (0.9846ms)
+✔ canceling a countdown cancels its timer and any later tracking result (0.39ms)
+✔ two vocabularies reuse one graph and cannot consume each other’s take (0.7344ms)
+✔ a hung final send times out and a retry builds a fresh tracker (4.8117ms)
+✔ closing cancels capture and rejects any subsequent start (6.1882ms)
+✔ busy tracker buffers distinct real images and drains the complete recording (0.9267ms)
+✔ cancellation releases pending snapshots without counting their results (0.6122ms)
+✔ capture buffering has a strict 80-image memory bound (4.5752ms)
+✔ accepted BABY specialist is not swallowed by a spurious default template (3.098ms)
+✔ a rejecting specialist cannot replace a valid default suggestion (1.6615ms)
+✔ accepted HELLO and enabled WATER specialists are not swallowed by templates (2.0917ms)
+✔ conflicting specialist positives are rejected without comparing unrelated scores (1.1888ms)
+✔ WATER cannot bypass the disabled expanded vocabulary (3.5961ms)
+✔ category recognition is isolated from default specialists (1.8362ms)
+✔ manual models get a complete four-second window after countdown (1.0308ms)
+✔ the virtual runner references only real app or diagnostic controls (3.4879ms)
+✔ daily preview consent is the existing preview checkbox, not a invented control (0.4397ms)
+✔ reference tests never add reviewed words or substitute expected predictions (1.21ms)
+✔ virtual source fails closed off the isolated loopback host (8.9588ms)
+✔ camera cannot start before the visible virtual-only marker exists (13.1038ms)
+✔ microphone requests never fall back to a real device (1.2568ms)
+✔ local test storage is in-memory and separate from personal storage (1.2242ms)
+✔ unrelated same-origin server writes are blocked (1.7732ms)
+✔ recognition calls pass through without substituting results (1.8967ms)
+✔ fixture has no app-click automation and exports no raw coordinate arrays (0.4172ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 217.8041

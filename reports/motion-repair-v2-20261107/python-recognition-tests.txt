@@ -1,0 +1,84 @@
+test_anatomical_mirror_is_an_involution (test_sign_features.FeatureTests.test_anatomical_mirror_is_an_involution) ... ok
+test_empty_hands_cannot_create_a_word_prediction (test_sign_features.FeatureTests.test_empty_hands_cannot_create_a_word_prediction) ... ok
+test_gap_cannot_create_phantom_interpolated_hands (test_sign_features.FeatureTests.test_gap_cannot_create_phantom_interpolated_hands) ... ok
+test_legacy_feature_math_stays_compatible (test_sign_features.FeatureTests.test_legacy_feature_math_stays_compatible) ... ok
+test_missing_hand_is_zero_after_normalization (test_sign_features.FeatureTests.test_missing_hand_is_zero_after_normalization) ... ok
+test_validation_rejects_malformed_or_nonfinite_landmarks (test_sign_features.FeatureTests.test_validation_rejects_malformed_or_nonfinite_landmarks) ... ok
+test_checkpoint_change_invalidates_stale_calibration (test_sign_features.GateTests.test_checkpoint_change_invalidates_stale_calibration) ... ok
+test_close_scores_remain_unaccepted_suggestions (test_sign_features.GateTests.test_close_scores_remain_unaccepted_suggestions) ... ok
+test_policy_never_uses_expected_practice_word (test_sign_features.GateTests.test_policy_never_uses_expected_practice_word) ... ok
+test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match (test_sign_features.GateTests.test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.108s
+
+OK
+test_motion (unittest.loader._FailedTest.test_motion) ... ERROR
+test_class_can_recover_three_correct_with_no_extra_false_accept (test_motion_class_calibration.ClassCalibrationTests.test_class_can_recover_three_correct_with_no_extra_false_accept) ... ok
+test_gate_is_for_actual_top_class_only (test_motion_class_calibration.ClassCalibrationTests.test_gate_is_for_actual_top_class_only) ... ok
+test_missing_class_keeps_global_rejection (test_motion_class_calibration.ClassCalibrationTests.test_missing_class_keeps_global_rejection) ... ok
+test_tracking_misses_are_counted (test_motion_class_calibration.ClassCalibrationTests.test_tracking_misses_are_counted) ... ok
+test_two_favorable_examples_cannot_relax_the_gate (test_motion_class_calibration.ClassCalibrationTests.test_two_favorable_examples_cannot_relax_the_gate) ... ok
+test_unknown_error_budget_cannot_be_relaxed (test_motion_class_calibration.ClassCalibrationTests.test_unknown_error_budget_cannot_be_relaxed) ... ok
+test_duplicate_attempts_are_rejected (test_motion_release.MotionReleaseTests.test_duplicate_attempts_are_rejected) ... ok
+test_empty_hands_cannot_be_counted_as_an_accepted_word (test_motion_release.MotionReleaseTests.test_empty_hands_cannot_be_counted_as_an_accepted_word) ... ok
+test_false_accepts_cannot_be_omitted (test_motion_release.MotionReleaseTests.test_false_accepts_cannot_be_omitted) ... ok
+test_tampered_summary_is_rejected (test_motion_release.MotionReleaseTests.test_tampered_summary_is_rejected) ... ok
+test_tracking_misses_stay_in_denominator (test_motion_release.MotionReleaseTests.test_tracking_misses_stay_in_denominator) ... ok
+test_zero_accuracy_is_valid_measured_data (test_motion_release.MotionReleaseTests.test_zero_accuracy_is_valid_measured_data) ... ok
+test_duplicate_or_missing_words_are_rejected (test_motion_repair_report.RepairReportTests.test_duplicate_or_missing_words_are_rejected) ... ok
+test_every_attempt_is_counted_once (test_motion_repair_report.RepairReportTests.test_every_attempt_is_counted_once) ... ok
+test_slow_retry_does_not_inflate_baseline (test_motion_repair_report.RepairReportTests.test_slow_retry_does_not_inflate_baseline) ... ok
+test_unfinished_or_slow_baseline_is_rejected (test_motion_repair_report.RepairReportTests.test_unfinished_or_slow_baseline_is_rejected) ... ok
+test_actual_predictions_display_their_correct_benchmark_family (test_motion_virtual_report.MotionVirtualReportTests.test_actual_predictions_display_their_correct_benchmark_family) ... ok
+test_all_198_project_buttons_have_scores_without_starting_a_camera (test_motion_virtual_report.MotionVirtualReportTests.test_all_198_project_buttons_have_scores_without_starting_a_camera) ... ok
+test_exactly_one_normal_speed_attempt_for_every_primary_reference (test_motion_virtual_report.MotionVirtualReportTests.test_exactly_one_normal_speed_attempt_for_every_primary_reference) ... ok
+test_failures_and_tracking_misses_stay_in_the_denominator (test_motion_virtual_report.MotionVirtualReportTests.test_failures_and_tracking_misses_stay_in_the_denominator) ... ok
+test_no_physical_devices_or_raw_coordinate_exports (test_motion_virtual_report.MotionVirtualReportTests.test_no_physical_devices_or_raw_coordinate_exports) ... ok
+
+======================================================================
+ERROR: test_motion (unittest.loader._FailedTest.test_motion)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_motion
+Traceback (most recent call last):
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 5, in <module>
+    import quickjs
+ModuleNotFoundError: No module named 'quickjs'
+
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.102s
+
+FAILED (errors=1)
+test_border_hand_and_out_of_frame_other_wrist_do_not_swap_sides (test_reference_tracking.ReferenceTrackingTests.test_border_hand_and_out_of_frame_other_wrist_do_not_swap_sides) ... ok
+test_cached_slots_can_be_repaired_without_retracking_video (test_reference_tracking.ReferenceTrackingTests.test_cached_slots_can_be_repaired_without_retracking_video) ... ok
+test_crossing_hands_keep_anatomical_identity_not_screen_x (test_reference_tracking.ReferenceTrackingTests.test_crossing_hands_keep_anatomical_identity_not_screen_x) ... ok
+test_lower_supporting_hand_is_not_discarded (test_reference_tracking.ReferenceTrackingTests.test_lower_supporting_hand_is_not_discarded) ... ok
+test_pose_anchor_overrules_wrong_classifier_label (test_reference_tracking.ReferenceTrackingTests.test_pose_anchor_overrules_wrong_classifier_label) ... ok
+test_single_hand_cannot_fill_both_slots (test_reference_tracking.ReferenceTrackingTests.test_single_hand_cannot_fill_both_slots) ... ok
+test_unknown_detection_is_not_guessed_from_screen_half (test_reference_tracking.ReferenceTrackingTests.test_unknown_detection_is_not_guessed_from_screen_half) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+test_all_147_research_clips_support_bounded_video_range_requests (test_research_video_library.ResearchVideoTests.test_all_147_research_clips_support_bounded_video_range_requests) ... ok
+test_all_198_references_get_and_head_succeed_with_correct_content (test_research_video_library.ResearchVideoTests.test_all_198_references_get_and_head_succeed_with_correct_content) ... ok
+test_catalog_reader_uses_utf8_with_a_legacy_windows_default (test_research_video_library.ResearchVideoTests.test_catalog_reader_uses_utf8_with_a_legacy_windows_default) ... ok
+test_exact_198_label_union_and_all_catalog_entries (test_research_video_library.ResearchVideoTests.test_exact_198_label_union_and_all_catalog_entries) ... ok
+test_loopback_host_check_rejects_remote_clients_and_duplicate_hosts (test_research_video_library.ResearchVideoTests.test_loopback_host_check_rejects_remote_clients_and_duplicate_hosts) ... ok
+test_provenance_output_hashes_and_original_40_reconstructions (test_research_video_library.ResearchVideoTests.test_provenance_output_hashes_and_original_40_reconstructions) ... ok
+test_public_hosts_origins_and_proxy_headers_are_rejected_for_get_and_head (test_research_video_library.ResearchVideoTests.test_public_hosts_origins_and_proxy_headers_are_rejected_for_get_and_head) ... ok
+test_research_media_is_git_ignored (test_research_video_library.ResearchVideoTests.test_research_media_is_git_ignored) ... ok
+test_runtime_statuses_cannot_claim_ready_when_model_loading_fails (test_research_video_library.ResearchVideoTests.test_runtime_statuses_cannot_claim_ready_when_model_loading_fails) ... ok
+test_suffix_ranges_and_invalid_ranges (test_research_video_library.ResearchVideoTests.test_suffix_ranges_and_invalid_ranges) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.745s
+
+OK

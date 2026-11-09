@@ -1,0 +1,3223 @@
+{
+  "version": 1,
+  "profiles": {
+    "default": {
+      "model": "Default six-word model with per-word distance cutoffs",
+      "scope": "Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified.",
+      "words": {
+        "HELLO": {
+          "correct": 11,
+          "total": 12
+        },
+        "THANK YOU": {
+          "correct": 11,
+          "total": 12
+        },
+        "PLEASE": {
+          "correct": 11,
+          "total": 12
+        },
+        "YES": {
+          "correct": 9,
+          "total": 12
+        },
+        "NO": {
+          "correct": 10,
+          "total": 12
+        },
+        "FINISH": {
+          "correct": 7,
+          "total": 12
+        }
+      },
+      "note": "2026-10-17: contiguous sampling, then per-word distance cutoffs calibrated on validation. Model prototypes unchanged; recognizer verified in JavaScript. Earlier runs retained in protocolHistory."
+    },
+    "expanded": {
+      "model": "Expanded preview: seven extra words (deployment-faithful frame sampling)",
+      "scope": "Recorded clips sampled contiguously over the signing window, as the live camera pipeline does; 11/16 unsupported signs were falsely accepted. Live-camera accuracy unverified. Protocol changed 2026-10-18.",
+      "words": {
+        "DRINK": {
+          "correct": 7,
+          "total": 8
+        },
+        "WATER": {
+          "correct": 5,
+          "total": 8
+        },
+        "BOOK": {
+          "correct": 5,
+          "total": 8
+        },
+        "FOOD": {
+          "correct": 5,
+          "total": 5
+        },
+        "HUNGRY": {
+          "correct": 4,
+          "total": 5
+        },
+        "LIKE": {
+          "correct": 3,
+          "total": 6
+        },
+        "GO": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "modelSha256": "4d0863fa051abe752c739998f08fb2937366da098a2ad871a507ed9df9d008b9",
+      "note": "2026-10-18: frame sampling changed from uniform to contiguous. Two test clips are still untrackable (1 FOOD-class clip and 1 GO clip). Model and parameters unchanged; per-word cutoffs were searched on validation and did not change the test result."
+    },
+    "daily": {
+      "model": "Five-word server preview",
+      "scope": "Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified.",
+      "words": {
+        "NAME": {
+          "correct": 8,
+          "total": 11
+        },
+        "HOME": {
+          "correct": 8,
+          "total": 11
+        },
+        "HAVE": {
+          "correct": 11,
+          "total": 11
+        },
+        "WANT": {
+          "correct": 15,
+          "total": 22
+        },
+        "LOVE": {
+          "correct": 9,
+          "total": 11
+        }
+      },
+      "modelSha256": "ecb9c8e061876c9ca50af4b9f5faab55d78a530798ac653798f9e95c37fefb67",
+      "note": "2026-10-18: contiguous sampling (44/66 -> 50/66) then per-word cutoffs (50/66 -> 51/66). Prototypes unchanged; server matcher verified against the scoring implementation."
+    },
+    "baby": {
+      "model": "Experimental BABY hand-motion model",
+      "scope": "Untouched ASL Citizen recorded test clips: 8/8 recognized, with zero false accepts among 319 negative clips. Live-camera accuracy remains unverified.",
+      "words": {
+        "BABY": {
+          "correct": 8,
+          "total": 8
+        }
+      },
+      "note": "2026-10-21: evaluated on the reserved ASL Citizen test split and verified against the browser scoring implementation."
+    },
+    "capstoneFull": {
+      "model": "Full 100-word ST-GCN ensemble · recorded benchmark",
+      "scope": "Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy.",
+      "checkpoint": "capstone100-v4-ensemble.pt",
+      "modelSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "words": {
+        "BABY": {
+          "correct": 8,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "BABY2"
+        },
+        "HOSPITAL": {
+          "correct": 11,
+          "total": 15,
+          "answered": 14,
+          "datasetLabel": "HOSPITAL1"
+        },
+        "NIGHT": {
+          "correct": 10,
+          "total": 17,
+          "answered": 14,
+          "datasetLabel": "NIGHT1"
+        },
+        "CONFUSED": {
+          "correct": 8,
+          "total": 13,
+          "answered": 13,
+          "datasetLabel": "CONFUSED1"
+        },
+        "FINE": {
+          "correct": 8,
+          "total": 15,
+          "answered": 9,
+          "datasetLabel": "FINE1"
+        },
+        "MEAT": {
+          "correct": 3,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "MEAT1"
+        },
+        "BREAKFAST": {
+          "correct": 7,
+          "total": 13,
+          "answered": 10,
+          "datasetLabel": "BREAKFAST1"
+        },
+        "LUNCH": {
+          "correct": 6,
+          "total": 11,
+          "answered": 11,
+          "datasetLabel": "LUNCH1"
+        },
+        "DINNER": {
+          "correct": 7,
+          "total": 14,
+          "answered": 13,
+          "datasetLabel": "DINNER1"
+        },
+        "HOW": {
+          "correct": 7,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "HOW1"
+        },
+        "THEY": {
+          "correct": 7,
+          "total": 14,
+          "answered": 12,
+          "datasetLabel": "THEY1"
+        },
+        "EAT": {
+          "correct": 10,
+          "total": 14,
+          "answered": 11,
+          "datasetLabel": "EAT1"
+        },
+        "8HOUR": {
+          "correct": 7,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "8HOUR"
+        },
+        "ANYONE": {
+          "correct": 7,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "ANYONE"
+        },
+        "APPLE": {
+          "correct": 7,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "APPLE"
+        },
+        "ARTICULATESIGN": {
+          "correct": 7,
+          "total": 8,
+          "answered": 8,
+          "datasetLabel": "ARTICULATESIGN"
+        },
+        "AXE": {
+          "correct": 6,
+          "total": 13,
+          "answered": 12,
+          "datasetLabel": "AXE1"
+        },
+        "BACKPACK": {
+          "correct": 7,
+          "total": 12,
+          "answered": 8,
+          "datasetLabel": "BACKPACK1"
+        },
+        "BASEBALLCAP": {
+          "correct": 8,
+          "total": 9,
+          "answered": 9,
+          "datasetLabel": "BASEBALLCAP"
+        },
+        "BASKETBALL": {
+          "correct": 7,
+          "total": 16,
+          "answered": 13,
+          "datasetLabel": "BASKETBALL1"
+        },
+        "BEE": {
+          "correct": 5,
+          "total": 11,
+          "answered": 7,
+          "datasetLabel": "BEE1"
+        },
+        "BELT": {
+          "correct": 13,
+          "total": 18,
+          "answered": 14,
+          "datasetLabel": "BELT1"
+        },
+        "BITE": {
+          "correct": 11,
+          "total": 13,
+          "answered": 13,
+          "datasetLabel": "BITE1"
+        },
+        "CALENDAR": {
+          "correct": 8,
+          "total": 14,
+          "answered": 13,
+          "datasetLabel": "CALENDAR1"
+        },
+        "CANCER": {
+          "correct": 10,
+          "total": 15,
+          "answered": 15,
+          "datasetLabel": "CANCER1"
+        },
+        "CAPTURE": {
+          "correct": 9,
+          "total": 11,
+          "answered": 9,
+          "datasetLabel": "CAPTURE"
+        },
+        "CATAPULT": {
+          "correct": 5,
+          "total": 8,
+          "answered": 8,
+          "datasetLabel": "CATAPULT"
+        },
+        "CEMETERY": {
+          "correct": 7,
+          "total": 12,
+          "answered": 11,
+          "datasetLabel": "CEMETERY"
+        },
+        "CHEEK": {
+          "correct": 5,
+          "total": 11,
+          "answered": 8,
+          "datasetLabel": "CHEEK"
+        },
+        "CHEESEGRATER": {
+          "correct": 4,
+          "total": 10,
+          "answered": 10,
+          "datasetLabel": "CHEESEGRATER"
+        },
+        "CHRISTMAS": {
+          "correct": 10,
+          "total": 16,
+          "answered": 12,
+          "datasetLabel": "CHRISTMAS1"
+        },
+        "CLOSE": {
+          "correct": 6,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "CLOSE"
+        },
+        "COMB": {
+          "correct": 5,
+          "total": 11,
+          "answered": 7,
+          "datasetLabel": "COMB2"
+        },
+        "DARK": {
+          "correct": 9,
+          "total": 13,
+          "answered": 10,
+          "datasetLabel": "DARK1"
+        },
+        "DEAF": {
+          "correct": 8,
+          "total": 13,
+          "answered": 10,
+          "datasetLabel": "DEAF1"
+        },
+        "DECIDE": {
+          "correct": 5,
+          "total": 13,
+          "answered": 8,
+          "datasetLabel": "DECIDE1"
+        },
+        "DEMAND": {
+          "correct": 9,
+          "total": 13,
+          "answered": 11,
+          "datasetLabel": "DEMAND1"
+        },
+        "DEVELOP": {
+          "correct": 7,
+          "total": 14,
+          "answered": 13,
+          "datasetLabel": "DEVELOP1"
+        },
+        "DOG": {
+          "correct": 9,
+          "total": 14,
+          "answered": 11,
+          "datasetLabel": "DOG1"
+        },
+        "DOWNSIZE": {
+          "correct": 11,
+          "total": 12,
+          "answered": 11,
+          "datasetLabel": "DOWNSIZE1"
+        },
+        "DRAG": {
+          "correct": 11,
+          "total": 15,
+          "answered": 13,
+          "datasetLabel": "DRAG1"
+        },
+        "DUCK": {
+          "correct": 8,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "DUCK2"
+        },
+        "EDIT": {
+          "correct": 9,
+          "total": 15,
+          "answered": 11,
+          "datasetLabel": "EDIT1"
+        },
+        "ELEVATOR": {
+          "correct": 7,
+          "total": 14,
+          "answered": 13,
+          "datasetLabel": "ELEVATOR1"
+        },
+        "EMPTY": {
+          "correct": 6,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "EMPTY2"
+        },
+        "ERUPT": {
+          "correct": 8,
+          "total": 11,
+          "answered": 11,
+          "datasetLabel": "ERUPT2"
+        },
+        "FLOAT": {
+          "correct": 7,
+          "total": 8,
+          "answered": 8,
+          "datasetLabel": "FLOAT1"
+        },
+        "FOREIGNER": {
+          "correct": 15,
+          "total": 16,
+          "answered": 15,
+          "datasetLabel": "FOREIGNER1"
+        },
+        "GRAMMAR": {
+          "correct": 7,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "GRAMMAR"
+        },
+        "GUESS": {
+          "correct": 5,
+          "total": 12,
+          "answered": 7,
+          "datasetLabel": "GUESS1"
+        },
+        "HALLOWEEN": {
+          "correct": 9,
+          "total": 13,
+          "answered": 11,
+          "datasetLabel": "HALLOWEEN1"
+        },
+        "HELICOPTER": {
+          "correct": 9,
+          "total": 10,
+          "answered": 10,
+          "datasetLabel": "HELICOPTER2"
+        },
+        "HOPE": {
+          "correct": 5,
+          "total": 10,
+          "answered": 6,
+          "datasetLabel": "HOPE"
+        },
+        "HURDLE / TRIP": {
+          "correct": 6,
+          "total": 13,
+          "answered": 11,
+          "datasetLabel": "HURDLE/TRIP1"
+        },
+        "IMPOSSIBLE": {
+          "correct": 8,
+          "total": 10,
+          "answered": 10,
+          "datasetLabel": "IMPOSSIBLE"
+        },
+        "INTUITIVE": {
+          "correct": 5,
+          "total": 9,
+          "answered": 6,
+          "datasetLabel": "INTUITIVE"
+        },
+        "JEWELRY": {
+          "correct": 8,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "JEWELRY"
+        },
+        "JOKE": {
+          "correct": 7,
+          "total": 11,
+          "answered": 8,
+          "datasetLabel": "JOKE"
+        },
+        "KNIGHT": {
+          "correct": 4,
+          "total": 8,
+          "answered": 6,
+          "datasetLabel": "KNIGHT1"
+        },
+        "LETTUCE": {
+          "correct": 10,
+          "total": 15,
+          "answered": 13,
+          "datasetLabel": "LETTUCE1"
+        },
+        "LOCK": {
+          "correct": 9,
+          "total": 11,
+          "answered": 10,
+          "datasetLabel": "LOCK1"
+        },
+        "MAPLE": {
+          "correct": 7,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "MAPLE"
+        },
+        "MEACULPA": {
+          "correct": 3,
+          "total": 8,
+          "answered": 7,
+          "datasetLabel": "MEACULPA"
+        },
+        "MECHANIC": {
+          "correct": 12,
+          "total": 15,
+          "answered": 15,
+          "datasetLabel": "MECHANIC1"
+        },
+        "MICROSCOPE": {
+          "correct": 11,
+          "total": 13,
+          "answered": 13,
+          "datasetLabel": "MICROSCOPE1"
+        },
+        "MOUTH": {
+          "correct": 5,
+          "total": 10,
+          "answered": 5,
+          "datasetLabel": "MOUTH"
+        },
+        "MOVIE": {
+          "correct": 8,
+          "total": 16,
+          "answered": 14,
+          "datasetLabel": "MOVIE1"
+        },
+        "MYSELF": {
+          "correct": 7,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "MYSELF"
+        },
+        "NOON": {
+          "correct": 4,
+          "total": 12,
+          "answered": 11,
+          "datasetLabel": "NOON1"
+        },
+        "OFFEND": {
+          "correct": 5,
+          "total": 10,
+          "answered": 7,
+          "datasetLabel": "OFFEND"
+        },
+        "OTHER": {
+          "correct": 7,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "OTHER"
+        },
+        "PARTY": {
+          "correct": 9,
+          "total": 13,
+          "answered": 11,
+          "datasetLabel": "PARTY1"
+        },
+        "PATIENT": {
+          "correct": 6,
+          "total": 13,
+          "answered": 9,
+          "datasetLabel": "PATIENT2"
+        },
+        "PEG": {
+          "correct": 7,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "PEG2"
+        },
+        "PIPE": {
+          "correct": 6,
+          "total": 9,
+          "answered": 6,
+          "datasetLabel": "PIPE2"
+        },
+        "PONDER": {
+          "correct": 6,
+          "total": 12,
+          "answered": 10,
+          "datasetLabel": "PONDER"
+        },
+        "PRESS": {
+          "correct": 4,
+          "total": 8,
+          "answered": 6,
+          "datasetLabel": "PRESS"
+        },
+        "RAZOR": {
+          "correct": 4,
+          "total": 9,
+          "answered": 5,
+          "datasetLabel": "RAZOR2"
+        },
+        "RIVER": {
+          "correct": 10,
+          "total": 15,
+          "answered": 14,
+          "datasetLabel": "RIVER1"
+        },
+        "ROCKINGCHAIR": {
+          "correct": 11,
+          "total": 14,
+          "answered": 14,
+          "datasetLabel": "ROCKINGCHAIR1"
+        },
+        "SCROLLDOWN": {
+          "correct": 5,
+          "total": 10,
+          "answered": 7,
+          "datasetLabel": "SCROLLDOWN"
+        },
+        "SHARK": {
+          "correct": 5,
+          "total": 10,
+          "answered": 10,
+          "datasetLabel": "SHARK1"
+        },
+        "SHAVE": {
+          "correct": 9,
+          "total": 13,
+          "answered": 13,
+          "datasetLabel": "SHAVE1"
+        },
+        "SHOCKED": {
+          "correct": 6,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "SHOCKED"
+        },
+        "SINCE": {
+          "correct": 6,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "SINCE"
+        },
+        "SINK": {
+          "correct": 5,
+          "total": 8,
+          "answered": 8,
+          "datasetLabel": "SINK"
+        },
+        "SLIDE": {
+          "correct": 6,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "SLIDE2"
+        },
+        "SOCCER": {
+          "correct": 8,
+          "total": 11,
+          "answered": 8,
+          "datasetLabel": "SOCCER2"
+        },
+        "SQUEEZE": {
+          "correct": 6,
+          "total": 9,
+          "answered": 8,
+          "datasetLabel": "SQUEEZE"
+        },
+        "SWEATER": {
+          "correct": 6,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "SWEATER2"
+        },
+        "TAIL": {
+          "correct": 1,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "TAIL1"
+        },
+        "TEACH": {
+          "correct": 8,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "TEACH1"
+        },
+        "THIRD": {
+          "correct": 9,
+          "total": 12,
+          "answered": 10,
+          "datasetLabel": "THIRD1"
+        },
+        "TOMATO": {
+          "correct": 7,
+          "total": 10,
+          "answered": 9,
+          "datasetLabel": "TOMATO"
+        },
+        "TRACTOR": {
+          "correct": 9,
+          "total": 9,
+          "answered": 9,
+          "datasetLabel": "TRACTOR"
+        },
+        "TWINS": {
+          "correct": 7,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "TWINS1"
+        },
+        "VLOG": {
+          "correct": 9,
+          "total": 11,
+          "answered": 9,
+          "datasetLabel": "VLOG"
+        },
+        "VOMIT": {
+          "correct": 6,
+          "total": 10,
+          "answered": 8,
+          "datasetLabel": "VOMIT"
+        },
+        "WALK TIGHTROPE CL": {
+          "correct": 3,
+          "total": 10,
+          "answered": 10,
+          "datasetLabel": "WALK-TIGHTROPE-CL"
+        },
+        "WHATFOR": {
+          "correct": 12,
+          "total": 15,
+          "answered": 14,
+          "datasetLabel": "WHATFOR1"
+        }
+      },
+      "current": {
+        "model": "Full 100-word ST-GCN ensemble · current gated recorded benchmark",
+        "scope": "Current frozen-checkpoint held-out recorded test, using validation-selected rejection gates. All known-word attempts are counted; tracking failures count as misses. Primary Watch reference clips are excluded, and test sources/signers are separate from train/validation. Live-camera accuracy remains unverified. Unsupported signs: 103/689 falsely accepted. Scores are recorded accuracy, not confidence in a camera suggestion.",
+        "checkpoint": "capstone100-v4-ensemble.pt",
+        "evaluatedCheckpoint": "capstone100-v4-ensemble.pt",
+        "modelSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "preprocessorVersion": "legacy-v1",
+        "mirrorTta": true,
+        "mirrorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+        "calibrationSha256": "94f4b22290cb3f83ff265cdbd276aab0edd061281eb838fc805af2da5e4bcbf7",
+        "selectionSplit": "val",
+        "testUsedForSelection": false,
+        "watchClipsExcluded": true,
+        "sourceReport": "reports/motion-repair-v2-20261107/heldout-capstone.json",
+        "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+        "vocabulary": "full",
+        "totals": {
+          "attempts": 1206,
+          "correct": 515,
+          "wrong": 30,
+          "noMatch": 661,
+          "tracked": 926,
+          "negativeAttempts": 689,
+          "negativeFalse": 103
+        },
+        "words": {
+          "8HOUR": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "8HOUR"
+          },
+          "ANYONE": {
+            "total": 11,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "ANYONE"
+          },
+          "APPLE": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "APPLE"
+          },
+          "ARTICULATESIGN": {
+            "total": 8,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "ARTICULATESIGN"
+          },
+          "AXE": {
+            "total": 14,
+            "correct": 5,
+            "wrong": 1,
+            "noMatch": 8,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "AXE1"
+          },
+          "BABY": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "BABY2"
+          },
+          "BACKPACK": {
+            "total": 14,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 12,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "BACKPACK1"
+          },
+          "BASEBALLCAP": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "BASEBALLCAP"
+          },
+          "BASKETBALL": {
+            "total": 19,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 13,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "BASKETBALL1"
+          },
+          "BEE": {
+            "total": 13,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "BEE1"
+          },
+          "BELT": {
+            "total": 18,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "BELT1"
+          },
+          "BITE": {
+            "total": 13,
+            "correct": 8,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "BITE1"
+          },
+          "BREAKFAST": {
+            "total": 14,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 13,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "BREAKFAST1"
+          },
+          "CALENDAR": {
+            "total": 15,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CALENDAR1"
+          },
+          "CANCER": {
+            "total": 14,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "CANCER1"
+          },
+          "CAPTURE": {
+            "total": 11,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CAPTURE"
+          },
+          "CATAPULT": {
+            "total": 8,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CATAPULT"
+          },
+          "CEMETERY": {
+            "total": 11,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "CEMETERY"
+          },
+          "CHEEK": {
+            "total": 10,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "CHEEK"
+          },
+          "CHEESEGRATER": {
+            "total": 9,
+            "correct": 4,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CHEESEGRATER"
+          },
+          "CHRISTMAS": {
+            "total": 16,
+            "correct": 7,
+            "wrong": 1,
+            "noMatch": 8,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "CHRISTMAS1"
+          },
+          "CLOSE": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 1,
+            "noMatch": 5,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CLOSE"
+          },
+          "COMB": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "COMB2"
+          },
+          "CONFUSED": {
+            "total": 14,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CONFUSED1"
+          },
+          "DARK": {
+            "total": 14,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "DARK1"
+          },
+          "DEAF": {
+            "total": 15,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "DEAF1"
+          },
+          "DECIDE": {
+            "total": 14,
+            "correct": 5,
+            "wrong": 2,
+            "noMatch": 7,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "DECIDE1"
+          },
+          "DEMAND": {
+            "total": 14,
+            "correct": 9,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "DEMAND1"
+          },
+          "DEVELOP": {
+            "total": 13,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "DEVELOP1"
+          },
+          "DINNER": {
+            "total": 14,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 13,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "DINNER1"
+          },
+          "DOG": {
+            "total": 16,
+            "correct": 7,
+            "wrong": 1,
+            "noMatch": 8,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "DOG1"
+          },
+          "DOWNSIZE": {
+            "total": 15,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "DOWNSIZE1"
+          },
+          "DRAG": {
+            "total": 17,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "DRAG1"
+          },
+          "DUCK": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "DUCK2"
+          },
+          "EAT": {
+            "total": 17,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "EAT1"
+          },
+          "EDIT": {
+            "total": 15,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "EDIT1"
+          },
+          "ELEVATOR": {
+            "total": 14,
+            "correct": 3,
+            "wrong": 2,
+            "noMatch": 9,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "ELEVATOR1"
+          },
+          "EMPTY": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "EMPTY2"
+          },
+          "ERUPT": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "ERUPT2"
+          },
+          "FINE": {
+            "total": 16,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "FINE1"
+          },
+          "FLOAT": {
+            "total": 9,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "FLOAT1"
+          },
+          "FOREIGNER": {
+            "total": 16,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 11,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "FOREIGNER1"
+          },
+          "GRAMMAR": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "GRAMMAR"
+          },
+          "GUESS": {
+            "total": 13,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "GUESS1"
+          },
+          "HALLOWEEN": {
+            "total": 13,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "HALLOWEEN1"
+          },
+          "HELICOPTER": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "HELICOPTER2"
+          },
+          "HOPE": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "HOPE"
+          },
+          "HOSPITAL": {
+            "total": 16,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "HOSPITAL1"
+          },
+          "HOW": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "HOW1"
+          },
+          "HURDLE / TRIP": {
+            "total": 12,
+            "correct": 2,
+            "wrong": 2,
+            "noMatch": 8,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "HURDLE/TRIP1"
+          },
+          "IMPOSSIBLE": {
+            "total": 10,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "IMPOSSIBLE"
+          },
+          "INTUITIVE": {
+            "total": 9,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "INTUITIVE"
+          },
+          "JEWELRY": {
+            "total": 9,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "JEWELRY"
+          },
+          "JOKE": {
+            "total": 11,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "JOKE"
+          },
+          "KNIGHT": {
+            "total": 9,
+            "correct": 2,
+            "wrong": 1,
+            "noMatch": 6,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "KNIGHT1"
+          },
+          "LETTUCE": {
+            "total": 15,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "LETTUCE1"
+          },
+          "LOCK": {
+            "total": 14,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 12,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "LOCK1"
+          },
+          "LUNCH": {
+            "total": 13,
+            "correct": 2,
+            "wrong": 1,
+            "noMatch": 10,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "LUNCH1"
+          },
+          "MAPLE": {
+            "total": 9,
+            "correct": 6,
+            "wrong": 1,
+            "noMatch": 2,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "MAPLE"
+          },
+          "MEACULPA": {
+            "total": 8,
+            "correct": 2,
+            "wrong": 1,
+            "noMatch": 5,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "MEACULPA"
+          },
+          "MEAT": {
+            "total": 9,
+            "correct": 2,
+            "wrong": 1,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "MEAT1"
+          },
+          "MECHANIC": {
+            "total": 16,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 15,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "MECHANIC1"
+          },
+          "MICROSCOPE": {
+            "total": 16,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "MICROSCOPE1"
+          },
+          "MOUTH": {
+            "total": 10,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "MOUTH"
+          },
+          "MOVIE": {
+            "total": 16,
+            "correct": 3,
+            "wrong": 1,
+            "noMatch": 12,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "MOVIE1"
+          },
+          "MYSELF": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "MYSELF"
+          },
+          "NIGHT": {
+            "total": 16,
+            "correct": 8,
+            "wrong": 1,
+            "noMatch": 7,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "NIGHT1"
+          },
+          "NOON": {
+            "total": 14,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 13,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "NOON1"
+          },
+          "OFFEND": {
+            "total": 10,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "OFFEND"
+          },
+          "OTHER": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "OTHER"
+          },
+          "PARTY": {
+            "total": 15,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "PARTY1"
+          },
+          "PATIENT": {
+            "total": 15,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 11,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "PATIENT2"
+          },
+          "PEG": {
+            "total": 11,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "PEG2"
+          },
+          "PIPE": {
+            "total": 9,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "PIPE2"
+          },
+          "PONDER": {
+            "total": 11,
+            "correct": 3,
+            "wrong": 1,
+            "noMatch": 7,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "PONDER"
+          },
+          "PRESS": {
+            "total": 8,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "PRESS"
+          },
+          "RAZOR": {
+            "total": 8,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "RAZOR2"
+          },
+          "RIVER": {
+            "total": 14,
+            "correct": 8,
+            "wrong": 1,
+            "noMatch": 5,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "RIVER1"
+          },
+          "ROCKINGCHAIR": {
+            "total": 14,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "ROCKINGCHAIR1"
+          },
+          "SCROLLDOWN": {
+            "total": 9,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "SCROLLDOWN"
+          },
+          "SHARK": {
+            "total": 9,
+            "correct": 3,
+            "wrong": 1,
+            "noMatch": 5,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "SHARK1"
+          },
+          "SHAVE": {
+            "total": 14,
+            "correct": 6,
+            "wrong": 3,
+            "noMatch": 5,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "SHAVE1"
+          },
+          "SHOCKED": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "SHOCKED"
+          },
+          "SINCE": {
+            "total": 10,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "SINCE"
+          },
+          "SINK": {
+            "total": 9,
+            "correct": 2,
+            "wrong": 2,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "SINK"
+          },
+          "SLIDE": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "SLIDE2"
+          },
+          "SOCCER": {
+            "total": 12,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "SOCCER2"
+          },
+          "SQUEEZE": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "SQUEEZE"
+          },
+          "SWEATER": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "SWEATER2"
+          },
+          "TAIL": {
+            "total": 9,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "TAIL1"
+          },
+          "TEACH": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "TEACH1"
+          },
+          "THEY": {
+            "total": 14,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 13,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "THEY1"
+          },
+          "THIRD": {
+            "total": 13,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "THIRD1"
+          },
+          "TOMATO": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "TOMATO"
+          },
+          "TRACTOR": {
+            "total": 8,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "TRACTOR"
+          },
+          "TWINS": {
+            "total": 14,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "TWINS1"
+          },
+          "VLOG": {
+            "total": 11,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "VLOG"
+          },
+          "VOMIT": {
+            "total": 10,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "VOMIT"
+          },
+          "WALK TIGHTROPE CL": {
+            "total": 10,
+            "correct": 0,
+            "wrong": 1,
+            "noMatch": 9,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "WALK-TIGHTROPE-CL"
+          },
+          "WHATFOR": {
+            "total": 18,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "WHATFOR1"
+          }
+        }
+      }
+    },
+    "beginner": {
+      "model": "Beginner-79 ST-GCN need79-v1 · recorded benchmark",
+      "scope": "Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests.",
+      "checkpoint": "beginner-need79-v1.pt",
+      "modelSha256": "3149785c4fdd6ac18d0da1a559b767e7b8f9e6d0ba378cbf568739a8231682d7",
+      "words": {
+        "AFTER": {
+          "correct": 8,
+          "total": 11
+        },
+        "ANGRY": {
+          "correct": 5,
+          "total": 5
+        },
+        "BAD": {
+          "correct": 5,
+          "total": 7
+        },
+        "BAG": {
+          "correct": 11,
+          "total": 11
+        },
+        "BATHROOM": {
+          "correct": 11,
+          "total": 11
+        },
+        "BEFORE": {
+          "correct": 10,
+          "total": 10
+        },
+        "BREAD": {
+          "correct": 9,
+          "total": 11
+        },
+        "BROTHER": {
+          "correct": 6,
+          "total": 11
+        },
+        "CHILD": {
+          "correct": 5,
+          "total": 6
+        },
+        "CLOTHES": {
+          "correct": 9,
+          "total": 11
+        },
+        "COME": {
+          "correct": 8,
+          "total": 10
+        },
+        "EVERYONE": {
+          "correct": 9,
+          "total": 11
+        },
+        "FAMILY": {
+          "correct": 4,
+          "total": 4
+        },
+        "FATHER": {
+          "correct": 9,
+          "total": 10
+        },
+        "FRIEND": {
+          "correct": 5,
+          "total": 6
+        },
+        "GIVE": {
+          "correct": 3,
+          "total": 5
+        },
+        "GOOD": {
+          "correct": 2,
+          "total": 4
+        },
+        "GOOD AFTERNOON": {
+          "correct": 3,
+          "total": 5,
+          "note": "This benchmark tests the isolated AFTERNOON component labeled GOOD AFTERNOON, not the complete greeting sequence."
+        },
+        "GOOD MORNING": {
+          "correct": 0,
+          "total": 1,
+          "note": "This benchmark tests the isolated MORNING component labeled GOOD MORNING, not the complete greeting sequence."
+        },
+        "GOOD NIGHT": {
+          "correct": 9,
+          "total": 11,
+          "note": "This benchmark tests the isolated NIGHT1, NIGHT2 component labeled GOOD NIGHT, not the complete greeting sequence."
+        },
+        "GOODBYE": {
+          "correct": 8,
+          "total": 11
+        },
+        "HAPPY": {
+          "correct": 6,
+          "total": 11
+        },
+        "HE / SHE": {
+          "correct": 7,
+          "total": 10
+        },
+        "HELP": {
+          "correct": 7,
+          "total": 10
+        },
+        "HERE": {
+          "correct": 5,
+          "total": 5
+        },
+        "HOSPITAL": {
+          "correct": 5,
+          "total": 6
+        },
+        "HOW": {
+          "correct": 4,
+          "total": 5
+        },
+        "I / ME": {
+          "correct": 7,
+          "total": 11
+        },
+        "INSIDE": {
+          "correct": 4,
+          "total": 9
+        },
+        "KNOW": {
+          "correct": 5,
+          "total": 11
+        },
+        "LATER": {
+          "correct": 5,
+          "total": 9
+        },
+        "MILK": {
+          "correct": 10,
+          "total": 11
+        },
+        "MONEY": {
+          "correct": 5,
+          "total": 11
+        },
+        "MORNING": {
+          "correct": 9,
+          "total": 10
+        },
+        "MOTHER": {
+          "correct": 5,
+          "total": 6
+        },
+        "MY / MINE": {
+          "correct": 5,
+          "total": 5
+        },
+        "NEED": {
+          "correct": 7,
+          "total": 11
+        },
+        "NOW": {
+          "correct": 6,
+          "total": 10
+        },
+        "OKAY": {
+          "correct": 9,
+          "total": 10
+        },
+        "OUTSIDE": {
+          "correct": 9,
+          "total": 11
+        },
+        "PHONE": {
+          "correct": 10,
+          "total": 11
+        },
+        "RUN": {
+          "correct": 3,
+          "total": 5
+        },
+        "SAD": {
+          "correct": 4,
+          "total": 4
+        },
+        "SCARED": {
+          "correct": 6,
+          "total": 6
+        },
+        "SCHOOL": {
+          "correct": 6,
+          "total": 11
+        },
+        "SISTER": {
+          "correct": 6,
+          "total": 11
+        },
+        "SIT": {
+          "correct": 5,
+          "total": 5
+        },
+        "SLEEP": {
+          "correct": 6,
+          "total": 8
+        },
+        "SORRY": {
+          "correct": 3,
+          "total": 3
+        },
+        "STAND": {
+          "correct": 6,
+          "total": 6
+        },
+        "STOP": {
+          "correct": 7,
+          "total": 11
+        },
+        "STORE": {
+          "correct": 4,
+          "total": 5
+        },
+        "STUDENT": {
+          "correct": 3,
+          "total": 6
+        },
+        "TAKE": {
+          "correct": 7,
+          "total": 11
+        },
+        "TEACHER": {
+          "correct": 6,
+          "total": 6
+        },
+        "THAT": {
+          "correct": 6,
+          "total": 6
+        },
+        "THERE": {
+          "correct": 6,
+          "total": 11
+        },
+        "THEY": {
+          "correct": 7,
+          "total": 11
+        },
+        "THIRSTY": {
+          "correct": 5,
+          "total": 9
+        },
+        "THIS": {
+          "correct": 9,
+          "total": 11
+        },
+        "TIME": {
+          "correct": 8,
+          "total": 10
+        },
+        "TIRED": {
+          "correct": 8,
+          "total": 11
+        },
+        "TODAY": {
+          "correct": 7,
+          "total": 11
+        },
+        "TOMORROW": {
+          "correct": 8,
+          "total": 8
+        },
+        "WAIT": {
+          "correct": 6,
+          "total": 11
+        },
+        "WAKE UP": {
+          "correct": 6,
+          "total": 6
+        },
+        "WALK": {
+          "correct": 3,
+          "total": 6
+        },
+        "WE": {
+          "correct": 5,
+          "total": 11
+        },
+        "WELCOME": {
+          "correct": 7,
+          "total": 11
+        },
+        "WHAT": {
+          "correct": 7,
+          "total": 11
+        },
+        "WHEN": {
+          "correct": 8,
+          "total": 11
+        },
+        "WHERE": {
+          "correct": 5,
+          "total": 10
+        },
+        "WHICH": {
+          "correct": 6,
+          "total": 6
+        },
+        "WHO": {
+          "correct": 9,
+          "total": 11
+        },
+        "WHY": {
+          "correct": 9,
+          "total": 10
+        },
+        "WORK": {
+          "correct": 5,
+          "total": 6
+        },
+        "YESTERDAY": {
+          "correct": 10,
+          "total": 10
+        },
+        "YOU": {
+          "correct": 8,
+          "total": 10
+        },
+        "YOUR / YOURS": {
+          "correct": 6,
+          "total": 6
+        }
+      },
+      "current": {
+        "model": "Beginner-79 repaired ST-GCN · current gated recorded benchmark",
+        "scope": "Current frozen-checkpoint held-out recorded test, using validation-selected rejection gates. All known-word attempts are counted; tracking failures count as misses. Primary Watch reference clips are excluded, and test sources/signers are separate from train/validation. Live-camera accuracy remains unverified. Unsupported signs: 174/1166 falsely accepted. Scores are recorded accuracy, not confidence in a camera suggestion.",
+        "checkpoint": "beginner-repaired-v2.pt",
+        "evaluatedCheckpoint": "beginner-repaired-v2.pt",
+        "modelSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "preprocessorVersion": "masked-v2",
+        "mirrorTta": true,
+        "mirrorVersion": "anatomical-v2",
+        "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+        "calibrationSha256": "94f4b22290cb3f83ff265cdbd276aab0edd061281eb838fc805af2da5e4bcbf7",
+        "selectionSplit": "val",
+        "testUsedForSelection": false,
+        "watchClipsExcluded": true,
+        "sourceReport": "reports/motion-repair-v2-20261107/heldout-beginner.json",
+        "sourceReportSha256": "b68059fbfd27b6339943a153a91694410336555cf5cea3d58c8ac3f4252244cc",
+        "vocabulary": "full",
+        "totals": {
+          "attempts": 747,
+          "correct": 394,
+          "wrong": 23,
+          "noMatch": 330,
+          "tracked": 641,
+          "negativeAttempts": 1166,
+          "negativeFalse": 174
+        },
+        "words": {
+          "GOODBYE": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "GOODBYE"
+          },
+          "SORRY": {
+            "total": 2,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 1,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "SORRY"
+          },
+          "OKAY": {
+            "total": 9,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "OKAY"
+          },
+          "WELCOME": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 1,
+            "noMatch": 2,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "WELCOME"
+          },
+          "GOOD MORNING": {
+            "total": 9,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 9,
+            "syntheticGreeting": 9,
+            "answered": 0,
+            "datasetLabel": "GOOD MORNING",
+            "note": "These attempts use synthetic joined GOOD + time-of-day recordings, not natural continuous greetings. Natural full-greeting recognition remains unverified."
+          },
+          "GOOD AFTERNOON": {
+            "total": 9,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 9,
+            "syntheticGreeting": 9,
+            "answered": 2,
+            "datasetLabel": "GOOD AFTERNOON",
+            "note": "These attempts use synthetic joined GOOD + time-of-day recordings, not natural continuous greetings. Natural full-greeting recognition remains unverified."
+          },
+          "GOOD NIGHT": {
+            "total": 9,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 9,
+            "syntheticGreeting": 9,
+            "answered": 8,
+            "datasetLabel": "GOOD NIGHT",
+            "note": "These attempts use synthetic joined GOOD + time-of-day recordings, not natural continuous greetings. Natural full-greeting recognition remains unverified."
+          },
+          "HOW": {
+            "total": 4,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "HOW"
+          },
+          "WHAT": {
+            "total": 24,
+            "correct": 12,
+            "wrong": 4,
+            "noMatch": 8,
+            "tracked": 20,
+            "syntheticGreeting": 0,
+            "answered": 16,
+            "datasetLabel": "WHAT"
+          },
+          "WHO": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "WHO"
+          },
+          "WHERE": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "WHERE"
+          },
+          "WHEN": {
+            "total": 12,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "WHEN"
+          },
+          "WHY": {
+            "total": 9,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "WHY"
+          },
+          "WHICH": {
+            "total": 5,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "WHICH"
+          },
+          "I / ME": {
+            "total": 12,
+            "correct": 1,
+            "wrong": 1,
+            "noMatch": 10,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "I / ME"
+          },
+          "YOU": {
+            "total": 9,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "YOU"
+          },
+          "HE / SHE": {
+            "total": 9,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "HE / SHE"
+          },
+          "WE": {
+            "total": 11,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 8,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "WE"
+          },
+          "THEY": {
+            "total": 21,
+            "correct": 14,
+            "wrong": 2,
+            "noMatch": 5,
+            "tracked": 18,
+            "syntheticGreeting": 0,
+            "answered": 16,
+            "datasetLabel": "THEY"
+          },
+          "MY / MINE": {
+            "total": 5,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "MY / MINE"
+          },
+          "YOUR / YOURS": {
+            "total": 5,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "YOUR / YOURS"
+          },
+          "THIS": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "THIS"
+          },
+          "THAT": {
+            "total": 5,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "THAT"
+          },
+          "EVERYONE": {
+            "total": 12,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "EVERYONE"
+          },
+          "MOTHER": {
+            "total": 5,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "MOTHER"
+          },
+          "FATHER": {
+            "total": 9,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "FATHER"
+          },
+          "BROTHER": {
+            "total": 13,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "BROTHER"
+          },
+          "SISTER": {
+            "total": 11,
+            "correct": 1,
+            "wrong": 1,
+            "noMatch": 9,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "SISTER"
+          },
+          "CHILD": {
+            "total": 6,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CHILD"
+          },
+          "FRIEND": {
+            "total": 5,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "FRIEND"
+          },
+          "TEACHER": {
+            "total": 5,
+            "correct": 4,
+            "wrong": 1,
+            "noMatch": 0,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "TEACHER"
+          },
+          "STUDENT": {
+            "total": 5,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "STUDENT"
+          },
+          "FAMILY": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "FAMILY"
+          },
+          "SLEEP": {
+            "total": 11,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "SLEEP"
+          },
+          "WAKE UP": {
+            "total": 5,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "WAKE UP"
+          },
+          "WALK": {
+            "total": 5,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 0,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "WALK"
+          },
+          "RUN": {
+            "total": 20,
+            "correct": 13,
+            "wrong": 1,
+            "noMatch": 6,
+            "tracked": 18,
+            "syntheticGreeting": 0,
+            "answered": 14,
+            "datasetLabel": "RUN"
+          },
+          "SIT": {
+            "total": 4,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "SIT"
+          },
+          "STAND": {
+            "total": 23,
+            "correct": 20,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 23,
+            "syntheticGreeting": 0,
+            "answered": 20,
+            "datasetLabel": "STAND"
+          },
+          "COME": {
+            "total": 9,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "COME"
+          },
+          "HELP": {
+            "total": 9,
+            "correct": 4,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "HELP"
+          },
+          "STOP": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "STOP"
+          },
+          "WAIT": {
+            "total": 12,
+            "correct": 6,
+            "wrong": 3,
+            "noMatch": 3,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "WAIT"
+          },
+          "GIVE": {
+            "total": 5,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 0,
+            "datasetLabel": "GIVE"
+          },
+          "TAKE": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "TAKE"
+          },
+          "NEED": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "NEED"
+          },
+          "KNOW": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 7,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "KNOW"
+          },
+          "HAPPY": {
+            "total": 11,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "HAPPY"
+          },
+          "SAD": {
+            "total": 4,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 0,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "SAD"
+          },
+          "ANGRY": {
+            "total": 5,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "ANGRY"
+          },
+          "SCARED": {
+            "total": 5,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "SCARED"
+          },
+          "TIRED": {
+            "total": 10,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "TIRED"
+          },
+          "THIRSTY": {
+            "total": 9,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "THIRSTY"
+          },
+          "GOOD": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 6,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "GOOD"
+          },
+          "BAD": {
+            "total": 6,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 5,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "BAD"
+          },
+          "SCHOOL": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 2,
+            "noMatch": 4,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "SCHOOL"
+          },
+          "HOSPITAL": {
+            "total": 6,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 4,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "HOSPITAL"
+          },
+          "STORE": {
+            "total": 5,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 2,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "STORE"
+          },
+          "BATHROOM": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 1,
+            "noMatch": 2,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "BATHROOM"
+          },
+          "WORK": {
+            "total": 14,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 11,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "WORK"
+          },
+          "HERE": {
+            "total": 4,
+            "correct": 2,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 3,
+            "syntheticGreeting": 0,
+            "answered": 2,
+            "datasetLabel": "HERE"
+          },
+          "THERE": {
+            "total": 11,
+            "correct": 0,
+            "wrong": 1,
+            "noMatch": 10,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "THERE"
+          },
+          "INSIDE": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "INSIDE"
+          },
+          "OUTSIDE": {
+            "total": 11,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "OUTSIDE"
+          },
+          "TODAY": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 1,
+            "noMatch": 2,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "TODAY"
+          },
+          "TOMORROW": {
+            "total": 8,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 0,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "TOMORROW"
+          },
+          "YESTERDAY": {
+            "total": 10,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "YESTERDAY"
+          },
+          "NOW": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 2,
+            "noMatch": 4,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "NOW"
+          },
+          "LATER": {
+            "total": 12,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 12,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "LATER"
+          },
+          "MORNING": {
+            "total": 10,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 1,
+            "datasetLabel": "MORNING"
+          },
+          "TIME": {
+            "total": 9,
+            "correct": 3,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 3,
+            "datasetLabel": "TIME"
+          },
+          "BEFORE": {
+            "total": 10,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 0,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "BEFORE"
+          },
+          "AFTER": {
+            "total": 13,
+            "correct": 6,
+            "wrong": 1,
+            "noMatch": 6,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "AFTER"
+          },
+          "MILK": {
+            "total": 11,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "MILK"
+          },
+          "BREAD": {
+            "total": 10,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 10,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 0,
+            "datasetLabel": "BREAD"
+          },
+          "MONEY": {
+            "total": 24,
+            "correct": 12,
+            "wrong": 0,
+            "noMatch": 12,
+            "tracked": 24,
+            "syntheticGreeting": 0,
+            "answered": 12,
+            "datasetLabel": "MONEY"
+          },
+          "PHONE": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "PHONE"
+          },
+          "CLOTHES": {
+            "total": 10,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 5,
+            "datasetLabel": "CLOTHES"
+          },
+          "BAG": {
+            "total": 10,
+            "correct": 4,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 4,
+            "datasetLabel": "BAG"
+          }
+        }
+      }
+    },
+    "capstoneCore": {
+      "current": {
+        "model": "Core 7-word ST-GCN ensemble · current gated recorded benchmark",
+        "scope": "Current frozen-checkpoint held-out recorded test, using validation-selected rejection gates. All known-word attempts are counted; tracking failures count as misses. Primary Watch reference clips are excluded, and test sources/signers are separate from train/validation. Live-camera accuracy remains unverified. Unsupported signs: 103/1806 falsely accepted. Scores are recorded accuracy, not confidence in a camera suggestion.",
+        "checkpoint": "capstone100-v4-ensemble.pt",
+        "evaluatedCheckpoint": "capstone100-v4-ensemble.pt",
+        "modelSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "preprocessorVersion": "legacy-v1",
+        "mirrorTta": true,
+        "mirrorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+        "calibrationSha256": "94f4b22290cb3f83ff265cdbd276aab0edd061281eb838fc805af2da5e4bcbf7",
+        "selectionSplit": "val",
+        "testUsedForSelection": false,
+        "watchClipsExcluded": true,
+        "sourceReport": "reports/motion-repair-v2-20261107/heldout-capstone.json",
+        "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+        "vocabulary": "core",
+        "totals": {
+          "attempts": 89,
+          "correct": 55,
+          "wrong": 0,
+          "noMatch": 34,
+          "tracked": 66,
+          "negativeAttempts": 1806,
+          "negativeFalse": 103
+        },
+        "words": {
+          "BELT": {
+            "total": 18,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "BELT1"
+          },
+          "EAT": {
+            "total": 17,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "EAT1"
+          },
+          "EMPTY": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "EMPTY2"
+          },
+          "PEG": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "PEG2"
+          },
+          "SOCCER": {
+            "total": 12,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "SOCCER2"
+          },
+          "SQUEEZE": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "SQUEEZE"
+          },
+          "VLOG": {
+            "total": 11,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "VLOG"
+          }
+        }
+      }
+    },
+    "capstoneExtended": {
+      "current": {
+        "model": "Extended 19-word ST-GCN ensemble · current gated recorded benchmark",
+        "scope": "Current frozen-checkpoint held-out recorded test, using validation-selected rejection gates. All known-word attempts are counted; tracking failures count as misses. Primary Watch reference clips are excluded, and test sources/signers are separate from train/validation. Live-camera accuracy remains unverified. Unsupported signs: 92/1634 falsely accepted. Scores are recorded accuracy, not confidence in a camera suggestion.",
+        "checkpoint": "capstone100-v4-ensemble.pt",
+        "evaluatedCheckpoint": "capstone100-v4-ensemble.pt",
+        "modelSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "preprocessorVersion": "legacy-v1",
+        "mirrorTta": true,
+        "mirrorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+        "calibrationSha256": "94f4b22290cb3f83ff265cdbd276aab0edd061281eb838fc805af2da5e4bcbf7",
+        "selectionSplit": "val",
+        "testUsedForSelection": false,
+        "watchClipsExcluded": true,
+        "sourceReport": "reports/motion-repair-v2-20261107/heldout-capstone.json",
+        "sourceReportSha256": "9f4ce9b9f2f877ee6ff3ccce190c8786189ab5a62556bb674dd04e4f0c8830f4",
+        "vocabulary": "extended",
+        "totals": {
+          "attempts": 261,
+          "correct": 168,
+          "wrong": 2,
+          "noMatch": 91,
+          "tracked": 200,
+          "negativeAttempts": 1634,
+          "negativeFalse": 92
+        },
+        "words": {
+          "BELT": {
+            "total": 18,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 9,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "BELT1"
+          },
+          "EAT": {
+            "total": 17,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "EAT1"
+          },
+          "EMPTY": {
+            "total": 10,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "EMPTY2"
+          },
+          "PEG": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "PEG2"
+          },
+          "SOCCER": {
+            "total": 12,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 4,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "SOCCER2"
+          },
+          "SQUEEZE": {
+            "total": 10,
+            "correct": 7,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 7,
+            "datasetLabel": "SQUEEZE"
+          },
+          "VLOG": {
+            "total": 11,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 2,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "VLOG"
+          },
+          "BASEBALLCAP": {
+            "total": 10,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 1,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "BASEBALLCAP"
+          },
+          "DEAF": {
+            "total": 15,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 7,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "DEAF1"
+          },
+          "DEMAND": {
+            "total": 14,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "DEMAND1"
+          },
+          "DRAG": {
+            "total": 17,
+            "correct": 12,
+            "wrong": 1,
+            "noMatch": 4,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 13,
+            "datasetLabel": "DRAG1"
+          },
+          "DUCK": {
+            "total": 11,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 3,
+            "tracked": 9,
+            "syntheticGreeting": 0,
+            "answered": 8,
+            "datasetLabel": "DUCK2"
+          },
+          "EDIT": {
+            "total": 15,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 10,
+            "datasetLabel": "EDIT1"
+          },
+          "LOCK": {
+            "total": 14,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 10,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "LOCK1"
+          },
+          "MECHANIC": {
+            "total": 16,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 15,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "MECHANIC1"
+          },
+          "MICROSCOPE": {
+            "total": 16,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 13,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "MICROSCOPE1"
+          },
+          "OTHER": {
+            "total": 11,
+            "correct": 6,
+            "wrong": 0,
+            "noMatch": 5,
+            "tracked": 8,
+            "syntheticGreeting": 0,
+            "answered": 6,
+            "datasetLabel": "OTHER"
+          },
+          "PARTY": {
+            "total": 15,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 6,
+            "tracked": 11,
+            "syntheticGreeting": 0,
+            "answered": 9,
+            "datasetLabel": "PARTY1"
+          },
+          "WHATFOR": {
+            "total": 18,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 7,
+            "tracked": 14,
+            "syntheticGreeting": 0,
+            "answered": 11,
+            "datasetLabel": "WHATFOR1"
+          }
+        }
+      }
+    }
+  },
+  "currentRelease": {
+    "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+    "provenance": "reports/motion-repair-v2-20261107/current-accuracy-provenance.json"
+  }
+}

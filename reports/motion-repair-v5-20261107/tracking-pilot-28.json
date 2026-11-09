@@ -1,0 +1,5337 @@
+{
+  "schema": 1,
+  "startedAt": "2026-11-07T00:13:01.323Z",
+  "scope": "Watch & Learn reference-clip smoke tests through the actual live capture pipeline. Not independent held-out or live-user accuracy.",
+  "geometry": {
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "fit": "contain/letterbox",
+    "cropping": false,
+    "pixelFlip": false
+  },
+  "isolation": {
+    "host": "127.0.0.1",
+    "storage": "in-memory only",
+    "realCameraCalls": 0,
+    "microphoneCalls": 0,
+    "getUserMediaCalls": 28
+  },
+  "indexSha256": "4214ed450bf5aeac26f168a1fe2c0efc297cb3f8cfde7e46be3e0361e3710d99",
+  "bootstrapSha256": "c80103b67551da68f38c4cf7c37c0892ceadea23bba398e2e15649ad4023c0e0",
+  "runtimeSha256": {
+    "app.js": "24233fca90c6f1aba3da89e96ca30b925cb14d91446e0c9d6fc85498c418af9d",
+    "landmark-capture.js": "e1c8326f55ee2bf6228bca6d02bdab5fe3582bb369754217e4f7829f0628b31b",
+    "capstone-recognition.js": "14f48db86567eeeee97edfa6f3bf0c5e3bc8cb9d28b1e71d806e8eb20d771294",
+    "beginner-recognition.js": "151cf2b4ee1d5d4d70b5f2a7fbc2d43d96e2e694b1ef5189c904aa3e166725c3",
+    "motion-studio.js": "9648430e0cb05bdfd69451fd555f6f5a0773f6ff79c544e5b2ee59f2e70780e0",
+    "research-words.js": "e4f6396480363ad768c51056ff94e3eac1bc5190d291961d5e4c975cb810790e",
+    "capstone_asl_v3.py": "1a8a77f45a9a4c47ae9dd2c4cb4701fdcb1546da699ab8fff309ddb927560f0e",
+    "beginner_asl.py": "8755aa7254129842abb93c973726179bbe5852aa89428df5e90e2f2aa96cd6f5",
+    "sign_features.py": "a59003bb14eb17cc42103a432f66b79ac5634d3cba97c20dbde165ff70076722",
+    "motion_calibration.py": "bfb42767a48e450e69f6abf0650c0785001a92591a5f9cb19d136652155c30a1",
+    "motion-accuracy.js": "2b09405beb45376788219b27aa117ea11442d3fa2bc0ad23ef40032385c52e0f",
+    "models/motion-word-accuracy.json": "269316c289cd54bb185f4a39d1c90955f413990d15c07290162dac5b61d3a5a2",
+    "body-hand-recovery.js": "a24f4aca09ce168bc8fcd32b7a966ff09e9631eec12371bda1576b576e6a8350",
+    "hand-recovery-worker.js": "60880e41bdbce73e94b63e878ef5e24a4874e49dc25f7e2aebe6e55c22ee15d9",
+    "handshape_features.py": "001511585b0334493823d9f969a44c15643507582f21922d52ce59471aed82c5",
+    "handshape_model.py": "270296ddaceb2f7c9cbc01d2024d12b752422b9639eff089bcb6fdac131ac286",
+    "handshape_inference.py": "b83e3510ba6f8e5e67962157f6165f6ff4c8449e5218e1d12a7b1ebd09ff3c06"
+  },
+  "runnerSha256": "b8a01dbf710cb81622c3b1f7f1b76281c032928ca0e2483d23e49203b7afea70",
+  "activeModelSha256": {
+    "beginner": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "capstone": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417"
+  },
+  "calibrationSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "activeAuxiliaryModelSha256": {
+    "beginner": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+    "capstone": "5313f8aec70f31b6b07eea2251609cce0f4237d42b9392c253dba47de6a69547"
+  },
+  "recognitionLabels": 198,
+  "attempts": [
+    {
+      "number": 1,
+      "id": "hungry",
+      "label": "HUNGRY",
+      "clip": "media/signs/hungry.mp4",
+      "clipSha256": "54a7dbdfa028670c6dee5ce17c596f7ef8a8b8922984a0ae1d63c7524a5b4bc6",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.1,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:13:32.534Z",
+      "drawFramesStart": 614,
+      "events": [
+        {
+          "at": "2026-11-07T00:13:32.537Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.170Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.318Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.440Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.554Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.623Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.737Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.827Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:34.932Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.016Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.135Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.237Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.407Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.534Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.636Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.771Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:35.953Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.068Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.186Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.312Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.432Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.490Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.559Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.618Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.678Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.764Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.832Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.897Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:36.970Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.034Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.101Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.153Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.207Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.280Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.362Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.425Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.484Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.551Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.624Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.713Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.780Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.846Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.911Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:37.980Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:38.044Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:13:38.188Z",
+          "word": "HUNGRY",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:13:32.539Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:13:32.682Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:13:33.224Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:13:34.171Z",
+          "text": "Recording… 4.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.319Z",
+          "text": "Recording… 3.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.440Z",
+          "text": "Recording… 3.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.555Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.624Z",
+          "text": "Recording… 3.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.737Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.828Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:34.932Z",
+          "text": "Recording… 3.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.016Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.135Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.238Z",
+          "text": "Recording… 2.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.407Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.535Z",
+          "text": "Recording… 2.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.636Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.771Z",
+          "text": "Recording… 2.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:35.954Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.068Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.187Z",
+          "text": "Recording… 2.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.313Z",
+          "text": "Recording… 1.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.433Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.492Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.560Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.679Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.765Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.897Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:36.971Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.103Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.154Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.280Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.363Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.485Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.552Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.715Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.780Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.847Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:37.984Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:38.045Z",
+          "text": "Recording… 0.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:38.189Z",
+          "text": "Possible match: “HUNGRY”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:13:34.171Z",
+      "playbackEndedAt": "2026-11-07T00:13:36.442Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:13:38.393Z",
+      "elapsedMs": 5860,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.1,
+        "duration": 2.1,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 33
+      },
+      "status": "Possible match: “HUNGRY”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 14,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 32,
+          "trackedFrames": 8,
+          "validSequence": true,
+          "match": "HUNGRY"
+        }
+      },
+      "predicted": "HUNGRY",
+      "correct": true
+    },
+    {
+      "number": 2,
+      "id": "pain",
+      "label": "PAIN",
+      "clip": "media/signs/pain.mp4",
+      "clipSha256": "3ca20863c01af684f5ba32ed9e265c1b602c260b801db5fcf3740c5938e4ed72",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.666667,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:13:40.653Z",
+      "drawFramesStart": 662,
+      "events": [
+        {
+          "at": "2026-11-07T00:13:40.654Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.331Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.460Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.580Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.709Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.791Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:42.891Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.000Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.141Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.244Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.353Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.467Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.595Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.739Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.838Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:43.892Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.002Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.108Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.220Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.332Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.446Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.569Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.680Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.786Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:44.896Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.000Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.109Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.193Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.278Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.334Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.397Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.464Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.525Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.606Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.680Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.740Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.801Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.877Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:45.959Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:46.022Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:46.099Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:46.163Z",
+          "word": "—",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        },
+        {
+          "at": "2026-11-07T00:13:46.238Z",
+          "word": "NIGHT",
+          "model": "Camera vocabulary: Pack words (DTW) preview"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:13:40.656Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:13:40.769Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:13:41.336Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:13:42.332Z",
+          "text": "Recording… 3.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:42.462Z",
+          "text": "Recording… 3.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:42.582Z",
+          "text": "Recording… 3.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:42.710Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:42.792Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.001Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.142Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.245Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.354Z",
+          "text": "Recording… 2.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.468Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.596Z",
+          "text": "Recording… 2.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.740Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.838Z",
+          "text": "Recording… 2.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:43.895Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.003Z",
+          "text": "Recording… 2.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.109Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.221Z",
+          "text": "Recording… 2.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.333Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.447Z",
+          "text": "Recording… 1.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.570Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.681Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.787Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:44.896Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.002Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.110Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.195Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.279Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.398Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.465Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.608Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.681Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.802Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:45.879Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:46.023Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:46.100Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:46.164Z",
+          "text": "Recording… 0.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:13:46.240Z",
+          "text": "Possible match: “NIGHT”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:13:42.332Z",
+      "playbackEndedAt": "2026-11-07T00:13:45.207Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:13:46.453Z",
+      "elapsedMs": 5800,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.666667,
+        "duration": 2.666667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 30
+      },
+      "status": "Possible match: “NIGHT”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 12.4,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Pack words (DTW) preview",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 32,
+          "trackedFrames": 19,
+          "validSequence": true,
+          "match": "NIGHT"
+        }
+      },
+      "predicted": "NIGHT",
+      "correct": false
+    },
+    {
+      "number": 3,
+      "id": "school",
+      "label": "SCHOOL",
+      "clip": "media/research-signs/school.mp4",
+      "clipSha256": "3d2b197bb8a6597ae86ec1f579c316770b001c37469cd187f2561da0bb28bdef",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.833008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:13:47.594Z",
+      "drawFramesStart": 702,
+      "events": [],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:13:47.599Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:13:49.887Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:04.900Z",
+          "text": "Body tracker could not warm up. Keep your upper body visible and try again."
+        }
+      ],
+      "playbackStarted": false,
+      "finishedAt": "2026-11-07T00:14:05.192Z",
+      "elapsedMs": 17599,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 0,
+        "duration": 2.833008,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 72
+      },
+      "status": "Body tracker could not warm up. Keep your upper body visible and try again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Pack words (DTW) preview",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 32,
+          "trackedFrames": 19,
+          "validSequence": true,
+          "match": "NIGHT"
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 4,
+      "id": "book",
+      "label": "BOOK",
+      "clip": "media/signs/book.mp4",
+      "clipSha256": "5d19b4a470108997a36a860f8bbc5b6b9368dd1a514499c8f7b4e48260ba13ce",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.366667,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:14:06.738Z",
+      "drawFramesStart": 783,
+      "events": [
+        {
+          "at": "2026-11-07T00:14:06.741Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.381Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.516Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.628Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.718Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.784Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:08.905Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.021Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.135Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.236Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.405Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.513Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.623Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.720Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:09.877Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.007Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.092Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.185Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.261Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.336Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.413Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.473Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.535Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.609Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.692Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.769Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.862Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:10.933Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.011Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.066Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.123Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.176Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.249Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.332Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.405Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.463Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.549Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.606Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.681Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.748Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.816Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.874Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:11.937Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.002Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.080Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.145Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.199Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.277Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:12.392Z",
+          "word": "BOOK",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:06.743Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:14:06.915Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:14:07.461Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:14:08.382Z",
+          "text": "Recording… 4.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:08.517Z",
+          "text": "Recording… 3.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:08.630Z",
+          "text": "Recording… 3.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:08.719Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:08.786Z",
+          "text": "Recording… 3.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:08.906Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.022Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.137Z",
+          "text": "Recording… 3.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.237Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.406Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.515Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.626Z",
+          "text": "Recording… 2.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.722Z",
+          "text": "Recording… 2.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:09.878Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.008Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.094Z",
+          "text": "Recording… 2.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.186Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.263Z",
+          "text": "Recording… 2.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.415Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.475Z",
+          "text": "Recording… 1.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.611Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.693Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.771Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:10.935Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.013Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.067Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.177Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.334Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.406Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.464Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.607Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.682Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.749Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:11.876Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:12.003Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:12.082Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:12.147Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:12.278Z",
+          "text": "Recording… 0.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:14:12.394Z",
+          "text": "Possible match: “BOOK”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:14:08.382Z",
+      "playbackEndedAt": "2026-11-07T00:14:10.015Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:14:12.581Z",
+      "elapsedMs": 5842,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.366667,
+        "duration": 1.366667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 34
+      },
+      "status": "Possible match: “BOOK”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 14.2,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 32,
+          "trackedFrames": 7,
+          "validSequence": true,
+          "match": "BOOK"
+        }
+      },
+      "predicted": "BOOK",
+      "correct": true
+    },
+    {
+      "number": 5,
+      "id": "store",
+      "label": "STORE",
+      "clip": "media/signs/store.mp4",
+      "clipSha256": "c053defc4b40c7eac178866b05212c4e54e4e60e36c759c1a4fe5d0716c93afd",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.738162,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:14:13.778Z",
+      "drawFramesStart": 830,
+      "events": [
+        {
+          "at": "2026-11-07T00:14:15.644Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:13.781Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:14:13.783Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:15.646Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:14:19.691Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:14:15.646Z",
+      "playbackEndedAt": "2026-11-07T00:14:18.171Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:14:19.913Z",
+      "elapsedMs": 6135,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.738162,
+        "duration": 1.738162,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 27
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 7.2,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4047,
+          "recordingWindowMs": 4000,
+          "processedFrames": 24,
+          "sampledFrames": 24,
+          "peakBufferedFrames": 3,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 9,
+          "poseFrames": 14,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 6,
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "clip": "media/signs/yesterday.mp4",
+      "clipSha256": "eb1d44b66f692b4e41b148b53893a5eac2174b34fbbb057905080f1292bee3a0",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.437326,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:14:21.058Z",
+      "drawFramesStart": 866,
+      "events": [
+        {
+          "at": "2026-11-07T00:14:22.991Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:14:27.606Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:21.062Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:14:21.064Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:22.995Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:14:27.021Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:14:27.609Z",
+          "text": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. NEED · 2. YESTERDAY · 3. GOODBYE · 4. TOMORROW · 5. HOW. Nothing added. Sign again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:14:22.995Z",
+      "playbackEndedAt": "2026-11-07T00:14:24.802Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 8,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [],
+        "suggestions": [
+          {
+            "label": "NEED",
+            "score": 0.149948
+          },
+          {
+            "label": "YESTERDAY",
+            "score": 0.135439
+          },
+          {
+            "label": "GOODBYE",
+            "score": 0.075726
+          },
+          {
+            "label": "TOMORROW",
+            "score": 0.071589
+          },
+          {
+            "label": "HOW",
+            "score": 0.053922
+          }
+        ],
+        "rejectionReason": "ambiguous",
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.478266,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:14:27.853Z",
+      "elapsedMs": 6795,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.437326,
+        "duration": 1.437326,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 45
+      },
+      "status": "No reliable match in the Beginner vocabulary (similar competing scores). Unaccepted suggestions: 1. NEED · 2. YESTERDAY · 3. GOODBYE · 4. TOMORROW · 5. HOW. Nothing added. Sign again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 8,
+          "trackedFrames": 8,
+          "durationMs": 4029,
+          "recordingWindowMs": 4000,
+          "processedFrames": 38,
+          "sampledFrames": 38,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 8,
+          "handFrames": 8,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 7,
+      "id": "now",
+      "label": "NOW",
+      "clip": "media/signs/now.mp4",
+      "clipSha256": "a5db5d79a30657ae7b1cd103cb9fd19dae74ee35d32c3c461f9038234509d703",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.566667,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:14:29.231Z",
+      "drawFramesStart": 924,
+      "events": [
+        {
+          "at": "2026-11-07T00:14:30.983Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:29.233Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:14:29.235Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:30.985Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:14:35.054Z",
+          "text": "Not enough tracked frames (3/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:14:30.986Z",
+      "playbackEndedAt": "2026-11-07T00:14:32.689Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:14:35.243Z",
+      "elapsedMs": 6012,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.566667,
+        "duration": 1.566667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 35
+      },
+      "status": "Not enough tracked frames (3/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4071,
+          "recordingWindowMs": 4000,
+          "processedFrames": 39,
+          "sampledFrames": 39,
+          "peakBufferedFrames": 4,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 8,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 8,
+      "id": "later",
+      "label": "LATER",
+      "clip": "media/signs/later.mp4",
+      "clipSha256": "02b39d631c45fa944f4aad40033cee5b506ca37b41d3c529cf0a79b30350c768",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 6.35,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:14:36.235Z",
+      "drawFramesStart": 970,
+      "events": [],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:36.238Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:14:36.241Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:51.357Z",
+          "text": "Body tracker could not warm up. Keep your upper body visible and try again."
+        }
+      ],
+      "playbackStarted": false,
+      "finishedAt": "2026-11-07T00:14:51.562Z",
+      "elapsedMs": 15328,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 0,
+        "duration": 6.35,
+        "paused": true,
+        "ended": false,
+        "readyState": 4,
+        "drawFrames": 135
+      },
+      "status": "Body tracker could not warm up. Keep your upper body visible and try again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 12.4,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4071,
+          "recordingWindowMs": 4000,
+          "processedFrames": 39,
+          "sampledFrames": 39,
+          "peakBufferedFrames": 4,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 8,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 9,
+      "id": "bag",
+      "label": "BAG",
+      "clip": "media/research-signs/bag.mp4",
+      "clipSha256": "b139f86594f832d9a977ca4bcc273f71d9ae85f76fc77c3708bf99bd0a88d94b",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.4,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:14:52.723Z",
+      "drawFramesStart": 1112,
+      "events": [
+        {
+          "at": "2026-11-07T00:14:54.419Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:09.132Z",
+          "word": "BAG",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:14:52.731Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:14:52.733Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:14:54.423Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:14:58.485Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:15:08.860Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:15:09.136Z",
+          "text": "Possible match: BAG. Top five: 1. BAG · 2. WE · 3. STAND · 4. YESTERDAY · 5. GOODBYE. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:14:54.423Z",
+      "playbackEndedAt": "2026-11-07T00:14:58.554Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 14,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "BAG",
+            "score": 0.816463
+          },
+          {
+            "label": "WE",
+            "score": 0.136793
+          },
+          {
+            "label": "STAND",
+            "score": 0.006428
+          },
+          {
+            "label": "YESTERDAY",
+            "score": 0.00477
+          },
+          {
+            "label": "GOODBYE",
+            "score": 0.003166
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "BAG",
+            "score": 0.816463
+          },
+          {
+            "label": "WE",
+            "score": 0.136793
+          },
+          {
+            "label": "STAND",
+            "score": 0.006428
+          },
+          {
+            "label": "YESTERDAY",
+            "score": 0.00477
+          },
+          {
+            "label": "GOODBYE",
+            "score": 0.003166
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.988699,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:15:09.336Z",
+      "elapsedMs": 16613,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.4,
+        "duration": 3.4,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 228
+      },
+      "status": "Possible match: BAG. Top five: 1. BAG · 2. WE · 3. STAND · 4. YESTERDAY · 5. GOODBYE. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 14,
+          "trackedFrames": 14,
+          "durationMs": 14440,
+          "recordingWindowMs": 4000,
+          "processedFrames": 39,
+          "sampledFrames": 39,
+          "peakBufferedFrames": 27,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 37,
+          "handFrames": 14,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "BAG",
+      "correct": true
+    },
+    {
+      "number": 10,
+      "id": "need",
+      "label": "NEED",
+      "clip": "media/research-signs/need.mp4",
+      "clipSha256": "41e3226b1772a4ae4fa2e36c84dbf77f4f208742cc0e464b8b73164df346bfe4",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.066667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:15:10.659Z",
+      "drawFramesStart": 1350,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:12.424Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:10.666Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:15:10.669Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:15:12.429Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:15:16.433Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:12.429Z",
+      "playbackEndedAt": "2026-11-07T00:15:13.779Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:16.620Z",
+      "elapsedMs": 5961,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.066667,
+        "duration": 1.066667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 28
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4009,
+          "recordingWindowMs": 4000,
+          "processedFrames": 42,
+          "sampledFrames": 42,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 8,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 11,
+      "id": "hello",
+      "label": "HELLO",
+      "clip": "media/signs/hello.mp4",
+      "clipSha256": "bd9e2b2782a1a23428bb5784273577fef1f7d1f8728937f294f57ff172e55147",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.133333,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:15:18.103Z",
+      "drawFramesStart": 1387,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:18.109Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:19.877Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.082Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.244Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.347Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.489Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.617Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.807Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:20.990Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.175Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.327Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.473Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.636Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.775Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:21.981Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.175Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.324Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.495Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.593Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.747Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.867Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:22.972Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.070Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.159Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.264Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.357Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.458Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.548Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:23.715Z",
+          "word": "DRINK",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:18.112Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:15:18.202Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:18.813Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:19.880Z",
+          "text": "Recording… 3.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.086Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.248Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.351Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.493Z",
+          "text": "Recording… 3.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.622Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.813Z",
+          "text": "Recording… 2.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:20.993Z",
+          "text": "Recording… 2.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.181Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.332Z",
+          "text": "Recording… 2.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.478Z",
+          "text": "Recording… 2.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.642Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.780Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:21.984Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.180Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.329Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.498Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.599Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.767Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.874Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:22.977Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.075Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.163Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.271Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.363Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.462Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.551Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:23.718Z",
+          "text": "Possible match: “DRINK”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:19.880Z",
+      "playbackEndedAt": "2026-11-07T00:15:22.390Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:23.941Z",
+      "elapsedMs": 5838,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.133333,
+        "duration": 2.133333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 21
+      },
+      "status": "Possible match: “DRINK”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 8,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 27,
+          "trackedFrames": 10,
+          "validSequence": true,
+          "match": "DRINK"
+        }
+      },
+      "predicted": "DRINK",
+      "correct": false
+    },
+    {
+      "number": 12,
+      "id": "thank-you",
+      "label": "THANK YOU",
+      "clip": "media/signs/thank-you.mp4",
+      "clipSha256": "f38675a008224e5521329f10a581c31acb76f84902906fdefa03ba18cfebe3ec",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.108333,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:15:25.570Z",
+      "drawFramesStart": 1418,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:25.575Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:27.240Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:27.381Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:27.539Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:27.652Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:27.845Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.000Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.168Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.329Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.472Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.607Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:28.838Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.020Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.157Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.260Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.361Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.469Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.579Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.680Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.812Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:29.915Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.041Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.172Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.277Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.383Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.486Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.603Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.732Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.838Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:30.942Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:31.052Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:31.221Z",
+          "word": "LIKE",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:25.577Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:15:25.673Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:26.309Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:27.246Z",
+          "text": "Recording… 3.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:27.387Z",
+          "text": "Recording… 3.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:27.544Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:27.658Z",
+          "text": "Recording… 3.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:27.848Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.003Z",
+          "text": "Recording… 3.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.175Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.335Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.477Z",
+          "text": "Recording… 2.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.615Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:28.840Z",
+          "text": "Recording… 2.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.022Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.161Z",
+          "text": "Recording… 2.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.266Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.367Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.475Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.584Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.686Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.816Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:29.921Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.058Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.177Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.283Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.389Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.492Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.608Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.735Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.843Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:30.947Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:31.059Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:31.227Z",
+          "text": "Possible match: “LIKE”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:27.246Z",
+      "playbackEndedAt": "2026-11-07T00:15:28.681Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:31.401Z",
+      "elapsedMs": 5831,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.108333,
+        "duration": 1.108333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 23
+      },
+      "status": "Possible match: “LIKE”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 8.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 30,
+          "trackedFrames": 10,
+          "validSequence": true,
+          "match": "LIKE"
+        }
+      },
+      "predicted": "LIKE",
+      "correct": false
+    },
+    {
+      "number": 13,
+      "id": "please",
+      "label": "PLEASE",
+      "clip": "media/signs/please.mp4",
+      "clipSha256": "510d1a31fe1901efa9dfda3283b342f447b4a31664d1974eb158d5ac14d826c0",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.1,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:15:33.182Z",
+      "drawFramesStart": 1452,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:33.191Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:34.856Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.084Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.247Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.351Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.536Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.740Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:35.970Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.133Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.299Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.475Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.633Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.769Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.873Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:36.986Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.106Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.217Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.377Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.503Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.619Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.768Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.869Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:37.983Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.080Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.200Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.298Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.405Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.503Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.621Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:15:38.828Z",
+          "word": "PLEASE",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:33.194Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:15:33.347Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:34.146Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:15:34.862Z",
+          "text": "Recording… 4.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.088Z",
+          "text": "Recording… 3.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.253Z",
+          "text": "Recording… 3.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.358Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.551Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.747Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:35.974Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.140Z",
+          "text": "Recording… 2.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.304Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.477Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.638Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.772Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:36.992Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.114Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.223Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.387Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.509Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.625Z",
+          "text": "Recording… 1.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.771Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.874Z",
+          "text": "Recording… 0.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:37.989Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.086Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.206Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.303Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.409Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.509Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.630Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:15:38.832Z",
+          "text": "Possible match: “PLEASE”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:34.862Z",
+      "playbackEndedAt": "2026-11-07T00:15:36.373Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:39.045Z",
+      "elapsedMs": 5863,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.1,
+        "duration": 1.1,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 20
+      },
+      "status": "Possible match: “PLEASE”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 8.5,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 28,
+          "trackedFrames": 8,
+          "validSequence": true,
+          "match": "PLEASE"
+        }
+      },
+      "predicted": "PLEASE",
+      "correct": true
+    },
+    {
+      "number": 14,
+      "id": "sorry",
+      "label": "SORRY",
+      "clip": "media/research-signs/sorry.mp4",
+      "clipSha256": "023e23ea31229c14eb0ccc396982ac4d232a1d061c0d34a6873ad38a51fd7434",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.4,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:15:40.737Z",
+      "drawFramesStart": 1484,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:42.621Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:40.742Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:15:40.746Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:15:42.628Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:15:46.721Z",
+          "text": "Not enough tracked frames (1/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:42.628Z",
+      "playbackEndedAt": "2026-11-07T00:15:44.526Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:46.912Z",
+      "elapsedMs": 6175,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.4,
+        "duration": 1.4,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 25
+      },
+      "status": "Not enough tracked frames (1/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 1,
+          "trackedFrames": 1,
+          "durationMs": 4100,
+          "recordingWindowMs": 4000,
+          "processedFrames": 35,
+          "sampledFrames": 35,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 10,
+          "handFrames": 1,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 15,
+      "id": "we",
+      "label": "WE",
+      "clip": "media/research-signs/we.mp4",
+      "clipSha256": "3c78671280a12f5c8d2427db82aff9a4072911d3ac2eaa44ee49917601f0a512",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.233333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:15:48.406Z",
+      "drawFramesStart": 1520,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:50.149Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:48.412Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:15:48.415Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:15:50.155Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:15:54.184Z",
+          "text": "Not enough tracked frames (0/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:50.155Z",
+      "playbackEndedAt": "2026-11-07T00:15:51.723Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:15:54.402Z",
+      "elapsedMs": 5996,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.233333,
+        "duration": 1.233333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 27
+      },
+      "status": "Not enough tracked frames (0/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 0,
+          "trackedFrames": 0,
+          "durationMs": 4035,
+          "recordingWindowMs": 4000,
+          "processedFrames": 39,
+          "sampledFrames": 39,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 9,
+          "handFrames": 0,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 16,
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "clip": "media/research-signs/your-yours.mp4",
+      "clipSha256": "69b42d02acb595c5cac92df7acb727698003ea267fbe0f630218b92079b6ac85",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.233333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:15:56.139Z",
+      "drawFramesStart": 1558,
+      "events": [
+        {
+          "at": "2026-11-07T00:15:57.995Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:15:56.147Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:15:56.150Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:15:58.006Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:16:02.031Z",
+          "text": "Not enough tracked frames (4/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:15:58.006Z",
+      "playbackEndedAt": "2026-11-07T00:15:59.447Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:16:02.216Z",
+      "elapsedMs": 6078,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.233333,
+        "duration": 1.233333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 28
+      },
+      "status": "Not enough tracked frames (4/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 4,
+          "trackedFrames": 4,
+          "durationMs": 4036,
+          "recordingWindowMs": 4000,
+          "processedFrames": 37,
+          "sampledFrames": 37,
+          "peakBufferedFrames": 2,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 8,
+          "handFrames": 4,
+          "fallbackFrames": 1,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 17,
+      "id": "eat",
+      "label": "EAT",
+      "clip": "media/signs/eat.mp4",
+      "clipSha256": "cd95cf12913b5388ca8f4dbf180471f2e2befa1f3e54ecc9fe9b112c5ac4b34d",
+      "family": "capstone",
+      "vocabulary": "core",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.2,
+      "sourceDimensions": [
+        480,
+        360
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:16:04.425Z",
+      "drawFramesStart": 1599,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:06.349Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:15.009Z",
+          "word": "EAT",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:04.437Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:16:04.444Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:16:06.359Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:16:11.396Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:16:15.018Z",
+          "text": "Possible match: EAT. Top five (7-word core): 1. EAT · 2. SOCCER · 3. EMPTY · 4. SQUEEZE · 5. PEG. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:06.359Z",
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 5,
+        "sequenceFrames": null,
+        "vocabulary": "core"
+      },
+      "playbackEndedAt": "2026-11-07T00:16:11.556Z",
+      "completeSourcePlayed": true,
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "core",
+        "predictions": [
+          {
+            "label": "EAT1",
+            "score": 0.991859
+          },
+          {
+            "label": "SOCCER2",
+            "score": 0.004121
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.001587
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.001548
+          },
+          {
+            "label": "PEG2",
+            "score": 0.000631
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "EAT1",
+            "score": 0.991859
+          },
+          {
+            "label": "SOCCER2",
+            "score": 0.004121
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.001587
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.001548
+          },
+          {
+            "label": "PEG2",
+            "score": 0.000631
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": 0.85,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.68638,
+        "model": "HandSpeak ST-GCN capstone100-v4-ensemble (4-checkpoint)",
+        "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "auxiliarySha256": null,
+        "auxiliaryWeight": 0,
+        "auxiliaryFeatureVersion": null,
+        "preprocessorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:16:15.328Z",
+      "elapsedMs": 10903,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.2,
+        "duration": 2.2,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 159
+      },
+      "status": "Possible match: EAT. Top five (7-word core): 1. EAT · 2. SOCCER · 3. EMPTY · 4. SQUEEZE · 5. PEG. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 5,
+          "trackedFrames": 5,
+          "durationMs": 5047,
+          "recordingWindowMs": 4000,
+          "processedFrames": 21,
+          "sampledFrames": 21,
+          "peakBufferedFrames": 18,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 3,
+          "poseFrames": 20,
+          "handFrames": 5,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "EAT1",
+      "correct": true
+    },
+    {
+      "number": 18,
+      "id": "drink",
+      "label": "DRINK",
+      "clip": "media/signs/drink.mp4",
+      "clipSha256": "21fb77dd73f87ce9f8589817212126f97c5a1cf825c13c1de84e6d7ae884a99e",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.044693,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:16:17.108Z",
+      "drawFramesStart": 1769,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:17.113Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:18.750Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:18.958Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.075Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.233Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.364Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.505Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.638Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:19.852Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.008Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.194Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.367Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.525Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.704Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:20.915Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:21.087Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:21.354Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:21.550Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:21.714Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:21.893Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.028Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.139Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.267Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.400Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.586Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:22.775Z",
+          "word": "DRINK",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:17.115Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:16:17.231Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:16:17.771Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:16:18.756Z",
+          "text": "Recording… 3.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:18.961Z",
+          "text": "Recording… 3.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.081Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.242Z",
+          "text": "Recording… 3.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.371Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.513Z",
+          "text": "Recording… 3.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.645Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:19.856Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.016Z",
+          "text": "Recording… 2.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.201Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.374Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.531Z",
+          "text": "Recording… 2.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.711Z",
+          "text": "Recording… 2.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:20.919Z",
+          "text": "Recording… 1.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:21.096Z",
+          "text": "Recording… 1.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:21.358Z",
+          "text": "Recording… 1.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:21.559Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:21.720Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:21.897Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.035Z",
+          "text": "Recording… 0.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.149Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.272Z",
+          "text": "Recording… 0.4 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.407Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.597Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:22.780Z",
+          "text": "Possible match: “DRINK”. Check it before adding it to your message."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:18.756Z",
+      "playbackEndedAt": "2026-11-07T00:16:21.188Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:16:22.988Z",
+      "elapsedMs": 5881,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.044693,
+        "duration": 2.044693,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 21
+      },
+      "status": "Possible match: “DRINK”. Check it before adding it to your message.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 6.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 24,
+          "trackedFrames": 6,
+          "validSequence": true,
+          "match": "DRINK"
+        }
+      },
+      "predicted": "DRINK",
+      "correct": true
+    },
+    {
+      "number": 19,
+      "id": "go",
+      "label": "GO",
+      "clip": "media/signs/go.mp4",
+      "clipSha256": "944d4bfdeb83bec1b208358e41563d39e4179f27a2bc63d247f6de5ca212e0bd",
+      "family": "motion-manual",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.9019,
+      "sourceDimensions": [
+        480,
+        640
+      ],
+      "statusId": "motionHelp",
+      "startedAt": "2026-11-07T00:16:24.683Z",
+      "drawFramesStart": 1800,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:24.693Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:26.499Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:26.699Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:26.947Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:27.078Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:27.246Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:27.436Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:27.612Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:27.780Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.033Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.186Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.368Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.514Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.738Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:28.959Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.071Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.265Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.434Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.562Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.699Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.879Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:29.995Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:30.120Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:30.252Z",
+          "word": "Hands not tracked",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:24.696Z",
+          "text": "Get ready… recording starts in 1.5 seconds. Perform one complete sign during the four-second recording window."
+        },
+        {
+          "at": "2026-11-07T00:16:24.815Z",
+          "text": "Get ready… 2. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:16:25.352Z",
+          "text": "Get ready… 1. Keep your hands in view."
+        },
+        {
+          "at": "2026-11-07T00:16:26.506Z",
+          "text": "Recording… 3.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:26.705Z",
+          "text": "Recording… 3.6 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:26.949Z",
+          "text": "Recording… 3.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:27.086Z",
+          "text": "Recording… 3.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:27.254Z",
+          "text": "Recording… 3.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:27.446Z",
+          "text": "Recording… 2.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:27.619Z",
+          "text": "Recording… 2.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:27.786Z",
+          "text": "Recording… 2.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.039Z",
+          "text": "Recording… 2.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.196Z",
+          "text": "Recording… 2.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.377Z",
+          "text": "Recording… 1.9 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.521Z",
+          "text": "Recording… 1.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.741Z",
+          "text": "Recording… 1.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:28.961Z",
+          "text": "Recording… 1.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.079Z",
+          "text": "Recording… 1.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.302Z",
+          "text": "Recording… 1.0 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.441Z",
+          "text": "Recording… 0.8 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.569Z",
+          "text": "Recording… 0.7 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.710Z",
+          "text": "Recording… 0.5 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:29.883Z",
+          "text": "Recording… 0.3 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:30.002Z",
+          "text": "Recording… 0.2 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:30.128Z",
+          "text": "Recording… 0.1 seconds left"
+        },
+        {
+          "at": "2026-11-07T00:16:30.259Z",
+          "text": "Not enough clear hand tracking: hands visible in 6/22 frames. Keep your hands fully in view and use front lighting."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:26.506Z",
+      "playbackEndedAt": "2026-11-07T00:16:28.606Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:16:30.461Z",
+      "elapsedMs": 5778,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.9019,
+        "duration": 1.9019,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 19
+      },
+      "status": "Not enough clear hand tracking: hands visible in 6/22 frames. Keep your hands fully in view and use front lighting.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 6.4,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "manual",
+          "frames": 22,
+          "trackedFrames": 6,
+          "validSequence": false,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 20,
+      "id": "before",
+      "label": "BEFORE",
+      "clip": "media/research-signs/before.mp4",
+      "clipSha256": "7d84dd8fc6bfc3fc8abeb752476af0b49e398b554672fbe049f0788ff7b60b39",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.266016,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:16:32.011Z",
+      "drawFramesStart": 1829,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:33.747Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:16:38.533Z",
+          "word": "SCHOOL",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:32.036Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:16:32.040Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:16:33.752Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:16:38.213Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:16:38.540Z",
+          "text": "Possible match: SCHOOL. Top five: 1. SCHOOL · 2. YOUR / YOURS · 3. STORE · 4. GIVE · 5. GOOD AFTERNOON. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:33.752Z",
+      "playbackEndedAt": "2026-11-07T00:16:37.251Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 6,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [
+          {
+            "label": "SCHOOL",
+            "score": 0.62055
+          },
+          {
+            "label": "YOUR / YOURS",
+            "score": 0.068157
+          },
+          {
+            "label": "STORE",
+            "score": 0.040367
+          },
+          {
+            "label": "GIVE",
+            "score": 0.032571
+          },
+          {
+            "label": "GOOD AFTERNOON",
+            "score": 0.022987
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "SCHOOL",
+            "score": 0.62055
+          },
+          {
+            "label": "YOUR / YOURS",
+            "score": 0.068157
+          },
+          {
+            "label": "STORE",
+            "score": 0.040367
+          },
+          {
+            "label": "GIVE",
+            "score": 0.032571
+          },
+          {
+            "label": "GOOD AFTERNOON",
+            "score": 0.022987
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": null,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.633606,
+        "model": "HandSpeak ST-GCN beginner-repaired-v2",
+        "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+        "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+        "auxiliaryWeight": 0.75,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "masked-v2",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:16:38.829Z",
+      "elapsedMs": 6819,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.266016,
+        "duration": 3.266016,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 31
+      },
+      "status": "Possible match: SCHOOL. Top five: 1. SCHOOL · 2. YOUR / YOURS · 3. STORE · 4. GIVE · 5. GOOD AFTERNOON. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 6,
+          "trackedFrames": 6,
+          "durationMs": 4465,
+          "recordingWindowMs": 4000,
+          "processedFrames": 21,
+          "sampledFrames": 21,
+          "peakBufferedFrames": 6,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 6,
+          "poseFrames": 19,
+          "handFrames": 6,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "SCHOOL",
+      "correct": false
+    },
+    {
+      "number": 21,
+      "id": "after",
+      "label": "AFTER",
+      "clip": "media/research-signs/after.mp4",
+      "clipSha256": "7195f0dd6656789fae448e182a8e01ba000e3880bb2656cf1c9a8398ddffb107",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.433008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-07T00:16:40.407Z",
+      "drawFramesStart": 1870,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:42.325Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:40.425Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:16:40.428Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-07T00:16:42.336Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:16:46.354Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:42.336Z",
+      "playbackEndedAt": "2026-11-07T00:16:44.302Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:16:46.559Z",
+      "elapsedMs": 6151,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.433008,
+        "duration": 1.433008,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 22
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 10.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4028,
+          "recordingWindowMs": 4000,
+          "processedFrames": 27,
+          "sampledFrames": 27,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 11,
+          "handFrames": 2,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 22,
+      "id": "patient",
+      "label": "PATIENT",
+      "clip": "media/research-signs/patient.mp4",
+      "clipSha256": "016b0c2011e6afc8478c93837712b6ffe7e3688ecd95268e3ece1d9e32f840f9",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.933333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:16:48.873Z",
+      "drawFramesStart": 1905,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:50.618Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:48.886Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:16:48.888Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:16:50.627Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:16:54.736Z",
+          "text": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:50.627Z",
+      "playbackEndedAt": "2026-11-07T00:16:53.764Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:16:54.890Z",
+      "elapsedMs": 6017,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.933333,
+        "duration": 2.933333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 20
+      },
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 7.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4118,
+          "recordingWindowMs": 4000,
+          "processedFrames": 26,
+          "sampledFrames": 26,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 14,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 23,
+      "id": "pipe",
+      "label": "PIPE",
+      "clip": "media/research-signs/pipe.mp4",
+      "clipSha256": "5d9770d662e9f34d21275660c6d2be625ffa344596b502c8f879ef979fe3b0fd",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.466667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:16:57.183Z",
+      "drawFramesStart": 1938,
+      "events": [
+        {
+          "at": "2026-11-07T00:16:58.930Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:16:57.194Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:16:57.197Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:16:58.932Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:02.974Z",
+          "text": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:16:58.932Z",
+      "playbackEndedAt": "2026-11-07T00:17:00.622Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:17:03.122Z",
+      "elapsedMs": 5939,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.466667,
+        "duration": 1.466667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 24
+      },
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 12.7,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 4,
+          "trackedFrames": 4,
+          "durationMs": 4044,
+          "recordingWindowMs": 4000,
+          "processedFrames": 33,
+          "sampledFrames": 33,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 6,
+          "poseFrames": 10,
+          "handFrames": 4,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 24,
+      "id": "since",
+      "label": "SINCE",
+      "clip": "media/research-signs/since.mp4",
+      "clipSha256": "be1f2199ff3a235f24cd721cc8d784d891ec5d2da9536ca65bbbe69232e4f70c",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.566667,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:17:05.197Z",
+      "drawFramesStart": 1976,
+      "events": [
+        {
+          "at": "2026-11-07T00:17:06.981Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:17:05.207Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:17:05.210Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:17:06.989Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:11.032Z",
+          "text": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:17:06.990Z",
+      "playbackEndedAt": "2026-11-07T00:17:08.881Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:17:11.229Z",
+      "elapsedMs": 6032,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.566667,
+        "duration": 1.566667,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 29
+      },
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 14.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 4,
+          "trackedFrames": 4,
+          "durationMs": 4051,
+          "recordingWindowMs": 4000,
+          "processedFrames": 38,
+          "sampledFrames": 38,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 9,
+          "poseFrames": 11,
+          "handFrames": 4,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 25,
+      "id": "soccer",
+      "label": "SOCCER",
+      "clip": "media/signs/soccer.mp4",
+      "clipSha256": "23957f5b2c20ccef6a12450e5c81fbe0e4d9f1db66806c46863c7eea1d2ab8b4",
+      "family": "capstone",
+      "vocabulary": "core",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.2022,
+      "sourceDimensions": [
+        480,
+        360
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:17:13.411Z",
+      "drawFramesStart": 2019,
+      "events": [
+        {
+          "at": "2026-11-07T00:17:15.156Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:17:21.765Z",
+          "word": "SOCCER",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:17:13.423Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:17:13.431Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:17:15.164Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:19.593Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:17:21.778Z",
+          "text": "Possible match: SOCCER. Top five (7-word core): 1. SOCCER · 2. SQUEEZE · 3. VLOG · 4. EMPTY · 5. EAT. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:17:15.164Z",
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 14,
+        "sequenceFrames": null,
+        "vocabulary": "core"
+      },
+      "playbackEndedAt": "2026-11-07T00:17:19.731Z",
+      "completeSourcePlayed": true,
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "core",
+        "predictions": [
+          {
+            "label": "SOCCER2",
+            "score": 0.989246
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.005965
+          },
+          {
+            "label": "VLOG",
+            "score": 0.002428
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.002035
+          },
+          {
+            "label": "EAT1",
+            "score": 0.000168
+          }
+        ],
+        "suggestions": [
+          {
+            "label": "SOCCER2",
+            "score": 0.989246
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.005965
+          },
+          {
+            "label": "VLOG",
+            "score": 0.002428
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.002035
+          },
+          {
+            "label": "EAT1",
+            "score": 0.000168
+          }
+        ],
+        "rejectionReason": null,
+        "minScore": 0.8,
+        "minMargin": 0.3,
+        "vocabularyMass": 0.80194,
+        "model": "HandSpeak ST-GCN capstone100-v4-ensemble (4-checkpoint)",
+        "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "auxiliarySha256": null,
+        "auxiliaryWeight": 0,
+        "auxiliaryFeatureVersion": null,
+        "preprocessorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:17:22.002Z",
+      "elapsedMs": 8591,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.2022,
+        "duration": 2.2022,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 97
+      },
+      "status": "Possible match: SOCCER. Top five (7-word core): 1. SOCCER · 2. SQUEEZE · 3. VLOG · 4. EMPTY · 5. EAT. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 14,
+          "trackedFrames": 14,
+          "durationMs": 4436,
+          "recordingWindowMs": 4000,
+          "processedFrames": 18,
+          "sampledFrames": 18,
+          "peakBufferedFrames": 14,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 7,
+          "poseFrames": 18,
+          "handFrames": 14,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": "SOCCER2",
+      "correct": true
+    },
+    {
+      "number": 26,
+      "id": "tail",
+      "label": "TAIL",
+      "clip": "media/research-signs/tail.mp4",
+      "clipSha256": "c50b3ebfe358ec94b421b1ee35f5104cd7734e9d3b5802b20aec88811dcf3d69",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 3.3,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:17:24.174Z",
+      "drawFramesStart": 2129,
+      "events": [
+        {
+          "at": "2026-11-07T00:17:26.111Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        },
+        {
+          "at": "2026-11-07T00:17:33.692Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:17:24.190Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:17:24.194Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:17:26.119Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:30.373Z",
+          "text": "Tracking the remaining captured frames… images stay in this tab only."
+        },
+        {
+          "at": "2026-11-07T00:17:32.204Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-07T00:17:33.710Z",
+          "text": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. LETTUCE · 2. TAIL · 3. APPLE · 4. MAPLE · 5. SQUEEZE. Nothing added. Try again with the complete sign visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:17:26.119Z",
+      "playbackEndedAt": "2026-11-07T00:17:29.423Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 11,
+        "sequenceFrames": null,
+        "vocabulary": "full"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "full",
+        "predictions": [],
+        "suggestions": [
+          {
+            "label": "LETTUCE1",
+            "score": 0.147011
+          },
+          {
+            "label": "TAIL1",
+            "score": 0.089035
+          },
+          {
+            "label": "APPLE",
+            "score": 0.06162
+          },
+          {
+            "label": "MAPLE",
+            "score": 0.050866
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.044595
+          }
+        ],
+        "rejectionReason": "ambiguous",
+        "minScore": null,
+        "minMargin": 0.2,
+        "vocabularyMass": 0.805824,
+        "model": "HandSpeak ST-GCN capstone100-v4-ensemble (4-checkpoint)",
+        "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+        "auxiliarySha256": "5313f8aec70f31b6b07eea2251609cce0f4237d42b9392c253dba47de6a69547",
+        "auxiliaryWeight": 0.25,
+        "auxiliaryFeatureVersion": "body-handshape-v1",
+        "preprocessorVersion": "legacy-v1",
+        "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+        "error": null
+      },
+      "finishedAt": "2026-11-07T00:17:33.990Z",
+      "elapsedMs": 9816,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 3.3,
+        "duration": 3.3,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 89
+      },
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. LETTUCE · 2. TAIL · 3. APPLE · 4. MAPLE · 5. SQUEEZE. Nothing added. Try again with the complete sign visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 11,
+          "trackedFrames": 11,
+          "durationMs": 6092,
+          "recordingWindowMs": 4000,
+          "processedFrames": 25,
+          "sampledFrames": 25,
+          "peakBufferedFrames": 12,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 9,
+          "poseFrames": 24,
+          "handFrames": 11,
+          "fallbackFrames": 5,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 27,
+      "id": "third",
+      "label": "THIRD",
+      "clip": "media/research-signs/third.mp4",
+      "clipSha256": "7d84dab28bed4e330c5f2f9fbf3fc4e08f820bcd5d57d4c5176111c50f38e7ab",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.133333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:17:36.305Z",
+      "drawFramesStart": 2232,
+      "events": [
+        {
+          "at": "2026-11-07T00:17:38.067Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:17:36.316Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:17:36.320Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:17:38.076Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:42.129Z",
+          "text": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:17:38.076Z",
+      "playbackEndedAt": "2026-11-07T00:17:39.456Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:17:42.306Z",
+      "elapsedMs": 6002,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.133333,
+        "duration": 1.133333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 29
+      },
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 12.4,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4061,
+          "recordingWindowMs": 4000,
+          "processedFrames": 39,
+          "sampledFrames": 39,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 8,
+          "poseFrames": 8,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 28,
+      "id": "twins",
+      "label": "TWINS",
+      "clip": "media/research-signs/twins.mp4",
+      "clipSha256": "134540b534d6d6f52021c7e153a939536b391640659578d02338c605636605ad",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.833333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-07T00:17:44.397Z",
+      "drawFramesStart": 2273,
+      "events": [
+        {
+          "at": "2026-11-07T00:17:46.201Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default + extra-word preview · 13 words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-07T00:17:44.408Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-07T00:17:44.413Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-07T00:17:46.210Z",
+          "text": "Recording for 4 seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-07T00:17:50.281Z",
+          "text": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-07T00:17:46.210Z",
+      "playbackEndedAt": "2026-11-07T00:17:49.301Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-07T00:17:50.469Z",
+      "elapsedMs": 6073,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.833333,
+        "duration": 2.833333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 22
+      },
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "GPU",
+        "input": "960x720",
+        "processedFps": 0,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+        "extraWords": true,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 3,
+          "trackedFrames": 3,
+          "durationMs": 4080,
+          "recordingWindowMs": 4000,
+          "processedFrames": 24,
+          "sampledFrames": 24,
+          "peakBufferedFrames": 1,
+          "trackingInput": [
+            640,
+            480
+          ],
+          "warmupFrames": 9,
+          "poseFrames": 15,
+          "handFrames": 3,
+          "fallbackFrames": 0,
+          "tracker": "Holistic + same-frame hand recovery",
+          "trackerComplexity": 1,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    }
+  ]
+}

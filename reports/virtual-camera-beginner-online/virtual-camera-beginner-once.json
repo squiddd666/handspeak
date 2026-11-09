@@ -1,0 +1,624 @@
+{
+  "site": "https://handspeak.cvsu.dev",
+  "results": [
+    {
+      "word": "ANGRY",
+      "clip": "angry",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.002786
+      },
+      "top5": []
+    },
+    {
+      "word": "BAD",
+      "clip": "bad",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.5
+      },
+      "top5": []
+    },
+    {
+      "word": "BEFORE",
+      "clip": "before",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (1/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "BROTHER",
+      "clip": "brother",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "FAMILY",
+      "clip": "family",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.166016
+      },
+      "top5": []
+    },
+    {
+      "word": "FATHER",
+      "clip": "father",
+      "predicted": "TAKE",
+      "accepted": false,
+      "top1": "TAKE",
+      "top1Score": 0.612865,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: TAKE. Top five: 1. TAKE \u00b7 2. CHILD \u00b7 3. THERE \u00b7 4. FATHER \u00b7 5. KNOW. Verify before adding.",
+      "live": "TAKE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.207721
+      },
+      "top5": [
+        {
+          "label": "TAKE",
+          "score": 0.612865
+        },
+        {
+          "label": "CHILD",
+          "score": 0.078468
+        },
+        {
+          "label": "THERE",
+          "score": 0.040542
+        },
+        {
+          "label": "FATHER",
+          "score": 0.033271
+        },
+        {
+          "label": "KNOW",
+          "score": 0.031319
+        }
+      ]
+    },
+    {
+      "word": "FRIEND",
+      "clip": "friend",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.234567
+      },
+      "top5": []
+    },
+    {
+      "word": "GIVE",
+      "clip": "give",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.157035
+      },
+      "top5": []
+    },
+    {
+      "word": "GOOD MORNING",
+      "clip": "good-morning",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.6
+      },
+      "top5": []
+    },
+    {
+      "word": "HOW",
+      "clip": "how",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (1/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 2.168833
+      },
+      "top5": []
+    },
+    {
+      "word": "INSIDE",
+      "clip": "inside",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "KNOW",
+      "clip": "know",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.4
+      },
+      "top5": []
+    },
+    {
+      "word": "MONEY",
+      "clip": "money",
+      "predicted": "WHAT",
+      "accepted": false,
+      "top1": "WHAT",
+      "top1Score": 0.507895,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: WHAT. Top five: 1. WHAT \u00b7 2. WAIT \u00b7 3. GOOD \u00b7 4. STAND \u00b7 5. STORE. Verify before adding.",
+      "live": "WHAT",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2022
+      },
+      "top5": [
+        {
+          "label": "WHAT",
+          "score": 0.507895
+        },
+        {
+          "label": "WAIT",
+          "score": 0.188646
+        },
+        {
+          "label": "GOOD",
+          "score": 0.082407
+        },
+        {
+          "label": "STAND",
+          "score": 0.033275
+        },
+        {
+          "label": "STORE",
+          "score": 0.026107
+        }
+      ]
+    },
+    {
+      "word": "MY / MINE",
+      "clip": "my-mine",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (1/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.202215
+      },
+      "top5": []
+    },
+    {
+      "word": "OKAY",
+      "clip": "okay",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "PHONE",
+      "clip": "phone",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.001035
+      },
+      "top5": []
+    },
+    {
+      "word": "RUN",
+      "clip": "run",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.241758
+      },
+      "top5": []
+    },
+    {
+      "word": "SAD",
+      "clip": "sad",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.49886
+      },
+      "top5": []
+    },
+    {
+      "word": "SCARED",
+      "clip": "scared",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (1/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.3013
+      },
+      "top5": []
+    },
+    {
+      "word": "STAND",
+      "clip": "stand",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.206128
+      },
+      "top5": []
+    },
+    {
+      "word": "STORE",
+      "clip": "store",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.143093
+      },
+      "top5": []
+    },
+    {
+      "word": "TAKE",
+      "clip": "take",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TEACHER",
+      "clip": "teacher",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.566667
+      },
+      "top5": []
+    },
+    {
+      "word": "THIS",
+      "clip": "this",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TIRED",
+      "clip": "tired",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TOMORROW",
+      "clip": "tomorrow",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.380506
+      },
+      "top5": []
+    },
+    {
+      "word": "WAIT",
+      "clip": "wait",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1
+      },
+      "top5": []
+    },
+    {
+      "word": "WHAT",
+      "clip": "what",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.933008
+      },
+      "top5": []
+    },
+    {
+      "word": "WHO",
+      "clip": "who",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.08
+      },
+      "top5": []
+    },
+    {
+      "word": "WHY",
+      "clip": "why",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.266667
+      },
+      "top5": []
+    },
+    {
+      "word": "YESTERDAY",
+      "clip": "yesterday",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "SISTER",
+      "clip": "sister",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Not enough tracked frames (0/3).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.822076
+      },
+      "top5": []
+    }
+  ],
+  "pageErrors": []
+}

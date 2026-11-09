@@ -1,0 +1,63 @@
+{
+  "full": {
+    "checkpoint": "capstone100-v4-ensemble.pt",
+    "sha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+    "snapshots": 4,
+    "stateSha256": [
+      "a7b98261e5ee48d6e4d812e2bdb0dd936a67e54d18a136e468fb7e3d4ce19b06",
+      "647b78dec3a1ee7ac72988177e96b4a63bb2a045338878ebe6aca6ed0256351c",
+      "6783a4ce113f231344c1545a2c6924ae759cd7d6613fa07d1bdd5fe8ccb97c20",
+      "54ccd550219a47dac97d96fead3ad2e5f680a2d035b81889330c1087d81e6805"
+    ],
+    "evaluatedComponents": [
+      {
+        "checkpoint": "v3-as-snapshots.pt",
+        "sha256": "8143ec7fcadf495dbe754a9f66d68607de06601d8bf317cebdad024f3789af14",
+        "snapshots": 1,
+        "stateSha256": [
+          "54ccd550219a47dac97d96fead3ad2e5f680a2d035b81889330c1087d81e6805"
+        ]
+      },
+      {
+        "checkpoint": "capstone100-v5-snapshots-s1.pt",
+        "sha256": "08d80b1b27a4dd8bcd8dafddd0f1904f72a080fd46b966a515a8a76cf8b402ad",
+        "snapshots": 3,
+        "stateSha256": [
+          "a7b98261e5ee48d6e4d812e2bdb0dd936a67e54d18a136e468fb7e3d4ce19b06",
+          "647b78dec3a1ee7ac72988177e96b4a63bb2a045338878ebe6aca6ed0256351c",
+          "6783a4ce113f231344c1545a2c6924ae759cd7d6613fa07d1bdd5fe8ccb97c20"
+        ]
+      }
+    ],
+    "evaluatedWeightsMatch": true,
+    "attempted": 1157,
+    "answered": 984,
+    "correct": 732
+  },
+  "beginner": {
+    "checkpoint": "beginner-need79-v1.pt",
+    "sha256": "3149785c4fdd6ac18d0da1a559b767e7b8f9e6d0ba378cbf568739a8231682d7",
+    "snapshots": 1,
+    "stateSha256": [
+      "2164213a55695f96bba3f325a4f51f339c12b4f7dd9c2ba62b7c69862d22e028"
+    ],
+    "attempted": 677,
+    "correct": 505,
+    "split": "test"
+  },
+  "version": 1,
+  "publishedAt": "2026-11-06T10:59:27+00:00",
+  "recognitionLabelsWithRecordedResults": 198,
+  "missingLabels": [],
+  "sourceReports": [
+    {
+      "path": "hs-eval/report-v35.json",
+      "sha256": "835687a3985deac8c3049a4897a9ec7b2199a804268a12bb7695fd34837bf098"
+    },
+    {
+      "path": "hs-eval/beginner-100/eval-need79-test.json",
+      "sha256": "1eb4393005a4fa943e439bf9edff3d86f75098299ee832a22813e7a2955ed7f4"
+    }
+  ],
+  "note": "Scores are archived recorded benchmarks, not reference-video smoke tests, live-camera accuracy, or a claim that all 198 words meet a deployable accuracy threshold. Models and thresholds were not changed."
+}

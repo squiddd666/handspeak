@@ -1,0 +1,9 @@
+{
+  "remainingIncorrect": 6,
+  "nextWork": "Fourteen tracking misses plus body-location-aware recognition and independent signer/variant data for the six wrong labels; do not lower gates from these reference outcomes.",
+  "remainingNoMatch": 57,
+  "referenceLabelsChecked": 198,
+  "modelsPromoted": [],
+  "status": "repair-pass-complete",
+  "allWordsReliablyFixed": false
+}

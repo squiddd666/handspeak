@@ -1,0 +1,295 @@
+test_account_history_across_devices (test_application.ApplicationTests.test_account_history_across_devices) ... ok
+test_admin_database_gate_search_and_feedback_export (test_application.ApplicationTests.test_admin_database_gate_search_and_feedback_export) ... ok
+test_admin_setup_is_private_and_single_use (test_application.ApplicationTests.test_admin_setup_is_private_and_single_use) ... ok
+test_cookie_flags_and_storage (test_application.ApplicationTests.test_cookie_flags_and_storage) ... ok
+test_csv_formula_and_cross_origin (test_application.ApplicationTests.test_csv_formula_and_cross_origin) ... ok
+test_deactivate_revokes_access (test_application.ApplicationTests.test_deactivate_revokes_access) ... ok
+test_guest_and_account_history_isolation (test_application.ApplicationTests.test_guest_and_account_history_isolation) ... C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 401: 'Unauthorized'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 403: 'Forbidden'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 422: 'Unprocessable Content'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_interpretation_status_validation_and_origin (test_application.ApplicationTests.test_interpretation_status_validation_and_origin) ... ok
+test_invalid_session_inputs_return_json (test_application.ApplicationTests.test_invalid_session_inputs_return_json) ... ok
+test_legacy_records_are_not_claimed (test_application.ApplicationTests.test_legacy_records_are_not_claimed) ... ok
+test_match_feedback_requires_consent_and_admin_review (test_application.ApplicationTests.test_match_feedback_requires_consent_and_admin_review) ... C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_password_change_checks_current_and_revokes_other_device (test_application.ApplicationTests.test_password_change_checks_current_and_revokes_other_device) ... ok
+test_private_static_files_head_and_get_blocked (test_application.ApplicationTests.test_private_static_files_head_and_get_blocked) ... ok
+test_registration_login_logout_and_no_role_escalation (test_application.ApplicationTests.test_registration_login_logout_and_no_role_escalation) ... ok
+test_reset_single_use_and_revokes_sessions (test_application.ApplicationTests.test_reset_single_use_and_revokes_sessions) ... ok
+test_throttling (test_application.ApplicationTests.test_throttling) ... ok
+test_username_admin_login_preserves_registration_rules (test_application.ApplicationTests.test_username_admin_login_preserves_registration_rules) ... ok
+test_vocabulary_controls_are_admin_only_and_paths_are_bounded (test_application.ApplicationTests.test_vocabulary_controls_are_admin_only_and_paths_are_bounded) ... C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 429: 'Too Many Requests'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_word_preview_is_public_but_requires_consent (test_application.ApplicationTests.test_word_preview_is_public_but_requires_consent) ... ok
+test_invalid_and_interrupted_uploads_leave_no_files (test_experience.UploadTests.test_invalid_and_interrupted_uploads_leave_no_files) ... ok
+test_readable_video_is_assigned_and_preserves_description (test_experience.UploadTests.test_readable_video_is_assigned_and_preserves_description) ... ERROR
+test_expression_rules_describe_movements (test_face.FaceTests.test_expression_rules_describe_movements) ... ok
+test_expression_stability_and_face_loss (test_face.FaceTests.test_expression_stability_and_face_loss) ... ok
+test_failed_download_is_contained (test_face.FaceTests.test_failed_download_is_contained) ... ok
+test_failed_load_can_be_retried (test_face.FaceTests.test_failed_load_can_be_retried) ... ok
+test_gpu_fallback_and_runtime_failure (test_face.FaceTests.test_gpu_fallback_and_runtime_failure) ... ok
+test_load_throttle_toggle_and_reset (test_face.FaceTests.test_load_throttle_toggle_and_reset) ... ok
+test_missing_blendshapes_clear_previous_expression (test_face.FaceTests.test_missing_blendshapes_clear_previous_expression) ... ok
+test_runtime_gpu_error_recovers_on_cpu (test_face.FaceTests.test_runtime_gpu_error_recovers_on_cpu) ... ok
+test_slow_camera_still_produces_expression (test_face.FaceTests.test_slow_camera_still_produces_expression) ... ok
+test_word_recording_pauses_and_resumes_face_inference (test_face.FaceTests.test_word_recording_pauses_and_resumes_face_inference) ... ok
+test_cpu_failure_is_reported_without_endless_retries (test_hand_worker.WorkerTests.test_cpu_failure_is_reported_without_endless_retries) ... ok
+test_gpu_failure_recovers_and_announces_cpu_delegate (test_hand_worker.WorkerTests.test_gpu_failure_recovers_and_announces_cpu_delegate) ... ok
+test_bad_output_and_timeout_release_capacity (test_interpretation.InterpretationTests.test_bad_output_and_timeout_release_capacity) ... ok
+test_clarification_has_no_applyable_sentence (test_interpretation.InterpretationTests.test_clarification_has_no_applyable_sentence) ... ok
+test_negation_and_numbers_are_not_silently_dropped (test_interpretation.InterpretationTests.test_negation_and_numbers_are_not_silently_dropped) ... ok
+test_text_only_local_request_and_original_preserved (test_interpretation.InterpretationTests.test_text_only_local_request_and_original_preserved) ... ok
+test_validation_disabled_rate_limit_busy (test_interpretation.InterpretationTests.test_validation_disabled_rate_limit_busy) ... ok
+test_warmup_is_local_synthetic_and_shares_capacity (test_interpretation.InterpretationTests.test_warmup_is_local_synthetic_and_shares_capacity) ... ok
+test_glb_allowlist_does_not_expose_private_files_or_source_inputs (test_kai_mocap_http.KaiMocapHTTPTests.test_glb_allowlist_does_not_expose_private_files_or_source_inputs) ... ok
+test_model_and_mocap_are_served_with_binary_gltf_mime (test_kai_mocap_http.KaiMocapHTTPTests.test_model_and_mocap_are_served_with_binary_gltf_mime) ... ok
+test_model (unittest.loader._FailedTest.test_model) ... ERROR
+test_automatic_continuous_motion_does_not_repeat_and_gaps_reset (test_motion.MotionTests.test_automatic_continuous_motion_does_not_repeat_and_gaps_reset) ... ok
+test_automatic_motion_pause_cooldown_and_reset (test_motion.MotionTests.test_automatic_motion_pause_cooldown_and_reset) ... ok
+test_automatic_motion_starts_when_hand_first_appears (test_motion.MotionTests.test_automatic_motion_starts_when_hand_first_appears) ... ok
+test_automatic_studio_requires_no_record_button (test_motion.MotionTests.test_automatic_studio_requires_no_record_button) ... ok
+test_cancel_and_no_hands_do_not_save (test_motion.MotionTests.test_cancel_and_no_hands_do_not_save) ... FAIL
+test_capture_status_and_slow_camera_diagnostics (test_motion.MotionTests.test_capture_status_and_slow_camera_diagnostics) ... FAIL
+test_category_negative_reference_never_becomes_a_word (test_motion.MotionTests.test_category_negative_reference_never_becomes_a_word) ... FAIL
+test_category_switch_resets_capture_and_restores_default (test_motion.MotionTests.test_category_switch_resets_capture_and_restores_default) ... ok
+test_clear_sparse_match_can_pass_without_two_nearby_votes (test_motion.MotionTests.test_clear_sparse_match_can_pass_without_two_nearby_votes) ... ok
+test_coherent_sign_survives_isolated_edge_detections (test_motion.MotionTests.test_coherent_sign_survives_isolated_edge_detections) ... ok
+test_direction_and_speed (test_motion.MotionTests.test_direction_and_speed) ... ok
+test_eleven_frames_get_bounded_extension (test_motion.MotionTests.test_eleven_frames_get_bounded_extension) ... FAIL
+test_enabling_auto_add_preserves_pending_word_once (test_motion.MotionTests.test_enabling_auto_add_preserves_pending_word_once) ... FAIL
+test_expansion_preserves_existing_match_and_is_optional (test_motion.MotionTests.test_expansion_preserves_existing_match_and_is_optional) ... ok
+test_extra_download_failure_preserves_original_vocabulary (test_motion.MotionTests.test_extra_download_failure_preserves_original_vocabulary) ... ok
+test_finish_command_consumes_match_only_when_enabled (test_motion.MotionTests.test_finish_command_consumes_match_only_when_enabled) ... FAIL
+test_handedness_survives_detection_order_changes (test_motion.MotionTests.test_handedness_survives_detection_order_changes) ... ok
+test_hidden_word_match_is_rejected_without_relabeling (test_motion.MotionTests.test_hidden_word_match_is_rejected_without_relabeling) ... ok
+test_invalid_pretrained_model_is_not_ready (test_motion.MotionTests.test_invalid_pretrained_model_is_not_ready) ... ok
+test_mirror_and_parameters (test_motion.MotionTests.test_mirror_and_parameters) ... ok
+test_nested_preview_keeps_older_words_priority (test_motion.MotionTests.test_nested_preview_keeps_older_words_priority) ... ok
+test_optional_fast_capture_retains_short_visible_sign (test_motion.MotionTests.test_optional_fast_capture_retains_short_visible_sign) ... ok
+test_portrait_and_landscape_geometry_match (test_motion.MotionTests.test_portrait_and_landscape_geometry_match) ... ok
+test_pretrained_ready_without_personal_training (test_motion.MotionTests.test_pretrained_ready_without_personal_training) ... ok
+test_record_recognize_and_confirm_once (test_motion.MotionTests.test_record_recognize_and_confirm_once) ... ERROR
+test_sentence_auto_add_is_opt_in_once_and_never_speaks (test_motion.MotionTests.test_sentence_auto_add_is_opt_in_once_and_never_speaks) ... FAIL
+test_short_coherent_run_survives_intermittent_tracking (test_motion.MotionTests.test_short_coherent_run_survives_intermittent_tracking) ... ok
+test_stalled_stream_times_out_and_cancel_discards_extension (test_motion.MotionTests.test_stalled_stream_times_out_and_cancel_discards_extension) ... ok
+test_trim_and_short_tracking_gaps (test_motion.MotionTests.test_trim_and_short_tracking_gaps) ... ok
+test_unknown_ambiguous_and_insufficient_examples (test_motion.MotionTests.test_unknown_ambiguous_and_insufficient_examples) ... ok
+test_whole_movement_is_centered (test_motion.MotionTests.test_whole_movement_is_centered) ... ok
+test_class_can_recover_three_correct_with_no_extra_false_accept (test_motion_class_calibration.ClassCalibrationTests.test_class_can_recover_three_correct_with_no_extra_false_accept) ... ok
+test_gate_is_for_actual_top_class_only (test_motion_class_calibration.ClassCalibrationTests.test_gate_is_for_actual_top_class_only) ... ok
+test_missing_class_keeps_global_rejection (test_motion_class_calibration.ClassCalibrationTests.test_missing_class_keeps_global_rejection) ... ok
+test_tracking_misses_are_counted (test_motion_class_calibration.ClassCalibrationTests.test_tracking_misses_are_counted) ... ok
+test_two_favorable_examples_cannot_relax_the_gate (test_motion_class_calibration.ClassCalibrationTests.test_two_favorable_examples_cannot_relax_the_gate) ... ok
+test_unknown_error_budget_cannot_be_relaxed (test_motion_class_calibration.ClassCalibrationTests.test_unknown_error_budget_cannot_be_relaxed) ... ok
+test_duplicate_attempts_are_rejected (test_motion_release.MotionReleaseTests.test_duplicate_attempts_are_rejected) ... ok
+test_empty_hands_cannot_be_counted_as_an_accepted_word (test_motion_release.MotionReleaseTests.test_empty_hands_cannot_be_counted_as_an_accepted_word) ... ok
+test_false_accepts_cannot_be_omitted (test_motion_release.MotionReleaseTests.test_false_accepts_cannot_be_omitted) ... ok
+test_tampered_summary_is_rejected (test_motion_release.MotionReleaseTests.test_tampered_summary_is_rejected) ... ok
+test_tracking_misses_stay_in_denominator (test_motion_release.MotionReleaseTests.test_tracking_misses_stay_in_denominator) ... ok
+test_zero_accuracy_is_valid_measured_data (test_motion_release.MotionReleaseTests.test_zero_accuracy_is_valid_measured_data) ... ok
+test_duplicate_or_missing_words_are_rejected (test_motion_repair_report.RepairReportTests.test_duplicate_or_missing_words_are_rejected) ... ok
+test_every_attempt_is_counted_once (test_motion_repair_report.RepairReportTests.test_every_attempt_is_counted_once) ... ok
+test_slow_retry_does_not_inflate_baseline (test_motion_repair_report.RepairReportTests.test_slow_retry_does_not_inflate_baseline) ... ok
+test_unfinished_or_slow_baseline_is_rejected (test_motion_repair_report.RepairReportTests.test_unfinished_or_slow_baseline_is_rejected) ... ok
+test_actual_predictions_display_their_correct_benchmark_family (test_motion_virtual_report.MotionVirtualReportTests.test_actual_predictions_display_their_correct_benchmark_family) ... ok
+test_all_198_project_buttons_have_scores_without_starting_a_camera (test_motion_virtual_report.MotionVirtualReportTests.test_all_198_project_buttons_have_scores_without_starting_a_camera) ... ok
+test_exactly_one_normal_speed_attempt_for_every_primary_reference (test_motion_virtual_report.MotionVirtualReportTests.test_exactly_one_normal_speed_attempt_for_every_primary_reference) ... ok
+test_failures_and_tracking_misses_stay_in_the_denominator (test_motion_virtual_report.MotionVirtualReportTests.test_failures_and_tracking_misses_stay_in_the_denominator) ... ok
+test_no_physical_devices_or_raw_coordinate_exports (test_motion_virtual_report.MotionVirtualReportTests.test_no_physical_devices_or_raw_coordinate_exports) ... ok
+test_border_hand_and_out_of_frame_other_wrist_do_not_swap_sides (test_reference_tracking.ReferenceTrackingTests.test_border_hand_and_out_of_frame_other_wrist_do_not_swap_sides) ... ok
+test_cached_slots_can_be_repaired_without_retracking_video (test_reference_tracking.ReferenceTrackingTests.test_cached_slots_can_be_repaired_without_retracking_video) ... ok
+test_crossing_hands_keep_anatomical_identity_not_screen_x (test_reference_tracking.ReferenceTrackingTests.test_crossing_hands_keep_anatomical_identity_not_screen_x) ... ok
+test_lower_supporting_hand_is_not_discarded (test_reference_tracking.ReferenceTrackingTests.test_lower_supporting_hand_is_not_discarded) ... ok
+test_pose_anchor_overrules_wrong_classifier_label (test_reference_tracking.ReferenceTrackingTests.test_pose_anchor_overrules_wrong_classifier_label) ... ok
+test_single_hand_cannot_fill_both_slots (test_reference_tracking.ReferenceTrackingTests.test_single_hand_cannot_fill_both_slots) ... ok
+test_unknown_detection_is_not_guessed_from_screen_half (test_reference_tracking.ReferenceTrackingTests.test_unknown_detection_is_not_guessed_from_screen_half) ... ok
+test_all_147_research_clips_support_bounded_video_range_requests (test_research_video_library.ResearchVideoTests.test_all_147_research_clips_support_bounded_video_range_requests) ... ok
+test_all_198_references_get_and_head_succeed_with_correct_content (test_research_video_library.ResearchVideoTests.test_all_198_references_get_and_head_succeed_with_correct_content) ... ok
+test_catalog_reader_uses_utf8_with_a_legacy_windows_default (test_research_video_library.ResearchVideoTests.test_catalog_reader_uses_utf8_with_a_legacy_windows_default) ... ok
+test_exact_198_label_union_and_all_catalog_entries (test_research_video_library.ResearchVideoTests.test_exact_198_label_union_and_all_catalog_entries) ... ok
+test_loopback_host_check_rejects_remote_clients_and_duplicate_hosts (test_research_video_library.ResearchVideoTests.test_loopback_host_check_rejects_remote_clients_and_duplicate_hosts) ... ok
+test_provenance_output_hashes_and_original_40_reconstructions (test_research_video_library.ResearchVideoTests.test_provenance_output_hashes_and_original_40_reconstructions) ... ok
+test_public_hosts_origins_and_proxy_headers_are_rejected_for_get_and_head (test_research_video_library.ResearchVideoTests.test_public_hosts_origins_and_proxy_headers_are_rejected_for_get_and_head) ... ok
+test_research_media_is_git_ignored (test_research_video_library.ResearchVideoTests.test_research_media_is_git_ignored) ... ok
+test_runtime_statuses_cannot_claim_ready_when_model_loading_fails (test_research_video_library.ResearchVideoTests.test_runtime_statuses_cannot_claim_ready_when_model_loading_fails) ... ok
+test_suffix_ranges_and_invalid_ranges (test_research_video_library.ResearchVideoTests.test_suffix_ranges_and_invalid_ranges) ... ok
+test_limit_never_silently_truncates (test_sentence.SentenceTests.test_limit_never_silently_truncates) ... ok
+test_punctuation_and_undo (test_sentence.SentenceTests.test_punctuation_and_undo) ... ok
+test_words_spacing_and_repeat (test_sentence.SentenceTests.test_words_spacing_and_repeat) ... ok
+test_anatomical_mirror_is_an_involution (test_sign_features.FeatureTests.test_anatomical_mirror_is_an_involution) ... ok
+test_empty_hands_cannot_create_a_word_prediction (test_sign_features.FeatureTests.test_empty_hands_cannot_create_a_word_prediction) ... ok
+test_gap_cannot_create_phantom_interpolated_hands (test_sign_features.FeatureTests.test_gap_cannot_create_phantom_interpolated_hands) ... ok
+test_legacy_feature_math_stays_compatible (test_sign_features.FeatureTests.test_legacy_feature_math_stays_compatible) ... ok
+test_missing_hand_is_zero_after_normalization (test_sign_features.FeatureTests.test_missing_hand_is_zero_after_normalization) ... ok
+test_validation_rejects_malformed_or_nonfinite_landmarks (test_sign_features.FeatureTests.test_validation_rejects_malformed_or_nonfinite_landmarks) ... ok
+test_checkpoint_change_invalidates_stale_calibration (test_sign_features.GateTests.test_checkpoint_change_invalidates_stale_calibration) ... ok
+test_close_scores_remain_unaccepted_suggestions (test_sign_features.GateTests.test_close_scores_remain_unaccepted_suggestions) ... ok
+test_policy_never_uses_expected_practice_word (test_sign_features.GateTests.test_policy_never_uses_expected_practice_word) ... ok
+test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match (test_sign_features.GateTests.test_restriction_does_not_inflate_a_tiny_outside_mass_into_a_match) ... ok
+test_browser_matches_heldout_evaluation (test_words.PretrainedWordTests.test_browser_matches_heldout_evaluation) ... FAIL
+test_references_and_split_integrity (test_words.PretrainedWordTests.test_references_and_split_integrity) ... ok
+
+======================================================================
+ERROR: test_readable_video_is_assigned_and_preserves_description (test_experience.UploadTests.test_readable_video_is_assigned_and_preserves_description)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\experience.py", line 70, in upload
+    result=subprocess.run(['/usr/bin/ffprobe','-v','error','-protocol_whitelist','file,pipe','-show_entries','format=duration:stream=codec_type','-of','json',path],capture_output=True,timeout=10,check=True)
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 1553, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_experience.py", line 20, in test_readable_video_is_assigned_and_preserves_description
+    result=self.store.upload(io.BytesIO(data),len(data),'hello','video/mp4')
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\experience.py", line 73, in upload
+    except (OSError,ValueError,KeyError,subprocess.SubprocessError):raise self.error(422,'Use a readable MP4 video no longer than two minutes.')
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test_experience.Invalid: Use a readable MP4 video no longer than two minutes.
+
+======================================================================
+ERROR: test_model (unittest.loader._FailedTest.test_model)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_model
+Traceback (most recent call last):
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\Squid\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_model.py", line 8, in <module>
+    from train_asl import normalize
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\train_asl.py", line 15, in <module>
+    import mediapipe as mp
+ModuleNotFoundError: No module named 'mediapipe'
+
+
+======================================================================
+ERROR: test_record_recognize_and_confirm_once (test_motion.MotionTests.test_record_recognize_and_confirm_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 166, in test_record_recognize_and_confirm_once
+    self.assertEqual(self.js.eval("JSON.parse(stored['handspeak-motion-v3']).length"),6)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_quickjs.JSException: SyntaxError: unexpected token: 'undefined'
+    at <input>:1:1
+    at parse (native)
+    at <eval> (<input>:1:12)
+
+
+======================================================================
+FAIL: test_cancel_and_no_hands_do_not_save (test_motion.MotionTests.test_cancel_and_no_hands_do_not_save)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 216, in test_cancel_and_no_hands_do_not_save
+    self.assertIn('Not enough', self.js.eval("elements['#motionHelp'].textContent"))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Not enough' not found in 'Camera is slow — collecting more frames (0/12). Keep your hands in view.'
+
+======================================================================
+FAIL: test_capture_status_and_slow_camera_diagnostics (test_motion.MotionTests.test_capture_status_and_slow_camera_diagnostics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 223, in test_capture_status_and_slow_camera_diagnostics
+    self.assertFalse(self.js.eval('studio.isCapturing()'))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_category_negative_reference_never_becomes_a_word (test_motion.MotionTests.test_category_negative_reference_never_becomes_a_word)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 157, in test_category_negative_reference_never_becomes_a_word
+    self.assertEqual(self.js.eval('JSON.stringify(added)'), '["NEW"]')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '[]' != '["NEW"]'
+- []
++ ["NEW"]
+
+
+======================================================================
+FAIL: test_eleven_frames_get_bounded_extension (test_motion.MotionTests.test_eleven_frames_get_bounded_extension)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 232, in test_eleven_frames_get_bounded_extension
+    self.assertFalse(self.js.eval('studio.isCapturing()'))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_enabling_auto_add_preserves_pending_word_once (test_motion.MotionTests.test_enabling_auto_add_preserves_pending_word_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 198, in test_enabling_auto_add_preserves_pending_word_once
+    self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '[]' != '["HELLO"]'
+- []
++ ["HELLO"]
+
+
+======================================================================
+FAIL: test_finish_command_consumes_match_only_when_enabled (test_motion.MotionTests.test_finish_command_consumes_match_only_when_enabled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 186, in test_finish_command_consumes_match_only_when_enabled
+    self.assertEqual(self.js.eval('finishCalls'),1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_sentence_auto_add_is_opt_in_once_and_never_speaks (test_motion.MotionTests.test_sentence_auto_add_is_opt_in_once_and_never_speaks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_motion.py", line 177, in test_sentence_auto_add_is_opt_in_once_and_never_speaks
+    self.assertEqual(self.js.eval('JSON.stringify(added)'), '["HELLO"]')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '[]' != '["HELLO"]'
+- []
++ ["HELLO"]
+
+
+======================================================================
+FAIL: test_browser_matches_heldout_evaluation (test_words.PretrainedWordTests.test_browser_matches_heldout_evaluation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Squid\Desktop\capstone\handspeak-git\training\test_words.py", line 34, in test_browser_matches_heldout_evaluation
+    self.assertEqual(predicted,row['expected'],f'Heldout example {i}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HELLO' != None : Heldout example 1
+
+----------------------------------------------------------------------
+Ran 126 tests in 33.706s
+
+FAILED (failures=8, errors=3)

@@ -1,0 +1,860 @@
+{
+  "site": "https://handspeak.cvsu.dev",
+  "results": [
+    {
+      "word": "ANGRY",
+      "clip": "angry",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.002786
+      },
+      "top5": []
+    },
+    {
+      "word": "BAD",
+      "clip": "bad",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.5
+      },
+      "top5": []
+    },
+    {
+      "word": "BEFORE",
+      "clip": "before",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "BROTHER",
+      "clip": "brother",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (0/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "FAMILY",
+      "clip": "family",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.166016
+      },
+      "top5": []
+    },
+    {
+      "word": "FATHER",
+      "clip": "father",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.207721
+      },
+      "top5": []
+    },
+    {
+      "word": "FRIEND",
+      "clip": "friend",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.234567
+      },
+      "top5": []
+    },
+    {
+      "word": "GIVE",
+      "clip": "give",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.157035
+      },
+      "top5": []
+    },
+    {
+      "word": "GOOD",
+      "clip": "good",
+      "predicted": "GOOD",
+      "accepted": true,
+      "top1": "GOOD",
+      "top1Score": 0.834641,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: GOOD. Top five: 1. GOOD \u00b7 2. BAD \u00b7 3. SLEEP \u00b7 4. WELCOME \u00b7 5. HAPPY. Verify before adding.",
+      "live": "GOOD",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.668333
+      },
+      "top5": [
+        {
+          "label": "GOOD",
+          "score": 0.834641
+        },
+        {
+          "label": "BAD",
+          "score": 0.036337
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.024676
+        },
+        {
+          "label": "WELCOME",
+          "score": 0.011893
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.011705
+        }
+      ]
+    },
+    {
+      "word": "GOOD MORNING",
+      "clip": "good-morning",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.6
+      },
+      "top5": []
+    },
+    {
+      "word": "HOW",
+      "clip": "how",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 2.168833
+      },
+      "top5": []
+    },
+    {
+      "word": "INSIDE",
+      "clip": "inside",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "KNOW",
+      "clip": "know",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.4
+      },
+      "top5": []
+    },
+    {
+      "word": "MONEY",
+      "clip": "money",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2022
+      },
+      "top5": []
+    },
+    {
+      "word": "MY / MINE",
+      "clip": "my-mine",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.202215
+      },
+      "top5": []
+    },
+    {
+      "word": "OKAY",
+      "clip": "okay",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "PHONE",
+      "clip": "phone",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.001035
+      },
+      "top5": []
+    },
+    {
+      "word": "RUN",
+      "clip": "run",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.241758
+      },
+      "top5": []
+    },
+    {
+      "word": "SAD",
+      "clip": "sad",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.49886
+      },
+      "top5": []
+    },
+    {
+      "word": "SCARED",
+      "clip": "scared",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.3013
+      },
+      "top5": []
+    },
+    {
+      "word": "SLEEP",
+      "clip": "sleep",
+      "predicted": "SLEEP",
+      "accepted": true,
+      "top1": "SLEEP",
+      "top1Score": 0.621697,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: SLEEP. Top five: 1. SLEEP \u00b7 2. BROTHER \u00b7 3. MONEY \u00b7 4. THERE \u00b7 5. SORRY. Verify before adding.",
+      "live": "SLEEP",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.944134
+      },
+      "top5": [
+        {
+          "label": "SLEEP",
+          "score": 0.621697
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.050646
+        },
+        {
+          "label": "MONEY",
+          "score": 0.045291
+        },
+        {
+          "label": "THERE",
+          "score": 0.02923
+        },
+        {
+          "label": "SORRY",
+          "score": 0.026178
+        }
+      ]
+    },
+    {
+      "word": "STAND",
+      "clip": "stand",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.206128
+      },
+      "top5": []
+    },
+    {
+      "word": "STORE",
+      "clip": "store",
+      "predicted": "MONEY",
+      "accepted": false,
+      "top1": "MONEY",
+      "top1Score": 0.712077,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: MONEY. Top five: 1. MONEY \u00b7 2. WHAT \u00b7 3. WHY \u00b7 4. TODAY \u00b7 5. TEACHER. Verify before adding.",
+      "live": "MONEY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.143093
+      },
+      "top5": [
+        {
+          "label": "MONEY",
+          "score": 0.712077
+        },
+        {
+          "label": "WHAT",
+          "score": 0.101014
+        },
+        {
+          "label": "WHY",
+          "score": 0.036284
+        },
+        {
+          "label": "TODAY",
+          "score": 0.035303
+        },
+        {
+          "label": "TEACHER",
+          "score": 0.020033
+        }
+      ]
+    },
+    {
+      "word": "TAKE",
+      "clip": "take",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TEACHER",
+      "clip": "teacher",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.566667
+      },
+      "top5": []
+    },
+    {
+      "word": "THERE",
+      "clip": "there",
+      "predicted": "THERE",
+      "accepted": true,
+      "top1": "THERE",
+      "top1Score": 0.79029,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: THERE. Top five: 1. THERE \u00b7 2. THIS \u00b7 3. WHEN \u00b7 4. OKAY \u00b7 5. BROTHER. Verify before adding.",
+      "live": "THERE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2022
+      },
+      "top5": [
+        {
+          "label": "THERE",
+          "score": 0.79029
+        },
+        {
+          "label": "THIS",
+          "score": 0.058159
+        },
+        {
+          "label": "WHEN",
+          "score": 0.018262
+        },
+        {
+          "label": "OKAY",
+          "score": 0.01608
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.013191
+        }
+      ]
+    },
+    {
+      "word": "THIS",
+      "clip": "this",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TIRED",
+      "clip": "tired",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TOMORROW",
+      "clip": "tomorrow",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.380506
+      },
+      "top5": []
+    },
+    {
+      "word": "WAIT",
+      "clip": "wait",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1
+      },
+      "top5": []
+    },
+    {
+      "word": "WAKE UP",
+      "clip": "wake-up",
+      "predicted": "WAKE UP",
+      "accepted": true,
+      "top1": "WAKE UP",
+      "top1Score": 0.71658,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: WAKE UP. Top five: 1. WAKE UP \u00b7 2. BROTHER \u00b7 3. THERE \u00b7 4. OKAY \u00b7 5. RUN. Verify before adding.",
+      "live": "WAKE UP",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "WAKE UP",
+          "score": 0.71658
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.084195
+        },
+        {
+          "label": "THERE",
+          "score": 0.070346
+        },
+        {
+          "label": "OKAY",
+          "score": 0.058366
+        },
+        {
+          "label": "RUN",
+          "score": 0.011902
+        }
+      ]
+    },
+    {
+      "word": "WELCOME",
+      "clip": "welcome",
+      "predicted": "WELCOME",
+      "accepted": true,
+      "top1": "WELCOME",
+      "top1Score": 0.729212,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: WELCOME. Top five: 1. WELCOME \u00b7 2. WHAT \u00b7 3. SORRY \u00b7 4. FRIEND \u00b7 5. WHEN. Verify before adding.",
+      "live": "WELCOME",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.206251
+      },
+      "top5": [
+        {
+          "label": "WELCOME",
+          "score": 0.729212
+        },
+        {
+          "label": "WHAT",
+          "score": 0.050826
+        },
+        {
+          "label": "SORRY",
+          "score": 0.050003
+        },
+        {
+          "label": "FRIEND",
+          "score": 0.029112
+        },
+        {
+          "label": "WHEN",
+          "score": 0.027694
+        }
+      ]
+    },
+    {
+      "word": "WHAT",
+      "clip": "what",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.933008
+      },
+      "top5": []
+    },
+    {
+      "word": "WHO",
+      "clip": "who",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.08
+      },
+      "top5": []
+    },
+    {
+      "word": "WHY",
+      "clip": "why",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.266667
+      },
+      "top5": []
+    },
+    {
+      "word": "YESTERDAY",
+      "clip": "yesterday",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "SCHOOL",
+      "clip": "school",
+      "predicted": "SCHOOL",
+      "accepted": true,
+      "top1": "SCHOOL",
+      "top1Score": 0.588109,
+      "correct": true,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Possible match: SCHOOL. Top five: 1. SCHOOL \u00b7 2. SISTER \u00b7 3. WE. Verify before adding.",
+      "live": "SCHOOL",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "SCHOOL",
+          "score": 0.588109
+        },
+        {
+          "label": "SISTER",
+          "score": 0.397438
+        },
+        {
+          "label": "WE",
+          "score": 0.014453
+        }
+      ]
+    },
+    {
+      "word": "SISTER",
+      "clip": "sister",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "No confident Beginner match. Sign again.",
+      "live": "No reliable match",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.822076
+      },
+      "top5": []
+    },
+    {
+      "word": "WE",
+      "clip": "we",
+      "predicted": "WE",
+      "accepted": true,
+      "top1": "WE",
+      "top1Score": 0.585878,
+      "correct": true,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Possible match: WE. Top five: 1. WE \u00b7 2. SISTER \u00b7 3. SCHOOL. Verify before adding.",
+      "live": "WE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.236769
+      },
+      "top5": [
+        {
+          "label": "WE",
+          "score": 0.585878
+        },
+        {
+          "label": "SISTER",
+          "score": 0.368723
+        },
+        {
+          "label": "SCHOOL",
+          "score": 0.045399
+        }
+      ]
+    }
+  ],
+  "pageErrors": []
+}

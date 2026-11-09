@@ -1,0 +1,308 @@
+[
+  {
+    "id": "batch-1-online-0001",
+    "member": "hello/gtsignstudy4a.8039-hello-2023_01_25_23_12_15.310-0.mp4",
+    "label": "HELLO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0002",
+    "member": "hello/gtsignstudy4a.8033-hello-2023_01_30_00_51_50.441-0.mp4",
+    "label": "HELLO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0003",
+    "member": "hello/gtsignstudy4a.8032-hello-2023_01_25_18_30_20.511-0.mp4",
+    "label": "HELLO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0004",
+    "member": "thankyou/gtsignstudy4a.8032-thankyou-2023_01_28_23_30_40.756-0.mp4",
+    "label": "THANK YOU",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0005",
+    "member": "thankyou/gtsignstudy4a.8035-thankyou-2023_01_26_20_10_21.830-0.mp4",
+    "label": "THANK YOU",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0006",
+    "member": "thankyou/gtsignstudy4a.8037-thankyou-2023_01_28_15_07_29.461-0.mp4",
+    "label": "THANK YOU",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0007",
+    "member": "please/gtsignstudy4a.8035-please-2023_01_29_11_30_26.907-0.mp4",
+    "label": "PLEASE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0008",
+    "member": "please/gtsignstudy4a.8031-please-2023_01_24_20_40_04.129-0.mp4",
+    "label": "PLEASE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0009",
+    "member": "please/gtsignstudy4a.8038-please-2023_01_26_08_55_57.103-0.mp4",
+    "label": "PLEASE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0010",
+    "member": "yes/gtsignstudy4a.8032-yes-2023_01_28_23_34_38.646-0.mp4",
+    "label": "YES",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0011",
+    "member": "yes/gtsignstudy4a.8037-yes-2023_01_29_13_19_00.840-0.mp4",
+    "label": "YES",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0012",
+    "member": "yes/gtsignstudy4a.8031-yes-2023_01_25_19_16_07.404-0.mp4",
+    "label": "YES",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0013",
+    "member": "no/gtsignstudy4a.8035-no-2023_02_01_11_37_25.759-0.mp4",
+    "label": "NO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0014",
+    "member": "no/gtsignstudy4a.8039-no-2023_01_25_22_51_15.367-0.mp4",
+    "label": "NO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0015",
+    "member": "no/gtsignstudy4a.8037-no-2023_01_29_13_50_49.384-0.mp4",
+    "label": "NO",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0016",
+    "member": "finish/gtsignstudy4a.8035-finish-2023_01_31_13_39_02.675-0.mp4",
+    "label": "FINISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0017",
+    "member": "finish/gtsignstudy4a.8037-finish-2023_01_26_23_05_16.514-0.mp4",
+    "label": "FINISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0018",
+    "member": "finish/gtsignstudy4a.8032-finish-2023_01_28_23_31_06.409-0.mp4",
+    "label": "FINISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0019",
+    "member": "drink/gtsignstudy4a.8032-drink-2023_01_29_12_26_55.923-0.mp4",
+    "label": "DRINK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0020",
+    "member": "drink/gtsignstudy4a.8035-drink-2023_02_01_14_53_29.006-0.mp4",
+    "label": "DRINK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0021",
+    "member": "drink/gtsignstudy4a.8039-drink-2023_01_25_13_54_03.793-0.mp4",
+    "label": "DRINK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0022",
+    "member": "water/gtsignstudy4a.8036-water-2023_01_25_22_39_54.485-0.mp4",
+    "label": "WATER",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0023",
+    "member": "water/gtsignstudy4a.8031-water-2023_01_25_14_06_32.992-0.mp4",
+    "label": "WATER",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0024",
+    "member": "water/gtsignstudy4a.8035-water-2023_02_01_13_48_38.259-0.mp4",
+    "label": "WATER",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0025",
+    "member": "book/gtsignstudy4a.8037-book-2023_01_28_15_26_36.746-0.mp4",
+    "label": "BOOK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0026",
+    "member": "book/gtsignstudy4a.8031-book-2023_01_25_19_02_40.670-0.mp4",
+    "label": "BOOK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0027",
+    "member": "book/gtsignstudy4a.8039-book-2023_01_24_14_04_15.797-0.mp4",
+    "label": "BOOK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0040",
+    "member": "home/gtsignstudy4a.8035-home-2023_02_01_14_40_29.828-0.mp4",
+    "label": "HOME",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0041",
+    "member": "home/gtsignstudy4a.8038-home-2023_01_27_11_48_24.506-0.mp4",
+    "label": "HOME",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0042",
+    "member": "home/gtsignstudy4a.8033-home-2023_01_29_13_59_37.213-0.mp4",
+    "label": "HOME",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0043",
+    "member": "have/gtsignstudy4a.8037-have-2023_01_26_23_31_06.232-0.mp4",
+    "label": "HAVE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0044",
+    "member": "have/gtsignstudy4a.8033-have-2023_01_29_00_35_47.087-0.mp4",
+    "label": "HAVE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0045",
+    "member": "have/gtsignstudy4a.8036-have-2023_01_25_23_56_04.865-0.mp4",
+    "label": "HAVE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0046",
+    "member": "fish/gtsignstudy4a.8038-fish-2023_01_27_13_54_45.114-0.mp4",
+    "label": "FISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0047",
+    "member": "fish/gtsignstudy4a.8033-fish-2023_01_29_11_52_29.979-0.mp4",
+    "label": "FISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0048",
+    "member": "fish/gtsignstudy4a.8037-fish-2023_01_29_13_45_26.124-0.mp4",
+    "label": "FISH",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0049",
+    "member": "see/gtsignstudy4a.8032-see-2023_01_26_15_21_52.657-0.mp4",
+    "label": "SEE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0050",
+    "member": "see/gtsignstudy4a.8035-see-2023_01_26_16_56_39.218-0.mp4",
+    "label": "SEE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0051",
+    "member": "see/gtsignstudy4a.8037-see-2023_01_28_15_26_36.746-0.mp4",
+    "label": "SEE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0052",
+    "member": "sick/gtsignstudy4a.8033-sick-2023_01_29_13_00_14.198-0.mp4",
+    "label": "SICK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0053",
+    "member": "sick/gtsignstudy4a.8039-sick-2023_01_25_22_06_35.565-0.mp4",
+    "label": "SICK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0054",
+    "member": "sick/gtsignstudy4a.8038-sick-2023_01_27_11_11_44.083-0.mp4",
+    "label": "SICK",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0055",
+    "member": "night/gtsignstudy4a.8038-night-2023_01_27_12_36_59.705-0.mp4",
+    "label": "NIGHT",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0056",
+    "member": "night/gtsignstudy4a.8033-night-2023_01_29_14_02_12.838-0.mp4",
+    "label": "NIGHT",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0057",
+    "member": "night/gtsignstudy4a.8035-night-2023_01_31_11_17_17.464-0.mp4",
+    "label": "NIGHT",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0058",
+    "member": "apple/gtsignstudy4a.8038-apple-2023_01_27_12_50_40.319-0.mp4",
+    "label": "APPLE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0059",
+    "member": "apple/gtsignstudy4a.8035-apple-2023_01_26_21_00_35.397-0.mp4",
+    "label": "APPLE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0060",
+    "member": "apple/gtsignstudy4a.8039-apple-2023_01_25_14_06_46.479-0.mp4",
+    "label": "APPLE",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0061",
+    "member": "car/gtsignstudy4a.8038-car-2023_01_27_11_10_13.447-0.mp4",
+    "label": "CAR",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0062",
+    "member": "car/gtsignstudy4a.8036-car-2023_01_25_19_20_13.089-0.mp4",
+    "label": "CAR",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  },
+  {
+    "id": "batch-1-online-0063",
+    "member": "car/gtsignstudy4a.8037-car-2023_01_29_14_12_29.998-0.mp4",
+    "label": "CAR",
+    "reason": "Previously known clip content; retained but not described as recording-new"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "selectedAt": "2026-11-06T20:54:20.968511+00:00",
+  "testUsedForSelection": false,
+  "watchClipsUsedForSelection": false,
+  "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+  "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+  "beginnerValidation": {
+    "attempts": 296,
+    "correct": 183,
+    "wrong": 6,
+    "noMatch": 107,
+    "accuracy": 0.618243,
+    "precision": 0.968254,
+    "overallPrecision": 0.785408,
+    "negativeAttempts": 357,
+    "negativeFalse": 44,
+    "negativeFalseRate": 0.123249
+  },
+  "capstoneValidation": {
+    "full": {
+      "attempts": 367,
+      "correct": 224,
+      "wrong": 4,
+      "noMatch": 139,
+      "accuracy": 0.610354,
+      "precision": 0.982456,
+      "overallPrecision": 0.826568,
+      "negativeAttempts": 270,
+      "negativeFalse": 43,
+      "negativeFalseRate": 0.159259
+    },
+    "core": {
+      "attempts": 22,
+      "correct": 21,
+      "wrong": 0,
+      "noMatch": 1,
+      "accuracy": 0.954545,
+      "precision": 1.0,
+      "overallPrecision": 0.4375,
+      "negativeAttempts": 615,
+      "negativeFalse": 27,
+      "negativeFalseRate": 0.043902
+    },
+    "extended": {
+      "attempts": 70,
+      "correct": 60,
+      "wrong": 0,
+      "noMatch": 10,
+      "accuracy": 0.857143,
+      "precision": 1.0,
+      "overallPrecision": 0.697674,
+      "negativeAttempts": 567,
+      "negativeFalse": 26,
+      "negativeFalseRate": 0.045855
+    }
+  },
+  "rationale": "Beginner aspect augmentation improves validation macro top-1 and gated correct accepts versus the prior release, with fewer known errors and unsupported false accepts. Class gates relax only with >=3 correct validation attempts and never increase class validation error budgets. Keep the existing full-100 ensemble; no new full model beat it on validation."
+}

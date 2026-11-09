@@ -1,0 +1,889 @@
+{
+  "family": "beginner",
+  "checkpoint": "beginner-aspect-v2.pt",
+  "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+  "auxiliaryCheckpoint": "C:\\Users\\Squid\\Desktop\\capstone\\handspeak-git\\reports\\motion-repair-v3-20261107\\candidates\\beginner-handshape.pt",
+  "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+  "auxiliaryFeatureVersion": "body-handshape-v1",
+  "auxiliaryValidationSha256": "e80106e3364327e326190ee489e1097d2df07cfeade60ac0bc74ee1c4065bc0c",
+  "selectedAt": "2026-11-06T21:47:47.950361+00:00",
+  "selectionSplit": "val",
+  "testUsedForSelection": false,
+  "watchClipsUsedForSelection": false,
+  "baselineCalibrationSha256": "53dba1108c49cbb6d345249c91b00179fc6bdaa04c713f859b22876ed2427f52",
+  "sourceValidationSha256": "b94aec6ad476d4900b9241de8319f50b1b06075c2a180fd432c2b01b4959c01f",
+  "negativeValidationSha256": "842d23cd5add3cb93ab31b7d8943783e4c50aeeff4db73528d15a587cdcdf38c",
+  "selected": {
+    "full": {
+      "weight": 0.75,
+      "before": {
+        "attempts": 296,
+        "correct": 183,
+        "wrong": 6,
+        "noMatch": 107,
+        "accuracy": 0.618243,
+        "precision": 0.968254,
+        "overallPrecision": 0.785408,
+        "negativeAttempts": 357,
+        "negativeFalse": 44,
+        "negativeFalseRate": 0.123249
+      },
+      "after": {
+        "attempts": 296,
+        "correct": 229,
+        "wrong": 5,
+        "noMatch": 62,
+        "accuracy": 0.773649,
+        "precision": 0.978632,
+        "overallPrecision": 0.90873,
+        "negativeAttempts": 357,
+        "negativeFalse": 18,
+        "negativeFalseRate": 0.05042
+      },
+      "improved": true
+    }
+  },
+  "policies": {
+    "full": {
+      "minScore": 0,
+      "minMargin": 0.3,
+      "minVocabularyMass": 0.4,
+      "selectionSplit": "val",
+      "validation": {
+        "attempts": 296,
+        "correct": 229,
+        "wrong": 5,
+        "noMatch": 62,
+        "accuracy": 0.773649,
+        "precision": 0.978632,
+        "overallPrecision": 0.90873,
+        "negativeAttempts": 357,
+        "negativeFalse": 18,
+        "negativeFalseRate": 0.05042
+      },
+      "validationErrorBudgets": {
+        "attempts": 296,
+        "correct": 183,
+        "wrong": 6,
+        "noMatch": 107,
+        "accuracy": 0.618243,
+        "precision": 0.968254,
+        "overallPrecision": 0.785408,
+        "negativeAttempts": 357,
+        "negativeFalse": 44,
+        "negativeFalseRate": 0.123249
+      },
+      "classPolicies": {
+        "SORRY": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "GOOD MORNING": {
+          "minScore": 0,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0.4
+        },
+        "GOOD NIGHT": {
+          "minScore": 0,
+          "minMargin": 0.02,
+          "minVocabularyMass": 0.4
+        },
+        "WHAT": {
+          "minScore": 0,
+          "minMargin": 0.5,
+          "minVocabularyMass": 0.4
+        },
+        "WHICH": {
+          "minScore": 0.85,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "YOU": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "HE / SHE": {
+          "minScore": 0.65,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "THEY": {
+          "minScore": 0.25,
+          "minMargin": 0.05,
+          "minVocabularyMass": 0.4
+        },
+        "YOUR / YOURS": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "SISTER": {
+          "minScore": 0.25,
+          "minMargin": 0.02,
+          "minVocabularyMass": 0.4
+        },
+        "WALK": {
+          "minScore": 0,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0.4
+        },
+        "TIRED": {
+          "minScore": 0,
+          "minMargin": 0.5,
+          "minVocabularyMass": 0.4
+        },
+        "HOSPITAL": {
+          "minScore": 0,
+          "minMargin": 0.25,
+          "minVocabularyMass": 0.4
+        },
+        "WORK": {
+          "minScore": 0.8,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "INSIDE": {
+          "minScore": 0,
+          "minMargin": 0.1,
+          "minVocabularyMass": 0.4
+        },
+        "MILK": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "MONEY": {
+          "minScore": 0,
+          "minMargin": 0.1,
+          "minVocabularyMass": 0.4
+        },
+        "PHONE": {
+          "minScore": 0.85,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        }
+      },
+      "globalValidation": {
+        "attempts": 296,
+        "correct": 217,
+        "wrong": 6,
+        "noMatch": 73,
+        "accuracy": 0.733108,
+        "precision": 0.973094,
+        "overallPrecision": 0.868,
+        "negativeAttempts": 357,
+        "negativeFalse": 27,
+        "negativeFalseRate": 0.07563
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    }
+  },
+  "candidates": {
+    "full": [
+      {
+        "weight": 0.25,
+        "metrics": {
+          "attempts": 296,
+          "correct": 206,
+          "wrong": 3,
+          "noMatch": 87,
+          "accuracy": 0.695946,
+          "precision": 0.985646,
+          "overallPrecision": 0.927928,
+          "negativeAttempts": 357,
+          "negativeFalse": 13,
+          "negativeFalseRate": 0.036415
+        },
+        "policy": {
+          "minScore": 0.5,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.8,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 296,
+            "correct": 206,
+            "wrong": 3,
+            "noMatch": 87,
+            "accuracy": 0.695946,
+            "precision": 0.985646,
+            "overallPrecision": 0.927928,
+            "negativeAttempts": 357,
+            "negativeFalse": 13,
+            "negativeFalseRate": 0.036415
+          },
+          "validationErrorBudgets": {
+            "attempts": 296,
+            "correct": 183,
+            "wrong": 6,
+            "noMatch": 107,
+            "accuracy": 0.618243,
+            "precision": 0.968254,
+            "overallPrecision": 0.785408,
+            "negativeAttempts": 357,
+            "negativeFalse": 44,
+            "negativeFalseRate": 0.123249
+          },
+          "classPolicies": {
+            "SORRY": {
+              "minScore": 0.5,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.8
+            },
+            "WELCOME": {
+              "minScore": 0.5,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.8
+            },
+            "GOOD MORNING": {
+              "minScore": 0.4,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.8
+            },
+            "GOOD AFTERNOON": {
+              "minScore": 0.45,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.8
+            },
+            "HOW": {
+              "minScore": 0.45,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.8
+            },
+            "WHAT": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.8
+            },
+            "WHERE": {
+              "minScore": 0.55,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "WHEN": {
+              "minScore": 0.75,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "WALK": {
+              "minScore": 0.25,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.8
+            },
+            "RUN": {
+              "minScore": 0.45,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.8
+            },
+            "HELP": {
+              "minScore": 0.35,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.8
+            },
+            "WAIT": {
+              "minScore": 0.7,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "KNOW": {
+              "minScore": 0.7,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "GOOD": {
+              "minScore": 0.65,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "WORK": {
+              "minScore": 0.95,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            },
+            "INSIDE": {
+              "minScore": 0.5,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.8
+            },
+            "NOW": {
+              "minScore": 0.65,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.8
+            },
+            "LATER": {
+              "minScore": 0.5,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.8
+            },
+            "TIME": {
+              "minScore": 0.5,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.8
+            },
+            "MILK": {
+              "minScore": 0.5,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.8
+            },
+            "MONEY": {
+              "minScore": 0.4,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.8
+            },
+            "PHONE": {
+              "minScore": 0.75,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.8
+            }
+          },
+          "globalValidation": {
+            "attempts": 296,
+            "correct": 186,
+            "wrong": 6,
+            "noMatch": 104,
+            "accuracy": 0.628378,
+            "precision": 0.96875,
+            "overallPrecision": 0.885714,
+            "negativeAttempts": 357,
+            "negativeFalse": 18,
+            "negativeFalseRate": 0.05042
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.5,
+        "metrics": {
+          "attempts": 296,
+          "correct": 228,
+          "wrong": 2,
+          "noMatch": 66,
+          "accuracy": 0.77027,
+          "precision": 0.991304,
+          "overallPrecision": 0.938272,
+          "negativeAttempts": 357,
+          "negativeFalse": 13,
+          "negativeFalseRate": 0.036415
+        },
+        "policy": {
+          "minScore": 0.5,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 296,
+            "correct": 228,
+            "wrong": 2,
+            "noMatch": 66,
+            "accuracy": 0.77027,
+            "precision": 0.991304,
+            "overallPrecision": 0.938272,
+            "negativeAttempts": 357,
+            "negativeFalse": 13,
+            "negativeFalseRate": 0.036415
+          },
+          "validationErrorBudgets": {
+            "attempts": 296,
+            "correct": 183,
+            "wrong": 6,
+            "noMatch": 107,
+            "accuracy": 0.618243,
+            "precision": 0.968254,
+            "overallPrecision": 0.785408,
+            "negativeAttempts": 357,
+            "negativeFalse": 44,
+            "negativeFalseRate": 0.123249
+          },
+          "classPolicies": {
+            "GOOD MORNING": {
+              "minScore": 0.45,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.6
+            },
+            "WHO": {
+              "minScore": 0.3,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.6
+            },
+            "WHEN": {
+              "minScore": 0.7,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "WHICH": {
+              "minScore": 0.75,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "YOU": {
+              "minScore": 0.6,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "THEY": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "YOUR / YOURS": {
+              "minScore": 0.5,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.6
+            },
+            "SISTER": {
+              "minScore": 0.45,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.6
+            },
+            "TEACHER": {
+              "minScore": 0.45,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.6
+            },
+            "WALK": {
+              "minScore": 0.3,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.6
+            },
+            "SIT": {
+              "minScore": 0.5,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.6
+            },
+            "HELP": {
+              "minScore": 0.35,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.6
+            },
+            "WAIT": {
+              "minScore": 0.6,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "KNOW": {
+              "minScore": 0.6,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "GOOD": {
+              "minScore": 0.7,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "HOSPITAL": {
+              "minScore": 0.3,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.6
+            },
+            "WORK": {
+              "minScore": 0.85,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "OUTSIDE": {
+              "minScore": 0.5,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.6
+            },
+            "TODAY": {
+              "minScore": 0.5,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.6
+            },
+            "NOW": {
+              "minScore": 0.5,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.6
+            },
+            "MORNING": {
+              "minScore": 0.35,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.6
+            },
+            "TIME": {
+              "minScore": 0.5,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.6
+            },
+            "MONEY": {
+              "minScore": 0.45,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.6
+            },
+            "PHONE": {
+              "minScore": 0.8,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.6
+            },
+            "BAG": {
+              "minScore": 0.5,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0.6
+            }
+          },
+          "globalValidation": {
+            "attempts": 296,
+            "correct": 208,
+            "wrong": 6,
+            "noMatch": 82,
+            "accuracy": 0.702703,
+            "precision": 0.971963,
+            "overallPrecision": 0.892704,
+            "negativeAttempts": 357,
+            "negativeFalse": 19,
+            "negativeFalseRate": 0.053221
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.75,
+        "metrics": {
+          "attempts": 296,
+          "correct": 229,
+          "wrong": 5,
+          "noMatch": 62,
+          "accuracy": 0.773649,
+          "precision": 0.978632,
+          "overallPrecision": 0.90873,
+          "negativeAttempts": 357,
+          "negativeFalse": 18,
+          "negativeFalseRate": 0.05042
+        },
+        "policy": {
+          "minScore": 0,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 296,
+            "correct": 229,
+            "wrong": 5,
+            "noMatch": 62,
+            "accuracy": 0.773649,
+            "precision": 0.978632,
+            "overallPrecision": 0.90873,
+            "negativeAttempts": 357,
+            "negativeFalse": 18,
+            "negativeFalseRate": 0.05042
+          },
+          "validationErrorBudgets": {
+            "attempts": 296,
+            "correct": 183,
+            "wrong": 6,
+            "noMatch": 107,
+            "accuracy": 0.618243,
+            "precision": 0.968254,
+            "overallPrecision": 0.785408,
+            "negativeAttempts": 357,
+            "negativeFalse": 44,
+            "negativeFalseRate": 0.123249
+          },
+          "classPolicies": {
+            "SORRY": {
+              "minScore": 0,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.4
+            },
+            "GOOD MORNING": {
+              "minScore": 0,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0.4
+            },
+            "GOOD NIGHT": {
+              "minScore": 0,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0.4
+            },
+            "WHAT": {
+              "minScore": 0,
+              "minMargin": 0.5,
+              "minVocabularyMass": 0.4
+            },
+            "WHICH": {
+              "minScore": 0.85,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.4
+            },
+            "YOU": {
+              "minScore": 0,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.4
+            },
+            "HE / SHE": {
+              "minScore": 0.65,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.4
+            },
+            "THEY": {
+              "minScore": 0.25,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.4
+            },
+            "YOUR / YOURS": {
+              "minScore": 0,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.4
+            },
+            "SISTER": {
+              "minScore": 0.25,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0.4
+            },
+            "WALK": {
+              "minScore": 0,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0.4
+            },
+            "TIRED": {
+              "minScore": 0,
+              "minMargin": 0.5,
+              "minVocabularyMass": 0.4
+            },
+            "HOSPITAL": {
+              "minScore": 0,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0.4
+            },
+            "WORK": {
+              "minScore": 0.8,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.4
+            },
+            "INSIDE": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.4
+            },
+            "MILK": {
+              "minScore": 0,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0.4
+            },
+            "MONEY": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.4
+            },
+            "PHONE": {
+              "minScore": 0.85,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.4
+            }
+          },
+          "globalValidation": {
+            "attempts": 296,
+            "correct": 217,
+            "wrong": 6,
+            "noMatch": 73,
+            "accuracy": 0.733108,
+            "precision": 0.973094,
+            "overallPrecision": 0.868,
+            "negativeAttempts": 357,
+            "negativeFalse": 27,
+            "negativeFalseRate": 0.07563
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 1,
+        "metrics": {
+          "attempts": 296,
+          "correct": 219,
+          "wrong": 5,
+          "noMatch": 72,
+          "accuracy": 0.739865,
+          "precision": 0.977679,
+          "overallPrecision": 0.948052,
+          "negativeAttempts": 357,
+          "negativeFalse": 7,
+          "negativeFalseRate": 0.019608
+        },
+        "policy": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0.4,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 296,
+            "correct": 219,
+            "wrong": 5,
+            "noMatch": 72,
+            "accuracy": 0.739865,
+            "precision": 0.977679,
+            "overallPrecision": 0.948052,
+            "negativeAttempts": 357,
+            "negativeFalse": 7,
+            "negativeFalseRate": 0.019608
+          },
+          "validationErrorBudgets": {
+            "attempts": 296,
+            "correct": 183,
+            "wrong": 6,
+            "noMatch": 107,
+            "accuracy": 0.618243,
+            "precision": 0.968254,
+            "overallPrecision": 0.785408,
+            "negativeAttempts": 357,
+            "negativeFalse": 44,
+            "negativeFalseRate": 0.123249
+          },
+          "classPolicies": {
+            "GOOD MORNING": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "GOOD NIGHT": {
+              "minScore": 0.5,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "HOW": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WHO": {
+              "minScore": 0.6,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WHERE": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WHICH": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "I / ME": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "HE / SHE": {
+              "minScore": 0.8,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "THEY": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "CHILD": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "SLEEP": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WAKE UP": {
+              "minScore": 0.7,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WALK": {
+              "minScore": 0.35,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0.4
+            },
+            "RUN": {
+              "minScore": 0.6,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "STAND": {
+              "minScore": 0.25,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "HELP": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "STOP": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "WAIT": {
+              "minScore": 0.7,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "GOOD": {
+              "minScore": 0.6,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "HOSPITAL": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "INSIDE": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "OUTSIDE": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "LATER": {
+              "minScore": 0.5,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "MORNING": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "MONEY": {
+              "minScore": 0.25,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "BAG": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            }
+          },
+          "globalValidation": {
+            "attempts": 296,
+            "correct": 186,
+            "wrong": 6,
+            "noMatch": 104,
+            "accuracy": 0.628378,
+            "precision": 0.96875,
+            "overallPrecision": 0.925373,
+            "negativeAttempts": 357,
+            "negativeFalse": 9,
+            "negativeFalseRate": 0.02521
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      }
+    ]
+  },
+  "deployable": true,
+  "scope": "Validation-only auxiliary exploration, not deployed or independently verified."
+}

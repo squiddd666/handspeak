@@ -1,0 +1,3646 @@
+{
+  "scope": "Failed primary-reference virtual-camera attempts, not a training or calibration dataset.",
+  "afterSourceSha256": "6788cd752c1a1f5d211ac33f9e01aadddcb70ec4c7064f765c256b4e06d62d1f",
+  "count": 114,
+  "words": [
+    {
+      "id": "after",
+      "label": "AFTER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (0/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/after.mp4",
+      "clipSha256": "7195f0dd6656789fae448e182a8e01ba000e3880bb2656cf1c9a8398ddffb107",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "angry",
+      "label": "ANGRY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WAIT · 2. WHAT · 3. GOOD · 4. THIS · 5. WHERE. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/angry.mp4",
+      "clipSha256": "03e8889dd84df16792b975f29ac913b396ac5cd7c195e5cc39bbbfe3c7f83779",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WAIT",
+          "score": 0.397993
+        },
+        {
+          "label": "WHAT",
+          "score": 0.124178
+        },
+        {
+          "label": "GOOD",
+          "score": 0.090321
+        },
+        {
+          "label": "THIS",
+          "score": 0.034069
+        },
+        {
+          "label": "WHERE",
+          "score": 0.028482
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "anyone",
+      "label": "ANYONE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. ANYONE · 2. KNIGHT · 3. OTHER · 4. EDIT · 5. PIPE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/anyone.mp4",
+      "clipSha256": "a58afd324505d24838c32e90c3d1c970f892ea560f12452b3466c3bac5f6ff5f",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "ANYONE",
+          "score": 0.190926
+        },
+        {
+          "label": "KNIGHT1",
+          "score": 0.093538
+        },
+        {
+          "label": "OTHER",
+          "score": 0.060848
+        },
+        {
+          "label": "EDIT1",
+          "score": 0.040012
+        },
+        {
+          "label": "PIPE2",
+          "score": 0.037161
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "apple",
+      "label": "APPLE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. APPLE · 2. PATIENT · 3. BACKPACK · 4. CHEEK · 5. PIPE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/apple.mp4",
+      "clipSha256": "6c87350319134523b87ca10962bc5bbc526cf7fe286c507966f2089fd6206507",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "APPLE",
+          "score": 0.163549
+        },
+        {
+          "label": "PATIENT2",
+          "score": 0.075694
+        },
+        {
+          "label": "BACKPACK1",
+          "score": 0.061123
+        },
+        {
+          "label": "CHEEK",
+          "score": 0.05028
+        },
+        {
+          "label": "PIPE2",
+          "score": 0.042905
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "articulatesign",
+      "label": "ARTICULATESIGN",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. HOPE · 2. BASKETBALL · 3. EDIT · 4. ROCKINGCHAIR · 5. ARTICULATESIGN. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/articulatesign.mp4",
+      "clipSha256": "102d17cc925898fd5e0cd3f1b870d237a7a8c58d2caa20863465672423a10a1b",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "HOPE",
+          "score": 0.130317
+        },
+        {
+          "label": "BASKETBALL1",
+          "score": 0.096857
+        },
+        {
+          "label": "EDIT1",
+          "score": 0.086716
+        },
+        {
+          "label": "ROCKINGCHAIR1",
+          "score": 0.085837
+        },
+        {
+          "label": "ARTICULATESIGN",
+          "score": 0.058327
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "bag",
+      "label": "BAG",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WE · 2. BAG · 3. STAND · 4. YESTERDAY · 5. I / ME. Nothing added. Sign again.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/bag.mp4",
+      "clipSha256": "b139f86594f832d9a977ca4bcc273f71d9ae85f76fc77c3708bf99bd0a88d94b",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WE",
+          "score": 0.501132
+        },
+        {
+          "label": "BAG",
+          "score": 0.362428
+        },
+        {
+          "label": "STAND",
+          "score": 0.036257
+        },
+        {
+          "label": "YESTERDAY",
+          "score": 0.011258
+        },
+        {
+          "label": "I / ME",
+          "score": 0.008176
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "bathroom",
+      "label": "BATHROOM",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/bathroom.mp4",
+      "clipSha256": "03b587e7fb6686f2bd3da7bbc7a0ff4e4cabbcdde674c4eb03a27996e7f93670",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "bee",
+      "label": "BEE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/bee.mp4",
+      "clipSha256": "a43fca58c927751fc3bee9c96399faf971e856a80eb49feb54450b7a189d8f42",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "before",
+      "label": "BEFORE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. SCHOOL · 2. YOUR / YOURS · 3. GOOD AFTERNOON · 4. STOP · 5. WAIT. Nothing added. Sign again.",
+      "trackedFrames": 13,
+      "primaryClip": "media/research-signs/before.mp4",
+      "clipSha256": "7d84dd8fc6bfc3fc8abeb752476af0b49e398b554672fbe049f0788ff7b60b39",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "SCHOOL",
+          "score": 0.648904
+        },
+        {
+          "label": "YOUR / YOURS",
+          "score": 0.303846
+        },
+        {
+          "label": "GOOD AFTERNOON",
+          "score": 0.013809
+        },
+        {
+          "label": "STOP",
+          "score": 0.004896
+        },
+        {
+          "label": "WAIT",
+          "score": 0.003641
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "belt",
+      "label": "BELT",
+      "modelRoute": "capstone/core",
+      "cameraVocabulary": "Camera vocabulary: Default words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/signs/belt.mp4",
+      "clipSha256": "1b3245a15433848f57cffe2ddd4be95de7b42ec2e3e8ade9b9b70b6046607fb6",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "book",
+      "label": "BOOK",
+      "modelRoute": "motion-manual",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": "LIKE",
+      "outcome": "wrong prediction",
+      "status": "Possible match: “LIKE”. Check it before adding it to your message.",
+      "trackedFrames": 7,
+      "primaryClip": "media/signs/book.mp4",
+      "clipSha256": "5d19b4a470108997a36a860f8bbc5b6b9368dd1a514499c8f7b4e48260ba13ce",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "bread",
+      "label": "BREAD",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. BREAD · 2. HAPPY · 3. EVERYONE · 4. ANGRY · 5. HELP. Nothing added. Sign again.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/bread.mp4",
+      "clipSha256": "540bc261381c5c2bc40676aa0cf07e01ed47640f2faa028602115d1d7f91f43b",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "BREAD",
+          "score": 0.362144
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.118798
+        },
+        {
+          "label": "EVERYONE",
+          "score": 0.113376
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.048931
+        },
+        {
+          "label": "HELP",
+          "score": 0.039559
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "breakfast",
+      "label": "BREAKFAST",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. BEE · 2. MAPLE · 3. CANCER · 4. GUESS · 5. BREAKFAST. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 9,
+      "primaryClip": "media/research-signs/breakfast.mp4",
+      "clipSha256": "328c0eb077945dd88db3a5437e6704b478b5459312ac2195e415acc1b3ddb790",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "BEE1",
+          "score": 0.108536
+        },
+        {
+          "label": "MAPLE",
+          "score": 0.082892
+        },
+        {
+          "label": "CANCER1",
+          "score": 0.066219
+        },
+        {
+          "label": "GUESS1",
+          "score": 0.061336
+        },
+        {
+          "label": "BREAKFAST1",
+          "score": 0.042734
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "brother",
+      "label": "BROTHER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. NOW · 2. RUN · 3. BROTHER · 4. SISTER · 5. TOMORROW. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/signs/brother.mp4",
+      "clipSha256": "afd8748c21f5d59a1393d0375722732da360cf4741d5d110192ee9e6acf47771",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "NOW",
+          "score": 0.179553
+        },
+        {
+          "label": "RUN",
+          "score": 0.150923
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.092085
+        },
+        {
+          "label": "SISTER",
+          "score": 0.091363
+        },
+        {
+          "label": "TOMORROW",
+          "score": 0.084953
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "calendar",
+      "label": "CALENDAR",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. FLOAT · 2. MEAT · 3. VOMIT · 4. PEG · 5. JEWELRY. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 9,
+      "primaryClip": "media/research-signs/calendar.mp4",
+      "clipSha256": "975f766e9e477bf4e75ae29b2423e4e63631f2fbe9fc5fde844daa64bc73f3a1",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "FLOAT1",
+          "score": 0.113887
+        },
+        {
+          "label": "MEAT1",
+          "score": 0.10284
+        },
+        {
+          "label": "VOMIT",
+          "score": 0.093698
+        },
+        {
+          "label": "PEG2",
+          "score": 0.0858
+        },
+        {
+          "label": "JEWELRY",
+          "score": 0.063136
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "cancer",
+      "label": "CANCER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. CANCER · 2. 8HOUR · 3. ELEVATOR · 4. CAPTURE · 5. GUESS. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 15,
+      "primaryClip": "media/research-signs/cancer.mp4",
+      "clipSha256": "c17cb6fa72e4fbb32e617329d4ff877811d80b26599f6b61f3abd5a0924295dc",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "CANCER1",
+          "score": 0.277797
+        },
+        {
+          "label": "8HOUR",
+          "score": 0.130727
+        },
+        {
+          "label": "ELEVATOR1",
+          "score": 0.071343
+        },
+        {
+          "label": "CAPTURE",
+          "score": 0.033972
+        },
+        {
+          "label": "GUESS1",
+          "score": 0.032968
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "capture",
+      "label": "CAPTURE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (1/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/capture.mp4",
+      "clipSha256": "c7f8b5d0ba7423ccd769d90ac08b14cbf5d98d550059cf67efa2dceec5a649e3",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "catapult",
+      "label": "CATAPULT",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": "MAPLE",
+      "outcome": "wrong prediction",
+      "status": "Possible match: MAPLE. Top five (100-word full): 1. MAPLE · 2. BEE · 3. TAIL · 4. DOG · 5. BREAKFAST. Verify before adding.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/catapult.mp4",
+      "clipSha256": "a27dec68083a14a9211f96bc571a5cbd3b56904d33bb44e1f50a207a6e5ec760",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [
+        {
+          "label": "MAPLE",
+          "score": 0.300166
+        },
+        {
+          "label": "BEE1",
+          "score": 0.09179
+        },
+        {
+          "label": "TAIL1",
+          "score": 0.069824
+        },
+        {
+          "label": "DOG1",
+          "score": 0.03467
+        },
+        {
+          "label": "BREAKFAST1",
+          "score": 0.028258
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "cemetery",
+      "label": "CEMETERY",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. RAZOR · 2. KNIGHT · 3. CEMETERY · 4. OTHER · 5. BACKPACK. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/cemetery.mp4",
+      "clipSha256": "34c909ecd7d21611bb17e5ba085844c8b9f2991617a469e50817c4a394dd4258",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "RAZOR2",
+          "score": 0.079495
+        },
+        {
+          "label": "KNIGHT1",
+          "score": 0.059852
+        },
+        {
+          "label": "CEMETERY",
+          "score": 0.05162
+        },
+        {
+          "label": "OTHER",
+          "score": 0.041445
+        },
+        {
+          "label": "BACKPACK1",
+          "score": 0.04047
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "cheek",
+      "label": "CHEEK",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. PATIENT · 2. CHEEK · 3. EAT · 4. COMB · 5. ANYONE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 10,
+      "primaryClip": "media/research-signs/cheek.mp4",
+      "clipSha256": "54675fd78526b1530cd797f43e5f645f5aaac2be304c162f5b07de909eb26ba6",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "PATIENT2",
+          "score": 0.374671
+        },
+        {
+          "label": "CHEEK",
+          "score": 0.301519
+        },
+        {
+          "label": "EAT1",
+          "score": 0.030584
+        },
+        {
+          "label": "COMB2",
+          "score": 0.028494
+        },
+        {
+          "label": "ANYONE",
+          "score": 0.023532
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "cheesegrater",
+      "label": "CHEESEGRATER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. CHEESEGRATER · 2. BACKPACK · 3. NIGHT · 4. MEACULPA · 5. GRAMMAR. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 18,
+      "primaryClip": "media/research-signs/cheesegrater.mp4",
+      "clipSha256": "6c2a0461906c35a6b2d7b9fcfe04475394f6e0f3157f9ff245cdcf43ab9f74a3",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "CHEESEGRATER",
+          "score": 0.131543
+        },
+        {
+          "label": "BACKPACK1",
+          "score": 0.069484
+        },
+        {
+          "label": "NIGHT1",
+          "score": 0.047605
+        },
+        {
+          "label": "MEACULPA",
+          "score": 0.04546
+        },
+        {
+          "label": "GRAMMAR",
+          "score": 0.038661
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "child",
+      "label": "CHILD",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/signs/child.mp4",
+      "clipSha256": "46c9734d193f498efcbde291c83b0e6d3875b65a5d4a8d3a59a6b56132ea72e9",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "christmas",
+      "label": "CHRISTMAS",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/christmas.mp4",
+      "clipSha256": "bee4aa108eb4a1f991dad8179a6e13def28c220dbabdd3477d813a1ba5cee7b2",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "clothes",
+      "label": "CLOTHES",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WALK · 2. SIT · 3. WE · 4. CLOTHES · 5. TIME. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/clothes.mp4",
+      "clipSha256": "8a70a0b23e5d884978c8d82ba6d9bd0ec9a4894880253a14592820fdb0c305a2",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WALK",
+          "score": 0.285364
+        },
+        {
+          "label": "SIT",
+          "score": 0.228978
+        },
+        {
+          "label": "WE",
+          "score": 0.221843
+        },
+        {
+          "label": "CLOTHES",
+          "score": 0.078213
+        },
+        {
+          "label": "TIME",
+          "score": 0.036663
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "comb",
+      "label": "COMB",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. CHEESEGRATER · 2. COMB · 3. DOWNSIZE · 4. AXE · 5. INTUITIVE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/comb.mp4",
+      "clipSha256": "f00cf59a223b670d57f50b620669b75e5c89effe998279f7c60087e105db359e",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "CHEESEGRATER",
+          "score": 0.14855
+        },
+        {
+          "label": "COMB2",
+          "score": 0.100308
+        },
+        {
+          "label": "DOWNSIZE1",
+          "score": 0.04281
+        },
+        {
+          "label": "AXE1",
+          "score": 0.030791
+        },
+        {
+          "label": "INTUITIVE",
+          "score": 0.029192
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "dark",
+      "label": "DARK",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. DARK · 2. PIPE · 3. HALLOWEEN · 4. FLOAT · 5. KNIGHT. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/dark.mp4",
+      "clipSha256": "91155de2a3b00be1027dee59390c7f252a3932d79355df500adbc23f40f03c35",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "DARK1",
+          "score": 0.117214
+        },
+        {
+          "label": "PIPE2",
+          "score": 0.062303
+        },
+        {
+          "label": "HALLOWEEN1",
+          "score": 0.061221
+        },
+        {
+          "label": "FLOAT1",
+          "score": 0.050528
+        },
+        {
+          "label": "KNIGHT1",
+          "score": 0.050413
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "develop",
+      "label": "DEVELOP",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. BREAKFAST · 2. DEVELOP · 3. MOVIE · 4. CLOSE · 5. 8HOUR. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/develop.mp4",
+      "clipSha256": "6689dabcc7a0ae6ed54a3dc057f0bc1ad7ef63b9c4937eb9c1d4e8272ce50a62",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "BREAKFAST1",
+          "score": 0.200878
+        },
+        {
+          "label": "DEVELOP1",
+          "score": 0.192912
+        },
+        {
+          "label": "MOVIE1",
+          "score": 0.10494
+        },
+        {
+          "label": "CLOSE",
+          "score": 0.096612
+        },
+        {
+          "label": "8HOUR",
+          "score": 0.044819
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "dinner",
+      "label": "DINNER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/dinner.mp4",
+      "clipSha256": "e69305ef7310eb4d355a358da30ff35cf29bde61b58dc5246c25f72d55b66cef",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "erupt",
+      "label": "ERUPT",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. BASKETBALL · 2. AXE · 3. HALLOWEEN · 4. CANCER · 5. LETTUCE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/erupt.mp4",
+      "clipSha256": "040ff0875e0de015c42848a2b5d6b32c2d8ff37519daa5e07050984756924379",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "BASKETBALL1",
+          "score": 0.177844
+        },
+        {
+          "label": "AXE1",
+          "score": 0.06426
+        },
+        {
+          "label": "HALLOWEEN1",
+          "score": 0.062018
+        },
+        {
+          "label": "CANCER1",
+          "score": 0.061714
+        },
+        {
+          "label": "LETTUCE1",
+          "score": 0.060252
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "everyone",
+      "label": "EVERYONE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. EVERYONE · 2. HERE · 3. GIVE · 4. HELP · 5. STUDENT. Nothing added. Sign again.",
+      "trackedFrames": 9,
+      "primaryClip": "media/research-signs/everyone.mp4",
+      "clipSha256": "a0efe1ebeb622e0e417f6a052e5b1d8ee4162130011ee20883c96cd418572739",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "EVERYONE",
+          "score": 0.526603
+        },
+        {
+          "label": "HERE",
+          "score": 0.100908
+        },
+        {
+          "label": "GIVE",
+          "score": 0.063812
+        },
+        {
+          "label": "HELP",
+          "score": 0.039581
+        },
+        {
+          "label": "STUDENT",
+          "score": 0.038482
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "family",
+      "label": "FAMILY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. MONEY · 2. FAMILY · 3. WHAT · 4. SCHOOL · 5. WAIT. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/family.mp4",
+      "clipSha256": "5b50648e59fe58b8b7e4749f05eab6fa40ec60ab3f88a01da04b96ca89866b01",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "MONEY",
+          "score": 0.278758
+        },
+        {
+          "label": "FAMILY",
+          "score": 0.255561
+        },
+        {
+          "label": "WHAT",
+          "score": 0.186503
+        },
+        {
+          "label": "SCHOOL",
+          "score": 0.054308
+        },
+        {
+          "label": "WAIT",
+          "score": 0.040663
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "father",
+      "label": "FATHER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. FATHER · 2. BAD · 3. GOODBYE · 4. MOTHER · 5. OUTSIDE. Nothing added. Sign again.",
+      "trackedFrames": 9,
+      "primaryClip": "media/research-signs/father.mp4",
+      "clipSha256": "3ae03d28f2a791515ce2067507a8a3c8cb50c6c94a855b182a8baedad7bde7c9",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "FATHER",
+          "score": 0.63885
+        },
+        {
+          "label": "BAD",
+          "score": 0.064152
+        },
+        {
+          "label": "GOODBYE",
+          "score": 0.062354
+        },
+        {
+          "label": "MOTHER",
+          "score": 0.059768
+        },
+        {
+          "label": "OUTSIDE",
+          "score": 0.037174
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "fine",
+      "label": "FINE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. TWINS · 2. FINE · 3. SQUEEZE · 4. OFFEND · 5. LUNCH. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 11,
+      "primaryClip": "media/signs/fine.mp4",
+      "clipSha256": "db3d45057ebc38d1a458be20892559e791d04624a8e2caf1a18f2661adeece4e",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "TWINS1",
+          "score": 0.103022
+        },
+        {
+          "label": "FINE1",
+          "score": 0.069817
+        },
+        {
+          "label": "SQUEEZE",
+          "score": 0.047326
+        },
+        {
+          "label": "OFFEND",
+          "score": 0.038785
+        },
+        {
+          "label": "LUNCH1",
+          "score": 0.038091
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "fish",
+      "label": "FISH",
+      "modelRoute": "motion-manual",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": "SEE",
+      "outcome": "wrong prediction",
+      "status": "Possible match: “SEE”. Check it before adding it to your message.",
+      "trackedFrames": 6,
+      "primaryClip": "media/signs/fish.mp4",
+      "clipSha256": "39b9d6608ec05dc313c364376835433cc486519c511d6cbc73205e63815f3d25",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "foreigner",
+      "label": "FOREIGNER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (1/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/foreigner.mp4",
+      "clipSha256": "49358387ebe713ce10cbc332759ac17e937bb38e41f6224ce795480aa2ee3238",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "friend",
+      "label": "FRIEND",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WHEN · 2. WHO · 3. FRIEND · 4. SISTER · 5. YOU. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/friend.mp4",
+      "clipSha256": "2485886164dff29d5277f8f06b280c592ef12d42c71e37616e70abb3c2669b40",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WHEN",
+          "score": 0.435591
+        },
+        {
+          "label": "WHO",
+          "score": 0.242329
+        },
+        {
+          "label": "FRIEND",
+          "score": 0.207945
+        },
+        {
+          "label": "SISTER",
+          "score": 0.055595
+        },
+        {
+          "label": "YOU",
+          "score": 0.035354
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "give",
+      "label": "GIVE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. STUDENT · 2. GIVE · 3. EVERYONE · 4. WALK · 5. HAPPY. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/signs/give.mp4",
+      "clipSha256": "f64ffb4c250ebf6079d6d214f26afaab2dcdc9e61e738d758d4a5a6800b222ec",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "STUDENT",
+          "score": 0.366794
+        },
+        {
+          "label": "GIVE",
+          "score": 0.195854
+        },
+        {
+          "label": "EVERYONE",
+          "score": 0.077429
+        },
+        {
+          "label": "WALK",
+          "score": 0.036863
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.018227
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "good",
+      "label": "GOOD",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. MY / MINE · 2. GOOD · 3. WELCOME · 4. SLEEP · 5. HAPPY. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/good.mp4",
+      "clipSha256": "93107ac56c58b0c068bf99882d3c6953fdae71af5cbf3fd455cc3334a1027c8c",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "MY / MINE",
+          "score": 0.36145
+        },
+        {
+          "label": "GOOD",
+          "score": 0.287542
+        },
+        {
+          "label": "WELCOME",
+          "score": 0.254636
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.023429
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.017879
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "good-morning",
+      "label": "GOOD MORNING",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. GOOD MORNING · 2. MORNING · 3. GOOD AFTERNOON · 4. SCHOOL · 5. AFTER. Nothing added. Sign again.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/good-morning.mp4",
+      "clipSha256": "fb6350c15e1abf46fdc10a44a843d866b0264ec579a7ccdfef1abe022c8afb27",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "GOOD MORNING",
+          "score": 0.347684
+        },
+        {
+          "label": "MORNING",
+          "score": 0.292339
+        },
+        {
+          "label": "GOOD AFTERNOON",
+          "score": 0.099129
+        },
+        {
+          "label": "SCHOOL",
+          "score": 0.072611
+        },
+        {
+          "label": "AFTER",
+          "score": 0.039173
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "goodbye",
+      "label": "GOODBYE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. BATHROOM · 2. NEED · 3. WHERE · 4. GOODBYE · 5. CHILD. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/goodbye.mp4",
+      "clipSha256": "1f56d491bf8700cb9aacff371305780f93b61e7dd683aa18d73ece60f7b5c38a",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "BATHROOM",
+          "score": 0.32662
+        },
+        {
+          "label": "NEED",
+          "score": 0.170389
+        },
+        {
+          "label": "WHERE",
+          "score": 0.157854
+        },
+        {
+          "label": "GOODBYE",
+          "score": 0.066749
+        },
+        {
+          "label": "CHILD",
+          "score": 0.062089
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "guess",
+      "label": "GUESS",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/guess.mp4",
+      "clipSha256": "6793bd57b54e381baaef0957b1200fa7ad6092886d33a2f59e6955dbe8cf30ba",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "halloween",
+      "label": "HALLOWEEN",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. HALLOWEEN · 2. SINCE · 3. HURDLE / TRIP · 4. VOMIT · 5. DOWNSIZE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/halloween.mp4",
+      "clipSha256": "01852df759e8af47fccdfdcd1e9eb56b1d20a527720d3fe671d53567ad5a052e",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "HALLOWEEN1",
+          "score": 0.234637
+        },
+        {
+          "label": "SINCE",
+          "score": 0.051675
+        },
+        {
+          "label": "HURDLE/TRIP1",
+          "score": 0.051637
+        },
+        {
+          "label": "VOMIT",
+          "score": 0.037346
+        },
+        {
+          "label": "DOWNSIZE1",
+          "score": 0.036584
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "happy",
+      "label": "HAPPY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. MY / MINE · 2. HAPPY · 3. GOOD MORNING · 4. MORNING · 5. STOP. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/happy.mp4",
+      "clipSha256": "9d3cf9f5d1be8e0bd21add32165456d83623c99042de886d192eccca126ce40f",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "MY / MINE",
+          "score": 0.272222
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.260036
+        },
+        {
+          "label": "GOOD MORNING",
+          "score": 0.054948
+        },
+        {
+          "label": "MORNING",
+          "score": 0.051415
+        },
+        {
+          "label": "STOP",
+          "score": 0.039021
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "have",
+      "label": "HAVE",
+      "modelRoute": "daily-manual",
+      "cameraVocabulary": "Camera vocabulary: NAME · HOME · HAVE · WANT · LOVE (experimental preview)",
+      "prediction": "HOME",
+      "outcome": "wrong prediction",
+      "status": "Possible match: HOME. Check the word, then choose Add reviewed word.",
+      "trackedFrames": 5,
+      "primaryClip": "media/signs/have.mp4",
+      "clipSha256": "f5a1290c8ee97d7c2a510142f5b12634831a78da353c89db97e9363da8828cd0",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "he-she",
+      "label": "HE / SHE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. THEY · 2. HE / SHE · 3. THIS · 4. BATHROOM · 5. CHILD. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/he-she.mp4",
+      "clipSha256": "881d1c0ac92d22dbf94ba3296fe69638ca566dc9119205115dec9f2076e8e901",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "THEY",
+          "score": 0.644206
+        },
+        {
+          "label": "HE / SHE",
+          "score": 0.190256
+        },
+        {
+          "label": "THIS",
+          "score": 0.042781
+        },
+        {
+          "label": "BATHROOM",
+          "score": 0.029058
+        },
+        {
+          "label": "CHILD",
+          "score": 0.024116
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "hello",
+      "label": "HELLO",
+      "modelRoute": "motion-manual",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": "DRINK",
+      "outcome": "wrong prediction",
+      "status": "Possible match: “DRINK”. Check it before adding it to your message.",
+      "trackedFrames": 20,
+      "primaryClip": "media/signs/hello.mp4",
+      "clipSha256": "bd9e2b2782a1a23428bb5784273577fef1f7d1f8728937f294f57ff172e55147",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "help",
+      "label": "HELP",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. HELP · 2. PHONE · 3. STOP · 4. GOOD NIGHT · 5. COME. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/help.mp4",
+      "clipSha256": "c244edbafe34eddae9563cb5b1a34927c482755c4788ea230b80c62add947313",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "HELP",
+          "score": 0.470897
+        },
+        {
+          "label": "PHONE",
+          "score": 0.168219
+        },
+        {
+          "label": "STOP",
+          "score": 0.072681
+        },
+        {
+          "label": "GOOD NIGHT",
+          "score": 0.061132
+        },
+        {
+          "label": "COME",
+          "score": 0.035729
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "hope",
+      "label": "HOPE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/hope.mp4",
+      "clipSha256": "18495f16df6b256cd1a89829433a2490124ede8cc7633f35431189a4c66c29fa",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "how",
+      "label": "HOW",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/how.mp4",
+      "clipSha256": "8171a700ca16cf81d78b1f64003fda533ae96275fa10fc65db3142c6db679ea1",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "hungry",
+      "label": "HUNGRY",
+      "modelRoute": "motion-manual",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": "THANK YOU",
+      "outcome": "wrong prediction",
+      "status": "Possible match: “THANK YOU”. Check it before adding it to your message.",
+      "trackedFrames": 11,
+      "primaryClip": "media/signs/hungry.mp4",
+      "clipSha256": "54a7dbdfa028670c6dee5ce17c596f7ef8a8b8922984a0ae1d63c7524a5b4bc6",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "hurdle-trip",
+      "label": "HURDLE / TRIP",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. PEG · 2. WALK TIGHTROPE CL · 3. HURDLE / TRIP · 4. CHEESEGRATER · 5. RAZOR. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 9,
+      "primaryClip": "media/research-signs/hurdle-trip.mp4",
+      "clipSha256": "ea87ac3839afcb1b5afcfe2102ab549674b06b46dba22c6aed501890794274a4",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "PEG2",
+          "score": 0.234243
+        },
+        {
+          "label": "WALK-TIGHTROPE-CL",
+          "score": 0.182582
+        },
+        {
+          "label": "HURDLE/TRIP1",
+          "score": 0.068424
+        },
+        {
+          "label": "CHEESEGRATER",
+          "score": 0.03919
+        },
+        {
+          "label": "RAZOR2",
+          "score": 0.02472
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "i-me",
+      "label": "I / ME",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WE · 2. I / ME · 3. THEY · 4. WHEN · 5. SORRY. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/i-me.mp4",
+      "clipSha256": "9435e54dd4f1b0a41ecb1d88382af68f4ee2c68fcd47c400465a06e5dfceb69f",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WE",
+          "score": 0.341264
+        },
+        {
+          "label": "I / ME",
+          "score": 0.190979
+        },
+        {
+          "label": "THEY",
+          "score": 0.177064
+        },
+        {
+          "label": "WHEN",
+          "score": 0.064874
+        },
+        {
+          "label": "SORRY",
+          "score": 0.019797
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "inside",
+      "label": "INSIDE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. INSIDE · 2. HOW · 3. ANGRY · 4. EVERYONE · 5. GIVE. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/inside.mp4",
+      "clipSha256": "810069a74c8b2a038cf8538681a573db196ba680dc009b56af2822370fd35d7c",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "INSIDE",
+          "score": 0.357984
+        },
+        {
+          "label": "HOW",
+          "score": 0.276981
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.047202
+        },
+        {
+          "label": "EVERYONE",
+          "score": 0.037338
+        },
+        {
+          "label": "GIVE",
+          "score": 0.03723
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "joke",
+      "label": "JOKE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. KNIGHT · 2. JOKE · 3. VOMIT · 4. DEMAND · 5. HURDLE / TRIP. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/joke.mp4",
+      "clipSha256": "20c6427fbcfa15af873c77712d4b607d5e269dbfe768560de0153156d1ef4126",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "KNIGHT1",
+          "score": 0.195526
+        },
+        {
+          "label": "JOKE",
+          "score": 0.136184
+        },
+        {
+          "label": "VOMIT",
+          "score": 0.069432
+        },
+        {
+          "label": "DEMAND1",
+          "score": 0.03662
+        },
+        {
+          "label": "HURDLE/TRIP1",
+          "score": 0.033873
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "knight",
+      "label": "KNIGHT",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. DRAG · 2. SQUEEZE · 3. HOSPITAL · 4. LETTUCE · 5. PIPE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/knight.mp4",
+      "clipSha256": "f45355eb0a5e7c513a542acc51782ecd994f5da18055d2bac12c9b8d12c17448",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "DRAG1",
+          "score": 0.128646
+        },
+        {
+          "label": "SQUEEZE",
+          "score": 0.103966
+        },
+        {
+          "label": "HOSPITAL1",
+          "score": 0.059371
+        },
+        {
+          "label": "LETTUCE1",
+          "score": 0.03453
+        },
+        {
+          "label": "PIPE2",
+          "score": 0.034089
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "know",
+      "label": "KNOW",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/know.mp4",
+      "clipSha256": "311476625c4763e9006ec1da1f99a0e87ade2c947cb1d586db5e5b37184e587a",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "later",
+      "label": "LATER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. THERE · 2. LATER · 3. WAKE UP · 4. RUN · 5. THIS. Nothing added. Sign again.",
+      "trackedFrames": 34,
+      "primaryClip": "media/signs/later.mp4",
+      "clipSha256": "02b39d631c45fa944f4aad40033cee5b506ca37b41d3c529cf0a79b30350c768",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "THERE",
+          "score": 0.323328
+        },
+        {
+          "label": "LATER",
+          "score": 0.214147
+        },
+        {
+          "label": "WAKE UP",
+          "score": 0.069351
+        },
+        {
+          "label": "RUN",
+          "score": 0.046017
+        },
+        {
+          "label": "THIS",
+          "score": 0.042234
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "lettuce",
+      "label": "LETTUCE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/lettuce.mp4",
+      "clipSha256": "0c000ba6edc7963a3b342f48c6a2ac6e547e8ae3e8b477ba84ea5347a9d88c0b",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "lock",
+      "label": "LOCK",
+      "modelRoute": "capstone/extended",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 19-word extended vocabulary (low score). Unaccepted suggestions: 1. LOCK · 2. VLOG · 3. DRAG · 4. SQUEEZE · 5. OTHER. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/signs/lock.mp4",
+      "clipSha256": "7db44c1f007689729810d3214e767e9bc1650d9ee29e9268b5328902206517e3",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "LOCK1",
+          "score": 0.345161
+        },
+        {
+          "label": "VLOG",
+          "score": 0.18883
+        },
+        {
+          "label": "DRAG1",
+          "score": 0.101868
+        },
+        {
+          "label": "SQUEEZE",
+          "score": 0.095419
+        },
+        {
+          "label": "OTHER",
+          "score": 0.046319
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "lunch",
+      "label": "LUNCH",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. BEE · 2. BREAKFAST · 3. HOPE · 4. LUNCH · 5. MAPLE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/lunch.mp4",
+      "clipSha256": "ea313b9b862ff60074754341abd32e0487d4710780bad845af22268d8235bd23",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "BEE1",
+          "score": 0.168761
+        },
+        {
+          "label": "BREAKFAST1",
+          "score": 0.082813
+        },
+        {
+          "label": "HOPE",
+          "score": 0.077601
+        },
+        {
+          "label": "LUNCH1",
+          "score": 0.072799
+        },
+        {
+          "label": "MAPLE",
+          "score": 0.061003
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "meaculpa",
+      "label": "MEACULPA",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/meaculpa.mp4",
+      "clipSha256": "86f13b5d9256d5707c0b39b59ec8cb8d473649d622fdd525b66a1e9de356b29e",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "meat",
+      "label": "MEAT",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. MEAT · 2. VOMIT · 3. CALENDAR · 4. FLOAT · 5. EMPTY. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/meat.mp4",
+      "clipSha256": "a59600653a79f3525545bc463db51d7e7fc596106d845430737de63de1b0245d",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "MEAT1",
+          "score": 0.157016
+        },
+        {
+          "label": "VOMIT",
+          "score": 0.14369
+        },
+        {
+          "label": "CALENDAR1",
+          "score": 0.074503
+        },
+        {
+          "label": "FLOAT1",
+          "score": 0.046006
+        },
+        {
+          "label": "EMPTY2",
+          "score": 0.045687
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "money",
+      "label": "MONEY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. STORE · 2. INSIDE · 3. MONEY · 4. BEFORE · 5. SCARED. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/money.mp4",
+      "clipSha256": "aedf17baf4cfa63fb52a29289db843bedcf1decd6904f897aafefead54e8a859",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "STORE",
+          "score": 0.398589
+        },
+        {
+          "label": "INSIDE",
+          "score": 0.245921
+        },
+        {
+          "label": "MONEY",
+          "score": 0.0657
+        },
+        {
+          "label": "BEFORE",
+          "score": 0.046913
+        },
+        {
+          "label": "SCARED",
+          "score": 0.043302
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "morning",
+      "label": "MORNING",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. MONEY · 2. STORE · 3. OUTSIDE · 4. KNOW · 5. MILK. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/signs/morning.mp4",
+      "clipSha256": "eda3487dba9da09f30598a1f9d1f5c5abecaea013f5519cf9fd80ef9728adf09",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "MONEY",
+          "score": 0.28603
+        },
+        {
+          "label": "STORE",
+          "score": 0.183614
+        },
+        {
+          "label": "OUTSIDE",
+          "score": 0.119093
+        },
+        {
+          "label": "KNOW",
+          "score": 0.067609
+        },
+        {
+          "label": "MILK",
+          "score": 0.052364
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "mouth",
+      "label": "MOUTH",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/mouth.mp4",
+      "clipSha256": "a8dd90cd250272f7674658f820a04c068e0f7841429f83f3d116e80c0fe23ec2",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "movie",
+      "label": "MOVIE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. DEVELOP · 2. MOVIE · 3. CALENDAR · 4. CLOSE · 5. 8HOUR. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/movie.mp4",
+      "clipSha256": "5427b5c1396cb28a6cc026c7540189a8dcffbd6ed883a915c811fe7456cf898a",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "DEVELOP1",
+          "score": 0.160961
+        },
+        {
+          "label": "MOVIE1",
+          "score": 0.113241
+        },
+        {
+          "label": "CALENDAR1",
+          "score": 0.104383
+        },
+        {
+          "label": "CLOSE",
+          "score": 0.100749
+        },
+        {
+          "label": "8HOUR",
+          "score": 0.064898
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "noon",
+      "label": "NOON",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. MAPLE · 2. NOON · 3. BEE · 4. BREAKFAST · 5. LUNCH. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/noon.mp4",
+      "clipSha256": "280d1b3290cde6a1d9c3fd2f7f7ed6ad88ef0fbe76560799265dfa618b174925",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "MAPLE",
+          "score": 0.157609
+        },
+        {
+          "label": "NOON1",
+          "score": 0.152136
+        },
+        {
+          "label": "BEE1",
+          "score": 0.148352
+        },
+        {
+          "label": "BREAKFAST1",
+          "score": 0.056823
+        },
+        {
+          "label": "LUNCH1",
+          "score": 0.04762
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "now",
+      "label": "NOW",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WHY · 2. PHONE · 3. NOW · 4. CHILD · 5. THAT. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/signs/now.mp4",
+      "clipSha256": "a5db5d79a30657ae7b1cd103cb9fd19dae74ee35d32c3c461f9038234509d703",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WHY",
+          "score": 0.159318
+        },
+        {
+          "label": "PHONE",
+          "score": 0.111842
+        },
+        {
+          "label": "NOW",
+          "score": 0.088975
+        },
+        {
+          "label": "CHILD",
+          "score": 0.088581
+        },
+        {
+          "label": "THAT",
+          "score": 0.066721
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "okay",
+      "label": "OKAY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/okay.mp4",
+      "clipSha256": "a21f008302515fed61c2a3f77307fe764d39f1955fff32db9b9ad8775fe67584",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "pain",
+      "label": "PAIN",
+      "modelRoute": "motion-manual",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": "NIGHT",
+      "outcome": "wrong prediction",
+      "status": "Possible match: “NIGHT”. Check it before adding it to your message.",
+      "trackedFrames": 21,
+      "primaryClip": "media/signs/pain.mp4",
+      "clipSha256": "3ca20863c01af684f5ba32ed9e265c1b602c260b801db5fcf3740c5938e4ed72",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "patient",
+      "label": "PATIENT",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/patient.mp4",
+      "clipSha256": "016b0c2011e6afc8478c93837712b6ffe7e3688ecd95268e3ece1d9e32f840f9",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "phone",
+      "label": "PHONE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. PHONE · 2. TOMORROW · 3. COME · 4. SORRY · 5. HELP. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/phone.mp4",
+      "clipSha256": "ac01dbc5c9529581a6bba040308b0f17b1791ada5caf52e616dbe5dac6e4b3c7",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "PHONE",
+          "score": 0.266554
+        },
+        {
+          "label": "TOMORROW",
+          "score": 0.224377
+        },
+        {
+          "label": "COME",
+          "score": 0.1008
+        },
+        {
+          "label": "SORRY",
+          "score": 0.095305
+        },
+        {
+          "label": "HELP",
+          "score": 0.069671
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "pipe",
+      "label": "PIPE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/pipe.mp4",
+      "clipSha256": "5d9770d662e9f34d21275660c6d2be625ffa344596b502c8f879ef979fe3b0fd",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "ponder",
+      "label": "PONDER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. LETTUCE · 2. ERUPT · 3. COMB · 4. NOON · 5. CATAPULT. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 10,
+      "primaryClip": "media/research-signs/ponder.mp4",
+      "clipSha256": "7be807e911193b6d443a1dd315374ebee0db12d541b3d03bae27fc5b08ae3241",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "LETTUCE1",
+          "score": 0.143752
+        },
+        {
+          "label": "ERUPT2",
+          "score": 0.072249
+        },
+        {
+          "label": "COMB2",
+          "score": 0.066889
+        },
+        {
+          "label": "NOON1",
+          "score": 0.037117
+        },
+        {
+          "label": "CATAPULT",
+          "score": 0.037059
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "press",
+      "label": "PRESS",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. LOCK · 2. MYSELF · 3. PRESS · 4. HURDLE / TRIP · 5. JOKE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/press.mp4",
+      "clipSha256": "bcce751cb6c5a7f8f898333f040e73463776170ec073bd3df6dbe4157909d106",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "LOCK1",
+          "score": 0.163895
+        },
+        {
+          "label": "MYSELF",
+          "score": 0.09747
+        },
+        {
+          "label": "PRESS",
+          "score": 0.09111
+        },
+        {
+          "label": "HURDLE/TRIP1",
+          "score": 0.07801
+        },
+        {
+          "label": "JOKE",
+          "score": 0.048223
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "razor",
+      "label": "RAZOR",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. CHRISTMAS · 2. RAZOR · 3. CATAPULT · 4. FOREIGNER · 5. FLOAT. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/razor.mp4",
+      "clipSha256": "1e626a8d9d6a29852c93f631ba37f16caa7abe93248b0513d30232510d67ffff",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "CHRISTMAS1",
+          "score": 0.292216
+        },
+        {
+          "label": "RAZOR2",
+          "score": 0.151763
+        },
+        {
+          "label": "CATAPULT",
+          "score": 0.042544
+        },
+        {
+          "label": "FOREIGNER1",
+          "score": 0.03747
+        },
+        {
+          "label": "FLOAT1",
+          "score": 0.036436
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "river",
+      "label": "RIVER",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. RIVER · 2. TWINS · 3. FINE · 4. DOG · 5. THIRD. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/river.mp4",
+      "clipSha256": "f034eb2fe72601652dd67db8af11b51c3eddf20e6d3bfabc1d7d489a5e538567",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "RIVER1",
+          "score": 0.144523
+        },
+        {
+          "label": "TWINS1",
+          "score": 0.128209
+        },
+        {
+          "label": "FINE1",
+          "score": 0.120228
+        },
+        {
+          "label": "DOG1",
+          "score": 0.054002
+        },
+        {
+          "label": "THIRD1",
+          "score": 0.050638
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "run",
+      "label": "RUN",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. RUN · 2. BROTHER · 3. THERE · 4. THIS · 5. HOSPITAL. Nothing added. Sign again.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/run.mp4",
+      "clipSha256": "e95d301bc8c32ad7856067ffbd055315e2776dcbab217088c9ef4b6718234ef6",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "RUN",
+          "score": 0.55828
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.172936
+        },
+        {
+          "label": "THERE",
+          "score": 0.106979
+        },
+        {
+          "label": "THIS",
+          "score": 0.031428
+        },
+        {
+          "label": "HOSPITAL",
+          "score": 0.018311
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "sad",
+      "label": "SAD",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": "WAIT",
+      "outcome": "wrong prediction",
+      "status": "Possible match: WAIT. Top five: 1. WAIT · 2. SAD · 3. ANGRY · 4. SCARED · 5. GOOD MORNING. Verify before adding.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/sad.mp4",
+      "clipSha256": "c6ebe8078aa0caf57e377618706149a7c1eedd2ddac0d3c4bdf7e0e561099a93",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [
+        {
+          "label": "WAIT",
+          "score": 0.67434
+        },
+        {
+          "label": "SAD",
+          "score": 0.209746
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.065418
+        },
+        {
+          "label": "SCARED",
+          "score": 0.008482
+        },
+        {
+          "label": "GOOD MORNING",
+          "score": 0.008091
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "scared",
+      "label": "SCARED",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. TIRED · 2. ANGRY · 3. SAD · 4. HOW · 5. SCARED. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/scared.mp4",
+      "clipSha256": "816bfb70c447b949184d46c0107fe09300775a30552076fad47db1ca71616475",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "TIRED",
+          "score": 0.196805
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.143587
+        },
+        {
+          "label": "SAD",
+          "score": 0.080034
+        },
+        {
+          "label": "HOW",
+          "score": 0.061122
+        },
+        {
+          "label": "SCARED",
+          "score": 0.051816
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "school",
+      "label": "SCHOOL",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (0/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/school.mp4",
+      "clipSha256": "3d2b197bb8a6597ae86ec1f579c316770b001c37469cd187f2561da0bb28bdef",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "scrolldown",
+      "label": "SCROLLDOWN",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. SCROLLDOWN · 2. LUNCH · 3. DEAF · 4. DINNER · 5. DOG. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/scrolldown.mp4",
+      "clipSha256": "0e571d048cca06af45e16169fcf2feff72fc123560cf83d166e590b0df11b196",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "SCROLLDOWN",
+          "score": 0.15079
+        },
+        {
+          "label": "LUNCH1",
+          "score": 0.12658
+        },
+        {
+          "label": "DEAF1",
+          "score": 0.100287
+        },
+        {
+          "label": "DINNER1",
+          "score": 0.062472
+        },
+        {
+          "label": "DOG1",
+          "score": 0.044059
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "shave",
+      "label": "SHAVE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. SHAVE · 2. RAZOR · 3. DRAG · 4. GUESS · 5. CATAPULT. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/shave.mp4",
+      "clipSha256": "e761d254b9d64a0537d2bf64e684e41e47e8b391b171a18dd56e0bff0d342267",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "SHAVE1",
+          "score": 0.184948
+        },
+        {
+          "label": "RAZOR2",
+          "score": 0.163554
+        },
+        {
+          "label": "DRAG1",
+          "score": 0.070164
+        },
+        {
+          "label": "GUESS1",
+          "score": 0.067533
+        },
+        {
+          "label": "CATAPULT",
+          "score": 0.066231
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "since",
+      "label": "SINCE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/since.mp4",
+      "clipSha256": "be1f2199ff3a235f24cd721cc8d784d891ec5d2da9536ca65bbbe69232e4f70c",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "sink",
+      "label": "SINK",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. VOMIT · 2. FOREIGNER · 3. SINK · 4. AXE · 5. DARK. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/sink.mp4",
+      "clipSha256": "06b4d60dbdfbb01eeb1bc2385d576f4e390254eb45d530c6238cc76cbe9fdba4",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "VOMIT",
+          "score": 0.282736
+        },
+        {
+          "label": "FOREIGNER1",
+          "score": 0.112238
+        },
+        {
+          "label": "SINK",
+          "score": 0.064143
+        },
+        {
+          "label": "AXE1",
+          "score": 0.04254
+        },
+        {
+          "label": "DARK1",
+          "score": 0.039904
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "sister",
+      "label": "SISTER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. BROTHER · 2. ANGRY · 3. RUN · 4. HELP · 5. HOSPITAL. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/sister.mp4",
+      "clipSha256": "32e09e932ec34f1c7e06fc0917cb1bce236f3cb8b747d747e8962a29ce5472ac",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "BROTHER",
+          "score": 0.250552
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.237134
+        },
+        {
+          "label": "RUN",
+          "score": 0.166012
+        },
+        {
+          "label": "HELP",
+          "score": 0.0334
+        },
+        {
+          "label": "HOSPITAL",
+          "score": 0.027732
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "sleep",
+      "label": "SLEEP",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. FATHER · 2. SLEEP · 3. HOSPITAL · 4. OUTSIDE · 5. WHY. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/sleep.mp4",
+      "clipSha256": "248c7aec220e0be977531dae0075a19d9b813466a8c214549c1b42d47eb345a6",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "FATHER",
+          "score": 0.478492
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.455458
+        },
+        {
+          "label": "HOSPITAL",
+          "score": 0.0289
+        },
+        {
+          "label": "OUTSIDE",
+          "score": 0.008236
+        },
+        {
+          "label": "WHY",
+          "score": 0.006714
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "slide",
+      "label": "SLIDE",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. BITE · 2. DUCK · 3. SQUEEZE · 4. RIVER · 5. SLIDE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 11,
+      "primaryClip": "media/research-signs/slide.mp4",
+      "clipSha256": "ed56ab6fd5092df8114bd701709d3cc789225dd2837890cc94e6da96ca239ae2",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "BITE1",
+          "score": 0.178179
+        },
+        {
+          "label": "DUCK2",
+          "score": 0.106097
+        },
+        {
+          "label": "SQUEEZE",
+          "score": 0.063532
+        },
+        {
+          "label": "RIVER1",
+          "score": 0.043768
+        },
+        {
+          "label": "SLIDE2",
+          "score": 0.034974
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "stand",
+      "label": "STAND",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. STAND · 2. WE · 3. TIME · 4. GOOD AFTERNOON · 5. BAG. Nothing added. Sign again.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/stand.mp4",
+      "clipSha256": "eb4d1ece7eba0dd547d01068bb5e8e83d365479e18c17f69d0862b082dc37fb4",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "STAND",
+          "score": 0.486326
+        },
+        {
+          "label": "WE",
+          "score": 0.175538
+        },
+        {
+          "label": "TIME",
+          "score": 0.126755
+        },
+        {
+          "label": "GOOD AFTERNOON",
+          "score": 0.102938
+        },
+        {
+          "label": "BAG",
+          "score": 0.021641
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "stop",
+      "label": "STOP",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. SCHOOL · 2. STOP · 3. EVERYONE · 4. GOOD · 5. WHAT. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/stop.mp4",
+      "clipSha256": "b625488b01530bc62992b8e98b566e8bda4332e7b85120be6b97507145f47351",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "SCHOOL",
+          "score": 0.423577
+        },
+        {
+          "label": "STOP",
+          "score": 0.126528
+        },
+        {
+          "label": "EVERYONE",
+          "score": 0.103719
+        },
+        {
+          "label": "GOOD",
+          "score": 0.026434
+        },
+        {
+          "label": "WHAT",
+          "score": 0.024293
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "store",
+      "label": "STORE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WE · 2. YESTERDAY · 3. TAKE · 4. THERE · 5. NEED. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/signs/store.mp4",
+      "clipSha256": "c053defc4b40c7eac178866b05212c4e54e4e60e36c759c1a4fe5d0716c93afd",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WE",
+          "score": 0.545277
+        },
+        {
+          "label": "YESTERDAY",
+          "score": 0.169943
+        },
+        {
+          "label": "TAKE",
+          "score": 0.051847
+        },
+        {
+          "label": "THERE",
+          "score": 0.048943
+        },
+        {
+          "label": "NEED",
+          "score": 0.030021
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "student",
+      "label": "STUDENT",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": "STAND",
+      "outcome": "wrong prediction",
+      "status": "Possible match: STAND. Top five: 1. STAND · 2. STUDENT · 3. INSIDE · 4. TIME · 5. STORE. Verify before adding.",
+      "trackedFrames": 8,
+      "primaryClip": "media/research-signs/student.mp4",
+      "clipSha256": "33c169255dde73e12758ab04a082db615e3c80c45c59e56906ae6bc1aed09280",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [
+        {
+          "label": "STAND",
+          "score": 0.851852
+        },
+        {
+          "label": "STUDENT",
+          "score": 0.060097
+        },
+        {
+          "label": "INSIDE",
+          "score": 0.036961
+        },
+        {
+          "label": "TIME",
+          "score": 0.005536
+        },
+        {
+          "label": "STORE",
+          "score": 0.005454
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "tail",
+      "label": "TAIL",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. LETTUCE · 2. MAPLE · 3. BITE · 4. APPLE · 5. TAIL. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/tail.mp4",
+      "clipSha256": "c50b3ebfe358ec94b421b1ee35f5104cd7734e9d3b5802b20aec88811dcf3d69",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "LETTUCE1",
+          "score": 0.222311
+        },
+        {
+          "label": "MAPLE",
+          "score": 0.073736
+        },
+        {
+          "label": "BITE1",
+          "score": 0.040827
+        },
+        {
+          "label": "APPLE",
+          "score": 0.037695
+        },
+        {
+          "label": "TAIL1",
+          "score": 0.035415
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "take",
+      "label": "TAKE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. TAKE · 2. WE · 3. BAG · 4. GOODBYE · 5. CHILD. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/take.mp4",
+      "clipSha256": "79aeebe783d0f763f4fd3dbaa844fc0a7be4d9b4c7a4c4503226fd916207d460",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "TAKE",
+          "score": 0.332269
+        },
+        {
+          "label": "WE",
+          "score": 0.292254
+        },
+        {
+          "label": "BAG",
+          "score": 0.224542
+        },
+        {
+          "label": "GOODBYE",
+          "score": 0.018718
+        },
+        {
+          "label": "CHILD",
+          "score": 0.009521
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "teach",
+      "label": "TEACH",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. TEACH · 2. PONDER · 3. NOON · 4. AXE · 5. DECIDE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/teach.mp4",
+      "clipSha256": "3b7fa592c607262447501eb81ad8000bcafeda345adb27c41a9d825937fc15f5",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "TEACH1",
+          "score": 0.510035
+        },
+        {
+          "label": "PONDER",
+          "score": 0.343684
+        },
+        {
+          "label": "NOON1",
+          "score": 0.054696
+        },
+        {
+          "label": "AXE1",
+          "score": 0.028572
+        },
+        {
+          "label": "DECIDE1",
+          "score": 0.011987
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "teacher",
+      "label": "TEACHER",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Pack words (DTW) preview",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. KNOW · 2. TEACHER · 3. STORE · 4. MONEY · 5. CHILD. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/teacher.mp4",
+      "clipSha256": "5b048267c510110062744d4d3aa9e719230754b235e4ec013292bee37bfdd725",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "KNOW",
+          "score": 0.412624
+        },
+        {
+          "label": "TEACHER",
+          "score": 0.373781
+        },
+        {
+          "label": "STORE",
+          "score": 0.072961
+        },
+        {
+          "label": "MONEY",
+          "score": 0.069304
+        },
+        {
+          "label": "CHILD",
+          "score": 0.031658
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "they",
+      "label": "THEY",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. DOG · 2. INTUITIVE · 3. TRACTOR · 4. THEY · 5. KNIGHT. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/they.mp4",
+      "clipSha256": "db498f5da947894d328d6fd8c5024a9568b8dc9f1c4eaef17fabc2624f96767f",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "DOG1",
+          "score": 0.163136
+        },
+        {
+          "label": "INTUITIVE",
+          "score": 0.079288
+        },
+        {
+          "label": "TRACTOR",
+          "score": 0.046808
+        },
+        {
+          "label": "THEY1",
+          "score": 0.044136
+        },
+        {
+          "label": "KNIGHT1",
+          "score": 0.031725
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "third",
+      "label": "THIRD",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/third.mp4",
+      "clipSha256": "7d84dab28bed4e330c5f2f9fbf3fc4e08f820bcd5d57d4c5176111c50f38e7ab",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "thirsty",
+      "label": "THIRSTY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WE · 2. TIRED · 3. TIME · 4. I / ME · 5. GIVE. Nothing added. Sign again.",
+      "trackedFrames": 8,
+      "primaryClip": "media/signs/thirsty.mp4",
+      "clipSha256": "eb80dc652cbdc5c02130abb41eda6328f4b44bc1541e3c210008b1573bc899a0",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WE",
+          "score": 0.20179
+        },
+        {
+          "label": "TIRED",
+          "score": 0.170713
+        },
+        {
+          "label": "TIME",
+          "score": 0.118246
+        },
+        {
+          "label": "I / ME",
+          "score": 0.10842
+        },
+        {
+          "label": "GIVE",
+          "score": 0.105178
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "this",
+      "label": "THIS",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (2/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/this.mp4",
+      "clipSha256": "e9d76ecdff5063929b169898486cfd13c5ef98f5614d34d08ca259a80501c5ad",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "tired",
+      "label": "TIRED",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. NOW · 2. RUN · 3. HELP · 4. WORK · 5. TIRED. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/tired.mp4",
+      "clipSha256": "6d604e7e6ad895894e86bcc704b451b7fc512ffd0fde7ae0f6ff01eadd91f283",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "NOW",
+          "score": 0.17437
+        },
+        {
+          "label": "RUN",
+          "score": 0.137292
+        },
+        {
+          "label": "HELP",
+          "score": 0.088473
+        },
+        {
+          "label": "WORK",
+          "score": 0.073651
+        },
+        {
+          "label": "TIRED",
+          "score": 0.066201
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "tomato",
+      "label": "TOMATO",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/tomato.mp4",
+      "clipSha256": "c71b2a8d36037253b91b4fabdd9c806f96a8ac073be71d1b51310394bc8bb299",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "tomorrow",
+      "label": "TOMORROW",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. SORRY · 2. I / ME · 3. GIVE · 4. WHICH · 5. WE. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/signs/tomorrow.mp4",
+      "clipSha256": "5fac17a2e05bad9e97a02f5c3ee0c5fe30d6290f460a1572674967375b8d54e4",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "SORRY",
+          "score": 0.256848
+        },
+        {
+          "label": "I / ME",
+          "score": 0.131229
+        },
+        {
+          "label": "GIVE",
+          "score": 0.101453
+        },
+        {
+          "label": "WHICH",
+          "score": 0.086445
+        },
+        {
+          "label": "WE",
+          "score": 0.057718
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "tractor",
+      "label": "TRACTOR",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. TRACTOR · 2. BELT · 3. SWEATER · 4. BACKPACK · 5. INTUITIVE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 10,
+      "primaryClip": "media/research-signs/tractor.mp4",
+      "clipSha256": "189f0a3f3acf684940a68bbbb39c2f643e7b261ae1650cdb19a184ecceb83b68",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "TRACTOR",
+          "score": 0.231921
+        },
+        {
+          "label": "BELT1",
+          "score": 0.162731
+        },
+        {
+          "label": "SWEATER2",
+          "score": 0.137328
+        },
+        {
+          "label": "BACKPACK1",
+          "score": 0.060271
+        },
+        {
+          "label": "INTUITIVE",
+          "score": 0.045393
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "twins",
+      "label": "TWINS",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (1/5). Keep your upper body and at least one hand visible.",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/twins.mp4",
+      "clipSha256": "134540b534d6d6f52021c7e153a939536b391640659578d02338c605636605ad",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "wait",
+      "label": "WAIT",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (4/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/wait.mp4",
+      "clipSha256": "68b3613a967a99072eab8828a9caf6e4f907f61dc81e36d2b3abf23f8c8b2604",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "walk",
+      "label": "WALK",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WALK · 2. STAND · 3. INSIDE · 4. HOW · 5. AFTER. Nothing added. Sign again.",
+      "trackedFrames": 7,
+      "primaryClip": "media/research-signs/walk.mp4",
+      "clipSha256": "8167d754904ba688a0fd989e625d11a257cb4153144cdf9565f0d957254759cc",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WALK",
+          "score": 0.508057
+        },
+        {
+          "label": "STAND",
+          "score": 0.323244
+        },
+        {
+          "label": "INSIDE",
+          "score": 0.076748
+        },
+        {
+          "label": "HOW",
+          "score": 0.034021
+        },
+        {
+          "label": "AFTER",
+          "score": 0.011221
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "walk-tightrope-cl",
+      "label": "WALK TIGHTROPE CL",
+      "modelRoute": "capstone/full",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the 100-word full vocabulary (similar competing scores). Unaccepted suggestions: 1. HURDLE / TRIP · 2. WALK TIGHTROPE CL · 3. HELICOPTER · 4. DEMAND · 5. JOKE. Nothing added. Try again with the complete sign visible.",
+      "trackedFrames": 13,
+      "primaryClip": "media/research-signs/walk-tightrope-cl.mp4",
+      "clipSha256": "8d05f2730e6957462bebdcb3418ab77616cebbc5bcef520a8820033e714879bd",
+      "completeClipPlayback": true,
+      "rejectionReason": "ambiguous",
+      "suggestions": [
+        {
+          "label": "HURDLE/TRIP1",
+          "score": 0.195337
+        },
+        {
+          "label": "WALK-TIGHTROPE-CL",
+          "score": 0.117512
+        },
+        {
+          "label": "HELICOPTER2",
+          "score": 0.05632
+        },
+        {
+          "label": "DEMAND1",
+          "score": 0.052852
+        },
+        {
+          "label": "JOKE",
+          "score": 0.044321
+        }
+      ],
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "we",
+      "label": "WE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WE · 2. THEY · 3. WHEN · 4. MONEY · 5. WHO. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/we.mp4",
+      "clipSha256": "3c78671280a12f5c8d2427db82aff9a4072911d3ac2eaa44ee49917601f0a512",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WE",
+          "score": 0.189113
+        },
+        {
+          "label": "THEY",
+          "score": 0.173671
+        },
+        {
+          "label": "WHEN",
+          "score": 0.084703
+        },
+        {
+          "label": "MONEY",
+          "score": 0.060022
+        },
+        {
+          "label": "WHO",
+          "score": 0.054429
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "what",
+      "label": "WHAT",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. BROTHER · 2. WHICH · 3. ANGRY · 4. SISTER · 5. TIRED. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/what.mp4",
+      "clipSha256": "37c26b9d0811127fd2d7cb9ed7f126d03c66edb4892967b246be3d8076ec71d2",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "BROTHER",
+          "score": 0.281527
+        },
+        {
+          "label": "WHICH",
+          "score": 0.18247
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.1607
+        },
+        {
+          "label": "SISTER",
+          "score": 0.063732
+        },
+        {
+          "label": "TIRED",
+          "score": 0.052759
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "where",
+      "label": "WHERE",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WHERE · 2. THIS · 3. HE / SHE · 4. BATHROOM · 5. NEED. Nothing added. Sign again.",
+      "trackedFrames": 6,
+      "primaryClip": "media/research-signs/where.mp4",
+      "clipSha256": "a6ae666ff2367615356662ec1c4f04f527a8a7447bcd60aaede14a00c2dd3356",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WHERE",
+          "score": 0.385677
+        },
+        {
+          "label": "THIS",
+          "score": 0.228851
+        },
+        {
+          "label": "HE / SHE",
+          "score": 0.203879
+        },
+        {
+          "label": "BATHROOM",
+          "score": 0.056724
+        },
+        {
+          "label": "NEED",
+          "score": 0.032749
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "who",
+      "label": "WHO",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "Not enough tracked frames (3/5).",
+      "trackedFrames": null,
+      "primaryClip": "media/research-signs/who.mp4",
+      "clipSha256": "2274761273ed5df6b725d752b046afa7aeca2119f3c741d085e124a6c4783b79",
+      "completeClipPlayback": true,
+      "rejectionReason": null,
+      "suggestions": [],
+      "checkpointSha256": null,
+      "calibrationId": null
+    },
+    {
+      "id": "why",
+      "label": "WHY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. WHY · 2. CHILD · 3. GOODBYE · 4. KNOW · 5. THAT. Nothing added. Sign again.",
+      "trackedFrames": 5,
+      "primaryClip": "media/research-signs/why.mp4",
+      "clipSha256": "e76b6855cc8294fa2b4cb68a40980b10688d5643c4d3db66ea31545f72923ecf",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "WHY",
+          "score": 0.514321
+        },
+        {
+          "label": "CHILD",
+          "score": 0.255616
+        },
+        {
+          "label": "GOODBYE",
+          "score": 0.178427
+        },
+        {
+          "label": "KNOW",
+          "score": 0.01856
+        },
+        {
+          "label": "THAT",
+          "score": 0.00871
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    },
+    {
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "modelRoute": "beginner",
+      "cameraVocabulary": "Camera vocabulary: Default + extra-word preview · 13 words",
+      "prediction": null,
+      "outcome": "no match",
+      "status": "No reliable match in the Beginner vocabulary (low score). Unaccepted suggestions: 1. YESTERDAY · 2. NEED · 3. WE · 4. TOMORROW · 5. STAND. Nothing added. Sign again.",
+      "trackedFrames": 9,
+      "primaryClip": "media/signs/yesterday.mp4",
+      "clipSha256": "eb1d44b66f692b4e41b148b53893a5eac2174b34fbbb057905080f1292bee3a0",
+      "completeClipPlayback": true,
+      "rejectionReason": "low-score",
+      "suggestions": [
+        {
+          "label": "YESTERDAY",
+          "score": 0.148574
+        },
+        {
+          "label": "NEED",
+          "score": 0.084748
+        },
+        {
+          "label": "WE",
+          "score": 0.081258
+        },
+        {
+          "label": "TOMORROW",
+          "score": 0.074824
+        },
+        {
+          "label": "STAND",
+          "score": 0.053792
+        }
+      ],
+      "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+      "calibrationId": "motion-repair-20261107-val-a0bf2e0e875e"
+    }
+  ]
+}

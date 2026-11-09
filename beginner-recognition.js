@@ -15,8 +15,8 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
       const count=$('#beginnerCount');if(count)count.textContent=available?`${labels.length} signs`:'Not trained';
       $('#beginnerVocabulary').textContent=labels.join(' · ')||'Model not trained yet';
       message(available
-        ?`${labels.length}-word Beginner model ready (words not covered by other camera models). Record one complete sign for four seconds; review before adding. Live-camera accuracy is unverified.`
-        :'Beginner model checkpoint not found yet. Train beginner100-v1.pt to enable this panel.');
+        ?`${labels.length} ready Beginner words online (≥70% held-out top-1). Record one complete sign for four seconds; review before adding. Live-camera accuracy is unverified.`
+        :'Beginner model checkpoint not found yet. Deploy beginner-phase123-v2.pt to enable this panel.');
     }catch{available=false;message('Beginner model status unavailable.');}
     controls();
   }
@@ -50,11 +50,14 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
   }
   async function finish(){
     const frames=capture?.frames||[];capture=null;
-    if(frames.length<5){cancel(`Not enough tracked frames (${frames.length}/5).`);return;}
+    if(frames.length<3){cancel(`Not enough tracked frames (${frames.length}/3).`);return;}
     request=new AbortController();controls();message('Analyzing landmarks on the server…');
     const timeout=setTimeout(()=>request?.abort(),20000);
     try{
-      const response=await fetch('/api/beginner-asl',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({consent:true,frames}),signal:request.signal});
+      const closed=($('#beginnerWords')?.dataset.closedLabels||'').split('|').filter(Boolean);
+      const body={consent:true,frames};
+      if(closed.length)body.closedLabels=closed;
+      const response=await fetch('/api/beginner-asl',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:request.signal});
       const data=await response.json();if(!response.ok)throw Error(data.error||'Recognition failed');
       pending=data.predictions?.[0]?.label||'';
       const names=(data.predictions||[]).map((item,index)=>`${index+1}. ${item.label}`).join(' · ');
@@ -72,7 +75,8 @@ export function createBeginnerRecognition({isRunning,startCamera,onWord,onStatus
     if(!capture||!pose||holisticBusy||now-lastPoseAt<65)return;
     lastPoseAt=now;holisticBusy=true;
     pose.send({image:video}).catch(error=>{holisticBusy=false;cancel(`Tracking stopped: ${error.message}`);});
-    if(now-capture.start>=4000)void finish();
+    const elapsed=now-capture.start;
+    if((capture.frames.length>=3&&elapsed>=4000)||elapsed>=8000)void finish();
   }
   record.addEventListener('click',()=>void begin());
   $('#beginnerCancel')?.addEventListener('click',()=>cancel());

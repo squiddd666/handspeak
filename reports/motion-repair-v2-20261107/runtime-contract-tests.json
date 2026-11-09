@@ -1,0 +1,38 @@
+{
+  "beginner": {
+    "checkpoint": "beginner-repaired-v2.pt",
+    "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+    "available": true,
+    "empty": {
+      "status": 422,
+      "result": {
+        "error": "Capture must contain 5 to 90 landmark frames"
+      }
+    },
+    "no-hands": {
+      "status": 422,
+      "result": {
+        "error": "Not enough hand-tracked frames (0/5). Keep at least one hand visible."
+      }
+    }
+  },
+  "capstone": {
+    "checkpoint": "capstone100-v4-ensemble.pt",
+    "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+    "calibrationId": "motion-repair-v2-20261107-val-639357a4f315",
+    "available": true,
+    "empty": {
+      "status": 422,
+      "result": {
+        "error": "Capture must contain 5 to 90 landmark frames"
+      }
+    },
+    "no-hands": {
+      "status": 422,
+      "result": {
+        "error": "Not enough hand-tracked frames (0/5). Keep at least one hand visible."
+      }
+    }
+  }
+}

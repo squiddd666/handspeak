@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "family": "beginner",
+  "checkpoint": "beginner-repaired-masked-v1.pt",
+  "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+  "calibrationReportSha256": "f3b27e9c56d714712daab79891cc8c5eb406f8e68fd11c2211ad2fc64e624f9c",
+  "selectionSplit": "val",
+  "testUsedForSelection": false,
+  "watchClipsUsedForTrainingOrCalibration": false,
+  "baselineValidation": {
+    "attempts": 296,
+    "correct": 144,
+    "wrong": 21,
+    "noMatch": 131,
+    "accuracy": 0.486486,
+    "precision": 0.872727,
+    "overallPrecision": 0.634361,
+    "negativeAttempts": 357,
+    "negativeFalse": 62,
+    "negativeFalseRate": 0.173669
+  },
+  "selectedValidation": {
+    "attempts": 296,
+    "correct": 160,
+    "wrong": 9,
+    "noMatch": 127,
+    "accuracy": 0.540541,
+    "precision": 0.946746,
+    "overallPrecision": 0.704846,
+    "negativeAttempts": 357,
+    "negativeFalse": 58,
+    "negativeFalseRate": 0.162465
+  },
+  "rationale": "Audited complete 79-label checkpoint; repaired MORNING/greetings and masked features. Choose global gates on validation at >=90% known-word precision without exceeding the legacy Beginner unsupported-sign acceptance rate (17.3669%). This reduces both wrong outputs and no-match counts on validation; test outcomes do not select the threshold.",
+  "selectionRecordedAt": "2026-11-06T17:24:58.699701+00:00",
+  "policyFrozenAt": "2026-11-06T17:18:55.341469+00:00"
+}

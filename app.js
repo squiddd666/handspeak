@@ -9,7 +9,7 @@ import {appendWord,finishSentence,removeLastWord} from './sentence-builder.js?v=
 import { createFaceTracker } from './face-tracker.js?v=20261010-single-1';
 import { createMotionStudio } from './motion-studio.js?v=20261023-hungry-cutoff-3';
 import {createCapstoneRecognition} from './capstone-recognition.js?v=20261023-holistic-phone-1';
-import {createBeginnerRecognition} from './beginner-recognition.js?v=20261023-beginner-1';
+import {createBeginnerRecognition} from './beginner-recognition.js?v=20261105-beginner-ready-8';
 import { normalizeLandmarks, classifyFeatures, validSample, DEFAULT_PARAMETERS, validParameters, isUsableHand } from './gesture-model.js?v=20261001-auto-cache-1';
 
 const $ = (selector) => document.querySelector(selector);
@@ -412,15 +412,17 @@ function detect(){
     canvas.width=video.videoWidth;canvas.height=video.videoHeight;
     const now=performance.now();
     let detection={landmarks:[]};
-    if(handLandmarker&&!temporalCamera){
+    const beginnerCapturing=beginnerRecognition.isCapturing();
+    if(handLandmarker&&!temporalCamera&&!beginnerCapturing){
       try{detection=handLandmarker.detectForVideo(video,now);}
       catch(error){
         handTrackerFailed(error);
       }
     }
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing()||beginnerRecognition.isCapturing());
-    if(temporalCamera){
+    if(!beginnerCapturing)faceTracker.draw(video,now,ctx,canvas.width,canvas.height,motionStudio.isCapturing()||researchWords.isCapturing()||capstoneRecognition.isCapturing());
+    if(beginnerCapturing)beginnerRecognition.frame(detection,now,video);
+    else if(temporalCamera){
       temporalCamera.push(video,now,motionStudio.isCapturing());
       if(now-temporalFrameAt<200)temporalHands.forEach(drawHand);
     }else if(handLandmarker)consumeDetection(detection,now,video.videoHeight/video.videoWidth);

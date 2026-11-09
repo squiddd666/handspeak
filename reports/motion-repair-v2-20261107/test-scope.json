@@ -1,0 +1,48 @@
+{
+  "frontend": {
+    "passed": 175,
+    "skipped": 2,
+    "failed": 0
+  },
+  "recognitionPython": {
+    "passed": 48,
+    "failed": 0
+  },
+  "broaderPython": {
+    "attempts": 83,
+    "errors": 7,
+    "issues": [
+      "ERROR: test_readable_video_is_assigned_and_preserves_description (test_experience.UploadTests.test_readable_video_is_assigned_and_preserves_description)",
+      "ERROR: test_face (unittest.loader._FailedTest.test_face)",
+      "ModuleNotFoundError: No module named 'quickjs'",
+      "ERROR: test_hand_worker (unittest.loader._FailedTest.test_hand_worker)",
+      "ModuleNotFoundError: No module named 'quickjs'",
+      "ERROR: test_model (unittest.loader._FailedTest.test_model)",
+      "ModuleNotFoundError: No module named 'quickjs'",
+      "ERROR: test_motion (unittest.loader._FailedTest.test_motion)",
+      "ModuleNotFoundError: No module named 'quickjs'",
+      "ERROR: test_sentence (unittest.loader._FailedTest.test_sentence)",
+      "ModuleNotFoundError: No module named 'quickjs'",
+      "ERROR: test_words (unittest.loader._FailedTest.test_words)",
+      "ModuleNotFoundError: No module named 'quickjs'"
+    ]
+  },
+  "note": "The broader Python suite is not reported as all-passing. The error cases depend on missing quickjs or a pre-existing Linux-only ffprobe path.",
+  "broaderPythonAfterDependencyInstall": {
+    "summary": "126 tests in 33.706s\n\nFAILED (failures=8, errors=3)\n",
+    "issues": [
+      "ERROR: test_readable_video_is_assigned_and_preserves_description (test_experience.UploadTests.test_readable_video_is_assigned_and_preserves_description)",
+      "ERROR: test_model (unittest.loader._FailedTest.test_model)",
+      "ERROR: test_record_recognize_and_confirm_once (test_motion.MotionTests.test_record_recognize_and_confirm_once)",
+      "FAIL: test_cancel_and_no_hands_do_not_save (test_motion.MotionTests.test_cancel_and_no_hands_do_not_save)",
+      "FAIL: test_capture_status_and_slow_camera_diagnostics (test_motion.MotionTests.test_capture_status_and_slow_camera_diagnostics)",
+      "FAIL: test_category_negative_reference_never_becomes_a_word (test_motion.MotionTests.test_category_negative_reference_never_becomes_a_word)",
+      "FAIL: test_eleven_frames_get_bounded_extension (test_motion.MotionTests.test_eleven_frames_get_bounded_extension)",
+      "FAIL: test_enabling_auto_add_preserves_pending_word_once (test_motion.MotionTests.test_enabling_auto_add_preserves_pending_word_once)",
+      "FAIL: test_finish_command_consumes_match_only_when_enabled (test_motion.MotionTests.test_finish_command_consumes_match_only_when_enabled)",
+      "FAIL: test_sentence_auto_add_is_opt_in_once_and_never_speaks (test_motion.MotionTests.test_sentence_auto_add_is_opt_in_once_and_never_speaks)",
+      "FAIL: test_browser_matches_heldout_evaluation (test_words.PretrainedWordTests.test_browser_matches_heldout_evaluation)"
+    ]
+  },
+  "dependencyInstalled": "quickjs-ng 0.18.0.1 (project-local .venv; compatible quickjs module)"
+}

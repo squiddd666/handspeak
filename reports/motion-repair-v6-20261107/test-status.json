@@ -1,0 +1,17 @@
+{
+  "frontend": {
+    "passed": 203,
+    "skipped": 2,
+    "failed": 0
+  },
+  "targetedPython": {
+    "passed": 82,
+    "failed": 0
+  },
+  "fullPythonDiscoveryPassed": false,
+  "logSha256": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\v6-final-frontend-tests.log": "c8dd49db1fc4f9b435109267d6cba773a13c9f29d87ef7aa825c5b5f079c7180",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\v6-final-recognition-tests.log": "d43fb8f067e89c087505c71217992e0870ab042b305338e6e9e62be26440451d"
+  },
+  "scope": "Latest restored runtime and offline parity regression tests. This is not a recognition accuracy measure or a blanket full-Python-suite pass."
+}

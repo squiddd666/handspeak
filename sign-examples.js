@@ -28,7 +28,12 @@ const coreLessons={belt:'https://www.signingsavvy.com/search/belt',eat:'https://
 const coreAccuracy={BELT:[13,14],EAT:[10,11],EMPTY:[7,8],PEG:[7,8],SOCCER:[8,8],SQUEEZE:[7,8],VLOG:[9,9],
   LOCK:[9,10],DUCK:[8,9],BASEBALLCAP:[8,9],OTHER:[7,8],WHATFOR:[12,14],DRAG:[11,13],MICROSCOPE:[11,13],PARTY:[9,11],DEMAND:[9,11],EDIT:[9,11],MECHANIC:[12,15],DEAF:[8,10]};
 const CORE_SENTINEL='capstone-core';
+const BEGINNER_SENTINEL='beginner-ready';
+const BEGINNER_VIDEO_VERSION='20261105-beginner-ready-5';
+const beginnerWords=new Map();
+const beginnerAccuracy={};
 let coreId=null;
+let beginnerId=null;
 const publishedExamples=new Map();
 let accuracyProfiles={},publishedPacks=[];
 function exampleAccuracy(name){
@@ -36,18 +41,27 @@ function exampleAccuracy(name){
   return pack?publishedAccuracy(pack,name):referenceAccuracy(accuracyProfiles,name);
 }
 function updateAccuracy(){
+  const beginner=beginnerAccuracy[label];
   const core=coreAccuracy[label];
-  const tier=coreWords.has(coreId)||[...coreWords.values()].includes(label)?'Core 7-word':(core?'Extended 19-word':null);
-  const metrics=core?null:exampleAccuracy(label),target=document.querySelector('#signExampleAccuracy');
-  target.textContent=core
+  const tier=beginner?'Beginner ready':(coreWords.has(coreId)||[...coreWords.values()].includes(label)?'Core 7-word':(core?'Extended 19-word':null));
+  const metrics=beginner||core?null:exampleAccuracy(label),target=document.querySelector('#signExampleAccuracy');
+  target.textContent=beginner
+    ?`Beginner ready ST-GCN · ${beginner[0]}/${beginner[1]} correct on the held-out test split (${(100*beginner[0]/beginner[1]).toFixed(1).replace(/\.0$/,'')}%). Live-camera accuracy is unverified.`
+    :core
     ?`${tier} ST-GCN · ${core[0]}/${core[1]} correct on the held-out test split (${(100*core[0]/core[1]).toFixed(1).replace(/\.0$/,'')}%). Live-camera accuracy is unverified.`
     :`${accuracyText(metrics)}${metrics?` · ${metrics.model}. ${metrics.scope}`:'. No measured test result is available for this word.'}`;
   for(const button of buttons){
     const name=button.dataset.signLabel||button.textContent;
+    const beginner=beginnerAccuracy[name];
     const core=coreAccuracy[name];
     const isCore=coreWords.has(button.dataset.signExample);
     let badge=button.querySelector('[data-word-accuracy]');
     if(!badge){badge=document.createElement('small');badge.dataset.wordAccuracy='';badge.style.display='block';button.append(badge);}
+    if(beginner){
+      badge.textContent=`${(100*beginner[0]/beginner[1]).toFixed(1).replace(/\.0$/,'')}% test · ${beginner[0]}/${beginner[1]}`;
+      button.title=`Beginner ready ST-GCN, held-out test split: ${beginner[0]}/${beginner[1]} correct. Live-camera accuracy is unverified.`;
+      continue;
+    }
     if(core){
       badge.textContent=`${(100*core[0]/core[1]).toFixed(1).replace(/\.0$/,'')}% test · ${core[0]}/${core[1]}`;
       button.title=`${isCore?'Core 7-word':'Extended 19-word'} ST-GCN, held-out test split: ${core[0]}/${core[1]} correct. Live-camera accuracy is unverified.`;
@@ -87,7 +101,7 @@ function chooseCorePractice(id,button=null){
   const name=cameraWords.get(id);
   const isCore=coreWords.has(id);
   const tier=isCore?'Core 7-word':'Extended 19-word';
-  selection++;pauseAll();external=false;libraryId=CORE_SENTINEL;label=name;coreId=id;
+  selection++;pauseAll();external=false;libraryId=CORE_SENTINEL;label=name;coreId=id;beginnerId=null;
   video.hidden=false;embed.hidden=true;embed.removeAttribute('src');playback.hidden=false;
   lesson.hidden=false;lesson.href=coreLessons[id];lesson.textContent=`${name} lesson · Signing Savvy (opens in a new tab)`;
   for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
@@ -96,6 +110,24 @@ function chooseCorePractice(id,button=null){
   const fallback=video.querySelector('a');fallback.href=video.src;fallback.textContent=`Download the ${label} example`;
   status.textContent=`${label} · Press play to watch. ASL Citizen research example, trimmed to the sign.`;
   document.querySelector('#signExampleMode').textContent=`${name} · ${tier} camera model ready. Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`;
+  video.load();
+  updateAccuracy();
+}
+function beginnerLessonQuery(name){
+  return encodeURIComponent(String(name).toLowerCase().replaceAll(' / ',' ').replaceAll('/',' '));
+}
+function chooseBeginnerPractice(id,button=null){
+  const name=beginnerWords.get(id);
+  if(!name)return;
+  selection++;pauseAll();external=false;libraryId=BEGINNER_SENTINEL;label=name;beginnerId=id;coreId=null;
+  video.hidden=false;embed.hidden=true;embed.removeAttribute('src');playback.hidden=false;
+  lesson.hidden=false;lesson.href=`https://www.signingsavvy.com/search/${beginnerLessonQuery(name)}`;lesson.textContent=`${name} lesson · Signing Savvy (opens in a new tab)`;
+  for(const other of buttons)other.setAttribute('aria-pressed',String(other===button));
+  video.src=`media/signs/${id}.mp4?v=${BEGINNER_VIDEO_VERSION}`;
+  video.setAttribute('aria-label',`${label} ASL sign example from the ASL Citizen research dataset`);
+  const fallback=video.querySelector('a');fallback.href=video.src;fallback.textContent=`Download the ${label} example`;
+  status.textContent=`${label} · Press play to watch. ASL Citizen research example, trimmed to the sign.`;
+  document.querySelector('#signExampleMode').textContent=`${name} · Beginner ready camera model (≥70% held-out). Watch the example, then record one complete sign for four seconds and review the top five before adding the word.`;
   video.load();
   updateAccuracy();
 }
@@ -108,18 +140,19 @@ function chooseExample(name,src,button=null,id=null){
   status.textContent=`${label} · Press play to watch. Review recognition availability in the vocabulary library.`;video.load();
   updateAccuracy();
 }
-for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(cameraWords.has(id)){chooseCorePractice(id,button);return;}if(wordSettings(id).video)chooseExample(button.dataset.signLabel,wordSettings(id).video,button,id);else if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4?v=20261020-practice-2`,button,daily.has(id)?id:null);});
-document.addEventListener('handspeak:example',event=>{const data=event.detail;if(wordSettings(data.id).video){chooseExample(data.label,wordSettings(data.id).video,null,data.id);return;}if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
+for(const button of buttons)button.addEventListener('click',()=>{const id=button.dataset.signExample;if(cameraWords.has(id)){chooseCorePractice(id,button);return;}if(beginnerWords.has(id)){chooseBeginnerPractice(id,button);return;}if(wordSettings(id).video)chooseExample(button.dataset.signLabel,wordSettings(id).video,button,id);else if(embedded[id])chooseEmbedded(id,button);else chooseExample(button.dataset.signLabel,`media/signs/${id}.mp4?v=20261020-practice-2`,button,daily.has(id)?id:null);});
+document.addEventListener('handspeak:example',event=>{const data=event.detail;if(wordSettings(data.id).video){chooseExample(data.label,wordSettings(data.id).video,null,data.id);return;}if(embedded[data.id]){chooseEmbedded(data.id,buttons.find(b=>b.dataset.signExample===data.id));return;}if(beginnerWords.has(data.id)){chooseBeginnerPractice(data.id,buttons.find(b=>b.dataset.signExample===data.id)||null);return;}if(typeof data.label==='string'&&/^media\/signs\/[a-z0-9-]+\.mp4$/.test(data.src))chooseExample(data.label,data.src,null,data.id);});
 speed.addEventListener('change', applySpeed);
 video.addEventListener('loadedmetadata', () => { video.dataset.orientation = video.videoWidth >= video.videoHeight ? 'landscape' : 'portrait'; applySpeed(); });
 video.addEventListener('playing', () => { if(external)return;status.textContent = `${label} · ${video.playbackRate === 1 ? 'Normal speed' : `${video.playbackRate}× speed`}`; });
 video.addEventListener('ended', () => { if(external)return;status.textContent = `${label} · Play again or try it at the camera.`; });
-video.addEventListener('error', () => { if(external)return;status.textContent = libraryId===CORE_SENTINEL && cameraWords.has(coreId) ? `${label} · Example video could not load. Open the lesson link, then practice with the camera model.` : `${label} · Video could not load. Select the word again to retry.`; });
+video.addEventListener('error', () => { if(external)return;status.textContent = (libraryId===CORE_SENTINEL && cameraWords.has(coreId)) || (libraryId===BEGINNER_SENTINEL && beginnerWords.has(beginnerId)) ? `${label} · Example video could not load. Open the lesson link, then practice with the camera model.` : `${label} · Video could not load. Select the word again to retry.`; });
 document.querySelector('#signExampleLoop').addEventListener('change', event => { video.loop = event.target.checked; });
 document.querySelector('#signExampleReplay').addEventListener('click', () => { video.currentTime = 0; play(); });
 document.querySelector('#signExamplePractice').addEventListener('click', () => {
   pauseAll();
   if(libraryId===CORE_SENTINEL&&coreId){document.dispatchEvent(new CustomEvent('handspeak:capstone-practice',{detail:{id:coreId,label:cameraWords.get(coreId)}}));return;}
+  if(libraryId===BEGINNER_SENTINEL&&beginnerId){document.dispatchEvent(new CustomEvent('handspeak:beginner-practice',{detail:{id:beginnerId,label:beginnerWords.get(beginnerId)}}));return;}
   if(libraryId){document.dispatchEvent(new CustomEvent('handspeak:practice',{detail:{id:libraryId}}));return;}
   document.dispatchEvent(new CustomEvent('handspeak:default-practice',{detail:{label}}));
 });
@@ -128,6 +161,49 @@ new IntersectionObserver(entries => { if (!entries[0].isIntersecting) pauseAll()
 document.addEventListener('visibilitychange', () => { if (document.hidden) pauseAll(); });
 
 document.addEventListener('handspeak:view',pauseAll);
+
+async function loadBeginnerReadyExamples(){
+  try{
+    const response=await fetch(`models/beginner-ready-labels.json?v=${BEGINNER_VIDEO_VERSION}`,{cache:'no-store'});
+    if(!response.ok)return;
+    const data=await response.json();
+    const ids=data.ids&&typeof data.ids==='object'?data.ids:{};
+    const accuracy=data.accuracy&&typeof data.accuracy==='object'?data.accuracy:{};
+    const container=document.querySelector('.example-words');
+    const practice=document.querySelector('#practiceWord');
+    for(const name of data.labels||[]){
+      const id=ids[name]||String(name).toLowerCase().replaceAll(' / ','-').replaceAll('/','-').replaceAll(' ','-');
+      beginnerWords.set(id,name);
+      const metrics=accuracy[name];
+      if(metrics&&Number(metrics.total)>0)beginnerAccuracy[name]=[Number(metrics.correct)||0,Number(metrics.total)||0];
+      if(buttons.some(button=>button.dataset.signExample===id))continue;
+      const button=document.createElement('button');button.type='button';button.className='secondary-button';
+      button.dataset.signExample=id;button.dataset.signLabel=name;button.setAttribute('aria-pressed','false');button.textContent=name;
+      button.addEventListener('click',()=>chooseBeginnerPractice(id,button));
+      buttons.push(button);container.append(button);
+      if(practice&&![...practice.options].some(option=>option.value===id))practice.add(new Option(name,id));
+    }
+    const extra=await fetch(`models/beginner-practice-extra.json?v=${BEGINNER_VIDEO_VERSION}`,{cache:'no-store'});
+    if(extra.ok){
+      const more=await extra.json();
+      const moreIds=more.ids&&typeof more.ids==='object'?more.ids:{};
+      const moreAccuracy=more.accuracy&&typeof more.accuracy==='object'?more.accuracy:{};
+      for(const name of more.labels||[]){
+        const id=moreIds[name]||String(name).toLowerCase().replaceAll(' ','-');
+        beginnerWords.set(id,name);
+        const metrics=moreAccuracy[name];
+        if(metrics&&Number(metrics.total)>0)beginnerAccuracy[name]=[Number(metrics.correct)||0,Number(metrics.total)||0];
+        if(buttons.some(button=>button.dataset.signExample===id))continue;
+        const button=document.createElement('button');button.type='button';button.className='secondary-button';
+        button.dataset.signExample=id;button.dataset.signLabel=name;button.dataset.closedPractice='school-sister-we';button.setAttribute('aria-pressed','false');button.textContent=name;
+        button.addEventListener('click',()=>chooseBeginnerPractice(id,button));
+        buttons.push(button);container.append(button);
+        if(practice&&![...practice.options].some(option=>option.value===id))practice.add(new Option(name,id));
+      }
+    }
+    updateAccuracy();
+  }catch{ /* Beginner ready examples remain optional when the metadata file is missing. */ }
+}
 
 // Keep this panel in sync with published camera vocabularies and their existing lessons.
 async function loadPublishedExamples(){
@@ -158,6 +234,7 @@ async function loadPublishedExamples(){
     updateAccuracy();
   }catch{ /* Existing practice examples remain available when the library cannot load. */ }
 }
+void loadBeginnerReadyExamples();
 void loadPublishedExamples();
 void loadAccuracyProfiles().then(profiles=>{accuracyProfiles=profiles;updateAccuracy();});
 

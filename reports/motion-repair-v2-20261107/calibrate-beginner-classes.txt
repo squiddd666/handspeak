@@ -1,0 +1,1 @@
+full 23 class policies {"attempts": 296, "correct": 183, "wrong": 6, "noMatch": 107, "accuracy": 0.618243, "precision": 0.968254, "overallPrecision": 0.785408, "negativeAttempts": 357, "negativeFalse": 44, "negativeFalseRate": 0.123249}

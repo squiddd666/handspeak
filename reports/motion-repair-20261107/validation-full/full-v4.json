@@ -1,0 +1,1039 @@
+{
+  "candidate": "full-v4",
+  "checkpoint": "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\models\\capstone100-v4.pt",
+  "checkpointSha256": "25ac156f11c7b55b2f492438805763f805cde6c52d591ab7f4fae6b3ce9c733a",
+  "features": "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\features-train-merged.jsonl",
+  "featuresSha256": "3122f6edd66488fc0e047fa10a84887c7b09328b0ba5b03d200296e2fbd04cd7",
+  "split": "val",
+  "minFrames": 5,
+  "preprocessorVersion": "legacy-v1",
+  "mirrorTta": true,
+  "mirrorVersion": "legacy-v1",
+  "snapshots": 1,
+  "probabilities": "reports\\motion-repair-20261107\\validation-full\\full-v4.npz",
+  "probabilitiesSha256": "e429a13748a9b4fca006866e652b5deb341d4d78ff3fb89d16ffcb701bfd07b2",
+  "raw": {
+    "attempts": 367,
+    "tracked": 322,
+    "correct": 188,
+    "wrong": 134,
+    "noMatch": 45,
+    "accuracy": 0.512262,
+    "macroAccuracy": 0.5195,
+    "precision": 0.583851,
+    "perLabel": {
+      "8HOUR": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "ANYONE": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "APPLE": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "ARTICULATESIGN": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 4
+      },
+      "AXE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 4
+      },
+      "BABY2": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "BACKPACK1": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "BASEBALLCAP": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 3
+      },
+      "BASKETBALL1": {
+        "total": 5,
+        "correct": 3,
+        "wrong": 2
+      },
+      "BEE1": {
+        "total": 6,
+        "correct": 3,
+        "wrong": 2
+      },
+      "BELT1": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "BITE1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "BREAKFAST1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 1
+      },
+      "CALENDAR1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 3
+      },
+      "CANCER1": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "CAPTURE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "CATAPULT": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 2
+      },
+      "CEMETERY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "CHEEK": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 2
+      },
+      "CHEESEGRATER": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 3
+      },
+      "CHRISTMAS1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "CLOSE": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "COMB2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 3
+      },
+      "CONFUSED1": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "DARK1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "DEAF1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "DECIDE1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "DEMAND1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 3
+      },
+      "DEVELOP1": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "DINNER1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 4
+      },
+      "DOG1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      },
+      "DOWNSIZE1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "DRAG1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "DUCK2": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "EAT1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "EDIT1": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "ELEVATOR1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 5
+      },
+      "EMPTY2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 3
+      },
+      "ERUPT2": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FINE1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FLOAT1": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "FOREIGNER1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "GRAMMAR": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "GUESS1": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 2
+      },
+      "HALLOWEEN1": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "HELICOPTER2": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HOPE": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      },
+      "HOSPITAL1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      },
+      "HOW1": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "HURDLE/TRIP1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "IMPOSSIBLE": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "INTUITIVE": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "JEWELRY": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "JOKE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "KNIGHT1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 2
+      },
+      "LETTUCE1": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 1
+      },
+      "LOCK1": {
+        "total": 5,
+        "correct": 1,
+        "wrong": 4
+      },
+      "LUNCH1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 5
+      },
+      "MAPLE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "MEACULPA": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      },
+      "MEAT1": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "MECHANIC1": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "MICROSCOPE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 4
+      },
+      "MOUTH": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "MOVIE1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      },
+      "MYSELF": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "NIGHT1": {
+        "total": 5,
+        "correct": 5,
+        "wrong": 0
+      },
+      "NOON1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "OFFEND": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 1
+      },
+      "OTHER": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "PARTY1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "PATIENT2": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "PEG2": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "PIPE2": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "PONDER": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "PRESS": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 2
+      },
+      "RAZOR2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 3
+      },
+      "RIVER1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 1
+      },
+      "ROCKINGCHAIR1": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "SCROLLDOWN": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "SHARK1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 4
+      },
+      "SHAVE1": {
+        "total": 5,
+        "correct": 3,
+        "wrong": 2
+      },
+      "SHOCKED": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "SINCE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SINK": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SLIDE2": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "SOCCER2": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "SQUEEZE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "SWEATER2": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TAIL1": {
+        "total": 2,
+        "correct": 0,
+        "wrong": 2
+      },
+      "TEACH1": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "THEY1": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "THIRD1": {
+        "total": 6,
+        "correct": 6,
+        "wrong": 0
+      },
+      "TOMATO": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TRACTOR": {
+        "total": 5,
+        "correct": 1,
+        "wrong": 2
+      },
+      "TWINS1": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "VLOG": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "VOMIT": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "WALK-TIGHTROPE-CL": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 2
+      },
+      "WHATFOR1": {
+        "total": 5,
+        "correct": 3,
+        "wrong": 1
+      }
+    }
+  },
+  "gate050": {
+    "attempts": 367,
+    "tracked": 322,
+    "correct": 9,
+    "wrong": 0,
+    "noMatch": 358,
+    "accuracy": 0.024523,
+    "macroAccuracy": 0.026667,
+    "precision": 1.0,
+    "perLabel": {
+      "8HOUR": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "ANYONE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "APPLE": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "ARTICULATESIGN": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "AXE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BABY2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BACKPACK1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BASEBALLCAP": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BASKETBALL1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BEE1": {
+        "total": 6,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BELT1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BITE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "BREAKFAST1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CALENDAR1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CANCER1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CAPTURE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "CATAPULT": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CEMETERY": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CHEEK": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CHEESEGRATER": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CHRISTMAS1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CLOSE": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "COMB2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "CONFUSED1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DARK1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DEAF1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DECIDE1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DEMAND1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DEVELOP1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DINNER1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DOG1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DOWNSIZE1": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0
+      },
+      "DRAG1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "DUCK2": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "EAT1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "EDIT1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "ELEVATOR1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "EMPTY2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "ERUPT2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "FINE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "FLOAT1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "FOREIGNER1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "GRAMMAR": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "GUESS1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HALLOWEEN1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HELICOPTER2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HOPE": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HOSPITAL1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HOW1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "HURDLE/TRIP1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "IMPOSSIBLE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "INTUITIVE": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "JEWELRY": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "JOKE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "KNIGHT1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "LETTUCE1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "LOCK1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "LUNCH1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MAPLE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MEACULPA": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MEAT1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MECHANIC1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MICROSCOPE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MOUTH": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MOVIE1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "MYSELF": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "NIGHT1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "NOON1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "OFFEND": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "OTHER": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PARTY1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PATIENT2": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PEG2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PIPE2": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PONDER": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "PRESS": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "RAZOR2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "RIVER1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "ROCKINGCHAIR1": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "SCROLLDOWN": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SHARK1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SHAVE1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SHOCKED": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SINCE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SINK": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SLIDE2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SOCCER2": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "SQUEEZE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "SWEATER2": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TAIL1": {
+        "total": 2,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TEACH1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "THEY1": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "THIRD1": {
+        "total": 6,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TOMATO": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TRACTOR": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TWINS1": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "VLOG": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "VOMIT": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "WALK-TIGHTROPE-CL": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "WHATFOR1": {
+        "total": 5,
+        "correct": 0,
+        "wrong": 0
+      }
+    }
+  }
+}

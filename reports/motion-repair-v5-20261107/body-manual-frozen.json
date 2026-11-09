@@ -1,0 +1,14 @@
+{
+  "frozenAtUtc": "2026-11-07T00:29:50.991555+00:00",
+  "testPredictionsUsedForFitting": false,
+  "watchUsedForFitting": false,
+  "deployed": false,
+  "sha256": {
+    "body_manual_features.py": "4e31a03f775545a5b639feb9c0f5d7f918840700c72e89224f6c0ad5ff8704c0",
+    "scripts/train_body_manual_v5.py": "8ad0b0ae7b422b437343acd29e0be662bd9d99aa61e77665eef56d45583fcdc1",
+    "scripts/audit_body_manual_v5.py": "b023fb9394f9f7ff41181b1d83b8a4dfa901f8bda15f220843c21bf8cfc2ac6d",
+    "reports/motion-repair-v5-20261107/candidates/body-manual-24.json": "ce9ce544e1f55bbb16912183606beea1fb0fa1d05fed8f683e5f5c503ca43c48",
+    "reports/motion-repair-v5-20261107/candidates/body-manual-24.validation.json": "063a2cfed7623ea6bf4fba18a8dae9ad620622311a524f78e485787430ce693d",
+    "reports/motion-repair-v5-20261107/manual-test-selection.json": "97f33630d91555d70f6d20f64bf05b2134a044b1b872f4642fe1767991f5ffcb"
+  }
+}

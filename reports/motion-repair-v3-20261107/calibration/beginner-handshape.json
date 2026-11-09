@@ -1,0 +1,844 @@
+{
+  "family": "beginner",
+  "checkpoint": "beginner-aspect-v2.pt",
+  "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+  "labels": [
+    "GOODBYE",
+    "SORRY",
+    "OKAY",
+    "WELCOME",
+    "GOOD MORNING",
+    "GOOD AFTERNOON",
+    "GOOD NIGHT",
+    "HOW",
+    "WHAT",
+    "WHO",
+    "WHERE",
+    "WHEN",
+    "WHY",
+    "WHICH",
+    "I / ME",
+    "YOU",
+    "HE / SHE",
+    "WE",
+    "THEY",
+    "MY / MINE",
+    "YOUR / YOURS",
+    "THIS",
+    "THAT",
+    "EVERYONE",
+    "MOTHER",
+    "FATHER",
+    "BROTHER",
+    "SISTER",
+    "CHILD",
+    "FRIEND",
+    "TEACHER",
+    "STUDENT",
+    "FAMILY",
+    "SLEEP",
+    "WAKE UP",
+    "WALK",
+    "RUN",
+    "SIT",
+    "STAND",
+    "COME",
+    "HELP",
+    "STOP",
+    "WAIT",
+    "GIVE",
+    "TAKE",
+    "NEED",
+    "KNOW",
+    "HAPPY",
+    "SAD",
+    "ANGRY",
+    "SCARED",
+    "TIRED",
+    "THIRSTY",
+    "GOOD",
+    "BAD",
+    "SCHOOL",
+    "HOSPITAL",
+    "STORE",
+    "BATHROOM",
+    "WORK",
+    "HERE",
+    "THERE",
+    "INSIDE",
+    "OUTSIDE",
+    "TODAY",
+    "TOMORROW",
+    "YESTERDAY",
+    "NOW",
+    "LATER",
+    "MORNING",
+    "TIME",
+    "BEFORE",
+    "AFTER",
+    "MILK",
+    "BREAD",
+    "MONEY",
+    "PHONE",
+    "CLOTHES",
+    "BAG"
+  ],
+  "preprocessorVersion": "masked-v2",
+  "mirrorTta": true,
+  "mirrorVersion": "anatomical-v2",
+  "policies": {
+    "full": {
+      "minScore": 0,
+      "minMargin": 0.3,
+      "minVocabularyMass": 0.4,
+      "selectionSplit": "val",
+      "validation": {
+        "attempts": 296,
+        "correct": 229,
+        "wrong": 5,
+        "noMatch": 62,
+        "accuracy": 0.773649,
+        "precision": 0.978632,
+        "overallPrecision": 0.90873,
+        "negativeAttempts": 357,
+        "negativeFalse": 18,
+        "negativeFalseRate": 0.05042
+      },
+      "validationErrorBudgets": {
+        "attempts": 296,
+        "correct": 183,
+        "wrong": 6,
+        "noMatch": 107,
+        "accuracy": 0.618243,
+        "precision": 0.968254,
+        "overallPrecision": 0.785408,
+        "negativeAttempts": 357,
+        "negativeFalse": 44,
+        "negativeFalseRate": 0.123249
+      },
+      "classPolicies": {
+        "SORRY": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "GOOD MORNING": {
+          "minScore": 0,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0.4
+        },
+        "GOOD NIGHT": {
+          "minScore": 0,
+          "minMargin": 0.02,
+          "minVocabularyMass": 0.4
+        },
+        "WHAT": {
+          "minScore": 0,
+          "minMargin": 0.5,
+          "minVocabularyMass": 0.4
+        },
+        "WHICH": {
+          "minScore": 0.85,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "YOU": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "HE / SHE": {
+          "minScore": 0.65,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "THEY": {
+          "minScore": 0.25,
+          "minMargin": 0.05,
+          "minVocabularyMass": 0.4
+        },
+        "YOUR / YOURS": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "SISTER": {
+          "minScore": 0.25,
+          "minMargin": 0.02,
+          "minVocabularyMass": 0.4
+        },
+        "WALK": {
+          "minScore": 0,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0.4
+        },
+        "TIRED": {
+          "minScore": 0,
+          "minMargin": 0.5,
+          "minVocabularyMass": 0.4
+        },
+        "HOSPITAL": {
+          "minScore": 0,
+          "minMargin": 0.25,
+          "minVocabularyMass": 0.4
+        },
+        "WORK": {
+          "minScore": 0.8,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        },
+        "INSIDE": {
+          "minScore": 0,
+          "minMargin": 0.1,
+          "minVocabularyMass": 0.4
+        },
+        "MILK": {
+          "minScore": 0,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0.4
+        },
+        "MONEY": {
+          "minScore": 0,
+          "minMargin": 0.1,
+          "minVocabularyMass": 0.4
+        },
+        "PHONE": {
+          "minScore": 0.85,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.4
+        }
+      },
+      "globalValidation": {
+        "attempts": 296,
+        "correct": 217,
+        "wrong": 6,
+        "noMatch": 73,
+        "accuracy": 0.733108,
+        "precision": 0.973094,
+        "overallPrecision": 0.868,
+        "negativeAttempts": 357,
+        "negativeFalse": 27,
+        "negativeFalseRate": 0.07563
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    }
+  },
+  "sourceValidationProbabilitiesSha256": "b94aec6ad476d4900b9241de8319f50b1b06075c2a180fd432c2b01b4959c01f",
+  "negativeFeaturesSha256": "3122f6edd66488fc0e047fa10a84887c7b09328b0ba5b03d200296e2fbd04cd7",
+  "negativeValidationAttempts": 357,
+  "negativeTracked": 313,
+  "testUsedForCalibration": false,
+  "watchClipsUsedForCalibration": false,
+  "scoreScope": "Empirical validation rejection gates; softmax is not calibrated confidence.",
+  "classSelectionAudit": {
+    "full": {
+      "SORRY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WELCOME": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "GOOD NIGHT": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 8,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.25
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 8,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.25
+        }
+      },
+      "WHAT": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WHERE": {
+        "before": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.333333
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "WHICH": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "THEY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "STUDENT": {
+        "before": {
+          "attempts": 5,
+          "correct": 3,
+          "wrong": 2,
+          "noMatch": 0,
+          "accuracy": 0.6,
+          "precision": 0.6,
+          "overallPrecision": 0.5,
+          "negativeAttempts": 7,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.142857
+        },
+        "after": {
+          "attempts": 5,
+          "correct": 3,
+          "wrong": 1,
+          "noMatch": 1,
+          "accuracy": 0.6,
+          "precision": 0.75,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 7,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "SLEEP": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WAKE UP": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.5,
+          "negativeAttempts": 5,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.6
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.571429,
+          "negativeAttempts": 5,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.6
+        }
+      },
+      "RUN": {
+        "before": {
+          "attempts": 8,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 5,
+          "accuracy": 0.375,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 13,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.153846
+        },
+        "after": {
+          "attempts": 8,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.875,
+          "precision": 1.0,
+          "overallPrecision": 0.777778,
+          "negativeAttempts": 13,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.153846
+        }
+      },
+      "STAND": {
+        "before": {
+          "attempts": 9,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.777778,
+          "precision": 1.0,
+          "overallPrecision": 0.875,
+          "negativeAttempts": 8,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.125
+        },
+        "after": {
+          "attempts": 9,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.777778,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "HELP": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "STOP": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WAIT": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 1,
+          "noMatch": 0,
+          "accuracy": 0.75,
+          "precision": 0.75,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "KNOW": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.375,
+          "negativeAttempts": 13,
+          "negativeFalse": 5,
+          "negativeFalseRate": 0.384615
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.428571,
+          "negativeAttempts": 13,
+          "negativeFalse": 4,
+          "negativeFalseRate": 0.307692
+        }
+      },
+      "WORK": {
+        "before": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 6,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "THERE": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 5,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.4
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 5,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "INSIDE": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        }
+      },
+      "YESTERDAY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "LATER": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "BREAD": {
+        "before": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 2,
+          "negativeFalse": 2,
+          "negativeFalseRate": 1.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "PHONE": {
+        "before": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      }
+    }
+  },
+  "sourceNegativeProbabilitiesSha256": "842d23cd5add3cb93ab31b7d8943783e4c50aeeff4db73528d15a587cdcdf38c",
+  "baselineCalibrationSha256": "03e8ca894ca7443eb83aa2caa7ff04e5748aa94f8fdad3b4e2dd6b279e34331b",
+  "auxiliarySha256": "e49a7b27ac97830714973335da4e8d5766563a84f433c20a1b5b43bedfbbb65b",
+  "auxiliaryFeatureVersion": "body-handshape-v1",
+  "fusionWeights": {
+    "full": 0.75
+  },
+  "selectionReportSha256": "b74115daa6f04817c5d7e937c4d05f6c8470df0646b8eedaec85ddb0e3aca028"
+}

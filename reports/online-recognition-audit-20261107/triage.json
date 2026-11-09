@@ -1,0 +1,39 @@
+{
+  "scope": "Observed failure decomposition only; no model, gate, reference, sampling or replay selection.",
+  "nativeCandidatePositiveClips": 69,
+  "nativeCandidatePositiveTensorAccepted": 67,
+  "nativeCandidatePositiveRejectedBeforeScoring": 2,
+  "nativeCandidatePositiveScoredButNoMatch": 52,
+  "nativeCandidateIncorrect": [
+    {
+      "file": "batch-2-online-0053",
+      "expected": "SICK",
+      "prediction": "HOME"
+    }
+  ],
+  "browserStatusCounts": {
+    "complete": 75,
+    "failed": 1
+  },
+  "browserErrorCounts": {
+    "Body tracker could not warm up. Keep your upper body visible and try again.": 1
+  },
+  "browserCompleteSampleCounts": {
+    "3": 1,
+    "4": 38,
+    "5": 15,
+    "6": 8,
+    "7": 9,
+    "8": 1,
+    "10": 2,
+    "12": 1
+  },
+  "browserCompleteManualBelowRequired12Frames": 74,
+  "browserCompleteWithoutBodyHandFrames": 42,
+  "browserCompleteWithoutTrackedManualFrames": 43,
+  "browserCandidateTensorAccepted": 5,
+  "browserMedianPairedSampleIntervalMs": 916.5499999998137,
+  "browserRenderer": "Driver forces ANGLE SwiftShader software rendering. Throughput figures apply to this isolated configuration, not user hardware or live-camera accuracy.",
+  "interpretation": "Sparse browser inputs cause deterministic input rejection before meaningful classifier scoring. Native has mostly valid candidate tensors but substantial classifier rejection and manual wrong/outside-vocabulary accepts. These are separate repair targets.",
+  "nextRepairBoundary": "Use independent development fixtures to improve capture scheduling/worker isolation and source readiness. Do not fit thresholds or templates to these audit clips. Validate on development data, then freeze a changed runtime for another untouched production-browser audit."
+}

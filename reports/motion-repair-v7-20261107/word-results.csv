@@ -1,0 +1,11 @@
+number,label,status,pairedFrames,bodyFrames,manualTrackedFrames,contractPassed,bodyCandidate,manual
+1,HELLO,complete,26,21,17,True,NO MATCH,HELLO
+2,NO,complete,38,20,20,True,NO MATCH,NO
+3,HUNGRY,complete,32,13,7,True,NO MATCH,FOOD
+4,FINISH,complete,39,4,4,True,NO MATCH,NO MATCH
+5,PLEASE,complete,40,8,8,True,LIKE,PLEASE
+6,BOOK,complete,36,10,6,True,NO MATCH,BOOK
+7,PAIN,complete,35,20,17,True,NO MATCH,NO
+8,APPLE,complete,31,6,6,True,NO MATCH,FOOD
+9,NO,canceled,0,0,0,False,NO MATCH,NO MATCH
+10,HELLO,complete,27,17,13,True,NO MATCH,DRINK

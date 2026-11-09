@@ -1,0 +1,1309 @@
+{
+  "site": "https://handspeak.cvsu.dev",
+  "results": [
+    {
+      "word": "ANGRY",
+      "clip": "angry",
+      "predicted": "HAPPY",
+      "accepted": false,
+      "top1": "HAPPY",
+      "top1Score": 0.362611,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: HAPPY. Top five: 1. HAPPY \u00b7 2. MONEY \u00b7 3. WHAT \u00b7 4. SCARED \u00b7 5. MY / MINE. Verify before adding.",
+      "live": "HAPPY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.002786
+      },
+      "top5": [
+        {
+          "label": "HAPPY",
+          "score": 0.362611
+        },
+        {
+          "label": "MONEY",
+          "score": 0.203913
+        },
+        {
+          "label": "WHAT",
+          "score": 0.052501
+        },
+        {
+          "label": "SCARED",
+          "score": 0.030817
+        },
+        {
+          "label": "MY / MINE",
+          "score": 0.016531
+        }
+      ]
+    },
+    {
+      "word": "BAD",
+      "clip": "bad",
+      "predicted": "MONEY",
+      "accepted": false,
+      "top1": "MONEY",
+      "top1Score": 0.642584,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: MONEY. Top five: 1. MONEY \u00b7 2. HAPPY \u00b7 3. THERE \u00b7 4. GIVE \u00b7 5. BAD. Verify before adding.",
+      "live": "MONEY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.5
+      },
+      "top5": [
+        {
+          "label": "MONEY",
+          "score": 0.642584
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.073128
+        },
+        {
+          "label": "THERE",
+          "score": 0.035548
+        },
+        {
+          "label": "GIVE",
+          "score": 0.033216
+        },
+        {
+          "label": "BAD",
+          "score": 0.01123
+        }
+      ]
+    },
+    {
+      "word": "BEFORE",
+      "clip": "before",
+      "predicted": "YOUR / YOURS",
+      "accepted": false,
+      "top1": "YOUR / YOURS",
+      "top1Score": 0.126741,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: YOUR / YOURS. Top five: 1. YOUR / YOURS \u00b7 2. WELCOME \u00b7 3. WAIT \u00b7 4. RUN \u00b7 5. GOOD MORNING. Verify before adding.",
+      "live": "YOUR / YOURS",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "YOUR / YOURS",
+          "score": 0.126741
+        },
+        {
+          "label": "WELCOME",
+          "score": 0.017223
+        },
+        {
+          "label": "WAIT",
+          "score": 0.014435
+        },
+        {
+          "label": "RUN",
+          "score": 0.010904
+        },
+        {
+          "label": "GOOD MORNING",
+          "score": 0.009014
+        }
+      ]
+    },
+    {
+      "word": "BROTHER",
+      "clip": "brother",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (2/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "FAMILY",
+      "clip": "family",
+      "predicted": "CHILD",
+      "accepted": false,
+      "top1": "CHILD",
+      "top1Score": 0.238669,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: CHILD. Top five: 1. CHILD \u00b7 2. MONEY \u00b7 3. RUN \u00b7 4. KNOW \u00b7 5. FAMILY. Verify before adding.",
+      "live": "CHILD",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.166016
+      },
+      "top5": [
+        {
+          "label": "CHILD",
+          "score": 0.238669
+        },
+        {
+          "label": "MONEY",
+          "score": 0.190232
+        },
+        {
+          "label": "RUN",
+          "score": 0.054562
+        },
+        {
+          "label": "KNOW",
+          "score": 0.025754
+        },
+        {
+          "label": "FAMILY",
+          "score": 0.024337
+        }
+      ]
+    },
+    {
+      "word": "FATHER",
+      "clip": "father",
+      "predicted": "TAKE",
+      "accepted": false,
+      "top1": "TAKE",
+      "top1Score": 0.18268,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: TAKE. Top five: 1. TAKE \u00b7 2. FATHER \u00b7 3. THERE \u00b7 4. KNOW \u00b7 5. YOUR / YOURS. Verify before adding.",
+      "live": "TAKE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.207721
+      },
+      "top5": [
+        {
+          "label": "TAKE",
+          "score": 0.18268
+        },
+        {
+          "label": "FATHER",
+          "score": 0.044527
+        },
+        {
+          "label": "THERE",
+          "score": 0.031107
+        },
+        {
+          "label": "KNOW",
+          "score": 0.027825
+        },
+        {
+          "label": "YOUR / YOURS",
+          "score": 0.020222
+        }
+      ]
+    },
+    {
+      "word": "FRIEND",
+      "clip": "friend",
+      "predicted": "FRIEND",
+      "accepted": true,
+      "top1": "FRIEND",
+      "top1Score": 0.274292,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: FRIEND. Top five: 1. FRIEND \u00b7 2. WHEN \u00b7 3. WHO \u00b7 4. RUN \u00b7 5. MONEY. Verify before adding.",
+      "live": "FRIEND",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.234567
+      },
+      "top5": [
+        {
+          "label": "FRIEND",
+          "score": 0.274292
+        },
+        {
+          "label": "WHEN",
+          "score": 0.237783
+        },
+        {
+          "label": "WHO",
+          "score": 0.077373
+        },
+        {
+          "label": "RUN",
+          "score": 0.06016
+        },
+        {
+          "label": "MONEY",
+          "score": 0.054975
+        }
+      ]
+    },
+    {
+      "word": "GIVE",
+      "clip": "give",
+      "predicted": "GIVE",
+      "accepted": true,
+      "top1": "GIVE",
+      "top1Score": 0.13961,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: GIVE. Top five: 1. GIVE \u00b7 2. WHEN \u00b7 3. HAPPY \u00b7 4. WAIT \u00b7 5. MONEY. Verify before adding.",
+      "live": "GIVE",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.157035
+      },
+      "top5": [
+        {
+          "label": "GIVE",
+          "score": 0.13961
+        },
+        {
+          "label": "WHEN",
+          "score": 0.065573
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.025856
+        },
+        {
+          "label": "WAIT",
+          "score": 0.024918
+        },
+        {
+          "label": "MONEY",
+          "score": 0.022677
+        }
+      ]
+    },
+    {
+      "word": "GOOD",
+      "clip": "good",
+      "predicted": "HAPPY",
+      "accepted": false,
+      "top1": "HAPPY",
+      "top1Score": 0.224218,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: HAPPY. Top five: 1. HAPPY \u00b7 2. MY / MINE \u00b7 3. GOOD \u00b7 4. WELCOME \u00b7 5. SLEEP. Verify before adding.",
+      "live": "HAPPY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.668333
+      },
+      "top5": [
+        {
+          "label": "HAPPY",
+          "score": 0.224218
+        },
+        {
+          "label": "MY / MINE",
+          "score": 0.096997
+        },
+        {
+          "label": "GOOD",
+          "score": 0.080619
+        },
+        {
+          "label": "WELCOME",
+          "score": 0.04725
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.027211
+        }
+      ]
+    },
+    {
+      "word": "GOOD MORNING",
+      "clip": "good-morning",
+      "predicted": "GOOD MORNING",
+      "accepted": true,
+      "top1": "GOOD MORNING",
+      "top1Score": 0.625335,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: GOOD MORNING. Top five: 1. GOOD MORNING \u00b7 2. MONEY \u00b7 3. MY / MINE \u00b7 4. SLEEP \u00b7 5. BROTHER. Verify before adding.",
+      "live": "GOOD MORNING",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.6
+      },
+      "top5": [
+        {
+          "label": "GOOD MORNING",
+          "score": 0.625335
+        },
+        {
+          "label": "MONEY",
+          "score": 0.020334
+        },
+        {
+          "label": "MY / MINE",
+          "score": 0.018415
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.013852
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.013327
+        }
+      ]
+    },
+    {
+      "word": "HOW",
+      "clip": "how",
+      "predicted": "TIRED",
+      "accepted": false,
+      "top1": "TIRED",
+      "top1Score": 0.077014,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: TIRED. Top five: 1. TIRED \u00b7 2. WHAT \u00b7 3. TOMORROW \u00b7 4. ANGRY \u00b7 5. SORRY. Verify before adding.",
+      "live": "TIRED",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 2.168833
+      },
+      "top5": [
+        {
+          "label": "TIRED",
+          "score": 0.077014
+        },
+        {
+          "label": "WHAT",
+          "score": 0.044046
+        },
+        {
+          "label": "TOMORROW",
+          "score": 0.037551
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.036317
+        },
+        {
+          "label": "SORRY",
+          "score": 0.022937
+        }
+      ]
+    },
+    {
+      "word": "INSIDE",
+      "clip": "inside",
+      "predicted": "INSIDE",
+      "accepted": true,
+      "top1": "INSIDE",
+      "top1Score": 0.290783,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: INSIDE. Top five: 1. INSIDE \u00b7 2. WORK \u00b7 3. STAND \u00b7 4. BROTHER \u00b7 5. HOW. Verify before adding.",
+      "live": "INSIDE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "INSIDE",
+          "score": 0.290783
+        },
+        {
+          "label": "WORK",
+          "score": 0.142364
+        },
+        {
+          "label": "STAND",
+          "score": 0.044231
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.032456
+        },
+        {
+          "label": "HOW",
+          "score": 0.016293
+        }
+      ]
+    },
+    {
+      "word": "KNOW",
+      "clip": "know",
+      "predicted": "KNOW",
+      "accepted": true,
+      "top1": "KNOW",
+      "top1Score": 0.1909,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: KNOW. Top five: 1. KNOW \u00b7 2. MONEY \u00b7 3. CHILD \u00b7 4. WHY \u00b7 5. SLEEP. Verify before adding.",
+      "live": "KNOW",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.4
+      },
+      "top5": [
+        {
+          "label": "KNOW",
+          "score": 0.1909
+        },
+        {
+          "label": "MONEY",
+          "score": 0.070392
+        },
+        {
+          "label": "CHILD",
+          "score": 0.05498
+        },
+        {
+          "label": "WHY",
+          "score": 0.028335
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.026748
+        }
+      ]
+    },
+    {
+      "word": "MONEY",
+      "clip": "money",
+      "predicted": "WHAT",
+      "accepted": false,
+      "top1": "WHAT",
+      "top1Score": 0.565474,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: WHAT. Top five: 1. WHAT \u00b7 2. WAIT \u00b7 3. MONEY \u00b7 4. STORE \u00b7 5. TODAY. Verify before adding.",
+      "live": "WHAT",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2022
+      },
+      "top5": [
+        {
+          "label": "WHAT",
+          "score": 0.565474
+        },
+        {
+          "label": "WAIT",
+          "score": 0.072543
+        },
+        {
+          "label": "MONEY",
+          "score": 0.057717
+        },
+        {
+          "label": "STORE",
+          "score": 0.033795
+        },
+        {
+          "label": "TODAY",
+          "score": 0.009382
+        }
+      ]
+    },
+    {
+      "word": "MY / MINE",
+      "clip": "my-mine",
+      "predicted": "MY / MINE",
+      "accepted": true,
+      "top1": "MY / MINE",
+      "top1Score": 0.262503,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: MY / MINE. Top five: 1. MY / MINE \u00b7 2. HAPPY \u00b7 3. MONEY \u00b7 4. GOOD \u00b7 5. BAD. Verify before adding.",
+      "live": "MY / MINE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.202215
+      },
+      "top5": [
+        {
+          "label": "MY / MINE",
+          "score": 0.262503
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.257037
+        },
+        {
+          "label": "MONEY",
+          "score": 0.107457
+        },
+        {
+          "label": "GOOD",
+          "score": 0.045106
+        },
+        {
+          "label": "BAD",
+          "score": 0.037833
+        }
+      ]
+    },
+    {
+      "word": "OKAY",
+      "clip": "okay",
+      "predicted": "OKAY",
+      "accepted": true,
+      "top1": "OKAY",
+      "top1Score": 0.119317,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: OKAY. Top five: 1. OKAY \u00b7 2. THERE \u00b7 3. BROTHER \u00b7 4. WAKE UP \u00b7 5. GIVE. Verify before adding.",
+      "live": "OKAY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "OKAY",
+          "score": 0.119317
+        },
+        {
+          "label": "THERE",
+          "score": 0.063048
+        },
+        {
+          "label": "BROTHER",
+          "score": 0.028121
+        },
+        {
+          "label": "WAKE UP",
+          "score": 0.019331
+        },
+        {
+          "label": "GIVE",
+          "score": 0.017046
+        }
+      ]
+    },
+    {
+      "word": "PHONE",
+      "clip": "phone",
+      "predicted": "TOMORROW",
+      "accepted": false,
+      "top1": "TOMORROW",
+      "top1Score": 0.213689,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: TOMORROW. Top five: 1. TOMORROW \u00b7 2. PHONE \u00b7 3. SORRY \u00b7 4. MONEY \u00b7 5. THERE. Verify before adding.",
+      "live": "TOMORROW",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.001035
+      },
+      "top5": [
+        {
+          "label": "TOMORROW",
+          "score": 0.213689
+        },
+        {
+          "label": "PHONE",
+          "score": 0.113166
+        },
+        {
+          "label": "SORRY",
+          "score": 0.036835
+        },
+        {
+          "label": "MONEY",
+          "score": 0.029792
+        },
+        {
+          "label": "THERE",
+          "score": 0.023213
+        }
+      ]
+    },
+    {
+      "word": "RUN",
+      "clip": "run",
+      "predicted": "RUN",
+      "accepted": true,
+      "top1": "RUN",
+      "top1Score": 0.521642,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: RUN. Top five: 1. RUN \u00b7 2. MONEY \u00b7 3. WAKE UP \u00b7 4. WHAT \u00b7 5. SAD. Verify before adding.",
+      "live": "RUN",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.241758
+      },
+      "top5": [
+        {
+          "label": "RUN",
+          "score": 0.521642
+        },
+        {
+          "label": "MONEY",
+          "score": 0.119224
+        },
+        {
+          "label": "WAKE UP",
+          "score": 0.015696
+        },
+        {
+          "label": "WHAT",
+          "score": 0.015447
+        },
+        {
+          "label": "SAD",
+          "score": 0.013216
+        }
+      ]
+    },
+    {
+      "word": "SAD",
+      "clip": "sad",
+      "predicted": "MONEY",
+      "accepted": false,
+      "top1": "MONEY",
+      "top1Score": 0.607368,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: MONEY. Top five: 1. MONEY \u00b7 2. WHAT \u00b7 3. WAIT \u00b7 4. SAD \u00b7 5. TODAY. Verify before adding.",
+      "live": "MONEY",
+      "video": {
+        "width": 480,
+        "height": 270,
+        "duration": 1.49886
+      },
+      "top5": [
+        {
+          "label": "MONEY",
+          "score": 0.607368
+        },
+        {
+          "label": "WHAT",
+          "score": 0.136949
+        },
+        {
+          "label": "WAIT",
+          "score": 0.081922
+        },
+        {
+          "label": "SAD",
+          "score": 0.019673
+        },
+        {
+          "label": "TODAY",
+          "score": 0.006235
+        }
+      ]
+    },
+    {
+      "word": "SCARED",
+      "clip": "scared",
+      "predicted": "SCARED",
+      "accepted": true,
+      "top1": "SCARED",
+      "top1Score": 0.696413,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: SCARED. Top five: 1. SCARED \u00b7 2. ANGRY \u00b7 3. HAPPY \u00b7 4. WHAT \u00b7 5. MONEY. Verify before adding.",
+      "live": "SCARED",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.3013
+      },
+      "top5": [
+        {
+          "label": "SCARED",
+          "score": 0.696413
+        },
+        {
+          "label": "ANGRY",
+          "score": 0.071265
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.05362
+        },
+        {
+          "label": "WHAT",
+          "score": 0.023454
+        },
+        {
+          "label": "MONEY",
+          "score": 0.022776
+        }
+      ]
+    },
+    {
+      "word": "SLEEP",
+      "clip": "sleep",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (2/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.944134
+      },
+      "top5": []
+    },
+    {
+      "word": "STAND",
+      "clip": "stand",
+      "predicted": "STAND",
+      "accepted": true,
+      "top1": "STAND",
+      "top1Score": 0.031242,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: STAND. Top five: 1. STAND \u00b7 2. TIRED \u00b7 3. THERE \u00b7 4. WAIT \u00b7 5. SIT. Verify before adding.",
+      "live": "STAND",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.206128
+      },
+      "top5": [
+        {
+          "label": "STAND",
+          "score": 0.031242
+        },
+        {
+          "label": "TIRED",
+          "score": 0.007073
+        },
+        {
+          "label": "THERE",
+          "score": 0.006581
+        },
+        {
+          "label": "WAIT",
+          "score": 0.006218
+        },
+        {
+          "label": "SIT",
+          "score": 0.00617
+        }
+      ]
+    },
+    {
+      "word": "STORE",
+      "clip": "store",
+      "predicted": "MONEY",
+      "accepted": false,
+      "top1": "MONEY",
+      "top1Score": 0.472228,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: MONEY. Top five: 1. MONEY \u00b7 2. TEACHER \u00b7 3. TODAY \u00b7 4. WHAT \u00b7 5. STORE. Verify before adding.",
+      "live": "MONEY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.143093
+      },
+      "top5": [
+        {
+          "label": "MONEY",
+          "score": 0.472228
+        },
+        {
+          "label": "TEACHER",
+          "score": 0.075782
+        },
+        {
+          "label": "TODAY",
+          "score": 0.058939
+        },
+        {
+          "label": "WHAT",
+          "score": 0.055232
+        },
+        {
+          "label": "STORE",
+          "score": 0.044338
+        }
+      ]
+    },
+    {
+      "word": "TAKE",
+      "clip": "take",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (1/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "TEACHER",
+      "clip": "teacher",
+      "predicted": "RUN",
+      "accepted": false,
+      "top1": "RUN",
+      "top1Score": 0.092729,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: RUN. Top five: 1. RUN \u00b7 2. CHILD \u00b7 3. KNOW \u00b7 4. TEACHER \u00b7 5. MONEY. Verify before adding.",
+      "live": "RUN",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.566667
+      },
+      "top5": [
+        {
+          "label": "RUN",
+          "score": 0.092729
+        },
+        {
+          "label": "CHILD",
+          "score": 0.092195
+        },
+        {
+          "label": "KNOW",
+          "score": 0.042583
+        },
+        {
+          "label": "TEACHER",
+          "score": 0.042438
+        },
+        {
+          "label": "MONEY",
+          "score": 0.024605
+        }
+      ]
+    },
+    {
+      "word": "THERE",
+      "clip": "there",
+      "predicted": "THERE",
+      "accepted": true,
+      "top1": "THERE",
+      "top1Score": 0.347544,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: THERE. Top five: 1. THERE \u00b7 2. THIS \u00b7 3. WHEN \u00b7 4. WHO \u00b7 5. OUTSIDE. Verify before adding.",
+      "live": "THERE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2022
+      },
+      "top5": [
+        {
+          "label": "THERE",
+          "score": 0.347544
+        },
+        {
+          "label": "THIS",
+          "score": 0.026276
+        },
+        {
+          "label": "WHEN",
+          "score": 0.016584
+        },
+        {
+          "label": "WHO",
+          "score": 0.011776
+        },
+        {
+          "label": "OUTSIDE",
+          "score": 0.009489
+        }
+      ]
+    },
+    {
+      "word": "THIS",
+      "clip": "this",
+      "predicted": "THIS",
+      "accepted": true,
+      "top1": "THIS",
+      "top1Score": 0.384845,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: THIS. Top five: 1. THIS \u00b7 2. BATHROOM \u00b7 3. WORK \u00b7 4. TAKE \u00b7 5. WHAT. Verify before adding.",
+      "live": "THIS",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "THIS",
+          "score": 0.384845
+        },
+        {
+          "label": "BATHROOM",
+          "score": 0.204651
+        },
+        {
+          "label": "WORK",
+          "score": 0.017945
+        },
+        {
+          "label": "TAKE",
+          "score": 0.016229
+        },
+        {
+          "label": "WHAT",
+          "score": 0.008683
+        }
+      ]
+    },
+    {
+      "word": "TIRED",
+      "clip": "tired",
+      "predicted": "TIRED",
+      "accepted": true,
+      "top1": "TIRED",
+      "top1Score": 0.091537,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: TIRED. Top five: 1. TIRED \u00b7 2. TODAY \u00b7 3. WHAT \u00b7 4. SORRY \u00b7 5. RUN. Verify before adding.",
+      "live": "TIRED",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": [
+        {
+          "label": "TIRED",
+          "score": 0.091537
+        },
+        {
+          "label": "TODAY",
+          "score": 0.047404
+        },
+        {
+          "label": "WHAT",
+          "score": 0.036702
+        },
+        {
+          "label": "SORRY",
+          "score": 0.017239
+        },
+        {
+          "label": "RUN",
+          "score": 0.01685
+        }
+      ]
+    },
+    {
+      "word": "TOMORROW",
+      "clip": "tomorrow",
+      "predicted": "TOMORROW",
+      "accepted": true,
+      "top1": "TOMORROW",
+      "top1Score": 0.140108,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: TOMORROW. Top five: 1. TOMORROW \u00b7 2. PHONE \u00b7 3. SORRY \u00b7 4. THERE \u00b7 5. MONEY. Verify before adding.",
+      "live": "TOMORROW",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.380506
+      },
+      "top5": [
+        {
+          "label": "TOMORROW",
+          "score": 0.140108
+        },
+        {
+          "label": "PHONE",
+          "score": 0.105997
+        },
+        {
+          "label": "SORRY",
+          "score": 0.054557
+        },
+        {
+          "label": "THERE",
+          "score": 0.03648
+        },
+        {
+          "label": "MONEY",
+          "score": 0.034114
+        }
+      ]
+    },
+    {
+      "word": "WAIT",
+      "clip": "wait",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (3/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1
+      },
+      "top5": []
+    },
+    {
+      "word": "WAKE UP",
+      "clip": "wake-up",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (3/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "WELCOME",
+      "clip": "welcome",
+      "predicted": "WELCOME",
+      "accepted": true,
+      "top1": "WELCOME",
+      "top1Score": 0.180523,
+      "correct": true,
+      "closed": "",
+      "status": "Possible match: WELCOME. Top five: 1. WELCOME \u00b7 2. HAPPY \u00b7 3. MY / MINE \u00b7 4. MONEY \u00b7 5. GOOD. Verify before adding.",
+      "live": "WELCOME",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.206251
+      },
+      "top5": [
+        {
+          "label": "WELCOME",
+          "score": 0.180523
+        },
+        {
+          "label": "HAPPY",
+          "score": 0.155096
+        },
+        {
+          "label": "MY / MINE",
+          "score": 0.114108
+        },
+        {
+          "label": "MONEY",
+          "score": 0.043301
+        },
+        {
+          "label": "GOOD",
+          "score": 0.042497
+        }
+      ]
+    },
+    {
+      "word": "WHAT",
+      "clip": "what",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (3/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.933008
+      },
+      "top5": []
+    },
+    {
+      "word": "WHO",
+      "clip": "who",
+      "predicted": "SORRY",
+      "accepted": false,
+      "top1": "SORRY",
+      "top1Score": 0.09273,
+      "correct": false,
+      "closed": "",
+      "status": "Possible match: SORRY. Top five: 1. SORRY \u00b7 2. WHAT \u00b7 3. THIS \u00b7 4. GOOD \u00b7 5. SLEEP. Verify before adding.",
+      "live": "SORRY",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.08
+      },
+      "top5": [
+        {
+          "label": "SORRY",
+          "score": 0.09273
+        },
+        {
+          "label": "WHAT",
+          "score": 0.075177
+        },
+        {
+          "label": "THIS",
+          "score": 0.039346
+        },
+        {
+          "label": "GOOD",
+          "score": 0.027781
+        },
+        {
+          "label": "SLEEP",
+          "score": 0.026362
+        }
+      ]
+    },
+    {
+      "word": "WHY",
+      "clip": "why",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (4/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.266667
+      },
+      "top5": []
+    },
+    {
+      "word": "YESTERDAY",
+      "clip": "yesterday",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "",
+      "status": "Not enough tracked frames (3/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "SCHOOL",
+      "clip": "school",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Not enough tracked frames (2/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 2.2
+      },
+      "top5": []
+    },
+    {
+      "word": "SISTER",
+      "clip": "sister",
+      "predicted": "",
+      "accepted": false,
+      "top1": "",
+      "top1Score": null,
+      "correct": false,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Not enough tracked frames (3/5).",
+      "live": "\u2014",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.822076
+      },
+      "top5": []
+    },
+    {
+      "word": "WE",
+      "clip": "we",
+      "predicted": "WE",
+      "accepted": true,
+      "top1": "WE",
+      "top1Score": 0.245721,
+      "correct": true,
+      "closed": "SCHOOL|SISTER|WE",
+      "status": "Possible match: WE. Top five: 1. WE \u00b7 2. SISTER \u00b7 3. SCHOOL. Verify before adding.",
+      "live": "WE",
+      "video": {
+        "width": 480,
+        "height": 360,
+        "duration": 1.236769
+      },
+      "top5": [
+        {
+          "label": "WE",
+          "score": 0.245721
+        },
+        {
+          "label": "SISTER",
+          "score": 0.029086
+        },
+        {
+          "label": "SCHOOL",
+          "score": 0.012366
+        }
+      ]
+    }
+  ],
+  "pageErrors": []
+}

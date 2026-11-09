@@ -1,0 +1,1341 @@
+{
+  "checkedAt": "2026-11-05T12:20:38.820503+00:00",
+  "baseUrl": "http://127.0.0.1:8000",
+  "counts": {
+    "labels": 198,
+    "existingLocal": 51,
+    "researchLocal": 147
+  },
+  "catalogEntries": 347,
+  "httpAndDecodePassed": 198,
+  "loadedModelLabels": {
+    "full100": 100,
+    "beginner79": 79,
+    "daily5": 5
+  },
+  "runtimeTorch": "2.14.1+cpu",
+  "beginnerCheckpoint": "beginner-need79-v1.pt",
+  "separateModelLabelUnion": 198,
+  "simultaneousRecognition": false,
+  "simultaneousReason": "Category/daily selection replaces the active recognizer; full and Beginner captures suppress other recognition. Scores and greeting/component aliases are not calibrated for a unified classifier.",
+  "inferenceSmokeTests": [
+    {
+      "model": "full100",
+      "expected": "BELT1",
+      "prediction": "BELT1",
+      "file": "11143309153181202-BELT.mp4",
+      "split": "test",
+      "seconds": 0.219,
+      "lowConfidence": false
+    },
+    {
+      "model": "full100",
+      "expected": "DUCK2",
+      "prediction": "DUCK2",
+      "file": "8653147480495109-DUCK.mp4",
+      "split": "test",
+      "seconds": 0.193,
+      "lowConfidence": false
+    },
+    {
+      "model": "full100",
+      "expected": "DEAF1",
+      "prediction": "ARTICULATESIGN",
+      "file": "9319298873644923-DEAF.mp4",
+      "split": "test",
+      "seconds": 0.182,
+      "lowConfidence": false
+    },
+    {
+      "model": "beginner79",
+      "expected": "GOODBYE",
+      "prediction": "GOODBYE",
+      "file": "9133589855079114-BYE.mp4",
+      "split": "test",
+      "seconds": 0.039,
+      "lowConfidence": false
+    },
+    {
+      "model": "beginner79",
+      "expected": "SORRY",
+      "prediction": null,
+      "file": "010369524824967558-SORRY.mp4",
+      "split": "test",
+      "seconds": 0.033,
+      "lowConfidence": true
+    },
+    {
+      "model": "beginner79",
+      "expected": "MOTHER",
+      "prediction": null,
+      "file": "834993915476457-MOTHER.mp4",
+      "split": "test",
+      "seconds": 0.035,
+      "lowConfidence": true
+    }
+  ],
+  "inferenceScope": "A few cached held-out landmark clips validate live inference routes, not live-camera accuracy or all-label recognition accuracy. No camera was started.",
+  "localOnlyHTTPChecks": [
+    {
+      "headers": {
+        "Host": "public.example.com"
+      },
+      "status": 403
+    },
+    {
+      "headers": {
+        "Forwarded": "for=127.0.0.1"
+      },
+      "status": 403
+    },
+    {
+      "headers": {
+        "X-Forwarded-Host": "public.example.com"
+      },
+      "status": 403
+    },
+    {
+      "headers": {
+        "Origin": "https://public.example.com"
+      },
+      "status": 403
+    }
+  ],
+  "videos": [
+    {
+      "label": "8HOUR",
+      "video": "media/research-signs/8hour.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "AFTER",
+      "video": "media/research-signs/after.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ANGRY",
+      "video": "media/research-signs/angry.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ANYONE",
+      "video": "media/research-signs/anyone.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "APPLE",
+      "video": "media/research-signs/apple.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ARTICULATESIGN",
+      "video": "media/research-signs/articulatesign.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "AXE",
+      "video": "media/research-signs/axe.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BABY",
+      "video": "media/research-signs/baby.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BACKPACK",
+      "video": "media/research-signs/backpack.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BAD",
+      "video": "media/research-signs/bad.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BAG",
+      "video": "media/research-signs/bag.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BASEBALLCAP",
+      "video": "media/signs/baseballcap.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BASKETBALL",
+      "video": "media/research-signs/basketball.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BATHROOM",
+      "video": "media/research-signs/bathroom.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BEE",
+      "video": "media/research-signs/bee.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BEFORE",
+      "video": "media/research-signs/before.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BELT",
+      "video": "media/signs/belt.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BITE",
+      "video": "media/research-signs/bite.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BOOK",
+      "video": "media/signs/book.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BREAD",
+      "video": "media/research-signs/bread.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BREAKFAST",
+      "video": "media/research-signs/breakfast.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "BROTHER",
+      "video": "media/signs/brother.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CALENDAR",
+      "video": "media/research-signs/calendar.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CANCER",
+      "video": "media/research-signs/cancer.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CAPTURE",
+      "video": "media/research-signs/capture.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CATAPULT",
+      "video": "media/research-signs/catapult.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CEMETERY",
+      "video": "media/research-signs/cemetery.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CHEEK",
+      "video": "media/research-signs/cheek.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CHEESEGRATER",
+      "video": "media/research-signs/cheesegrater.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CHILD",
+      "video": "media/signs/child.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CHRISTMAS",
+      "video": "media/research-signs/christmas.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CLOSE",
+      "video": "media/research-signs/close.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CLOTHES",
+      "video": "media/research-signs/clothes.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "COMB",
+      "video": "media/research-signs/comb.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "COME",
+      "video": "media/research-signs/come.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "CONFUSED",
+      "video": "media/research-signs/confused.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DARK",
+      "video": "media/research-signs/dark.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DEAF",
+      "video": "media/signs/deaf.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DECIDE",
+      "video": "media/research-signs/decide.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DEMAND",
+      "video": "media/signs/demand.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DEVELOP",
+      "video": "media/research-signs/develop.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DINNER",
+      "video": "media/research-signs/dinner.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DOG",
+      "video": "media/research-signs/dog.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DOWNSIZE",
+      "video": "media/research-signs/downsize.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DRAG",
+      "video": "media/signs/drag.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DRINK",
+      "video": "media/signs/drink.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "DUCK",
+      "video": "media/signs/duck.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "EAT",
+      "video": "media/signs/eat.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "EDIT",
+      "video": "media/signs/edit.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ELEVATOR",
+      "video": "media/research-signs/elevator.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "EMPTY",
+      "video": "media/signs/empty.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ERUPT",
+      "video": "media/research-signs/erupt.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "EVERYONE",
+      "video": "media/research-signs/everyone.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FAMILY",
+      "video": "media/research-signs/family.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FATHER",
+      "video": "media/research-signs/father.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FINE",
+      "video": "media/signs/fine.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FINISH",
+      "video": "media/signs/finish.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FISH",
+      "video": "media/signs/fish.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FLOAT",
+      "video": "media/research-signs/float.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FOOD",
+      "video": "media/signs/food.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FOREIGNER",
+      "video": "media/research-signs/foreigner.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "FRIEND",
+      "video": "media/research-signs/friend.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GIVE",
+      "video": "media/signs/give.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GO",
+      "video": "media/signs/go.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GOOD",
+      "video": "media/research-signs/good.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GOOD AFTERNOON",
+      "video": "media/research-signs/good-afternoon.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GOOD MORNING",
+      "video": "media/research-signs/good-morning.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GOOD NIGHT",
+      "video": "media/research-signs/good-night.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GOODBYE",
+      "video": "media/research-signs/goodbye.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GRAMMAR",
+      "video": "media/research-signs/grammar.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "GUESS",
+      "video": "media/research-signs/guess.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HALLOWEEN",
+      "video": "media/research-signs/halloween.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HAPPY",
+      "video": "media/research-signs/happy.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HAVE",
+      "video": "media/signs/have.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HE / SHE",
+      "video": "media/research-signs/he-she.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HELICOPTER",
+      "video": "media/research-signs/helicopter.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HELLO",
+      "video": "media/signs/hello.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HELP",
+      "video": "media/research-signs/help.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HERE",
+      "video": "media/research-signs/here.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HOME",
+      "video": "media/signs/home.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HOPE",
+      "video": "media/research-signs/hope.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HOSPITAL",
+      "video": "media/research-signs/hospital.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HOW",
+      "video": "media/research-signs/how.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HUNGRY",
+      "video": "media/signs/hungry.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "HURDLE / TRIP",
+      "video": "media/research-signs/hurdle-trip.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "I / ME",
+      "video": "media/research-signs/i-me.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "IMPOSSIBLE",
+      "video": "media/research-signs/impossible.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "INSIDE",
+      "video": "media/research-signs/inside.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "INTUITIVE",
+      "video": "media/research-signs/intuitive.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "JEWELRY",
+      "video": "media/research-signs/jewelry.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "JOKE",
+      "video": "media/research-signs/joke.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "KNIGHT",
+      "video": "media/research-signs/knight.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "KNOW",
+      "video": "media/research-signs/know.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LATER",
+      "video": "media/signs/later.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LETTUCE",
+      "video": "media/research-signs/lettuce.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LIKE",
+      "video": "media/signs/like.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LOCK",
+      "video": "media/signs/lock.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LOVE",
+      "video": "media/research-signs/love.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "LUNCH",
+      "video": "media/research-signs/lunch.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MAPLE",
+      "video": "media/research-signs/maple.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MEACULPA",
+      "video": "media/research-signs/meaculpa.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MEAT",
+      "video": "media/research-signs/meat.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MECHANIC",
+      "video": "media/signs/mechanic.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MICROSCOPE",
+      "video": "media/signs/microscope.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MILK",
+      "video": "media/signs/milk.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MONEY",
+      "video": "media/research-signs/money.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MORNING",
+      "video": "media/signs/morning.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MOTHER",
+      "video": "media/research-signs/mother.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MOUTH",
+      "video": "media/research-signs/mouth.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MOVIE",
+      "video": "media/research-signs/movie.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MY / MINE",
+      "video": "media/research-signs/my-mine.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "MYSELF",
+      "video": "media/research-signs/myself.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NAME",
+      "video": "media/research-signs/name.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NEED",
+      "video": "media/research-signs/need.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NIGHT",
+      "video": "media/signs/night.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NO",
+      "video": "media/signs/no.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NOON",
+      "video": "media/research-signs/noon.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "NOW",
+      "video": "media/signs/now.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "OFFEND",
+      "video": "media/research-signs/offend.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "OKAY",
+      "video": "media/research-signs/okay.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "OTHER",
+      "video": "media/signs/other.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "OUTSIDE",
+      "video": "media/research-signs/outside.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PAIN",
+      "video": "media/signs/pain.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PARTY",
+      "video": "media/signs/party.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PATIENT",
+      "video": "media/research-signs/patient.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PEG",
+      "video": "media/signs/peg.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PHONE",
+      "video": "media/research-signs/phone.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PIPE",
+      "video": "media/research-signs/pipe.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PLEASE",
+      "video": "media/signs/please.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PONDER",
+      "video": "media/research-signs/ponder.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "PRESS",
+      "video": "media/research-signs/press.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "RAZOR",
+      "video": "media/research-signs/razor.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "RIVER",
+      "video": "media/research-signs/river.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "ROCKINGCHAIR",
+      "video": "media/research-signs/rockingchair.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "RUN",
+      "video": "media/research-signs/run.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SAD",
+      "video": "media/research-signs/sad.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SCARED",
+      "video": "media/research-signs/scared.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SCHOOL",
+      "video": "media/research-signs/school.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SCROLLDOWN",
+      "video": "media/research-signs/scrolldown.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SEE",
+      "video": "media/signs/see.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SHARK",
+      "video": "media/research-signs/shark.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SHAVE",
+      "video": "media/research-signs/shave.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SHOCKED",
+      "video": "media/research-signs/shocked.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SICK",
+      "video": "media/signs/sick.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SINCE",
+      "video": "media/research-signs/since.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SINK",
+      "video": "media/research-signs/sink.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SISTER",
+      "video": "media/research-signs/sister.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SIT",
+      "video": "media/research-signs/sit.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SLEEP",
+      "video": "media/research-signs/sleep.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SLIDE",
+      "video": "media/research-signs/slide.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SOCCER",
+      "video": "media/signs/soccer.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SORRY",
+      "video": "media/research-signs/sorry.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SQUEEZE",
+      "video": "media/signs/squeeze.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "STAND",
+      "video": "media/research-signs/stand.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "STOP",
+      "video": "media/research-signs/stop.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "STORE",
+      "video": "media/signs/store.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "STUDENT",
+      "video": "media/research-signs/student.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "SWEATER",
+      "video": "media/research-signs/sweater.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TAIL",
+      "video": "media/research-signs/tail.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TAKE",
+      "video": "media/research-signs/take.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TEACH",
+      "video": "media/research-signs/teach.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TEACHER",
+      "video": "media/research-signs/teacher.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THANK YOU",
+      "video": "media/signs/thank-you.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THAT",
+      "video": "media/research-signs/that.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THERE",
+      "video": "media/research-signs/there.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THEY",
+      "video": "media/research-signs/they.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THIRD",
+      "video": "media/research-signs/third.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THIRSTY",
+      "video": "media/signs/thirsty.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "THIS",
+      "video": "media/research-signs/this.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TIME",
+      "video": "media/research-signs/time.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TIRED",
+      "video": "media/research-signs/tired.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TODAY",
+      "video": "media/research-signs/today.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TOMATO",
+      "video": "media/research-signs/tomato.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TOMORROW",
+      "video": "media/signs/tomorrow.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TRACTOR",
+      "video": "media/research-signs/tractor.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "TWINS",
+      "video": "media/research-signs/twins.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "VLOG",
+      "video": "media/signs/vlog.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "VOMIT",
+      "video": "media/research-signs/vomit.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WAIT",
+      "video": "media/research-signs/wait.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WAKE UP",
+      "video": "media/research-signs/wake-up.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WALK",
+      "video": "media/research-signs/walk.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WALK TIGHTROPE CL",
+      "video": "media/research-signs/walk-tightrope-cl.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WANT",
+      "video": "media/research-signs/want.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WATER",
+      "video": "media/signs/water.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WE",
+      "video": "media/research-signs/we.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WELCOME",
+      "video": "media/research-signs/welcome.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHAT",
+      "video": "media/research-signs/what.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHATFOR",
+      "video": "media/signs/whatfor.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHEN",
+      "video": "media/research-signs/when.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHERE",
+      "video": "media/research-signs/where.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHICH",
+      "video": "media/research-signs/which.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHO",
+      "video": "media/research-signs/who.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WHY",
+      "video": "media/research-signs/why.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "WORK",
+      "video": "media/research-signs/work.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "YES",
+      "video": "media/signs/yes.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "YESTERDAY",
+      "video": "media/signs/yesterday.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "YOU",
+      "video": "media/research-signs/you.mp4",
+      "http": 200,
+      "decoded": true
+    },
+    {
+      "label": "YOUR / YOURS",
+      "video": "media/research-signs/your-yours.mp4",
+      "http": 200,
+      "decoded": true
+    }
+  ],
+  "preservedOriginalAssets": {
+    "filesChecked": 84,
+    "changed": [],
+    "checkedAt": "2026-11-05T12:07:31.504012+00:00"
+  },
+  "browserChecks": {
+    "labels": [
+      "NAME",
+      "WANT",
+      "LOVE",
+      "BABY",
+      "GOOD MORNING"
+    ],
+    "videoReadyState": 4,
+    "videoErrors": 0,
+    "referenceOnlyAvatarHidden": true,
+    "cameraStarted": false,
+    "greetingDuration": 3.5,
+    "slowPlaybackRate": 0.5,
+    "repeatPlayback": true,
+    "recognitionFilterEntries": 198,
+    "screenshot": "C:\\Users\\Squid\\.codex\\visualizations\\2026\\11\\05\\01a1ab51-3d88-75b1-93d5-803b53400563\\watch-and-learn-198.jpg",
+    "checkedAt": "2026-11-05T12:07:31.504012+00:00"
+  },
+  "regressionTests": {
+    "checkedAt": "2026-11-05T12:20:38.823051+00:00",
+    "python": {
+      "tests": 31,
+      "passed": 31,
+      "failures": 0,
+      "errors": 0,
+      "utf8Mode": 0,
+      "suites": [
+        "training.test_application",
+        "training.test_research_video_library",
+        "training.test_kai_mocap_http"
+      ]
+    },
+    "javascript": {
+      "tests": 112,
+      "passed": 110,
+      "failures": 0,
+      "skipped": 2,
+      "skipReason": "Optional Three.js native integration dependency is not configured."
+    },
+    "gitDiffCheck": "passed"
+  }
+}

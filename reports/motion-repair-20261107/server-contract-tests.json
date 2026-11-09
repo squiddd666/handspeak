@@ -1,0 +1,26 @@
+[
+  {
+    "family": "beginner",
+    "consent": false,
+    "httpStatus": 422,
+    "error": "Enable server landmark processing before recording."
+  },
+  {
+    "family": "beginner",
+    "consent": true,
+    "httpStatus": 422,
+    "error": "Not enough hand-tracked frames (0/5). Keep at least one hand visible."
+  },
+  {
+    "family": "capstone",
+    "consent": false,
+    "httpStatus": 422,
+    "error": "Enable server landmark processing before recording."
+  },
+  {
+    "family": "capstone",
+    "consent": true,
+    "httpStatus": 422,
+    "error": "Not enough hand-tracked frames (0/5). Keep at least one hand visible."
+  }
+]

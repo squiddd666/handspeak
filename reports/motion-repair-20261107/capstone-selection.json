@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "selectionRecordedAt": "2026-11-06T17:28:14.324165+00:00",
+  "family": "capstone",
+  "selectionSplit": "val",
+  "testUsedForSelection": false,
+  "watchClipsUsedForTrainingOrCalibration": false,
+  "selectedCheckpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+  "selectedCheckpoint": "capstone100-v4-ensemble.pt",
+  "selectedCalibrationSha256": "62a5b24da5f047eba49b6b6626638dffb3e175abd428e1cefd4453bf9c38c194",
+  "selectionCriterion": "Maximize full-vocabulary correct accepted validation attempts at >=90% known-sign precision and <=20% unsupported-sign false accepts. Do not replace an existing model with worse validation results. Core and extended policies are also validation-only.",
+  "candidates": [
+    {
+      "checkpoint": "capstone100-v4-ensemble.pt",
+      "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+      "preprocessorVersion": "legacy-v1",
+      "mirrorTta": true,
+      "policies": {
+        "full": {
+          "minScore": 0,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0,
+          "validation": {
+            "attempts": 367,
+            "correct": 200,
+            "wrong": 8,
+            "noMatch": 159,
+            "accuracy": 0.544959,
+            "precision": 0.961538,
+            "overallPrecision": 0.772201,
+            "negativeAttempts": 270,
+            "negativeFalse": 51,
+            "negativeFalseRate": 0.188889
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 367,
+            "correct": 260,
+            "wrong": 62,
+            "noMatch": 45,
+            "accuracy": 0.708447,
+            "precision": 0.807453,
+            "overallPrecision": 0.460993,
+            "negativeAttempts": 270,
+            "negativeFalse": 242,
+            "negativeFalseRate": 0.896296
+          }
+        },
+        "core": {
+          "minScore": 0.55,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05,
+          "validation": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.228261,
+            "negativeAttempts": 615,
+            "negativeFalse": 71,
+            "negativeFalseRate": 0.115447
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 22,
+            "correct": 20,
+            "wrong": 0,
+            "noMatch": 2,
+            "accuracy": 0.909091,
+            "precision": 1.0,
+            "overallPrecision": 0.178571,
+            "negativeAttempts": 615,
+            "negativeFalse": 92,
+            "negativeFalseRate": 0.149593
+          }
+        },
+        "extended": {
+          "minScore": 0.35,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "validation": {
+            "attempts": 70,
+            "correct": 60,
+            "wrong": 0,
+            "noMatch": 10,
+            "accuracy": 0.857143,
+            "precision": 1.0,
+            "overallPrecision": 0.566038,
+            "negativeAttempts": 567,
+            "negativeFalse": 46,
+            "negativeFalseRate": 0.081129
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 70,
+            "correct": 57,
+            "wrong": 0,
+            "noMatch": 13,
+            "accuracy": 0.814286,
+            "precision": 1.0,
+            "overallPrecision": 0.401408,
+            "negativeAttempts": 567,
+            "negativeFalse": 85,
+            "negativeFalseRate": 0.149912
+          }
+        }
+      }
+    },
+    {
+      "checkpoint": "full-repaired-masked-v1.pt",
+      "checkpointSha256": "610b260ff57141e5437eb548b5dbea86010d34e2d5e72bb19e9d6599b5537ab8",
+      "preprocessorVersion": "masked-v2",
+      "mirrorTta": true,
+      "policies": {
+        "full": {
+          "minScore": 0.5,
+          "minMargin": 0.15,
+          "minVocabularyMass": 0,
+          "validation": {
+            "attempts": 367,
+            "correct": 195,
+            "wrong": 10,
+            "noMatch": 162,
+            "accuracy": 0.531335,
+            "precision": 0.95122,
+            "overallPrecision": 0.758755,
+            "negativeAttempts": 270,
+            "negativeFalse": 52,
+            "negativeFalseRate": 0.192593
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 367,
+            "correct": 255,
+            "wrong": 67,
+            "noMatch": 45,
+            "accuracy": 0.694823,
+            "precision": 0.791925,
+            "overallPrecision": 0.452128,
+            "negativeAttempts": 270,
+            "negativeFalse": 242,
+            "negativeFalseRate": 0.896296
+          }
+        },
+        "core": {
+          "minScore": 0.6,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05,
+          "validation": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.21875,
+            "negativeAttempts": 615,
+            "negativeFalse": 75,
+            "negativeFalseRate": 0.121951
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 22,
+            "correct": 20,
+            "wrong": 0,
+            "noMatch": 2,
+            "accuracy": 0.909091,
+            "precision": 1.0,
+            "overallPrecision": 0.09434,
+            "negativeAttempts": 615,
+            "negativeFalse": 192,
+            "negativeFalseRate": 0.312195
+          }
+        },
+        "extended": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0.1,
+          "validation": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 1,
+            "noMatch": 8,
+            "accuracy": 0.871429,
+            "precision": 0.983871,
+            "overallPrecision": 0.383648,
+            "negativeAttempts": 567,
+            "negativeFalse": 97,
+            "negativeFalseRate": 0.171076
+          },
+          "selectionSplit": "val",
+          "targetKnownWordPrecision": 0.9,
+          "negativeFalseCeiling": 0.2,
+          "baselineValidation": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 2,
+            "noMatch": 7,
+            "accuracy": 0.871429,
+            "precision": 0.968254,
+            "overallPrecision": 0.225092,
+            "negativeAttempts": 567,
+            "negativeFalse": 208,
+            "negativeFalseRate": 0.366843
+          }
+        }
+      }
+    }
+  ],
+  "result": "Retain the legacy ensemble: 200 correct / 8 wrong / 159 no-match on validation, versus repaired 195 / 10 / 162. Recalibrate its gates rather than promote worse weights."
+}

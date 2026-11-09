@@ -1,0 +1,25 @@
+{
+  "modelSha256": "ce9ce544e1f55bbb16912183606beea1fb0fa1d05fed8f683e5f5c503ca43c48",
+  "heldoutAuditSha256": "60c86553dcbb582ab8c94c12ded67931b35317c53367075d4166da7f1b844a55",
+  "deployed": false,
+  "aggregateGatesPassed": [
+    "default",
+    "expanded",
+    "daily",
+    "pack"
+  ],
+  "namedLabelRegressions": {
+    "default": [
+      "NO"
+    ],
+    "expanded": [
+      "NO"
+    ],
+    "daily": [],
+    "pack": []
+  },
+  "browserIntegrationPassed": false,
+  "captureParityPassed": false,
+  "promotionApproved": false,
+  "reason": "No full-vocabulary promotion: NO regressed in the frozen test; paired native audit used separate actual Holistic and Tasks outputs, while a deployed hybrid must preserve both capture streams. No test-specific policy or threshold edits are permitted. Daily/pack aggregate improvement is not browser integration evidence."
+}

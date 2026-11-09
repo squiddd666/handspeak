@@ -1,0 +1,34 @@
+{
+  "frontend": {
+    "tests": 177,
+    "passed": 175,
+    "skipped": 2,
+    "failed": 0,
+    "output": "frontend-all-tests.txt",
+    "note": "Updated an obsolete test that assumed GOOD MORNING must remain at zero; assertions now use frozen measured counts and an explicit zero-score fixture."
+  },
+  "pythonTargeted": {
+    "tests": 47,
+    "passed": 47,
+    "failed": 0,
+    "output": "python-targeted-tests.txt"
+  },
+  "broaderPythonSuite": {
+    "rerun": false,
+    "priorReport": "reports/motion-repair-v2-20261107/test-scope.json",
+    "note": "Legacy/dependency/platform failures from the prior broad run were not claimed fixed."
+  },
+  "all198ReferenceVerification": {
+    "completed": 198,
+    "matched": 127,
+    "wrong": 10,
+    "noMatch": 61,
+    "source": "virtual-final/final-all-198.json"
+  },
+  "liveCameraAccuracyVerified": false,
+  "runtimeContract": {
+    "passed": 12,
+    "failed": 0,
+    "source": "runtime-contract-tests.json"
+  }
+}

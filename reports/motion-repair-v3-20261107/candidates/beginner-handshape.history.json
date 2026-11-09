@@ -1,0 +1,541 @@
+{
+  "audit": {
+    "featuresSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+    "negativeFeaturesSha256": "3122f6edd66488fc0e047fa10a84887c7b09328b0ba5b03d200296e2fbd04cd7",
+    "baseCheckpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+    "trainAttempts": 3314,
+    "trainUsable": 2796,
+    "valAttempts": 653,
+    "valTracked": 580,
+    "trainCounts": {
+      "EVERYONE": 104,
+      "GOODBYE": 11,
+      "HE / SHE": 10,
+      "HOW": 12,
+      "I / ME": 5,
+      "MY / MINE": 8,
+      "OKAY": 11,
+      "SORRY": 11,
+      "THAT": 10,
+      "THEY": 23,
+      "WE": 103,
+      "WELCOME": 13,
+      "WHAT": 26,
+      "WHEN": 11,
+      "WHERE": 11,
+      "WHICH": 11,
+      "WHO": 7,
+      "WHY": 10,
+      "YOU": 9,
+      "YOUR / YOURS": 10,
+      "WAKE UP": 9,
+      "MORNING": 12,
+      "THIS": 12,
+      "BROTHER": 128,
+      "CHILD": 10,
+      "COME": 6,
+      "FAMILY": 12,
+      "FATHER": 11,
+      "FRIEND": 12,
+      "GIVE": 8,
+      "HELP": 9,
+      "KNOW": 8,
+      "MOTHER": 9,
+      "NEED": 10,
+      "RUN": 26,
+      "SISTER": 93,
+      "SIT": 7,
+      "SLEEP": 9,
+      "STAND": 22,
+      "STOP": 9,
+      "STUDENT": 9,
+      "TAKE": 12,
+      "TEACHER": 10,
+      "WAIT": 10,
+      "WALK": 10,
+      "ANGRY": 10,
+      "BAD": 8,
+      "BATHROOM": 11,
+      "GOOD": 11,
+      "HAPPY": 13,
+      "HERE": 10,
+      "HOSPITAL": 14,
+      "INSIDE": 11,
+      "OUTSIDE": 12,
+      "SAD": 9,
+      "SCARED": 9,
+      "SCHOOL": 116,
+      "STORE": 12,
+      "THERE": 12,
+      "THIRSTY": 9,
+      "TIRED": 9,
+      "WORK": 12,
+      "AFTER": 13,
+      "BAG": 13,
+      "BEFORE": 10,
+      "BREAD": 11,
+      "CLOTHES": 10,
+      "LATER": 13,
+      "MILK": 13,
+      "MONEY": 28,
+      "NOW": 11,
+      "PHONE": 8,
+      "TIME": 13,
+      "TODAY": 13,
+      "TOMORROW": 12,
+      "YESTERDAY": 12,
+      "GOOD AFTERNOON": 13,
+      "GOOD MORNING": 12,
+      "GOOD NIGHT": 14,
+      "__UNKNOWN__": 1400
+    },
+    "testUsedForSelection": false,
+    "watchClipsUsedForTrainingOrCalibration": false,
+    "selectionSplit": "val",
+    "sourceAndParticipantDisjoint": true,
+    "seed": 43,
+    "greetingScope": "Synthetic GOOD + component greetings, not verified natural phrases."
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 3.7625,
+      "valKnownMacro": 0.156962,
+      "valUnknownAccuracy": 0.708683,
+      "objective": 0.23972,
+      "seconds": 6.2
+    },
+    {
+      "epoch": 2,
+      "loss": 2.5629,
+      "valKnownMacro": 0.368068,
+      "valUnknownAccuracy": 0.694678,
+      "objective": 0.41706,
+      "seconds": 6.0
+    },
+    {
+      "epoch": 3,
+      "loss": 2.1324,
+      "valKnownMacro": 0.510172,
+      "valUnknownAccuracy": 0.582633,
+      "objective": 0.521041,
+      "seconds": 5.7
+    },
+    {
+      "epoch": 4,
+      "loss": 1.8314,
+      "valKnownMacro": 0.565898,
+      "valUnknownAccuracy": 0.652661,
+      "objective": 0.578913,
+      "seconds": 7.8
+    },
+    {
+      "epoch": 5,
+      "loss": 1.6541,
+      "valKnownMacro": 0.5283,
+      "valUnknownAccuracy": 0.719888,
+      "objective": 0.557038,
+      "seconds": 6.3
+    },
+    {
+      "epoch": 6,
+      "loss": 1.5188,
+      "valKnownMacro": 0.577396,
+      "valUnknownAccuracy": 0.733894,
+      "objective": 0.600871,
+      "seconds": 6.2
+    },
+    {
+      "epoch": 7,
+      "loss": 1.3967,
+      "valKnownMacro": 0.651115,
+      "valUnknownAccuracy": 0.703081,
+      "objective": 0.65891,
+      "seconds": 8.5
+    },
+    {
+      "epoch": 8,
+      "loss": 1.3278,
+      "valKnownMacro": 0.596233,
+      "valUnknownAccuracy": 0.756303,
+      "objective": 0.620243,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 9,
+      "loss": 1.2375,
+      "valKnownMacro": 0.638427,
+      "valUnknownAccuracy": 0.753501,
+      "objective": 0.655688,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 10,
+      "loss": 1.1809,
+      "valKnownMacro": 0.685262,
+      "valUnknownAccuracy": 0.770308,
+      "objective": 0.698019,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 11,
+      "loss": 1.1071,
+      "valKnownMacro": 0.660307,
+      "valUnknownAccuracy": 0.728291,
+      "objective": 0.670505,
+      "seconds": 8.6
+    },
+    {
+      "epoch": 12,
+      "loss": 1.0689,
+      "valKnownMacro": 0.652697,
+      "valUnknownAccuracy": 0.795518,
+      "objective": 0.674121,
+      "seconds": 8.1
+    },
+    {
+      "epoch": 13,
+      "loss": 1.0201,
+      "valKnownMacro": 0.695826,
+      "valUnknownAccuracy": 0.77591,
+      "objective": 0.707838,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 14,
+      "loss": 0.995,
+      "valKnownMacro": 0.698478,
+      "valUnknownAccuracy": 0.7507,
+      "objective": 0.706311,
+      "seconds": 9.4
+    },
+    {
+      "epoch": 15,
+      "loss": 0.9728,
+      "valKnownMacro": 0.706073,
+      "valUnknownAccuracy": 0.773109,
+      "objective": 0.716128,
+      "seconds": 8.5
+    },
+    {
+      "epoch": 16,
+      "loss": 0.9333,
+      "valKnownMacro": 0.645434,
+      "valUnknownAccuracy": 0.817927,
+      "objective": 0.671308,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 17,
+      "loss": 0.9075,
+      "valKnownMacro": 0.6967,
+      "valUnknownAccuracy": 0.773109,
+      "objective": 0.708161,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 18,
+      "loss": 0.8496,
+      "valKnownMacro": 0.705561,
+      "valUnknownAccuracy": 0.80112,
+      "objective": 0.719895,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 19,
+      "loss": 0.8067,
+      "valKnownMacro": 0.725392,
+      "valUnknownAccuracy": 0.792717,
+      "objective": 0.735491,
+      "seconds": 8.6
+    },
+    {
+      "epoch": 20,
+      "loss": 0.7754,
+      "valKnownMacro": 0.702818,
+      "valUnknownAccuracy": 0.806723,
+      "objective": 0.718404,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 21,
+      "loss": 0.7721,
+      "valKnownMacro": 0.68582,
+      "valUnknownAccuracy": 0.806723,
+      "objective": 0.703955,
+      "seconds": 9.4
+    },
+    {
+      "epoch": 22,
+      "loss": 0.7611,
+      "valKnownMacro": 0.714105,
+      "valUnknownAccuracy": 0.789916,
+      "objective": 0.725477,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 23,
+      "loss": 0.7402,
+      "valKnownMacro": 0.739738,
+      "valUnknownAccuracy": 0.798319,
+      "objective": 0.748525,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 24,
+      "loss": 0.6929,
+      "valKnownMacro": 0.723478,
+      "valUnknownAccuracy": 0.795518,
+      "objective": 0.734284,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 25,
+      "loss": 0.7004,
+      "valKnownMacro": 0.759132,
+      "valUnknownAccuracy": 0.795518,
+      "objective": 0.76459,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 26,
+      "loss": 0.693,
+      "valKnownMacro": 0.720509,
+      "valUnknownAccuracy": 0.80112,
+      "objective": 0.732601,
+      "seconds": 10.1
+    },
+    {
+      "epoch": 27,
+      "loss": 0.6724,
+      "valKnownMacro": 0.745329,
+      "valUnknownAccuracy": 0.817927,
+      "objective": 0.756218,
+      "seconds": 8.0
+    },
+    {
+      "epoch": 28,
+      "loss": 0.6824,
+      "valKnownMacro": 0.703737,
+      "valUnknownAccuracy": 0.806723,
+      "objective": 0.719185,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 29,
+      "loss": 0.6472,
+      "valKnownMacro": 0.736558,
+      "valUnknownAccuracy": 0.798319,
+      "objective": 0.745822,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 30,
+      "loss": 0.6342,
+      "valKnownMacro": 0.721248,
+      "valUnknownAccuracy": 0.809524,
+      "objective": 0.734489,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 31,
+      "loss": 0.6239,
+      "valKnownMacro": 0.747318,
+      "valUnknownAccuracy": 0.817927,
+      "objective": 0.757909,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 32,
+      "loss": 0.6076,
+      "valKnownMacro": 0.737824,
+      "valUnknownAccuracy": 0.817927,
+      "objective": 0.749839,
+      "seconds": 9.9
+    },
+    {
+      "epoch": 33,
+      "loss": 0.6029,
+      "valKnownMacro": 0.736438,
+      "valUnknownAccuracy": 0.809524,
+      "objective": 0.747401,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 34,
+      "loss": 0.599,
+      "valKnownMacro": 0.724623,
+      "valUnknownAccuracy": 0.812325,
+      "objective": 0.737779,
+      "seconds": 8.5
+    },
+    {
+      "epoch": 35,
+      "loss": 0.601,
+      "valKnownMacro": 0.714421,
+      "valUnknownAccuracy": 0.829132,
+      "objective": 0.731628,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 36,
+      "loss": 0.5934,
+      "valKnownMacro": 0.741742,
+      "valUnknownAccuracy": 0.812325,
+      "objective": 0.752329,
+      "seconds": 9.4
+    },
+    {
+      "epoch": 37,
+      "loss": 0.6003,
+      "valKnownMacro": 0.729491,
+      "valUnknownAccuracy": 0.806723,
+      "objective": 0.741075,
+      "seconds": 9.6
+    },
+    {
+      "epoch": 38,
+      "loss": 0.5869,
+      "valKnownMacro": 0.735413,
+      "valUnknownAccuracy": 0.834734,
+      "objective": 0.750311,
+      "seconds": 9.5
+    },
+    {
+      "epoch": 39,
+      "loss": 0.5776,
+      "valKnownMacro": 0.735518,
+      "valUnknownAccuracy": 0.840336,
+      "objective": 0.751241,
+      "seconds": 10.0
+    },
+    {
+      "epoch": 40,
+      "loss": 0.5644,
+      "valKnownMacro": 0.75535,
+      "valUnknownAccuracy": 0.803922,
+      "objective": 0.762635,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 41,
+      "loss": 0.5656,
+      "valKnownMacro": 0.745539,
+      "valUnknownAccuracy": 0.829132,
+      "objective": 0.758078,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 42,
+      "loss": 0.5704,
+      "valKnownMacro": 0.733514,
+      "valUnknownAccuracy": 0.840336,
+      "objective": 0.749537,
+      "seconds": 9.5
+    },
+    {
+      "epoch": 43,
+      "loss": 0.565,
+      "valKnownMacro": 0.736769,
+      "valUnknownAccuracy": 0.843137,
+      "objective": 0.752724,
+      "seconds": 9.9
+    },
+    {
+      "epoch": 44,
+      "loss": 0.5593,
+      "valKnownMacro": 0.739512,
+      "valUnknownAccuracy": 0.834734,
+      "objective": 0.753795,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 45,
+      "loss": 0.5599,
+      "valKnownMacro": 0.730244,
+      "valUnknownAccuracy": 0.834734,
+      "objective": 0.745918,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 46,
+      "loss": 0.5472,
+      "valKnownMacro": 0.750693,
+      "valUnknownAccuracy": 0.837535,
+      "objective": 0.763719,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 47,
+      "loss": 0.5486,
+      "valKnownMacro": 0.752291,
+      "valUnknownAccuracy": 0.826331,
+      "objective": 0.763397,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 48,
+      "loss": 0.5472,
+      "valKnownMacro": 0.75535,
+      "valUnknownAccuracy": 0.826331,
+      "objective": 0.765997,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 49,
+      "loss": 0.5403,
+      "valKnownMacro": 0.746896,
+      "valUnknownAccuracy": 0.840336,
+      "objective": 0.760912,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 50,
+      "loss": 0.5393,
+      "valKnownMacro": 0.744681,
+      "valUnknownAccuracy": 0.840336,
+      "objective": 0.759029,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 51,
+      "loss": 0.5379,
+      "valKnownMacro": 0.738231,
+      "valUnknownAccuracy": 0.837535,
+      "objective": 0.753126,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 52,
+      "loss": 0.5379,
+      "valKnownMacro": 0.741215,
+      "valUnknownAccuracy": 0.834734,
+      "objective": 0.755242,
+      "seconds": 9.1
+    },
+    {
+      "epoch": 53,
+      "loss": 0.5345,
+      "valKnownMacro": 0.74352,
+      "valUnknownAccuracy": 0.831933,
+      "objective": 0.756782,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 54,
+      "loss": 0.5327,
+      "valKnownMacro": 0.739406,
+      "valUnknownAccuracy": 0.831933,
+      "objective": 0.753285,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 55,
+      "loss": 0.5363,
+      "valKnownMacro": 0.736121,
+      "valUnknownAccuracy": 0.837535,
+      "objective": 0.751333,
+      "seconds": 9.1
+    }
+  ]
+}

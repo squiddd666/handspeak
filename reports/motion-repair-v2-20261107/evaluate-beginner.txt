@@ -1,0 +1,1 @@
+selected full {"attempts": 747, "correct": 394, "wrong": 23, "noMatch": 330, "tracked": 641, "accuracy": 0.527443, "precision": 0.944844, "negativeAttempts": 1166, "negativeFalse": 174, "negativeFalseRate": 0.149228}

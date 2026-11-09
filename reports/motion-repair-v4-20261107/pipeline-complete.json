@@ -1,0 +1,9 @@
+{
+  "candidateOnly": true,
+  "deployed": false,
+  "independentTestRead": false,
+  "validationEligible": {
+    "beginner": true,
+    "capstone": false
+  }
+}

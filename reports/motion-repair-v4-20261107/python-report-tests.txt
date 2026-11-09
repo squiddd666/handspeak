@@ -1,0 +1,19 @@
+test_changed_reference_or_route_is_rejected (training.test_motion_repair_v4_report.RepairV4ReportTests.test_changed_reference_or_route_is_rejected) ... ok
+test_competitor_and_accepted_error_are_distinct (training.test_motion_repair_v4_report.RepairV4ReportTests.test_competitor_and_accepted_error_are_distinct) ... ok
+test_correct_suggestion_is_still_a_rejection (training.test_motion_repair_v4_report.RepairV4ReportTests.test_correct_suggestion_is_still_a_rejection) ... ok
+test_manual_no_match_is_not_server_error (training.test_motion_repair_v4_report.RepairV4ReportTests.test_manual_no_match_is_not_server_error) ... ok
+test_missing_ids_are_rejected (training.test_motion_repair_v4_report.RepairV4ReportTests.test_missing_ids_are_rejected) ... ok
+test_regression_is_retained_without_modifying_input (training.test_motion_repair_v4_report.RepairV4ReportTests.test_regression_is_retained_without_modifying_input) ... ok
+test_tracking_gate_overrules_unaccepted_suggestions (training.test_motion_repair_v4_report.RepairV4ReportTests.test_tracking_gate_overrules_unaccepted_suggestions) ... ok
+test_actual_predictions_display_their_correct_benchmark_family (training.test_motion_virtual_report.MotionVirtualReportTests.test_actual_predictions_display_their_correct_benchmark_family) ... ok
+test_all_198_project_buttons_have_scores_without_starting_a_camera (training.test_motion_virtual_report.MotionVirtualReportTests.test_all_198_project_buttons_have_scores_without_starting_a_camera) ... ok
+test_daily_report_does_not_reuse_previous_body_capture (training.test_motion_virtual_report.MotionVirtualReportTests.test_daily_report_does_not_reuse_previous_body_capture) ... ok
+test_exactly_one_normal_speed_attempt_for_every_primary_reference (training.test_motion_virtual_report.MotionVirtualReportTests.test_exactly_one_normal_speed_attempt_for_every_primary_reference) ... ok
+test_failures_and_tracking_misses_stay_in_the_denominator (training.test_motion_virtual_report.MotionVirtualReportTests.test_failures_and_tracking_misses_stay_in_the_denominator) ... ok
+test_manual_tracking_belongs_to_manual_route (training.test_motion_virtual_report.MotionVirtualReportTests.test_manual_tracking_belongs_to_manual_route) ... ok
+test_no_physical_devices_or_raw_coordinate_exports (training.test_motion_virtual_report.MotionVirtualReportTests.test_no_physical_devices_or_raw_coordinate_exports) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.068s
+
+OK

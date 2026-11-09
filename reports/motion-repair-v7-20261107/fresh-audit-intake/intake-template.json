@@ -1,0 +1,21 @@
+{
+  "purpose": "audit-only",
+  "consentConfirmed": false,
+  "newSignerDeclaration": false,
+  "clips": [
+    {
+      "path": "C:/your-recordings/hello-01.mp4",
+      "sourceId": "new-source-001",
+      "signerId": "NEW01",
+      "label": "HELLO",
+      "negative": false
+    },
+    {
+      "path": "C:/your-recordings/other-sign-01.mp4",
+      "sourceId": "new-source-002",
+      "signerId": "NEW01",
+      "label": "CAR",
+      "negative": true
+    }
+  ]
+}

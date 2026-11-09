@@ -1,0 +1,865 @@
+{
+  "family": "beginner",
+  "checkpoint": "beginner-aspect-v2.pt",
+  "checkpointSha256": "a0c9ada665fea84b98b882fbbbcce3c9f94f5378aaa741310ed746e8b237f441",
+  "labels": [
+    "GOODBYE",
+    "SORRY",
+    "OKAY",
+    "WELCOME",
+    "GOOD MORNING",
+    "GOOD AFTERNOON",
+    "GOOD NIGHT",
+    "HOW",
+    "WHAT",
+    "WHO",
+    "WHERE",
+    "WHEN",
+    "WHY",
+    "WHICH",
+    "I / ME",
+    "YOU",
+    "HE / SHE",
+    "WE",
+    "THEY",
+    "MY / MINE",
+    "YOUR / YOURS",
+    "THIS",
+    "THAT",
+    "EVERYONE",
+    "MOTHER",
+    "FATHER",
+    "BROTHER",
+    "SISTER",
+    "CHILD",
+    "FRIEND",
+    "TEACHER",
+    "STUDENT",
+    "FAMILY",
+    "SLEEP",
+    "WAKE UP",
+    "WALK",
+    "RUN",
+    "SIT",
+    "STAND",
+    "COME",
+    "HELP",
+    "STOP",
+    "WAIT",
+    "GIVE",
+    "TAKE",
+    "NEED",
+    "KNOW",
+    "HAPPY",
+    "SAD",
+    "ANGRY",
+    "SCARED",
+    "TIRED",
+    "THIRSTY",
+    "GOOD",
+    "BAD",
+    "SCHOOL",
+    "HOSPITAL",
+    "STORE",
+    "BATHROOM",
+    "WORK",
+    "HERE",
+    "THERE",
+    "INSIDE",
+    "OUTSIDE",
+    "TODAY",
+    "TOMORROW",
+    "YESTERDAY",
+    "NOW",
+    "LATER",
+    "MORNING",
+    "TIME",
+    "BEFORE",
+    "AFTER",
+    "MILK",
+    "BREAD",
+    "MONEY",
+    "PHONE",
+    "CLOTHES",
+    "BAG"
+  ],
+  "preprocessorVersion": "masked-v2",
+  "mirrorTta": true,
+  "mirrorVersion": "anatomical-v2",
+  "policies": {
+    "full": {
+      "minScore": 0.7,
+      "minMargin": 0,
+      "minVocabularyMass": 0,
+      "validation": {
+        "attempts": 296,
+        "correct": 183,
+        "wrong": 6,
+        "noMatch": 107,
+        "accuracy": 0.618243,
+        "precision": 0.968254,
+        "overallPrecision": 0.785408,
+        "negativeAttempts": 357,
+        "negativeFalse": 44,
+        "negativeFalseRate": 0.123249
+      },
+      "selectionSplit": "val",
+      "targetKnownWordPrecision": 0.94,
+      "negativeFalseCeiling": 0.162465,
+      "baselineValidation": {
+        "attempts": 296,
+        "correct": 202,
+        "wrong": 22,
+        "noMatch": 72,
+        "accuracy": 0.682432,
+        "precision": 0.901786,
+        "overallPrecision": 0.587209,
+        "negativeAttempts": 357,
+        "negativeFalse": 120,
+        "negativeFalseRate": 0.336134
+      },
+      "classPolicies": {
+        "SORRY": {
+          "minScore": 0.5,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WELCOME": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "GOOD NIGHT": {
+          "minScore": 0.55,
+          "minMargin": 0.4,
+          "minVocabularyMass": 0
+        },
+        "WHAT": {
+          "minScore": 0.55,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WHERE": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WHICH": {
+          "minScore": 0.65,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "THEY": {
+          "minScore": 0.65,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "STUDENT": {
+          "minScore": 0.8,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "SLEEP": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WAKE UP": {
+          "minScore": 0.65,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "RUN": {
+          "minScore": 0.45,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0
+        },
+        "STAND": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "HELP": {
+          "minScore": 0.35,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "STOP": {
+          "minScore": 0.55,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WAIT": {
+          "minScore": 0.8,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "KNOW": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "WORK": {
+          "minScore": 0.95,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "THERE": {
+          "minScore": 0.8,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "INSIDE": {
+          "minScore": 0.5,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "YESTERDAY": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "LATER": {
+          "minScore": 0.45,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0
+        },
+        "BREAD": {
+          "minScore": 0.95,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        },
+        "PHONE": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0
+        }
+      },
+      "globalValidation": {
+        "attempts": 296,
+        "correct": 164,
+        "wrong": 8,
+        "noMatch": 124,
+        "accuracy": 0.554054,
+        "precision": 0.953488,
+        "overallPrecision": 0.725664,
+        "negativeAttempts": 357,
+        "negativeFalse": 54,
+        "negativeFalseRate": 0.151261
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    }
+  },
+  "sourceValidationProbabilitiesSha256": "b94aec6ad476d4900b9241de8319f50b1b06075c2a180fd432c2b01b4959c01f",
+  "negativeFeaturesSha256": "3122f6edd66488fc0e047fa10a84887c7b09328b0ba5b03d200296e2fbd04cd7",
+  "negativeValidationAttempts": 357,
+  "negativeTracked": 313,
+  "testUsedForCalibration": false,
+  "watchClipsUsedForCalibration": false,
+  "scoreScope": "Empirical validation rejection gates; softmax is not calibrated confidence.",
+  "classSelectionAudit": {
+    "full": {
+      "SORRY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WELCOME": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "GOOD NIGHT": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 8,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.25
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 8,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.25
+        }
+      },
+      "WHAT": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WHERE": {
+        "before": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.333333
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "WHICH": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "THEY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "STUDENT": {
+        "before": {
+          "attempts": 5,
+          "correct": 3,
+          "wrong": 2,
+          "noMatch": 0,
+          "accuracy": 0.6,
+          "precision": 0.6,
+          "overallPrecision": 0.5,
+          "negativeAttempts": 7,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.142857
+        },
+        "after": {
+          "attempts": 5,
+          "correct": 3,
+          "wrong": 1,
+          "noMatch": 1,
+          "accuracy": 0.6,
+          "precision": 0.75,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 7,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "SLEEP": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WAKE UP": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.5,
+          "negativeAttempts": 5,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.6
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.571429,
+          "negativeAttempts": 5,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.6
+        }
+      },
+      "RUN": {
+        "before": {
+          "attempts": 8,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 5,
+          "accuracy": 0.375,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 13,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.153846
+        },
+        "after": {
+          "attempts": 8,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.875,
+          "precision": 1.0,
+          "overallPrecision": 0.777778,
+          "negativeAttempts": 13,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.153846
+        }
+      },
+      "STAND": {
+        "before": {
+          "attempts": 9,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.777778,
+          "precision": 1.0,
+          "overallPrecision": 0.875,
+          "negativeAttempts": 8,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.125
+        },
+        "after": {
+          "attempts": 9,
+          "correct": 7,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.777778,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 8,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "HELP": {
+        "before": {
+          "attempts": 4,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.5,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 0,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "STOP": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 3,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "WAIT": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 1,
+          "noMatch": 0,
+          "accuracy": 0.75,
+          "precision": 0.75,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 1,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "KNOW": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.375,
+          "negativeAttempts": 13,
+          "negativeFalse": 5,
+          "negativeFalseRate": 0.384615
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.428571,
+          "negativeAttempts": 13,
+          "negativeFalse": 4,
+          "negativeFalseRate": 0.307692
+        }
+      },
+      "WORK": {
+        "before": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 6,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "THERE": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 5,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.4
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 5,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "INSIDE": {
+        "before": {
+          "attempts": 4,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        }
+      },
+      "YESTERDAY": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 0.666667,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.75,
+          "negativeAttempts": 6,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.166667
+        }
+      },
+      "LATER": {
+        "before": {
+          "attempts": 3,
+          "correct": 2,
+          "wrong": 0,
+          "noMatch": 1,
+          "accuracy": 0.666667,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 4,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "BREAD": {
+        "before": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.6,
+          "negativeAttempts": 2,
+          "negativeFalse": 2,
+          "negativeFalseRate": 1.0
+        },
+        "after": {
+          "attempts": 3,
+          "correct": 3,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      },
+      "PHONE": {
+        "before": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 0.8,
+          "negativeAttempts": 2,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.5
+        },
+        "after": {
+          "attempts": 4,
+          "correct": 4,
+          "wrong": 0,
+          "noMatch": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 2,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        }
+      }
+    }
+  },
+  "sourceNegativeProbabilitiesSha256": "842d23cd5add3cb93ab31b7d8943783e4c50aeeff4db73528d15a587cdcdf38c",
+  "baselineCalibrationSha256": "03e8ca894ca7443eb83aa2caa7ff04e5748aa94f8fdad3b4e2dd6b279e34331b"
+}

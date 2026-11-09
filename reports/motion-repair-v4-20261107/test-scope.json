@@ -1,0 +1,33 @@
+{
+  "broaderPythonSuite": {
+    "note": "Prior legacy/platform failures were not claimed fixed.",
+    "priorReport": "reports/motion-repair-v2-20261107/test-scope.json",
+    "rerun": false
+  },
+  "frontend": {
+    "output": "frontend-all-tests.txt",
+    "passed": 178,
+    "tests": 180,
+    "failed": 0,
+    "skipped": 2
+  },
+  "pythonTargeted": {
+    "passed": 79,
+    "tests": 79,
+    "failed": 0,
+    "outputs": [
+      "python-targeted-tests.txt",
+      "python-features-tests.txt"
+    ]
+  },
+  "liveCameraAccuracyVerified": false,
+  "referenceVerification": {
+    "noMatch": 57,
+    "sameProtocolSingleRun": false,
+    "source": "virtual-final/final-all-198.json",
+    "wrong": 6,
+    "completed": 198,
+    "matched": 135,
+    "protocol": "112 pre-outage outcomes + 86 single continuation outcomes; original outage attempts preserved; no best-of selection"
+  }
+}

@@ -1,0 +1,829 @@
+{
+  "candidate": "beginner-repaired-masked-v1-tta",
+  "checkpoint": "..\\hs-eval\\motion-repair-20261107\\beginner-repaired-masked-v1.pt",
+  "checkpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+  "features": "..\\hs-eval\\motion-repair-20261107\\features-beginner-repaired.jsonl",
+  "featuresSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+  "split": "val",
+  "minFrames": 5,
+  "preprocessorVersion": "masked-v2",
+  "mirrorTta": true,
+  "mirrorVersion": "anatomical-v2",
+  "snapshots": 1,
+  "probabilities": "reports\\motion-repair-20261107\\validation-beginner-repaired\\beginner-repaired-masked-v1-tta.npz",
+  "probabilitiesSha256": "b63c1b3ba6d2417f4c34ebc73c75e3c62937a8996951d2e34a128edeb0c89033",
+  "raw": {
+    "attempts": 296,
+    "tracked": 267,
+    "correct": 218,
+    "wrong": 49,
+    "noMatch": 29,
+    "accuracy": 0.736486,
+    "macroAccuracy": 0.74248,
+    "precision": 0.816479,
+    "perLabel": {
+      "GOODBYE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "SORRY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "OKAY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "WELCOME": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "GOOD MORNING": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "GOOD AFTERNOON": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "GOOD NIGHT": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 1
+      },
+      "HOW": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "WHAT": {
+        "total": 6,
+        "correct": 2,
+        "wrong": 3
+      },
+      "WHO": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "WHERE": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WHEN": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WHY": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "WHICH": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "I / ME": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 2
+      },
+      "YOU": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "HE / SHE": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "WE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "THEY": {
+        "total": 6,
+        "correct": 3,
+        "wrong": 3
+      },
+      "MY / MINE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "YOUR / YOURS": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "THIS": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "THAT": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "EVERYONE": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "MOTHER": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "FATHER": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "BROTHER": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SISTER": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 1
+      },
+      "CHILD": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FRIEND": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "TEACHER": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "STUDENT": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FAMILY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SLEEP": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WAKE UP": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WALK": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "RUN": {
+        "total": 8,
+        "correct": 7,
+        "wrong": 1
+      },
+      "SIT": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "STAND": {
+        "total": 8,
+        "correct": 8,
+        "wrong": 0
+      },
+      "COME": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 0
+      },
+      "HELP": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "STOP": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "WAIT": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "GIVE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TAKE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "NEED": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "KNOW": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HAPPY": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SAD": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "ANGRY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SCARED": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TIRED": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "THIRSTY": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "GOOD": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "BAD": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "SCHOOL": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HOSPITAL": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "STORE": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 1
+      },
+      "BATHROOM": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "WORK": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HERE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "THERE": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "INSIDE": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 1
+      },
+      "OUTSIDE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "TODAY": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "TOMORROW": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "YESTERDAY": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "NOW": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "LATER": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "TIME": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 3
+      },
+      "BEFORE": {
+        "total": 5,
+        "correct": 5,
+        "wrong": 0
+      },
+      "AFTER": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "MILK": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "BREAD": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "MONEY": {
+        "total": 7,
+        "correct": 5,
+        "wrong": 2
+      },
+      "PHONE": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "CLOTHES": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "BAG": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 3
+      }
+    }
+  },
+  "gate050": {
+    "attempts": 296,
+    "tracked": 267,
+    "correct": 195,
+    "wrong": 23,
+    "noMatch": 78,
+    "accuracy": 0.658784,
+    "macroAccuracy": 0.67179,
+    "precision": 0.894495,
+    "perLabel": {
+      "GOODBYE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "SORRY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "OKAY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "WELCOME": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "GOOD MORNING": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 1
+      },
+      "GOOD AFTERNOON": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0
+      },
+      "GOOD NIGHT": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "HOW": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "WHAT": {
+        "total": 6,
+        "correct": 2,
+        "wrong": 3
+      },
+      "WHO": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0
+      },
+      "WHERE": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WHEN": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WHY": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 0
+      },
+      "WHICH": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "I / ME": {
+        "total": 5,
+        "correct": 1,
+        "wrong": 0
+      },
+      "YOU": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "HE / SHE": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "WE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "THEY": {
+        "total": 6,
+        "correct": 3,
+        "wrong": 1
+      },
+      "MY / MINE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "YOUR / YOURS": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "THIS": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "THAT": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "EVERYONE": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "MOTHER": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "FATHER": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "BROTHER": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SISTER": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "CHILD": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FRIEND": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TEACHER": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 2
+      },
+      "STUDENT": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "FAMILY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SLEEP": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WAKE UP": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "WALK": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "RUN": {
+        "total": 8,
+        "correct": 5,
+        "wrong": 0
+      },
+      "SIT": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "STAND": {
+        "total": 8,
+        "correct": 7,
+        "wrong": 0
+      },
+      "COME": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 0
+      },
+      "HELP": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "STOP": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "WAIT": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "GIVE": {
+        "total": 3,
+        "correct": 0,
+        "wrong": 0
+      },
+      "TAKE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 1
+      },
+      "NEED": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "KNOW": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HAPPY": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SAD": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "ANGRY": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 1
+      },
+      "SCARED": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TIRED": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "THIRSTY": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0
+      },
+      "GOOD": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 0
+      },
+      "BAD": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "SCHOOL": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "HOSPITAL": {
+        "total": 4,
+        "correct": 0,
+        "wrong": 0
+      },
+      "STORE": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "BATHROOM": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "WORK": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "HERE": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "THERE": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "INSIDE": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 1
+      },
+      "OUTSIDE": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "TODAY": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1
+      },
+      "TOMORROW": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "YESTERDAY": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "NOW": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "LATER": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 1
+      },
+      "MORNING": {
+        "total": 4,
+        "correct": 2,
+        "wrong": 0
+      },
+      "TIME": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 3
+      },
+      "BEFORE": {
+        "total": 5,
+        "correct": 4,
+        "wrong": 0
+      },
+      "AFTER": {
+        "total": 3,
+        "correct": 1,
+        "wrong": 0
+      },
+      "MILK": {
+        "total": 3,
+        "correct": 2,
+        "wrong": 0
+      },
+      "BREAD": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0
+      },
+      "MONEY": {
+        "total": 7,
+        "correct": 4,
+        "wrong": 0
+      },
+      "PHONE": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "CLOTHES": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0
+      },
+      "BAG": {
+        "total": 4,
+        "correct": 1,
+        "wrong": 2
+      }
+    }
+  }
+}

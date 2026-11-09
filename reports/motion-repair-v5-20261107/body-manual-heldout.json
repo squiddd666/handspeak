@@ -1,0 +1,6210 @@
+{
+  "stage": "test",
+  "split": "test",
+  "modelSha256": "ce9ce544e1f55bbb16912183606beea1fb0fa1d05fed8f683e5f5c503ca43c48",
+  "baselineSha256": {
+    "models/asl-words.json": "fcd124c99b29ea7a90fcc28efabaec59a6e418d51d37ce0bf579a25cdac63d09",
+    "models/asl-extra-words.json": "380c0aefe0b640c522c464296d1ae590267acaf07619ee918f4d173e369022bd",
+    "models/research-words.json": "69df81e19cf745af8b3ab0ac9cf4b5fc14bb2503528ddd15882618c6d36ef183",
+    "models/motion-categories/pack-dtw.json": "6d2cd3f65b89e1c46403008fa7160750240ef708e77724b9f48e06f0d480e1b9",
+    "models/hello-binary.json": "19e711b061b7845f3c439e17f8b5dd8230bd81235022fafbbbddf672dab090db",
+    "models/baby-binary.json": "4b6853a655d1de24d41294667055455389e70c6e9d50a29a1c7afbdd50c0b43f",
+    "models/water-binary.json": "8cfd42c8b237514210f7becfa76e9ba8de57addc57b6607f85702dd5233fe7ef",
+    "gesture-model.js": "1e396fe19234bcabd827c297865eb64949576d750a5dff1c92ee5cb5acb81780",
+    "motion-model.js": "ab93ef4af78142bd3d372070b622ec5aa0d14a8a72bbc46658642c16ae737b70",
+    "expanded-motion.js": "204c69d6d60a69878e5c9a42707bda1ba29ba50d27b4be001097c58b6cf9d7a6",
+    "temporal-motion/temporal-features.js": "c3a1faab656bc0e133f960fbaa78b0c7b30cc3144c4d3b51c57e656d1c838a2c",
+    "hello-binary.js": "f331ab5b69365cd4bce7e5fb1791ef3a14df466b7fe039c11e7ae15b17c4ad30"
+  },
+  "nativeSha256": "fb8b54ddabb2a857d8dba66c45bda053a30a1b2f67176852543f1bd8c5942030",
+  "routePolicies": {
+    "default": "candidate-first",
+    "expanded": "candidate-first",
+    "daily": "candidate-first",
+    "pack": "candidate-first"
+  },
+  "comparison": {
+    "default": {
+      "before": {
+        "attempts": 96,
+        "correct": 62,
+        "wrong": 8,
+        "noMatch": 26,
+        "negativeAttempts": 352,
+        "negativeFalse": 83,
+        "precision": 0.8857142857142857,
+        "negativeFalseRate": 0.23579545454545456
+      },
+      "after": {
+        "attempts": 96,
+        "correct": 77,
+        "wrong": 7,
+        "noMatch": 12,
+        "negativeAttempts": 352,
+        "negativeFalse": 62,
+        "precision": 0.9166666666666666,
+        "negativeFalseRate": 0.17613636363636365
+      },
+      "passed": true,
+      "perLabel": {
+        "HELLO": {
+          "before": {
+            "attempts": 14,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 4,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 14,
+            "correct": 14,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "THANK YOU": {
+          "before": {
+            "attempts": 12,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "PLEASE": {
+          "before": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "YES": {
+          "before": {
+            "attempts": 10,
+            "correct": 6,
+            "wrong": 3,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.6666666666666666,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 10,
+            "correct": 7,
+            "wrong": 2,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.7777777777777778,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "NO": {
+          "before": {
+            "attempts": 11,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 11,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "FINISH": {
+          "before": {
+            "attempts": 14,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 14,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 14,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "BABY": {
+          "before": {
+            "attempts": 22,
+            "correct": 13,
+            "wrong": 4,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.7647058823529411,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 22,
+            "correct": 14,
+            "wrong": 3,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.8235294117647058,
+            "negativeFalseRate": 0.0
+          }
+        }
+      }
+    },
+    "expanded": {
+      "before": {
+        "attempts": 198,
+        "correct": 99,
+        "wrong": 37,
+        "noMatch": 62,
+        "negativeAttempts": 250,
+        "negativeFalse": 71,
+        "precision": 0.7279411764705882,
+        "negativeFalseRate": 0.284
+      },
+      "after": {
+        "attempts": 198,
+        "correct": 145,
+        "wrong": 24,
+        "noMatch": 29,
+        "negativeAttempts": 250,
+        "negativeFalse": 54,
+        "precision": 0.8579881656804734,
+        "negativeFalseRate": 0.216
+      },
+      "passed": true,
+      "perLabel": {
+        "HELLO": {
+          "before": {
+            "attempts": 14,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 14,
+            "correct": 14,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "THANK YOU": {
+          "before": {
+            "attempts": 12,
+            "correct": 2,
+            "wrong": 10,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.16666666666666666,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 6,
+            "wrong": 6,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.5,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "PLEASE": {
+          "before": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 1,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9230769230769231,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "YES": {
+          "before": {
+            "attempts": 10,
+            "correct": 6,
+            "wrong": 3,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.6666666666666666,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 10,
+            "correct": 7,
+            "wrong": 2,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.7777777777777778,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "NO": {
+          "before": {
+            "attempts": 11,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 11,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "FINISH": {
+          "before": {
+            "attempts": 14,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 14,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 14,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "BABY": {
+          "before": {
+            "attempts": 22,
+            "correct": 13,
+            "wrong": 6,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.6842105263157895,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 22,
+            "correct": 14,
+            "wrong": 4,
+            "noMatch": 4,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.7777777777777778,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "DRINK": {
+          "before": {
+            "attempts": 24,
+            "correct": 11,
+            "wrong": 3,
+            "noMatch": 10,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.7857142857142857,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 24,
+            "correct": 17,
+            "wrong": 2,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.8947368421052632,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "WATER": {
+          "before": {
+            "attempts": 12,
+            "correct": 11,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 12,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "BOOK": {
+          "before": {
+            "attempts": 12,
+            "correct": 1,
+            "wrong": 0,
+            "noMatch": 11,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 5,
+            "wrong": 0,
+            "noMatch": 7,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "FOOD": {
+          "before": {
+            "attempts": 17,
+            "correct": 14,
+            "wrong": 0,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 17,
+            "correct": 16,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "HUNGRY": {
+          "before": {
+            "attempts": 12,
+            "correct": 4,
+            "wrong": 8,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.3333333333333333,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 7,
+            "wrong": 5,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.5833333333333334,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "LIKE": {
+          "before": {
+            "attempts": 12,
+            "correct": 4,
+            "wrong": 5,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.4444444444444444,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 6,
+            "wrong": 4,
+            "noMatch": 2,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.6,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "GO": {
+          "before": {
+            "attempts": 13,
+            "correct": 0,
+            "wrong": 0,
+            "noMatch": 13,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 4,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        }
+      }
+    },
+    "daily": {
+      "before": {
+        "attempts": 72,
+        "correct": 56,
+        "wrong": 2,
+        "noMatch": 14,
+        "negativeAttempts": 376,
+        "negativeFalse": 145,
+        "precision": 0.9655172413793104,
+        "negativeFalseRate": 0.38563829787234044
+      },
+      "after": {
+        "attempts": 72,
+        "correct": 62,
+        "wrong": 1,
+        "noMatch": 9,
+        "negativeAttempts": 376,
+        "negativeFalse": 85,
+        "precision": 0.9841269841269841,
+        "negativeFalseRate": 0.22606382978723405
+      },
+      "passed": true,
+      "perLabel": {
+        "NAME": {
+          "before": {
+            "attempts": 13,
+            "correct": 8,
+            "wrong": 0,
+            "noMatch": 5,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 9,
+            "wrong": 0,
+            "noMatch": 4,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "HOME": {
+          "before": {
+            "attempts": 13,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "HAVE": {
+          "before": {
+            "attempts": 12,
+            "correct": 8,
+            "wrong": 1,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.8888888888888888,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 12,
+            "correct": 10,
+            "wrong": 1,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9090909090909091,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "WANT": {
+          "before": {
+            "attempts": 23,
+            "correct": 20,
+            "wrong": 1,
+            "noMatch": 2,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9523809523809523,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 23,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 2,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "LOVE": {
+          "before": {
+            "attempts": 11,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 11,
+            "correct": 10,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        }
+      }
+    },
+    "pack": {
+      "before": {
+        "attempts": 79,
+        "correct": 69,
+        "wrong": 5,
+        "noMatch": 5,
+        "negativeAttempts": 369,
+        "negativeFalse": 320,
+        "precision": 0.9324324324324325,
+        "negativeFalseRate": 0.8672086720867209
+      },
+      "after": {
+        "attempts": 79,
+        "correct": 71,
+        "wrong": 5,
+        "noMatch": 3,
+        "negativeAttempts": 369,
+        "negativeFalse": 203,
+        "precision": 0.9342105263157895,
+        "negativeFalseRate": 0.5501355013550135
+      },
+      "passed": true,
+      "perLabel": {
+        "FISH": {
+          "before": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 1,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9230769230769231,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 1,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.9230769230769231,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "PAIN": {
+          "before": {
+            "attempts": 14,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 14,
+            "correct": 14,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "SEE": {
+          "before": {
+            "attempts": 13,
+            "correct": 12,
+            "wrong": 0,
+            "noMatch": 1,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "SICK": {
+          "before": {
+            "attempts": 13,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 13,
+            "correct": 13,
+            "wrong": 0,
+            "noMatch": 0,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 1.0,
+            "negativeFalseRate": 0.0
+          }
+        },
+        "NIGHT": {
+          "before": {
+            "attempts": 26,
+            "correct": 19,
+            "wrong": 4,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.8260869565217391,
+            "negativeFalseRate": 0.0
+          },
+          "after": {
+            "attempts": 26,
+            "correct": 19,
+            "wrong": 4,
+            "noMatch": 3,
+            "negativeAttempts": 0,
+            "negativeFalse": 0,
+            "precision": 0.8260869565217391,
+            "negativeFalseRate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "eligibleModes": [
+    "default",
+    "expanded",
+    "daily",
+    "pack"
+  ],
+  "candidate": {
+    "attempts": 349,
+    "correct": 162,
+    "wrong": 4,
+    "noMatch": 183,
+    "negativeAttempts": 99,
+    "negativeFalse": 1,
+    "precision": 0.9759036144578314,
+    "negativeFalseRate": 0.010101010101010102
+  },
+  "testUsedForSelection": false,
+  "watchExcluded": true,
+  "sourcesAndParticipantsDisjoint": true,
+  "deployed": false,
+  "records": [
+    {
+      "file": "9322322450348093-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9216801937379264-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "379487787711422-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "9227265047126638-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "7914722472116791-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "29465488407648976-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "9964369383442526-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "38530661884304074-BABY.mp4",
+      "expected": "BABY",
+      "candidate": "BABY",
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "5274345346959133-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "41373098385469875-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "057527242620470265-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "7661330080789426-BABY.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "7083275776843025-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "8543303873824508-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "403609422576934-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 1
+    },
+    {
+      "file": "4224742442088747-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "9586716011761816-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "7471045610988767-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": "BABY",
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "37298692595361205-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": "BABY",
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "2860591589687298-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": "BABY",
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "8348457720872406-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": "BABY",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 23
+    },
+    {
+      "file": "4072572598463988-BABY 2.mp4",
+      "expected": "BABY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "36769094303755834-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7868496581211555-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "29833833733426673-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": "BOOK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "SICK"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "29872450360285696-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": "BOOK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8799845932622608-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": "BOOK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "8170605754700684-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "9573034024847233-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "21368910008549435-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "774298823461816-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6950933859203254-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "16644724898055996-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": "BOOK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "4195318114915252-BOOK.mp4",
+      "expected": "BOOK",
+      "candidate": "BOOK",
+      "baseline": {
+        "default": null,
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "09371248383875841-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "1184248496668674-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "6657698379837473-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "2505702369833467-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "21698877434119446-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "7536887152060914-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9000152796377254-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "FINISH",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "9812515328553977-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6863272868161578-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "4266956774131161-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "9563854183405713-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "06473784191201326-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "40358209943047574-DRINK.mp4",
+      "expected": "DRINK",
+      "candidate": "WATER",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5287232905909216-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "2980803225080717-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "35888089534387335-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "8595649055844512-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7861742512788061-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "0018695357180107397-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "6756383681583675-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "30737382105404953-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": "NO",
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5500549780163715-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "7157386044540075-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "715190503593329-DRINK 2.mp4",
+      "expected": "DRINK",
+      "candidate": "DRINK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8917441625336839-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "7769434916738955-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "40193405478785693-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 1
+    },
+    {
+      "file": "5035301373430681-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "13884914336494525-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "4524158338314277-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7291224290785421-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "4641646458517976-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "5882347360908131-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7910128481289247-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "25398273569443774-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "6239284754747361-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "550827298682977-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "41461171624603455-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "5672396093022622-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "7640667133656183-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "008533489727754251-EAT.mp4",
+      "expected": "FOOD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8153989715083034-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "18286437913060416-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8858395254297784-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "7646708092060626-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "18385527788301004-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "5484423786947841-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "9292882782041088-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 4
+    },
+    {
+      "file": "7878447075522677-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "10600502582751181-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6959796115122672-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "23583741832617644-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "5415420016012211-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "1528731852595422-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "4625328406325162-FINISH.mp4",
+      "expected": "FINISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6759107431039604-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "9064464209078347-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "1506301246657502-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "17233504668903432-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "7247754342826607-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "6931839329699498-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "2418332359492794-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "28959221812315716-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "8597736805858462-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "66049857409442-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "7778374003477178-FISH.mp4",
+      "expected": "FISH",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7826779372749118-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "919853612335557-FISH.mp4",
+      "expected": "FISH",
+      "candidate": "FISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5446297670875129-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "22762374635521176-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "032373382598848366-GO.mp4",
+      "expected": "GO",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "8187982746646938-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "7100160952925088-GO.mp4",
+      "expected": "GO",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "2791819246477536-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "3904115149763827-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8834363279772663-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6413893522655711-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "16923876012285466-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "19195912453679753-GO.mp4",
+      "expected": "GO",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "26737390960725627-GO.mp4",
+      "expected": "GO",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "4795164850135014-GO.mp4",
+      "expected": "GO",
+      "candidate": "GO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8839827251547725-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "7720796120109821-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "9401487196258995-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "913200910487086-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 32
+    },
+    {
+      "file": "20620677050827374-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "666200057851841-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "6873392845099671-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "09849926479408055-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "5499151016968098-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": "HAVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "9885737187804373-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "45349501605586506-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HAVE",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 5
+    },
+    {
+      "file": "36657817307864926-HAVE.mp4",
+      "expected": "HAVE",
+      "candidate": null,
+      "baseline": {
+        "default": "BABY",
+        "expanded": "BABY",
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "7648996670040624-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "1789715889624135-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "16501735528077632-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "7076961883712545-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "5911924789322505-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "9203138462369036-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "9441415075906014-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7027473793210652-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "8364377695946923-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "5339916560192981-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "3283413810240037-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "9042145214602195-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "5018242902938022-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": null,
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "7472491282176557-HELLO.mp4",
+      "expected": "HELLO",
+      "candidate": "HELLO",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "HELLO",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6867078000301718-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "8251121237297434-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "19580126719501179-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "5902741029270153-HOME.mp4",
+      "expected": "HOME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "07893945056302032-HOME.mp4",
+      "expected": "HOME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "676739603328083-HOME.mp4",
+      "expected": "HOME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "582214002886773-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "15614531692180766-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6756007750530766-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "2819168857196481-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "12817656792505772-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "FOOD",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "0462475122803383-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "9398884140712938-HOME.mp4",
+      "expected": "HOME",
+      "candidate": "HOME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "3274086349316525-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "5801976577083523-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "002348350992488646-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "HUNGRY",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "2394165119190521-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "10194449491019375-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": "HUNGRY",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "140859354753039-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "09596583119145707-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": "HUNGRY",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "8268071690304826-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6826458140252678-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5953063052308991-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "129693242467106-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": "HUNGRY",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "5745630297695972-HUNGRY.mp4",
+      "expected": "HUNGRY",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "HUNGRY",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "14992936899376108-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "FOOD",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "06793339114876251-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "9890231765881607-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "07790071532440357-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": "LIKE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7341162668077774-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "8311673208101575-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "618705132779968-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": "LIKE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "754822541664977-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "5534005644089397-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5814218831348728-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "9359906689689883-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "8940965995167087-LIKE.mp4",
+      "expected": "LIKE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "499380155781485-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": null
+      },
+      "trackedFrames": 5
+    },
+    {
+      "file": "44419065960377635-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "9425795001825019-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "06306461164504529-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "44744498444419367-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "30016965472947743-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "8416155976192394-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "9533808785286948-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "915582300749342-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "0430014058082695-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5578116007946967-LOVE.mp4",
+      "expected": "LOVE",
+      "candidate": "LOVE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "LOVE",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "3644933452013184-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "721473614329061-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "2650581877009257-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6398020473925876-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "9200587270292702-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "243956265655763-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "418905208580302-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "5230881244500567-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7459516150734173-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7157719195212653-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "5806721734598892-NAME.mp4",
+      "expected": "NAME",
+      "candidate": "NAME",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "38747687874121217-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "5222576863044399-NAME.mp4",
+      "expected": "NAME",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "41626131546341005-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "24347054664714518-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "18863006945238636-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7324165972958658-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6080948754683995-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "15326340724323484-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "21366113819079557-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "8081489976247649-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "136565516481288-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6209221579381299-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "45595523266789084-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "4003384084181907-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "912103927697592-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "9495196886045365-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6219254008492208-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9167995001489133-NIGHT.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "37017376507678623-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "048271820780551034-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "7679716592186021-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "3333841050965749-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 25
+    },
+    {
+      "file": "9937138970226993-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "1686105514820797-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "09131110385221475-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "FINISH",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "614460395832817-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "816438084831848-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "0561001592541297-NIGHT 2.mp4",
+      "expected": "NIGHT",
+      "candidate": "NIGHT",
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7525332129995586-NO.mp4",
+      "expected": "NO",
+      "candidate": "NO",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7931075492698656-NO.mp4",
+      "expected": "NO",
+      "candidate": "NO",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "08228267952066615-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "6645554412949413-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "8920807082520505-NO.mp4",
+      "expected": "NO",
+      "candidate": "NO",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "46074251080029494-NO.mp4",
+      "expected": "NO",
+      "candidate": "NO",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "5278795760893484-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "9542027365188674-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "2732741727030885-NO.mp4",
+      "expected": "NO",
+      "candidate": "YES",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 24
+    },
+    {
+      "file": "3247833356457248-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "5328649685588343-NO.mp4",
+      "expected": "NO",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5243643279901755-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": "PAIN",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "10719457796634213-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "054502038668710284-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7706892251614081-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "374792426110897-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": "PAIN",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7367332930335526-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "3339574581172313-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": "PAIN",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "02676525194121826-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6005329882355028-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": "PAIN",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "9136737589481181-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "46245201069940745-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "6304966560640322-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "09233581892673359-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "37134269046205026-PAIN.mp4",
+      "expected": "PAIN",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "8449958018804076-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "9004431867747704-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "11854818371036102-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7328260605453549-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "49277089703101806-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "8835822739071177-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "9697873113607589-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6936039479099299-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7315727436787696-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "5042323343464843-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "3584447878251358-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": "PLEASE",
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 25
+    },
+    {
+      "file": "583219774394824-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "8166852609962443-PLEASE.mp4",
+      "expected": "PLEASE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "27829246360194815-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "10523671017836955-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "NO",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "7933932035972608-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6255356009761448-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": null,
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "8224527695408073-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "24400211790159076-SEE.mp4",
+      "expected": "SEE",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "7388949176785318-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "8596007602362212-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "2322814887877973-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "9479587882463862-SEE.mp4",
+      "expected": "SEE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "9908740266244704-SEE.mp4",
+      "expected": "SEE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 28
+    },
+    {
+      "file": "12116769146342343-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "06806917144544555-SEE.mp4",
+      "expected": "SEE",
+      "candidate": "SEE",
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "3280234496255292-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "6885382807632885-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "4446871579256513-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "40883500861073974-SICK.mp4",
+      "expected": "SICK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "13944307146406487-SICK.mp4",
+      "expected": "SICK",
+      "candidate": null,
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "FINISH",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "37419038878511945-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "23601871909315686-SICK.mp4",
+      "expected": "SICK",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "15552261128903067-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "00961775886447791-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "46526275710038-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "3438291198863894-SICK.mp4",
+      "expected": "SICK",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "5515681081506727-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "7932494857931853-SICK.mp4",
+      "expected": "SICK",
+      "candidate": "SICK",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "09460259361998125-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "936211950052861-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": "THANK YOU",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "4624064779710624-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "9962081495357855-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 4
+    },
+    {
+      "file": "16270426237316316-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": "THANK YOU",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 5
+    },
+    {
+      "file": "6936836055005255-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": "THANK YOU",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "9701695309294336-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "08583141071601874-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "7057474129672285-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": "THANK YOU",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "35156313213734314-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "THANK YOU",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 26
+    },
+    {
+      "file": "25130175957831113-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6788237257016723-THANK YOU.mp4",
+      "expected": "THANK YOU",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "GO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "8411284507702201-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "41055086064167545-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "38957579013047017-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6718261856672789-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "4592926945829485-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "48432220527537195-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "27618561187311874-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "6070369210988702-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "1567731206602907-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "8801114874556712-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "6565779108044556-WANT 2.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5893101049934577-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "5935927846691731-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6285630118257322-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "1549671141661335-WANT.mp4",
+      "expected": "WANT",
+      "candidate": "WANT",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "7361516326952664-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "28865913696775825-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "49163773457742876-WANT.mp4",
+      "expected": "WANT",
+      "candidate": "WANT",
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "BOOK",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "3806176742244156-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "02600379174001821-WANT.mp4",
+      "expected": "WANT",
+      "candidate": "WANT",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "7018981359142265-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "530531684380597-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "0379196499588077-WANT.mp4",
+      "expected": "WANT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "7705639151800205-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6604106363350253-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "7006268761752481-WATER.mp4",
+      "expected": "WATER",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6252432727581858-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "0032949557328998402-WATER.mp4",
+      "expected": "WATER",
+      "candidate": null,
+      "baseline": {
+        "default": "HELLO",
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "25669396550888335-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 6
+    },
+    {
+      "file": "9541613491243199-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SICK"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "4408911106822304-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "8633906244621417-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": null,
+        "pack": "SICK"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "28568822555970064-WATER.mp4",
+      "expected": "WATER",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "41194332281860335-WATER.mp4",
+      "expected": "WATER",
+      "candidate": "WATER",
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "5521352697044284-WATER.mp4",
+      "expected": "WATER",
+      "candidate": null,
+      "baseline": {
+        "default": "FINISH",
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9605571410103191-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9782863224987515-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "541403296602635-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 3
+    },
+    {
+      "file": "05574938180658928-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "029563612799205163-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "41279108584600577-YES.mp4",
+      "expected": "YES",
+      "candidate": "YES",
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "7442618628569746-YES.mp4",
+      "expected": "YES",
+      "candidate": "YES",
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "5327840336837257-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "09905526235759088-YES.mp4",
+      "expected": "YES",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "7199652013477922-YES.mp4",
+      "expected": "YES",
+      "candidate": "YES",
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "3739496799982378-AFTER.mp4",
+      "expected": "AFTER",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "18684179703791104-AFTER.mp4",
+      "expected": "AFTER",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "6502757806438941-AFTER.mp4",
+      "expected": "AFTER",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "6963305702261142-ANGRY.mp4",
+      "expected": "ANGRY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "22543033758638464-ANGRY.mp4",
+      "expected": "ANGRY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "2693093225302592-ANGRY.mp4",
+      "expected": "ANGRY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "7464177985790723-BEFORE.mp4",
+      "expected": "BEFORE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "5152655352749118-BEFORE.mp4",
+      "expected": "BEFORE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5417596504832145-BEFORE.mp4",
+      "expected": "BEFORE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6538776328239029-CHILD.mp4",
+      "expected": "CHILD",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 23
+    },
+    {
+      "file": "024576731392269124-CHILD.mp4",
+      "expected": "CHILD",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "28229140811260867-CHILD.mp4",
+      "expected": "CHILD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "10772444584020002-DEVELOP.mp4",
+      "expected": "DEVELOP1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5264461471950679-DEVELOP.mp4",
+      "expected": "DEVELOP1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "8941363347473583-DEVELOP.mp4",
+      "expected": "DEVELOP1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "5470805439006985-DOG.mp4",
+      "expected": "DOG1",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "8431311301031601-DOG.mp4",
+      "expected": "DOG1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 4
+    },
+    {
+      "file": "5523823677466979-DOG.mp4",
+      "expected": "DOG1",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "8706204980493519-FAMILY.mp4",
+      "expected": "FAMILY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "452008504354493-FAMILY.mp4",
+      "expected": "FAMILY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "09796240195112227-FAMILY.mp4",
+      "expected": "FAMILY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "5316301306146496-FRIEND.mp4",
+      "expected": "FRIEND",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 19
+    },
+    {
+      "file": "04442046013887868-FRIEND.mp4",
+      "expected": "FRIEND",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7407266243277497-FRIEND.mp4",
+      "expected": "FRIEND",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "8705278781240162-HAPPY.mp4",
+      "expected": "HAPPY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "9291022098288835-HAPPY.mp4",
+      "expected": "HAPPY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "5442330055496771-HAPPY.mp4",
+      "expected": "HAPPY",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "670019265660998-HOW.mp4",
+      "expected": "HOW1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "25388875174562653-HOW.mp4",
+      "expected": "HOW1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "5979307187574394-HOW.mp4",
+      "expected": "HOW1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "9380222416073931-HOW 2.mp4",
+      "expected": "HOW2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5356144703822832-HOW 2.mp4",
+      "expected": "HOW2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "9128074318856931-HOW 2.mp4",
+      "expected": "HOW2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "6052041147470333-JOKE.mp4",
+      "expected": "JOKE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "NAME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6109463216925328-JOKE.mp4",
+      "expected": "JOKE",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 9
+    },
+    {
+      "file": "7573683637678914-JOKE.mp4",
+      "expected": "JOKE",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 2
+    },
+    {
+      "file": "7050118459113892-KNIGHT.mp4",
+      "expected": "KNIGHT1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "6424296514507701-KNIGHT.mp4",
+      "expected": "KNIGHT1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6067700660442612-KNIGHT.mp4",
+      "expected": "KNIGHT1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6659486908996504-MEA CULPA.mp4",
+      "expected": "MEACULPA",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "9554412893118276-MEA CULPA.mp4",
+      "expected": "MEACULPA",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "9978984903081016-MEA CULPA.mp4",
+      "expected": "MEACULPA",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "5548976355283721-MOUTH.mp4",
+      "expected": "MOUTH",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "3784591045062218-MOUTH.mp4",
+      "expected": "MOUTH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 0
+    },
+    {
+      "file": "5193451899614112-MOUTH.mp4",
+      "expected": "MOUTH",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "5121733417075109-MOVIE.mp4",
+      "expected": "MOVIE1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "4901663474918121-MOVIE.mp4",
+      "expected": "MOVIE1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "6018953253350048-MOVIE.mp4",
+      "expected": "MOVIE1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "21749297295764602-MY.mp4",
+      "expected": "MY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "8226750960617843-MY.mp4",
+      "expected": "MY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "639566277780208-MY.mp4",
+      "expected": "MY",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 7
+    },
+    {
+      "file": "37372322284413917-NEED.mp4",
+      "expected": "NEED",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 5
+    },
+    {
+      "file": "9788744210187619-NEED.mp4",
+      "expected": "NEED",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "09656289044816302-NEED.mp4",
+      "expected": "NEED",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "7855149396736427-OFFEND.mp4",
+      "expected": "OFFEND",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "29515769427371175-OFFEND.mp4",
+      "expected": "OFFEND",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "1096659736862362-OFFEND.mp4",
+      "expected": "OFFEND",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "BOOK",
+        "daily": null,
+        "pack": "SEE"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "2613508295176463-SAD.mp4",
+      "expected": "SAD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "8691035104852791-SAD.mp4",
+      "expected": "SAD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 10
+    },
+    {
+      "file": "33761177892734606-SAD.mp4",
+      "expected": "SAD",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "35908970574329513-SCHOOL.mp4",
+      "expected": "SCHOOL",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "4046304802500862-SCHOOL.mp4",
+      "expected": "SCHOOL",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "8188942667223229-SCHOOL.mp4",
+      "expected": "SCHOOL",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "051363787498898805-SHOP.mp4",
+      "expected": "SHOP1",
+      "candidate": "FINISH",
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "5447366633039745-SHOP.mp4",
+      "expected": "SHOP1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "619471604244741-SHOP.mp4",
+      "expected": "SHOP1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 8
+    },
+    {
+      "file": "7776484561517998-SHOP 1.mp4",
+      "expected": "SHOP2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "04770080199291016-SHOP 1.mp4",
+      "expected": "SHOP2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "5669381179343234-SHOP 1.mp4",
+      "expected": "SHOP2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "7247174573867188-SINCE.mp4",
+      "expected": "SINCE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "7668237661240636-SINCE.mp4",
+      "expected": "SINCE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 18
+    },
+    {
+      "file": "5087919197314699-SINCE.mp4",
+      "expected": "SINCE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "938121928998171-TAKE.mp4",
+      "expected": "TAKE",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "BOOK",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "5432804607364146-TAKE.mp4",
+      "expected": "TAKE",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 21
+    },
+    {
+      "file": "4733713256209504-TAKE.mp4",
+      "expected": "TAKE",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "6294547374725679-THEY.mp4",
+      "expected": "THEY1",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "LIKE",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "9819306186128587-THEY.mp4",
+      "expected": "THEY1",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "4843002553575395-THEY.mp4",
+      "expected": "THEY1",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "43704572565708033-THEY 2.mp4",
+      "expected": "THEY2",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "8027754389454298-THEY 2.mp4",
+      "expected": "THEY2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "36487998650126063-THEY 2.mp4",
+      "expected": "THEY2",
+      "candidate": null,
+      "baseline": {
+        "default": "YES",
+        "expanded": "YES",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "3002324260060374-THIRD.mp4",
+      "expected": "THIRD1",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 13
+    },
+    {
+      "file": "07633291774567197-THIRD.mp4",
+      "expected": "THIRD1",
+      "candidate": null,
+      "baseline": {
+        "default": "THANK YOU",
+        "expanded": "FOOD",
+        "daily": "HOME",
+        "pack": "SEE"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "6406218170023705-THIRD.mp4",
+      "expected": "THIRD1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 20
+    },
+    {
+      "file": "431834858238225-WAIT.mp4",
+      "expected": "WAIT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 12
+    },
+    {
+      "file": "6692766688263203-WAIT.mp4",
+      "expected": "WAIT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 16
+    },
+    {
+      "file": "624921199330932-WAIT.mp4",
+      "expected": "WAIT",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": "WANT",
+        "pack": "PAIN"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6062846614058834-WALK.mp4",
+      "expected": "WALK1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 23
+    },
+    {
+      "file": "19567474626384396-WALK.mp4",
+      "expected": "WALK1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 17
+    },
+    {
+      "file": "32505208674462494-WALK.mp4",
+      "expected": "WALK1",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "PAIN"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "002833170516010508-WALK 2.mp4",
+      "expected": "WALK2",
+      "candidate": null,
+      "baseline": {
+        "default": "NO",
+        "expanded": "NO",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "9330982885367329-WALK 2.mp4",
+      "expected": "WALK2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "LIKE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "006227156840298065-WALK 2.mp4",
+      "expected": "WALK2",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 22
+    },
+    {
+      "file": "11313336559383713-WE.mp4",
+      "expected": "WE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "HUNGRY",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "4810638311866906-WE.mp4",
+      "expected": "WE",
+      "candidate": null,
+      "baseline": {
+        "default": "PLEASE",
+        "expanded": "PLEASE",
+        "daily": null,
+        "pack": "FISH"
+      },
+      "trackedFrames": 15
+    },
+    {
+      "file": "6913451457780051-WE.mp4",
+      "expected": "WE",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": null,
+        "daily": null,
+        "pack": null
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "4629799276503057-YOUR.mp4",
+      "expected": "YOUR",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "WATER",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 11
+    },
+    {
+      "file": "6305839235811999-YOUR.mp4",
+      "expected": "YOUR",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "FISH"
+      },
+      "trackedFrames": 14
+    },
+    {
+      "file": "6342542561480597-YOUR.mp4",
+      "expected": "YOUR",
+      "candidate": null,
+      "baseline": {
+        "default": null,
+        "expanded": "DRINK",
+        "daily": "HOME",
+        "pack": "NIGHT"
+      },
+      "trackedFrames": 12
+    }
+  ],
+  "seconds": 851.18,
+  "scope": "Paired recorded regression. Native whole-clip sampling, not a live-camera accuracy claim. Body capture and Tasks hand capture are distinct actual tracker outputs from the same source timestamps."
+}

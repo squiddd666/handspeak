@@ -1,0 +1,29 @@
+{
+  "allFrozenInputsVerified": true,
+  "frozenInputCount": 178,
+  "classifierArtifactCount": 50,
+  "targetedPythonTestsPassed": 25,
+  "targetedJavaScriptTestsPassed": 39,
+  "fullApplicationSuiteClaimed": false,
+  "captureOutcomes": 62,
+  "realProductionApiReceipts": 240,
+  "cameraCalls": 0,
+  "microphoneCalls": 0,
+  "cleanup": {
+    "server": "no response",
+    "browser": "no response"
+  },
+  "evidenceSha256": {
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\protocol.json": "6c7d01935fe24128a0462a555dd7b6d4e98b072d921fb54df6cb315b1b34fd09",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\execution-notes.json": "dcffc602b3edac209e19ea9853b1b765b78bb78456bae3dddbe28b2c256afeb3",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\cleanup-receipt.json": "7f5462278a623a29759de86e0282a4aa6549b9fbb11b0412e5edad15a23411e0",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\post-run-integrity.json": "455803bea3b80702e58ea60f5ba274a82a78322b7a0f087096b305adfef6cf60",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\browser-proof.png": "fe308e2fed1d31fdb56778fab504ef22717e675fcaa9b9599b27971493393aba",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\online-worker-recognition-audit-20261108\\infrastructure-checks.json": "7c32bd13ea44012d774b6e035c56ee8e710f8f22bc92a2b7a92b0cf79ac46c36",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\worker-audit-python-postcheck-20261108.log": "69d49672a0840cd65e9adddf2b98dc8b5a9d6405be0871fa35e526854bf02305",
+    "C:\\Users\\Squid\\Desktop\\capstone\\hs-eval\\worker-audit-js-postcheck-20261108.log": "3818ca842210e055a38eeb9b9dc2d312dbee917787085bf96cb4526776694148",
+    "C:\\Users\\Squid\\Desktop\\capstone\\handspeak-git\\reports\\online-worker-recognition-audit-20261108\\README.md": "0052fac19cc25607c36eda29bc2eb2d9e656e3acbef429196970b77130655036",
+    "C:\\Users\\Squid\\Desktop\\capstone\\handspeak-git\\reports\\online-worker-recognition-audit-20261108\\summary.json": "b5cc7dafa715d67a4a1a8aa0fb71349882aa18bea4d343b6907ffeb3b6828ee8",
+    "C:\\Users\\Squid\\Desktop\\capstone\\handspeak-git\\reports\\online-worker-recognition-audit-20261108\\outcomes.json": "97bb5a111fccd7ebf0f4eb07d557ea058c01cf43f2e0b2d63fa19e1353a5a13c"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "selectedAt": "2026-11-06T21:48:03.521108+00:00",
+  "calibrationId": "motion-repair-v3-20261107-val-85cece18ca52",
+  "releaseDraftSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "testUsedForSelection": false,
+  "watchClipsUsedForSelection": false,
+  "selections": {
+    "beginner": "b74115daa6f04817c5d7e937c4d05f6c8470df0646b8eedaec85ddb0e3aca028",
+    "capstone": "858591c73dbfe95f5f5561d4650faec9e36972819ec1fe732959620a26017988"
+  }
+}

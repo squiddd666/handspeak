@@ -1,0 +1,5318 @@
+{
+  "version": 1,
+  "language": "ASL",
+  "checkedDate": "2026-11-05",
+  "counts": {
+    "labels": 198,
+    "existingLocal": 51,
+    "researchLocal": 147
+  },
+  "simultaneousRecognition": false,
+  "scope": "References for separate existing recognition vocabularies; not a unified 198-label recognizer.",
+  "attribution": {
+    "source": "ASL Citizen (Microsoft Research)",
+    "url": "https://www.microsoft.com/en-us/research/project/asl-citizen/",
+    "termsUrl": "https://www.microsoft.com/en-us/research/project/asl-citizen/dataset-license/",
+    "use": "Local non-commercial research only. No public redistribution.",
+    "archiveUrl": "https://download.microsoft.com/download/b/8/8/b88c0bae-e6c1-43e1-8726-98cf5af36ca4/ASL_Citizen.zip"
+  },
+  "items": [
+    {
+      "id": "8hour",
+      "label": "8HOUR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "8HOUR"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/8hour.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07243138866452936-8 HOUR.mp4",
+          "participant": "P22",
+          "gloss": "8HOUR",
+          "lexCode": "C_02_055",
+          "split": "test",
+          "sha256": "7014c2187d8038248ae58eddc17aba706037c5682e5f7acc6b02be9bf026806e",
+          "duration": 1.47
+        }
+      ],
+      "videoSha256": "59928a8c44c436cedb5ae1b96746cd975b416b994659182a70c9634ac68eee07",
+      "bytes": 129062,
+      "duration": 1.47,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "after",
+      "label": "AFTER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "AFTER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/after.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "18608964421431362-AFTER.mp4",
+          "participant": "P6",
+          "gloss": "AFTER",
+          "lexCode": "B_02_030",
+          "split": "test",
+          "sha256": "3c5ba572ec45054ed9579f310d78ea10ca37ab82af6cbf26bdc2602508947dda",
+          "duration": 1.49
+        }
+      ],
+      "videoSha256": "7195f0dd6656789fae448e182a8e01ba000e3880bb2656cf1c9a8398ddffb107",
+      "bytes": 242164,
+      "duration": 1.43,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "angry",
+      "label": "ANGRY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "ANGRY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/angry.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "08513757310623649-ANGRY.mp4",
+          "participant": "P22",
+          "gloss": "ANGRY",
+          "lexCode": "B_01_070",
+          "split": "test",
+          "sha256": "e73d10a9c3c06933ff0219e24a888aff07cf1b3745a8a1334afe19a67001af40",
+          "duration": 1.0
+        }
+      ],
+      "videoSha256": "03e8889dd84df16792b975f29ac913b396ac5cd7c195e5cc39bbbfe3c7f83779",
+      "bytes": 90148,
+      "duration": 1.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "anyone",
+      "label": "ANYONE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "ANYONE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/anyone.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "06275594280373986-ANYONE.mp4",
+          "participant": "P9",
+          "gloss": "ANYONE",
+          "lexCode": "H_01_059",
+          "split": "test",
+          "sha256": "da75886c51f980281720119221292b6309392c5c278807765e91e0782bc0c197",
+          "duration": 3.01
+        }
+      ],
+      "videoSha256": "a58afd324505d24838c32e90c3d1c970f892ea560f12452b3466c3bac5f6ff5f",
+      "bytes": 183022,
+      "duration": 3.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "apple",
+      "label": "APPLE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "APPLE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/apple.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "011716531366529281-APPLE.mp4",
+          "participant": "P18",
+          "gloss": "APPLE",
+          "lexCode": "A_03_054",
+          "split": "test",
+          "sha256": "4a0b6d3426eff9ab9b05b7f22d95e63c23df3e248c3d0046f287aa388b1bd434",
+          "duration": 2.56
+        }
+      ],
+      "videoSha256": "6c87350319134523b87ca10962bc5bbc526cf7fe286c507966f2089fd6206507",
+      "bytes": 163536,
+      "duration": 2.53,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "articulatesign",
+      "label": "ARTICULATESIGN",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "ARTICULATESIGN"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/articulatesign.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "1198208114205801-ARTICULATE SIGN.mp4",
+          "participant": "P35",
+          "gloss": "ARTICULATESIGN",
+          "lexCode": "J_01_014",
+          "split": "test",
+          "sha256": "61959ed94dfd44913d63fb2f65744823f6a44d7561542c7aabfab7f2d46c174e",
+          "duration": 2.91
+        }
+      ],
+      "videoSha256": "102d17cc925898fd5e0cd3f1b870d237a7a8c58d2caa20863465672423a10a1b",
+      "bytes": 290535,
+      "duration": 2.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "axe",
+      "label": "AXE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "AXE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/axe.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "02808030064323508-AXE.mp4",
+          "participant": "P48",
+          "gloss": "AXE1",
+          "lexCode": "G_03_066",
+          "split": "test",
+          "sha256": "537650221191a23cbc5775cb8ef44ba31ca6427496f1518d9248800de7f70881",
+          "duration": 2.97
+        }
+      ],
+      "videoSha256": "1fdb2f499e0f7be702cfe5c7962c8ff0edfe7ae885ec8121e2baabaae6e38706",
+      "bytes": 206068,
+      "duration": 2.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "baby",
+      "label": "BABY",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BABY2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/baby.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "1868297376328567-BABY 2.mp4",
+          "participant": "P6",
+          "gloss": "BABY2",
+          "lexCode": "K_01_042",
+          "split": "test",
+          "sha256": "b81b8f0dda06c619634995f565efa7de2adac97cebdd3e2695ae93572725e99f",
+          "duration": 1.79
+        }
+      ],
+      "videoSha256": "b8a52b97f3ffac9fc659a17d1407ac4fd1af15c66d7b1102c8510554804f9fa2",
+      "bytes": 159571,
+      "duration": 1.73,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "backpack",
+      "label": "BACKPACK",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BACKPACK1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/backpack.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0035239519721155244-BACKPACK.mp4",
+          "participant": "P47",
+          "gloss": "BACKPACK1",
+          "lexCode": "G_03_091",
+          "split": "test",
+          "sha256": "bbfbbb9b08db468a0d0ee75a8540e14caf053557fe8f8103245f4df5df488bc6",
+          "duration": 3.61
+        }
+      ],
+      "videoSha256": "d7aaad1cb7d7524a3959703093482e96dc9f3c0fa23dff65c9933498d49fd77d",
+      "bytes": 247539,
+      "duration": 3.6,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "bad",
+      "label": "BAD",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BAD"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bad.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "09145990846220031-BAD.mp4",
+          "participant": "P48",
+          "gloss": "BAD",
+          "lexCode": "B_02_082",
+          "split": "test",
+          "sha256": "0aec69f0baef06815f209a1624e4286144947faca2ccc3cd7a810fee1647ba7d",
+          "duration": 1.51
+        }
+      ],
+      "videoSha256": "78e1dbfda4dbd9da9e374b1ea763b25cc6b94ee15a633cbe8cd6a04ec2ba9d30",
+      "bytes": 77166,
+      "duration": 1.5,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "bag",
+      "label": "BAG",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BAG1",
+        "BAG2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bag.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "08678970224498594-BAG.mp4",
+          "participant": "P15",
+          "gloss": "BAG1",
+          "lexCode": "A_01_064",
+          "split": "test",
+          "sha256": "5ac67f35c13970dbbe87ec81b0ed32bfcbb9ae9cd9d4d33ae2f1c01beb1376fc",
+          "duration": 3.41
+        }
+      ],
+      "videoSha256": "b139f86594f832d9a977ca4bcc273f71d9ae85f76fc77c3708bf99bd0a88d94b",
+      "bytes": 204572,
+      "duration": 3.4,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "baseballcap",
+      "label": "BASEBALLCAP",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BASEBALLCAP"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/baseballcap.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "basketball",
+      "label": "BASKETBALL",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BASKETBALL1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/basketball.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "019113149258163764-BASKETBALL.mp4",
+          "participant": "P49",
+          "gloss": "BASKETBALL1",
+          "lexCode": "A_03_045",
+          "split": "test",
+          "sha256": "f29f5801f2cce6137cbcbdcd580725aea48e842d9116ecf2df2a6ff4ca0508ea",
+          "duration": 2.88
+        }
+      ],
+      "videoSha256": "25c660289ea70abbef2bf0d90656ac565df7b3b5687db413358b96dbb28c5da4",
+      "bytes": 174206,
+      "duration": 2.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "bathroom",
+      "label": "BATHROOM",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BATHROOM"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bathroom.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "026579710670746826-BATHROOM.mp4",
+          "participant": "P49",
+          "gloss": "BATHROOM",
+          "lexCode": "A_02_051",
+          "split": "test",
+          "sha256": "99a536a5d68a618db695db4c3f3db8f3a6305cb10575a854410943284e34e324",
+          "duration": 1.17
+        }
+      ],
+      "videoSha256": "03b587e7fb6686f2bd3da7bbc7a0ff4e4cabbcdde674c4eb03a27996e7f93670",
+      "bytes": 85247,
+      "duration": 1.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "bee",
+      "label": "BEE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BEE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bee.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "1569354789631634-BEE.mp4",
+          "participant": "P42",
+          "gloss": "BEE1",
+          "lexCode": "J_02_101",
+          "split": "test",
+          "sha256": "b5dced9b12896350a82e6734a6a618897bfc0fbc8feb83855aa70363ff59076f",
+          "duration": 1.37
+        }
+      ],
+      "videoSha256": "a43fca58c927751fc3bee9c96399faf971e856a80eb49feb54450b7a189d8f42",
+      "bytes": 96274,
+      "duration": 1.33,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "before",
+      "label": "BEFORE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BEFORE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/before.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "10191750851054593-BEFORE.mp4",
+          "participant": "P15",
+          "gloss": "BEFORE",
+          "lexCode": "G_02_053",
+          "split": "test",
+          "sha256": "a4a2c5b03c21f0ff063a421cfb15b58d12b2167b99a2347004f7c2bb3be2f9d8",
+          "duration": 3.29
+        }
+      ],
+      "videoSha256": "7d84dd8fc6bfc3fc8abeb752476af0b49e398b554672fbe049f0788ff7b60b39",
+      "bytes": 217224,
+      "duration": 3.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "belt",
+      "label": "BELT",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BELT1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/belt.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "bite",
+      "label": "BITE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BITE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bite.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "024568947527517704-BITE.mp4",
+          "participant": "P47",
+          "gloss": "BITE1",
+          "lexCode": "K_02_045",
+          "split": "test",
+          "sha256": "da6d8aca584f5f5522c00b2872e530a8dafff384e0f3c248c4efafca3852af5f",
+          "duration": 3.16
+        }
+      ],
+      "videoSha256": "9c483933b8328d7bf179197eb6f700eb0101b73a4964c190351438f52d69c29b",
+      "bytes": 168128,
+      "duration": 3.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "book",
+      "label": "BOOK",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/book.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "bread",
+      "label": "BREAD",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BREAD"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/bread.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04484164963593007-BREAD.mp4",
+          "participant": "P47",
+          "gloss": "BREAD",
+          "lexCode": "A_02_058",
+          "split": "test",
+          "sha256": "93c47bc9a16ade58618bd555de1c3d27c65ca77dfa5d72d33c19c36cca6aa742",
+          "duration": 3.11
+        }
+      ],
+      "videoSha256": "540bc261381c5c2bc40676aa0cf07e01ed47640f2faa028602115d1d7f91f43b",
+      "bytes": 200777,
+      "duration": 3.07,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "breakfast",
+      "label": "BREAKFAST",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "BREAKFAST1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/breakfast.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "14585543673442425-BREAKFAST.mp4",
+          "participant": "P49",
+          "gloss": "BREAKFAST1",
+          "lexCode": "J_01_053",
+          "split": "test",
+          "sha256": "6d6db5cfc8edb7bbb7c7f7f648a3e53d70434176ce59360082e7332d108e6f0f",
+          "duration": 1.96
+        }
+      ],
+      "videoSha256": "328c0eb077945dd88db3a5437e6704b478b5459312ac2195e415acc1b3ddb790",
+      "bytes": 98670,
+      "duration": 1.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "brother",
+      "label": "BROTHER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BROTHER"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/brother.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "calendar",
+      "label": "CALENDAR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CALENDAR1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/calendar.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "02972543857073462-CALENDAR.mp4",
+          "participant": "P35",
+          "gloss": "CALENDAR1",
+          "lexCode": "A_03_001",
+          "split": "test",
+          "sha256": "9a1c3d0de37e90fffc1ee64215e43329c930cec83d00a0c3b90e35fbdf802b67",
+          "duration": 2.11
+        }
+      ],
+      "videoSha256": "975f766e9e477bf4e75ae29b2423e4e63631f2fbe9fc5fde844daa64bc73f3a1",
+      "bytes": 206112,
+      "duration": 2.1,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "cancer",
+      "label": "CANCER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CANCER1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/cancer.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "020241603603908365-CANCER.mp4",
+          "participant": "P15",
+          "gloss": "CANCER1",
+          "lexCode": "F_01_047",
+          "split": "test",
+          "sha256": "527706ffd2d407328fdb64c17cafd5093e63bb0649cc02f74ca81d8ed0f18ea3",
+          "duration": 2.91
+        }
+      ],
+      "videoSha256": "c17cb6fa72e4fbb32e617329d4ff877811d80b26599f6b61f3abd5a0924295dc",
+      "bytes": 137230,
+      "duration": 2.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "capture",
+      "label": "CAPTURE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CAPTURE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/capture.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "15516088668952888-CAPTURE.mp4",
+          "participant": "P6",
+          "gloss": "CAPTURE",
+          "lexCode": "H_03_048",
+          "split": "test",
+          "sha256": "09879d30209db44247d314a9971a769e69ff8ab037b65eab12105f9712e955c7",
+          "duration": 1.73
+        }
+      ],
+      "videoSha256": "c7f8b5d0ba7423ccd769d90ac08b14cbf5d98d550059cf67efa2dceec5a649e3",
+      "bytes": 253877,
+      "duration": 1.67,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "catapult",
+      "label": "CATAPULT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CATAPULT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/catapult.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04597025835119717-CATAPULT.mp4",
+          "participant": "P6",
+          "gloss": "CATAPULT",
+          "lexCode": "E_03_083",
+          "split": "test",
+          "sha256": "b771ebbc79069b86bb0885985cc764db07f54fbf789d32635f150fb80671ffb0",
+          "duration": 2.28
+        }
+      ],
+      "videoSha256": "a27dec68083a14a9211f96bc571a5cbd3b56904d33bb44e1f50a207a6e5ec760",
+      "bytes": 300580,
+      "duration": 2.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "cemetery",
+      "label": "CEMETERY",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CEMETERY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/cemetery.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "06763934192733045-CEMETERY.mp4",
+          "participant": "P18",
+          "gloss": "CEMETERY",
+          "lexCode": "H_01_037",
+          "split": "test",
+          "sha256": "a2e5c4cc63ac6270f7f3b68fb5be1d3f7ea65480efe3ac62cc73c5871adcac12",
+          "duration": 2.62
+        }
+      ],
+      "videoSha256": "34c909ecd7d21611bb17e5ba085844c8b9f2991617a469e50817c4a394dd4258",
+      "bytes": 158525,
+      "duration": 2.6,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "cheek",
+      "label": "CHEEK",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CHEEK"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/cheek.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "028495375833406555-CHEEK.mp4",
+          "participant": "P15",
+          "gloss": "CHEEK",
+          "lexCode": "G_03_052",
+          "split": "test",
+          "sha256": "8f93d42ec4afb97b9067a7bd6ea7fbe136636876197acbe718ac0f4f3b723fba",
+          "duration": 4.84
+        }
+      ],
+      "videoSha256": "54675fd78526b1530cd797f43e5f645f5aaac2be304c162f5b07de909eb26ba6",
+      "bytes": 277301,
+      "duration": 4.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "cheesegrater",
+      "label": "CHEESEGRATER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CHEESEGRATER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/cheesegrater.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04125584598262866-CHEESE GRATER.mp4",
+          "participant": "P47",
+          "gloss": "CHEESEGRATER",
+          "lexCode": "F_03_064",
+          "split": "test",
+          "sha256": "23a518ae7c1e9ca33e7f5228a7c94f1c298be3129ff83ca1e7619275c93b1aab",
+          "duration": 4.01
+        }
+      ],
+      "videoSha256": "6c2a0461906c35a6b2d7b9fcfe04475394f6e0f3157f9ff245cdcf43ab9f74a3",
+      "bytes": 266006,
+      "duration": 3.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "child",
+      "label": "CHILD",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "CHILD"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/child.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "christmas",
+      "label": "CHRISTMAS",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CHRISTMAS1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/christmas.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "016840075970754098-CHRISTMAS.mp4",
+          "participant": "P48",
+          "gloss": "CHRISTMAS1",
+          "lexCode": "F_03_029",
+          "split": "test",
+          "sha256": "b89a7f4c3f99a1f69b30da9e52d7f8246fab4873473a4f241129befc7997ad90",
+          "duration": 2.15
+        }
+      ],
+      "videoSha256": "bee4aa108eb4a1f991dad8179a6e13def28c220dbabdd3477d813a1ba5cee7b2",
+      "bytes": 156804,
+      "duration": 2.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "close",
+      "label": "CLOSE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CLOSE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/close.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "018252108786821486-CLOSE.mp4",
+          "participant": "P17",
+          "gloss": "CLOSE",
+          "lexCode": "G_03_084",
+          "split": "test",
+          "sha256": "bdffd7cb2ecca0028dd2b065467fe66d0c35ce94348ecae84e7fd9e6538c4ec9",
+          "duration": 2.35
+        }
+      ],
+      "videoSha256": "36252798866363edc2fcdcf4f108bf3a48144701e1597b9d0f376b1408c73751",
+      "bytes": 175462,
+      "duration": 2.3,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "clothes",
+      "label": "CLOTHES",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "CLOTHES"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/clothes.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "009420825369894192-CLOTHES.mp4",
+          "participant": "P35",
+          "gloss": "CLOTHES",
+          "lexCode": "E_03_096",
+          "split": "test",
+          "sha256": "ca523307e97f0352c521ff3877311fa2b73ef106b59f7c1ed72b28b815c48515",
+          "duration": 2.39
+        }
+      ],
+      "videoSha256": "8a70a0b23e5d884978c8d82ba6d9bd0ec9a4894880253a14592820fdb0c305a2",
+      "bytes": 263256,
+      "duration": 2.37,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "comb",
+      "label": "COMB",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "COMB2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/comb.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "05282150539349706-COMB.mp4",
+          "participant": "P49",
+          "gloss": "COMB2",
+          "lexCode": "C_02_070",
+          "split": "test",
+          "sha256": "d464750a286eed6c73113e2d56b7abb8ce43e04392be1d3d59045d8fd3de255d",
+          "duration": 2.03
+        }
+      ],
+      "videoSha256": "f00cf59a223b670d57f50b620669b75e5c89effe998279f7c60087e105db359e",
+      "bytes": 92466,
+      "duration": 2.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "come",
+      "label": "COME",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "COME"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/come.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "21374230308157083-COME.mp4",
+          "participant": "P47",
+          "gloss": "COME",
+          "lexCode": "C_03_074",
+          "split": "test",
+          "sha256": "2d92b9535e44a737ce381a16db6bb10b23cd524bf70b02af7c198575ee8d0899",
+          "duration": 3.01
+        }
+      ],
+      "videoSha256": "2668553c5082cfdaea3cc5d4614b85351bf015d98b0777de74d9a5e0d74400c5",
+      "bytes": 175939,
+      "duration": 2.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "confused",
+      "label": "CONFUSED",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "CONFUSED1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/confused.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04346433467801791-CONFUSED.mp4",
+          "participant": "P35",
+          "gloss": "CONFUSED1",
+          "lexCode": "J_01_110",
+          "split": "test",
+          "sha256": "70db7ca1229ec9416e98302f1a6980c2975881518c9a49ddd2fcf08f44a9d0ec",
+          "duration": 3.65
+        }
+      ],
+      "videoSha256": "e030b38d862eefa1d1b082b4f9ecbf03199bc5cf70feb547c207611bbc65b512",
+      "bytes": 372182,
+      "duration": 3.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "dark",
+      "label": "DARK",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DARK1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/dark.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "011010878590564266-DARK.mp4",
+          "participant": "P49",
+          "gloss": "DARK1",
+          "lexCode": "J_03_094",
+          "split": "test",
+          "sha256": "d5383ae90fa995c8e9cd2725e29f601d76771566b1d8b803c8c79c52ccf9138f",
+          "duration": 2.99
+        }
+      ],
+      "videoSha256": "91155de2a3b00be1027dee59390c7f252a3932d79355df500adbc23f40f03c35",
+      "bytes": 236164,
+      "duration": 2.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "deaf",
+      "label": "DEAF",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DEAF1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/deaf.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "decide",
+      "label": "DECIDE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DECIDE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/decide.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "11276204524425326-DECIDE.mp4",
+          "participant": "P42",
+          "gloss": "DECIDE1",
+          "lexCode": "B_02_074",
+          "split": "test",
+          "sha256": "2ebfc25a9a41295251443ec486dda2afe406e550ba981d2998c6643fadba5518",
+          "duration": 2.58
+        }
+      ],
+      "videoSha256": "d1062fda41b1e899453a6e0841409032d84b7e298585b6e02753cf935da4580e",
+      "bytes": 269795,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "demand",
+      "label": "DEMAND",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DEMAND1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/demand.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "develop",
+      "label": "DEVELOP",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DEVELOP1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/develop.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "019153341708292082-DEVELOP.mp4",
+          "participant": "P6",
+          "gloss": "DEVELOP1",
+          "lexCode": "J_03_092",
+          "split": "test",
+          "sha256": "5a0de9cb9cdd4a203d70e21da2c85d37ab5fdde50ec835df050cdd21c58f6f66",
+          "duration": 1.98
+        }
+      ],
+      "videoSha256": "6689dabcc7a0ae6ed54a3dc057f0bc1ad7ef63b9c4937eb9c1d4e8272ce50a62",
+      "bytes": 291137,
+      "duration": 1.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "dinner",
+      "label": "DINNER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DINNER1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/dinner.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "003310277183083743-DINNER.mp4",
+          "participant": "P49",
+          "gloss": "DINNER1",
+          "lexCode": "G_03_044",
+          "split": "test",
+          "sha256": "7a7d0292d55d2a6df391e787ebfe9ef04810ceb2282ff1e7791bb62fe092604c",
+          "duration": 2.52
+        }
+      ],
+      "videoSha256": "e69305ef7310eb4d355a358da30ff35cf29bde61b58dc5246c25f72d55b66cef",
+      "bytes": 181343,
+      "duration": 2.5,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "dog",
+      "label": "DOG",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DOG1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/dog.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "005082179049994862-DOG.mp4",
+          "participant": "P6",
+          "gloss": "DOG1",
+          "lexCode": "A_01_056",
+          "split": "test",
+          "sha256": "4e3750c8d3b1df9f35402c342f30efa71221851134e870fc41da8d6eac5a6376",
+          "duration": 1.11
+        }
+      ],
+      "videoSha256": "a7bc8eca3a29084f24af51f96e33cbcf56a4ab45dd5f6c4a78e2fc172411509a",
+      "bytes": 208898,
+      "duration": 1.07,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "downsize",
+      "label": "DOWNSIZE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DOWNSIZE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/downsize.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "08828994157564463-DOWNSIZE.mp4",
+          "participant": "P6",
+          "gloss": "DOWNSIZE1",
+          "lexCode": "C_01_055",
+          "split": "test",
+          "sha256": "f3a73b61dc12fe66836c7436271bca533de9abe426029189f90acfc6148111c3",
+          "duration": 2.07
+        }
+      ],
+      "videoSha256": "278c2e9e2e58cf2aeae9ecb8ee0c1c1d31e8b8222f650addb5f2f05937cd216a",
+      "bytes": 299212,
+      "duration": 2.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "drag",
+      "label": "DRAG",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DRAG1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/drag.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "drink",
+      "label": "DRINK",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/drink.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "duck",
+      "label": "DUCK",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "DUCK2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/duck.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "eat",
+      "label": "EAT",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "EAT1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/eat.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "edit",
+      "label": "EDIT",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "EDIT1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/edit.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "elevator",
+      "label": "ELEVATOR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "ELEVATOR1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/elevator.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "06550312798005042-ELEVATOR.mp4",
+          "participant": "P35",
+          "gloss": "ELEVATOR1",
+          "lexCode": "G_03_036",
+          "split": "test",
+          "sha256": "e9b81347d2d920a2ec2ccde6b5df6f3a4bff301053f521a80f57aef386085849",
+          "duration": 3.01
+        }
+      ],
+      "videoSha256": "5996ab352d3a84c6e57183846bc500ca3ed967a1f5e5875999d13c8ba6bd0ed2",
+      "bytes": 285589,
+      "duration": 3.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "empty",
+      "label": "EMPTY",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "EMPTY2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/empty.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "erupt",
+      "label": "ERUPT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "ERUPT2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/erupt.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "03128949450371188-ERUPT 2.mp4",
+          "participant": "P42",
+          "gloss": "ERUPT2",
+          "lexCode": "K_01_119",
+          "split": "test",
+          "sha256": "1cb174bb6716bf423f121b01de348730d25358cc5b1070cc6c3a8f8a36f65025",
+          "duration": 1.62
+        }
+      ],
+      "videoSha256": "040ff0875e0de015c42848a2b5d6b32c2d8ff37519daa5e07050984756924379",
+      "bytes": 161050,
+      "duration": 1.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "everyone",
+      "label": "EVERYONE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "ALL"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/everyone.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "057126086628274564-ALL.mp4",
+          "participant": "P9",
+          "gloss": "ALL",
+          "lexCode": "C_03_088",
+          "split": "test",
+          "sha256": "e8a83bf94b2f16d5890667426eeb904d9b5da97be6124e469c2869dce7d5cf52",
+          "duration": 3.31
+        }
+      ],
+      "videoSha256": "a0efe1ebeb622e0e417f6a052e5b1d8ee4162130011ee20883c96cd418572739",
+      "bytes": 227385,
+      "duration": 3.3,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "family",
+      "label": "FAMILY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "FAMILY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/family.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "1154667507880407-FAMILY.mp4",
+          "participant": "P22",
+          "gloss": "FAMILY",
+          "lexCode": "C_01_025",
+          "split": "test",
+          "sha256": "2e86d4f068afafb1c856b9ac290129a15cd5f6288710c4526c5be07f4cd253a2",
+          "duration": 1.17
+        }
+      ],
+      "videoSha256": "5b50648e59fe58b8b7e4749f05eab6fa40ec60ab3f88a01da04b96ca89866b01",
+      "bytes": 97040,
+      "duration": 1.17,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "father",
+      "label": "FATHER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "FATHER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/father.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0031311305138936874-FATHER.mp4",
+          "participant": "P17",
+          "gloss": "FATHER",
+          "lexCode": "B_01_077",
+          "split": "test",
+          "sha256": "9ca7e47ca73dbd10bf0ebf3fc89a3165fb45971bd64782af7579f1706a0836f0",
+          "duration": 2.41
+        }
+      ],
+      "videoSha256": "3ae03d28f2a791515ce2067507a8a3c8cb50c6c94a855b182a8baedad7bde7c9",
+      "bytes": 164773,
+      "duration": 2.4,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "fine",
+      "label": "FINE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "FINE1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/fine.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "finish",
+      "label": "FINISH",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/finish.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "fish",
+      "label": "FISH",
+      "recognitionModes": [
+        "category"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/fish.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "float",
+      "label": "FLOAT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "FLOAT1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/float.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "013334161348316442-FLOAT 3.mp4",
+          "participant": "P9",
+          "gloss": "FLOAT1",
+          "lexCode": "K_01_082",
+          "split": "test",
+          "sha256": "009ffdce937b8898ac3bc52cc0229b19487d8ae1949105631a17128ab5a78f84",
+          "duration": 4.27
+        }
+      ],
+      "videoSha256": "d3a5d3498d607c64a8a8ffe701b16de6fa13d8c710c857a90405683a01b84899",
+      "bytes": 275997,
+      "duration": 4.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "food",
+      "label": "FOOD",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/food.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "foreigner",
+      "label": "FOREIGNER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "FOREIGNER1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/foreigner.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "14027199560866777-FOREIGNER.mp4",
+          "participant": "P6",
+          "gloss": "FOREIGNER1",
+          "lexCode": "C_01_077",
+          "split": "test",
+          "sha256": "6e8c8ca07f72c836fc454d0ff400679e330db73ca56f516a68348b9df4cc38f5",
+          "duration": 1.92
+        }
+      ],
+      "videoSha256": "49358387ebe713ce10cbc332759ac17e937bb38e41f6224ce795480aa2ee3238",
+      "bytes": 298865,
+      "duration": 1.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "friend",
+      "label": "FRIEND",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "FRIEND"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/friend.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "004781946295929318-FRIEND.mp4",
+          "participant": "P22",
+          "gloss": "FRIEND",
+          "lexCode": "D_03_010",
+          "split": "test",
+          "sha256": "26e6088d576f2ae4cea16d6ba9feb534c78f03c8934a062c58824d0004a9d7c6",
+          "duration": 1.24
+        }
+      ],
+      "videoSha256": "2485886164dff29d5277f8f06b280c592ef12d42c71e37616e70abb3c2669b40",
+      "bytes": 72119,
+      "duration": 1.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "give",
+      "label": "GIVE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "GIVE"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/give.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "go",
+      "label": "GO",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/go.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "good",
+      "label": "GOOD",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "GOOD"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/good.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "008087702450223277-GOOD.mp4",
+          "participant": "P35",
+          "gloss": "GOOD",
+          "lexCode": "B_01_052",
+          "split": "test",
+          "sha256": "4f2f553af611c1b592d96ab4cef23e60f61a8b54869e751b582fc31faa56ff03",
+          "duration": 1.75
+        }
+      ],
+      "videoSha256": "93107ac56c58b0c068bf99882d3c6953fdae71af5cbf3fd455cc3334a1027c8c",
+      "bytes": 176570,
+      "duration": 1.73,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "good-afternoon",
+      "label": "GOOD AFTERNOON",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "AFTERNOON"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/good-afternoon.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": true,
+      "referenceNote": "Learning sequence: GOOD, then AFTERNOON, joined from two complete isolated recordings; not a continuous phrase performance. The legacy Beginner checkpoint trained GOOD AFTERNOON on AFTERNOON only. Repaired Beginner weights use synthetic joined greeting training; natural continuous full-greeting recognition remains unverified.",
+      "sources": [
+        {
+          "originalFile": "9338005039430839-GOOD.mp4",
+          "participant": "P17",
+          "gloss": "GOOD",
+          "lexCode": "B_01_052",
+          "split": "test",
+          "sha256": "e25d29022930b8865a15422c9837f49822e158251d5f4aec2ac5429ed23bbe93",
+          "duration": 1.79
+        },
+        {
+          "originalFile": "13044495912242726-AFTERNOON.mp4",
+          "participant": "P17",
+          "gloss": "AFTERNOON",
+          "lexCode": "J_01_040",
+          "split": "test",
+          "sha256": "3b77ef166cc9512a264e63f7be8a6bbb3e0a0ce9cd3627379f48604fbbf792e0",
+          "duration": 3.51
+        }
+      ],
+      "videoSha256": "1683f327f3fbd6fd7fd99a9f019a001f0a8347751e164131d0bfb862b9ce5c47",
+      "bytes": 495524,
+      "duration": 5.3,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. Two isolated clips concatenated as an explicitly labelled learning sequence."
+    },
+    {
+      "id": "good-morning",
+      "label": "GOOD MORNING",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MORNING"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/good-morning.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": true,
+      "referenceNote": "Learning sequence: GOOD, then MORNING, joined from two complete isolated recordings; not a continuous phrase performance. The legacy Beginner checkpoint trained GOOD MORNING on MORNING only. Repaired Beginner weights use synthetic joined greeting training; natural continuous full-greeting recognition remains unverified.",
+      "sources": [
+        {
+          "originalFile": "008087702450223277-GOOD.mp4",
+          "participant": "P35",
+          "gloss": "GOOD",
+          "lexCode": "B_01_052",
+          "split": "test",
+          "sha256": "4f2f553af611c1b592d96ab4cef23e60f61a8b54869e751b582fc31faa56ff03",
+          "duration": 1.75
+        },
+        {
+          "originalFile": "020754426270337634-MORNING.mp4",
+          "participant": "P35",
+          "gloss": "MORNING",
+          "lexCode": "C_02_012",
+          "split": "test",
+          "sha256": "42bc5ef4463cd207b614e4082ca11df50f25a151e39e6bf1ff24e9bf22f44ce2",
+          "duration": 1.79
+        }
+      ],
+      "videoSha256": "fb6350c15e1abf46fdc10a44a843d866b0264ec579a7ccdfef1abe022c8afb27",
+      "bytes": 375075,
+      "duration": 3.5,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. Two isolated clips concatenated as an explicitly labelled learning sequence."
+    },
+    {
+      "id": "good-night",
+      "label": "GOOD NIGHT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "NIGHT1",
+        "NIGHT2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/good-night.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": true,
+      "referenceNote": "Learning sequence: GOOD, then NIGHT, joined from two complete isolated recordings; not a continuous phrase performance. The legacy Beginner checkpoint trained GOOD NIGHT on NIGHT only. Repaired Beginner weights use synthetic joined greeting training; natural continuous full-greeting recognition remains unverified.",
+      "sources": [
+        {
+          "originalFile": "008087702450223277-GOOD.mp4",
+          "participant": "P35",
+          "gloss": "GOOD",
+          "lexCode": "B_01_052",
+          "split": "test",
+          "sha256": "4f2f553af611c1b592d96ab4cef23e60f61a8b54869e751b582fc31faa56ff03",
+          "duration": 1.75
+        },
+        {
+          "originalFile": "06377321204834696-NIGHT.mp4",
+          "participant": "P35",
+          "gloss": "NIGHT1",
+          "lexCode": "A_01_003",
+          "split": "test",
+          "sha256": "c156748c3d0470ac6a293c5e4621bd91d0a29177408cb5423de9afbba48db6de",
+          "duration": 3.37
+        }
+      ],
+      "videoSha256": "748f6fbac9aeb683c53ba5af7d46bae4859bcb261966f4e2ae47caa9e3385b92",
+      "bytes": 482030,
+      "duration": 5.1,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. Two isolated clips concatenated as an explicitly labelled learning sequence."
+    },
+    {
+      "id": "goodbye",
+      "label": "GOODBYE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "BYE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/goodbye.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "17487361670794144-BYE.mp4",
+          "participant": "P17",
+          "gloss": "BYE",
+          "lexCode": "E_01_058",
+          "split": "test",
+          "sha256": "f19b2c0d0c1380fc489ec848e8b2e75a14af6108b0ec5e27250b5768113fb84d",
+          "duration": 1.58
+        }
+      ],
+      "videoSha256": "1f56d491bf8700cb9aacff371305780f93b61e7dd683aa18d73ece60f7b5c38a",
+      "bytes": 99891,
+      "duration": 1.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "grammar",
+      "label": "GRAMMAR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "GRAMMAR"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/grammar.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "00570144917869797-GRAMMAR.mp4",
+          "participant": "P17",
+          "gloss": "GRAMMAR",
+          "lexCode": "J_03_078",
+          "split": "test",
+          "sha256": "b5b90b76382f02f5481a71a58a1cfb2408f5833368cad8aa4e1684d50ca908a7",
+          "duration": 3.04
+        }
+      ],
+      "videoSha256": "1c9f89bc9f033f3cbb79e0147a55a4a85a7d517346e13598e4bbe4885908bb6b",
+      "bytes": 161358,
+      "duration": 3.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "guess",
+      "label": "GUESS",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "GUESS1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/guess.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01603320772096839-GUESS.mp4",
+          "participant": "P42",
+          "gloss": "GUESS1",
+          "lexCode": "D_02_013",
+          "split": "test",
+          "sha256": "2c0e4a55a4ed46fb67f314a41dda995249be375b11544f59644d72306f2c0891",
+          "duration": 2.15
+        }
+      ],
+      "videoSha256": "6793bd57b54e381baaef0957b1200fa7ad6092886d33a2f59e6955dbe8cf30ba",
+      "bytes": 263061,
+      "duration": 2.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "halloween",
+      "label": "HALLOWEEN",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HALLOWEEN1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/halloween.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "21748424536181488-HALLOWEEN.mp4",
+          "participant": "P42",
+          "gloss": "HALLOWEEN1",
+          "lexCode": "G_03_011",
+          "split": "test",
+          "sha256": "04ca178cfb475d28a87939cb13ccf7a1e7470b4d2078b598247cb3f4c8131214",
+          "duration": 2.18
+        }
+      ],
+      "videoSha256": "01852df759e8af47fccdfdcd1e9eb56b1d20a527720d3fe671d53567ad5a052e",
+      "bytes": 214116,
+      "duration": 2.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "happy",
+      "label": "HAPPY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "HAPPY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/happy.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "2216376211975324-HAPPY.mp4",
+          "participant": "P18",
+          "gloss": "HAPPY",
+          "lexCode": "C_03_078",
+          "split": "test",
+          "sha256": "c0e3c06990b49e8819c37587726446bc4ca240b0e47953f669f133fdc7d02124",
+          "duration": 2.9
+        }
+      ],
+      "videoSha256": "9d3cf9f5d1be8e0bd21add32165456d83623c99042de886d192eccca126ce40f",
+      "bytes": 187048,
+      "duration": 2.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "have",
+      "label": "HAVE",
+      "recognitionModes": [
+        "daily"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/have.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "he-she",
+      "label": "HE / SHE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "HE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/he-she.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "45411013228111785-HE.mp4",
+          "participant": "P48",
+          "gloss": "HE",
+          "lexCode": "F_02_044",
+          "split": "test",
+          "sha256": "692c7911c44ff78bc9a3b466d0e31fde792957d21026eb4ad4338643f0e73177",
+          "duration": 1.45
+        }
+      ],
+      "videoSha256": "881d1c0ac92d22dbf94ba3296fe69638ca566dc9119205115dec9f2076e8e901",
+      "bytes": 93507,
+      "duration": 1.4,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "helicopter",
+      "label": "HELICOPTER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HELICOPTER2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/helicopter.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "2664009752010146-HELICOPTER.mp4",
+          "participant": "P48",
+          "gloss": "HELICOPTER2",
+          "lexCode": "D_02_042",
+          "split": "test",
+          "sha256": "647b2b0c20f03badcc8825e036c7689b940e60971c247804c289a5bd86809011",
+          "duration": 2.54
+        }
+      ],
+      "videoSha256": "a8634a7c3bda192d9b7d6bbb7675d31c5ebb1d34a918f629bfba3c66dfc90509",
+      "bytes": 171891,
+      "duration": 2.5,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "hello",
+      "label": "HELLO",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/hello.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "help",
+      "label": "HELP",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "HELP"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/help.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "032534532433647456-HELP.mp4",
+          "participant": "P17",
+          "gloss": "HELP",
+          "lexCode": "D_01_042",
+          "split": "test",
+          "sha256": "6474e013596c609784422c5ac081753ac91ceea716e9e56042d60e0fffc8f4be",
+          "duration": 1.98
+        }
+      ],
+      "videoSha256": "c244edbafe34eddae9563cb5b1a34927c482755c4788ea230b80c62add947313",
+      "bytes": 145559,
+      "duration": 1.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "here",
+      "label": "HERE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "HERE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/here.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0780155917828449-HERE.mp4",
+          "participant": "P22",
+          "gloss": "HERE",
+          "lexCode": "D_01_089",
+          "split": "test",
+          "sha256": "2253f0daa4abfc5a2477060fc18bc998ee7c725cf9a831a80d4084e184a66fff",
+          "duration": 1.22
+        }
+      ],
+      "videoSha256": "5b57fea1a33f4d20e354106ef88c28e8b1e092b9c28ee2f0ec1ee148c8d226f8",
+      "bytes": 111593,
+      "duration": 1.2,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "home",
+      "label": "HOME",
+      "recognitionModes": [
+        "daily"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/home.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "hope",
+      "label": "HOPE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HOPE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/hope.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "25691625323378653-HOPE.mp4",
+          "participant": "P22",
+          "gloss": "HOPE",
+          "lexCode": "D_02_085",
+          "split": "test",
+          "sha256": "8af5a681c03e9418e6002c264a0c988605d8d8f304c419d9874c5c82e48727be",
+          "duration": 1.45
+        }
+      ],
+      "videoSha256": "18495f16df6b256cd1a89829433a2490124ede8cc7633f35431189a4c66c29fa",
+      "bytes": 115180,
+      "duration": 1.43,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "hospital",
+      "label": "HOSPITAL",
+      "recognitionModes": [
+        "beginner",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HOSPITAL1",
+        "HOSPITAL2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/hospital.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0391236078587216-HOSPITAL.mp4",
+          "participant": "P47",
+          "gloss": "HOSPITAL1",
+          "lexCode": "B_02_026",
+          "split": "test",
+          "sha256": "bd83b5e62bd3200981f7bbc84a8df771120ca3e487839e748b2018f6bb604bb4",
+          "duration": 3.11
+        }
+      ],
+      "videoSha256": "d4f4b221d30bb5344d9e97a8fe0d9f5205c740658c4142d25249fa3993694b31",
+      "bytes": 175173,
+      "duration": 3.07,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "how",
+      "label": "HOW",
+      "recognitionModes": [
+        "beginner",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HOW1",
+        "HOW2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/how.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "028264130143242472-HOW.mp4",
+          "participant": "P42",
+          "gloss": "HOW1",
+          "lexCode": "D_02_082",
+          "split": "test",
+          "sha256": "dcc6c2092fea48d45ae2c076942a444d4dc291a8aafd2bbcb75fe3ca8f044dae",
+          "duration": 2.65
+        }
+      ],
+      "videoSha256": "8171a700ca16cf81d78b1f64003fda533ae96275fa10fc65db3142c6db679ea1",
+      "bytes": 149846,
+      "duration": 2.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "hungry",
+      "label": "HUNGRY",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/hungry.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "hurdle-trip",
+      "label": "HURDLE / TRIP",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "HURDLE/TRIP1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/hurdle-trip.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "022655247413304158-HURDLE-TRIP.mp4",
+          "participant": "P18",
+          "gloss": "HURDLE/TRIP1",
+          "lexCode": "G_01_036",
+          "split": "test",
+          "sha256": "58cdea1d63d4be0bd11b1857c6042bf8c1a0b8a5b31dfa1e9a37aa88312f8d88",
+          "duration": 2.97
+        }
+      ],
+      "videoSha256": "ea87ac3839afcb1b5afcfe2102ab549674b06b46dba22c6aed501890794274a4",
+      "bytes": 199801,
+      "duration": 2.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "i-me",
+      "label": "I / ME",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "ME"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/i-me.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "059398641585320267-ME.mp4",
+          "participant": "P47",
+          "gloss": "ME",
+          "lexCode": "B_01_068",
+          "split": "test",
+          "sha256": "504621edd4e5eb0c3f3b8a3a19f9687800de5c49cf3ff3f83e1418eea3376f42",
+          "duration": 2.82
+        }
+      ],
+      "videoSha256": "9435e54dd4f1b0a41ecb1d88382af68f4ee2c68fcd47c400465a06e5dfceb69f",
+      "bytes": 151537,
+      "duration": 2.8,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "impossible",
+      "label": "IMPOSSIBLE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "IMPOSSIBLE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/impossible.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "3427168064450039-IMPOSSIBLE.mp4",
+          "participant": "P22",
+          "gloss": "IMPOSSIBLE",
+          "lexCode": "B_01_032",
+          "split": "test",
+          "sha256": "709d321b50a164d84bf0d46bfd47a1cb8fc375964bab2e33b199c3c861ecc970",
+          "duration": 1.88
+        }
+      ],
+      "videoSha256": "27bd8e45e91b551d2c144b7bf1f19fcd912f743ac8d2ca99cbac11c84b37cd9d",
+      "bytes": 138080,
+      "duration": 1.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "inside",
+      "label": "INSIDE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "IN"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/inside.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07918650930286386-IN.mp4",
+          "participant": "P48",
+          "gloss": "IN",
+          "lexCode": "E_03_062",
+          "split": "test",
+          "sha256": "43d73efbf81b50d20393294536e58b47bfd2aec4a976d5133894d3713a4d9abe",
+          "duration": 2.58
+        }
+      ],
+      "videoSha256": "810069a74c8b2a038cf8538681a573db196ba680dc009b56af2822370fd35d7c",
+      "bytes": 160823,
+      "duration": 2.53,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "intuitive",
+      "label": "INTUITIVE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "INTUITIVE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/intuitive.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "02487817658687752-INTUITIVE.mp4",
+          "participant": "P42",
+          "gloss": "INTUITIVE",
+          "lexCode": "F_01_006",
+          "split": "test",
+          "sha256": "8625a83e974b4ef27744294eaf3eef3717ded5bc941d328fdd1ef2170220ddcd",
+          "duration": 2.37
+        }
+      ],
+      "videoSha256": "83907ebb855857f4bd991de0153cb697b6b2cffda441bcdbf8dd8744ac51d51f",
+      "bytes": 205430,
+      "duration": 2.33,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "jewelry",
+      "label": "JEWELRY",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "JEWELRY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/jewelry.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "20511534492100236-JEWELRY.mp4",
+          "participant": "P49",
+          "gloss": "JEWELRY",
+          "lexCode": "H_03_040",
+          "split": "test",
+          "sha256": "b1f991670ad25fa06f8b58d2940dce98f4bd821bf8e8a0170843c4aa2bbb7cfc",
+          "duration": 2.6
+        }
+      ],
+      "videoSha256": "df60cb340501473ca79e20a063b35ffabe04f99b5e49922ee0a654eb2b890ac0",
+      "bytes": 204135,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "joke",
+      "label": "JOKE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "JOKE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/joke.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "09710120224353314-JOKE.mp4",
+          "participant": "P35",
+          "gloss": "JOKE",
+          "lexCode": "G_03_086",
+          "split": "test",
+          "sha256": "e1a260efa2987d39eee0d632c1ce2de86c3ba6c0ebce7f5b119a5e874e85c4d6",
+          "duration": 2.45
+        }
+      ],
+      "videoSha256": "20c6427fbcfa15af873c77712d4b607d5e269dbfe768560de0153156d1ef4126",
+      "bytes": 230666,
+      "duration": 2.43,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "knight",
+      "label": "KNIGHT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "KNIGHT1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/knight.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "13614436278754405-KNIGHT.mp4",
+          "participant": "P22",
+          "gloss": "KNIGHT1",
+          "lexCode": "H_01_054",
+          "split": "test",
+          "sha256": "b4832d193c585433c2342dcd7e4f0fb17ca6e35047aee278cc912bd87d2df8bc",
+          "duration": 1.58
+        }
+      ],
+      "videoSha256": "f45355eb0a5e7c513a542acc51782ecd994f5da18055d2bac12c9b8d12c17448",
+      "bytes": 148950,
+      "duration": 1.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "know",
+      "label": "KNOW",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "KNOW"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/know.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "08948222222557001-KNOW.mp4",
+          "participant": "P49",
+          "gloss": "KNOW",
+          "lexCode": "C_01_048",
+          "split": "test",
+          "sha256": "7ea4e838e9f5972a79ab27e9dc971657524a55989b0b710cd1f63625e55ee8d7",
+          "duration": 1.71
+        }
+      ],
+      "videoSha256": "311476625c4763e9006ec1da1f99a0e87ade2c947cb1d586db5e5b37184e587a",
+      "bytes": 73489,
+      "duration": 1.67,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "later",
+      "label": "LATER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "LATER"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/later.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "lettuce",
+      "label": "LETTUCE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "LETTUCE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/lettuce.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "035378682535879946-LETTUCE.mp4",
+          "participant": "P6",
+          "gloss": "LETTUCE1",
+          "lexCode": "A_01_083",
+          "split": "test",
+          "sha256": "16d9a13d3d0631e5d96a4e12e74c0e2ada40a6dce9aef4d80009bede8a588c64",
+          "duration": 1.58
+        }
+      ],
+      "videoSha256": "0c000ba6edc7963a3b342f48c6a2ac6e547e8ae3e8b477ba84ea5347a9d88c0b",
+      "bytes": 210026,
+      "duration": 1.53,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "like",
+      "label": "LIKE",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/like.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "lock",
+      "label": "LOCK",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "LOCK1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/lock.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "love",
+      "label": "LOVE",
+      "recognitionModes": [
+        "daily"
+      ],
+      "modelGlosses": [],
+      "kind": "research-local",
+      "video": "media/research-signs/love.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "4243347380620037-LOVE.mp4",
+          "participant": "P15",
+          "gloss": "LOVE",
+          "lexCode": "G_01_068",
+          "split": "test",
+          "sha256": "cb330b06764f076b0550c1e924b11dc1d5e70e1cce3cc1c9f19726420e4129db",
+          "duration": 7.17
+        }
+      ],
+      "videoSha256": "a43b5c3858455cb844b20eb07358d8644c71116ab4d531d4968785e091bbf9bd",
+      "bytes": 396138,
+      "duration": 7.17,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "lunch",
+      "label": "LUNCH",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "LUNCH1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/lunch.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01837811036951953-LUNCH.mp4",
+          "participant": "P42",
+          "gloss": "LUNCH1",
+          "lexCode": "G_02_081",
+          "split": "test",
+          "sha256": "578ba7032b6f89932d51996217260fe0a349f2847b671b49cae894e78fcb1714",
+          "duration": 1.94
+        }
+      ],
+      "videoSha256": "ea313b9b862ff60074754341abd32e0487d4710780bad845af22268d8235bd23",
+      "bytes": 116001,
+      "duration": 1.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "maple",
+      "label": "MAPLE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MAPLE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/maple.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0074991170568861065-MAPLE.mp4",
+          "participant": "P35",
+          "gloss": "MAPLE",
+          "lexCode": "H_03_064",
+          "split": "test",
+          "sha256": "7606af9efae16d59e8a4e5d4ae99c0aef4c3933d6f740014d727eeb76188108c",
+          "duration": 2.11
+        }
+      ],
+      "videoSha256": "faad75b2230444703bca65f947451a463cf629ad646ffc55525f33375ef17c2d",
+      "bytes": 191688,
+      "duration": 2.1,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "meaculpa",
+      "label": "MEACULPA",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MEACULPA"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/meaculpa.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07483084821662134-MEA CULPA.mp4",
+          "participant": "P18",
+          "gloss": "MEACULPA",
+          "lexCode": "K_03_048",
+          "split": "test",
+          "sha256": "caa8a1e7d8d0e62d9cfa0fe92183a865178deb49a06b226aed8a3b259b527785",
+          "duration": 3.05
+        }
+      ],
+      "videoSha256": "86f13b5d9256d5707c0b39b59ec8cb8d473649d622fdd525b66a1e9de356b29e",
+      "bytes": 184040,
+      "duration": 3.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "meat",
+      "label": "MEAT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MEAT1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/meat.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "13232827258182245-MEAT.mp4",
+          "participant": "P42",
+          "gloss": "MEAT1",
+          "lexCode": "D_02_022",
+          "split": "test",
+          "sha256": "e268f03910b4863e5247efb972031478e3514cd3e6f01234f55931c1b7264ee3",
+          "duration": 2.27
+        }
+      ],
+      "videoSha256": "a59600653a79f3525545bc463db51d7e7fc596106d845430737de63de1b0245d",
+      "bytes": 148346,
+      "duration": 2.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "mechanic",
+      "label": "MECHANIC",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MECHANIC1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/mechanic.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "microscope",
+      "label": "MICROSCOPE",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MICROSCOPE1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/microscope.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "milk",
+      "label": "MILK",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MILK1",
+        "MILK2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/milk.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "money",
+      "label": "MONEY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MONEY1",
+        "MONEY2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/money.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "03804573314016535-MONEY.mp4",
+          "participant": "P35",
+          "gloss": "MONEY1",
+          "lexCode": "C_01_042",
+          "split": "test",
+          "sha256": "71864fd7caf54ed81ffc3c9f8df4f66b0fe718377e6daa43fa408505cb7ff6f3",
+          "duration": 1.92
+        }
+      ],
+      "videoSha256": "aedf17baf4cfa63fb52a29289db843bedcf1decd6904f897aafefead54e8a859",
+      "bytes": 198591,
+      "duration": 1.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "morning",
+      "label": "MORNING",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MORNING"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/morning.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "mother",
+      "label": "MOTHER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MOTHER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/mother.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "14661507159729847-MOTHER.mp4",
+          "participant": "P35",
+          "gloss": "MOTHER",
+          "lexCode": "B_02_008",
+          "split": "test",
+          "sha256": "1b29fb6d4b0577652e3eefaf8e3a948683c867050e6e2eecfbfddf879e47bef6",
+          "duration": 1.98
+        }
+      ],
+      "videoSha256": "945e841675b336d26437f51e501a6b390ee3a96669079c76202648f2932154c5",
+      "bytes": 193010,
+      "duration": 1.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "mouth",
+      "label": "MOUTH",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MOUTH"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/mouth.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "11034432898849245-MOUTH.mp4",
+          "participant": "P9",
+          "gloss": "MOUTH",
+          "lexCode": "C_02_087",
+          "split": "test",
+          "sha256": "c88710d208057d07fbb9b7dbb318a85b2dde5cce489f53901089f947afb38c01",
+          "duration": 2.86
+        }
+      ],
+      "videoSha256": "a8dd90cd250272f7674658f820a04c068e0f7841429f83f3d116e80c0fe23ec2",
+      "bytes": 162987,
+      "duration": 2.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "movie",
+      "label": "MOVIE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MOVIE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/movie.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04861503641767739-MOVIE.mp4",
+          "participant": "P6",
+          "gloss": "MOVIE1",
+          "lexCode": "B_03_077",
+          "split": "test",
+          "sha256": "3a84259de308a699e1eeef24719de1945e3339ac2c65a16fd8c96e150ccbb473",
+          "duration": 2.0
+        }
+      ],
+      "videoSha256": "5427b5c1396cb28a6cc026c7540189a8dcffbd6ed883a915c811fe7456cf898a",
+      "bytes": 287761,
+      "duration": 2.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "my-mine",
+      "label": "MY / MINE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "MY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/my-mine.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "02119015136147895-MY.mp4",
+          "participant": "P17",
+          "gloss": "MY",
+          "lexCode": "C_01_060",
+          "split": "test",
+          "sha256": "11a559401d8fc486f26ab5a6640035b5205ab644d549ac6a99cd50e300d51b6e",
+          "duration": 2.56
+        }
+      ],
+      "videoSha256": "8756d4429163845818b6ab3b4675d3ec9da5954d61cf5196f4c69ead434430df",
+      "bytes": 95336,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "myself",
+      "label": "MYSELF",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "MYSELF"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/myself.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0035415552923467875-MYSELF.mp4",
+          "participant": "P47",
+          "gloss": "MYSELF",
+          "lexCode": "D_03_024",
+          "split": "test",
+          "sha256": "838270e1438254f3ccf3999a0688a64732fd9576fbb2f059af3c9e978d60e5d4",
+          "duration": 3.07
+        }
+      ],
+      "videoSha256": "3d26622249136251a9dd0670886473df0f9de043fbf40f9bda3083f76f7aaa15",
+      "bytes": 154907,
+      "duration": 3.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "name",
+      "label": "NAME",
+      "recognitionModes": [
+        "daily"
+      ],
+      "modelGlosses": [],
+      "kind": "research-local",
+      "video": "media/research-signs/name.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "13831972157907857-NAME.mp4",
+          "participant": "P18",
+          "gloss": "NAME",
+          "lexCode": "D_01_021",
+          "split": "test",
+          "sha256": "860af3ba4a400efea0938bef6545014b1ded9b3d0ceee3b32d1f3ae223e4a8dc",
+          "duration": 2.96
+        }
+      ],
+      "videoSha256": "f8da8e312ba0934eb2e95c0c3e49f8545988461330c66c5da4eba52731789ad6",
+      "bytes": 160988,
+      "duration": 2.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "need",
+      "label": "NEED",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "NEED"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/need.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "024661755952086084-NEED.mp4",
+          "participant": "P22",
+          "gloss": "NEED",
+          "lexCode": "C_02_034",
+          "split": "test",
+          "sha256": "c7430e5833e2597badb0e952cb7b2e02e757c84dfda5ef169e9b0f6d878a8b3b",
+          "duration": 1.07
+        }
+      ],
+      "videoSha256": "41e3226b1772a4ae4fa2e36c84dbf77f4f208742cc0e464b8b73164df346bfe4",
+      "bytes": 78208,
+      "duration": 1.07,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "night",
+      "label": "NIGHT",
+      "recognitionModes": [
+        "capstone-full",
+        "category"
+      ],
+      "modelGlosses": [
+        "NIGHT1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/night.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "no",
+      "label": "NO",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/no.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "noon",
+      "label": "NOON",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "NOON1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/noon.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "15252109051698337-NOON.mp4",
+          "participant": "P22",
+          "gloss": "NOON1",
+          "lexCode": "G_02_014",
+          "split": "test",
+          "sha256": "6dc73069f9df5aab6975db101ef5701a202b078b6c15ab2e8f57b7f51efd1e0a",
+          "duration": 1.39
+        }
+      ],
+      "videoSha256": "280d1b3290cde6a1d9c3fd2f7f7ed6ad88ef0fbe76560799265dfa618b174925",
+      "bytes": 98714,
+      "duration": 1.37,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "now",
+      "label": "NOW",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "NOW"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/now.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "offend",
+      "label": "OFFEND",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "OFFEND"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/offend.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "10225292722230295-OFFEND.mp4",
+          "participant": "P17",
+          "gloss": "OFFEND",
+          "lexCode": "D_03_039",
+          "split": "test",
+          "sha256": "5a9ace494d033b8c48d2210a9d795512b98c2821a9c3b4a7ffdc51fe3caa6eff",
+          "duration": 1.98
+        }
+      ],
+      "videoSha256": "38d2a1d77f468cf5618520d0d8b205171aff836541d188ad8c6aa48b279ffb76",
+      "bytes": 91068,
+      "duration": 1.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "okay",
+      "label": "OKAY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "OK"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/okay.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "017520927484665938-OK.mp4",
+          "participant": "P18",
+          "gloss": "OK",
+          "lexCode": "F_03_080",
+          "split": "test",
+          "sha256": "be1b1e1366f856dbf1ac513e1359ce1293952e2f4bcf0033642f995fefeadff1",
+          "duration": 3.22
+        }
+      ],
+      "videoSha256": "a21f008302515fed61c2a3f77307fe764d39f1955fff32db9b9ad8775fe67584",
+      "bytes": 208256,
+      "duration": 3.2,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "other",
+      "label": "OTHER",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "OTHER"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/other.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "outside",
+      "label": "OUTSIDE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "OUTSIDE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/outside.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "02332021183512567-OUTSIDE.mp4",
+          "participant": "P35",
+          "gloss": "OUTSIDE",
+          "lexCode": "E_03_071",
+          "split": "test",
+          "sha256": "d2e01983d5aff9c7b383a40e08a6d245334aba821e54af2d3884f14451d226d0",
+          "duration": 2.13
+        }
+      ],
+      "videoSha256": "bfee478b9dc8db7c3c8a6eaa9f3063dd30b5cacbb923bd8ee16896292406d8ff",
+      "bytes": 235795,
+      "duration": 2.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "pain",
+      "label": "PAIN",
+      "recognitionModes": [
+        "category"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/pain.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "party",
+      "label": "PARTY",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PARTY1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/party.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "patient",
+      "label": "PATIENT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PATIENT2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/patient.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07616529311429576-PATIENT 2.mp4",
+          "participant": "P18",
+          "gloss": "PATIENT2",
+          "lexCode": "B_01_085",
+          "split": "test",
+          "sha256": "d08189bf00ca21b2727227de2a6da92bb442a97bf4ddba3f013b914adcb810a2",
+          "duration": 2.97
+        }
+      ],
+      "videoSha256": "016b0c2011e6afc8478c93837712b6ffe7e3688ecd95268e3ece1d9e32f840f9",
+      "bytes": 181172,
+      "duration": 2.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "peg",
+      "label": "PEG",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PEG2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/peg.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "phone",
+      "label": "PHONE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "PHONE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/phone.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "20216167051822387-PHONE.mp4",
+          "participant": "P17",
+          "gloss": "PHONE",
+          "lexCode": "A_02_040",
+          "split": "test",
+          "sha256": "e9c0e30b947ad871a13b39fffa587034f467dd70e3f2a90bd05fe25a3823ee18",
+          "duration": 2.28
+        }
+      ],
+      "videoSha256": "ac01dbc5c9529581a6bba040308b0f17b1791ada5caf52e616dbe5dac6e4b3c7",
+      "bytes": 141312,
+      "duration": 2.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "pipe",
+      "label": "PIPE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PIPE2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/pipe.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0020412835964394027-PIPE 2.mp4",
+          "participant": "P22",
+          "gloss": "PIPE2",
+          "lexCode": "K_02_018",
+          "split": "test",
+          "sha256": "29394e13c28a9e89c22c3c82b506ee875e5f01698b1768063ba8d38281d0cfaf",
+          "duration": 1.47
+        }
+      ],
+      "videoSha256": "5d9770d662e9f34d21275660c6d2be625ffa344596b502c8f879ef979fe3b0fd",
+      "bytes": 76952,
+      "duration": 1.47,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "please",
+      "label": "PLEASE",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/please.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "ponder",
+      "label": "PONDER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PONDER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/ponder.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07652904644501302-PONDER.mp4",
+          "participant": "P35",
+          "gloss": "PONDER",
+          "lexCode": "H_01_043",
+          "split": "test",
+          "sha256": "df876b9c38c4603726cbd661086ce8e5e33024411b7a9e862ce06e3fdc0965a3",
+          "duration": 2.58
+        }
+      ],
+      "videoSha256": "7be807e911193b6d443a1dd315374ebee0db12d541b3d03bae27fc5b08ae3241",
+      "bytes": 242517,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "press",
+      "label": "PRESS",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "PRESS"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/press.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "12064504298065826-PRESS.mp4",
+          "participant": "P42",
+          "gloss": "PRESS",
+          "lexCode": "H_03_006",
+          "split": "test",
+          "sha256": "ef040e5db9c314661e43e8dc9b2c3b47f75c93ffcb4c0365d23ad6f07e12a2d9",
+          "duration": 1.58
+        }
+      ],
+      "videoSha256": "bcce751cb6c5a7f8f898333f040e73463776170ec073bd3df6dbe4157909d106",
+      "bytes": 104663,
+      "duration": 1.53,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "razor",
+      "label": "RAZOR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "RAZOR2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/razor.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "011997498786849192-RAZOR 2.mp4",
+          "participant": "P17",
+          "gloss": "RAZOR2",
+          "lexCode": "K_03_103",
+          "split": "test",
+          "sha256": "b2f3e3b82b76291e0da06a6ab05867fa18e2f6c469b01ebebd465d5dd989bc98",
+          "duration": 2.39
+        }
+      ],
+      "videoSha256": "1e626a8d9d6a29852c93f631ba37f16caa7abe93248b0513d30232510d67ffff",
+      "bytes": 226465,
+      "duration": 2.37,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "river",
+      "label": "RIVER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "RIVER1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/river.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01393636751769689-RIVER.mp4",
+          "participant": "P6",
+          "gloss": "RIVER1",
+          "lexCode": "A_03_035",
+          "split": "test",
+          "sha256": "37cb78fba3530f47cd52c958919772ed6704efd3856325557af3708889f0e23b",
+          "duration": 2.39
+        }
+      ],
+      "videoSha256": "f034eb2fe72601652dd67db8af11b51c3eddf20e6d3bfabc1d7d489a5e538567",
+      "bytes": 336217,
+      "duration": 2.33,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "rockingchair",
+      "label": "ROCKINGCHAIR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "ROCKINGCHAIR1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/rockingchair.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0023118276702314144-ROCKING CHAIR.mp4",
+          "participant": "P42",
+          "gloss": "ROCKINGCHAIR1",
+          "lexCode": "G_01_010",
+          "split": "test",
+          "sha256": "3ffbc4f117d77df85f8fb846dfc33cc4f5edca4c9fb3bea850ab02f44041aef1",
+          "duration": 3.2
+        }
+      ],
+      "videoSha256": "e9961a4fa1466b18038f9b9c10df97c38cd88a647083f1bbcc017652b73bf3e1",
+      "bytes": 270841,
+      "duration": 3.2,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "run",
+      "label": "RUN",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "RUN1",
+        "RUN2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/run.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "03287490532540471-RUN.mp4",
+          "participant": "P9",
+          "gloss": "RUN1",
+          "lexCode": "B_03_015",
+          "split": "test",
+          "sha256": "bc1c3287cece5b2ae95d033900fb9d8be85973557dfa57491e9acb7f65439b1f",
+          "duration": 3.88
+        }
+      ],
+      "videoSha256": "e95d301bc8c32ad7856067ffbd055315e2776dcbab217088c9ef4b6718234ef6",
+      "bytes": 369572,
+      "duration": 3.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sad",
+      "label": "SAD",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SAD"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sad.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "06695172262113935-SAD.mp4",
+          "participant": "P42",
+          "gloss": "SAD",
+          "lexCode": "B_02_053",
+          "split": "test",
+          "sha256": "1babfcb618584fb6bebe811880ea0f630d68d6b8553e9c2f6ed61fa27a33c8fd",
+          "duration": 2.01
+        }
+      ],
+      "videoSha256": "c6ebe8078aa0caf57e377618706149a7c1eedd2ddac0d3c4bdf7e0e561099a93",
+      "bytes": 155849,
+      "duration": 1.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "scared",
+      "label": "SCARED",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SCARED"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/scared.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04837809908712787-SCARED.mp4",
+          "participant": "P22",
+          "gloss": "SCARED",
+          "lexCode": "B_03_079",
+          "split": "test",
+          "sha256": "81c741dee668c0dc7c8137e3837b2802a4a7fa65f538658374b722ff4fb30894",
+          "duration": 1.3
+        }
+      ],
+      "videoSha256": "816bfb70c447b949184d46c0107fe09300775a30552076fad47db1ca71616475",
+      "bytes": 108066,
+      "duration": 1.3,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "school",
+      "label": "SCHOOL",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SCHOOL"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/school.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "22884594515032175-SCHOOL.mp4",
+          "participant": "P18",
+          "gloss": "SCHOOL",
+          "lexCode": "C_03_089",
+          "split": "test",
+          "sha256": "13d7842860d035a15e7da96902678ebe09edaee14fb95a896aaecd1f8e0771ea",
+          "duration": 2.84
+        }
+      ],
+      "videoSha256": "3d2b197bb8a6597ae86ec1f579c316770b001c37469cd187f2561da0bb28bdef",
+      "bytes": 176860,
+      "duration": 2.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "scrolldown",
+      "label": "SCROLLDOWN",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SCROLLDOWN"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/scrolldown.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "008024082130591692-SCROLL DOWN.mp4",
+          "participant": "P17",
+          "gloss": "SCROLLDOWN",
+          "lexCode": "C_03_084",
+          "split": "test",
+          "sha256": "c1e2d75fa7f1c5a8405b838aaad96bcb9d205fecd15e2da072c694525a5f42d1",
+          "duration": 1.66
+        }
+      ],
+      "videoSha256": "0e571d048cca06af45e16169fcf2feff72fc123560cf83d166e590b0df11b196",
+      "bytes": 119726,
+      "duration": 1.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "see",
+      "label": "SEE",
+      "recognitionModes": [
+        "category"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/see.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "shark",
+      "label": "SHARK",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SHARK1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/shark.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "134446803251959-SHARK 2.mp4",
+          "participant": "P22",
+          "gloss": "SHARK1",
+          "lexCode": "E_02_071",
+          "split": "test",
+          "sha256": "67b0c34518b870733e2336618d6cb8d275ade515689d1e41c68a1856ca83d914",
+          "duration": 2.24
+        }
+      ],
+      "videoSha256": "b66030e17dabf61d83d7eecb28538f9e5a7100c65138a57e1d34db22f58861c4",
+      "bytes": 182398,
+      "duration": 2.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "shave",
+      "label": "SHAVE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SHAVE1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/shave.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "09709454810039175-SHAVE.mp4",
+          "participant": "P17",
+          "gloss": "SHAVE1",
+          "lexCode": "J_02_018",
+          "split": "test",
+          "sha256": "dbbde5b9ed04fdfc7150e2a3b68b88bae9c1742169719f09125a505aec6ff449",
+          "duration": 2.47
+        }
+      ],
+      "videoSha256": "e761d254b9d64a0537d2bf64e684e41e47e8b391b171a18dd56e0bff0d342267",
+      "bytes": 218737,
+      "duration": 2.43,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "shocked",
+      "label": "SHOCKED",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SHOCKED"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/shocked.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0659852923794384-SHOCKED.mp4",
+          "participant": "P18",
+          "gloss": "SHOCKED",
+          "lexCode": "D_01_023",
+          "split": "test",
+          "sha256": "69e3934fdf4a2dbfaf8a4b40bc868b91743bd77dcac98f70b1d7cbebb85b9b43",
+          "duration": 2.62
+        }
+      ],
+      "videoSha256": "92b63b937ae35cc733607805bf0e4bef327f88fe7c741553b52746d1dd5cf331",
+      "bytes": 160435,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sick",
+      "label": "SICK",
+      "recognitionModes": [
+        "category"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/sick.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "since",
+      "label": "SINCE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SINCE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/since.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "18500697735101967-SINCE.mp4",
+          "participant": "P42",
+          "gloss": "SINCE",
+          "lexCode": "D_03_014",
+          "split": "test",
+          "sha256": "c365c67e1e9e2b9f7f217a1d01d777082bd915c7a2d4c5bb0bda19b017cf4e13",
+          "duration": 1.62
+        }
+      ],
+      "videoSha256": "be1f2199ff3a235f24cd721cc8d784d891ec5d2da9536ca65bbbe69232e4f70c",
+      "bytes": 135446,
+      "duration": 1.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sink",
+      "label": "SINK",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SINK"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sink.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "013933028993222907-SINK.mp4",
+          "participant": "P42",
+          "gloss": "SINK",
+          "lexCode": "E_02_042",
+          "split": "test",
+          "sha256": "6f0ba012192a05c4b89b636d8f4bdfea59c54f6a607fe81e4ab4f4e3a56dfcd0",
+          "duration": 2.58
+        }
+      ],
+      "videoSha256": "06b4d60dbdfbb01eeb1bc2385d576f4e390254eb45d530c6238cc76cbe9fdba4",
+      "bytes": 220327,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sister",
+      "label": "SISTER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SISTER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sister.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04329248585848222-SISTER.mp4",
+          "participant": "P17",
+          "gloss": "SISTER",
+          "lexCode": "D_03_050",
+          "split": "test",
+          "sha256": "7b6a1a3cf61a041a3889c4551ecc2fefc11e6484024d72289eb1a51b6a14a843",
+          "duration": 1.92
+        }
+      ],
+      "videoSha256": "32e09e932ec34f1c7e06fc0917cb1bce236f3cb8b747d747e8962a29ce5472ac",
+      "bytes": 148147,
+      "duration": 1.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sit",
+      "label": "SIT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SIT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sit.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "028329913000411988-SIT.mp4",
+          "participant": "P35",
+          "gloss": "SIT",
+          "lexCode": "D_03_034",
+          "split": "test",
+          "sha256": "67cb25322556825c02ff8b583eb59cd3f243ce68ce6d813898bb7e53a855ab92",
+          "duration": 1.98
+        }
+      ],
+      "videoSha256": "43b4e14079304d1cc13ec6db3f3f7b3c8385e1e2ca90279cb9e5a606aa31adaa",
+      "bytes": 187224,
+      "duration": 1.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sleep",
+      "label": "SLEEP",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SLEEP"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sleep.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "00792407895198255-SLEEP.mp4",
+          "participant": "P6",
+          "gloss": "SLEEP",
+          "lexCode": "B_03_037",
+          "split": "test",
+          "sha256": "a5dfddcea1f745d3b48973ca2b10a2c3260213fb963b52d21ecc0d2412aefb4b",
+          "duration": 2.15
+        }
+      ],
+      "videoSha256": "248c7aec220e0be977531dae0075a19d9b813466a8c214549c1b42d47eb345a6",
+      "bytes": 255974,
+      "duration": 2.1,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "slide",
+      "label": "SLIDE",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SLIDE2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/slide.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "16803050280980258-SLIDE 2.mp4",
+          "participant": "P49",
+          "gloss": "SLIDE2",
+          "lexCode": "K_01_058",
+          "split": "test",
+          "sha256": "3041063261ee1ff9b521164ca04bbf843121c629129dd9f766daa96b00fb9947",
+          "duration": 2.88
+        }
+      ],
+      "videoSha256": "ed56ab6fd5092df8114bd701709d3cc789225dd2837890cc94e6da96ca239ae2",
+      "bytes": 135567,
+      "duration": 2.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "soccer",
+      "label": "SOCCER",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SOCCER2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/soccer.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "sorry",
+      "label": "SORRY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SORRY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sorry.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "010369524824967558-SORRY.mp4",
+          "participant": "P22",
+          "gloss": "SORRY",
+          "lexCode": "C_01_020",
+          "split": "test",
+          "sha256": "4b81ccfa5a89732a21f3c3e93f9b1e702a663350c29e42b2a70da70edc02c7f2",
+          "duration": 1.41
+        }
+      ],
+      "videoSha256": "023e23ea31229c14eb0ccc396982ac4d232a1d061c0d34a6873ad38a51fd7434",
+      "bytes": 88775,
+      "duration": 1.4,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "squeeze",
+      "label": "SQUEEZE",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SQUEEZE"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/squeeze.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "stand",
+      "label": "STAND",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "STAND1",
+        "STAND2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/stand.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07108530183173056-STAND 2.mp4",
+          "participant": "P15",
+          "gloss": "STAND1",
+          "lexCode": "K_02_081",
+          "split": "test",
+          "sha256": "72397521feead977d29d32c7443620081d17e7fb31d5ff8a28934351e3072a50",
+          "duration": 3.01
+        }
+      ],
+      "videoSha256": "eb4d1ece7eba0dd547d01068bb5e8e83d365479e18c17f69d0862b082dc37fb4",
+      "bytes": 174577,
+      "duration": 3.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "stop",
+      "label": "STOP",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "STOP"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/stop.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "19109474570600948-STOP.mp4",
+          "participant": "P48",
+          "gloss": "STOP",
+          "lexCode": "D_01_010",
+          "split": "test",
+          "sha256": "dd04b5b0ae98db9f82a0a1f808a9824f003b1dea85d09de9d933386001223ecb",
+          "duration": 2.92
+        }
+      ],
+      "videoSha256": "b625488b01530bc62992b8e98b566e8bda4332e7b85120be6b97507145f47351",
+      "bytes": 179966,
+      "duration": 2.9,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "store",
+      "label": "STORE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "SHOP1",
+        "SHOP2"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/store.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "student",
+      "label": "STUDENT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "STUDENT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/student.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "14161156056091984-STUDENT.mp4",
+          "participant": "P42",
+          "gloss": "STUDENT",
+          "lexCode": "A_02_012",
+          "split": "test",
+          "sha256": "4a3dacf8486a5a7db0b956769c50a16c0ef7e3463c4eb685590099971c72852c",
+          "duration": 2.84
+        }
+      ],
+      "videoSha256": "33c169255dde73e12758ab04a082db615e3c80c45c59e56906ae6bc1aed09280",
+      "bytes": 164986,
+      "duration": 2.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "sweater",
+      "label": "SWEATER",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "SWEATER2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/sweater.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "20025869087956027-SWEATER 2.mp4",
+          "participant": "P47",
+          "gloss": "SWEATER2",
+          "lexCode": "K_01_008",
+          "split": "test",
+          "sha256": "b597f1ef01184fd0620ec3a29365a3efab0e9afb7928dc26b1f8965911b6b7cb",
+          "duration": 3.07
+        }
+      ],
+      "videoSha256": "9ee7d5694eb60143e07cfe55a0da44bbee3c5df216651195e445e4511de06461",
+      "bytes": 191778,
+      "duration": 3.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "tail",
+      "label": "TAIL",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "TAIL1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/tail.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "013266005229871869-TAIL.mp4",
+          "participant": "P35",
+          "gloss": "TAIL1",
+          "lexCode": "D_01_083",
+          "split": "test",
+          "sha256": "1c1815851b7ea6ff0be8a9d59881e037cdb9bad74e41ad788b4d2404ee451984",
+          "duration": 3.31
+        }
+      ],
+      "videoSha256": "c50b3ebfe358ec94b421b1ee35f5104cd7734e9d3b5802b20aec88811dcf3d69",
+      "bytes": 357254,
+      "duration": 3.3,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "take",
+      "label": "TAKE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TAKE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/take.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "35777208522732096-TAKE.mp4",
+          "participant": "P18",
+          "gloss": "TAKE",
+          "lexCode": "G_01_093",
+          "split": "test",
+          "sha256": "f264c6710a39d3240c4a009be582131b6a79da7fb5e5f8001af659a1e90a2064",
+          "duration": 2.69
+        }
+      ],
+      "videoSha256": "79aeebe783d0f763f4fd3dbaa844fc0a7be4d9b4c7a4c4503226fd916207d460",
+      "bytes": 169428,
+      "duration": 2.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "teach",
+      "label": "TEACH",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "TEACH1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/teach.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04628430080673662-TEACH.mp4",
+          "participant": "P48",
+          "gloss": "TEACH1",
+          "lexCode": "D_02_052",
+          "split": "test",
+          "sha256": "6c579fa784b51d56f5922b67b66f1de753c7731de26d7469c2796ab91d9b270f",
+          "duration": 2.62
+        }
+      ],
+      "videoSha256": "3b7fa592c607262447501eb81ad8000bcafeda345adb27c41a9d825937fc15f5",
+      "bytes": 184578,
+      "duration": 2.6,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "teacher",
+      "label": "TEACHER",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TEACHER"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/teacher.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "2654690281835197-TEACHER.mp4",
+          "participant": "P22",
+          "gloss": "TEACHER",
+          "lexCode": "A_02_033",
+          "split": "test",
+          "sha256": "eb8bd8710f3ea4611baadf7a64c5afb10997cdb115def8d328de7e13f6bb132d",
+          "duration": 1.64
+        }
+      ],
+      "videoSha256": "5b048267c510110062744d4d3aa9e719230754b235e4ec013292bee37bfdd725",
+      "bytes": 138051,
+      "duration": 1.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "thank-you",
+      "label": "THANK YOU",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/thank-you.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "that",
+      "label": "THAT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "THAT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/that.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04600046798432267-THAT.mp4",
+          "participant": "P18",
+          "gloss": "THAT",
+          "lexCode": "C_03_059",
+          "split": "test",
+          "sha256": "146fcc2234010d84c1dbba8c7393c3e23717f9fec602b9066f2a49480f1f69b1",
+          "duration": 2.56
+        }
+      ],
+      "videoSha256": "2c3e9c2b15d85e6b05f0c42baa65290db0f66636b875266145a67e5472577609",
+      "bytes": 136988,
+      "duration": 2.57,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "there",
+      "label": "THERE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "THERE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/there.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07615241285210428-THERE.mp4",
+          "participant": "P48",
+          "gloss": "THERE",
+          "lexCode": "D_02_060",
+          "split": "test",
+          "sha256": "4b8119294e3ed3eabaf3ba5f2a621b6ba58552041227491204aae33a8692a845",
+          "duration": 2.28
+        }
+      ],
+      "videoSha256": "15464dc24b845212f0451d7cfff3ef6cf63e47013f673867698b96ce04501f66",
+      "bytes": 135930,
+      "duration": 2.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "they",
+      "label": "THEY",
+      "recognitionModes": [
+        "beginner",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "THEY1",
+        "THEY2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/they.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "2008258349616816-THEY.mp4",
+          "participant": "P49",
+          "gloss": "THEY1",
+          "lexCode": "F_02_103",
+          "split": "test",
+          "sha256": "a12496adcd4846b0cd3bdd292e8a483b17216f3a76a3407d5bd0779eeaf18b3d",
+          "duration": 1.9
+        }
+      ],
+      "videoSha256": "db498f5da947894d328d6fd8c5024a9568b8dc9f1c4eaef17fabc2624f96767f",
+      "bytes": 94308,
+      "duration": 1.87,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "third",
+      "label": "THIRD",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "THIRD1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/third.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01699135237473781-THIRD.mp4",
+          "participant": "P42",
+          "gloss": "THIRD1",
+          "lexCode": "F_02_088",
+          "split": "test",
+          "sha256": "010d502f636220ff72db8273c955f7ed1450df641a03efe22f22c22b298a628a",
+          "duration": 1.17
+        }
+      ],
+      "videoSha256": "7d84dab28bed4e330c5f2f9fbf3fc4e08f820bcd5d57d4c5176111c50f38e7ab",
+      "bytes": 74021,
+      "duration": 1.13,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "thirsty",
+      "label": "THIRSTY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "THIRSTY"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/thirsty.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "this",
+      "label": "THIS",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "THIS/IT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/this.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "2923760506314963-THIS-IT.mp4",
+          "participant": "P18",
+          "gloss": "THIS/IT",
+          "lexCode": "F_01_035",
+          "split": "test",
+          "sha256": "1bcd88e005fc1f477634b6df9e14563d5eaf9a123d8c566ae44c95532596679c",
+          "duration": 2.82
+        }
+      ],
+      "videoSha256": "e9d76ecdff5063929b169898486cfd13c5ef98f5614d34d08ca259a80501c5ad",
+      "bytes": 186086,
+      "duration": 2.8,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "time",
+      "label": "TIME",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TIME"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/time.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "020186094005305577-TIME.mp4",
+          "participant": "P35",
+          "gloss": "TIME",
+          "lexCode": "B_02_080",
+          "split": "test",
+          "sha256": "8e68495d855382774ea9cd9476025c7ea5427be03c74f34125d107c2865f8c66",
+          "duration": 3.5
+        }
+      ],
+      "videoSha256": "9499456bba3ccc0d6aac29ed8a5dece9bed0c205bb95dc012560e8fd5c996a43",
+      "bytes": 352682,
+      "duration": 3.47,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "tired",
+      "label": "TIRED",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TIRED"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/tired.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "021082697826027008-TIRED.mp4",
+          "participant": "P15",
+          "gloss": "TIRED",
+          "lexCode": "D_02_050",
+          "split": "test",
+          "sha256": "e7208ce7540fb3df2d13fc15f16ea5c5f27f78ebebfa79486c6a47449f7b665c",
+          "duration": 2.54
+        }
+      ],
+      "videoSha256": "6d604e7e6ad895894e86bcc704b451b7fc512ffd0fde7ae0f6ff01eadd91f283",
+      "bytes": 133564,
+      "duration": 2.53,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "today",
+      "label": "TODAY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TODAY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/today.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "023092294723956464-TODAY.mp4",
+          "participant": "P18",
+          "gloss": "TODAY",
+          "lexCode": "E_02_006",
+          "split": "test",
+          "sha256": "584ee26ee0f1fca52964d4765f950cc7db1264849cca9d322314f525f03444aa",
+          "duration": 2.67
+        }
+      ],
+      "videoSha256": "7e20e25e34bde435df0bf1a6f7538f878cc2da8157e9373a9d06fd19e51c8337",
+      "bytes": 163943,
+      "duration": 2.63,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "tomato",
+      "label": "TOMATO",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "TOMATO"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/tomato.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "13119239361145696-TOMATO.mp4",
+          "participant": "P42",
+          "gloss": "TOMATO",
+          "lexCode": "D_02_087",
+          "split": "test",
+          "sha256": "b27a0fb9fdbd0046dc261a47633ad868bec76a0438495d65f6168f7de50c1218",
+          "duration": 1.54
+        }
+      ],
+      "videoSha256": "c71b2a8d36037253b91b4fabdd9c806f96a8ac073be71d1b51310394bc8bb299",
+      "bytes": 118883,
+      "duration": 1.5,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "tomorrow",
+      "label": "TOMORROW",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "TOMORROW"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/tomorrow.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "tractor",
+      "label": "TRACTOR",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "TRACTOR"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/tractor.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "11843427047965793-TRACTOR.mp4",
+          "participant": "P9",
+          "gloss": "TRACTOR",
+          "lexCode": "H_01_042",
+          "split": "test",
+          "sha256": "ed0aedadf311f96921b29b43fb724f5829d2f8e6af4d4b79b79383042649e262",
+          "duration": 3.2
+        }
+      ],
+      "videoSha256": "189f0a3f3acf684940a68bbbb39c2f643e7b261ae1650cdb19a184ecceb83b68",
+      "bytes": 218831,
+      "duration": 3.2,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "twins",
+      "label": "TWINS",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "TWINS1"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/twins.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "017044489448413414-TWINS.mp4",
+          "participant": "P18",
+          "gloss": "TWINS1",
+          "lexCode": "F_01_032",
+          "split": "test",
+          "sha256": "10cb22b8c543fea7cf8a28b552a9c5aacda0d3a7095f1440246e1d6683d2a0a4",
+          "duration": 2.84
+        }
+      ],
+      "videoSha256": "134540b534d6d6f52021c7e153a939536b391640659578d02338c605636605ad",
+      "bytes": 173768,
+      "duration": 2.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "vlog",
+      "label": "VLOG",
+      "recognitionModes": [
+        "capstone-core",
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "VLOG"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/vlog.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "vomit",
+      "label": "VOMIT",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "VOMIT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/vomit.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "15840591490010225-VOMIT.mp4",
+          "participant": "P15",
+          "gloss": "VOMIT",
+          "lexCode": "D_02_072",
+          "split": "test",
+          "sha256": "0666c6f9a8686a63ea9244af9d089ba37b0aa822690843352f6e7ff910272eef",
+          "duration": 5.45
+        }
+      ],
+      "videoSha256": "a598a00d8e60c89a3377ea9e90f00605c55ec9630eb0482f5b0302ed6bb09105",
+      "bytes": 364166,
+      "duration": 5.43,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "wait",
+      "label": "WAIT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WAIT"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/wait.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "3372774069388451-WAIT.mp4",
+          "participant": "P22",
+          "gloss": "WAIT",
+          "lexCode": "B_02_016",
+          "split": "test",
+          "sha256": "c2c15f2a832181a2a9f6ca411298c8689ecc49c47b03ab242c96cb6a82249b4c",
+          "duration": 1.0
+        }
+      ],
+      "videoSha256": "68b3613a967a99072eab8828a9caf6e4f907f61dc81e36d2b3abf23f8c8b2604",
+      "bytes": 84832,
+      "duration": 1.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "wake-up",
+      "label": "WAKE UP",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "AWAKE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/wake-up.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "04772367660699772-AWAKE.mp4",
+          "participant": "P15",
+          "gloss": "AWAKE",
+          "lexCode": "G_01_078",
+          "split": "test",
+          "sha256": "57cbec3566ec2b41290f4892f84a1f4d0747f77e969195a01089fc643961ed7c",
+          "duration": 6.1
+        }
+      ],
+      "videoSha256": "8390100692147398ddef996bb999b407bc90ca532d0ac98f12e2d98437c0a85b",
+      "bytes": 387676,
+      "duration": 6.1,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "walk",
+      "label": "WALK",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WALK1",
+        "WALK2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/walk.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "023435914846653638-WALK.mp4",
+          "participant": "P18",
+          "gloss": "WALK1",
+          "lexCode": "D_02_057",
+          "split": "test",
+          "sha256": "087bbaa0e76e9f8e5f5641ea05cdac5046c2d69bd048d0484d63ac97103a5113",
+          "duration": 3.09
+        }
+      ],
+      "videoSha256": "8167d754904ba688a0fd989e625d11a257cb4153144cdf9565f0d957254759cc",
+      "bytes": 214590,
+      "duration": 3.03,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "walk-tightrope-cl",
+      "label": "WALK TIGHTROPE CL",
+      "recognitionModes": [
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "WALK-TIGHTROPE-CL"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/walk-tightrope-cl.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01782035114094338-WALK-TIGHTROPE-CL.mp4",
+          "participant": "P49",
+          "gloss": "WALK-TIGHTROPE-CL",
+          "lexCode": "K_01_024",
+          "split": "test",
+          "sha256": "03d3628182c9a14ca4528612b00cd1d4d849c0b162c7bf854dcaed0f70fb03ed",
+          "duration": 3.67
+        }
+      ],
+      "videoSha256": "8d05f2730e6957462bebdcb3418ab77616cebbc5bcef520a8820033e714879bd",
+      "bytes": 163740,
+      "duration": 3.67,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "want",
+      "label": "WANT",
+      "recognitionModes": [
+        "daily"
+      ],
+      "modelGlosses": [],
+      "kind": "research-local",
+      "video": "media/research-signs/want.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "03439441385308273-WANT 2.mp4",
+          "participant": "P15",
+          "gloss": "WANT1",
+          "lexCode": "E_01_025",
+          "split": "test",
+          "sha256": "cf12dae0f9948f8479cf225190d6969f3b82594b6df7df11fe8438040cb471b6",
+          "duration": 2.75
+        }
+      ],
+      "videoSha256": "0927e9308240365d1146879b25e1dff304219185e838245861153348cb91adb4",
+      "bytes": 161423,
+      "duration": 2.73,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "water",
+      "label": "WATER",
+      "recognitionModes": [
+        "extra"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/water.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "we",
+      "label": "WE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/we.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "08935802292404782-WE.mp4",
+          "participant": "P22",
+          "gloss": "WE",
+          "lexCode": "G_03_019",
+          "split": "test",
+          "sha256": "eb28070e26e2dba0b235e4791511cce8be8175666c6519a63fd3d723ae4fdf93",
+          "duration": 1.24
+        }
+      ],
+      "videoSha256": "3c78671280a12f5c8d2427db82aff9a4072911d3ac2eaa44ee49917601f0a512",
+      "bytes": 95972,
+      "duration": 1.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "welcome",
+      "label": "WELCOME",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WELCOME1",
+        "WELCOME2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/welcome.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "1971210113174584-WELCOME 2.mp4",
+          "participant": "P47",
+          "gloss": "WELCOME1",
+          "lexCode": "NA",
+          "split": "test",
+          "sha256": "0e04beae56131dd1eb11061913252f6c5151f580651bc7f7c245a9115681fc19",
+          "duration": 3.24
+        }
+      ],
+      "videoSha256": "eecaf4cdfbf874007ca6eb7b9e702667cf015295e764700e06082fa456f3a6fc",
+      "bytes": 154103,
+      "duration": 3.2,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "what",
+      "label": "WHAT",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHAT1",
+        "WHAT2"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/what.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "0902884729181257-WHAT 2.mp4",
+          "participant": "P49",
+          "gloss": "WHAT1",
+          "lexCode": "D_02_094",
+          "split": "test",
+          "sha256": "606978c9ada41927aeadd9023805b6aee2bd483b93b264e8820ef102bd458234",
+          "duration": 2.01
+        }
+      ],
+      "videoSha256": "37c26b9d0811127fd2d7cb9ed7f126d03c66edb4892967b246be3d8076ec71d2",
+      "bytes": 108626,
+      "duration": 2.0,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "whatfor",
+      "label": "WHATFOR",
+      "recognitionModes": [
+        "capstone-extended",
+        "capstone-full"
+      ],
+      "modelGlosses": [
+        "WHATFOR1"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/whatfor.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "when",
+      "label": "WHEN",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHEN"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/when.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "05635557714446593-WHEN.mp4",
+          "participant": "P47",
+          "gloss": "WHEN",
+          "lexCode": "C_03_086",
+          "split": "test",
+          "sha256": "ac689949cd1a21505ae6624d28d887873a47cc3eee9929ff348090c091dac1cc",
+          "duration": 3.29
+        }
+      ],
+      "videoSha256": "24f6702c1a9f80b07f6243a6d34ca145733e31e2261a61a61e1b839d64b4c2d2",
+      "bytes": 202641,
+      "duration": 3.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "where",
+      "label": "WHERE",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHERE"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/where.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "03717365663139738-WHERE.mp4",
+          "participant": "P17",
+          "gloss": "WHERE",
+          "lexCode": "B_02_035",
+          "split": "test",
+          "sha256": "0df8e703732509bca20e187f7ef40fed0ce66499edf137599e261ed03e5c148e",
+          "duration": 1.94
+        }
+      ],
+      "videoSha256": "a6ae666ff2367615356662ec1c4f04f527a8a7447bcd60aaede14a00c2dd3356",
+      "bytes": 127524,
+      "duration": 1.93,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "which",
+      "label": "WHICH",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHICH"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/which.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "030872070886360792-WHICH.mp4",
+          "participant": "P15",
+          "gloss": "WHICH",
+          "lexCode": "B_01_088",
+          "split": "test",
+          "sha256": "fce52eb00f11490472aab763019cec173539ba326ea71b6b1114f903647dfb4f",
+          "duration": 2.99
+        }
+      ],
+      "videoSha256": "b2c201bc454e1149eb5276b3b2c5f75b52436054aae1076fdafda8fceea1d381",
+      "bytes": 184712,
+      "duration": 2.97,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "who",
+      "label": "WHO",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHO"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/who.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "042301515237099796-WHO.mp4",
+          "participant": "P18",
+          "gloss": "WHO",
+          "lexCode": "C_01_041",
+          "split": "test",
+          "sha256": "3bb7b065b710e212e06ec38a9ef0da4fca0c9df79c5495dcecd583fa06719239",
+          "duration": 2.3
+        }
+      ],
+      "videoSha256": "2274761273ed5df6b725d752b046afa7aeca2119f3c741d085e124a6c4783b79",
+      "bytes": 144893,
+      "duration": 2.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "why",
+      "label": "WHY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WHY"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/why.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "015395985479345287-WHY.mp4",
+          "participant": "P22",
+          "gloss": "WHY",
+          "lexCode": "D_01_067",
+          "split": "test",
+          "sha256": "3b5cc7e595ed335e666c643a0926e4d0ac92c2a70234a13594409beca69f4421",
+          "duration": 1.28
+        }
+      ],
+      "videoSha256": "e76b6855cc8294fa2b4cb68a40980b10688d5643c4d3db66ea31545f72923ecf",
+      "bytes": 85623,
+      "duration": 1.27,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "work",
+      "label": "WORK",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "WORK"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/work.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "07008493867456478-WORK.mp4",
+          "participant": "P6",
+          "gloss": "WORK",
+          "lexCode": "B_03_059",
+          "split": "test",
+          "sha256": "878229d9ed55f7a3caecc37a02d5e68cbab0887e44c272e3d1cafa833c7eba88",
+          "duration": 1.88
+        }
+      ],
+      "videoSha256": "23706378804e882581d34b4b5d48165487626e5261b81d9edd36e8d85749c459",
+      "bytes": 265510,
+      "duration": 1.83,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "yes",
+      "label": "YES",
+      "recognitionModes": [
+        "default"
+      ],
+      "modelGlosses": [],
+      "kind": "existing-local",
+      "video": "media/signs/yes.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "yesterday",
+      "label": "YESTERDAY",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "YESTERDAY"
+      ],
+      "kind": "existing-local",
+      "video": "media/signs/yesterday.mp4",
+      "referenceOnly": false,
+      "localResearchOnly": false
+    },
+    {
+      "id": "you",
+      "label": "YOU",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "YOU"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/you.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "01653635897919692-YOU.mp4",
+          "participant": "P47",
+          "gloss": "YOU",
+          "lexCode": "D_02_065",
+          "split": "test",
+          "sha256": "a2da856402f3495b729e8a10f1f6cce549c4133ff23fea506b7a5d0471a6d1b8",
+          "duration": 3.41
+        }
+      ],
+      "videoSha256": "23a11fbee4ce54fd1fa79006aeaee73c1557e890aa6b33c542be4e5b1a031515",
+      "bytes": 188275,
+      "duration": 3.37,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    },
+    {
+      "id": "your-yours",
+      "label": "YOUR / YOURS",
+      "recognitionModes": [
+        "beginner"
+      ],
+      "modelGlosses": [
+        "YOUR"
+      ],
+      "kind": "research-local",
+      "video": "media/research-signs/your-yours.mp4",
+      "referenceOnly": true,
+      "localResearchOnly": true,
+      "sequence": false,
+      "referenceNote": "Isolated ASL Citizen reference matched to the model's dataset gloss. Sign variants and context may differ.",
+      "sources": [
+        {
+          "originalFile": "217732808571379-YOUR.mp4",
+          "participant": "P22",
+          "gloss": "YOUR",
+          "lexCode": "F_01_052",
+          "split": "test",
+          "sha256": "be9337bd36c8604b68a1c579b9eee19c269263f45c66e9dd7db83d56d6f01842",
+          "duration": 1.24
+        }
+      ],
+      "videoSha256": "69b42d02acb595c5cac92df7acb727698003ea267fbe0f630218b92079b6ac85",
+      "bytes": 94979,
+      "duration": 1.23,
+      "changes": "Audio removed; complete source motion retained without trimming; fit/padded to 640×480, 30 fps, H.264/yuv420p with faststart. No phrase synthesis."
+    }
+  ]
+}

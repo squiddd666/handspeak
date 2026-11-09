@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "scope": "One normal-speed primary Watch & Learn reference-clip attempt per recognition label through the unmodified capture and model prediction paths. Not held-out or live-user accuracy.",
+  "sourceReport": "reports/motion-virtual-camera-20261106/baseline-all-198.json",
+  "sourceReportSha256": "03cba56d6342b5e65dace37a8dabcbff8132a5fa5bd46402def203596276ff6a",
+  "startedAt": "2026-11-06T11:22:05.666Z",
+  "finishedAt": "2026-11-06T15:49:56.793Z",
+  "indexSha256": "99bd8dc2dc08499bf6f0f4fd4cf5def993854638f5bd28f27555d51239a1116c",
+  "bootstrapSha256": "1149cd6b4ebf8d31f6cc11f90cc4358181c7c4d891041390709e070fc29cd1a1",
+  "labelsTested": 198,
+  "matched": 69,
+  "wrongPrediction": 23,
+  "noMatch": 106,
+  "matchedPercent": 34.8,
+  "insufficientTrackingMisses": 79,
+  "warmupsExcluded": 2,
+  "completeClipPlayback": 189,
+  "isolation": {
+    "host": "127.0.0.1",
+    "storage": "in-memory only",
+    "realCameraCalls": 0,
+    "microphoneCalls": 0,
+    "getUserMediaCalls": 2
+  },
+  "geometry": {
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "fit": "contain/letterbox",
+    "cropping": false,
+    "pixelFlip": false
+  },
+  "models": {
+    "beginner": {
+      "tested": 76,
+      "no match": 60,
+      "matched": 15,
+      "wrong prediction": 1
+    },
+    "capstone/core": {
+      "tested": 7,
+      "no match": 4,
+      "matched": 3
+    },
+    "capstone/extended": {
+      "tested": 12,
+      "matched": 9,
+      "no match": 3
+    },
+    "capstone/full": {
+      "tested": 79,
+      "no match": 37,
+      "matched": 26,
+      "wrong prediction": 16
+    },
+    "daily-manual": {
+      "tested": 5,
+      "matched": 3,
+      "no match": 1,
+      "wrong prediction": 1
+    },
+    "motion-manual": {
+      "tested": 19,
+      "matched": 13,
+      "wrong prediction": 5,
+      "no match": 1
+    }
+  },
+  "limitations": [
+    "Reference clips are examples, not an independent test set. Some may overlap model inputs.",
+    "A fixed application recording window can cut off longer clips; incomplete playback is reported, not silently excluded.",
+    "Browser/hand-and-body tracking speed and sign variants can cause short clips to miss the tracking gate.",
+    "Core/extended gates and the Beginner gate can refuse predictions; all refusals remain in the denominator.",
+    "All 198 labels having archived recorded scores does not mean all 198 are verified-ready or active in one model.",
+    "Post-fix camera-badge regressions are saved separately; they never replace this baseline or archived benchmark counts."
+  ],
+  "cameraBadgeChecks": [
+    {
+      "expectedWord": "8HOUR",
+      "actualPrediction": "SOCCER2",
+      "stage": "slow retry",
+      "expectedProfile": "capstoneFull",
+      "visible": true,
+      "text": "Recorded accuracy: 72.7% (8/11 clips) \u00b7 Full 100-word ST-GCN ensemble \u00b7 recorded benchmark",
+      "scope": "Held-out recorded test clips, full 100-word vocabulary and mirror averaging. All reported attempts are counted; clips without sufficient tracking count as misses. This is not the gated core/extended benchmark or live-camera accuracy. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    },
+    {
+      "expectedWord": "I / ME",
+      "actualPrediction": "I / ME",
+      "stage": "baseline 1\u00d7",
+      "expectedProfile": "beginner",
+      "visible": true,
+      "text": "Recorded accuracy: 63.6% (7/11 clips) \u00b7 Beginner-79 ST-GCN need79-v1 \u00b7 recorded benchmark",
+      "scope": "Held-out extracted landmark clips for the selected 79-label checkpoint. These scores do not measure a physical live camera; live-camera accuracy remains unverified. Greeting labels are component tests, not complete phrase tests. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    },
+    {
+      "expectedWord": "HELLO",
+      "actualPrediction": "FINISH",
+      "stage": "baseline 1\u00d7",
+      "expectedProfile": "default",
+      "visible": true,
+      "text": "Recorded accuracy: 58.3% (7/12 clips) \u00b7 Default six-word model with per-word distance cutoffs",
+      "scope": "Recorded clips sampled contiguously as the live camera pipeline does; per-word cutoffs calibrated on validation only. Live-camera accuracy unverified. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    },
+    {
+      "expectedWord": "NAME",
+      "actualPrediction": "NAME",
+      "stage": "baseline 1\u00d7",
+      "expectedProfile": "daily",
+      "visible": true,
+      "text": "Recorded accuracy: 72.7% (8/11 clips) \u00b7 Five-word server preview",
+      "scope": "Held-out recorded clips sampled contiguously over the signing window (as the live pipeline captures) with per-word distance cutoffs calibrated on validation only; 3/48 unsupported signs falsely accepted. Live-camera accuracy unverified. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    },
+    {
+      "expectedWord": "SEE",
+      "actualPrediction": "SEE",
+      "stage": "baseline 1\u00d7",
+      "expectedProfile": "active category pack",
+      "visible": true,
+      "text": "Recorded accuracy: 100% (3/3 clips) \u00b7 Pack words (DTW) preview",
+      "scope": "Fresh recorded clips; live-camera accuracy unverified. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    },
+    {
+      "expectedWord": "PEG",
+      "actualPrediction": "PEG2",
+      "stage": "baseline 1\u00d7",
+      "expectedProfile": "capstoneCore",
+      "visible": true,
+      "text": "Recorded accuracy: 87.5% (7/8 clips) \u00b7 Core 7-word ST-GCN \u00b7 recorded benchmark",
+      "scope": "Existing core 7-word benchmark on tracked/answered recorded test clips; tracking failures are not in this legacy denominator. Live-camera accuracy is unverified. Accuracy on recorded test clips, not confidence in this camera match. Live-camera accuracy is unverified."
+    }
+  ],
+  "watchLearnUI": {
+    "url": "http://127.0.0.1:8000/#sign-examples",
+    "videoCoverage": "198/198 recognition labels have reference videos available here \u00b7 147 local research clips added. Recognition models remain separate; all 198 cannot be active as one vocabulary.",
+    "scoreCoverage": "198 of 198 recognition labels have recorded test results. Separate-model benchmarks, not live-camera accuracy.",
+    "recognitionButtons": 198,
+    "unmeasured": [],
+    "camera": "\u25c9 Start camera"
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "audit": {
+    "featureSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+    "initialCheckpoint": "models\\beginner-repaired-v1.pt",
+    "initialCheckpointSha256": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+    "trainingSplit": "train",
+    "selectionSplit": "val",
+    "testUsedForSelection": false,
+    "watchClipsUsedForTrainingOrCalibration": false,
+    "trainAttempts": 1567,
+    "trainUsable": 1396,
+    "trainCounts": {
+      "AFTER": 13,
+      "ANGRY": 10,
+      "BAD": 8,
+      "BAG": 13,
+      "BATHROOM": 11,
+      "BEFORE": 10,
+      "BREAD": 11,
+      "BROTHER": 128,
+      "CHILD": 10,
+      "CLOTHES": 10,
+      "COME": 6,
+      "EVERYONE": 104,
+      "FAMILY": 12,
+      "FATHER": 11,
+      "FRIEND": 12,
+      "GIVE": 8,
+      "GOOD": 11,
+      "GOOD AFTERNOON": 13,
+      "GOOD MORNING": 12,
+      "GOOD NIGHT": 14,
+      "GOODBYE": 11,
+      "HAPPY": 13,
+      "HE / SHE": 10,
+      "HELP": 9,
+      "HERE": 10,
+      "HOSPITAL": 14,
+      "HOW": 12,
+      "I / ME": 5,
+      "INSIDE": 11,
+      "KNOW": 8,
+      "LATER": 13,
+      "MILK": 13,
+      "MONEY": 28,
+      "MORNING": 12,
+      "MOTHER": 9,
+      "MY / MINE": 8,
+      "NEED": 10,
+      "NOW": 11,
+      "OKAY": 11,
+      "OUTSIDE": 12,
+      "PHONE": 8,
+      "RUN": 26,
+      "SAD": 9,
+      "SCARED": 9,
+      "SCHOOL": 116,
+      "SISTER": 93,
+      "SIT": 7,
+      "SLEEP": 9,
+      "SORRY": 11,
+      "STAND": 22,
+      "STOP": 9,
+      "STORE": 12,
+      "STUDENT": 9,
+      "TAKE": 12,
+      "TEACHER": 10,
+      "THAT": 10,
+      "THERE": 12,
+      "THEY": 23,
+      "THIRSTY": 9,
+      "THIS": 12,
+      "TIME": 13,
+      "TIRED": 9,
+      "TODAY": 13,
+      "TOMORROW": 12,
+      "WAIT": 10,
+      "WAKE UP": 9,
+      "WALK": 10,
+      "WE": 103,
+      "WELCOME": 13,
+      "WHAT": 26,
+      "WHEN": 11,
+      "WHERE": 11,
+      "WHICH": 11,
+      "WHO": 7,
+      "WHY": 10,
+      "WORK": 12,
+      "YESTERDAY": 12,
+      "YOU": 9,
+      "YOUR / YOURS": 10
+    },
+    "valAttempts": 296,
+    "valTracked": 267,
+    "syntheticTrainGreetings": 39,
+    "syntheticValGreetings": 13,
+    "initialLabelMapping": [
+      {
+        "target": "GOODBYE",
+        "source": "GOODBYE"
+      },
+      {
+        "target": "SORRY",
+        "source": "SORRY"
+      },
+      {
+        "target": "OKAY",
+        "source": "OKAY"
+      },
+      {
+        "target": "WELCOME",
+        "source": "WELCOME"
+      },
+      {
+        "target": "GOOD MORNING",
+        "source": "GOOD MORNING"
+      },
+      {
+        "target": "GOOD AFTERNOON",
+        "source": "GOOD AFTERNOON"
+      },
+      {
+        "target": "GOOD NIGHT",
+        "source": "GOOD NIGHT"
+      },
+      {
+        "target": "HOW",
+        "source": "HOW"
+      },
+      {
+        "target": "WHAT",
+        "source": "WHAT"
+      },
+      {
+        "target": "WHO",
+        "source": "WHO"
+      },
+      {
+        "target": "WHERE",
+        "source": "WHERE"
+      },
+      {
+        "target": "WHEN",
+        "source": "WHEN"
+      },
+      {
+        "target": "WHY",
+        "source": "WHY"
+      },
+      {
+        "target": "WHICH",
+        "source": "WHICH"
+      },
+      {
+        "target": "I / ME",
+        "source": "I / ME"
+      },
+      {
+        "target": "YOU",
+        "source": "YOU"
+      },
+      {
+        "target": "HE / SHE",
+        "source": "HE / SHE"
+      },
+      {
+        "target": "WE",
+        "source": "WE"
+      },
+      {
+        "target": "THEY",
+        "source": "THEY"
+      },
+      {
+        "target": "MY / MINE",
+        "source": "MY / MINE"
+      },
+      {
+        "target": "YOUR / YOURS",
+        "source": "YOUR / YOURS"
+      },
+      {
+        "target": "THIS",
+        "source": "THIS"
+      },
+      {
+        "target": "THAT",
+        "source": "THAT"
+      },
+      {
+        "target": "EVERYONE",
+        "source": "EVERYONE"
+      },
+      {
+        "target": "MOTHER",
+        "source": "MOTHER"
+      },
+      {
+        "target": "FATHER",
+        "source": "FATHER"
+      },
+      {
+        "target": "BROTHER",
+        "source": "BROTHER"
+      },
+      {
+        "target": "SISTER",
+        "source": "SISTER"
+      },
+      {
+        "target": "CHILD",
+        "source": "CHILD"
+      },
+      {
+        "target": "FRIEND",
+        "source": "FRIEND"
+      },
+      {
+        "target": "TEACHER",
+        "source": "TEACHER"
+      },
+      {
+        "target": "STUDENT",
+        "source": "STUDENT"
+      },
+      {
+        "target": "FAMILY",
+        "source": "FAMILY"
+      },
+      {
+        "target": "SLEEP",
+        "source": "SLEEP"
+      },
+      {
+        "target": "WAKE UP",
+        "source": "WAKE UP"
+      },
+      {
+        "target": "WALK",
+        "source": "WALK"
+      },
+      {
+        "target": "RUN",
+        "source": "RUN"
+      },
+      {
+        "target": "SIT",
+        "source": "SIT"
+      },
+      {
+        "target": "STAND",
+        "source": "STAND"
+      },
+      {
+        "target": "COME",
+        "source": "COME"
+      },
+      {
+        "target": "HELP",
+        "source": "HELP"
+      },
+      {
+        "target": "STOP",
+        "source": "STOP"
+      },
+      {
+        "target": "WAIT",
+        "source": "WAIT"
+      },
+      {
+        "target": "GIVE",
+        "source": "GIVE"
+      },
+      {
+        "target": "TAKE",
+        "source": "TAKE"
+      },
+      {
+        "target": "NEED",
+        "source": "NEED"
+      },
+      {
+        "target": "KNOW",
+        "source": "KNOW"
+      },
+      {
+        "target": "HAPPY",
+        "source": "HAPPY"
+      },
+      {
+        "target": "SAD",
+        "source": "SAD"
+      },
+      {
+        "target": "ANGRY",
+        "source": "ANGRY"
+      },
+      {
+        "target": "SCARED",
+        "source": "SCARED"
+      },
+      {
+        "target": "TIRED",
+        "source": "TIRED"
+      },
+      {
+        "target": "THIRSTY",
+        "source": "THIRSTY"
+      },
+      {
+        "target": "GOOD",
+        "source": "GOOD"
+      },
+      {
+        "target": "BAD",
+        "source": "BAD"
+      },
+      {
+        "target": "SCHOOL",
+        "source": "SCHOOL"
+      },
+      {
+        "target": "HOSPITAL",
+        "source": "HOSPITAL"
+      },
+      {
+        "target": "STORE",
+        "source": "STORE"
+      },
+      {
+        "target": "BATHROOM",
+        "source": "BATHROOM"
+      },
+      {
+        "target": "WORK",
+        "source": "WORK"
+      },
+      {
+        "target": "HERE",
+        "source": "HERE"
+      },
+      {
+        "target": "THERE",
+        "source": "THERE"
+      },
+      {
+        "target": "INSIDE",
+        "source": "INSIDE"
+      },
+      {
+        "target": "OUTSIDE",
+        "source": "OUTSIDE"
+      },
+      {
+        "target": "TODAY",
+        "source": "TODAY"
+      },
+      {
+        "target": "TOMORROW",
+        "source": "TOMORROW"
+      },
+      {
+        "target": "YESTERDAY",
+        "source": "YESTERDAY"
+      },
+      {
+        "target": "NOW",
+        "source": "NOW"
+      },
+      {
+        "target": "LATER",
+        "source": "LATER"
+      },
+      {
+        "target": "MORNING",
+        "source": "MORNING"
+      },
+      {
+        "target": "TIME",
+        "source": "TIME"
+      },
+      {
+        "target": "BEFORE",
+        "source": "BEFORE"
+      },
+      {
+        "target": "AFTER",
+        "source": "AFTER"
+      },
+      {
+        "target": "MILK",
+        "source": "MILK"
+      },
+      {
+        "target": "BREAD",
+        "source": "BREAD"
+      },
+      {
+        "target": "MONEY",
+        "source": "MONEY"
+      },
+      {
+        "target": "PHONE",
+        "source": "PHONE"
+      },
+      {
+        "target": "CLOTHES",
+        "source": "CLOTHES"
+      },
+      {
+        "target": "BAG",
+        "source": "BAG"
+      }
+    ],
+    "greetingScope": "Synthetic joined isolated components; natural continuous greetings are not verified.",
+    "seed": 17,
+    "epochsRequested": 10,
+    "aspectJitter": 0.35,
+    "preprocessorVersion": "masked-v2",
+    "mirrorVersion": "anatomical-v2"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.0789,
+      "valCorrect": 215,
+      "valAttempts": 296,
+      "valAccuracy": 0.726351,
+      "valMacroAccuracy": 0.734147,
+      "seconds": 99.0,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0691,
+      "valCorrect": 217,
+      "valAttempts": 296,
+      "valAccuracy": 0.733108,
+      "valMacroAccuracy": 0.741531,
+      "seconds": 93.9,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 1.0242,
+      "valCorrect": 217,
+      "valAttempts": 296,
+      "valAccuracy": 0.733108,
+      "valMacroAccuracy": 0.738065,
+      "seconds": 95.1,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9982,
+      "valCorrect": 222,
+      "valAttempts": 296,
+      "valAccuracy": 0.75,
+      "valMacroAccuracy": 0.757776,
+      "seconds": 83.2,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.9777,
+      "valCorrect": 218,
+      "valAttempts": 296,
+      "valAccuracy": 0.736486,
+      "valMacroAccuracy": 0.744138,
+      "seconds": 79.2,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 0.9584,
+      "valCorrect": 216,
+      "valAttempts": 296,
+      "valAccuracy": 0.72973,
+      "valMacroAccuracy": 0.735624,
+      "seconds": 79.9,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": 0.9843,
+      "valCorrect": 219,
+      "valAttempts": 296,
+      "valAccuracy": 0.739865,
+      "valMacroAccuracy": 0.745118,
+      "seconds": 78.9,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 0.9813,
+      "valCorrect": 218,
+      "valAttempts": 296,
+      "valAccuracy": 0.736486,
+      "valMacroAccuracy": 0.743219,
+      "seconds": 79.0,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 9,
+      "loss": 0.9267,
+      "valCorrect": 222,
+      "valAttempts": 296,
+      "valAccuracy": 0.75,
+      "valMacroAccuracy": 0.753556,
+      "seconds": 78.8,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "epoch": 10,
+      "loss": 0.9483,
+      "valCorrect": 223,
+      "valAttempts": 296,
+      "valAccuracy": 0.753378,
+      "valMacroAccuracy": 0.758303,
+      "seconds": 78.6,
+      "greetings": {
+        "MORNING": [
+          2,
+          4
+        ],
+        "GOOD MORNING": [
+          2,
+          4
+        ],
+        "GOOD AFTERNOON": [
+          4,
+          4
+        ],
+        "GOOD NIGHT": [
+          4,
+          5
+        ]
+      }
+    }
+  ]
+}

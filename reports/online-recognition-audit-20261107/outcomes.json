@@ -1,0 +1,3042 @@
+[
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0028",
+    "expected": "FOOD",
+    "sourceSha256": "49fcf48899b111eac87f702f53c8c2b50334f019bda90909b53485e2e5a9bb36",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 7,
+    "manualFrames": 7,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0029",
+    "expected": "FOOD",
+    "sourceSha256": "c66a118f26b4cf9d2cf90b4851e025159aba59b5503816d0671315c1c879a02c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "FOOD",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 22,
+    "manualFrames": 31,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0030",
+    "expected": "FOOD",
+    "sourceSha256": "70f9773ca2d0649932c990df597bc3c45449ee83d2939bf0d5ef9e65b3dd394a",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 29,
+    "manualFrames": 30,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0031",
+    "expected": "HUNGRY",
+    "sourceSha256": "e4ed1fa794af9f6764e1143453a2236785d3c5a34fdc7dfa6e7ec1fab9e645ae",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "PLEASE",
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 7,
+    "manualFrames": 6,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0032",
+    "expected": "HUNGRY",
+    "sourceSha256": "5b7bde1620f21e3989412792d0f2a2d0cd22b27c248471420fa00fa17aa8d277",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 23,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0033",
+    "expected": "HUNGRY",
+    "sourceSha256": "b80448661793fbba7ee1db246a1712ec6f22c45107392e94974a5e9909b7cf49",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HUNGRY",
+      "default": "PLEASE",
+      "expanded": "PLEASE",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 13,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0034",
+    "expected": "LIKE",
+    "sourceSha256": "8e55e0c70496952fe1273a76eb4ae1feab4baedffc876daecf8237cdc40a8a37",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 24,
+    "manualFrames": 30,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0035",
+    "expected": "LIKE",
+    "sourceSha256": "83feac4d4afa65f16e71a8267db1348a037a4df839bb917c1e9c372a5d5685f1",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "HUNGRY",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 11,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0036",
+    "expected": "LIKE",
+    "sourceSha256": "583a938375fc00df99998587dd35433beaf8349b238e21803100181517e740ea",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0037",
+    "expected": "GO",
+    "sourceSha256": "c60edb5924c2881680ac233ffee0cfaddf5dab120eeca9d91290feb211039956",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 31,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0038",
+    "expected": "GO",
+    "sourceSha256": "82bc7244252fcf72085d4e9b0adba160a87437c71f1cb292fae3db1f4e2dcca4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 12,
+    "manualFrames": 12,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0039",
+    "expected": "GO",
+    "sourceSha256": "ed8d284b383cac7e8431785d90d61c54c4d277148a12c092475c3658d481a796",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 16,
+    "manualFrames": 18,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-1-online-0064",
+    "expected": "DOG",
+    "sourceSha256": "1cc7c2a900dd36d8c9da721f611d01b7a3ef4e2e249ef4b060d1914003bef9ca",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "NO",
+      "expanded": "NO",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 7,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0001",
+    "expected": "HELLO",
+    "sourceSha256": "7d8599d68171f89150c1b2706956dafb6c4b59bccf020e06beba922251d02a94",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 21,
+    "manualFrames": 22,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0002",
+    "expected": "HELLO",
+    "sourceSha256": "4e887789bcdc6555aa5de1551dcb123daa196dab3e540347de04335cdfd2f9b0",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "HELLO",
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0003",
+    "expected": "HELLO",
+    "sourceSha256": "b753687e38be20a591c5bb63d5ac99691c07fbb3c6f60e4ee0f35fcc2001c698",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "HELLO",
+      "expanded": "HELLO",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 23,
+    "manualFrames": 23,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0004",
+    "expected": "THANK YOU",
+    "sourceSha256": "d038fdfd92b47dd121960923203cdbeee81e2111a64b4a3e4568875a65aed760",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "THANK YOU",
+      "default": null,
+      "expanded": null,
+      "daily": "LOVE",
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 5,
+    "manualFrames": 11,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0005",
+    "expected": "THANK YOU",
+    "sourceSha256": "fd4fc328eb7f3b0e53f1dbcf1e75bb8cf0f526b5990348778fa50d6cdfadbab4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "THANK YOU",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 18,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0006",
+    "expected": "THANK YOU",
+    "sourceSha256": "9cf7e99d74445435882686dda045357f1d30b6fe0e4b44b7c168abe76e92bada",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "THANK YOU",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0007",
+    "expected": "PLEASE",
+    "sourceSha256": "99241ecd8c5dfab72232667815031cdc5938ec41c58f0b22eae25da3d9a38366",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "PLEASE",
+      "default": "PLEASE",
+      "expanded": "PLEASE",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 18,
+    "manualFrames": 17,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0008",
+    "expected": "PLEASE",
+    "sourceSha256": "37eb038a6db7210a6aa04da93aff1b2844b5102583270dc7e49794f5907be59b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "PLEASE",
+      "default": "PLEASE",
+      "expanded": "PLEASE",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 18,
+    "manualFrames": 22,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0009",
+    "expected": "PLEASE",
+    "sourceSha256": "fac63460458c0b686b67285fdaceb763126bbf3a251e4e7ccf9826719eb291f3",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "PLEASE",
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 19,
+    "manualFrames": 17,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0010",
+    "expected": "YES",
+    "sourceSha256": "0a651f33120652604195d0721c77bddc0a319805bfaf75ad744ba0ac681e6002",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 13,
+    "manualFrames": 15,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0011",
+    "expected": "YES",
+    "sourceSha256": "bddcac8153df912050621de3933fe06902af2c37cb68e263eb7bf0e70cf4f1b6",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "YES",
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 11,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0012",
+    "expected": "YES",
+    "sourceSha256": "3e3b34668f3ae19598cbefee66f04857c9d7cef0be86ecc42c243c7c02625578",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0013",
+    "expected": "NO",
+    "sourceSha256": "f11d23d8d55e73aa1765cbaafb4aae5073132e209abe85b67e72975275647fd0",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "NO",
+      "expanded": "NO",
+      "daily": null,
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 12,
+    "manualFrames": 10,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0014",
+    "expected": "NO",
+    "sourceSha256": "7c7672d02f3f89c5126390bbba3d5a6319f61b30fd64bd87874c8368abd0f59a",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 31,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0015",
+    "expected": "NO",
+    "sourceSha256": "fb462b6e1a84621fc9db924858ddf1e297cf87a445823590a1d53b96551475f4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 22,
+    "manualFrames": 21,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0016",
+    "expected": "FINISH",
+    "sourceSha256": "5fdb840a890d35898cb8c1b35373a2129c227035a39ef15ce7e85ad604f311b9",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 23,
+    "manualFrames": 30,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0017",
+    "expected": "FINISH",
+    "sourceSha256": "1b03fbc54930b77a60e9c8c318f594ea56975473353bb8283de340eaa7771740",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "FINISH",
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 16,
+    "manualFrames": 16,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0018",
+    "expected": "FINISH",
+    "sourceSha256": "b82c8b600c9b5442abce4394698e44d1203762896b1f91d40955f46e8bfa27ba",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "FINISH",
+      "expanded": "FINISH",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0019",
+    "expected": "DRINK",
+    "sourceSha256": "9742bca55092c04097c074c0bedcfd1e7f2f5ac318e06a5bc4ea5c7976604133",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 3,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0020",
+    "expected": "DRINK",
+    "sourceSha256": "f1d19bb14bd2c489a405e1929016df3514830622cb2d1117fe54d88560f94883",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "HELLO",
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 11,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0021",
+    "expected": "DRINK",
+    "sourceSha256": "b0e08f4cc77160336bc99c994dd42809f269978db4bb31ff81f43cfa1ddeaa1c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "HELLO",
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 6,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0022",
+    "expected": "WATER",
+    "sourceSha256": "6b358dfaa4de74db889a5d191e0b0637afd03470b289844e390b0eccbe400347",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "FINISH",
+      "expanded": "WATER",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 24,
+    "manualFrames": 25,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0023",
+    "expected": "WATER",
+    "sourceSha256": "a1e5baabd1d9770b5588fff394bb7cd54274f2011f871695742199380ca86176",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "WATER",
+      "default": "HELLO",
+      "expanded": "WATER",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 13,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0024",
+    "expected": "WATER",
+    "sourceSha256": "95df01c40f756a31f60be5f0c177b92a22b0f4eeba998b1fe419d72e0049483e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "WATER",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 23,
+    "manualFrames": 23,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0025",
+    "expected": "BOOK",
+    "sourceSha256": "051c4671234cd524b09e7c7c096775c89c93d82b0f97af2a1a44fb91e2758183",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "BOOK",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 30,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0026",
+    "expected": "BOOK",
+    "sourceSha256": "b2b2aff901d6415175bf23aefce12472bec8dc3a38db7773001047467bb7e794",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 7,
+    "manualFrames": 6,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0027",
+    "expected": "BOOK",
+    "sourceSha256": "721d5203cddc85aa3ed6f25fee2ba6c101c0fe8e68f829bda3b90f3c193f3e32",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "THANK YOU",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 14,
+    "manualFrames": 14,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0028",
+    "expected": "FOOD",
+    "sourceSha256": "1e9237fc39b1a42eceed51c79a0732df37b507f213ad8991658466aff2267a6f",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 12,
+    "manualFrames": 12,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0029",
+    "expected": "FOOD",
+    "sourceSha256": "ccbac35e77baaf7d8271fe968aa98b8c8a7812c9eaeab37e83160fe537db09ed",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "FOOD",
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 13,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0030",
+    "expected": "FOOD",
+    "sourceSha256": "6c983040c01a2f179afea7d102dc3cbf84d01cf87cd67500b7f5672894eea89b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "FOOD",
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0031",
+    "expected": "HUNGRY",
+    "sourceSha256": "5edeaf0216e079c8fe9ecd9ed1666c03d6e20eed2e39aac0fa3171620266127e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 9,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0032",
+    "expected": "HUNGRY",
+    "sourceSha256": "2b31f9f22533796585fd8a0038d13a607ac95076325fc0c706f0afb8d5fc7103",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HUNGRY",
+      "default": "THANK YOU",
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 10,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0033",
+    "expected": "HUNGRY",
+    "sourceSha256": "e932f4a82efe51d47c5aa5fd6469e03230c310154c07260df743993049ade533",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HUNGRY",
+      "default": "THANK YOU",
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 18,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0034",
+    "expected": "LIKE",
+    "sourceSha256": "cc333ccb90acbfea6cfe16cda653c526a7fd3578e1506b7c8bbf4fba2248b99c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "LIKE",
+      "default": "THANK YOU",
+      "expanded": "LIKE",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 8,
+    "manualFrames": 8,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0035",
+    "expected": "LIKE",
+    "sourceSha256": "094ac814e9b20f27e8dd4345fb9c6bef1f17d1c061c49a74c8326af675eb3603",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "GO",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 14,
+    "manualFrames": 17,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0036",
+    "expected": "LIKE",
+    "sourceSha256": "80204eb6c1b3f410e3107f04ffbbc62f834ff198f8163de52536298c23c7d95b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "LIKE",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 14,
+    "manualFrames": 15,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0037",
+    "expected": "GO",
+    "sourceSha256": "d59f4e766218ff6f8ded044c7de3d28157f08701cc6a78ed556ad63057675992",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 12,
+    "manualFrames": 12,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0038",
+    "expected": "GO",
+    "sourceSha256": "a7c86a1180122a0079cf907ffa4ba0b7dcefa8fd5a8e45e2ad81de76ddbf192b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0039",
+    "expected": "GO",
+    "sourceSha256": "be1b9cb2a537a82fb22f67bedd8a4b8d299d8003abf6c5aa5855a5b8281358ec",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "LIKE",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 12,
+    "manualFrames": 17,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0040",
+    "expected": "HOME",
+    "sourceSha256": "05ba89082d890ab4dcba318710a4e82375d4d8409f7c3f76b636f50412116b80",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 10,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0041",
+    "expected": "HOME",
+    "sourceSha256": "062a534b26a856db7777faa7da2f27d071f1ac1b28ec0a708337eb1c3a885a88",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "HELLO",
+      "expanded": "DRINK",
+      "daily": "HOME",
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 9,
+    "manualFrames": 10,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0042",
+    "expected": "HOME",
+    "sourceSha256": "aabfd9961f9366c6854f64da69a5dfcd9beb4119682c9058a293182e32d71ded",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HOME",
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 12,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0043",
+    "expected": "HAVE",
+    "sourceSha256": "5c5a19e30e4f91e606f503316ef6108c41400d3c0275126c0b9828bb4301e39d",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 27,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0044",
+    "expected": "HAVE",
+    "sourceSha256": "2b32bb3d3271a6c8031aa9e1f4c9254a46e7c394892a6f21de503944118b5694",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "FOOD",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 7,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0045",
+    "expected": "HAVE",
+    "sourceSha256": "02c4b37bed5c7f443ec3cdc44e78111f59dd16144d69702a94d345672cc4de16",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "PLEASE",
+      "expanded": "HUNGRY",
+      "daily": null,
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 32,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0046",
+    "expected": "FISH",
+    "sourceSha256": "62aa13c0666048545f0b0aec98756e7e9d218ae78a0a84de0261ee3978a6385b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "LIKE",
+      "daily": "HOME",
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 31,
+    "manualFrames": 32,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0047",
+    "expected": "FISH",
+    "sourceSha256": "3d1cf82bfaf71ac5f6d646f45e11abf30c6b8d3a24338f6cf24c390332f11dad",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "FOOD",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 14,
+    "manualFrames": 14,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0048",
+    "expected": "FISH",
+    "sourceSha256": "8e0fe093c170841e9610ee864a6b4bdac9b37d67cb51b37893a89849109bc61b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "LIKE",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 31,
+    "manualFrames": 31,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0049",
+    "expected": "SEE",
+    "sourceSha256": "437838a37724ad1362818b9dce98e59571b9171fe3949e1f8d814df6974c0f75",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "SEE",
+      "default": null,
+      "expanded": "GO",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 13,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0050",
+    "expected": "SEE",
+    "sourceSha256": "a4ea85bb1152b48e8fd3c308ec863bda24c3e257ea3b6594995b73ec7f2a60c1",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "GO",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 5,
+    "manualFrames": 5,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0051",
+    "expected": "SEE",
+    "sourceSha256": "cb71cb6fac51fcbe3a6981c38a164f140f1c629ed6336927944d29dd2df1b146",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "SEE",
+      "default": null,
+      "expanded": "WATER",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 9,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0052",
+    "expected": "SICK",
+    "sourceSha256": "8ab1aa3e8aa14b81c8561cf58d91a3b312bacb4d8447d4c33f4f06909ae7b23c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 11,
+    "manualFrames": 11,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0053",
+    "expected": "SICK",
+    "sourceSha256": "c94615ca4935035af20d789f74696ec3be7d3070c9b209e45d377e0f2f8d8227",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HOME",
+      "default": null,
+      "expanded": "WATER",
+      "daily": "HOME",
+      "pack": "SICK"
+    },
+    "contractPassed": null,
+    "bodyFrames": 8,
+    "manualFrames": 7,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0054",
+    "expected": "SICK",
+    "sourceSha256": "9d8dc0f1f24be131295e5c62d97a29c99ed5cfc819d361c91f5169fb0696150f",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": "GO",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 9,
+    "manualFrames": 8,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0055",
+    "expected": "NIGHT",
+    "sourceSha256": "09aefb854b2c3b827998cf1e40c62f5050682e308e93763393754656cea93627",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 4,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0056",
+    "expected": "NIGHT",
+    "sourceSha256": "aa2591f9e1dfd9f322b836b79ee2a9f0ac4b731de30a056b9cfc26c90556e9fe",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": null,
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 7,
+    "manualFrames": 5,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0057",
+    "expected": "NIGHT",
+    "sourceSha256": "d7ce2989eb9101b27f3634b271175accbd4f6f73bde282f6cca9d947d938ee84",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "PLEASE",
+      "expanded": "LIKE",
+      "daily": null,
+      "pack": "NIGHT"
+    },
+    "contractPassed": null,
+    "bodyFrames": 18,
+    "manualFrames": 17,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0058",
+    "expected": "APPLE",
+    "sourceSha256": "eee7042aa5855e7987b9eb7f0012dfb9a3148d261dfcb60ec95fb2509785aed8",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 15,
+    "manualFrames": 14,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0059",
+    "expected": "APPLE",
+    "sourceSha256": "f8f5aacab17559e9d11a0db1e3bd2f603037d4352b84b3b7c155576b2c21d08e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": "HOME",
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 5,
+    "manualFrames": 13,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0060",
+    "expected": "APPLE",
+    "sourceSha256": "c69d6c3ac0519fc79eb35b66d52966d38f212da6aa4a0013f90014a22d3e0568",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 29,
+    "manualFrames": 28,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0061",
+    "expected": "CAR",
+    "sourceSha256": "7291d839d1d116913001b58d5c2d9492ca98fe11c7ed2e4c5ab037d4cee556a9",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "DRINK",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": null,
+    "bodyFrames": 22,
+    "manualFrames": 22,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0062",
+    "expected": "CAR",
+    "sourceSha256": "9e7ef15b1fcc8f193de7a017670f933b777a862ae11418e802ae096b58a76b5d",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "YES",
+      "expanded": "YES",
+      "daily": null,
+      "pack": "FISH"
+    },
+    "contractPassed": null,
+    "bodyFrames": 10,
+    "manualFrames": 10,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "native",
+    "file": "batch-2-online-0063",
+    "expected": "CAR",
+    "sourceSha256": "53f130e33ab6b397872b524c72aee93037230d76932ac60b9d7cf4d8bd22c43c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": null,
+    "bodyFrames": 6,
+    "manualFrames": 25,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0028",
+    "expected": "FOOD",
+    "sourceSha256": "49fcf48899b111eac87f702f53c8c2b50334f019bda90909b53485e2e5a9bb36",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0029",
+    "expected": "FOOD",
+    "sourceSha256": "c66a118f26b4cf9d2cf90b4851e025159aba59b5503816d0671315c1c879a02c",
+    "status": "failed",
+    "error": "Body tracker could not warm up. Keep your upper body visible and try again.",
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": false,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0030",
+    "expected": "FOOD",
+    "sourceSha256": "70f9773ca2d0649932c990df597bc3c45449ee83d2939bf0d5ef9e65b3dd394a",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0031",
+    "expected": "HUNGRY",
+    "sourceSha256": "e4ed1fa794af9f6764e1143453a2236785d3c5a34fdc7dfa6e7ec1fab9e645ae",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 2,
+    "manualFrames": 2,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0032",
+    "expected": "HUNGRY",
+    "sourceSha256": "5b7bde1620f21e3989412792d0f2a2d0cd22b27c248471420fa00fa17aa8d277",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0033",
+    "expected": "HUNGRY",
+    "sourceSha256": "b80448661793fbba7ee1db246a1712ec6f22c45107392e94974a5e9909b7cf49",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0034",
+    "expected": "LIKE",
+    "sourceSha256": "8e55e0c70496952fe1273a76eb4ae1feab4baedffc876daecf8237cdc40a8a37",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0035",
+    "expected": "LIKE",
+    "sourceSha256": "83feac4d4afa65f16e71a8267db1348a037a4df839bb917c1e9c372a5d5685f1",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 3,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0036",
+    "expected": "LIKE",
+    "sourceSha256": "583a938375fc00df99998587dd35433beaf8349b238e21803100181517e740ea",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 5,
+    "manualFrames": 5,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0037",
+    "expected": "GO",
+    "sourceSha256": "c60edb5924c2881680ac233ffee0cfaddf5dab120eeca9d91290feb211039956",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0038",
+    "expected": "GO",
+    "sourceSha256": "82bc7244252fcf72085d4e9b0adba160a87437c71f1cb292fae3db1f4e2dcca4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0039",
+    "expected": "GO",
+    "sourceSha256": "ed8d284b383cac7e8431785d90d61c54c4d277148a12c092475c3658d481a796",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-1-online-0064",
+    "expected": "DOG",
+    "sourceSha256": "1cc7c2a900dd36d8c9da721f611d01b7a3ef4e2e249ef4b060d1914003bef9ca",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0001",
+    "expected": "HELLO",
+    "sourceSha256": "7d8599d68171f89150c1b2706956dafb6c4b59bccf020e06beba922251d02a94",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0002",
+    "expected": "HELLO",
+    "sourceSha256": "4e887789bcdc6555aa5de1551dcb123daa196dab3e540347de04335cdfd2f9b0",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 2,
+    "manualFrames": 2,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0003",
+    "expected": "HELLO",
+    "sourceSha256": "b753687e38be20a591c5bb63d5ac99691c07fbb3c6f60e4ee0f35fcc2001c698",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0004",
+    "expected": "THANK YOU",
+    "sourceSha256": "d038fdfd92b47dd121960923203cdbeee81e2111a64b4a3e4568875a65aed760",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0005",
+    "expected": "THANK YOU",
+    "sourceSha256": "fd4fc328eb7f3b0e53f1dbcf1e75bb8cf0f526b5990348778fa50d6cdfadbab4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": "THANK YOU",
+      "expanded": "FOOD",
+      "daily": null,
+      "pack": "SEE"
+    },
+    "contractPassed": true,
+    "bodyFrames": 5,
+    "manualFrames": 6,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0006",
+    "expected": "THANK YOU",
+    "sourceSha256": "9cf7e99d74445435882686dda045357f1d30b6fe0e4b44b7c168abe76e92bada",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0007",
+    "expected": "PLEASE",
+    "sourceSha256": "99241ecd8c5dfab72232667815031cdc5938ec41c58f0b22eae25da3d9a38366",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 2,
+    "manualFrames": 2,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0008",
+    "expected": "PLEASE",
+    "sourceSha256": "37eb038a6db7210a6aa04da93aff1b2844b5102583270dc7e49794f5907be59b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0009",
+    "expected": "PLEASE",
+    "sourceSha256": "fac63460458c0b686b67285fdaceb763126bbf3a251e4e7ccf9826719eb291f3",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0010",
+    "expected": "YES",
+    "sourceSha256": "0a651f33120652604195d0721c77bddc0a319805bfaf75ad744ba0ac681e6002",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 1,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0011",
+    "expected": "YES",
+    "sourceSha256": "bddcac8153df912050621de3933fe06902af2c37cb68e263eb7bf0e70cf4f1b6",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0012",
+    "expected": "YES",
+    "sourceSha256": "3e3b34668f3ae19598cbefee66f04857c9d7cef0be86ecc42c243c7c02625578",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0013",
+    "expected": "NO",
+    "sourceSha256": "f11d23d8d55e73aa1765cbaafb4aae5073132e209abe85b67e72975275647fd0",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0014",
+    "expected": "NO",
+    "sourceSha256": "7c7672d02f3f89c5126390bbba3d5a6319f61b30fd64bd87874c8368abd0f59a",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0015",
+    "expected": "NO",
+    "sourceSha256": "fb462b6e1a84621fc9db924858ddf1e297cf87a445823590a1d53b96551475f4",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 1,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0016",
+    "expected": "FINISH",
+    "sourceSha256": "5fdb840a890d35898cb8c1b35373a2129c227035a39ef15ce7e85ad604f311b9",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0017",
+    "expected": "FINISH",
+    "sourceSha256": "1b03fbc54930b77a60e9c8c318f594ea56975473353bb8283de340eaa7771740",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0018",
+    "expected": "FINISH",
+    "sourceSha256": "b82c8b600c9b5442abce4394698e44d1203762896b1f91d40955f46e8bfa27ba",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0019",
+    "expected": "DRINK",
+    "sourceSha256": "9742bca55092c04097c074c0bedcfd1e7f2f5ac318e06a5bc4ea5c7976604133",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0020",
+    "expected": "DRINK",
+    "sourceSha256": "f1d19bb14bd2c489a405e1929016df3514830622cb2d1117fe54d88560f94883",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 1,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0021",
+    "expected": "DRINK",
+    "sourceSha256": "b0e08f4cc77160336bc99c994dd42809f269978db4bb31ff81f43cfa1ddeaa1c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0022",
+    "expected": "WATER",
+    "sourceSha256": "6b358dfaa4de74db889a5d191e0b0637afd03470b289844e390b0eccbe400347",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0023",
+    "expected": "WATER",
+    "sourceSha256": "a1e5baabd1d9770b5588fff394bb7cd54274f2011f871695742199380ca86176",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0024",
+    "expected": "WATER",
+    "sourceSha256": "95df01c40f756a31f60be5f0c177b92a22b0f4eeba998b1fe419d72e0049483e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0025",
+    "expected": "BOOK",
+    "sourceSha256": "051c4671234cd524b09e7c7c096775c89c93d82b0f97af2a1a44fb91e2758183",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0026",
+    "expected": "BOOK",
+    "sourceSha256": "b2b2aff901d6415175bf23aefce12472bec8dc3a38db7773001047467bb7e794",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0027",
+    "expected": "BOOK",
+    "sourceSha256": "721d5203cddc85aa3ed6f25fee2ba6c101c0fe8e68f829bda3b90f3c193f3e32",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0028",
+    "expected": "FOOD",
+    "sourceSha256": "1e9237fc39b1a42eceed51c79a0732df37b507f213ad8991658466aff2267a6f",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 3,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0029",
+    "expected": "FOOD",
+    "sourceSha256": "ccbac35e77baaf7d8271fe968aa98b8c8a7812c9eaeab37e83160fe537db09ed",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 2,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0030",
+    "expected": "FOOD",
+    "sourceSha256": "6c983040c01a2f179afea7d102dc3cbf84d01cf87cd67500b7f5672894eea89b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0031",
+    "expected": "HUNGRY",
+    "sourceSha256": "5edeaf0216e079c8fe9ecd9ed1666c03d6e20eed2e39aac0fa3171620266127e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0032",
+    "expected": "HUNGRY",
+    "sourceSha256": "2b31f9f22533796585fd8a0038d13a607ac95076325fc0c706f0afb8d5fc7103",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": "HUNGRY",
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 5,
+    "manualFrames": 3,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0033",
+    "expected": "HUNGRY",
+    "sourceSha256": "e932f4a82efe51d47c5aa5fd6469e03230c310154c07260df743993049ade533",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0034",
+    "expected": "LIKE",
+    "sourceSha256": "cc333ccb90acbfea6cfe16cda653c526a7fd3578e1506b7c8bbf4fba2248b99c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0035",
+    "expected": "LIKE",
+    "sourceSha256": "094ac814e9b20f27e8dd4345fb9c6bef1f17d1c061c49a74c8326af675eb3603",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0036",
+    "expected": "LIKE",
+    "sourceSha256": "80204eb6c1b3f410e3107f04ffbbc62f834ff198f8163de52536298c23c7d95b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0037",
+    "expected": "GO",
+    "sourceSha256": "d59f4e766218ff6f8ded044c7de3d28157f08701cc6a78ed556ad63057675992",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0038",
+    "expected": "GO",
+    "sourceSha256": "a7c86a1180122a0079cf907ffa4ba0b7dcefa8fd5a8e45e2ad81de76ddbf192b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 5,
+    "manualFrames": 5,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0039",
+    "expected": "GO",
+    "sourceSha256": "be1b9cb2a537a82fb22f67bedd8a4b8d299d8003abf6c5aa5855a5b8281358ec",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0040",
+    "expected": "HOME",
+    "sourceSha256": "05ba89082d890ab4dcba318710a4e82375d4d8409f7c3f76b636f50412116b80",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0041",
+    "expected": "HOME",
+    "sourceSha256": "062a534b26a856db7777faa7da2f27d071f1ac1b28ec0a708337eb1c3a885a88",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0042",
+    "expected": "HOME",
+    "sourceSha256": "aabfd9961f9366c6854f64da69a5dfcd9beb4119682c9058a293182e32d71ded",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0043",
+    "expected": "HAVE",
+    "sourceSha256": "5c5a19e30e4f91e606f503316ef6108c41400d3c0275126c0b9828bb4301e39d",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0044",
+    "expected": "HAVE",
+    "sourceSha256": "2b32bb3d3271a6c8031aa9e1f4c9254a46e7c394892a6f21de503944118b5694",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0045",
+    "expected": "HAVE",
+    "sourceSha256": "02c4b37bed5c7f443ec3cdc44e78111f59dd16144d69702a94d345672cc4de16",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0046",
+    "expected": "FISH",
+    "sourceSha256": "62aa13c0666048545f0b0aec98756e7e9d218ae78a0a84de0261ee3978a6385b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0047",
+    "expected": "FISH",
+    "sourceSha256": "3d1cf82bfaf71ac5f6d646f45e11abf30c6b8d3a24338f6cf24c390332f11dad",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0048",
+    "expected": "FISH",
+    "sourceSha256": "8e0fe093c170841e9610ee864a6b4bdac9b37d67cb51b37893a89849109bc61b",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 4,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0049",
+    "expected": "SEE",
+    "sourceSha256": "437838a37724ad1362818b9dce98e59571b9171fe3949e1f8d814df6974c0f75",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0050",
+    "expected": "SEE",
+    "sourceSha256": "a4ea85bb1152b48e8fd3c308ec863bda24c3e257ea3b6594995b73ec7f2a60c1",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0051",
+    "expected": "SEE",
+    "sourceSha256": "cb71cb6fac51fcbe3a6981c38a164f140f1c629ed6336927944d29dd2df1b146",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0052",
+    "expected": "SICK",
+    "sourceSha256": "8ab1aa3e8aa14b81c8561cf58d91a3b312bacb4d8447d4c33f4f06909ae7b23c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0053",
+    "expected": "SICK",
+    "sourceSha256": "c94615ca4935035af20d789f74696ec3be7d3070c9b209e45d377e0f2f8d8227",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 2,
+    "manualFrames": 2,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0054",
+    "expected": "SICK",
+    "sourceSha256": "9d8dc0f1f24be131295e5c62d97a29c99ed5cfc819d361c91f5169fb0696150f",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0055",
+    "expected": "NIGHT",
+    "sourceSha256": "09aefb854b2c3b827998cf1e40c62f5050682e308e93763393754656cea93627",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0056",
+    "expected": "NIGHT",
+    "sourceSha256": "aa2591f9e1dfd9f322b836b79ee2a9f0ac4b731de30a056b9cfc26c90556e9fe",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0057",
+    "expected": "NIGHT",
+    "sourceSha256": "d7ce2989eb9101b27f3634b271175accbd4f6f73bde282f6cca9d947d938ee84",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 5,
+    "manualFrames": 6,
+    "candidateTracked": true,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0058",
+    "expected": "APPLE",
+    "sourceSha256": "eee7042aa5855e7987b9eb7f0012dfb9a3148d261dfcb60ec95fb2509785aed8",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0059",
+    "expected": "APPLE",
+    "sourceSha256": "f8f5aacab17559e9d11a0db1e3bd2f603037d4352b84b3b7c155576b2c21d08e",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0060",
+    "expected": "APPLE",
+    "sourceSha256": "c69d6c3ac0519fc79eb35b66d52966d38f212da6aa4a0013f90014a22d3e0568",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0061",
+    "expected": "CAR",
+    "sourceSha256": "7291d839d1d116913001b58d5c2d9492ca98fe11c7ed2e4c5ab037d4cee556a9",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 4,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0062",
+    "expected": "CAR",
+    "sourceSha256": "9e7ef15b1fcc8f193de7a017670f933b777a862ae11418e802ae096b58a76b5d",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 1,
+    "manualFrames": 0,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  },
+  {
+    "pipeline": "browser",
+    "file": "batch-2-online-0063",
+    "expected": "CAR",
+    "sourceSha256": "53f130e33ab6b397872b524c72aee93037230d76932ac60b9d7cf4d8bd22c43c",
+    "status": "complete",
+    "error": null,
+    "predictions": {
+      "candidate": null,
+      "default": null,
+      "expanded": null,
+      "daily": null,
+      "pack": null
+    },
+    "contractPassed": true,
+    "bodyFrames": 0,
+    "manualFrames": 3,
+    "candidateTracked": false,
+    "playbackTruncated": false
+  }
+]

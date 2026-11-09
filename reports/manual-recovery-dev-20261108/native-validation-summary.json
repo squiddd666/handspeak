@@ -1,0 +1,164 @@
+{
+  "modelSha256": "7703f7ef94d5eef1106152884f8c10893de7da196b66b3dc25275f413f3ef034",
+  "comparison": {
+    "default": {
+      "baseline": {
+        "attempts": 29,
+        "correct": 18,
+        "wrong": 2,
+        "noMatch": 9,
+        "negativeAttempts": 199,
+        "negativeFalse": 58,
+        "precision": 0.9,
+        "negativeFalseRate": 0.2914572864321608
+      },
+      "guard": {
+        "attempts": 29,
+        "correct": 18,
+        "wrong": 0,
+        "noMatch": 11,
+        "negativeAttempts": 199,
+        "negativeFalse": 7,
+        "precision": 1.0,
+        "negativeFalseRate": 0.035175879396984924
+      },
+      "recovery": {
+        "attempts": 29,
+        "correct": 21,
+        "wrong": 0,
+        "noMatch": 8,
+        "negativeAttempts": 199,
+        "negativeFalse": 7,
+        "precision": 1.0,
+        "negativeFalseRate": 0.035175879396984924
+      },
+      "eligible": true,
+      "classes": 1,
+      "recoveredNoMatches": 3,
+      "correctedVetoedWords": 0
+    },
+    "expanded": {
+      "baseline": {
+        "attempts": 60,
+        "correct": 35,
+        "wrong": 6,
+        "noMatch": 19,
+        "negativeAttempts": 168,
+        "negativeFalse": 60,
+        "precision": 0.8536585365853658,
+        "negativeFalseRate": 0.35714285714285715
+      },
+      "guard": {
+        "attempts": 60,
+        "correct": 35,
+        "wrong": 0,
+        "noMatch": 25,
+        "negativeAttempts": 168,
+        "negativeFalse": 10,
+        "precision": 1.0,
+        "negativeFalseRate": 0.05952380952380952
+      },
+      "recovery": {
+        "attempts": 60,
+        "correct": 42,
+        "wrong": 0,
+        "noMatch": 18,
+        "negativeAttempts": 168,
+        "negativeFalse": 10,
+        "precision": 1.0,
+        "negativeFalseRate": 0.05952380952380952
+      },
+      "eligible": true,
+      "classes": 2,
+      "recoveredNoMatches": 5,
+      "correctedVetoedWords": 2
+    },
+    "daily": {
+      "baseline": {
+        "attempts": 24,
+        "correct": 16,
+        "wrong": 2,
+        "noMatch": 6,
+        "negativeAttempts": 204,
+        "negativeFalse": 80,
+        "precision": 0.8888888888888888,
+        "negativeFalseRate": 0.39215686274509803
+      },
+      "guard": {
+        "attempts": 24,
+        "correct": 16,
+        "wrong": 0,
+        "noMatch": 8,
+        "negativeAttempts": 204,
+        "negativeFalse": 15,
+        "precision": 1.0,
+        "negativeFalseRate": 0.07352941176470588
+      },
+      "recovery": {
+        "attempts": 24,
+        "correct": 16,
+        "wrong": 0,
+        "noMatch": 8,
+        "negativeAttempts": 204,
+        "negativeFalse": 15,
+        "precision": 1.0,
+        "negativeFalseRate": 0.07352941176470588
+      },
+      "eligible": false,
+      "classes": 0,
+      "recoveredNoMatches": 0,
+      "correctedVetoedWords": 0
+    },
+    "pack": {
+      "baseline": {
+        "attempts": 23,
+        "correct": 22,
+        "wrong": 1,
+        "noMatch": 0,
+        "negativeAttempts": 205,
+        "negativeFalse": 176,
+        "precision": 0.9565217391304348,
+        "negativeFalseRate": 0.8585365853658536
+      },
+      "guard": {
+        "attempts": 23,
+        "correct": 22,
+        "wrong": 0,
+        "noMatch": 1,
+        "negativeAttempts": 205,
+        "negativeFalse": 61,
+        "precision": 1.0,
+        "negativeFalseRate": 0.2975609756097561
+      },
+      "recovery": {
+        "attempts": 23,
+        "correct": 22,
+        "wrong": 0,
+        "noMatch": 1,
+        "negativeAttempts": 205,
+        "negativeFalse": 61,
+        "precision": 1.0,
+        "negativeFalseRate": 0.2975609756097561
+      },
+      "eligible": false,
+      "classes": 0,
+      "recoveredNoMatches": 0,
+      "correctedVetoedWords": 0
+    }
+  },
+  "runtimeParity": {
+    "cases": 228,
+    "modeOutcomes": 912,
+    "baselineIdentical": true,
+    "guardIdentical": true,
+    "recoveryIdentical": true,
+    "maxDistanceOrRatioError": 6.661338147750939e-15,
+    "modelSha256": "7703f7ef94d5eef1106152884f8c10893de7da196b66b3dc25275f413f3ef034",
+    "productionFilesUnchanged": true,
+    "testRead": false,
+    "auditOutcomesRead": false,
+    "gateChanges": false
+  },
+  "independentAccuracy": false,
+  "deployed": false
+}

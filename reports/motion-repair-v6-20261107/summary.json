@@ -1,0 +1,103 @@
+{
+  "trials": {
+    "baseline": {
+      "attempts": 28,
+      "matched": 12,
+      "incorrect": 4,
+      "noMatch": 12
+    },
+    "padding": {
+      "attempts": 28,
+      "matched": 6,
+      "incorrect": 3,
+      "noMatch": 19
+    },
+    "paddingParity": {
+      "attempts": 28,
+      "matched": 10,
+      "incorrect": 2,
+      "noMatch": 16
+    }
+  },
+  "transitions": {
+    "padding": {
+      "recovered": [
+        "HUNGRY",
+        "YESTERDAY",
+        "HELLO",
+        "FINISH"
+      ],
+      "regressions": [
+        "SCHOOL",
+        "SORRY",
+        "WE",
+        "YOUR / YOURS",
+        "PIPE",
+        "TWINS",
+        "SINCE",
+        "BAD",
+        "STUDENT",
+        "MILK"
+      ]
+    },
+    "paddingParity": {
+      "recovered": [
+        "YESTERDAY",
+        "FINISH"
+      ],
+      "regressions": [
+        "SCHOOL",
+        "WE",
+        "PIPE",
+        "STUDENT"
+      ]
+    }
+  },
+  "modelChangesInstalled": false,
+  "paddingInstalled": false,
+  "checkpointingImplemented": true,
+  "retainedRuntimeVerified": true,
+  "retainedRuntimeSha256": {
+    "app.js": "3e487fb603596bd3505d0f073f5eff33c778052e692ac0661d59f45d915a4229",
+    "landmark-capture.js": "513ad4946230e092dd85ab100721e84301bda013dcf769f32d149648802f6a75",
+    "capstone-recognition.js": "6c0e57b78321b2ceb55b193cdb2f041b8c36e672740eb88373f9853a883c6cb7",
+    "beginner-recognition.js": "a990573357871f1382a706476c50a698a9705bddc03678bc9772ace1ffb9803d",
+    "motion-studio.js": "9648430e0cb05bdfd69451fd555f6f5a0773f6ff79c544e5b2ee59f2e70780e0",
+    "research-words.js": "e4f6396480363ad768c51056ff94e3eac1bc5190d291961d5e4c975cb810790e",
+    "vocabulary-library.js": "f4fb90af7214b191748ced165db1ca9160f156e886f28068995f61270ceb444d",
+    "recognition-library.js": "6c88011e8de66a18e77fbf140f4d362c877b35dabbbdbdf77111d5faaf6748ee",
+    "motion-model.js": "ab93ef4af78142bd3d372070b622ec5aa0d14a8a72bbc46658642c16ae737b70",
+    "expanded-motion.js": "204c69d6d60a69878e5c9a42707bda1ba29ba50d27b4be001097c58b6cf9d7a6",
+    "hello-binary.js": "f331ab5b69365cd4bce7e5fb1791ef3a14df466b7fe039c11e7ae15b17c4ad30",
+    "capstone_asl_v3.py": "1a8a77f45a9a4c47ae9dd2c4cb4701fdcb1546da699ab8fff309ddb927560f0e",
+    "beginner_asl.py": "8755aa7254129842abb93c973726179bbe5852aa89428df5e90e2f2aa96cd6f5",
+    "sign_features.py": "a59003bb14eb17cc42103a432f66b79ac5634d3cba97c20dbde165ff70076722",
+    "motion_calibration.py": "bfb42767a48e450e69f6abf0650c0785001a92591a5f9cb19d136652155c30a1",
+    "motion-accuracy.js": "2b09405beb45376788219b27aa117ea11442d3fa2bc0ad23ef40032385c52e0f",
+    "models/motion-word-accuracy.json": "269316c289cd54bb185f4a39d1c90955f413990d15c07290162dac5b61d3a5a2",
+    "body-hand-recovery.js": "a24f4aca09ce168bc8fcd32b7a966ff09e9631eec12371bda1576b576e6a8350",
+    "hand-recovery-worker.js": "60880e41bdbce73e94b63e878ef5e24a4874e49dc25f7e2aebe6e55c22ee15d9",
+    "handshape_features.py": "001511585b0334493823d9f969a44c15643507582f21922d52ce59471aed82c5",
+    "handshape_model.py": "270296ddaceb2f7c9cbc01d2024d12b752422b9639eff089bcb6fdac131ac286",
+    "handshape_inference.py": "b83e3510ba6f8e5e67962157f6165f6ff4c8449e5218e1d12a7b1ebd09ff3c06",
+    "index.html": "caf8d40d3d86ef286d5c5dd4a4a87dbdb77cf6889ea1b8cfcf03d16b0dfbd373",
+    "models/motion-calibration.json": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f"
+  },
+  "all198Retested": false,
+  "allWordsReliablyFixed": false,
+  "liveCameraAccuracyVerified": false,
+  "evidenceSha256": {
+    "baseline": "47078d228664eab2ddc47a8fa495257ccbef40614f60410ea84cdeb987fc0d1b",
+    "padding": "bc8177b933a4d15a2b3a03f08c3055e061204a27482a2e08c0fb5b96457608b2",
+    "paddingParity": "831649f2f81cefa5e74e71a6ee84bc0ce10e3bb443d4cd8b9176b437bdf6b893"
+  },
+  "scope": "Separate diagnostic reference trials, not independent accuracy or a clean causal benchmark. The first padding candidate changed unpadded warm-up resolution; the second restores that input. Sampling rates differed between trials. Every wrong/no-match output is retained. No best-of aggregation.",
+  "bodyRuntimeMathParity": {
+    "validationRecordings": 228,
+    "predictionMatches": 228,
+    "featureMaxAbsError": 2.384185791015625e-07,
+    "distanceMaxAbsError": 3.702642423220048e-08,
+    "browserCaptureParityVerified": false,
+    "evidenceSha256": "bc9e494da97ad5a5dc5653a0211c414f43180410f51b4fdedb5fa39dd9cbe089"
+  }
+}

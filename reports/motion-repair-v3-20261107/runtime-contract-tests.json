@@ -1,0 +1,86 @@
+{
+  "runtimeUrl": "http://127.0.0.1:8003",
+  "configurationSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "tests": [
+    {
+      "family": "beginner",
+      "test": "loaded-identities",
+      "passed": true
+    },
+    {
+      "family": "beginner",
+      "vocabulary": "full",
+      "file": "12844166526089085-ALL.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "beginner",
+      "vocabulary": "full",
+      "file": "2889010159260097-BYE.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "beginner",
+      "test": "blank-hands-rejected",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "test": "loaded-identities",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "full",
+      "file": "10557248501909733-MICROSCOPE.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "core",
+      "file": "10557248501909733-MICROSCOPE.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "extended",
+      "file": "10557248501909733-MICROSCOPE.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "full",
+      "file": "744008724339543-EAT.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "core",
+      "file": "744008724339543-EAT.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "vocabulary": "extended",
+      "file": "744008724339543-EAT.mp4",
+      "test": "offline-equality-and-no-practice-override",
+      "passed": true
+    },
+    {
+      "family": "capstone",
+      "test": "blank-hands-rejected",
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "rawLandmarksExported": false,
+  "physicalCameraCalls": 0
+}

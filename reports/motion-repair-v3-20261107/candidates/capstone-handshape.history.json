@@ -1,0 +1,562 @@
+{
+  "audit": {
+    "featuresSha256": "3122f6edd66488fc0e047fa10a84887c7b09328b0ba5b03d200296e2fbd04cd7",
+    "negativeFeaturesSha256": "3d81b2f6736c1072746945a81040f4584c9a1ae9e0f5683f9911e28aac069245",
+    "baseCheckpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+    "trainAttempts": 3278,
+    "trainUsable": 2750,
+    "valAttempts": 637,
+    "valTracked": 564,
+    "trainCounts": {
+      "SOCCER2": 15,
+      "CAPTURE": 13,
+      "JOKE": 15,
+      "MAPLE": 14,
+      "KNIGHT1": 14,
+      "SQUEEZE": 14,
+      "BREAKFAST1": 16,
+      "FLOAT1": 13,
+      "IMPOSSIBLE": 14,
+      "JEWELRY": 16,
+      "DOG1": 17,
+      "RAZOR2": 16,
+      "DEMAND1": 16,
+      "SCROLLDOWN": 14,
+      "INTUITIVE": 10,
+      "THEY1": 13,
+      "EDIT1": 15,
+      "APPLE": 14,
+      "DEVELOP1": 17,
+      "DARK1": 18,
+      "GUESS1": 14,
+      "FOREIGNER1": 16,
+      "TAIL1": 12,
+      "PATIENT2": 16,
+      "BELT1": 14,
+      "TWINS1": 16,
+      "BASKETBALL1": 15,
+      "MOUTH": 13,
+      "VLOG": 12,
+      "TEACH1": 12,
+      "HOW1": 14,
+      "WALK-TIGHTROPE-CL": 15,
+      "MYSELF": 15,
+      "OFFEND": 13,
+      "PEG2": 14,
+      "VOMIT": 15,
+      "SINCE": 15,
+      "CHRISTMAS1": 16,
+      "HALLOWEEN1": 17,
+      "AXE1": 18,
+      "CANCER1": 16,
+      "PARTY1": 15,
+      "NOON1": 15,
+      "CLOSE": 14,
+      "ARTICULATESIGN": 11,
+      "BITE1": 17,
+      "DRAG1": 16,
+      "DOWNSIZE1": 17,
+      "CALENDAR1": 12,
+      "WHATFOR1": 17,
+      "LOCK1": 15,
+      "MOVIE1": 15,
+      "DECIDE1": 16,
+      "SHAVE1": 14,
+      "FINE1": 14,
+      "HOSPITAL1": 15,
+      "SINK": 14,
+      "CATAPULT": 10,
+      "DEAF1": 16,
+      "HURDLE/TRIP1": 17,
+      "ELEVATOR1": 14,
+      "NIGHT1": 14,
+      "LETTUCE1": 13,
+      "MEACULPA": 12,
+      "BEE1": 15,
+      "8HOUR": 14,
+      "DUCK2": 14,
+      "MEAT1": 16,
+      "GRAMMAR": 15,
+      "SWEATER2": 14,
+      "SLIDE2": 14,
+      "SHOCKED": 15,
+      "ERUPT2": 13,
+      "TOMATO": 13,
+      "ROCKINGCHAIR1": 16,
+      "BABY2": 12,
+      "DINNER1": 15,
+      "RIVER1": 17,
+      "MECHANIC1": 16,
+      "MICROSCOPE1": 16,
+      "CHEESEGRATER": 13,
+      "EAT1": 12,
+      "LUNCH1": 13,
+      "BACKPACK1": 14,
+      "PONDER": 14,
+      "ANYONE": 12,
+      "COMB2": 10,
+      "BASEBALLCAP": 16,
+      "CHEEK": 15,
+      "THIRD1": 14,
+      "TRACTOR": 14,
+      "PRESS": 15,
+      "HELICOPTER2": 14,
+      "SHARK1": 14,
+      "PIPE2": 14,
+      "CONFUSED1": 16,
+      "OTHER": 12,
+      "CEMETERY": 14,
+      "EMPTY2": 13,
+      "HOPE": 13,
+      "__UNKNOWN__": 1308
+    },
+    "testUsedForSelection": false,
+    "watchClipsUsedForTrainingOrCalibration": false,
+    "selectionSplit": "val",
+    "sourceAndParticipantDisjoint": true,
+    "seed": 43,
+    "greetingScope": "Synthetic GOOD + component greetings, not verified natural phrases."
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 4.2432,
+      "valKnownMacro": 0.144167,
+      "valUnknownAccuracy": 0.67037,
+      "objective": 0.223097,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 2,
+      "loss": 2.9606,
+      "valKnownMacro": 0.347667,
+      "valUnknownAccuracy": 0.633333,
+      "objective": 0.390517,
+      "seconds": 7.6
+    },
+    {
+      "epoch": 3,
+      "loss": 2.3519,
+      "valKnownMacro": 0.492167,
+      "valUnknownAccuracy": 0.566667,
+      "objective": 0.503342,
+      "seconds": 8.0
+    },
+    {
+      "epoch": 4,
+      "loss": 1.9819,
+      "valKnownMacro": 0.596,
+      "valUnknownAccuracy": 0.451852,
+      "objective": 0.574378,
+      "seconds": 8.1
+    },
+    {
+      "epoch": 5,
+      "loss": 1.7247,
+      "valKnownMacro": 0.585833,
+      "valUnknownAccuracy": 0.474074,
+      "objective": 0.569069,
+      "seconds": 8.3
+    },
+    {
+      "epoch": 6,
+      "loss": 1.5464,
+      "valKnownMacro": 0.608,
+      "valUnknownAccuracy": 0.622222,
+      "objective": 0.610133,
+      "seconds": 7.9
+    },
+    {
+      "epoch": 7,
+      "loss": 1.4155,
+      "valKnownMacro": 0.596667,
+      "valUnknownAccuracy": 0.625926,
+      "objective": 0.601056,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 8,
+      "loss": 1.3816,
+      "valKnownMacro": 0.614167,
+      "valUnknownAccuracy": 0.718519,
+      "objective": 0.629819,
+      "seconds": 9.5
+    },
+    {
+      "epoch": 9,
+      "loss": 1.25,
+      "valKnownMacro": 0.66,
+      "valUnknownAccuracy": 0.67037,
+      "objective": 0.661556,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 10,
+      "loss": 1.1747,
+      "valKnownMacro": 0.656833,
+      "valUnknownAccuracy": 0.637037,
+      "objective": 0.653864,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 11,
+      "loss": 1.1024,
+      "valKnownMacro": 0.6675,
+      "valUnknownAccuracy": 0.67037,
+      "objective": 0.667931,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 12,
+      "loss": 1.0642,
+      "valKnownMacro": 0.6955,
+      "valUnknownAccuracy": 0.696296,
+      "objective": 0.695619,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 13,
+      "loss": 1.006,
+      "valKnownMacro": 0.687833,
+      "valUnknownAccuracy": 0.692593,
+      "objective": 0.688547,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 14,
+      "loss": 0.9537,
+      "valKnownMacro": 0.707,
+      "valUnknownAccuracy": 0.755556,
+      "objective": 0.714283,
+      "seconds": 8.2
+    },
+    {
+      "epoch": 15,
+      "loss": 0.8877,
+      "valKnownMacro": 0.693,
+      "valUnknownAccuracy": 0.744444,
+      "objective": 0.700717,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 16,
+      "loss": 0.8286,
+      "valKnownMacro": 0.7085,
+      "valUnknownAccuracy": 0.744444,
+      "objective": 0.713892,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 17,
+      "loss": 0.8375,
+      "valKnownMacro": 0.691667,
+      "valUnknownAccuracy": 0.711111,
+      "objective": 0.694583,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 18,
+      "loss": 0.8229,
+      "valKnownMacro": 0.711667,
+      "valUnknownAccuracy": 0.711111,
+      "objective": 0.711583,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 19,
+      "loss": 0.7639,
+      "valKnownMacro": 0.700167,
+      "valUnknownAccuracy": 0.740741,
+      "objective": 0.706253,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 20,
+      "loss": 0.7446,
+      "valKnownMacro": 0.711333,
+      "valUnknownAccuracy": 0.72963,
+      "objective": 0.714078,
+      "seconds": 8.6
+    },
+    {
+      "epoch": 21,
+      "loss": 0.707,
+      "valKnownMacro": 0.7145,
+      "valUnknownAccuracy": 0.751852,
+      "objective": 0.720103,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 22,
+      "loss": 0.6903,
+      "valKnownMacro": 0.725333,
+      "valUnknownAccuracy": 0.785185,
+      "objective": 0.734311,
+      "seconds": 7.8
+    },
+    {
+      "epoch": 23,
+      "loss": 0.6666,
+      "valKnownMacro": 0.7095,
+      "valUnknownAccuracy": 0.796296,
+      "objective": 0.722519,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 24,
+      "loss": 0.6714,
+      "valKnownMacro": 0.727167,
+      "valUnknownAccuracy": 0.755556,
+      "objective": 0.731425,
+      "seconds": 9.5
+    },
+    {
+      "epoch": 25,
+      "loss": 0.6494,
+      "valKnownMacro": 0.701333,
+      "valUnknownAccuracy": 0.781481,
+      "objective": 0.713356,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 26,
+      "loss": 0.6218,
+      "valKnownMacro": 0.733333,
+      "valUnknownAccuracy": 0.803704,
+      "objective": 0.743889,
+      "seconds": 8.4
+    },
+    {
+      "epoch": 27,
+      "loss": 0.6169,
+      "valKnownMacro": 0.726667,
+      "valUnknownAccuracy": 0.777778,
+      "objective": 0.734333,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 28,
+      "loss": 0.6052,
+      "valKnownMacro": 0.730667,
+      "valUnknownAccuracy": 0.796296,
+      "objective": 0.740511,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 29,
+      "loss": 0.6096,
+      "valKnownMacro": 0.724833,
+      "valUnknownAccuracy": 0.751852,
+      "objective": 0.728886,
+      "seconds": 8.1
+    },
+    {
+      "epoch": 30,
+      "loss": 0.5948,
+      "valKnownMacro": 0.7225,
+      "valUnknownAccuracy": 0.777778,
+      "objective": 0.730792,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 31,
+      "loss": 0.5594,
+      "valKnownMacro": 0.730833,
+      "valUnknownAccuracy": 0.766667,
+      "objective": 0.736208,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 32,
+      "loss": 0.5522,
+      "valKnownMacro": 0.729667,
+      "valUnknownAccuracy": 0.785185,
+      "objective": 0.737994,
+      "seconds": 9.3
+    },
+    {
+      "epoch": 33,
+      "loss": 0.5515,
+      "valKnownMacro": 0.734167,
+      "valUnknownAccuracy": 0.781481,
+      "objective": 0.741264,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 34,
+      "loss": 0.5498,
+      "valKnownMacro": 0.729667,
+      "valUnknownAccuracy": 0.788889,
+      "objective": 0.73855,
+      "seconds": 10.1
+    },
+    {
+      "epoch": 35,
+      "loss": 0.5387,
+      "valKnownMacro": 0.739667,
+      "valUnknownAccuracy": 0.796296,
+      "objective": 0.748161,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 36,
+      "loss": 0.5146,
+      "valKnownMacro": 0.708833,
+      "valUnknownAccuracy": 0.811111,
+      "objective": 0.724175,
+      "seconds": 8.7
+    },
+    {
+      "epoch": 37,
+      "loss": 0.5296,
+      "valKnownMacro": 0.733333,
+      "valUnknownAccuracy": 0.777778,
+      "objective": 0.74,
+      "seconds": 9.3
+    },
+    {
+      "epoch": 38,
+      "loss": 0.5249,
+      "valKnownMacro": 0.730833,
+      "valUnknownAccuracy": 0.788889,
+      "objective": 0.739542,
+      "seconds": 9.7
+    },
+    {
+      "epoch": 39,
+      "loss": 0.507,
+      "valKnownMacro": 0.738833,
+      "valUnknownAccuracy": 0.796296,
+      "objective": 0.747453,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 40,
+      "loss": 0.5036,
+      "valKnownMacro": 0.729667,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.741328,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 41,
+      "loss": 0.5019,
+      "valKnownMacro": 0.726333,
+      "valUnknownAccuracy": 0.792593,
+      "objective": 0.736272,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 42,
+      "loss": 0.503,
+      "valKnownMacro": 0.728,
+      "valUnknownAccuracy": 0.803704,
+      "objective": 0.739356,
+      "seconds": 8.6
+    },
+    {
+      "epoch": 43,
+      "loss": 0.5003,
+      "valKnownMacro": 0.7395,
+      "valUnknownAccuracy": 0.814815,
+      "objective": 0.750797,
+      "seconds": 8.6
+    },
+    {
+      "epoch": 44,
+      "loss": 0.4906,
+      "valKnownMacro": 0.736167,
+      "valUnknownAccuracy": 0.792593,
+      "objective": 0.744631,
+      "seconds": 8.5
+    },
+    {
+      "epoch": 45,
+      "loss": 0.4874,
+      "valKnownMacro": 0.7355,
+      "valUnknownAccuracy": 0.788889,
+      "objective": 0.743508,
+      "seconds": 9.2
+    },
+    {
+      "epoch": 46,
+      "loss": 0.4813,
+      "valKnownMacro": 0.731667,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.743028,
+      "seconds": 8.3
+    },
+    {
+      "epoch": 47,
+      "loss": 0.487,
+      "valKnownMacro": 0.7275,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.739486,
+      "seconds": 8.5
+    },
+    {
+      "epoch": 48,
+      "loss": 0.4833,
+      "valKnownMacro": 0.715833,
+      "valUnknownAccuracy": 0.822222,
+      "objective": 0.731792,
+      "seconds": 8.9
+    },
+    {
+      "epoch": 49,
+      "loss": 0.4801,
+      "valKnownMacro": 0.733833,
+      "valUnknownAccuracy": 0.814815,
+      "objective": 0.745981,
+      "seconds": 9.4
+    },
+    {
+      "epoch": 50,
+      "loss": 0.4776,
+      "valKnownMacro": 0.731667,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.743028,
+      "seconds": 9.0
+    },
+    {
+      "epoch": 51,
+      "loss": 0.4718,
+      "valKnownMacro": 0.736167,
+      "valUnknownAccuracy": 0.811111,
+      "objective": 0.747408,
+      "seconds": 8.8
+    },
+    {
+      "epoch": 52,
+      "loss": 0.4696,
+      "valKnownMacro": 0.735833,
+      "valUnknownAccuracy": 0.818519,
+      "objective": 0.748236,
+      "seconds": 6.6
+    },
+    {
+      "epoch": 53,
+      "loss": 0.4683,
+      "valKnownMacro": 0.7445,
+      "valUnknownAccuracy": 0.818519,
+      "objective": 0.755603,
+      "seconds": 6.0
+    },
+    {
+      "epoch": 54,
+      "loss": 0.4791,
+      "valKnownMacro": 0.7495,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.758186,
+      "seconds": 5.7
+    },
+    {
+      "epoch": 55,
+      "loss": 0.4753,
+      "valKnownMacro": 0.74,
+      "valUnknownAccuracy": 0.807407,
+      "objective": 0.750111,
+      "seconds": 5.6
+    }
+  ]
+}

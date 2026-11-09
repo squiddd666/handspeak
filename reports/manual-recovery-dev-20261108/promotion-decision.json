@@ -1,0 +1,10 @@
+{
+  "candidate": "manual-open-set-competition-v2 / manual-recovery-v1",
+  "productionPromotionAllowed": false,
+  "reason": "Browser development does not retain every correct prediction: HUNGRY, NIGHT, and the HAVE training infrastructure recording are vetoed. Do not deploy the native-validation candidate.",
+  "gatesChanged": false,
+  "weightsChanged": false,
+  "browserOutcomesUsedForFitting": false,
+  "auditOutcomesUsedForFitting": false,
+  "next": "Train/validate with production-equivalent measured detector streams from a separately frozen development cohort; keep all current development/audit recordings out of further gate selection. Continue the unchanged full-198 app regression."
+}

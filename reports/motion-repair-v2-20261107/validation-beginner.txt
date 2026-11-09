@@ -1,0 +1,2 @@
+beginner-aspect-v2: 214/296 raw; gate .5: 194 correct / 34 wrong / 68 no match (5.7s)
+beginner-aspect-v2-tta: 223/296 raw; gate .5: 202 correct / 22 wrong / 72 no match (10.4s)

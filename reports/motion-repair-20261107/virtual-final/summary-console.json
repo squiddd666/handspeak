@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "scope": "One normal-speed primary Watch & Learn reference-clip attempt per recognition label through the normal production capture and model prediction paths. Not held-out or live-user accuracy.",
+  "sourceReport": "reports/motion-repair-20261107/virtual-final/final-all-198.json",
+  "sourceReportSha256": "6788cd752c1a1f5d211ac33f9e01aadddcb70ec4c7064f765c256b4e06d62d1f",
+  "startedAt": "2026-11-06T17:40:40.588Z",
+  "finishedAt": "2026-11-06T18:04:47.770Z",
+  "indexSha256": "0767e98562f170fedd52c25d0645221a1c9224c216baf8c88735929ca99a8789",
+  "bootstrapSha256": "a3efb9a95199c7d068c101b805dc6b9f6cab44b0ad5cd2ad8fbbddab8b4e2210",
+  "runtimeSha256": {
+    "app.js": "68e34d51964fdd2e420fd93b08ae35d7fa328137da20c46b0364f4cf9a79c0b9",
+    "landmark-capture.js": "ed89ad6c7bd6af82c4db48f3034dcbfc260016676d583f128f4eb01a276b499a",
+    "capstone-recognition.js": "2af360ac00d1620f1738d30b03359cfe45a9b7ff2bca479b765bd54b425db189",
+    "beginner-recognition.js": "bcd8be641fe9f926b56a1d61e6af8211dcec1e925c9f3b99e1c4a4dad2c512c2",
+    "motion-studio.js": "9648430e0cb05bdfd69451fd555f6f5a0773f6ff79c544e5b2ee59f2e70780e0",
+    "research-words.js": "e4f6396480363ad768c51056ff94e3eac1bc5190d291961d5e4c975cb810790e",
+    "capstone_asl_v3.py": "9c18d612c41afede3f27bb6f5cc165b6653d6c44ed64ed3e5361745009cf4cdb",
+    "beginner_asl.py": "3959c51c61f97b066d56baf0900551f955c1bba9c5a6d62b2c422152185b55a2",
+    "sign_features.py": "a59003bb14eb17cc42103a432f66b79ac5634d3cba97c20dbde165ff70076722",
+    "motion_calibration.py": "e4a9de7cf62cd81a6f06ae15dcafdb4380472cfd64465496e5aed3cf8bd17691",
+    "motion-accuracy.js": "2b09405beb45376788219b27aa117ea11442d3fa2bc0ad23ef40032385c52e0f",
+    "models/motion-word-accuracy.json": "75867f0bcad70e3f48986a65e8c854061bd61c9e326dd0d5ab0f302eb22ceaf0"
+  },
+  "activeModelSha256": {
+    "beginner": "e9826d4e33713f4e30655cb6f156855578d15555d4c6ce076b494c6410f800d5",
+    "capstone": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417"
+  },
+  "calibrationSha256": "b806f6d16f3dcbddc3491cfc5aff9e0b01d688680c84974c9daa3b8af4fe4656",
+  "labelsTested": 198,
+  "matched": 84,
+  "wrongPrediction": 9,
+  "noMatch": 105,
+  "matchedPercent": 42.4,
+  "insufficientTrackingMisses": 27,
+  "warmupsExcluded": 0,
+  "completeClipPlayback": 197,
+  "isolation": {
+    "host": "127.0.0.1",
+    "storage": "in-memory only",
+    "realCameraCalls": 0,
+    "microphoneCalls": 0,
+    "getUserMediaCalls": 1
+  },
+  "geometry": {
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "fit": "contain/letterbox",
+    "cropping": false,
+    "pixelFlip": false
+  },
+  "models": {
+    "beginner": {
+      "tested": 76,
+      "no match": 51,
+      "matched": 23,
+      "wrong prediction": 2
+    },
+    "capstone/core": {
+      "tested": 7,
+      "no match": 1,
+      "matched": 6
+    },
+    "capstone/extended": {
+      "tested": 12,
+      "matched": 11,
+      "no match": 1
+    },
+    "capstone/full": {
+      "tested": 79,
+      "matched": 26,
+      "no match": 52,
+      "wrong prediction": 1
+    },
+    "daily-manual": {
+      "tested": 5,
+      "wrong prediction": 1,
+      "matched": 4
+    },
+    "motion-manual": {
+      "tested": 19,
+      "matched": 14,
+      "wrong prediction": 5
+    }
+  },
+  "limitations": [
+    "Reference clips are examples, not an independent test set. Some may overlap model inputs.",
+    "A fixed application recording window can cut off longer clips; incomplete playback is reported, not silently excluded.",
+    "Browser/hand-and-body tracking speed and sign variants can cause short clips to miss the tracking gate.",
+    "Core/extended gates and the Beginner gate can refuse predictions; all refusals remain in the denominator.",
+    "All 198 labels having recorded scores does not mean all 198 are verified-ready or active in one model.",
+    "Post-fix camera-badge regressions are saved separately; they never replace this baseline or archived benchmark counts."
+  ],
+  "watchLearnUI": {
+    "url": "http://127.0.0.1:8001/#sign-examples",
+    "videoCoverage": "198/198 recognition labels have reference videos available here \u00b7 147 local research clips added. Recognition models remain separate; all 198 cannot be active as one vocabulary.",
+    "scoreCoverage": "198 of 198 recognition labels have recorded test results. Separate-model benchmarks, not live-camera accuracy.",
+    "recognitionButtons": 198,
+    "unmeasured": [],
+    "camera": "Camera off"
+  }
+}

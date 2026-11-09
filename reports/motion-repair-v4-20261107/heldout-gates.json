@@ -1,0 +1,38 @@
+{
+  "beginner": {
+    "eligible": false,
+    "modes": {
+      "full": {
+        "before": {
+          "attempts": 747,
+          "correct": 502,
+          "wrong": 28,
+          "noMatch": 217,
+          "tracked": 641,
+          "accuracy": 0.672021,
+          "precision": 0.94717,
+          "negativeAttempts": 1166,
+          "negativeFalse": 87,
+          "negativeFalseRate": 0.074614
+        },
+        "after": {
+          "attempts": 747,
+          "correct": 490,
+          "wrong": 21,
+          "noMatch": 236,
+          "tracked": 641,
+          "accuracy": 0.655957,
+          "precision": 0.958904,
+          "negativeAttempts": 1166,
+          "negativeFalse": 81,
+          "negativeFalseRate": 0.069468
+        },
+        "passed": false
+      }
+    }
+  },
+  "capstone": {
+    "eligible": false,
+    "reason": "No validation-only all-mode improvement"
+  }
+}

@@ -1,0 +1,825 @@
+{
+  "schema": 1,
+  "startedAt": "2026-11-06T16:19:19.413Z",
+  "scope": "Watch & Learn reference-clip smoke tests through the actual live capture pipeline. Not independent held-out or live-user accuracy.",
+  "geometry": {
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "fit": "contain/letterbox",
+    "cropping": false,
+    "pixelFlip": false
+  },
+  "isolation": {
+    "host": "127.0.0.1",
+    "storage": "in-memory only",
+    "realCameraCalls": 0,
+    "microphoneCalls": 0,
+    "getUserMediaCalls": 1
+  },
+  "indexSha256": "763fd3d8b6c19cca77c2056d855eafdaaad68ef99eebe954383de506f7a334bb",
+  "bootstrapSha256": "1149cd6b4ebf8d31f6cc11f90cc4358181c7c4d891041390709e070fc29cd1a1",
+  "recognitionLabels": 198,
+  "attempts": [
+    {
+      "number": 1,
+      "id": "after",
+      "label": "AFTER",
+      "clip": "media/research-signs/after.mp4",
+      "clipSha256": "7195f0dd6656789fae448e182a8e01ba000e3880bb2656cf1c9a8398ddffb107",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.433008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-06T16:20:05.513Z",
+      "drawFramesStart": 1366,
+      "events": [
+        {
+          "at": "2026-11-06T16:20:07.850Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:20:05.514Z",
+          "text": "Beginner recording canceled."
+        },
+        {
+          "at": "2026-11-06T16:20:05.882Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:20:06.276Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-06T16:20:07.851Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:20:11.876Z",
+          "text": "Not enough tracked frames (2/5)."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:20:07.851Z",
+      "playbackEndedAt": "2026-11-06T16:20:09.586Z",
+      "completeSourcePlayed": true,
+      "finishedAt": "2026-11-06T16:20:12.198Z",
+      "elapsedMs": 6685,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.433008,
+        "duration": 1.433008,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 92
+      },
+      "status": "Not enough tracked frames (2/5).",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 15.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 2,
+          "trackedFrames": 2,
+          "durationMs": 4026,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 2,
+      "id": "bad",
+      "label": "BAD",
+      "clip": "media/research-signs/bad.mp4",
+      "clipSha256": "78e1dbfda4dbd9da9e374b1ea763b25cc6b94ee15a633cbe8cd6a04ec2ba9d30",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.5,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-06T16:21:30.711Z",
+      "drawFramesStart": 2696,
+      "events": [
+        {
+          "at": "2026-11-06T16:21:32.339Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:21:36.394Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:21:30.712Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:21:30.712Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-06T16:21:32.339Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:21:36.350Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:21:36.394Z",
+          "text": "No confident Beginner match. Sign again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:21:32.339Z",
+      "playbackEndedAt": "2026-11-06T16:21:34.030Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 8,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:21:36.543Z",
+      "elapsedMs": 5832,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.5,
+        "duration": 1.5,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 76
+      },
+      "status": "No confident Beginner match. Sign again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 14.6,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 8,
+          "trackedFrames": 8,
+          "durationMs": 4010,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 3,
+      "id": "angry",
+      "label": "ANGRY",
+      "clip": "media/research-signs/angry.mp4",
+      "clipSha256": "03e8889dd84df16792b975f29ac913b396ac5cd7c195e5cc39bbbfe3c7f83779",
+      "family": "beginner",
+      "vocabulary": null,
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "beginnerStatus",
+      "startedAt": "2026-11-06T16:22:14.958Z",
+      "drawFramesStart": 3377,
+      "events": [
+        {
+          "at": "2026-11-06T16:22:16.533Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:22:20.576Z",
+          "word": "No reliable match",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:22:14.959Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:22:14.959Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds."
+        },
+        {
+          "at": "2026-11-06T16:22:16.533Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:22:20.546Z",
+          "text": "Analyzing landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:22:20.577Z",
+          "text": "No confident Beginner match. Sign again."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:22:16.533Z",
+      "playbackEndedAt": "2026-11-06T16:22:17.679Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/beginner-asl",
+        "frames": 10,
+        "sequenceFrames": null,
+        "vocabulary": null
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": true,
+        "label": null,
+        "vocabulary": "beginner",
+        "predictions": [],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:22:20.715Z",
+      "elapsedMs": 5757,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1,
+        "duration": 1,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 82
+      },
+      "status": "No confident Beginner match. Sign again.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 15,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "beginner",
+          "frames": 10,
+          "trackedFrames": 10,
+          "durationMs": 4011,
+          "match": null
+        }
+      },
+      "predicted": null,
+      "correct": false
+    },
+    {
+      "number": 4,
+      "id": "apple",
+      "label": "APPLE",
+      "clip": "media/research-signs/apple.mp4",
+      "clipSha256": "6c87350319134523b87ca10962bc5bbc526cf7fe286c507966f2089fd6206507",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.533008,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-06T16:22:25.108Z",
+      "drawFramesStart": 3518,
+      "events": [
+        {
+          "at": "2026-11-06T16:22:26.729Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:22:30.870Z",
+          "word": "APPLE",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:22:25.110Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:22:25.110Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-06T16:22:26.729Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:22:30.733Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:22:30.870Z",
+          "text": "Possible match: APPLE. Top five (100-word full): 1. APPLE · 2. PATIENT · 3. CHEEK · 4. COMB · 5. MYSELF. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:22:26.729Z",
+      "playbackEndedAt": "2026-11-06T16:22:29.308Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 8,
+        "sequenceFrames": null,
+        "vocabulary": "full"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "full",
+        "predictions": [
+          {
+            "label": "APPLE",
+            "score": 0.37859
+          },
+          {
+            "label": "PATIENT2",
+            "score": 0.170162
+          },
+          {
+            "label": "CHEEK",
+            "score": 0.059372
+          },
+          {
+            "label": "COMB2",
+            "score": 0.040113
+          },
+          {
+            "label": "MYSELF",
+            "score": 0.029924
+          }
+        ],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:22:30.999Z",
+      "elapsedMs": 5891,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.533008,
+        "duration": 2.533008,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 61
+      },
+      "status": "Possible match: APPLE. Top five (100-word full): 1. APPLE · 2. PATIENT · 3. CHEEK · 4. COMB · 5. MYSELF. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 14.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 8,
+          "trackedFrames": 8,
+          "durationMs": 4002,
+          "match": null
+        }
+      },
+      "predicted": "APPLE",
+      "correct": true
+    },
+    {
+      "number": 5,
+      "id": "belt",
+      "label": "BELT",
+      "clip": "media/signs/belt.mp4",
+      "clipSha256": "1b3245a15433848f57cffe2ddd4be95de7b42ec2e3e8ade9b9b70b6046607fb6",
+      "family": "capstone",
+      "vocabulary": "core",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.2,
+      "sourceDimensions": [
+        480,
+        360
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-06T16:22:45.582Z",
+      "drawFramesStart": 3796,
+      "events": [
+        {
+          "at": "2026-11-06T16:22:47.157Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:22:51.291Z",
+          "word": "BELT",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:22:45.583Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:22:45.584Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-06T16:22:47.158Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:22:51.162Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:22:51.292Z",
+          "text": "Possible match: BELT. Top five (7-word core): 1. BELT · 2. SOCCER · 3. PEG · 4. SQUEEZE · 5. EMPTY. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:22:47.158Z",
+      "playbackEndedAt": "2026-11-06T16:22:49.492Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 13,
+        "sequenceFrames": null,
+        "vocabulary": "core"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "core",
+        "predictions": [
+          {
+            "label": "BELT1",
+            "score": 0.996702
+          },
+          {
+            "label": "SOCCER2",
+            "score": 0.001257
+          },
+          {
+            "label": "PEG2",
+            "score": 0.000954
+          },
+          {
+            "label": "SQUEEZE",
+            "score": 0.000645
+          },
+          {
+            "label": "EMPTY2",
+            "score": 0.000268
+          }
+        ],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:22:51.436Z",
+      "elapsedMs": 5854,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.2,
+        "duration": 2.2,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 72
+      },
+      "status": "Possible match: BELT. Top five (7-word core): 1. BELT · 2. SOCCER · 3. PEG · 4. SQUEEZE · 5. EMPTY. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13.9,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 13,
+          "trackedFrames": 13,
+          "durationMs": 4004,
+          "match": null
+        }
+      },
+      "predicted": "BELT1",
+      "correct": true
+    },
+    {
+      "number": 6,
+      "id": "bee",
+      "label": "BEE",
+      "clip": "media/research-signs/bee.mp4",
+      "clipSha256": "a43fca58c927751fc3bee9c96399faf971e856a80eb49feb54450b7a189d8f42",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 1.333333,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-06T16:22:54.952Z",
+      "drawFramesStart": 3914,
+      "events": [
+        {
+          "at": "2026-11-06T16:22:56.606Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:23:00.767Z",
+          "word": "BEE",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:22:54.954Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:22:54.955Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-06T16:22:56.607Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:23:00.609Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:23:00.768Z",
+          "text": "Possible match: BEE. Top five (100-word full): 1. BEE · 2. BREAKFAST · 3. EAT · 4. FINE · 5. BABY. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:22:56.607Z",
+      "playbackEndedAt": "2026-11-06T16:22:58.117Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 6,
+        "sequenceFrames": null,
+        "vocabulary": "full"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "full",
+        "predictions": [
+          {
+            "label": "BEE1",
+            "score": 0.441895
+          },
+          {
+            "label": "BREAKFAST1",
+            "score": 0.151093
+          },
+          {
+            "label": "EAT1",
+            "score": 0.071145
+          },
+          {
+            "label": "FINE1",
+            "score": 0.020488
+          },
+          {
+            "label": "BABY2",
+            "score": 0.020389
+          }
+        ],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:23:00.901Z",
+      "elapsedMs": 5948,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 1.333333,
+        "duration": 1.333333,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 90
+      },
+      "status": "Possible match: BEE. Top five (100-word full): 1. BEE · 2. BREAKFAST · 3. EAT · 4. FINE · 5. BABY. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 15.1,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 6,
+          "trackedFrames": 6,
+          "durationMs": 4003,
+          "match": null
+        }
+      },
+      "predicted": "BEE1",
+      "correct": true
+    },
+    {
+      "number": 7,
+      "id": "razor",
+      "label": "RAZOR",
+      "clip": "media/research-signs/razor.mp4",
+      "clipSha256": "1e626a8d9d6a29852c93f631ba37f16caa7abe93248b0513d30232510d67ffff",
+      "family": "capstone",
+      "vocabulary": "full",
+      "stage": "baseline 1×",
+      "rate": 1,
+      "sourceDuration": 2.366016,
+      "sourceDimensions": [
+        640,
+        480
+      ],
+      "statusId": "capstoneStatus",
+      "startedAt": "2026-11-06T16:23:04.347Z",
+      "drawFramesStart": 4050,
+      "events": [
+        {
+          "at": "2026-11-06T16:23:05.944Z",
+          "word": "—",
+          "model": "Camera vocabulary: Default words"
+        },
+        {
+          "at": "2026-11-06T16:23:10.143Z",
+          "word": "CHEESEGRATER",
+          "model": "Camera vocabulary: Default words"
+        }
+      ],
+      "statuses": [
+        {
+          "at": "2026-11-06T16:23:04.349Z",
+          "text": "Loading full-body and hand tracking…"
+        },
+        {
+          "at": "2026-11-06T16:23:04.351Z",
+          "text": "Get ready… warming up tracking for at least 1.5 seconds. Keep your upper body and at least one hand visible."
+        },
+        {
+          "at": "2026-11-06T16:23:05.945Z",
+          "text": "Recording for four seconds… perform one complete sign."
+        },
+        {
+          "at": "2026-11-06T16:23:09.949Z",
+          "text": "Analyzing the recorded landmarks on the server…"
+        },
+        {
+          "at": "2026-11-06T16:23:10.144Z",
+          "text": "Possible match: CHEESEGRATER. Top five (100-word full): 1. CHEESEGRATER · 2. RAZOR · 3. FLOAT · 4. CHRISTMAS · 5. JEWELRY. Verify before adding."
+        }
+      ],
+      "playbackStarted": true,
+      "playbackStartedAt": "2026-11-06T16:23:05.945Z",
+      "playbackEndedAt": "2026-11-06T16:23:08.426Z",
+      "completeSourcePlayed": true,
+      "request": {
+        "endpoint": "/api/capstone-asl",
+        "frames": 15,
+        "sequenceFrames": null,
+        "vocabulary": "full"
+      },
+      "response": {
+        "httpStatus": 200,
+        "lowConfidence": false,
+        "label": null,
+        "vocabulary": "full",
+        "predictions": [
+          {
+            "label": "CHEESEGRATER",
+            "score": 0.184234
+          },
+          {
+            "label": "RAZOR2",
+            "score": 0.071672
+          },
+          {
+            "label": "FLOAT1",
+            "score": 0.066437
+          },
+          {
+            "label": "CHRISTMAS1",
+            "score": 0.061284
+          },
+          {
+            "label": "JEWELRY",
+            "score": 0.039043
+          }
+        ],
+        "error": null
+      },
+      "finishedAt": "2026-11-06T16:23:10.300Z",
+      "elapsedMs": 5953,
+      "endReason": "app terminal status",
+      "sourceAtEnd": {
+        "time": 2.366016,
+        "duration": 2.366016,
+        "paused": true,
+        "ended": true,
+        "readyState": 4,
+        "drawFrames": 78
+      },
+      "status": "Possible match: CHEESEGRATER. Top five (100-word full): 1. CHEESEGRATER · 2. RAZOR · 3. FLOAT · 4. CHRISTMAS · 5. JEWELRY. Verify before adding.",
+      "camera": {
+        "trackerState": "ready",
+        "delegate": "Holistic",
+        "input": "960x720",
+        "processedFps": 13.6,
+        "rawHands": 0,
+        "usableHands": 0,
+        "vocabulary": "Camera vocabulary: Default words",
+        "extraWords": false,
+        "serverPreview": false,
+        "automaticWords": false,
+        "faceTracking": false,
+        "lastCapture": {
+          "capture": "capstone",
+          "frames": 15,
+          "trackedFrames": 15,
+          "durationMs": 4003,
+          "match": null
+        }
+      },
+      "predicted": "CHEESEGRATER",
+      "correct": false
+    }
+  ]
+}

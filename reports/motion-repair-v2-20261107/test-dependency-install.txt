@@ -1,0 +1,8 @@
+Collecting quickjs-ng
+  Using cached quickjs_ng-0.18.0.1-cp310-abi3-win_amd64.whl.metadata (7.9 kB)
+Downloading quickjs_ng-0.18.0.1-cp310-abi3-win_amd64.whl (396 kB)
+Installing collected packages: quickjs-ng
+Successfully installed quickjs-ng-0.18.0.1
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: C:\Users\Squid\Desktop\capstone\hs-eval\.venv\Scripts\python.exe -m pip install --upgrade pip

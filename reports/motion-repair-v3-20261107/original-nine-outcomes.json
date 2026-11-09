@@ -1,0 +1,56 @@
+[
+  {
+    "label": "BEFORE",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "SCHOOL"
+  },
+  {
+    "label": "HAPPY",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "MY / MINE"
+  },
+  {
+    "label": "HAVE",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "HOME"
+  },
+  {
+    "label": "HELLO",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "FOOD"
+  },
+  {
+    "label": "HERE",
+    "before": "wrong",
+    "after": "matched",
+    "prediction": "HERE"
+  },
+  {
+    "label": "PAIN",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "NIGHT"
+  },
+  {
+    "label": "SICK",
+    "before": "wrong",
+    "after": "matched",
+    "prediction": "SICK"
+  },
+  {
+    "label": "SINK",
+    "before": "wrong",
+    "after": "no match",
+    "prediction": null
+  },
+  {
+    "label": "THANK YOU",
+    "before": "wrong",
+    "after": "wrong",
+    "prediction": "PLEASE"
+  }
+]

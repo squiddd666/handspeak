@@ -1,0 +1,1934 @@
+{
+  "family": "capstone",
+  "checkpoint": "capstone100-v4-ensemble.pt",
+  "checkpointSha256": "adbbc950ddd475f21198dc11d663b7af434d34d7e810dc025b8b074615203417",
+  "auxiliaryCheckpoint": "C:\\Users\\Squid\\Desktop\\capstone\\handspeak-git\\reports\\motion-repair-v4-20261107\\candidates\\capstone-handshape.pt",
+  "auxiliarySha256": "125706db7988504acba0772c846eceb4a11083b770efd9fc283ac81eb9703238",
+  "auxiliaryFeatureVersion": "body-handshape-v1",
+  "auxiliaryValidationSha256": "639160451772b84076c719907a102596385f545aa2b8b5d79e83d9f40a050abe",
+  "baselineConfigurationSha256": "bc356fe7d0d8591b29cd92a5822f407381e2876b08c7cdc506e867aa58e3192f",
+  "baselineAuxiliarySha256": "5313f8aec70f31b6b07eea2251609cce0f4237d42b9392c253dba47de6a69547",
+  "validationArchiveSha256": "9c2ab4f5d855648d4e186c1693a883c346fbec66988252d3c61c336972983768",
+  "selectedAt": "2026-11-06T23:15:20.149226+00:00",
+  "selectionSplit": "val",
+  "testUsedForSelection": false,
+  "watchClipsUsedForSelection": false,
+  "selected": {
+    "full": {
+      "weight": 0.5,
+      "before": {
+        "attempts": 367,
+        "correct": 273,
+        "wrong": 3,
+        "noMatch": 91,
+        "accuracy": 0.743869,
+        "precision": 0.98913,
+        "overallPrecision": 0.903974,
+        "negativeAttempts": 371,
+        "negativeFalse": 26,
+        "negativeFalseRate": 0.070081
+      },
+      "after": {
+        "attempts": 367,
+        "correct": 280,
+        "wrong": 2,
+        "noMatch": 85,
+        "accuracy": 0.762943,
+        "precision": 0.992908,
+        "overallPrecision": 0.958904,
+        "negativeAttempts": 371,
+        "negativeFalse": 10,
+        "negativeFalseRate": 0.026954
+      },
+      "eligible": true,
+      "improved": true
+    },
+    "core": {
+      "weight": null,
+      "before": {
+        "attempts": 22,
+        "correct": 21,
+        "wrong": 0,
+        "noMatch": 1,
+        "accuracy": 0.954545,
+        "precision": 1.0,
+        "overallPrecision": 0.368421,
+        "negativeAttempts": 716,
+        "negativeFalse": 36,
+        "negativeFalseRate": 0.050279
+      },
+      "after": null,
+      "eligible": false,
+      "improved": false
+    },
+    "extended": {
+      "weight": 0.75,
+      "before": {
+        "attempts": 70,
+        "correct": 61,
+        "wrong": 0,
+        "noMatch": 9,
+        "accuracy": 0.871429,
+        "precision": 1.0,
+        "overallPrecision": 0.910448,
+        "negativeAttempts": 668,
+        "negativeFalse": 6,
+        "negativeFalseRate": 0.008982
+      },
+      "after": {
+        "attempts": 70,
+        "correct": 61,
+        "wrong": 0,
+        "noMatch": 9,
+        "accuracy": 0.871429,
+        "precision": 1.0,
+        "overallPrecision": 0.968254,
+        "negativeAttempts": 668,
+        "negativeFalse": 2,
+        "negativeFalseRate": 0.002994
+      },
+      "eligible": true,
+      "improved": false
+    }
+  },
+  "policies": {
+    "full": {
+      "minScore": 0.5,
+      "minMargin": 0,
+      "minVocabularyMass": 0.6,
+      "selectionSplit": "val",
+      "validation": {
+        "attempts": 367,
+        "correct": 280,
+        "wrong": 2,
+        "noMatch": 85,
+        "accuracy": 0.762943,
+        "precision": 0.992908,
+        "overallPrecision": 0.958904,
+        "negativeAttempts": 371,
+        "negativeFalse": 10,
+        "negativeFalseRate": 0.026954
+      },
+      "validationErrorBudgets": {
+        "attempts": 367,
+        "correct": 273,
+        "wrong": 3,
+        "noMatch": 91,
+        "accuracy": 0.743869,
+        "precision": 0.98913,
+        "overallPrecision": 0.903974,
+        "negativeAttempts": 371,
+        "negativeFalse": 26,
+        "negativeFalseRate": 0.070081
+      },
+      "classPolicies": {
+        "8HOUR": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "ARTICULATESIGN": {
+          "minScore": 0.2,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "BASKETBALL1": {
+          "minScore": 0.2,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "BEE1": {
+          "minScore": 0.35,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "CAPTURE": {
+          "minScore": 0.15,
+          "minMargin": 0.05,
+          "minVocabularyMass": 0.6
+        },
+        "CHEESEGRATER": {
+          "minScore": 0.3,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "DEAF1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "DINNER1": {
+          "minScore": 0.05,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "DOWNSIZE1": {
+          "minScore": 0.5,
+          "minMargin": 0.5,
+          "minVocabularyMass": 0.6
+        },
+        "EDIT1": {
+          "minScore": 0.35,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "ELEVATOR1": {
+          "minScore": 0.15,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "HALLOWEEN1": {
+          "minScore": 0.4,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "HOW1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "IMPOSSIBLE": {
+          "minScore": 0.35,
+          "minMargin": 0.15,
+          "minVocabularyMass": 0.6
+        },
+        "LOCK1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "LUNCH1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "MEACULPA": {
+          "minScore": 0.25,
+          "minMargin": 0.2,
+          "minVocabularyMass": 0.6
+        },
+        "MICROSCOPE1": {
+          "minScore": 0.3,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "MYSELF": {
+          "minScore": 0.55,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "NOON1": {
+          "minScore": 0.4,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "PARTY1": {
+          "minScore": 0.4,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "PIPE2": {
+          "minScore": 0.3,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "SHOCKED": {
+          "minScore": 0.35,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "TEACH1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "THEY1": {
+          "minScore": 0.45,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "THIRD1": {
+          "minScore": 0.2,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        },
+        "TWINS1": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6
+        }
+      },
+      "globalValidation": {
+        "attempts": 367,
+        "correct": 249,
+        "wrong": 2,
+        "noMatch": 116,
+        "accuracy": 0.678474,
+        "precision": 0.992032,
+        "overallPrecision": 0.943182,
+        "negativeAttempts": 371,
+        "negativeFalse": 13,
+        "negativeFalseRate": 0.03504
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    },
+    "core": {
+      "minScore": 0.55,
+      "minMargin": 0.3,
+      "minVocabularyMass": 0.05,
+      "validation": {
+        "attempts": 22,
+        "correct": 21,
+        "wrong": 0,
+        "noMatch": 1,
+        "accuracy": 0.954545,
+        "precision": 1.0,
+        "overallPrecision": 0.4375,
+        "negativeAttempts": 615,
+        "negativeFalse": 27,
+        "negativeFalseRate": 0.043902
+      },
+      "selectionSplit": "val",
+      "targetKnownWordPrecision": 0.9,
+      "negativeFalseCeiling": 0.2,
+      "baselineValidation": {
+        "attempts": 22,
+        "correct": 20,
+        "wrong": 0,
+        "noMatch": 2,
+        "accuracy": 0.909091,
+        "precision": 1.0,
+        "overallPrecision": 0.178571,
+        "negativeAttempts": 615,
+        "negativeFalse": 92,
+        "negativeFalseRate": 0.149593
+      },
+      "classPolicies": {
+        "BELT1": {
+          "minScore": 0.95,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05
+        },
+        "EAT1": {
+          "minScore": 0.85,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05
+        },
+        "PEG2": {
+          "minScore": 0.8,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05
+        },
+        "SOCCER2": {
+          "minScore": 0.8,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05
+        },
+        "VLOG": {
+          "minScore": 0.65,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0.05
+        }
+      },
+      "globalValidation": {
+        "attempts": 22,
+        "correct": 21,
+        "wrong": 0,
+        "noMatch": 1,
+        "accuracy": 0.954545,
+        "precision": 1.0,
+        "overallPrecision": 0.228261,
+        "negativeAttempts": 615,
+        "negativeFalse": 71,
+        "negativeFalseRate": 0.115447
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    },
+    "extended": {
+      "minScore": 0.75,
+      "minMargin": 0,
+      "minVocabularyMass": 0.2,
+      "selectionSplit": "val",
+      "validation": {
+        "attempts": 70,
+        "correct": 61,
+        "wrong": 0,
+        "noMatch": 9,
+        "accuracy": 0.871429,
+        "precision": 1.0,
+        "overallPrecision": 0.968254,
+        "negativeAttempts": 668,
+        "negativeFalse": 2,
+        "negativeFalseRate": 0.002994
+      },
+      "validationErrorBudgets": {
+        "attempts": 70,
+        "correct": 61,
+        "wrong": 0,
+        "noMatch": 9,
+        "accuracy": 0.871429,
+        "precision": 1.0,
+        "overallPrecision": 0.910448,
+        "negativeAttempts": 668,
+        "negativeFalse": 6,
+        "negativeFalseRate": 0.008982
+      },
+      "classPolicies": {
+        "BELT1": {
+          "minScore": 0.9,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2
+        },
+        "SOCCER2": {
+          "minScore": 0.85,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2
+        },
+        "DEAF1": {
+          "minScore": 0.85,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2
+        },
+        "MECHANIC1": {
+          "minScore": 0.85,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2
+        }
+      },
+      "globalValidation": {
+        "attempts": 70,
+        "correct": 61,
+        "wrong": 0,
+        "noMatch": 9,
+        "accuracy": 0.871429,
+        "precision": 1.0,
+        "overallPrecision": 0.910448,
+        "negativeAttempts": 668,
+        "negativeFalse": 6,
+        "negativeFalseRate": 0.008982
+      },
+      "minimumCorrectClassSupport": 3,
+      "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+    }
+  },
+  "candidates": {
+    "full": [
+      {
+        "weight": 0,
+        "metrics": {
+          "attempts": 367,
+          "correct": 194,
+          "wrong": 1,
+          "noMatch": 172,
+          "accuracy": 0.52861,
+          "precision": 0.994872,
+          "overallPrecision": 0.906542,
+          "negativeAttempts": 371,
+          "negativeFalse": 19,
+          "negativeFalseRate": 0.051213
+        },
+        "policy": {
+          "minScore": 0.45,
+          "minMargin": 0.3,
+          "minVocabularyMass": 0,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 367,
+            "correct": 194,
+            "wrong": 1,
+            "noMatch": 172,
+            "accuracy": 0.52861,
+            "precision": 0.994872,
+            "overallPrecision": 0.906542,
+            "negativeAttempts": 371,
+            "negativeFalse": 19,
+            "negativeFalseRate": 0.051213
+          },
+          "validationErrorBudgets": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.903974,
+            "negativeAttempts": 371,
+            "negativeFalse": 26,
+            "negativeFalseRate": 0.070081
+          },
+          "classPolicies": {
+            "APPLE": {
+              "minScore": 0.2,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0
+            },
+            "BASEBALLCAP": {
+              "minScore": 0.35,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0
+            },
+            "BELT1": {
+              "minScore": 0.45,
+              "minMargin": 0.4,
+              "minVocabularyMass": 0
+            },
+            "BITE1": {
+              "minScore": 0.4,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0
+            },
+            "CANCER1": {
+              "minScore": 0.2,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0
+            },
+            "CAPTURE": {
+              "minScore": 0.25,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0
+            },
+            "CHEESEGRATER": {
+              "minScore": 0.25,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0
+            },
+            "DEMAND1": {
+              "minScore": 0.2,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0
+            },
+            "DOWNSIZE1": {
+              "minScore": 0.3,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0
+            },
+            "EAT1": {
+              "minScore": 0.15,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0
+            },
+            "EDIT1": {
+              "minScore": 0.2,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0
+            },
+            "ELEVATOR1": {
+              "minScore": 0.35,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0
+            },
+            "GUESS1": {
+              "minScore": 0.2,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0
+            },
+            "HOPE": {
+              "minScore": 0.3,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0
+            },
+            "JOKE": {
+              "minScore": 0.25,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0
+            },
+            "NIGHT1": {
+              "minScore": 0.3,
+              "minMargin": 0.25,
+              "minVocabularyMass": 0
+            },
+            "PARTY1": {
+              "minScore": 0.75,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0
+            },
+            "PEG2": {
+              "minScore": 0.2,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0
+            },
+            "PRESS": {
+              "minScore": 0.4,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0
+            },
+            "SHAVE1": {
+              "minScore": 0.3,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0
+            },
+            "TWINS1": {
+              "minScore": 0.5,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0
+            },
+            "WALK-TIGHTROPE-CL": {
+              "minScore": 0.35,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0
+            },
+            "WHATFOR1": {
+              "minScore": 0.2,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0
+            }
+          },
+          "globalValidation": {
+            "attempts": 367,
+            "correct": 159,
+            "wrong": 1,
+            "noMatch": 207,
+            "accuracy": 0.433243,
+            "precision": 0.99375,
+            "overallPrecision": 0.86413,
+            "negativeAttempts": 371,
+            "negativeFalse": 24,
+            "negativeFalseRate": 0.06469
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.25,
+        "metrics": {
+          "attempts": 367,
+          "correct": 274,
+          "wrong": 2,
+          "noMatch": 91,
+          "accuracy": 0.746594,
+          "precision": 0.992754,
+          "overallPrecision": 0.968198,
+          "negativeAttempts": 371,
+          "negativeFalse": 7,
+          "negativeFalseRate": 0.018868
+        },
+        "policy": {
+          "minScore": 0,
+          "minMargin": 0.15,
+          "minVocabularyMass": 0.9,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 367,
+            "correct": 274,
+            "wrong": 2,
+            "noMatch": 91,
+            "accuracy": 0.746594,
+            "precision": 0.992754,
+            "overallPrecision": 0.968198,
+            "negativeAttempts": 371,
+            "negativeFalse": 7,
+            "negativeFalseRate": 0.018868
+          },
+          "validationErrorBudgets": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.903974,
+            "negativeAttempts": 371,
+            "negativeFalse": 26,
+            "negativeFalseRate": 0.070081
+          },
+          "classPolicies": {
+            "BASKETBALL1": {
+              "minScore": 0,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.9
+            },
+            "BELT1": {
+              "minScore": 0,
+              "minMargin": 0.5,
+              "minVocabularyMass": 0.9
+            },
+            "CHEESEGRATER": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.9
+            },
+            "DOG1": {
+              "minScore": 0,
+              "minMargin": 0,
+              "minVocabularyMass": 0.9
+            },
+            "ERUPT2": {
+              "minScore": 0,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0.9
+            },
+            "HALLOWEEN1": {
+              "minScore": 0,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0.9
+            },
+            "HURDLE/TRIP1": {
+              "minScore": 0,
+              "minMargin": 0,
+              "minVocabularyMass": 0.9
+            },
+            "LOCK1": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.9
+            },
+            "MEACULPA": {
+              "minScore": 0,
+              "minMargin": 0,
+              "minVocabularyMass": 0.9
+            },
+            "MEAT1": {
+              "minScore": 0,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.9
+            },
+            "MICROSCOPE1": {
+              "minScore": 0,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.9
+            },
+            "MYSELF": {
+              "minScore": 0,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.9
+            },
+            "PIPE2": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.9
+            },
+            "SHOCKED": {
+              "minScore": 0,
+              "minMargin": 0.02,
+              "minVocabularyMass": 0.9
+            },
+            "TEACH1": {
+              "minScore": 0,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.9
+            },
+            "THIRD1": {
+              "minScore": 0,
+              "minMargin": 0.1,
+              "minVocabularyMass": 0.9
+            },
+            "TWINS1": {
+              "minScore": 0,
+              "minMargin": 0.3,
+              "minVocabularyMass": 0.9
+            }
+          },
+          "globalValidation": {
+            "attempts": 367,
+            "correct": 257,
+            "wrong": 3,
+            "noMatch": 107,
+            "accuracy": 0.700272,
+            "precision": 0.988462,
+            "overallPrecision": 0.948339,
+            "negativeAttempts": 371,
+            "negativeFalse": 11,
+            "negativeFalseRate": 0.02965
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.5,
+        "metrics": {
+          "attempts": 367,
+          "correct": 280,
+          "wrong": 2,
+          "noMatch": 85,
+          "accuracy": 0.762943,
+          "precision": 0.992908,
+          "overallPrecision": 0.958904,
+          "negativeAttempts": 371,
+          "negativeFalse": 10,
+          "negativeFalseRate": 0.026954
+        },
+        "policy": {
+          "minScore": 0.5,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 367,
+            "correct": 280,
+            "wrong": 2,
+            "noMatch": 85,
+            "accuracy": 0.762943,
+            "precision": 0.992908,
+            "overallPrecision": 0.958904,
+            "negativeAttempts": 371,
+            "negativeFalse": 10,
+            "negativeFalseRate": 0.026954
+          },
+          "validationErrorBudgets": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.903974,
+            "negativeAttempts": 371,
+            "negativeFalse": 26,
+            "negativeFalseRate": 0.070081
+          },
+          "classPolicies": {
+            "8HOUR": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "ARTICULATESIGN": {
+              "minScore": 0.2,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BASKETBALL1": {
+              "minScore": 0.2,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BEE1": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "CAPTURE": {
+              "minScore": 0.15,
+              "minMargin": 0.05,
+              "minVocabularyMass": 0.6
+            },
+            "CHEESEGRATER": {
+              "minScore": 0.3,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DEAF1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DINNER1": {
+              "minScore": 0.05,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DOWNSIZE1": {
+              "minScore": 0.5,
+              "minMargin": 0.5,
+              "minVocabularyMass": 0.6
+            },
+            "EDIT1": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "ELEVATOR1": {
+              "minScore": 0.15,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "HALLOWEEN1": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "HOW1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "IMPOSSIBLE": {
+              "minScore": 0.35,
+              "minMargin": 0.15,
+              "minVocabularyMass": 0.6
+            },
+            "LOCK1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "LUNCH1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MEACULPA": {
+              "minScore": 0.25,
+              "minMargin": 0.2,
+              "minVocabularyMass": 0.6
+            },
+            "MICROSCOPE1": {
+              "minScore": 0.3,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MYSELF": {
+              "minScore": 0.55,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "NOON1": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "PARTY1": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "PIPE2": {
+              "minScore": 0.3,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "SHOCKED": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "TEACH1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "THEY1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "THIRD1": {
+              "minScore": 0.2,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "TWINS1": {
+              "minScore": 0.6,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            }
+          },
+          "globalValidation": {
+            "attempts": 367,
+            "correct": 249,
+            "wrong": 2,
+            "noMatch": 116,
+            "accuracy": 0.678474,
+            "precision": 0.992032,
+            "overallPrecision": 0.943182,
+            "negativeAttempts": 371,
+            "negativeFalse": 13,
+            "negativeFalseRate": 0.03504
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.75,
+        "metrics": {
+          "attempts": 367,
+          "correct": 273,
+          "wrong": 3,
+          "noMatch": 91,
+          "accuracy": 0.743869,
+          "precision": 0.98913,
+          "overallPrecision": 0.968085,
+          "negativeAttempts": 371,
+          "negativeFalse": 6,
+          "negativeFalseRate": 0.016173
+        },
+        "policy": {
+          "minScore": 0.6,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.968085,
+            "negativeAttempts": 371,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.016173
+          },
+          "validationErrorBudgets": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.903974,
+            "negativeAttempts": 371,
+            "negativeFalse": 26,
+            "negativeFalseRate": 0.070081
+          },
+          "classPolicies": {
+            "8HOUR": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "ARTICULATESIGN": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BASKETBALL1": {
+              "minScore": 0.3,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BEE1": {
+              "minScore": 0.5,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "CHEESEGRATER": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DINNER1": {
+              "minScore": 0.1,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DOWNSIZE1": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "ELEVATOR1": {
+              "minScore": 0.25,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "FOREIGNER1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MEACULPA": {
+              "minScore": 0.15,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MICROSCOPE1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MOUTH": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MYSELF": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "PIPE2": {
+              "minScore": 0.4,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "SHAVE1": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "SHOCKED": {
+              "minScore": 0.5,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "TEACH1": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "TWINS1": {
+              "minScore": 0.7,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            }
+          },
+          "globalValidation": {
+            "attempts": 367,
+            "correct": 254,
+            "wrong": 3,
+            "noMatch": 110,
+            "accuracy": 0.692098,
+            "precision": 0.988327,
+            "overallPrecision": 0.944238,
+            "negativeAttempts": 371,
+            "negativeFalse": 12,
+            "negativeFalseRate": 0.032345
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 1,
+        "metrics": {
+          "attempts": 367,
+          "correct": 265,
+          "wrong": 2,
+          "noMatch": 100,
+          "accuracy": 0.722071,
+          "precision": 0.992509,
+          "overallPrecision": 0.970696,
+          "negativeAttempts": 371,
+          "negativeFalse": 6,
+          "negativeFalseRate": 0.016173
+        },
+        "policy": {
+          "minScore": 0.8,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 367,
+            "correct": 265,
+            "wrong": 2,
+            "noMatch": 100,
+            "accuracy": 0.722071,
+            "precision": 0.992509,
+            "overallPrecision": 0.970696,
+            "negativeAttempts": 371,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.016173
+          },
+          "validationErrorBudgets": {
+            "attempts": 367,
+            "correct": 273,
+            "wrong": 3,
+            "noMatch": 91,
+            "accuracy": 0.743869,
+            "precision": 0.98913,
+            "overallPrecision": 0.903974,
+            "negativeAttempts": 371,
+            "negativeFalse": 26,
+            "negativeFalseRate": 0.070081
+          },
+          "classPolicies": {
+            "ARTICULATESIGN": {
+              "minScore": 0.5,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BASKETBALL1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BEE1": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "BITE1": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "CANCER1": {
+              "minScore": 0.7,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "CHEESEGRATER": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "DINNER1": {
+              "minScore": 0.15,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "ELEVATOR1": {
+              "minScore": 0.35,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "HELICOPTER2": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MEACULPA": {
+              "minScore": 0.2,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MEAT1": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MICROSCOPE1": {
+              "minScore": 0.65,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MOUTH": {
+              "minScore": 0.9,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "MYSELF": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "PIPE2": {
+              "minScore": 0.45,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "PONDER": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "SHOCKED": {
+              "minScore": 0.7,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "THEY1": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            },
+            "THIRD1": {
+              "minScore": 0.2,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            }
+          },
+          "globalValidation": {
+            "attempts": 367,
+            "correct": 242,
+            "wrong": 2,
+            "noMatch": 123,
+            "accuracy": 0.659401,
+            "precision": 0.991803,
+            "overallPrecision": 0.960317,
+            "negativeAttempts": 371,
+            "negativeFalse": 8,
+            "negativeFalseRate": 0.021563
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      }
+    ],
+    "core": [
+      {
+        "weight": 0,
+        "metrics": {
+          "attempts": 22,
+          "correct": 18,
+          "wrong": 0,
+          "noMatch": 4,
+          "accuracy": 0.818182,
+          "precision": 1.0,
+          "overallPrecision": 0.782609,
+          "negativeAttempts": 716,
+          "negativeFalse": 5,
+          "negativeFalseRate": 0.006983
+        },
+        "policy": {
+          "minScore": 0.8,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 22,
+            "correct": 18,
+            "wrong": 0,
+            "noMatch": 4,
+            "accuracy": 0.818182,
+            "precision": 1.0,
+            "overallPrecision": 0.782609,
+            "negativeAttempts": 716,
+            "negativeFalse": 5,
+            "negativeFalseRate": 0.006983
+          },
+          "validationErrorBudgets": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.368421,
+            "negativeAttempts": 716,
+            "negativeFalse": 36,
+            "negativeFalseRate": 0.050279
+          },
+          "classPolicies": {
+            "BELT1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            }
+          },
+          "globalValidation": {
+            "attempts": 22,
+            "correct": 18,
+            "wrong": 0,
+            "noMatch": 4,
+            "accuracy": 0.818182,
+            "precision": 1.0,
+            "overallPrecision": 0.666667,
+            "negativeAttempts": 716,
+            "negativeFalse": 9,
+            "negativeFalseRate": 0.01257
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.25,
+        "metrics": {
+          "attempts": 22,
+          "correct": 19,
+          "wrong": 0,
+          "noMatch": 3,
+          "accuracy": 0.863636,
+          "precision": 1.0,
+          "overallPrecision": 0.826087,
+          "negativeAttempts": 716,
+          "negativeFalse": 4,
+          "negativeFalseRate": 0.005587
+        },
+        "policy": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 0.826087,
+            "negativeAttempts": 716,
+            "negativeFalse": 4,
+            "negativeFalseRate": 0.005587
+          },
+          "validationErrorBudgets": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.368421,
+            "negativeAttempts": 716,
+            "negativeFalse": 36,
+            "negativeFalseRate": 0.050279
+          },
+          "classPolicies": {
+            "BELT1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            }
+          },
+          "globalValidation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 0.678571,
+            "negativeAttempts": 716,
+            "negativeFalse": 9,
+            "negativeFalseRate": 0.01257
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.5,
+        "metrics": {
+          "attempts": 22,
+          "correct": 19,
+          "wrong": 0,
+          "noMatch": 3,
+          "accuracy": 0.863636,
+          "precision": 1.0,
+          "overallPrecision": 0.95,
+          "negativeAttempts": 716,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.001397
+        },
+        "policy": {
+          "minScore": 0,
+          "minMargin": 0,
+          "minVocabularyMass": 0.4,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 0.95,
+            "negativeAttempts": 716,
+            "negativeFalse": 1,
+            "negativeFalseRate": 0.001397
+          },
+          "validationErrorBudgets": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.368421,
+            "negativeAttempts": 716,
+            "negativeFalse": 36,
+            "negativeFalseRate": 0.050279
+          },
+          "classPolicies": {},
+          "globalValidation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 0.95,
+            "negativeAttempts": 716,
+            "negativeFalse": 1,
+            "negativeFalseRate": 0.001397
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.75,
+        "metrics": {
+          "attempts": 22,
+          "correct": 19,
+          "wrong": 0,
+          "noMatch": 3,
+          "accuracy": 0.863636,
+          "precision": 1.0,
+          "overallPrecision": 1.0,
+          "negativeAttempts": 716,
+          "negativeFalse": 0,
+          "negativeFalseRate": 0.0
+        },
+        "policy": {
+          "minScore": 0,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 1.0,
+            "negativeAttempts": 716,
+            "negativeFalse": 0,
+            "negativeFalseRate": 0.0
+          },
+          "validationErrorBudgets": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.368421,
+            "negativeAttempts": 716,
+            "negativeFalse": 36,
+            "negativeFalseRate": 0.050279
+          },
+          "classPolicies": {},
+          "globalValidation": {
+            "attempts": 22,
+            "correct": 19,
+            "wrong": 0,
+            "noMatch": 3,
+            "accuracy": 0.863636,
+            "precision": 1.0,
+            "overallPrecision": 1.0,
+            "negativeAttempts": 716,
+            "negativeFalse": 0,
+            "negativeFalseRate": 0.0
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 1,
+        "metrics": {
+          "attempts": 22,
+          "correct": 20,
+          "wrong": 0,
+          "noMatch": 2,
+          "accuracy": 0.909091,
+          "precision": 1.0,
+          "overallPrecision": 0.909091,
+          "negativeAttempts": 716,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.002793
+        },
+        "policy": {
+          "minScore": 0,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 22,
+            "correct": 20,
+            "wrong": 0,
+            "noMatch": 2,
+            "accuracy": 0.909091,
+            "precision": 1.0,
+            "overallPrecision": 0.909091,
+            "negativeAttempts": 716,
+            "negativeFalse": 2,
+            "negativeFalseRate": 0.002793
+          },
+          "validationErrorBudgets": {
+            "attempts": 22,
+            "correct": 21,
+            "wrong": 0,
+            "noMatch": 1,
+            "accuracy": 0.954545,
+            "precision": 1.0,
+            "overallPrecision": 0.368421,
+            "negativeAttempts": 716,
+            "negativeFalse": 36,
+            "negativeFalseRate": 0.050279
+          },
+          "classPolicies": {
+            "SOCCER2": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            }
+          },
+          "globalValidation": {
+            "attempts": 22,
+            "correct": 20,
+            "wrong": 0,
+            "noMatch": 2,
+            "accuracy": 0.909091,
+            "precision": 1.0,
+            "overallPrecision": 0.869565,
+            "negativeAttempts": 716,
+            "negativeFalse": 3,
+            "negativeFalseRate": 0.00419
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      }
+    ],
+    "extended": [
+      {
+        "weight": 0,
+        "metrics": {
+          "attempts": 70,
+          "correct": 33,
+          "wrong": 0,
+          "noMatch": 37,
+          "accuracy": 0.471429,
+          "precision": 1.0,
+          "overallPrecision": 0.916667,
+          "negativeAttempts": 668,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.004491
+        },
+        "policy": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0.6,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 70,
+            "correct": 33,
+            "wrong": 0,
+            "noMatch": 37,
+            "accuracy": 0.471429,
+            "precision": 1.0,
+            "overallPrecision": 0.916667,
+            "negativeAttempts": 668,
+            "negativeFalse": 3,
+            "negativeFalseRate": 0.004491
+          },
+          "validationErrorBudgets": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "classPolicies": {
+            "PARTY1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.6
+            }
+          },
+          "globalValidation": {
+            "attempts": 70,
+            "correct": 33,
+            "wrong": 0,
+            "noMatch": 37,
+            "accuracy": 0.471429,
+            "precision": 1.0,
+            "overallPrecision": 0.891892,
+            "negativeAttempts": 668,
+            "negativeFalse": 4,
+            "negativeFalseRate": 0.005988
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.25,
+        "metrics": {
+          "attempts": 70,
+          "correct": 58,
+          "wrong": 0,
+          "noMatch": 12,
+          "accuracy": 0.828571,
+          "precision": 1.0,
+          "overallPrecision": 0.95082,
+          "negativeAttempts": 668,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.004491
+        },
+        "policy": {
+          "minScore": 0.7,
+          "minMargin": 0,
+          "minVocabularyMass": 0.4,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 70,
+            "correct": 58,
+            "wrong": 0,
+            "noMatch": 12,
+            "accuracy": 0.828571,
+            "precision": 1.0,
+            "overallPrecision": 0.95082,
+            "negativeAttempts": 668,
+            "negativeFalse": 3,
+            "negativeFalseRate": 0.004491
+          },
+          "validationErrorBudgets": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "classPolicies": {
+            "BELT1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            },
+            "PARTY1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            }
+          },
+          "globalValidation": {
+            "attempts": 70,
+            "correct": 58,
+            "wrong": 0,
+            "noMatch": 12,
+            "accuracy": 0.828571,
+            "precision": 1.0,
+            "overallPrecision": 0.920635,
+            "negativeAttempts": 668,
+            "negativeFalse": 5,
+            "negativeFalseRate": 0.007485
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.5,
+        "metrics": {
+          "attempts": 70,
+          "correct": 59,
+          "wrong": 0,
+          "noMatch": 11,
+          "accuracy": 0.842857,
+          "precision": 1.0,
+          "overallPrecision": 0.983333,
+          "negativeAttempts": 668,
+          "negativeFalse": 1,
+          "negativeFalseRate": 0.001497
+        },
+        "policy": {
+          "minScore": 0.65,
+          "minMargin": 0,
+          "minVocabularyMass": 0.4,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 70,
+            "correct": 59,
+            "wrong": 0,
+            "noMatch": 11,
+            "accuracy": 0.842857,
+            "precision": 1.0,
+            "overallPrecision": 0.983333,
+            "negativeAttempts": 668,
+            "negativeFalse": 1,
+            "negativeFalseRate": 0.001497
+          },
+          "validationErrorBudgets": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "classPolicies": {
+            "BELT1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.4
+            }
+          },
+          "globalValidation": {
+            "attempts": 70,
+            "correct": 59,
+            "wrong": 0,
+            "noMatch": 11,
+            "accuracy": 0.842857,
+            "precision": 1.0,
+            "overallPrecision": 0.967213,
+            "negativeAttempts": 668,
+            "negativeFalse": 2,
+            "negativeFalseRate": 0.002994
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 0.75,
+        "metrics": {
+          "attempts": 70,
+          "correct": 61,
+          "wrong": 0,
+          "noMatch": 9,
+          "accuracy": 0.871429,
+          "precision": 1.0,
+          "overallPrecision": 0.968254,
+          "negativeAttempts": 668,
+          "negativeFalse": 2,
+          "negativeFalseRate": 0.002994
+        },
+        "policy": {
+          "minScore": 0.75,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.968254,
+            "negativeAttempts": 668,
+            "negativeFalse": 2,
+            "negativeFalseRate": 0.002994
+          },
+          "validationErrorBudgets": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "classPolicies": {
+            "BELT1": {
+              "minScore": 0.9,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "SOCCER2": {
+              "minScore": 0.85,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "DEAF1": {
+              "minScore": 0.85,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "MECHANIC1": {
+              "minScore": 0.85,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            }
+          },
+          "globalValidation": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      },
+      {
+        "weight": 1,
+        "metrics": {
+          "attempts": 70,
+          "correct": 61,
+          "wrong": 0,
+          "noMatch": 9,
+          "accuracy": 0.871429,
+          "precision": 1.0,
+          "overallPrecision": 0.953125,
+          "negativeAttempts": 668,
+          "negativeFalse": 3,
+          "negativeFalseRate": 0.004491
+        },
+        "policy": {
+          "minScore": 0.85,
+          "minMargin": 0,
+          "minVocabularyMass": 0.2,
+          "selectionSplit": "val",
+          "validation": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.953125,
+            "negativeAttempts": 668,
+            "negativeFalse": 3,
+            "negativeFalseRate": 0.004491
+          },
+          "validationErrorBudgets": {
+            "attempts": 70,
+            "correct": 61,
+            "wrong": 0,
+            "noMatch": 9,
+            "accuracy": 0.871429,
+            "precision": 1.0,
+            "overallPrecision": 0.910448,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "classPolicies": {
+            "SOCCER2": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "DEAF1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "EDIT1": {
+              "minScore": 0.75,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            },
+            "MECHANIC1": {
+              "minScore": 0.95,
+              "minMargin": 0,
+              "minVocabularyMass": 0.2
+            }
+          },
+          "globalValidation": {
+            "attempts": 70,
+            "correct": 60,
+            "wrong": 0,
+            "noMatch": 10,
+            "accuracy": 0.857143,
+            "precision": 1.0,
+            "overallPrecision": 0.909091,
+            "negativeAttempts": 668,
+            "negativeFalse": 6,
+            "negativeFalseRate": 0.008982
+          },
+          "minimumCorrectClassSupport": 3,
+          "classPolicyScope": "Predicted-class validation gates, sparse-class global fallback; not confidence probabilities."
+        }
+      }
+    ]
+  },
+  "deployable": false,
+  "scope": "Candidate only, not deployed. Active v3 and candidate evaluated on identical train/val-source-deduplicated validation attempts."
+}

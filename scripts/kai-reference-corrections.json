@@ -1,0 +1,28 @@
+{
+  "version": "kai-reference-reviewed-corrections-v1",
+  "signs": {
+    "microscope": {
+      "referenceSha256": "238922ea530f95a8bdb10515cd1af335e2297ef866fdb9d2d77a3665f9fa88cb",
+      "supportSide": "Left",
+      "dominantSide": "Right",
+      "supportEnvelope": [[0.0, 0.0], [0.4666667, 0.0], [0.7, 1.0], [1.3, 1.0], [1.5, 0.0], [2.2, 0.0]],
+      "faceEnvelope": [[0.0, 0.0], [0.4333333, 0.0], [0.7, 1.0], [1.2666667, 1.0], [1.4666667, 0.0], [2.2, 0.0]],
+      "faceTarget": "RightEye",
+      "faceOffsetM": [0.012, -0.024, 0.052],
+      "contactBelowWristM": 0.095,
+      "contactSurfaceOffsetM": 0.034,
+      "contactPalmFraction": 0.65,
+      "palmForward": [-0.84, 0.54, 0.0],
+      "indexAcross": [0.54, 0.84, 0.0],
+      "fingerCumulativeDegrees": {
+        "Index": [20, 65, 95],
+        "Middle": [25, 75, 105],
+        "Ring": [30, 85, 115],
+        "Pinky": [35, 90, 120]
+      },
+      "thumbDirectionsPalm": [[0.8, 0.35, -0.08], [0.55, 0.65, -0.3], [0.3, 0.7, -0.65]],
+      "reason": "Frame-by-frame review of this exact recording shows the left hand cupping the right forearm below its wrist while the right C hand is held at the eye. The hand detector misses the entire supporting hand, and its pose wrist is off-screen. Restore only this reviewed contact, not a generic second-hand activation.",
+      "estimatedDetails": "Supporting-hand wrist depth, palm orientation and occluded finger curls are manually reconstructed estimates. The dominant hand retains the tracked finger rotations; its thumb/index circle is aligned to Kai's eye during the reference's hold."
+    }
+  }
+}
